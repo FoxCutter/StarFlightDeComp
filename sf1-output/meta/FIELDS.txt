@@ -1,0 +1,702 @@
+AFIELD                   BOX-NAMe                  File: BOX              Offset:   0       Length:  16
+AFIELD  VITA-OV          _tv-hold                  File: BOX              Offset:  17       Length:   2
+AFIELD  BANK-OV          [A-BANK-TRANS:0-19]       File: BANK-TRANS       Offset:   0       Length:  19
+AFIELD  ASSCREW-OV       _cm-species               File: CREWMEMBER       Offset:   0       Length:   8
+AFIELD  PERSONNEL-OV     _cm-species               File: CREWMEMBER       Offset:   0       Length:   8
+AFIELD  PERSONNEL-OV     _cm-inital-stats          File: CREWMEMBER       Offset:   8       Length:   1
+AFIELD  PERSONNEL-OV     _cm-max-stats             File: CREWMEMBER       Offset:  13       Length:   1
+AFIELD  PERSONNEL-OV     _cm-learning-rate         File: CREWMEMBER       Offset:  18       Length:   1
+AFIELD  ASSCREW-OV       _cm-learning-rate         File: CREWMEMBER       Offset:  18       Length:   1
+AFIELD  PERSONNEL-OV     _cm-durability            File: CREWMEMBER       Offset:  19       Length:   1
+AFIELD  HEAL-OV          _cm-durability            File: CREWMEMBER       Offset:  19       Length:   1
+AFIELD  DOCTOR           _cm-durability            File: CREWMEMBER       Offset:  19       Length:   1
+AFIELD  DAMAGE-OV        _cm-durability            File: CREWMEMBER       Offset:  19       Length:   1
+AFIELD  BEHAV-OV         _cm-durability            File: CREWMEMBER       Offset:  19       Length:   1
+AFIELD  ASSCREW-OV       _cm-durability            File: CREWMEMBER       Offset:  19       Length:   1
+AFIELD  STORM-OV         _cm-durability            File: CREWMEMBER       Offset:  19       Length:   1
+AFIELD  SENT-OV          [A-STAR:0-3]              File: STAR             Offset:   0       Length:   3
+AFIELD  ANALYZE-OV       _ves_owner                File: VESSEL           Offset:   0       Length:   1
+AFIELD  ANALYZE-OV       _ves_class                File: VESSEL           Offset:   4       Length:   1
+AFIELD  COMM-OV          _ves_power                File: VESSEL           Offset:   5       Length:   1
+AFIELD  HYPERMSG-OV      _ves_power                File: VESSEL           Offset:   5       Length:   1
+AFIELD  DAMAGE-OV        _ves_power                File: VESSEL           Offset:   5       Length:   1
+AFIELD  HYPERMSG-OV      _ves_speed                File: VESSEL           Offset:   6       Length:   1
+AFIELD  ANALYZE-OV       _ves_speed                File: VESSEL           Offset:   6       Length:   1
+AFIELD  ANALYZE-OV       _ves_mass                 File: VESSEL           Offset:   7       Length:   2
+AFIELD  SCIENCE          _ves_mass                 File: VESSEL           Offset:   7       Length:   2
+AFIELD  COMBAT-OV        _ves_rate-of-fire         File: VESSEL           Offset:  11       Length:   1
+AFIELD  HYPERMSG-OV      _ves_armor-shield         File: VESSEL           Offset:  12       Length:   4
+AFIELD  SCIENCE          _ves_armor                File: VESSEL           Offset:  12       Length:   2
+AFIELD  COMM-OV          _ves_armor-shield         File: VESSEL           Offset:  12       Length:   4
+AFIELD  DAMAGE-OV        _ves_armor-shield         File: VESSEL           Offset:  12       Length:   4
+AFIELD  ANALYZE-OV       _ves_shield               File: VESSEL           Offset:  14       Length:   2
+AFIELD  COMBAT-OV        _ves_shield               File: VESSEL           Offset:  14       Length:   2
+AFIELD  SCIENCE          _ves_shield               File: VESSEL           Offset:  14       Length:   2
+AFIELD  DAMAGE-OV        _ves_missle_hit           File: VESSEL           Offset:  16       Length:   1
+AFIELD  ANALYZE-OV       _ves_laser_hit            File: VESSEL           Offset:  18       Length:   1
+AFIELD  DAMAGE-OV        _ves_laser_hit            File: VESSEL           Offset:  18       Length:   1
+AFIELD  COMBAT-OV        _ves_laser_hit            File: VESSEL           Offset:  18       Length:   1
+AFIELD  COMM-OV          _ves_laser_hit-class      File: VESSEL           Offset:  18       Length:   3
+AFIELD  COMBAT-OV        _ves_laser-class          File: VESSEL           Offset:  19       Length:   1
+AFIELD  DAMAGE-OV        _ves_laser-class          File: VESSEL           Offset:  19       Length:   1
+AFIELD  COMBAT-OV        _ves_missle-class         File: VESSEL           Offset:  20       Length:   1
+AFIELD  DAMAGE-OV        _ves_elements-debris      File: VESSEL           Offset:  21       Length:   7
+AFIELD  SCIENCE          _ves_plasma-class         File: VESSEL           Offset:  21       Length:   1
+AFIELD  SCIENCE          _ves_endurium-debris      File: VESSEL           Offset:  24       Length:   1
+AFIELD  ICONP-OV         _ves_directional          File: VESSEL           Offset:  28       Length:   1
+AFIELD  SCIENCE          _ves_sensor-data          File: VESSEL           Offset:  29       Length:  42
+AFIELD  ANALYZE-OV       ELEM-NAme                 File: ELEMENT          Offset:   0       Length:  16
+AFIELD  SENT-OV          ELEM-NAme                 File: ELEMENT          Offset:   0       Length:  16
+AFIELD                   ELEM-NAme                 File: ELEMENT          Offset:   0       Length:  16
+AFIELD                   ELEM-VA_                  File: ELEMENT          Offset:  16       Length:   2
+AFIELD                   ORIG-NA__                 File: MESSAGE          Offset:   0       Length:  16
+AFIELD                   ART-NAMe                  File: ARTIFACT         Offset:   0       Length:  24
+AFIELD  SENT-OV          _art_analyze_text_id      File: ARTIFACT         Offset:  24       Length:   1
+AFIELD  ITEMS-OV         _art_analyze_text_id      File: ARTIFACT         Offset:  24       Length:   1
+AFIELD  TDEPOT-OV        _art_analyze_text_id      File: ARTIFACT         Offset:  24       Length:   1
+AFIELD  CAPTAIN          _art_analyze_text_id      File: ARTIFACT         Offset:  24       Length:   1
+AFIELD                   ART-VOL                   File: ARTIFACT         Offset:  25       Length:   2
+AFIELD                   ART-VAL                   File: ARTIFACT         Offset:  27       Length:   2
+AFIELD  ITEMS-OV         _art_analyzed             File: ARTIFACT         Offset:  29       Length:   1
+AFIELD  TDEPOT-OV        _art_analyzed             File: ARTIFACT         Offset:  29       Length:   1
+AFIELD  SENT-OV          _art_analyzed             File: ARTIFACT         Offset:  29       Length:   1
+AFIELD  IT-OV            _art_analyzed             File: ARTIFACT         Offset:  29       Length:   1
+AFIELD  CAPTAIN          _art_analyzed             File: ARTIFACT         Offset:  29       Length:   1
+AFIELD  VITA-OV          _p-mass_type              File: PLANET           Offset:   0       Length:   1
+AFIELD  PLSET-OV         _p-mass_type              File: PLANET           Offset:   0       Length:   1
+AFIELD  MAPS-OV          _p-surface                File: PLANET           Offset:   1       Length:   1
+AFIELD  ICONP-OV         _p-surface                File: PLANET           Offset:   1       Length:   1
+AFIELD  PLSET-OV         _p-surface                File: PLANET           Offset:   1       Length:   1
+AFIELD  HYPERMSG-OV      _p-surface                File: PLANET           Offset:   1       Length:   1
+AFIELD  ANALYZE-OV       _p-surface                File: PLANET           Offset:   1       Length:   1
+AFIELD  HYPER-OV         _p-surface                File: PLANET           Offset:   1       Length:   1
+AFIELD  STORM-OV         _p-surface                File: PLANET           Offset:   1       Length:   1
+AFIELD  CAPTAIN          _p-mass                   File: PLANET           Offset:   2       Length:   2
+AFIELD  HP-OV            _p-mass                   File: PLANET           Offset:   2       Length:   2
+AFIELD  SCIENCE          _p-mass                   File: PLANET           Offset:   2       Length:   2
+AFIELD  ORBIT-OV         _p-mass                   File: PLANET           Offset:   2       Length:   2
+AFIELD  LAND-OV          _p-mass                   File: PLANET           Offset:   2       Length:   2
+AFIELD  VITA-OV          _p-mass                   File: PLANET           Offset:   2       Length:   2
+AFIELD  ANALYZE-OV       _p-mass                   File: PLANET           Offset:   2       Length:   2
+AFIELD  MAPS-OV          _p-mass                   File: PLANET           Offset:   2       Length:   2
+AFIELD  PLSET-OV         _p-mass                   File: PLANET           Offset:   2       Length:   2
+AFIELD  SCIENCE          P-LSEED                   File: PLANET           Offset:   4       Length:   1
+AFIELD  HP-OV            P-LSEED                   File: PLANET           Offset:   4       Length:   1
+AFIELD  VITA-OV          P-LSEED                   File: PLANET           Offset:   4       Length:   1
+AFIELD  CAPTAIN          P-LSEED                   File: PLANET           Offset:   4       Length:   1
+AFIELD  PLSET-OV         P-LSEED                   File: PLANET           Offset:   4       Length:   1
+AFIELD  ANALYZE-OV       P-LSEED                   File: PLANET           Offset:   4       Length:   1
+AFIELD  HYPERMSG-OV      P-LSEED                   File: PLANET           Offset:   4       Length:   1
+AFIELD  MAPS-OV          P-LSEED                   File: PLANET           Offset:   4       Length:   1
+AFIELD  VITA-OV          _p-region_seed            File: PLANET           Offset:   5       Length:   2
+AFIELD  MOVE-OV          _p-global_seed            File: PLANET           Offset:   7       Length:   2
+AFIELD  HYPERMSG-OV      _p-global_seed            File: PLANET           Offset:   7       Length:   2
+AFIELD  CAPTAIN          _p-global_seed            File: PLANET           Offset:   7       Length:   2
+AFIELD  VITA-OV          _p-mineral_densty         File: PLANET           Offset:   9       Length:   1
+AFIELD  PLSET-OV         _p-mineral_densty         File: PLANET           Offset:   9       Length:   1
+AFIELD  CAPTAIN          _p-mineral_densty         File: PLANET           Offset:   9       Length:   1
+AFIELD  SEED-OV          _p-mineral_densty         File: PLANET           Offset:   9       Length:   1
+AFIELD  SCIENCE          _p-mineral_densty         File: PLANET           Offset:   9       Length:   1
+AFIELD  SEED-OV          _p-seed4                  File: PLANET           Offset:  10       Length:   1
+AFIELD  SEED-OV          _p-seed5                  File: PLANET           Offset:  11       Length:   1
+AFIELD  MAPS-OV          _p-element1               File: PLANET           Offset:  12       Length:   1
+AFIELD  SEED-OV          _p-element1               File: PLANET           Offset:  12       Length:   1
+AFIELD  VITA-OV          _p-element1               File: PLANET           Offset:  12       Length:   1
+AFIELD  SCIENCE          _p-element1               File: PLANET           Offset:  12       Length:   1
+AFIELD  PLSET-OV         _p-element1               File: PLANET           Offset:  12       Length:   1
+AFIELD  SEED-OV          _p-element2               File: PLANET           Offset:  13       Length:   1
+AFIELD  VITA-OV          _p-element2               File: PLANET           Offset:  13       Length:   1
+AFIELD  PLSET-OV         _p-element2               File: PLANET           Offset:  13       Length:   1
+AFIELD  SEED-OV          _p-element3               File: PLANET           Offset:  14       Length:   1
+AFIELD  VITA-OV          _p-element3               File: PLANET           Offset:  14       Length:   1
+AFIELD  PLSET-OV         _p-element3               File: PLANET           Offset:  14       Length:   1
+AFIELD  MAPS-OV          _p-temp-low               File: PLANET           Offset:  15       Length:   1
+AFIELD  CAPTAIN          _p-temp-low               File: PLANET           Offset:  15       Length:   2
+AFIELD  PLSET-OV         _p-temp-low               File: PLANET           Offset:  15       Length:   1
+AFIELD  ANALYZE-OV       _p-temp-low               File: PLANET           Offset:  15       Length:   1
+AFIELD  SEED-OV          _p-temp-low               File: PLANET           Offset:  15       Length:   1
+AFIELD  VITA-OV          _p-temp-low               File: PLANET           Offset:  15       Length:   1
+AFIELD  VITA-OV          _p-temp-high              File: PLANET           Offset:  16       Length:   1
+AFIELD  CAPTAIN          _p-temp-high              File: PLANET           Offset:  16       Length:   1
+AFIELD  SEED-OV          _p-temp-high              File: PLANET           Offset:  16       Length:   1
+AFIELD  PLSET-OV         _p-temp-high              File: PLANET           Offset:  16       Length:   1
+AFIELD  MAPS-OV          _p-temp-high              File: PLANET           Offset:  16       Length:   1
+AFIELD  ANALYZE-OV       _p-temp-high              File: PLANET           Offset:  16       Length:   1
+AFIELD  ANALYZE-OV       ATMO.ACTIVity             File: PLANET           Offset:  17       Length:   2
+AFIELD  VITA-OV          ATMO.ACTIVity             File: PLANET           Offset:  17       Length:   2
+AFIELD  STORM-OV         ATMO.ACTIVity             File: PLANET           Offset:  17       Length:   2
+AFIELD  CAPTAIN          ATMO.ACTIVity             File: PLANET           Offset:  17       Length:   2
+AFIELD  MOVE-OV          ATMO.ACTIVity             File: PLANET           Offset:  17       Length:   2
+AFIELD  PLSET-OV         ATMO.ACTIVity             File: PLANET           Offset:  17       Length:   2
+AFIELD  BEHAV-OV         ATMO.ACTIVity             File: PLANET           Offset:  17       Length:   1
+AFIELD  MAPS-OV          ATMO.ACTIVity             File: PLANET           Offset:  17       Length:   2
+AFIELD  PLSET-OV         _p-atom.density           File: PLANET           Offset:  19       Length:   1
+AFIELD  ANALYZE-OV       _p-atom.density           File: PLANET           Offset:  19       Length:   1
+AFIELD  HP-OV            _p-atom.density           File: PLANET           Offset:  19       Length:   1
+AFIELD  VITA-OV          _p-atom.density           File: PLANET           Offset:  19       Length:   1
+AFIELD  MAPS-OV          _p-atom.density           File: PLANET           Offset:  19       Length:   1
+AFIELD  LP-OV            _p-atom.density           File: PLANET           Offset:  19       Length:   1
+AFIELD  PLSET-OV         _p-shape_max              File: PLANET           Offset:  20       Length:   1
+AFIELD  VITA-OV          _p-shape_max              File: PLANET           Offset:  20       Length:   1
+AFIELD  HP-OV            _p-shape_max              File: PLANET           Offset:  20       Length:   3
+AFIELD  LP-OV            _p-shape_max              File: PLANET           Offset:  20       Length:   3
+AFIELD  VITA-OV          _p-shape_min              File: PLANET           Offset:  21       Length:   1
+AFIELD  LP-OV            _p-shape_min              File: PLANET           Offset:  21       Length:   2
+AFIELD  HP-OV            _p-shape_min              File: PLANET           Offset:  21       Length:   2
+AFIELD  PLSET-OV         _p-shape_min              File: PLANET           Offset:  21       Length:   1
+AFIELD                   SPEC-NAme                 File: SPECIMEN         Offset:   0       Length:  16
+AFIELD                   BD-NAME                   File: BIO-DATA         Offset:   0       Length:  16
+AFIELD  CAPTAIN          _analyze_text             File: ANALYZE-TEXT     Offset:   0       Length: 190
+AFIELD  TDEPOT-OV        _analyze_text             File: ANALYZE-TEXT     Offset:   0       Length: 190
+AFIELD                   1BTN                      File: BUTTONS          Offset:   0       Length:  12
+AFIELD  NAVIGATR         _3btn                     File: BUTTONS          Offset:  24       Length:  12
+AFIELD  NAVIGATR         _4btn                     File: BUTTONS          Offset:  36       Length:  12
+AFIELD                   #BTN                      File: BUTTONS          Offset:  72       Length:   1
+AFIELD  VITA-OV          _r-seed-adjust            File: REGIONS          Offset:   2       Length:   2
+AFIELD  MAPS-OV          _r-name                   File: REGIONS          Offset:   4       Length:   3
+AFIELD  VITA-OV          [A-REGIONS:7-15]          File: REGIONS          Offset:   7       Length:   8
+AFIELD  PLSET-OV         [A-REGIONS:7-15]          File: REGIONS          Offset:   7       Length:   8
+AFIELD  MAPS-OV          [A-REGIONS:7-15]          File: REGIONS          Offset:   7       Length:   8
+AFIELD  VITA-OV          [A-REGIONS:15-16]         File: REGIONS          Offset:  15       Length:   1
+AFIELD  VITA-OV          [A-REGIONS:15-16]         File: REGIONS          Offset:  15       Length:   1
+AFIELD  VITA-OV          [A-REGIONS:16-17]         File: REGIONS          Offset:  16       Length:   1
+AFIELD  VITA-OV          [A-REGIONS:16-17]         File: REGIONS          Offset:  16       Length:   1
+AFIELD  VITA-OV          [A-REGIONS:17-18]         File: REGIONS          Offset:  17       Length:   1
+AFIELD  VITA-OV          [A-REGIONS:17-18]         File: REGIONS          Offset:  17       Length:   1
+AFIELD  VITA-OV          [A-REGIONS:18-19]         File: REGIONS          Offset:  18       Length:   1
+AFIELD  VITA-OV          [A-REGIONS:18-19]         File: REGIONS          Offset:  18       Length:   1
+AFIELD  VITA-OV          [A-REGIONS:19-27]         File: REGIONS          Offset:  19       Length:   8
+AFIELD  VITA-OV          [A-REGIONS:27-28]         File: REGIONS          Offset:  27       Length:   1
+AFIELD  SEED-OV          [A-REGIONS:27-28]         File: REGIONS          Offset:  27       Length:   1
+AFIELD  HP-OV            [A-CREATURE:0-2]          File: CREATURE         Offset:   0       Length:   2
+AFIELD  VITA-OV          [A-CREATURE:0-2]          File: CREATURE         Offset:   0       Length:   2
+AFIELD  VITA-OV          [A-CREATURE:2-4]          File: CREATURE         Offset:   2       Length:   2
+AFIELD  SEED-OV          [A-CREATURE:2-4]          File: CREATURE         Offset:   2       Length:   2
+AFIELD  HP-OV            [A-CREATURE:2-4]          File: CREATURE         Offset:   2       Length:   2
+AFIELD  SEED-OV          SHAPE                     File: CREATURE         Offset:   4       Length:   3
+AFIELD  HP-OV            SHAPE                     File: CREATURE         Offset:   4       Length:   3
+AFIELD  LP-OV            SHAPE                     File: CREATURE         Offset:   4       Length:   3
+AFIELD                   SHAPE                     File: CREATURE         Offset:   4       Length:   3
+AFIELD  HP-OV            [A-CREATURE:7-10]         File: CREATURE         Offset:   7       Length:   3
+AFIELD  LP-OV            [A-CREATURE:7-10]         File: CREATURE         Offset:   7       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:7-10]         File: CREATURE         Offset:   7       Length:   3
+AFIELD  SEED-OV          [A-CREATURE:7-10]         File: CREATURE         Offset:   7       Length:   3
+AFIELD  VITA-OV          [A-CREATURE:10-11]        File: CREATURE         Offset:  10       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:10-11]        File: CREATURE         Offset:  10       Length:   1
+AFIELD  BEHAV-OV         [A-CREATURE:11-12]        File: CREATURE         Offset:  11       Length:   1
+AFIELD  LP-OV            [A-CREATURE:11-12]        File: CREATURE         Offset:  11       Length:   1
+AFIELD  ITEMS-OV         [A-CREATURE:11-12]        File: CREATURE         Offset:  11       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:11-12]        File: CREATURE         Offset:  11       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:11-12]        File: CREATURE         Offset:  11       Length:   1
+AFIELD  HP-OV            [A-CREATURE:11-12]        File: CREATURE         Offset:  11       Length:   1
+AFIELD  HP-OV            [A-CREATURE:12-13]        File: CREATURE         Offset:  12       Length:   1
+AFIELD  BEHAV-OV         [A-CREATURE:12-13]        File: CREATURE         Offset:  12       Length:   1
+AFIELD  LP-OV            [A-CREATURE:12-13]        File: CREATURE         Offset:  12       Length:   1
+AFIELD  VITA-OV          [A-CREATURE:12-13]        File: CREATURE         Offset:  12       Length:   1
+AFIELD  ITEMS-OV         [A-CREATURE:12-13]        File: CREATURE         Offset:  12       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:12-13]        File: CREATURE         Offset:  12       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:13-16]        File: CREATURE         Offset:  13       Length:   3
+AFIELD  HP-OV            [A-CREATURE:13-16]        File: CREATURE         Offset:  13       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:13-16]        File: CREATURE         Offset:  13       Length:   3
+AFIELD  LP-OV            [A-CREATURE:13-16]        File: CREATURE         Offset:  13       Length:   3
+AFIELD  SEED-OV          [A-CREATURE:16-19]        File: CREATURE         Offset:  16       Length:   3
+AFIELD  LP-OV            [A-CREATURE:16-19]        File: CREATURE         Offset:  16       Length:   3
+AFIELD  HP-OV            [A-CREATURE:16-19]        File: CREATURE         Offset:  16       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:16-19]        File: CREATURE         Offset:  16       Length:   3
+AFIELD  LP-OV            [A-CREATURE:19-22]        File: CREATURE         Offset:  19       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:19-22]        File: CREATURE         Offset:  19       Length:   3
+AFIELD  SEED-OV          [A-CREATURE:19-22]        File: CREATURE         Offset:  19       Length:   3
+AFIELD  HP-OV            [A-CREATURE:19-22]        File: CREATURE         Offset:  19       Length:   3
+AFIELD  HP-OV            [A-CREATURE:22-25]        File: CREATURE         Offset:  22       Length:   3
+AFIELD  LP-OV            [A-CREATURE:22-25]        File: CREATURE         Offset:  22       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:22-25]        File: CREATURE         Offset:  22       Length:   3
+AFIELD  SEED-OV          [A-CREATURE:22-25]        File: CREATURE         Offset:  22       Length:   3
+AFIELD  HP-OV            [A-CREATURE:25-26]        File: CREATURE         Offset:  25       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:25-26]        File: CREATURE         Offset:  25       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:25-26]        File: CREATURE         Offset:  25       Length:   1
+AFIELD  LP-OV            [A-CREATURE:25-26]        File: CREATURE         Offset:  25       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:26-29]        File: CREATURE         Offset:  26       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:26-29]        File: CREATURE         Offset:  26       Length:   3
+AFIELD  LP-OV            [A-CREATURE:26-29]        File: CREATURE         Offset:  26       Length:   3
+AFIELD  HP-OV            [A-CREATURE:26-29]        File: CREATURE         Offset:  26       Length:   3
+AFIELD  HP-OV            [A-CREATURE:29-30]        File: CREATURE         Offset:  29       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:29-30]        File: CREATURE         Offset:  29       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:29-30]        File: CREATURE         Offset:  29       Length:   1
+AFIELD  LP-OV            [A-CREATURE:29-30]        File: CREATURE         Offset:  29       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:30-33]        File: CREATURE         Offset:  30       Length:   3
+AFIELD  HP-OV            [A-CREATURE:30-33]        File: CREATURE         Offset:  30       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:30-33]        File: CREATURE         Offset:  30       Length:   3
+AFIELD  LP-OV            [A-CREATURE:30-33]        File: CREATURE         Offset:  30       Length:   3
+AFIELD  SEED-OV          [A-CREATURE:33-34]        File: CREATURE         Offset:  33       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:33-34]        File: CREATURE         Offset:  33       Length:   1
+AFIELD  HP-OV            [A-CREATURE:33-34]        File: CREATURE         Offset:  33       Length:   1
+AFIELD  LP-OV            [A-CREATURE:33-34]        File: CREATURE         Offset:  33       Length:   1
+AFIELD  LP-OV            [A-CREATURE:34-37]        File: CREATURE         Offset:  34       Length:   3
+AFIELD  SEED-OV          [A-CREATURE:34-37]        File: CREATURE         Offset:  34       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:34-37]        File: CREATURE         Offset:  34       Length:   3
+AFIELD  HP-OV            [A-CREATURE:34-37]        File: CREATURE         Offset:  34       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:37-38]        File: CREATURE         Offset:  37       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:37-38]        File: CREATURE         Offset:  37       Length:   1
+AFIELD  HP-OV            [A-CREATURE:37-38]        File: CREATURE         Offset:  37       Length:   1
+AFIELD  LP-OV            [A-CREATURE:37-38]        File: CREATURE         Offset:  37       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:38-41]        File: CREATURE         Offset:  38       Length:   3
+AFIELD  LP-OV            [A-CREATURE:38-41]        File: CREATURE         Offset:  38       Length:   3
+AFIELD  SEED-OV          [A-CREATURE:38-41]        File: CREATURE         Offset:  38       Length:   3
+AFIELD  HP-OV            [A-CREATURE:38-41]        File: CREATURE         Offset:  38       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:41-44]        File: CREATURE         Offset:  41       Length:   3
+AFIELD  LP-OV            [A-CREATURE:41-44]        File: CREATURE         Offset:  41       Length:   3
+AFIELD  BEHAV-OV         [A-CREATURE:41-44]        File: CREATURE         Offset:  41       Length:   3
+AFIELD  HP-OV            [A-CREATURE:41-44]        File: CREATURE         Offset:  41       Length:   3
+AFIELD  SEED-OV          [A-CREATURE:41-44]        File: CREATURE         Offset:  41       Length:   3
+AFIELD  HP-OV            [A-CREATURE:44-46]        File: CREATURE         Offset:  44       Length:   2
+AFIELD  VITA-OV          [A-CREATURE:44-46]        File: CREATURE         Offset:  44       Length:   2
+AFIELD  SEED-OV          [A-CREATURE:46-48]        File: CREATURE         Offset:  46       Length:   2
+AFIELD  HP-OV            [A-CREATURE:46-48]        File: CREATURE         Offset:  46       Length:   2
+AFIELD  VITA-OV          [A-CREATURE:46-48]        File: CREATURE         Offset:  46       Length:   2
+AFIELD  BEHAV-OV         [A-CREATURE:48-49]        File: CREATURE         Offset:  48       Length:   1
+AFIELD  LP-OV            [A-CREATURE:48-49]        File: CREATURE         Offset:  48       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:48-49]        File: CREATURE         Offset:  48       Length:   1
+AFIELD  LP-OV            [A-CREATURE:49-50]        File: CREATURE         Offset:  49       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:49-50]        File: CREATURE         Offset:  49       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:50-51]        File: CREATURE         Offset:  50       Length:   1
+AFIELD  ITEMS-OV         STUN.EFFECt               File: CREATURE         Offset:  51       Length:   1
+AFIELD  LP-OV            STUN.EFFECt               File: CREATURE         Offset:  51       Length:   1
+AFIELD  SENT-OV          STUN.EFFECt               File: CREATURE         Offset:  51       Length:   1
+AFIELD  SEED-OV          STUN.EFFECt               File: CREATURE         Offset:  51       Length:   1
+AFIELD  BEHAV-OV         STUN.EFFECt               File: CREATURE         Offset:  51       Length:   1
+AFIELD  LP-OV            [A-CREATURE:52-53]        File: CREATURE         Offset:  52       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:52-53]        File: CREATURE         Offset:  52       Length:   1
+AFIELD  BEHAV-OV         HIT.POINTS                File: CREATURE         Offset:  52       Length:   1
+AFIELD  ITEMS-OV         [A-CREATURE:54-55]        File: CREATURE         Offset:  54       Length:   1
+AFIELD  LP-OV            [A-CREATURE:54-55]        File: CREATURE         Offset:  54       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:54-55]        File: CREATURE         Offset:  54       Length:   1
+AFIELD  BEHAV-OV         [A-CREATURE:54-55]        File: CREATURE         Offset:  54       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:55-56]        File: CREATURE         Offset:  55       Length:   1
+AFIELD  LP-OV            [A-CREATURE:55-56]        File: CREATURE         Offset:  55       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:55-56]        File: CREATURE         Offset:  55       Length:   1
+AFIELD  BEHAV-OV         [A-CREATURE:55-56]        File: CREATURE         Offset:  55       Length:   1
+AFIELD  SENT-OV          [A-CREATURE:56-58]        File: CREATURE         Offset:  56       Length:   2
+AFIELD  LP-OV            [A-CREATURE:56-58]        File: CREATURE         Offset:  56       Length:   2
+AFIELD  ITEMS-OV         [A-CREATURE:58-60]        File: CREATURE         Offset:  58       Length:   2
+AFIELD  SEED-OV          [A-CREATURE:58-60]        File: CREATURE         Offset:  58       Length:   2
+AFIELD  SENT-OV          [A-CREATURE:58-60]        File: CREATURE         Offset:  58       Length:   2
+AFIELD  LP-OV            [A-CREATURE:58-60]        File: CREATURE         Offset:  58       Length:   2
+AFIELD  LP-OV            [A-CREATURE:60-62]        File: CREATURE         Offset:  60       Length:   2
+AFIELD  SENT-OV          [A-CREATURE:60-62]        File: CREATURE         Offset:  60       Length:   2
+AFIELD  LP-OV            [A-CREATURE:63-66]        File: CREATURE         Offset:  63       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:63-66]        File: CREATURE         Offset:  63       Length:   3
+AFIELD  LP-OV            [A-CREATURE:66-69]        File: CREATURE         Offset:  66       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:66-69]        File: CREATURE         Offset:  66       Length:   3
+AFIELD  LP-OV            [A-CREATURE:69-72]        File: CREATURE         Offset:  69       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:69-72]        File: CREATURE         Offset:  69       Length:   3
+AFIELD  LP-OV            [A-CREATURE:72-75]        File: CREATURE         Offset:  72       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:72-75]        File: CREATURE         Offset:  72       Length:   3
+AFIELD  LP-OV            [A-CREATURE:75-78]        File: CREATURE         Offset:  75       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:75-78]        File: CREATURE         Offset:  75       Length:   3
+AFIELD  LP-OV            [A-CREATURE:78-81]        File: CREATURE         Offset:  78       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:78-81]        File: CREATURE         Offset:  78       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:81-84]        File: CREATURE         Offset:  81       Length:   3
+AFIELD  LP-OV            [A-CREATURE:81-84]        File: CREATURE         Offset:  81       Length:   3
+AFIELD  LP-OV            [A-CREATURE:84-87]        File: CREATURE         Offset:  84       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:84-87]        File: CREATURE         Offset:  84       Length:   3
+AFIELD  LP-OV            [A-CREATURE:87-90]        File: CREATURE         Offset:  87       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:87-90]        File: CREATURE         Offset:  87       Length:   3
+AFIELD  LP-OV            [A-CREATURE:90-93]        File: CREATURE         Offset:  90       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:90-93]        File: CREATURE         Offset:  90       Length:   3
+AFIELD  LP-OV            [A-CREATURE:93-96]        File: CREATURE         Offset:  93       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:93-96]        File: CREATURE         Offset:  93       Length:   3
+AFIELD  LP-OV            [A-CREATURE:96-99]        File: CREATURE         Offset:  96       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:96-99]        File: CREATURE         Offset:  96       Length:   3
+AFIELD  LP-OV            [A-CREATURE:99-102]       File: CREATURE         Offset:  99       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:99-102]       File: CREATURE         Offset:  99       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:102-105]      File: CREATURE         Offset: 102       Length:   3
+AFIELD  LP-OV            [A-CREATURE:102-105]      File: CREATURE         Offset: 102       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:105-108]      File: CREATURE         Offset: 105       Length:   3
+AFIELD  LP-OV            [A-CREATURE:105-108]      File: CREATURE         Offset: 105       Length:   3
+AFIELD  LP-OV            [A-CREATURE:108-111]      File: CREATURE         Offset: 108       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:108-111]      File: CREATURE         Offset: 108       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:111-114]      File: CREATURE         Offset: 111       Length:   3
+AFIELD  LP-OV            [A-CREATURE:111-114]      File: CREATURE         Offset: 111       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:114-117]      File: CREATURE         Offset: 114       Length:   3
+AFIELD  LP-OV            [A-CREATURE:114-117]      File: CREATURE         Offset: 114       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:117-120]      File: CREATURE         Offset: 117       Length:   3
+AFIELD  LP-OV            [A-CREATURE:117-120]      File: CREATURE         Offset: 117       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:120-123]      File: CREATURE         Offset: 120       Length:   3
+AFIELD  LP-OV            [A-CREATURE:120-123]      File: CREATURE         Offset: 120       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:123-126]      File: CREATURE         Offset: 123       Length:   3
+AFIELD  LP-OV            [A-CREATURE:123-126]      File: CREATURE         Offset: 123       Length:   3
+AFIELD  LP-OV            [A-CREATURE:126-129]      File: CREATURE         Offset: 126       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:126-129]      File: CREATURE         Offset: 126       Length:   3
+AFIELD  LP-OV            [A-CREATURE:129-132]      File: CREATURE         Offset: 129       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:129-132]      File: CREATURE         Offset: 129       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:132-135]      File: CREATURE         Offset: 132       Length:   3
+AFIELD  LP-OV            [A-CREATURE:132-135]      File: CREATURE         Offset: 132       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:135-138]      File: CREATURE         Offset: 135       Length:   3
+AFIELD  LP-OV            [A-CREATURE:135-138]      File: CREATURE         Offset: 135       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:138-141]      File: CREATURE         Offset: 138       Length:   3
+AFIELD  LP-OV            [A-CREATURE:138-141]      File: CREATURE         Offset: 138       Length:   3
+AFIELD  LP-OV            [A-CREATURE:141-144]      File: CREATURE         Offset: 141       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:141-144]      File: CREATURE         Offset: 141       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:144-146]      File: CREATURE         Offset: 144       Length:   2
+AFIELD  BEHAV-OV         [A-CREATURE:144-146]      File: CREATURE         Offset: 144       Length:   2
+AFIELD  MOVE-OV          [A-CREATURE:144-146]      File: CREATURE         Offset: 144       Length:   2
+AFIELD  ICONP-OV         [A-CREATURE:144-146]      File: CREATURE         Offset: 144       Length:   2
+AFIELD  TV-OV            [A-CREATURE:144-146]      File: CREATURE         Offset: 144       Length:   2
+AFIELD  LP-OV            [A-CREATURE:144-146]      File: CREATURE         Offset: 144       Length:   2
+AFIELD                   RESEMBLes                 File: CREATURE         Offset: 146       Length:   3
+AFIELD  LP-OV            RESEMBLes                 File: CREATURE         Offset: 146       Length:   3
+AFIELD  LP-OV            [A-CREATURE:149-152]      File: CREATURE         Offset: 149       Length:   3
+AFIELD  SENT-OV          [A-CREATURE:149-152]      File: CREATURE         Offset: 149       Length:   3
+AFIELD  ITEMS-OV         [A-CREATURE:154-155]      File: CREATURE         Offset: 154       Length:   1
+AFIELD  SEED-OV          [A-CREATURE:155-156]      File: CREATURE         Offset: 155       Length:   1
+AFIELD  MAPS-OV          _compound_iaddr           File: COMPOUNDS        Offset:   0       Length:   3
+AFIELD  SCIENCE          _compound_iaddr           File: COMPOUNDS        Offset:   0       Length:   3
+AFIELD  PERSONNEL-OV     _ps-type                  File: PSTATS           Offset:   0       Length:   9
+AFIELD  PERSONNEL-OV     _ps-avg-height            File: PSTATS           Offset:   9       Length:   1
+AFIELD  PERSONNEL-OV     _ps-avg-weight            File: PSTATS           Offset:  10       Length:   1
+IFIELD                   INST-SIb                  File: STARFLT          Offset:   0       Length:   3
+IFIELD                   INST-PRev                 File: STARFLT          Offset:   3       Length:   3
+IFIELD                   INST-OFf                  File: STARFLT          Offset:   6       Length:   3
+IFIELD                   INST-CLass                File: STARFLT          Offset:   9       Length:   1
+IFIELD                   INST-Subclass             File: STARFLT          Offset:  10       Length:   1
+IFIELD                   INST-QTy                  File: STARFLT          Offset:   0 ( 11) Length:   2
+IFIELD                   INST-X                    File: STARFLT          Offset:   2 ( 13) Length:   2
+IFIELD                   INST-Y                    File: STARFLT          Offset:   4 ( 15) Length:   2
+IFIELD                   INST-VAl                  File: STARFLT          Offset:   6 ( 17) Length:   2
+IFIELD                   INST-DAte                 File: STARFLT          Offset:   8 ( 19) Length:   2
+IFIELD  CAPTAIN          [I-STARFLT:19-21]         File: STARFLT          Offset:   8 ( 19) Length:   2
+IFIELD  ITEMS-OV         [I-STARFLT:21-22]         File: STARFLT          Offset:  10 ( 21) Length:   1
+IFIELD  CAPTAIN          [I-STARFLT:21-22]         File: STARFLT          Offset:  10 ( 21) Length:   1
+IFIELD  CAPTAIN          [I-STARFLT:22-23]         File: STARFLT          Offset:  11 ( 22) Length:   1
+IFIELD  ITEMS-OV         [I-STARFLT:22-23]         File: STARFLT          Offset:  11 ( 22) Length:   1
+IFIELD  CAPTAIN          [I-STARFLT:23-24]         File: STARFLT          Offset:  12 ( 23) Length:   1
+IFIELD  ITEMS-OV         [I-STARFLT:23-24]         File: STARFLT          Offset:  12 ( 23) Length:   1
+IFIELD  ITEMS-OV         _tv-hold                  File: BOX              Offset:   6 ( 17) Length:   2
+IFIELD  BEHAV-OV         _tv-hold                  File: BOX              Offset:   6 ( 17) Length:   2
+IFIELD  TV-OV            _tv-hold                  File: BOX              Offset:   6 ( 17) Length:   2
+IFIELD  BANK-OV          _bank_pre_transaction_balance File: BANK             Offset:   0 ( 11) Length:   4
+IFIELD  BANK-OV          _bank_balance             File: BANK             Offset:   4 ( 15) Length:   4
+IFIELD  BANK-OV          _bank_transaction         File: BANK             Offset:   8 ( 19) Length:   1
+IFIELD  BANK-OV          _bt_ammount               File: BANK-TRANS       Offset:   0 ( 11) Length:   4
+IFIELD  BANK-OV          _bt_stardate              File: BANK-TRANS       Offset:   4 ( 15) Length:   2
+IFIELD  DOCTOR           _cm_name                  File: CREWMEMBER       Offset:   0 ( 11) Length:  15
+IFIELD  DAMAGE-OV        _cm_name                  File: CREWMEMBER       Offset:   0 ( 11) Length:  15
+IFIELD  BEHAV-OV         _cm_name                  File: CREWMEMBER       Offset:   0 ( 11) Length:  15
+IFIELD  HEAL-OV          _cm_name                  File: CREWMEMBER       Offset:   0 ( 11) Length:  15
+IFIELD  COMM-OV          _cm_name                  File: CREWMEMBER       Offset:   0 ( 11) Length:  15
+IFIELD  STORM-OV         _cm_name                  File: CREWMEMBER       Offset:   0 ( 11) Length:  15
+IFIELD  SHIPBUTTONS      _cm_name                  File: CREWMEMBER       Offset:   0 ( 11) Length:  15
+IFIELD  PERSONNEL-OV     _cm_name                  File: CREWMEMBER       Offset:   0 ( 11) Length:  15
+IFIELD  ASSCREW-OV       _cm_name                  File: CREWMEMBER       Offset:   0 ( 11) Length:  15
+IFIELD  COMM-OV          _cm_stats                 File: CREWMEMBER       Offset:  15 ( 26) Length:  15
+IFIELD  HYPERMSG-OV      _cm_^sci                  File: CREWMEMBER       Offset:  15 ( 26) Length:   1
+IFIELD  SCIENCE          _cm_^sci                  File: CREWMEMBER       Offset:  15 ( 26) Length:   1
+IFIELD  HEAL-OV          _cm_^sci                  File: CREWMEMBER       Offset:  15 ( 26) Length:   1
+IFIELD  PERSONNEL-OV     _cm_^sci                  File: CREWMEMBER       Offset:  15 ( 26) Length:   1
+IFIELD  ANALYZE-OV       _cm_^sci                  File: CREWMEMBER       Offset:  15 ( 26) Length:   2
+IFIELD  ASSCREW-OV       _cm_^sci                  File: CREWMEMBER       Offset:  15 ( 26) Length:   1
+IFIELD  HEAL-OV          ^NAV                      File: CREWMEMBER       Offset:  16 ( 27) Length:   1
+IFIELD  PERSONNEL-OV     ^NAV                      File: CREWMEMBER       Offset:  16 ( 27) Length:   1
+IFIELD  COMBAT-OV        ^NAV                      File: CREWMEMBER       Offset:  16 ( 27) Length:   1
+IFIELD  STORM-OV         ^NAV                      File: CREWMEMBER       Offset:  16 ( 27) Length:   1
+IFIELD  TV-OV            ^NAV                      File: CREWMEMBER       Offset:  16 ( 27) Length:   1
+IFIELD  ASSCREW-OV       ^NAV                      File: CREWMEMBER       Offset:  16 ( 27) Length:   1
+IFIELD  HYPER-OV         ^NAV                      File: CREWMEMBER       Offset:  16 ( 27) Length:   1
+IFIELD  BEHAV-OV         ^NAV                      File: CREWMEMBER       Offset:  16 ( 27) Length:   1
+IFIELD  MOVE-OV          ^NAV                      File: CREWMEMBER       Offset:  16 ( 27) Length:   1
+IFIELD  COMM-OV          ^NAV                      File: CREWMEMBER       Offset:  16 ( 27) Length:   1
+IFIELD  ASSCREW-OV       _cm_^eng                  File: CREWMEMBER       Offset:  17 ( 28) Length:   1
+IFIELD  PERSONNEL-OV     _cm_^eng                  File: CREWMEMBER       Offset:  17 ( 28) Length:   1
+IFIELD  ENGINEER         _cm_^eng                  File: CREWMEMBER       Offset:  17 ( 28) Length:   1
+IFIELD  REPAIR-OV        _cm_^eng                  File: CREWMEMBER       Offset:  17 ( 28) Length:   1
+IFIELD  HEAL-OV          _cm_^eng                  File: CREWMEMBER       Offset:  17 ( 28) Length:   1
+IFIELD  ASSCREW-OV       _cm_^com                  File: CREWMEMBER       Offset:  18 ( 29) Length:   1
+IFIELD  PERSONNEL-OV     _cm_^com                  File: CREWMEMBER       Offset:  18 ( 29) Length:   1
+IFIELD  COMM-OV          _cm_^com                  File: CREWMEMBER       Offset:  18 ( 29) Length:   1
+IFIELD  HEAL-OV          _cm_^com                  File: CREWMEMBER       Offset:  18 ( 29) Length:   1
+IFIELD  ASSCREW-OV       _cm_^med                  File: CREWMEMBER       Offset:  19 ( 30) Length:   1
+IFIELD  PERSONNEL-OV     _cm_^med                  File: CREWMEMBER       Offset:  19 ( 30) Length:   1
+IFIELD  HEAL-OV          _cm_^med                  File: CREWMEMBER       Offset:  19 ( 30) Length:   1
+IFIELD  DAMAGE-OV        [I-CREWMEMBER:31-32]      File: CREWMEMBER       Offset:  20 ( 31) Length:   1
+IFIELD  DOCTOR           [I-CREWMEMBER:31-32]      File: CREWMEMBER       Offset:  20 ( 31) Length:   1
+IFIELD  STORM-OV         [I-CREWMEMBER:31-32]      File: CREWMEMBER       Offset:  20 ( 31) Length:   1
+IFIELD  HEAL-OV          [I-CREWMEMBER:31-32]      File: CREWMEMBER       Offset:  20 ( 31) Length:   1
+IFIELD  ASSCREW-OV       [I-CREWMEMBER:31-32]      File: CREWMEMBER       Offset:  20 ( 31) Length:   1
+IFIELD  PERSONNEL-OV     [I-CREWMEMBER:31-32]      File: CREWMEMBER       Offset:  20 ( 31) Length:   1
+IFIELD  BEHAV-OV         [I-CREWMEMBER:31-32]      File: CREWMEMBER       Offset:  20 ( 31) Length:   1
+IFIELD  PORTMENU-OV      [I-CREWMEMBER:31-32]      File: CREWMEMBER       Offset:  20 ( 31) Length:   1
+IFIELD  ASSCREW-OV       _cm_status                File: CREWMEMBER       Offset:  21 ( 32) Length:   2
+IFIELD  PERSONNEL-OV     _cm_status                File: CREWMEMBER       Offset:  21 ( 32) Length:   2
+IFIELD  PORTMENU-OV      _cm_status                File: CREWMEMBER       Offset:  21 ( 32) Length:   2
+IFIELD  DOCTOR           _cm_status                File: CREWMEMBER       Offset:  21 ( 32) Length:   2
+IFIELD  CHKFLIGHT-OV     _cm_status                File: CREWMEMBER       Offset:  21 ( 32) Length:   2
+IFIELD  HEAL-OV          _cm_status                File: CREWMEMBER       Offset:  21 ( 32) Length:   2
+IFIELD  ASSCREW-OV       _cm_index                 File: CREWMEMBER       Offset:  23 ( 34) Length:   1
+IFIELD  PERSONNEL-OV     _cm_index                 File: CREWMEMBER       Offset:  23 ( 34) Length:   1
+IFIELD  CHKFLIGHT-OV     _ac_roles                 File: ASSIGN-CREW      Offset:   6 ( 17) Length:  18
+IFIELD  STORM-OV         _ac_captian               File: ASSIGN-CREW      Offset:   6 ( 17) Length:   3
+IFIELD  BEHAV-OV         _ac_captian               File: ASSIGN-CREW      Offset:   6 ( 17) Length:   3
+IFIELD  SHIPBUTTONS      _ac_roles                 File: ASSIGN-CREW      Offset:   6 ( 17) Length:  18
+IFIELD  COMM-OV          _ac_captian               File: ASSIGN-CREW      Offset:   6 ( 17) Length:   3
+IFIELD  ASSCREW-OV       _ac_roles                 File: ASSIGN-CREW      Offset:   6 ( 17) Length:  18
+IFIELD  HEAL-OV          _ac_captian               File: ASSIGN-CREW      Offset:   6 ( 17) Length:   3
+IFIELD  DOCTOR           _ac_captian               File: ASSIGN-CREW      Offset:   6 ( 17) Length:   3
+IFIELD  HEAL-OV          _ac_science               File: ASSIGN-CREW      Offset:   9 ( 20) Length:   3
+IFIELD  ANALYZE-OV       _ac_science               File: ASSIGN-CREW      Offset:   9 ( 20) Length:   3
+IFIELD  HYPERMSG-OV      _ac_science               File: ASSIGN-CREW      Offset:   9 ( 20) Length:   3
+IFIELD  SCIENCE          _ac_science               File: ASSIGN-CREW      Offset:   9 ( 20) Length:   3
+IFIELD  HYPER-OV         _ac_navigator             File: ASSIGN-CREW      Offset:  12 ( 23) Length:   3
+IFIELD  COMBAT-OV        _ac_navigator             File: ASSIGN-CREW      Offset:  12 ( 23) Length:   3
+IFIELD  BEHAV-OV         NAVIG                     File: ASSIGN-CREW      Offset:  12 ( 23) Length:   3
+IFIELD  TV-OV            _ac_navigator             File: ASSIGN-CREW      Offset:  12 ( 23) Length:   3
+IFIELD  MOVE-OV          _ac_navigator             File: ASSIGN-CREW      Offset:  12 ( 23) Length:   3
+IFIELD  STORM-OV         _ac_navigator             File: ASSIGN-CREW      Offset:  12 ( 23) Length:   3
+IFIELD  REPAIR-OV        _ac_enginer               File: ASSIGN-CREW      Offset:  15 ( 26) Length:   3
+IFIELD  ENGINEER         _ac_enginer               File: ASSIGN-CREW      Offset:  15 ( 26) Length:   3
+IFIELD  COMM-OV          _ac_communication         File: ASSIGN-CREW      Offset:  18 ( 29) Length:   3
+IFIELD  HEAL-OV          _ac_doctor                File: ASSIGN-CREW      Offset:  21 ( 32) Length:   3
+IFIELD  MISC-OV          _ship_armor_class         File: SHIP             Offset:   6 ( 17) Length:   2
+IFIELD  COMM-OV          _ship_armor_class         File: SHIP             Offset:   6 ( 17) Length:   2
+IFIELD  SCIENCE          _ship_armor_class         File: SHIP             Offset:   6 ( 17) Length:   2
+IFIELD  REPAIR-OV        _ship_armor_class         File: SHIP             Offset:   6 ( 17) Length:   2
+IFIELD  SHIPGRPH-OV      _ship_armor_class         File: SHIP             Offset:   6 ( 17) Length:   2
+IFIELD  DAMAGE-OV        _ship_armor_class-L       File: SHIP             Offset:   6 ( 17) Length:   1
+IFIELD  CONFIG-OV        _ship_armor_class         File: SHIP             Offset:   6 ( 17) Length:   2
+IFIELD  COMBAT-OV        _ship_armor_class-L       File: SHIP             Offset:   6 ( 17) Length:   1
+IFIELD  ENGINEER         _ship_armor_class         File: SHIP             Offset:   6 ( 17) Length:   2
+IFIELD  HYPERMSG-OV      _ship_armor_class         File: SHIP             Offset:   6 ( 17) Length:   2
+IFIELD  DAMAGE-OV        _ship_armor_class-H       File: SHIP             Offset:   7 ( 18) Length:   1
+IFIELD  COMBAT-OV        _ship_armor_class-H       File: SHIP             Offset:   7 ( 18) Length:   1
+IFIELD  REPAIR-OV        _ship_armor_class-H       File: SHIP             Offset:   7 ( 18) Length:   1
+IFIELD  HYPER-OV         _ship_armor_class-H       File: SHIP             Offset:   7 ( 18) Length:   1
+IFIELD  HYPER-OV         _ship_engine_class        File: SHIP             Offset:   8 ( 19) Length:   2
+IFIELD  DAMAGE-OV        _ship_engine_class-L      File: SHIP             Offset:   8 ( 19) Length:   1
+IFIELD  COMBAT-OV        _ship_engine_class-L      File: SHIP             Offset:   8 ( 19) Length:   1
+IFIELD  CHKFLIGHT-OV     _ship_engine_class        File: SHIP             Offset:   8 ( 19) Length:   2
+IFIELD  REPAIR-OV        _ship_engine_class        File: SHIP             Offset:   8 ( 19) Length:   2
+IFIELD  CAPTAIN          _ship_engine_class        File: SHIP             Offset:   8 ( 19) Length:   2
+IFIELD  *MAP-OV          _ship_engine_class        File: SHIP             Offset:   8 ( 19) Length:   2
+IFIELD  CONFIG-OV        _ship_engine_class        File: SHIP             Offset:   8 ( 19) Length:   2
+IFIELD  SHIPGRPH-OV      _ship_engine_class        File: SHIP             Offset:   8 ( 19) Length:   2
+IFIELD  COMBAT-OV        _ship_engine_class-H      File: SHIP             Offset:   9 ( 20) Length:   1
+IFIELD  DAMAGE-OV        _ship_engine_class-H      File: SHIP             Offset:   9 ( 20) Length:   1
+IFIELD  PORTMENU-OV      _ship_engine_class-H      File: SHIP             Offset:   9 ( 20) Length:   1
+IFIELD  STP-OV           _ship_engine_class-H      File: SHIP             Offset:   9 ( 20) Length:   1
+IFIELD  COMBAT-OV        _ship_sensors-L           File: SHIP             Offset:  10 ( 21) Length:   1
+IFIELD  REPAIR-OV        _ship_sensors             File: SHIP             Offset:  10 ( 21) Length:   2
+IFIELD  DAMAGE-OV        _ship_sensors-L           File: SHIP             Offset:  10 ( 21) Length:   1
+IFIELD  CONFIG-OV        _ship_sensors             File: SHIP             Offset:  10 ( 21) Length:   2
+IFIELD  SCIENCE          _ship_sensors             File: SHIP             Offset:  10 ( 21) Length:   2
+IFIELD  DAMAGE-OV        _ship_sensors-H           File: SHIP             Offset:  11 ( 22) Length:   1
+IFIELD  COMBAT-OV        _ship_sensors-H           File: SHIP             Offset:  11 ( 22) Length:   1
+IFIELD  DAMAGE-OV        _ship_comm-L              File: SHIP             Offset:  12 ( 23) Length:   1
+IFIELD  COMM-OV          _ship_comm                File: SHIP             Offset:  12 ( 23) Length:   2
+IFIELD  CONFIG-OV        _ship_comm                File: SHIP             Offset:  12 ( 23) Length:   2
+IFIELD  REPAIR-OV        _ship_comm                File: SHIP             Offset:  12 ( 23) Length:   2
+IFIELD  COMBAT-OV        _ship_comm-L              File: SHIP             Offset:  12 ( 23) Length:   1
+IFIELD  COMBAT-OV        _ship_comm-H              File: SHIP             Offset:  13 ( 24) Length:   1
+IFIELD  DAMAGE-OV        _ship_comm-H              File: SHIP             Offset:  13 ( 24) Length:   1
+IFIELD  SCIENCE          _ship_shield_class        File: SHIP             Offset:  14 ( 25) Length:   2
+IFIELD  COMM-OV          _ship_shield_class        File: SHIP             Offset:  14 ( 25) Length:   2
+IFIELD  COMBAT-OV        _ship_shield_class-L      File: SHIP             Offset:  14 ( 25) Length:   1
+IFIELD  NAVIGATR         _ship_shield_class        File: SHIP             Offset:  14 ( 25) Length:   2
+IFIELD  CONFIG-OV        _ship_shield_class        File: SHIP             Offset:  14 ( 25) Length:   2
+IFIELD  DAMAGE-OV        _ship_shield_class-L      File: SHIP             Offset:  14 ( 25) Length:   1
+IFIELD  REPAIR-OV        _ship_shield_class        File: SHIP             Offset:  14 ( 25) Length:   2
+IFIELD  SHIPGRPH-OV      _ship_shield_class        File: SHIP             Offset:  14 ( 25) Length:   2
+IFIELD  HYPER-OV         _ship_shield_class-H      File: SHIP             Offset:  15 ( 26) Length:   1
+IFIELD  DAMAGE-OV        _ship_shield_class-H      File: SHIP             Offset:  15 ( 26) Length:   1
+IFIELD  COMBAT-OV        _ship_shield_class-H      File: SHIP             Offset:  15 ( 26) Length:   1
+IFIELD  REPAIR-OV        _ship_missile_class       File: SHIP             Offset:  16 ( 27) Length:   2
+IFIELD  DAMAGE-OV        _ship_missile_class-L     File: SHIP             Offset:  16 ( 27) Length:   1
+IFIELD  COMM-OV          _ship_missile_class       File: SHIP             Offset:  16 ( 27) Length:   2
+IFIELD  CONFIG-OV        _ship_missile_class       File: SHIP             Offset:  16 ( 27) Length:   2
+IFIELD  COMBAT-OV        _ship_missile_class-L     File: SHIP             Offset:  16 ( 27) Length:   1
+IFIELD  NAVIGATR         _ship_missile_class       File: SHIP             Offset:  16 ( 27) Length:   2
+IFIELD  SHIPGRPH-OV      _ship_missile_class       File: SHIP             Offset:  16 ( 27) Length:   2
+IFIELD  COMBAT-OV        _ship_missile_class-H     File: SHIP             Offset:  17 ( 28) Length:   1
+IFIELD  DAMAGE-OV        _ship_missile_class-H     File: SHIP             Offset:  17 ( 28) Length:   1
+IFIELD  DAMAGE-OV        _ship_laser_class-L       File: SHIP             Offset:  18 ( 29) Length:   1
+IFIELD  NAVIGATR         _ship_laser_class         File: SHIP             Offset:  18 ( 29) Length:   2
+IFIELD  REPAIR-OV        _ship_laser_class         File: SHIP             Offset:  18 ( 29) Length:   2
+IFIELD  COMBAT-OV        _ship_laser_class-L       File: SHIP             Offset:  18 ( 29) Length:   1
+IFIELD  SHIPGRPH-OV      _ship_laser_class         File: SHIP             Offset:  18 ( 29) Length:   2
+IFIELD  COMM-OV          _ship_laser_class         File: SHIP             Offset:  18 ( 29) Length:   2
+IFIELD  CONFIG-OV        _ship_laser_class         File: SHIP             Offset:  18 ( 29) Length:   2
+IFIELD  DAMAGE-OV        _ship_laser_class-H       File: SHIP             Offset:  19 ( 30) Length:   1
+IFIELD  COMBAT-OV        _ship_laser_class-H       File: SHIP             Offset:  19 ( 30) Length:   1
+IFIELD  SCIENCE          _ship_pods                File: SHIP             Offset:  20 ( 31) Length:   2
+IFIELD  MISC-OV          _ship_pods                File: SHIP             Offset:  20 ( 31) Length:   2
+IFIELD  CONFIG-OV        _ship_pods                File: SHIP             Offset:  20 ( 31) Length:   2
+IFIELD  SHIPGRPH-OV      _ship_pods                File: SHIP             Offset:  20 ( 31) Length:   2
+IFIELD  SHIPGRPH-OV      _ship_acceleration        File: SHIP             Offset:  26 ( 37) Length:   2
+IFIELD  HYPER-OV         _ship_acceleration        File: SHIP             Offset:  26 ( 37) Length:   2
+IFIELD  SHIPGRPH-OV      _ship_mass                File: SHIP             Offset:  28 ( 39) Length:   2
+IFIELD  ANALYZE-OV       _ship_mass                File: SHIP             Offset:  28 ( 39) Length:   2
+IFIELD  REPAIR-OV        _ship_repairs             File: SHIP             Offset:  30 ( 41) Length:   7
+IFIELD  CONFIG-OV        _ship_repairs             File: SHIP             Offset:  30 ( 41) Length:   7
+IFIELD  CONFIG-OV        _ship_shields             File: SHIP             Offset:  37 ( 48) Length:   2
+IFIELD  HYPER-OV         _ship_shields             File: SHIP             Offset:  37 ( 48) Length:   2
+IFIELD  DAMAGE-OV        _ship_shields             File: SHIP             Offset:  37 ( 48) Length:   2
+IFIELD  SCIENCE          _ship_shields             File: SHIP             Offset:  37 ( 48) Length:   2
+IFIELD  COMBAT-OV        _ship_shields             File: SHIP             Offset:  37 ( 48) Length:   2
+IFIELD  HYPER-OV         _ship_armor               File: SHIP             Offset:  39 ( 50) Length:   2
+IFIELD  SCIENCE          _ship_armor               File: SHIP             Offset:  39 ( 50) Length:   2
+IFIELD  REPAIR-OV        _ship_armor               File: SHIP             Offset:  39 ( 50) Length:   2
+IFIELD  CONFIG-OV        _ship_armor               File: SHIP             Offset:  39 ( 50) Length:   2
+IFIELD  HYPERMSG-OV      _ship_armor               File: SHIP             Offset:  39 ( 50) Length:   2
+IFIELD  COMBAT-OV        _ship_armor               File: SHIP             Offset:  39 ( 50) Length:   2
+IFIELD  DAMAGE-OV        _ship_armor               File: SHIP             Offset:  39 ( 50) Length:   2
+IFIELD  SHIPBUTTONS      %name                     File: SHIP             Offset:  41 ( 52) Length:  15
+IFIELD  LAND-OV          %name                     File: SHIP             Offset:  41 ( 52) Length:  15
+IFIELD                   %NAME                     File: SHIP             Offset:  41 ( 52) Length:  15
+IFIELD  CONFIG-OV        _ship_cargo               File: SHIP             Offset:  56 ( 67) Length:   2
+IFIELD  HYPER-OV         _ship_cargo               File: SHIP             Offset:  56 ( 67) Length:   2
+IFIELD  MISC-OV          _ship_cargo               File: SHIP             Offset:  56 ( 67) Length:   2
+IFIELD  TV-OV            _ship_cargo               File: SHIP             Offset:  56 ( 67) Length:   2
+IFIELD  TDEPOT-OV        _ship_cargo               File: SHIP             Offset:  56 ( 67) Length:   2
+IFIELD  REPAIR-OV        _ship_cargo               File: SHIP             Offset:  56 ( 67) Length:   2
+IFIELD  SCIENCE          _ship_cargo               File: SHIP             Offset:  56 ( 67) Length:   2
+IFIELD  COMMSPEC-OV      _ship_cargo               File: SHIP             Offset:  56 ( 67) Length:   2
+IFIELD  CAPTAIN          _ship_cargo               File: SHIP             Offset:  56 ( 67) Length:   2
+IFIELD  PORTMENU-OV      _ship_cargo               File: SHIP             Offset:  56 ( 67) Length:   2
+IFIELD  HYPER-OV         _ship_flags               File: SHIP             Offset:  58 ( 69) Length:   4
+IFIELD  SHIPBUTTONS      _ship_flags               File: SHIP             Offset:  58 ( 69) Length:   4
+IFIELD  COMBAT-OV        _ship_flags               File: SHIP             Offset:  58 ( 69) Length:   4
+IFIELD  DAMAGE-OV        _ship_flags               File: SHIP             Offset:  58 ( 69) Length:   4
+IFIELD  NAVIGATR         _ship_flags               File: SHIP             Offset:  58 ( 69) Length:   4
+IFIELD  SCIENCE          _ship_flags               File: SHIP             Offset:  58 ( 69) Length:   4
+IFIELD  CAPTAIN          _ship_flags               File: SHIP             Offset:  58 ( 69) Length:   4
+IFIELD  COMM-OV          _ship_flags               File: SHIP             Offset:  58 ( 69) Length:   4
+IFIELD  CONFIG-OV        _ship_flags               File: SHIP             Offset:  58 ( 69) Length:   4
+IFIELD  SHIPGRPH-OV      _ship_flags               File: SHIP             Offset:  58 ( 69) Length:   4
+IFIELD  DAMAGE-OV        _ship_icon                File: SHIP             Offset:  62 ( 73) Length:   1
+IFIELD  ICONP-OV         _ship_icon                File: SHIP             Offset:  62 ( 73) Length:   1
+IFIELD  HYPER-OV         _ship_icon                File: SHIP             Offset:  62 ( 73) Length:   1
+IFIELD  COMBAT-OV        _ship_icon                File: SHIP             Offset:  62 ( 73) Length:   1
+IFIELD  COMM-OV          _star_flare_time          File: STARSYSTEM       Offset:   0 ( 11) Length:   9
+IFIELD  ANALYZE-OV       _star_flare_time          File: STARSYSTEM       Offset:   0 ( 11) Length:   2
+IFIELD  HYPERMSG-OV      _star_flare_time          File: STARSYSTEM       Offset:   0 ( 11) Length:   2
+IFIELD  HYPER-OV         _star_flare_time          File: STARSYSTEM       Offset:   0 ( 11) Length:   2
+IFIELD  ANALYZE-OV       _star_orbits              File: STARSYSTEM       Offset:   6 ( 17) Length:   1
+IFIELD  HYPER-OV         _star_orbits              File: STARSYSTEM       Offset:   6 ( 17) Length:   1
+IFIELD  PLSET-OV         _star_orbits              File: STARSYSTEM       Offset:   6 ( 17) Length:   1
+IFIELD  DPART-OV         _star_orbits              File: STARSYSTEM       Offset:   6 ( 17) Length:   1
+IFIELD  CAPTAIN          _star_reports             File: STARSYSTEM       Offset:   7 ( 18) Length:   1
+IFIELD  COMBAT-OV        [I-VESSEL:11-12]          File: VESSEL           Offset:   0 ( 11) Length:   1
+IFIELD  ICONP-OV         [I-VESSEL:11-12]          File: VESSEL           Offset:   0 ( 11) Length:   1
+IFIELD  DAMAGE-OV        [I-VESSEL:11-12]          File: VESSEL           Offset:   0 ( 11) Length:   1
+IFIELD  HYPERMSG-OV      [I-VESSEL:11-12]          File: VESSEL           Offset:   0 ( 11) Length:   1
+IFIELD  DAMAGE-OV        [I-VESSEL:12-13]          File: VESSEL           Offset:   1 ( 12) Length:   1
+IFIELD  COMBAT-OV        [I-VESSEL:12-13]          File: VESSEL           Offset:   1 ( 12) Length:   1
+IFIELD  HYPERMSG-OV      [I-VESSEL:12-13]          File: VESSEL           Offset:   1 ( 12) Length:   1
+IFIELD  COMBAT-OV        [I-VESSEL:17-18]          File: VESSEL           Offset:   6 ( 17) Length:   1
+IFIELD  COMM-OV          [I-VESSEL:18-22]          File: VESSEL           Offset:   7 ( 18) Length:   4
+IFIELD  COMBAT-OV        [I-VESSEL:18-20]          File: VESSEL           Offset:   7 ( 18) Length:   2
+IFIELD  CAPTAIN          [I-VESSEL:18-25]          File: VESSEL           Offset:   7 ( 18) Length:   7
+IFIELD  DAMAGE-OV        [I-VESSEL:18-20]          File: VESSEL           Offset:   7 ( 18) Length:   2
+IFIELD  SCIENCE          [I-VESSEL:18-20]          File: VESSEL           Offset:   7 ( 18) Length:   2
+IFIELD  DAMAGE-OV        [I-VESSEL:18-25]          File: VESSEL           Offset:   7 ( 18) Length:   7
+IFIELD  HYPERMSG-OV      [I-VESSEL:18-22]          File: VESSEL           Offset:   7 ( 18) Length:   4
+IFIELD  ANALYZE-OV       [I-VESSEL:18-25]          File: VESSEL           Offset:   7 ( 18) Length:   7
+IFIELD  COMBAT-OV        [I-VESSEL:20-22]          File: VESSEL           Offset:   9 ( 20) Length:   2
+IFIELD  SCIENCE          [I-VESSEL:20-22]          File: VESSEL           Offset:   9 ( 20) Length:   2
+IFIELD  DAMAGE-OV        [I-VESSEL:20-22]          File: VESSEL           Offset:   9 ( 20) Length:   2
+IFIELD  HYPERMSG-OV      [I-VESSEL:21-25]          File: VESSEL           Offset:  10 ( 21) Length:   4
+IFIELD  DAMAGE-OV        [I-VESSEL:23-27]          File: VESSEL           Offset:  12 ( 23) Length:   4
+IFIELD  OP-OV            _notice_stardate          File: NOTICE           Offset:  10       Length:   2
+IFIELD  CAPTAIN          [I-EVALUATION:10-11]      File: EVALUATION       Offset:  10       Length:   1
+IFIELD  OP-OV            [I-EVALUATION:10-11]      File: EVALUATION       Offset:  10       Length:   1
+IFIELD  CAPTAIN          [I-EVALUATION:11-13]      File: EVALUATION       Offset:   0 ( 11) Length:   2
+IFIELD  OP-OV            [I-EVALUATION:11-13]      File: EVALUATION       Offset:   0 ( 11) Length:   2
+IFIELD  OP-OV            [I-EVALUATION:17-19]      File: EVALUATION       Offset:   6 ( 17) Length:   2
+IFIELD  CAPTAIN          [I-EVALUATION:17-19]      File: EVALUATION       Offset:   6 ( 17) Length:   2
+IFIELD  OP-OV            [I-EVALUATION:19-20]      File: EVALUATION       Offset:   8 ( 19) Length:   1
+IFIELD  CAPTAIN          [I-EVALUATION:19-20]      File: EVALUATION       Offset:   8 ( 19) Length:   1
+IFIELD  OP-OV            [I-EVALUATION:20-21]      File: EVALUATION       Offset:   9 ( 20) Length:   1
+IFIELD  CAPTAIN          [I-EVALUATION:20-21]      File: EVALUATION       Offset:   9 ( 20) Length:   1
+IFIELD  CAPTAIN          [I-EVALUATION:21-36]      File: EVALUATION       Offset:  10 ( 21) Length:  15
+IFIELD  OP-OV            [I-EVALUATION:21-36]      File: EVALUATION       Offset:  10 ( 21) Length:  15
+IFIELD  TV-OV            [I-TVEHICLE:17-18]        File: TVEHICLE         Offset:   6 ( 17) Length:   1
+IFIELD  BEHAV-OV         TV-WEAPON                 File: TVEHICLE         Offset:   6 ( 17) Length:   1
+IFIELD  *MAP-OV          _flux_orgin_x             File: FLUX-NODE        Offset:   0 ( 11) Length:   2
+IFIELD  HYPER-OV         _flux_orgin_x             File: FLUX-NODE        Offset:   0 ( 11) Length:   2
+IFIELD  *MAP-OV          _flux_orgin_y             File: FLUX-NODE        Offset:   6 ( 17) Length:   2
+IFIELD  HYPER-OV         _flux_orgin_y             File: FLUX-NODE        Offset:   6 ( 17) Length:   2
+IFIELD  CAPTAIN          _capt_log_entry           File: CAPT-LOG         Offset:   0 ( 11) Length:  36
+IFIELD  OP-OV            _string_data              File: STRING           Offset:   0 ( 11) Length: 255
+IFIELD                   PHRASE$                   File: STRING           Offset:   0 ( 11) Length:   0
+IFIELD  COMM-OV          _string_data              File: STRING           Offset:   0 ( 11) Length: 255
+IFIELD                   PHR-CNT                   File: STRING           Offset:   0 ( 11) Length:   1
+IFIELD                   PHRASE                    File: STRING           Offset:   1 ( 12) Length: 254
+IFIELD  COMM-OV          _phrase_context           File: PHRASECONTRL     Offset:   0 ( 11) Length:   1
+IFIELD  COMM-OV          _phrase_orig_posture_type File: PHRASECONTRL     Offset:   1 ( 12) Length:   1
+IFIELD  COMM-OV          _phrase_sent_count        File: PHRASECONTRL     Offset:   2 ( 13) Length:   1
+IFIELD  COMM-OV          _phrase_posture_always    File: PHRASECONTRL     Offset:   3 ( 14) Length:   1
+IFIELD  COMM-OV          _phrase_posture_no        File: PHRASECONTRL     Offset:   4 ( 15) Length:   1
+IFIELD  COMM-OV          _phrase_posture_yes       File: PHRASECONTRL     Offset:   5 ( 16) Length:   1
+IFIELD  COMM-OV          _originator_color         File: ORIGINATOR       Offset:   0 ( 11) Length:   1
+IFIELD  COMM-OV          _originator_talk_chance   File: ORIGINATOR       Offset:   1 ( 12) Length:   1
+IFIELD  COMBAT-OV        _originator_talk_chance   File: ORIGINATOR       Offset:   1 ( 12) Length:   1
+IFIELD  COMM-OV          _originator_flag          File: ORIGINATOR       Offset:   2 ( 13) Length:   1
+IFIELD  HYPER-OV         _originator_inital_posture File: ORIGINATOR       Offset:   7 ( 18) Length:   1
+IFIELD  COMMSPEC-OV      _originator_inital_posture File: ORIGINATOR       Offset:   7 ( 18) Length:   1
+IFIELD  COMM-OV          _originator_inital_posture File: ORIGINATOR       Offset:   7 ( 18) Length:   1
+IFIELD  COMM-OV          _originator_friendly_threshold File: ORIGINATOR       Offset:   8 ( 19) Length:   1
+IFIELD  COMMSPEC-OV      _originator_friendly_threshold File: ORIGINATOR       Offset:   8 ( 19) Length:   1
+IFIELD  HYPER-OV         _originator_neutral_threshold File: ORIGINATOR       Offset:   9 ( 20) Length:   1
+IFIELD  COMM-OV          _originator_neutral_threshold File: ORIGINATOR       Offset:   9 ( 20) Length:   1
+IFIELD  COMM-OV          _originator_hostile_threshold File: ORIGINATOR       Offset:  10 ( 21) Length:   1
+IFIELD  COMM-OV          _originator_obsequious    File: ORIGINATOR       Offset:  11 ( 22) Length:   1
+IFIELD  COMM-OV          _originator_friendly      File: ORIGINATOR       Offset:  12 ( 23) Length:   1
+IFIELD  COMM-OV          _originator_hostile       File: ORIGINATOR       Offset:  13 ( 24) Length:   1
+IFIELD  COMM-OV          _originator_max_words     File: ORIGINATOR       Offset:  14 ( 25) Length:   1
+IFIELD  COMM-OV          _originator_words         File: ORIGINATOR       Offset:  15 ( 26) Length:   3
+IFIELD  COMM-OV          _originator_picture       File: ORIGINATOR       Offset:  18 ( 29) Length:   1
+IFIELD                   TEXT-CO__                 File: SCROLL-TEXT      Offset:   0 ( 11) Length:   3
+IFIELD                   TEXT-IN__                 File: SCROLL-TEXT      Offset:   3 ( 14) Length:   3
+IFIELD                   TEXT-TE__                 File: SCROLL-TEXT      Offset:   6 ( 17) Length:  38
+IFIELD  HYPER-OV         _enc_homeword             File: ENCOUNTER        Offset:   0 ( 11) Length:   1
+IFIELD  HYPERMSG-OV      _enc_distance-x           File: ENCOUNTER        Offset:   6 ( 17) Length:   1
+IFIELD  HYPERMSG-OV      _enc_distnace-y           File: ENCOUNTER        Offset:   7 ( 18) Length:   1
+IFIELD  HYPER-OV         _enc_fleet-size           File: ENCOUNTER        Offset:   8 ( 19) Length:   1
+IFIELD  HYPERMSG-OV      _enc_fleet-size           File: ENCOUNTER        Offset:   8 ( 19) Length:   1
+IFIELD  DAMAGE-OV        _enc_ships-destroyed      File: ENCOUNTER        Offset:   9 ( 20) Length:   1
+IFIELD  HYPER-OV         _enc_ships-destroyed      File: ENCOUNTER        Offset:   9 ( 20) Length:   1
+IFIELD  HYPERMSG-OV      _enc_ships-destroyed      File: ENCOUNTER        Offset:   9 ( 20) Length:   1
+IFIELD  HYPERMSG-OV      _enc_max-ship-per-ecounter File: ENCOUNTER        Offset:  10 ( 21) Length:   1
+IFIELD  HYPERMSG-OV      _enc_class-0-vessel       File: ENCOUNTER        Offset:  11 ( 22) Length:   1
+IFIELD  HYPERMSG-OV      _enc_class-1-vessel       File: ENCOUNTER        Offset:  12 ( 23) Length:   1
+IFIELD  HYPERMSG-OV      _enc_class-2-vessel       File: ENCOUNTER        Offset:  13 ( 24) Length:   1
+IFIELD  HYPERMSG-OV      _enc_class-3-vessel       File: ENCOUNTER        Offset:  14 ( 25) Length:   1
+IFIELD  HYPER-OV         _enc_enabled              File: ENCOUNTER        Offset:  16 ( 27) Length:   1
+IFIELD  HYPERMSG-OV      _enc_enabled              File: ENCOUNTER        Offset:  16 ( 27) Length:   1
+IFIELD  ICONP-OV         _enc_enabled              File: ENCOUNTER        Offset:  16 ( 27) Length:   1
+IFIELD  COMM-OV          _enc_enabled              File: ENCOUNTER        Offset:  16 ( 27) Length:   1
+IFIELD  DPART-OV         _enc_enabled              File: ENCOUNTER        Offset:  16 ( 27) Length:   1
+IFIELD  SEED-OV          [I-REGIONS:11-13]         File: REGIONS          Offset:   0 ( 11) Length:   2
+IFIELD  SENT-OV          [I-REGIONS:11-13]         File: REGIONS          Offset:   0 ( 11) Length:   2
+IFIELD  VITA-OV          [I-REGIONS:11-13]         File: REGIONS          Offset:   0 ( 11) Length:   2
+IFIELD  HP-OV            [I-REGIONS:11-13]         File: REGIONS          Offset:   0 ( 11) Length:   2
+IFIELD  SENT-OV          HITS                      File: CREATURE         Offset:   6 ( 17) Length:   1
+IFIELD  ITEMS-OV         [I-CREATURE:17-18]        File: CREATURE         Offset:   6 ( 17) Length:   1
+IFIELD  SEED-OV          [I-CREATURE:17-18]        File: CREATURE         Offset:   6 ( 17) Length:   1
+IFIELD  BEHAV-OV         HITS                      File: CREATURE         Offset:   6 ( 17) Length:   1
+IFIELD  ICONP-OV         [I-CREATURE:17-18]        File: CREATURE         Offset:   6 ( 17) Length:   1
+IFIELD  ITEMS-OV         [I-CREATURE:18-19]        File: CREATURE         Offset:   7 ( 18) Length:   1
+IFIELD  SEED-OV          [I-CREATURE:18-19]        File: CREATURE         Offset:   7 ( 18) Length:   1
+IFIELD  SENT-OV          [I-CREATURE:18-19]        File: CREATURE         Offset:   7 ( 18) Length:   1
+IFIELD  BEHAV-OV         STUNS                     File: CREATURE         Offset:   7 ( 18) Length:   1
+IFIELD  SEED-OV          [I-CREATURE:19-20]        File: CREATURE         Offset:   8 ( 19) Length:   1
+IFIELD  BEHAV-OV         [I-CREATURE:19-20]        File: CREATURE         Offset:   8 ( 19) Length:   1
+IFIELD  BEHAV-OV         [I-CREATURE:21-22]        File: CREATURE         Offset:  10 ( 21) Length:   1
+IFIELD  ICONP-OV         [I-CREATURE:21-22]        File: CREATURE         Offset:  10 ( 21) Length:   1
+IFIELD  SENT-OV          [I-CREATURE:21-22]        File: CREATURE         Offset:  10 ( 21) Length:   1
+IFIELD  SEED-OV          [I-CREATURE:21-22]        File: CREATURE         Offset:  10 ( 21) Length:   1
+IFIELD  BEHAV-OV         [I-CREATURE:23-24]        File: CREATURE         Offset:  12 ( 23) Length:   1
+IFIELD  SEED-OV          [I-CREATURE:24-27]        File: CREATURE         Offset:  13 ( 24) Length:   3
+IFIELD  BEHAV-OV         [I-CREATURE:24-27]        File: CREATURE         Offset:  13 ( 24) Length:   3
+IFIELD  SEED-OV          [I-CREATURE:27-28]        File: CREATURE         Offset:  16 ( 27) Length:   1
+IFIELD  ITEMS-OV         [I-CREATURE:27-28]        File: CREATURE         Offset:  16 ( 27) Length:   1
+IFIELD  BEHAV-OV         BEHAVE                    File: CREATURE         Offset:  16 ( 27) Length:   1
+IFIELD  SENT-OV          [I-CREATURE:27-28]        File: CREATURE         Offset:  16 ( 27) Length:   1

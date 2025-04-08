@@ -1,0 +1,697 @@
+Instance creation
+Create Root of instance data and root nodes
+Stars/Planets
+Flux-nodes
+Nebulas
+Encounters
+Artifacts
+Messages
+Ruins
+Starport Data
+	Bank
+	Personnel
+	Crewmembers
+	Assigment
+	ShipConfig
+	TradeDepot
+	ItemsForSale
+	Operations
+	Ship
+	TeraneVhical
+	Hold
+	TVHold
+	Itmes
+	Notices
+Captians-Log
+Srings
+Communications
+Strings
+compounds
+END OF LIST
+Inactive nodes
+Items
+strings
+Orbits (probably just calling the function that builds orbits)
+
+
+
+Overlay build order (Based on where the OVERLAY words are)
+starflt
+	MUSIC
+
+Instance fileds
+Originator table
+Expert
+	IT-OV
+dehuff
+	MISC-OV
+	ENG-OV
+	BLT-OV
+	SCIENCE
+	HEAL-OV
+	REPAIR-OV
+	COMM-OV
+	COMMSPEC-OV
+	FRACT-OV
+	ORBIT-OV
+	ICONP-OV
+	SITE-OV
+	FLUX-EFFECT
+	BANK-OV
+	ASSCREW-OV
+	PERSONNEL-OV
+	SHIPGRPH-OV
+	CONFIG-OV
+	TDEPOT-OV
+	OP-OV
+	PLSET-OV
+	DEPART-OV
+	DAMAGE-OV
+	COMBAT-OV
+	HMISC-OV
+	NAVIGATR
+	HYPER-OV
+	VITA-OV
+	HP-OV
+	LP-OV
+	SENT-OV
+	MAPS-OV
+	SEED-OV
+	LISTICONS
+	ITEMS-OV
+	MOVE-OV
+	STORM-OV
+	TV-OV
+	BEHAVE-OV
+	STP-OV
+	LAUNCH-OV
+	CAPTAIN
+	DOCTOR
+	ANALYZE-OV
+	*MAP-OV
+	LAND-OV
+	SHIPBUTTONS
+	CHKFLT-OV
+	PORTMENU-OV
+	GAME-OV
+startup
+
+
+
+
+
+
+
+
+Clear BOOK-HOOK and restore QUIT
+DEBUG STARFLT.COM
+E 0A53 0
+E 2420 20 0F
+W
+
+/ Clear all the callbacks
+0 'RESTORE+ !
+0 'SETUP+ !
+' NOP DUP 'SVBUF ! 'MTBUF !
+/ Unprotect the data
+44C0 INITIAL-DP !
+/ FORGET KEY
+/ Forget everything
+44C0 (FORGET)
+/ Set the Hook to process the commandline
+' DOSPARM BOOT-HOOK !
+/ And generate the kernel
+NODRIVES SYSGEN kernel.com
+BYE
+
+0
+
+
+    01     FDF0  1D   
+    02     7EF8  2D
+    03     3F7C  3D
+    03 2A: 1FBE  4D  8126   (D)
+    04 2C: 0FFD  5D  4093   (D?)
+    05 2E: 07EF  6D  2031   (D)
+    06 30: 03F7  7D  1015   (D?)
+    07 32: 01FB  8D  507    (D?)
+
+    08     EFB1  
+    09     77D8  
+    0A     3BEC  
+    0B 3A: 1DF6    8150    
+    0C 3C: 0EFB    3835    D#
+    0D 3D: 077D    2007    D#?
+    0E 40: 03BE    958     
+    0F 42: 01DF    479
+
+    10     E23D 1E
+    11     711E 2E
+    12     388F 3E
+    13 4A: 1C47 4E   7239    E
+    14 4C: 0E23 5E 
+    15     0711 6E 
+    16 50: 0388 7E 
+    17     01C4 8E 
+
+    18     D589 1F
+    19     6AC4 2F
+    1A     3562 3F
+    1B     1AB1 4F  6833    F
+    1C     0D58 5F  
+    1D     06AC 6F
+    1E 60: 0356 7F
+    1F     01AB 8F
+        
+    20     C98E 1F# 
+    21     64C7 2F# 
+    22     3263 3F#
+    23     1931 4F#   6449    F#
+    24 6C: 0C98 5F# 
+    25     064C 6F# 
+    26 70: 0326 7F# 
+    27     0193 8F# 
+        
+    28     BE3D  1G
+    29     5F1E  2G
+    2A     2F8F  3G
+    2B     17C7  4G  6087   G
+    2C 7C: 0BE3  5G
+    2D     05F1  6G
+    2E 80: 02F8  7G
+    2F     017C  8G
+        
+    30     B390  
+    31     59C8  
+    32     2CE4  
+    33     1672    5746   G# 
+    34     0B39  
+    35     059C 
+    36 90: 02CE  
+    37     0167  
+        
+    38     A97C   1A
+    39     54BE   2A
+    3A     2A5F   3A
+    3B 9A: 152F   4A
+    3C 9C: 0A97   5A
+    3D     054B   6A
+    3E A0: 02A5   7A
+    3F     0152   8A
+        
+    40     9FF8  
+    41     4FFC  
+    42     27FE  
+    43     13FF    5119    A#
+    44     09FF  
+    45     04FF 
+    46 0B: 027F  
+    47     013F  
+        
+    48     96FF 1B
+    49     4B7F 2B
+    4A     25BF 3B
+    4B BA: 12DF 4B  4831    B
+    4C     096F 5B
+    4D     04B7 6B  .?...K.%..o...
+    4E C0: 025B 7B
+    4F     012D 8B
+        
+    50     8E84 1C
+    51     4742 2C
+    52     23A1 3C   
+    53 CA: 11D0 4C  4560    C (Middle C)
+    54     08E8 5C
+    55     0474 6C
+    56 D0: 023A 7C
+    57     011D 8C
+        
+    58     8685  
+    59     4342  
+    5A     21A1  
+    5B     10D0    4304    C#
+    5C     0868  
+    5D     0434    :.....BC.!..h.4.
+    5E E0: 021A  
+    5F     010D                                        ....       
+
+
+
+    ( DATA @E4B7-E4D2 XT:E4BE CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE P2 20 ALLOT ( @E4BE=
+@01BE 09 3C     5A Half
+      03 2C     5G Quarter
+      09 1C     5F Half
+      03 2C     5G Quarter
+      09 14     5E Half
+      03 1C     5F Quarter
+      09 04     5D Half
+      03 14     5E Quarter
+@01CE 30 24     5F# Whole Whole Quater
+      00 00                                       0$..            
+ )
+
+( DATA @E4D2-E4ED XT:E4D9 CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE P3 20 ALLOT ( @E4D9=
+@01D9 09 3C     5A Half
+      03 2C     5G Quarter
+      09 1C     5F Half
+      03 2C     5G Quarter
+      09 14     5E Half
+      03 1C     5F Quarter
+      09 04     5D Half
+      03 53     C4 Quarter
+@01E9 30 04     5D Whole Whole
+      00 00                                       0...            
+ )
+
+( DATA @E4ED-E508 XT:E4F4 CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE P4 20 ALLOT ( @E4F4=
+@01F4 09 54     5C Half
+      03 4C     5B Quarter
+      09 3C     5A Half
+      03 2C     5G Quarter
+      09 3C     5A Half
+      03 4C     5B Quarter
+      09 2C     5G Half
+      03 04     5D Quarter  
+@0204 30 05     6D Whole Whole
+      00 00                                       0...            
+ )
+
+( DATA @E508-E529 XT:E50F CFA:1D29 DLen: 26 STAGE: Dictionaries)
+CREATE P5 26 ALLOT ( @E50F=
+@020F 09 3D     6A Half
+      03 2D     6G Quarter
+      09 25     6F# Half
+      03 2D     6G Quarter
+      09 15     6E Half
+      03 25     6F# Quarter
+      09 05     6D Half
+      03 15     6E Quarter  
+@021F 09 54     5C Half
+      03 4C     5B Quarter
+      18 3C     5A Whole
+      4C 3C     5A 3 Whole + Quarter
+      00 00                     .T.L.<L<..      
+ )
+
+( DATA @E529-E544 XT:E530 CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE P6 20 ALLOT ( @E530=
+@0230 09 3D     6A Half
+      03 2D     6G Quarter
+      09 1D     6F Half
+      03 2D     6G Quarter
+      09 15     6E Half
+      03 1D     6F Quarter
+      09 05     6D Half
+      03 54     5C Quarter
+      70 05     6D 6 Whole + Quarter note
+      00 00                                       p...            
+ )
+
+( DATA @E544-E565 XT:E54B CFA:1D29 DLen: 26 STAGE: Dictionaries)
+CREATE P1 26 ALLOT ( @E54B=
+@024B 09 3C     5A Half     
+      03 2C     5G Quarter
+      09 24     5F# Half
+      03 2C     5G Quarter
+      09 14     5E Half
+      03 24     5F# Quarter
+      09 04     4D Half
+      03 14     5E Quarter
+      09 53     4C Half
+      03 4B     4B Quarter
+      18 3B     4A Whole + Quarter
+      0C 3B     4A Three-Quarter
+      00 00   
+ )
+
+( WORD @E565-E576 XT:E56C CFA:224C DLen: 10 STAGE: Dictionaries)
+: R,
+ MUSSEG SEG>ADDR - , ; 
+
+( DATA @E576-E597 XT:E580 CFA:1D29 DLen: 23 STAGE: Dictionaries)
+CREATE 0SONG 23 ALLOT ( @E580=
+@0280 
+    01 024B  p1			60 Ticks - 5 + 6
+    01 01BE  p2			60 Ticks - 5 + 6
+    01 024B  p1			60 Ticks - 5 + 6
+    01 01D9  p3			60 Ticks - 5 + 6
+    01 01F4  p4			60 Ticks - 5 + 6
+    01 020F  p5			A0 Ticks - 8 + 10
+    01 0230  p6			A0 Ticks - 8 + 10
+    00 00                              ...0...         
+ )
+
+
+
+ #define HSV(h, s, v) HSVtoRGB(h, s, v)
+
+constexpr uint32_t HSVtoRGB(double H, double S, double V)
+{
+	if (H >= 360)
+		H = 0;
+
+	auto region = H / 60;
+	auto remainder = region - (int)(region);
+
+	uint8_t p = (uint8_t)((V * (1.0 - S)) * 255);
+	uint8_t q = (uint8_t)((V * (1.0 - (S * remainder)) * 255));
+	uint8_t t = (uint8_t)((V * (1.0 - (S * (1 - remainder))) * 255));
+	uint8_t v = (uint8_t)(V * 0xFF);
+	uint8_t R = 0;
+	uint8_t G = 0;
+	uint8_t B = 0;
+
+	switch ((int)(region))
+	{
+	case 0:
+		R = v;
+		G = t;
+		B = p;
+		break;
+	case 1:
+		R = q;
+		G = v;
+		B = p;
+		break;
+	case 2:
+		R = p;
+		G = v;
+		B = t; break;
+	case 3:
+		R = p;
+		G = q;
+		B = v;
+		break;
+	case 4:
+		R = t;
+		G = p;
+		B = v;
+		break;;
+	case 5:
+		R = v;
+		G = p;
+		B = q;
+		break;
+	}
+
+	return RGB(R, G, B);
+}
+
+
+constexpr const uint32_t Colors[256] =
+{
+	// Stock CGA/EGA colors
+	RGB(0x00, 0x00, 0x00),	 // 00 Black
+	RGB(0x00, 0x00, 0xAA),	 // 01 Blue
+	RGB(0x00, 0xAA, 0x00),	 // 02 Green
+	RGB(0x00, 0xAA, 0xAA),	 // 03 Cyan
+	RGB(0xAA, 0x00, 0x00),	 // 04 Red
+	RGB(0xAA, 0x00, 0xAA),	 // 05 Magenta
+	RGB(0xAA, 0x55, 0x00),	 // 06 Brown
+	RGB(0xAA, 0xAA, 0xAA),	 // 07 Light Grey
+	RGB(0x55, 0x55, 0x55),	 // 08 Dark Grey
+	RGB(0x55, 0x55, 0xFF),	 // 09 Light Blue
+	RGB(0x55, 0xFF, 0x55),	 // 0A Light Green
+	RGB(0x55, 0xFF, 0xFF),	 // 0B Light Cyan
+	RGB(0xFF, 0x55, 0x55),	 // 0C Light Red/Pink 
+	RGB(0xFF, 0x55, 0xFF),	 // 0D Light Magenta
+	RGB(0xFF, 0xFF, 0x55),	 // 0E Yellow
+	RGB(0xFF, 0xFF, 0xFF),	 // 0F White
+
+	// Gray Scales
+	RGB(0x00, 0x00, 0x00),	 // 10
+	RGB(0x14, 0x14, 0x14),	 // 11
+	RGB(0x20, 0x20, 0x20),	 // 12
+	RGB(0x2C, 0x2C, 0x2C),	 // 13
+	RGB(0x38, 0x38, 0x38),	 // 14
+	RGB(0x45, 0x45, 0x45),	 // 15
+	RGB(0x51, 0x51, 0x51),	 // 16
+	RGB(0x61, 0x61, 0x61),	 // 17
+	RGB(0x71, 0x71, 0x71),	 // 18
+	RGB(0x82, 0x82, 0x82),	 // 19
+	RGB(0x92, 0x92, 0x92),	 // 1A
+	RGB(0xA2, 0xA2, 0xA2),	 // 1B
+	RGB(0xB6, 0xB6, 0xB6),	 // 1C
+	RGB(0xCB, 0xCB, 0xCB),	 // 1D
+	RGB(0xE3, 0xE3, 0xE3),	 // 1E
+	RGB(0xFF, 0xFF, 0xFF),	 // 1F
+
+	// Generating the stock VGA colors from HSV color more as an exercise then anything else.
+	// All it really does is show the relationsip between each 24x3 block
+	HSV(240.0, 1.0, 1.0),	 // 20 
+	HSV(255.0, 1.0, 1.0),	 // 21 
+	HSV(269.0, 1.0, 1.0),	 // 22 
+	HSV(285.0, 1.0, 1.0),	 // 23 
+	HSV(300.0, 1.0, 1.0),	 // 24 
+	HSV(315.0, 1.0, 1.0),	 // 25 
+	HSV(330.0, 1.0, 1.0),	 // 26 
+	HSV(345.0, 1.0, 1.0),	 // 27 
+	HSV(0.0,   1.0, 1.0),	 // 28 
+	HSV(15.0,  1.0, 1.0),	 // 29 
+	HSV(30.0,  1.0, 1.0),	 // 2A 
+	HSV(45.0,  1.0, 1.0),	 // 2B 
+	HSV(60.0,  1.0, 1.0),	 // 2C 
+	HSV(75.0,  1.0, 1.0),	 // 2D 
+	HSV(90.0,  1.0, 1.0),	 // 2E 
+	HSV(105.0, 1.0, 1.0),	 // 2F 
+	HSV(120.0, 1.0, 1.0),	 // 30 
+	HSV(135.0, 1.0, 1.0),	 // 31 
+	HSV(150.0, 1.0, 1.0),	 // 32 
+	HSV(165.0, 1.0, 1.0),	 // 33 
+	HSV(180.0, 1.0, 1.0),	 // 34 
+	HSV(195.0, 1.0, 1.0),	 // 35 
+	HSV(210.0, 1.0, 1.0),	 // 36 
+	HSV(225.0, 1.0, 1.0),	 // 37 
+
+	HSV(240.0, 0.52, 1.0),   // 38 
+	HSV(255.0, 0.52, 1.0),   // 39 
+	HSV(269.0, 0.52, 1.0),   // 3A 
+	HSV(285.0, 0.52, 1.0),   // 3B 
+	HSV(300.0, 0.52, 1.0),   // 3C 
+	HSV(315.0, 0.52, 1.0),   // 3D 
+	HSV(330.0, 0.52, 1.0),   // 3E 
+	HSV(345.0, 0.52, 1.0),   // 3F 
+	HSV(0.0,   0.52, 1.0),   // 40 
+	HSV(15.0,  0.52, 1.0),   // 41 
+	HSV(30.0,  0.52, 1.0),   // 42 
+	HSV(45.0,  0.52, 1.0),   // 43 
+	HSV(60.0,  0.52, 1.0),   // 44 
+	HSV(75.0,  0.52, 1.0),   // 45 
+	HSV(90.0,  0.52, 1.0),   // 46 
+	HSV(105.0, 0.52, 1.0),   // 47 
+	HSV(120.0, 0.52, 1.0),   // 48 
+	HSV(135.0, 0.52, 1.0),   // 49 
+	HSV(150.0, 0.52, 1.0),   // 4A 
+	HSV(165.0, 0.52, 1.0),   // 4B 
+	HSV(180.0, 0.52, 1.0),   // 4C 
+	HSV(195.0, 0.52, 1.0),   // 4D 
+	HSV(210.0, 0.52, 1.0),   // 4E 
+	HSV(225.0, 0.52, 1.0),   // 4F 
+
+	HSV(240.0, 0.29, 1.0),   // 50 
+	HSV(255.0, 0.29, 1.0),   // 51 
+	HSV(269.0, 0.29, 1.0),   // 52 
+	HSV(285.0, 0.29, 1.0),   // 53 
+	HSV(300.0, 0.29, 1.0),   // 54 
+	HSV(315.0, 0.29, 1.0),   // 55 
+	HSV(330.0, 0.29, 1.0),   // 56 
+	HSV(345.0, 0.29, 1.0),   // 57 
+	HSV(0.0,   0.29, 1.0),   // 58 
+	HSV(15.0,  0.29, 1.0),   // 59 
+	HSV(30.0,  0.29, 1.0),   // 5A 
+	HSV(45.0,  0.29, 1.0),   // 5B 
+	HSV(60.0,  0.29, 1.0),   // 5C 
+	HSV(75.0,  0.29, 1.0),   // 5D 
+	HSV(90.0,  0.29, 1.0),   // 5E 
+	HSV(105.0, 0.29, 1.0),   // 5F 
+	HSV(120.0, 0.29, 1.0),   // 60 
+	HSV(135.0, 0.29, 1.0),   // 61 
+	HSV(150.0, 0.29, 1.0),   // 62 
+	HSV(165.0, 0.29, 1.0),   // 63 
+	HSV(180.0, 0.29, 1.0),   // 64 
+	HSV(195.0, 0.29, 1.0),   // 65 
+	HSV(210.0, 0.29, 1.0),   // 66 
+	HSV(225.0, 0.29, 1.0),   // 67 
+
+	HSV(240.0, 1.0, 0.44),   // 68 
+	HSV(255.0, 1.0, 0.44),   // 69 
+	HSV(269.0, 1.0, 0.44),   // 6A 
+	HSV(285.0, 1.0, 0.44),   // 6B 
+	HSV(300.0, 1.0, 0.44),   // 6C 
+	HSV(315.0, 1.0, 0.44),   // 6D 
+	HSV(330.0, 1.0, 0.44),   // 6E 
+	HSV(345.0, 1.0, 0.44),   // 6F 
+	HSV(0.0,   1.0, 0.44),   // 70 
+	HSV(15.0,  1.0, 0.44),   // 71 
+	HSV(30.0,  1.0, 0.44),   // 72 
+	HSV(45.0,  1.0, 0.44),   // 73 
+	HSV(60.0,  1.0, 0.44),   // 74 
+	HSV(75.0,  1.0, 0.44),   // 75 
+	HSV(90.0,  1.0, 0.44),   // 76 
+	HSV(105.0, 1.0, 0.44),   // 77 
+	HSV(120.0, 1.0, 0.44),   // 78 
+	HSV(135.0, 1.0, 0.44),   // 79 
+	HSV(150.0, 1.0, 0.44),   // 7A 
+	HSV(165.0, 1.0, 0.44),   // 7B 
+	HSV(180.0, 1.0, 0.44),   // 7C 
+	HSV(195.0, 1.0, 0.44),   // 7D 
+	HSV(210.0, 1.0, 0.44),   // 7E 
+	HSV(225.0, 1.0, 0.44),   // 7F 
+
+	HSV(240.0, 0.52, 0.44),  // 80 
+	HSV(255.0, 0.52, 0.44),  // 81 
+	HSV(269.0, 0.52, 0.44),  // 82 
+	HSV(285.0, 0.52, 0.44),  // 83 
+	HSV(300.0, 0.52, 0.44),  // 84 
+	HSV(315.0, 0.52, 0.44),  // 85 
+	HSV(330.0, 0.52, 0.44),  // 86 
+	HSV(345.0, 0.52, 0.44),  // 87 
+	HSV(0.0,   0.52, 0.44),  // 88 
+	HSV(15.0,  0.52, 0.44),  // 89 
+	HSV(30.0,  0.52, 0.44),  // 8A 
+	HSV(45.0,  0.52, 0.44),  // 8B 
+	HSV(60.0,  0.52, 0.44),  // 8C 
+	HSV(75.0,  0.52, 0.44),  // 8D 
+	HSV(90.0,  0.52, 0.44),  // 8E 
+	HSV(105.0, 0.52, 0.44),  // 8F 
+	HSV(120.0, 0.52, 0.44),  // 90 
+	HSV(135.0, 0.52, 0.44),  // 91 
+	HSV(150.0, 0.52, 0.44),  // 92 
+	HSV(165.0, 0.52, 0.44),  // 93 
+	HSV(180.0, 0.52, 0.44),  // 94 
+	HSV(195.0, 0.52, 0.44),  // 95 
+	HSV(210.0, 0.52, 0.44),  // 96 
+	HSV(225.0, 0.52, 0.44),  // 97 
+
+	HSV(240.0, 0.29, 0.44),  // 98 
+	HSV(255.0, 0.29, 0.44),  // 99 
+	HSV(269.0, 0.29, 0.44),  // 9A 
+	HSV(285.0, 0.29, 0.44),  // 9B 
+	HSV(300.0, 0.29, 0.44),  // 9C 
+	HSV(315.0, 0.29, 0.44),  // 9D 
+	HSV(330.0, 0.29, 0.44),  // 9E 
+	HSV(345.0, 0.29, 0.44),  // 9F 
+	HSV(0.0,   0.29, 0.44),  // A0 
+	HSV(15.0,  0.29, 0.44),  // A1 
+	HSV(30.0,  0.29, 0.44),  // A2 
+	HSV(45.0,  0.29, 0.44),  // A3 
+	HSV(60.0,  0.29, 0.44),  // A4 
+	HSV(75.0,  0.29, 0.44),  // A5 
+	HSV(90.0,  0.29, 0.44),  // A6 
+	HSV(105.0, 0.29, 0.44),  // A7 
+	HSV(120.0, 0.29, 0.44),  // A8 
+	HSV(135.0, 0.29, 0.44),  // A9 
+	HSV(150.0, 0.29, 0.44),  // AA 
+	HSV(165.0, 0.29, 0.44),  // AB 
+	HSV(180.0, 0.29, 0.44),  // AC 
+	HSV(195.0, 0.29, 0.44),  // AD 
+	HSV(210.0, 0.29, 0.44),  // AE 
+	HSV(225.0, 0.29, 0.44),  // AF 
+
+	HSV(240.0, 1.0, 0.29),   // B0 
+	HSV(255.0, 1.0, 0.29),   // B1 
+	HSV(269.0, 1.0, 0.29),   // B2 
+	HSV(285.0, 1.0, 0.29),   // B3 
+	HSV(300.0, 1.0, 0.29),   // B4 
+	HSV(315.0, 1.0, 0.29),   // B5 
+	HSV(330.0, 1.0, 0.29),   // B6 
+	HSV(345.0, 1.0, 0.29),   // B7 
+	HSV(0.0,   1.0, 0.29),   // B8 
+	HSV(15.0,  1.0, 0.29),   // B9 
+	HSV(30.0,  1.0, 0.29),   // BA 
+	HSV(45.0,  1.0, 0.29),   // BB 
+	HSV(60.0,  1.0, 0.29),   // BC 
+	HSV(75.0,  1.0, 0.29),   // BD 
+	HSV(90.0,  1.0, 0.29),   // BE 
+	HSV(105.0, 1.0, 0.29),   // BF 
+	HSV(120.0, 1.0, 0.29),   // C0 
+	HSV(135.0, 1.0, 0.29),   // C1 
+	HSV(150.0, 1.0, 0.29),   // C2 
+	HSV(165.0, 1.0, 0.29),   // C3 
+	HSV(180.0, 1.0, 0.29),   // C4 
+	HSV(195.0, 1.0, 0.29),   // C5 
+	HSV(210.0, 1.0, 0.29),   // C6 
+	HSV(225.0, 1.0, 0.29),   // C7 
+
+	HSV(240.0, 0.52, 0.29),  // C8 
+	HSV(255.0, 0.52, 0.29),  // C9 
+	HSV(269.0, 0.52, 0.29),  // CA 
+	HSV(285.0, 0.52, 0.29),  // CB 
+	HSV(300.0, 0.52, 0.29),  // CC 
+	HSV(315.0, 0.52, 0.29),  // CD 
+	HSV(330.0, 0.52, 0.29),  // CE 
+	HSV(345.0, 0.52, 0.29),  // CF 
+	HSV(0.0,   0.52, 0.29),  // D0 
+	HSV(15.0,  0.52, 0.29),  // D1 
+	HSV(30.0,  0.52, 0.29),  // D2 
+	HSV(45.0,  0.52, 0.29),  // D3 
+	HSV(60.0,  0.52, 0.29),  // D4 
+	HSV(75.0,  0.52, 0.29),  // D5 
+	HSV(90.0,  0.52, 0.29),  // D6 
+	HSV(105.0, 0.52, 0.29),  // D7 
+	HSV(120.0, 0.52, 0.29),  // D8 
+	HSV(135.0, 0.52, 0.29),  // D9 
+	HSV(150.0, 0.52, 0.29),  // DA 
+	HSV(165.0, 0.52, 0.29),  // DB 
+	HSV(180.0, 0.52, 0.29),  // DC 
+	HSV(195.0, 0.52, 0.29),  // DD 
+	HSV(210.0, 0.52, 0.29),  // DE 
+	HSV(225.0, 0.52, 0.29),  // DF 
+
+	HSV(240.0, 0.29, 0.29),  // E0 
+	HSV(255.0, 0.29, 0.29),  // E1 
+	HSV(269.0, 0.29, 0.29),  // E2 
+	HSV(285.0, 0.29, 0.29),  // E3 
+	HSV(300.0, 0.29, 0.29),  // E4 
+	HSV(315.0, 0.29, 0.29),  // E5 
+	HSV(330.0, 0.29, 0.29),  // E6 
+	HSV(345.0, 0.29, 0.29),  // E7 
+	HSV(0.0,   0.29, 0.29),  // E8 
+	HSV(15.0,  0.29, 0.29),  // E9 
+	HSV(30.0,  0.29, 0.29),  // EA 
+	HSV(45.0,  0.29, 0.29),  // EB 
+	HSV(60.0,  0.29, 0.29),  // EC 
+	HSV(75.0,  0.29, 0.29),  // ED 
+	HSV(90.0,  0.29, 0.29),  // EE 
+	HSV(105.0, 0.29, 0.29),  // EF 
+	HSV(120.0, 0.29, 0.29),  // F0 
+	HSV(135.0, 0.29, 0.29),  // F1 
+	HSV(150.0, 0.29, 0.29),  // F2 
+	HSV(165.0, 0.29, 0.29),  // F3 
+	HSV(180.0, 0.29, 0.29),  // F4 
+	HSV(195.0, 0.29, 0.29),  // F5 
+	HSV(210.0, 0.29, 0.29),  // F6 
+	HSV(225.0, 0.29, 0.29),  // F7 
+
+	RGB(0x00, 0x00, 0x00),	 // F8 
+	RGB(0x00, 0x00, 0x00),	 // F9 
+	RGB(0x00, 0x00, 0x00),	 // FA 
+	RGB(0x00, 0x00, 0x00),	 // FB 
+	RGB(0x00, 0x00, 0x00),	 // FC 
+	RGB(0x00, 0x00, 0x00),	 // FD 
+	RGB(0x00, 0x00, 0x00),	 // FE 
+	RGB(0x00, 0x00, 0x00),	 // FF 
+};
+
+
+
+	//// Decent mapping of rough Composite color arctifacts to the stock VGA color table.
+	//0x00,	// 0 Black
+	//0x78,	// 1 Dark Green
+	//0x37,	// 2 Dark Blue
+	//0x35,	// 3 Light Blue
+	//0x26+0x48+2,	// 4 Red
+	//0x18,	// 5 Grey2
+	//0x3C,	// 6 Violet
+	//0x4E+1,	// 7 Blue
+	//0x73-1,	// 8 Brown
+	//0x30+2,	// 9 Green
+	//0x16,	// A Grey1
+	//0x32,	// B Light Green
+	//0x29,	// C Orange
+	//0x2C,	// D Yellow
+	//0x3C,	// E Pink
+	//0x0F,	// F White

@@ -1,0 +1,75 @@
+( RAW Data:OverlayHeader @F290-F2A4 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 7F8A 	Count: 002D 	Data Size: 0024 (Paragraphs)
+    On Disk Location 7F8A0-7FB70
+  Overlay Address: @F290 	Overlay DP: @F4CE
+    Load Location: @F290-@F560 	Load Length: 720
+    Data: @F290-@F4CE 	Data Length: 574
+    Junk: @F4CE-@F560 	Junk Length: 146
+  VOCABULARY Word: CE91 ICON-VOC
+   Dictionary Link 1: 0000
+   Dictionary Link 2: 0000
+   Dictionary Link 3: 0000
+   Dictionary Link 4: F496
+
+@F290 8A 7F 2D 00 90 F2 CE F4 91 CE 00 00 00 00 00 00   ..-.............
+@F2A0 96 F4 24 00                                       ..$.            
+)
+
+( @F2A4-F34D XT:F2A6 CFA:224C DLen: 167 STAGE: Words)
+: [LISTICONS:F2A6]
+ BLACK !COLOR 31 46 $0080 46 LLINE $0080 46 $0080 29 LLINE $0080 29 31 29 LLINE 31 
+ 29 31 46 LLINE 8 0 DO 
+  CMAP I 8 * + TILE-PT_ ! 33 I 12 * + 45 16 12 TILEFIL_ 
+ LOOP 
+ 35 25 POS. ." LO.....ELEVATION.....HI " ; 
+
+( @F34D-F3C4 XT:F34F CFA:224C DLen: 117 STAGE: Words)
+: [LISTICONS:F34F]
+ $00BE YBLT <!> 55 XBLT <!> BLACK !COLOR >3FONT ." ICON" 10 XBLT <+!> ." KEY" 10 
+ 15 $0096 15 LLINE 10 $00B2 $0096 $00B2 LLINE 10 15 10 $00B2 LLINE $0096 15 $0096 
+ $00B2 LLINE ; 
+
+( @F3C4-F3F0 XT:F3C6 CFA:224C DLen: 42 STAGE: Words)
+: [LISTICONS:F3C6]
+ 2 0 DO 
+  DUP I 9 * + DUP C@ ?>EGA COLOR <!> 1+ ABLT <!> BLT 
+ LOOP 
+ DROP ; 
+
+( @F3F0-F42A XT:F3F2 CFA:224C DLen: 56 STAGE: Words)
+: [LISTICONS:F3F2]
+ 10 YBLT <!> 27 XBLT <!> WHITE !COLOR ." (PRESS ANY KEY TO CONTINUE)" KEY DROP ; 
+
+( @F42A-F488 XT:F42C CFA:224C DLen: 92 STAGE: Words)
+: [LISTICONS:F42C]
+ >1FONT DO 
+  10 - DUP YBLT <!> 20 XBLT <!> 8 LBLT <!> 8 WBLT <!> 62 I @RECORD [LISTICONS:F3C6] 
+  12 XBLT <+!> BLACK !COLOR -2 YBLT <+!> 65 I @RECORD 27 TYPE 2 YBLT <+!> 
+ LOOP 
+ DROP ; 
+
+( @F488-F494 XT:F48A CFA:224C DLen: 10 STAGE: Words)
+: [LISTICONS:F48A]
+ GREY1 !COLOR SFILL [LISTICONS:F34F] ; 
+
+( @F494-F4CE XT:F49E CFA:224C DLen: 48 STAGE: Dictionaries)
+: ICONS
+ XORMODE OFF @DS BLTSEG ! [LISTICONS:F48A] $00B4 15 0 [LISTICONS:F42C] [LISTICONS:F3F2] 
+ [LISTICONS:F48A] $00B4 27 15 [LISTICONS:F42C] [LISTICONS:F2A6] [LISTICONS:F3F2] 
+ ; 
+
+( RAW Data:OverlayJunk @F4CE-F560 DLen: 146 STAGE: Dictionaries)
+ _overlayJunk 146 ALLOT ( @F4CE =
+@F4CE                                           49 43                 IC
+@F4D0 4F 4E 2D 56 4F 43 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ON-VOC__________
+@F4E0 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 56 45   ______________VE
+@F4F0 52 4C 41 59 20 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D   RLAY -----------
+@F500 28 72 66 67 31 31 73 65 70 38 35 29 0F 65 31 36   (rfg11sep85).e16
+@F510 33 36 53 AE 0B F5 12 07 13 FA 15 04 00 90 F4 90   36S.............
+@F520 16 53 45 45 44 45 52 5F 5F 5F 5F 5F 5F 5F 5F 5F   .SEEDER_________
+@F530 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+@F540 5F F1 F3 86 2E 53 54 4F 52 CD 4C 22 83 F4 36 F4   _....STOR.L"..6.
+@F550 FC F2 90 16 4D 41 50 53 2D 56 4F 43 5F 5F 5F 5F   ....MAPS-VOC____
+ )
+

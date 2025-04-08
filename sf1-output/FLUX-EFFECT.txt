@@ -1,0 +1,81 @@
+( RAW Data:OverlayHeader @F390-F3A4 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 89FC 	Count: 001D 	Data Size: 001A (Paragraphs)
+    On Disk Location 89FC0-8A190
+  Overlay Address: @F390 	Overlay DP: @F52F
+    Load Location: @F390-@F560 	Load Length: 464
+    Data: @F390-@F52F 	Data Length: 415
+    Junk: @F52F-@F560 	Junk Length: 49
+  VOCABULARY Word: C4BB FLUX-VOC
+   Dictionary Link 1: 0000
+   Dictionary Link 2: F4FE
+   Dictionary Link 3: 0000
+   Dictionary Link 4: 0000
+
+@F390 FC 89 1D 00 90 F3 2F F5 BB C4 00 00 FE F4 00 00   ....../.........
+@F3A0 00 00 1A 00                                       ....            
+)
+
+( Data @F3A4-F3D8 XT:F3A6 CFA:1D29 DLen: 50 STAGE: Words)
+CREATE [FLUX-EFFECT:F3A6] 50 ALLOT ( @F3A6 =
+@F3A6 3A 20 05 41 4C 4C 4F 54 20 4F 53 48 20 20 20 20   : .ALLOT OSH    
+@F3B6 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F3C6 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 41                  A
+@F3D6 57 4B                                             WK              
+ )
+
+( Data:Variable @F3D8-F3DC XT:F3DA CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FLUX-EFFECT:F3DA] ( @F3DA=$203A)
+
+( @F3DC-F3EE XT:F3DE CFA:224C DLen: 16 STAGE: Words)
+: [FLUX-EFFECT:F3DE]
+ * 0 2 RRND 2* 1- * ; 
+
+( @F3EE-F454 XT:F3F0 CFA:224C DLen: 100 STAGE: Words)
+: [FLUX-EFFECT:F3F0]
+ >R 5 20 RRND I C! 0 2 RRND DUP 0= 72 [FLUX-EFFECT:F3DE] -36 36 RRND + -36 MAX 35 
+ MIN I 1+ ! 120 [FLUX-EFFECT:F3DE] -60 60 RRND + -60 MAX 59 MIN R> 3 + ! ; 
+
+( @F454-F46E XT:F456 CFA:224C DLen: 24 STAGE: Words)
+: [FLUX-EFFECT:F456]
+ 50 0 DO 
+  [FLUX-EFFECT:F3A6] I + [FLUX-EFFECT:F3F0] 5 
+ +LOOP 
+ ; 
+
+( @F46E-F4CE XT:F470 CFA:224C DLen: 94 STAGE: Words)
+: [FLUX-EFFECT:F470]
+ [FLUX-EFFECT:F3A6] + >R I 3 + @ I C@ / 36 + 0 MAX 71 MIN I 1+ @ I C@ / 60 + 0 MAX 
+ 119 MIN LPLOT I C@ 1- ?DUP 0= IF 
+  R> [FLUX-EFFECT:F3F0] 
+ ELSE 
+  R> C! 
+ THEN 
+ ; 
+
+( @F4CE-F4FC XT:F4D0 CFA:224C DLen: 44 STAGE: Words)
+: [FLUX-EFFECT:F4D0]
+ [FLUX-EFFECT:F3DA] @ IF 
+  DARK 
+ THEN 
+ 50 0 DO 
+  I [FLUX-EFFECT:F470] -10 40 RRND TONE 5 
+ +LOOP 
+ V>DISPL__ ; 
+
+( @F4FC-F52F XT:F505 CFA:224C DLen: 42 STAGE: Dictionaries)
+: FLUX
+ >MAINVI__ [FLUX-EFFECT:F3DA] ON [FLUX-EFFECT:F456] GREY1 !COLOR 0 TONE BEEPON $0096 
+ 0 DO 
+  [FLUX-EFFECT:F4D0] 
+ LOOP 
+ BEEPOFF DARK V>DISPL__ >DISPLA_ ; 
+
+( RAW Data:OverlayJunk @F52F-F560 DLen: 49 STAGE: Dictionaries)
+ _overlayJunk 49 ALLOT ( @F52F =
+@F52F                                              46                  F
+@F530 4C 55 58 2D 56 4F 43 5F 5F 5F 5F 5F 5F 5F 5F 5F   LUX-VOC_________
+@F540 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 65   _______________e
+@F550 72 6C 61 79 20 53 75 66 66 69 78 2D 2D 2D 2D 2D   rlay Suffix-----
+ )
+

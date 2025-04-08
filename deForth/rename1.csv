@@ -1,0 +1,595 @@
+# OVERLAY, NAME/Address, Action, NewName, NewType, NewSize
+#	if Overlay is Blank, it will match entries in the main STARFLT file 
+#	if Overlay is * it will match entries in all files
+#
+#  if the name start with 0x.... it's treated as a hexadecimal address
+#  
+# Possible Actions are: Define, Rename, Resize, Retype.
+#  Actions can be combined with |
+#
+# For Define you must pass in the overlay, the address of the the word, and the new type. Name and size are optional
+#  If you do not pass in a name, it will generate one as normal.
+#  If you do not pass in a size, It will try to calculate it as normal.
+# for Rename you must pass in the new name.
+# For Retype you must pass in the new type (valid types are: Raw, RawCode, Word, and Data)
+# for Resize you must pass in the new size
+#
+# For Retype you can use : to provide a subtype, and additinal options
+#  NewType[:SubType[:Param0[:Param1]]]
+#   Valid subtypes are: Byte, Word, DoubleWord, 2Word, 2DoubleWord, ByteArray, WordArray, DoubleWordArray, IAddrArray, Case, CaseEX, ProbabilityArray, BLT
+#   Param0 and Param1 are optional for everything but BLT. For BLT they define the Width:Height of the image.
+#    For Word, DoubleWord, 2Word, 2DoubleWord, WordArray, DoubleWordArray, setting Param0 to none-zero will disable trying to match words/iaddrs
+#    For WordArray, DoubleWordArray, IArray, Setting Param1 to NonZero will use the first value as the length of the array
+#    true and false are valid for params and are treated as 0xFFFF and 0 respectivly.
+#
+# // and # can both be used to remark out a full line (partial remarks are not supported at this time)
+# Blank lines are ignored.
+#
+# the meta\RENAMES.txt file provides a template for all words that need to be renamed. 
+
+, 0x0000, Define, _psp, Raw, 256
+, 0x0701, Define, _saveUser, Raw, 116
+, 0x0775, Define, _savedForth, Raw, 10
+
+, 0x0100, Define, _entry, RawCode, 0
+, 0x0129, Define, _startptr, Raw, 0
+, 0x012B, Define, _useroffset, Raw, 0
+, 0x01B8, Define, _old27, Raw, 0
+, 0x01BC, Define, _old28, Raw, 0
+, 0x01C0, Define, _old0, Raw, 0
+, 0x01C4, Define, _div0-hdl, RawCode, 0
+, 0x01C7, Define, _div0-hdlAlt, RawCode, 0
+, 0x01D1, Define, _int0Test, RawCode, 0
+, 0x01CC, Define, _div0, RawCode, 0
+, 0x018E, Define, _clock-hdl, RawCode, 0
+, 0x08A0, Define, _ctrl-break-hdl, RawCode, 0
+, 0x1649, Define, _does, RawCode, 0
+  		  
+, [FORTHOUGHT:0343], Rename, _logo, , 0
+, [FORTHOUGHT:03C3], Rename, _ok, , 0
+//, [FORTHOUGHT:0800], Rename, [FORTHOUGHT:0800], , 0
+, [FORTHOUGHT:0AD9], Rename, _?space, , 0
+, [FORTHOUGHT:0B12], Rename, _?stack, , 0
+, [FORTHOUGHT:0B30], Rename, _?input, , 0
+, [FORTHOUGHT:0B5D], Rename, _not-recognized, , 0
+, [FORTHOUGHT:16CA], Rename, _int21, , 0
+, [FORTHOUGHT:16C8], Rename, _int_caller, , 0
+, [FORTHOUGHT:1A66], Rename, _forth_'links>, , 0
+//, [FORTHOUGHT:1A6E], Rename, [FORTHOUGHT:1A6E], , 0
+//, [FORTHOUGHT:1AC0], Rename, [FORTHOUGHT:1AC0], , 0
+//, [FORTHOUGHT:1FF4], Rename, [FORTHOUGHT:1FF4], , 0
+//, [FORTHOUGHT:2057], Rename, [FORTHOUGHT:2057], , 0
+//, [FORTHOUGHT:20C6], Rename, [FORTHOUGHT:20C6], , 0
+//, [FORTHOUGHT:21C9], Rename, [FORTHOUGHT:21C9], , 0
+, _blank, Rename, _?blk_input, , 0
+//, [FORTHOUGHT:270E], Rename, [FORTHOUGHT:270E], , 0
+, (DISKERROR?), Resize|Retype, , Data:WordArray, 40
+//, [FORTHOUGHT:3672], Rename, [FORTHOUGHT:3672], , 0
+//, [FORTHOUGHT:367F], Rename, [FORTHOUGHT:367F], , 0
+//, [FORTHOUGHT:36BB], Rename, [FORTHOUGHT:36BB], , 0
+//, [FORTHOUGHT:3715], Rename, [FORTHOUGHT:3715], , 0
+//, [FORTHOUGHT:3753], Rename, [FORTHOUGHT:3753], , 0
+//, [FORTHOUGHT:3783], Rename, [FORTHOUGHT:3783], , 0
+//, [FORTHOUGHT:37AF], Rename, [FORTHOUGHT:37AF], , 0
+//, [FORTHOUGHT:37D3], Rename, [FORTHOUGHT:37D3], , 0
+//, [FORTHOUGHT:3823], Rename, [FORTHOUGHT:3823], , 0
+//, [FORTHOUGHT:3849], Rename, [FORTHOUGHT:3849], , 0
+//, [FORTHOUGHT:3CEB], Rename, [FORTHOUGHT:3CEB], , 0
+//, [FORTHOUGHT:3D39], Rename, [FORTHOUGHT:3D39], , 0
+//, [FORTHOUGHT:43C1], Rename, [FORTHOUGHT:43C1], , 0
+, [STARFLT:44C2], Rename, _find_stara, , 0
+, [STARFLT:451A], Rename, _bios_floppy_count, , 0
+, [STARFLT:4536], Rename, _dos-valid-drive, , 0
+, [STARFLT:454E], Rename, _dos-current-drive, , 0
+//, [STARFLT:45C5], Rename, [STARFLT:45C5], , 0
+//, [STARFLT:45D9], Rename, [STARFLT:45D9], , 0
+, [STARFLT:47DE], Rename, _dos-remalloc, , 0
+//, [STARFLT:4866], Rename, [STARFLT:4866], , 0
+
+
+, :SIGNAT___, Rename, :SIGNATure, , 0
+, :TIMEST___, Rename, :TIMESTamp, , 0
+, :VERSIO_, Rename, :VERSIOn, , 0
+
+
+
+, FILE-NA__, Rename, FILE-NAme, , 0
+, FILE-TY__, Rename, FILE-disk, , 0
+, FILE-ST___, Rename, FILE-STart, , 0
+, FILE-EN_, Rename, FILE-ENd, , 0
+, FILE-#R__, Rename, FILE-#Rec, , 0
+, FILE-RL__, Rename, FILE-RLen, , 0
+, FILE-SL__, Rename, FILE-SLen, , 0
+
+
+, [STARFLT:8294], Rename, _ova@, , 0
+, OV-CANC__, Rename, OV-CANCle, , 0
+, [STARFLT:82E2], Rename, _overlay-buffer, , 0
+, [STARFLT:82EE], Rename, _?overlay-size, , 0
+, [STARFLT:8309], Rename, _?overlay-check, , 0
+, [STARFLT:8332], Rename, _load-overlay, , 0
+, SAVE-OV_____, Rename, SAVE-OVerlay, , 0
+, [STARFLT:8403], Rename, _swap-overlay-dp, , 0
+, OPEN-OV_____, Rename, OPEN-OVerlay, , 0
+, [STARFLT:847B], Rename, _overlay-calc-segs, , 0
+, CLOSE-O______, Rename, CLOSE-Overlay, , 0
+
+
+
+// Couple missing data words that can't be found directly due to 
+// Slightly different rules for the video overlays
+EGA, 0xE028, Define, , Data, 0
+EGA, 0xEC5A, Define, , Data, 0
+CGA, 0xE77D, Define, , Data, 0
+
+, LET-TH_________________, Rename, LET-THERE-BE-STARFLIGHT, , 0
+
+
+// LP-OV:ADDITIONS appears to be a probability array, but not made with the word... weird.
+LP-OV, ADDITIONS, Retype, , Data:ProbabilityArray, 0
+
+// CMAP triggers a word array, so just force it to be a byte array
+, CMAP, Retype, , Data:ByteArray, 0
+
+
+// Image data entries in code (Look for ABLT, WBLT, LBLT)
+,               [STARFLT:52E1],      Rename|ReType, _starflight_1logo,  Data:BLT:10:10, 0
+,               [STARFLT:52F1],      Rename|ReType, _button,            Data:BLT:8:9,   0
+*MAP-OV,        [*MAP-OV:E569],      Rename|ReType, _map_target,        Data:BLT:7:13,  0
+*MAP-OV,        [*MAP-OV:E577],      Rename|ReType, _map_pos,           Data:BLT:3:3,   0
+PORTMENU-OV,    [PORTMENU-OV:F0B5],  Rename|Retype, _player_icon,       Data:BLT:9:12,  0
+SCIENCE,        [SCIENCE:EA2E],      Rename|Retype, _ship_small,        Data:BLT:6:20,  0
+LAUNCH-OV,      [LAUNCH-OV:F1FC],    Rename|Retype, _airlock_logo,      Data:BLT:20:20, 0
+SHIPGRPH-OV,    [SHIPGRPH-OV:ED6F],  Rename|Retype, _shipgrap_left,     Data:BLT:32:17, 0
+SHIPGRPH-OV,    [SHIPGRPH-OV:EDB5],  Rename|Retype, _shipgrap_right,    Data:BLT:32:17, 0
+SHIPGRPH-OV,    [SHIPGRPH-OV:EDFB],  Rename|Retype, _shipgrap_body,     Data:BLT:40:10, 0
+SHIPGRPH-OV,    [SHIPGRPH-OV:EE2F],  Rename|Retype, _shipgrap_front,    Data:BLT:12:22, 0
+SHIPGRPH-OV,    [SHIPGRPH-OV:F11C],  Rename|Retype, _shipgrap_laser_l,  Data:BLT:9:3,   0
+SHIPGRPH-OV,    [SHIPGRPH-OV:F122],  Rename|Retype, _shipgrap_laser_r,  Data:BLT:9:3,   0
+SHIPGRPH-OV,    [SHIPGRPH-OV:F128],  Rename|Retype, _shipgrap_missles,  Data:BLT:8:8,   0
+SITE-OV,        [SITE-OV:F28C],      Rename|Retype, _site_pos,          Data:BLT:3:5,   0
+
+// Images, but not worth outputing, so not bothering to retype them.
+ASSCREW-OV,     [ASSCREW-OV:EABE],   Rename,        _hash_char,         Data:BLT:5:5,   0
+PERSONNEL-OV,   [PERSONNEL-OV:E5B0], Rename,        _hash_char,         Data:BLT:5:5,   0
+SHIPGRPH-OV,    [SHIPGRPH-OV:EE53],  Rename,        _shipgrap_pod,      Data:BLT:2:2,   0
+//SITE-OV,        WLON,                Retype,        ,                   Data:BLT:5:5,   0
+//SITE-OV,        ELON,                Retype,        ,                   Data:BLT:5:5,   0
+//SITE-OV,        NLAT,                Retype,        ,                   Data:BLT:4:5,   0
+//SITE-OV,        SLAT,                Retype,        ,                   Data:BLT:4:5,   0
+//MOVE-OV,        CBLT,                Retype,        ,                   Data:BLT:4:6,   0
+
+COMBAT-OV, [COMBAT-OV:E037], Retype, , Data:DoubleWord:true, 0
+COMM-OV, [COMM-OV:DC0B], Retype ,, Data:2Word, 0
+
+
+
+// Other codefields
+, [STARFLT:7221], Rename, _dir_field, , 0
+SENT-OV, [SENT-OV:EA67], Rename, _one_or_many, , 0
+COMBAT-OV, [COMBAT-OV:E20B], Rename, _combat_field, , 0
+DAMAGE-OV, [DAMAGE-OV:EE65], Rename, _?check, , 0
+HP-OV, [HP-OV:E2D7], Rename, _iaddr_array, , 0
+LP-OV, [LP-OV:E10C], Rename, _iaddr_array, , 0
+SENT-OV, [SENT-OV:E30A], Rename, _iaddr_array, , 0
+HP-OV, [HP-OV:E418], Rename, _word_array, , 0
+LP-OV, [LP-OV:E2C7], Rename, _word_array, , 0
+SENT-OV, [SENT-OV:E488], Rename, _word_array, , 0
+VITA-OV, [VITA-OV:E903], Rename, _word_array, , 0
+PLSET-OV, [PLSET-OV:EC9A], Rename, _word_array, , 0
+HP-OV, [HP-OV:E53D], Rename, _probability-array, , 0
+LP-OV, [LP-OV:E4D8], Rename, _probability-array, , 0
+SENT-OV, [SENT-OV:E94B], Rename, _probability-array, , 0
+STORM-OV, [STORM-OV:F0B4], Rename, _probability-array, , 0
+VITA-OV, [VITA-OV:E928], Rename, _probability-array, , 0
+
+
+HP-OV, [HP-OV:E52F], Rename, _probability-range, , 0
+LP-OV, [LP-OV:E4CA], Rename, _probability-range, , 0
+SENT-OV, [SENT-OV:E93D], Rename, _probability-range, , 0
+STORM-OV, [STORM-OV:F0A6], Rename, _probability-range, , 0
+VITA-OV, [VITA-OV:E91A], Rename, _probability-range, , 0
+
+// special strings for coms
+COMM-OV, [COMM-OV:E1E4], Rename, _adv_string, , 0
+COMM-OV, [COMM-OV:E2A5], Rename, _scroll, , 0
+COMM-OV, [COMM-OV:DA1F], Rename, _about, , 0
+COMM-OV, [COMM-OV:DA7D], Rename, _alien_name, , 0
+COMM-OV, [COMM-OV:DA8F], Rename, _alien_ship_name, , 0
+COMM-OV, [COMM-OV:DAA1], Rename, _cpt_name, , 0
+COMM-OV, [COMM-OV:DAB3], Rename, _ship_name, , 0
+COMM-OV, [COMM-OV:E2E9], Rename, _spl_alien_name, , 0
+COMM-OV, [COMM-OV:E2F7], Rename, _spl_alien_ship_name, , 0
+COMM-OV, [COMM-OV:E305], Rename, _spl_cpt_name, , 0
+COMM-OV, [COMM-OV:E313], Rename, _spl_ship_name, , 0
+COMM-OV, [COMM-OV:E3E6], Rename, _spl_about, , 0
+COMM-OV, [COMM-OV:E3C3], Rename, _spl_nothing, , 0
+
+COMM-OV, [COMM-OV:E365], Rename, _subj_your_race, , 0
+COMM-OV, [COMM-OV:E379], Rename, _subj_other_races, , 0
+COMM-OV, [COMM-OV:E38F], Rename, _subj_old_empire, , 0
+COMM-OV, [COMM-OV:E3AC], Rename, _subj_ancients, , 0
+
+// Huffman decompression 
+, [STARFLT:BB9C], Rename, _ht-offset, , 0
+, [STARFLT:BBA0], Rename, _input-pos, , 0
+, [STARFLT:BBA4], Rename, _output-len, , 0
+, [STARFLT:BBA8], Rename, _huff-bitmask, , 0
+, [STARFLT:BBAC], Rename, '_output, , 0
+, [STARFLT:BBB0], Rename, '_output-init, , 0
+, [STARFLT:BBB4], Rename, '_output-final, , 0
+, [STARFLT:BBB8], Rename, _adjust_offsets, , 0
+, [STARFLT:BBDE], Rename, _process_byte, , 0
+, [STARFLT:BC87], Rename, _output-init, , 0
+, [STARFLT:BC8F], Rename, _output, , 0
+, [STARFLT:BCA5], Rename, _output-final, , 0
+, [STARFLT:BCB1], Rename|Retype, _huff-table, Data:ByteArray, 0
+
+// Color
+, [STARFLT:4FBB], Rename, _cga_colorTable, , 0
+, [STARFLT:4FCD], Rename|Resize, _ega_colorTable, , 16
+, [STARFLT:4EDD], Rename, _colorTable, , 0
+, [STARFLT:602F], Rename, _colorTable!, , 0
+, [STARFLT:4EEF], Rename, _color_c, , 0
+
+// Fonts
+, [STARFLT:52CD], Rename, _1Font3Offset, , 0
+, [STARFLT:52D1], Rename, _1Font5Offset, , 0
+, [STARFLT:52D9], Rename, _FontWidthOfset, , 0
+, [STARFLT:52D5], Rename, _2FontOffset, , 0
+, [STARFLT:52DD], Rename, _3FontOffset, , 0
+, [STARFLT:93FA], Rename, _(1font), , 0
+, [STARFLT:953F], Rename, _(3font), , 0
+, [STARFLT:9460], Rename, _(upper_type), , 0
+
+// Opening Animations
+MUSIC, [MUSIC:E6BC], Rename, _pauseoff, , 0
+MUSIC, [MUSIC:E6D4], Rename, _xoff, , 0
+MUSIC, [MUSIC:E6E0], Rename, _mbuffoffset, , 0
+MUSIC, [MUSIC:E6DC], Rename, _mbuffseg, , 0
+MUSIC, [MUSIC:E6E4], Rename, _@mbuffseg, , 0
+MUSIC, [MUSIC:E6C0], Rename, _bCount, , 0
+MUSIC, [MUSIC:E6C4], Rename, _bLen, , 0
+MUSIC, [MUSIC:E6D0], Rename, _yoff, , 0
+MUSIC, [MUSIC:E82B], Rename, _phazes_anim, , 0
+MUSIC, [MUSIC:E928], Rename, _galaxy_anim, , 0
+
+// Opening song
+, [STARFLT:A235], Rename, _>musseg, , 0
+, [STARFLT:A23D], Rename, _musseg!, , 0
+, [STARFLT:A245], Rename, _musseg@, , 0
+, [STARFLT:A24D], Rename, _mussegC@, , 0
+, [STARFLT:A255], Rename, _mussegC!, , 0
+, [STARFLT:A25D], Rename, _sound_on, , 0
+, [STARFLT:A267], Rename, _sound_off, , 0
+MUSIC, 0xE300, Define, _theme_tune, Raw, 0
+MUSIC, 0xE3FF, Define, _theme_tune_int, RawCode, 0
+MUSIC, [MUSIC:E2CE], Rename, _>musseg, , 0
+MUSIC, [MUSIC:E2D6], Rename, _musseg!, , 0
+MUSIC, [MUSIC:E2DE], Rename, _musseg@, , 0
+MUSIC, [MUSIC:E2E6], Rename, _mussegC@, , 0
+MUSIC, [MUSIC:E2EE], Rename, _mussegC!, , 0
+
+
+, GLOBALS___, Rename, GLOBALSeed, , 0
+, (SYSTEM_, Rename, (SYSTEM), , 0
+, (PLANET_, Rename, (PLANET), , 0
+, P-PHRAS_, Rename, P-PHRASe, , 0
+
+// Planet Setup.
+PLSET-OV, [PLSET-OV:EC16], Rename, _planet_class, , 0
+PLSET-OV, [PLSET-OV:EC1A], Rename, _regions_class, , 0
+PLSET-OV, [PLSET-OV:EC1E], Rename, _creature_class, , 0
+PLSET-OV, [PLSET-OV:ECB1], Rename, _rand_256, , 0
+PLSET-OV, [PLSET-OV:ECBD], Rename, _rand_0-100, , 0
+PLSET-OV, [PLSET-OV:ECC9], Rename, _scale, , 0
+PLSET-OV, [PLSET-OV:ECDF], Rename, _rand-slip, , 0
+PLSET-OV, [PLSET-OV:ECE7], Rename, _rand-slip-scale, , 0
+PLSET-OV, [PLSET-OV:ECF8], Rename, _planet_num, , 0
+PLSET-OV, [PLSET-OV:ED2E], Rename, _orbit_num, , 0
+PLSET-OV, [PLSET-OV:ED8E], Rename, _set_seeds, , 0
+PLSET-OV, [PLSET-OV:EDF8], Rename, _elememnt_base, , 0
+PLSET-OV, [PLSET-OV:EE28], Rename, _rnd_element, , 0
+PLSET-OV, [PLSET-OV:EEE8], Rename, _star_temp, , 0
+PLSET-OV, [PLSET-OV:EF7A], Rename, _system_star_temp, , 0
+PLSET-OV, [PLSET-OV:EF8A], Rename, _orbit_temp, , 0
+PLSET-OV, [PLSET-OV:EFEA], Rename, _gen_temps, , 0
+PLSET-OV, [PLSET-OV:F03E], Rename, _gen_species_sizes, , 0
+PLSET-OV, TEMPHYDR_, Rename, TEMPHYDRo, , 0
+PLSET-OV, [PLSET-OV:F118], Rename, _adv_temp, , 0
+PLSET-OV, [PLSET-OV:F128], Rename, _hydro_for_temp, , 0
+PLSET-OV, [PLSET-OV:F162], Rename, _gen_hydro, , 0
+PLSET-OV, [PLSET-OV:F18E], Rename, _atmo_for_temp], , 0
+PLSET-OV, [PLSET-OV:F1C8], Rename, _gen_atmo, , 0
+PLSET-OV, [PLSET-OV:F234], Rename, _temp_low_range, , 0
+PLSET-OV, [PLSET-OV:F24E], Rename, _current_region, , 0
+PLSET-OV, [PLSET-OV:F280], Rename, _rug_check, , 0
+PLSET-OV, [PLSET-OV:F2D9], Rename, _gen_rug, , 0
+PLSET-OV, [PLSET-OV:F30A], Rename, _gas_phrase_color, , 0
+PLSET-OV, [PLSET-OV:F31A], Rename, _random_color, , 0
+PLSET-OV, [PLSET-OV:F389], Rename, _frozen_phrase_color, , 0
+PLSET-OV, [PLSET-OV:F3BA], Rename, _rock_phrase_color, , 0
+PLSET-OV, [PLSET-OV:F40E], Rename, _liqued_pharse_color, , 0
+PLSET-OV, [PLSET-OV:F41C], Rename, _molton_phrase_color, , 0
+PLSET-OV, [PLSET-OV:F434], Rename, _crystal_phrase_color, , 0
+PLSET-OV, (TERRAIN_, Rename, (TERRAIN), , 0
+PLSET-OV, [PLSET-OV:F46D], Rename, _set-planet-phrase-color, , 0
+PLSET-OV, PLAN-RUL__, Rename, PLAN-RULes, , 0
+PLSET-OV, [PLSET-OV:F094], Rename, _fixed_planet_setup, , 0
+PLSET-OV, [PLSET-OV:F086], Rename, _planet_setup, , 0
+PLSET-OV, [PLSET-OV:EDE2], Rename, _gen_mass, , 0
+PLSET-OV, [PLSET-OV:F06E], Rename, _gen_mineral_densty, , 0
+PLSET-OV, [PLSET-OV:EE46], Rename, _gen_elements, , 0
+PLSET-OV, [PLSET-OV:EE92], Rename, _gen_atom.density, , 0
+PLSET-OV, [PLSET-OV:F01C], Rename, _gen_atom.activity, , 0
+PLSET-OV, [PLSET-OV:F1E6], Rename, _gen_atmo_hydro, , 0
+
+// Lat Long calculations
+BEHAV-OV, [BEHAV-OV:F2CD], Rename, _pos>lat_long, , 0
+BEHAV-OV, [BEHAV-OV:F2F5], Rename, _lat_west_east, , 0
+BEHAV-OV, [BEHAV-OV:F2F5], Rename, _long_north_south, , 0
+CAPTAIN, [CAPTAIN:EBC0], Rename, _pos>lat_long, , 0
+CAPTAIN, [CAPTAIN:EBE8], Rename, _lat_west_east, , 0
+CAPTAIN, [CAPTAIN:EC0C], Rename, _long_north_south, , 0
+ITEMS-OV, [ITEMS-OV:E80E], Rename, _pos>lat_long, , 0
+ITEMS-OV, [ITEMS-OV:E836], Rename, _lat_west_east, , 0
+ITEMS-OV, [ITEMS-OV:E85A], Rename, _long_north_south, , 0
+MOVE-OV, [MOVE-OV:E724], Rename, _pos>lat_long, , 0
+MOVE-OV, [MOVE-OV:E74C], Rename, _lat_west_east, , 0
+MOVE-OV, [MOVE-OV:E770], Rename, _long_north_south, , 0
+TV-OV, [TV-OV:E943], Rename, _pos>lat_long, , 0
+TV-OV, [TV-OV:E96B], Rename, _lat_west_east, , 0
+TV-OV, [TV-OV:E98F], Rename, _long_north_south, , 0
+
+
+// AFIELDS
+, BOX-NAM_, Rename, BOX-NAMe, , 0
+
+, ELEM-NA__, Rename, ELEM-NAme, , 0
+*, [A-ELEMENT:0-16], Rename, ELEM-NAme, , 0
+
+, SPEC-NA__, Rename, SPEC-NAme, , 0
+
+
+// ARTIFACT
+*, ART-NAM_, Rename, ART-NAMe, , 0
+*, [A-ARTIFACT:24-25], Rename, _art_analyze_text_id, ,0
+*, [A-ARTIFACT:29-30], Rename, _art_analyzed, ,0 
+
+// ANALYZE-TEXT
+*, [A-ANALYZE-TEXT:0-190], Rename, _analyze_text, ,0 
+
+// BUTTONS
+*, [A-BUTTONS:24-36], Rename, _3btn, ,0
+*, [A-BUTTONS:36-48], Rename, _4btn, ,0
+
+// PLANET
+*, [A-PLANET:0-1], Rename, _p-mass_type, , 0
+*, [A-PLANET:1-2], Rename, _p-surface, , 0
+*, [A-PLANET:2-4], Rename, _p-mass, , 0
+*, [A-PLANET:4-5], Rename, P-LSEED, , 0		
+*, [A-PLANET:5-7], Rename, _p-region_seed, , 0
+*, [A-PLANET:7-9], Rename, _p-global_seed, , 0
+*, [A-PLANET:9-10], Rename, _p-mineral_densty, , 0
+*, [A-PLANET:10-11], Rename, _p-seed4, , 0
+*, [A-PLANET:11-12], Rename, _p-seed5, , 0
+*, [A-PLANET:12-13], Rename, _p-element1, , 0
+*, [A-PLANET:13-14], Rename, _p-element2, , 0
+*, [A-PLANET:14-15], Rename, _p-element3, , 0
+*, [A-PLANET:15-16], Rename, _p-temp-low, , 0
+*, [A-PLANET:15-17], Rename, _p-temp-low, , 0
+*, [A-PLANET:16-17], Rename, _p-temp-high, , 0
+*, [A-PLANET:17-19], Rename, ATMO.ACTIVity, , 0
+BEHAV-OV, ATMO.ACTIV___, Rename,  ATMO.ACTIVity, , 0
+*, [A-PLANET:19-20], Rename, _p-atom.density, , 0
+*, [A-PLANET:20-21], Rename,  _p-shape_max, , 0
+*, [A-PLANET:20-23], Rename,  _p-shape_max, , 0
+*, [A-PLANET:21-22], Rename,  _p-shape_min, , 0
+*, [A-PLANET:21-23], Rename,  _p-shape_min, , 0
+
+// COMPOUNDS
+*, [A-COMPOUNDS:0-3] , Rename, _compound_iaddr, , 0
+
+// CREATURE
+*, [A-CREATURE:4-7], Rename, SHAPE, , 0 
+*, [A-CREATURE:51-52], Rename, STUN.EFFECt, , 0
+*, STUN.EFFEC_, Rename, STUN.EFFECt, , 0
+*, [A-CREATURE:146-149], Rename, RESEMBLes, , 01
+*, RESEMBL__, Rename, RESEMBLes, , 01
+
+// CREWMEMBER
+*, [A-CREWMEMBER:0-8], Rename, _cm-species, , 0
+*, [A-CREWMEMBER:8-9], Rename, _cm-inital-stats, , 0
+*, [A-CREWMEMBER:13-14], Rename, _cm-max-stats, , 0
+*, [A-CREWMEMBER:18-19], Rename, _cm-learning-rate, , 0
+*, [A-CREWMEMBER:19-20], Rename, _cm-durability, , 0
+
+// PSTATS
+*, [A-PSTATS:0-9], Rename, _ps-type, , 0
+*, [A-PSTATS:9-10], Rename, _ps-avg-height, , 0
+*, [A-PSTATS:10-11], Rename, _ps-avg-weight, , 0
+
+// VESSEL
+* , [A-VESSEL:0-1], Rename, _ves_owner, , 0
+* , [A-VESSEL:4-5], Rename, _ves_class, , 0
+* , [A-VESSEL:5-6], Rename, _ves_power, , 0
+* , [A-VESSEL:6-7], Rename, _ves_speed, , 0
+* , [A-VESSEL:7-9], Rename, _ves_mass, , 0
+* , [A-VESSEL:11-12], Rename, _ves_rate-of-fire, , 0
+* , [A-VESSEL:12-14], Rename, _ves_armor, , 0
+* , [A-VESSEL:12-16], Rename, _ves_armor-shield, , 0
+* , [A-VESSEL:14-16], Rename, _ves_shield, , 0
+* , [A-VESSEL:16-17], Rename, _ves_missle_hit, , 0
+* , [A-VESSEL:18-19], Rename, _ves_laser_hit, , 0
+* , [A-VESSEL:18-21], Rename, _ves_laser_hit-class, , 0
+* , [A-VESSEL:19-20], Rename, _ves_laser-class, , 0
+* , [A-VESSEL:20-21], Rename, _ves_missle-class, , 0
+* , [A-VESSEL:21-22], Rename, _ves_plasma-class, , 0
+* , [A-VESSEL:21-28], Rename, _ves_elements-debris, , 0
+* , [A-VESSEL:24-25], Rename, _ves_endurium-debris, , 0
+* , [A-VESSEL:28-29], Rename, _ves_directional, , 0
+* , [A-VESSEL:29-71], Rename, _ves_sensor-data, , 0
+
+
+
+// REGIONS
+*, [A-REGIONS:2-4], Rename, _r-seed-adjust, , 0
+*, [A-REGIONS:4-7], Rename, _r-name, , 0
+//*, [A-REGIONS:7-15], Rename, _r-v07, , 0
+//*, [A-REGIONS:15-16], Rename, _r-v15, , 0
+//*, [A-REGIONS:16-17], Rename, _r-v16, , 0
+//*, [A-REGIONS:17-18], Rename, _r-v17, , 0
+//*, [A-REGIONS:18-19], Rename, _r-v18, , 0
+//*, [A-REGIONS:19-27], Rename, _r-v19, , 0
+//*, [A-REGIONS:27-28], Rename, _r-v27, , 0
+
+
+// IFIELDS - General
+, INST-SI_, Rename, INST-SIb, , 0
+, INST-PR__, Rename, INST-PRev, , 0
+, INST-OF_, Rename, INST-OFf, , 0
+, INST-CL___, Rename, INST-CLass, , 0
+, INST-SP_____, Rename, INST-Subclass, , 0
+, INST-QT_, Rename, INST-QTy, , 0
+, INST-VA_, Rename, INST-VAl, , 0
+, INST-DA__, Rename, INST-DAte, , 0
+, @INST-C____, Rename, @INST-Class, , 0
+, @INST-S______, Rename, @INST-Subclass, , 0
+, !INST-S______, Rename, !INST-Subclass, , 0
+
+// BOX
+*, [I-BOX:17-19],	Rename, _tv-hold, , 0
+*, [A-BOX:17-19],	Rename, _tv-hold, , 0
+
+// FLUX-NODE
+*,	[I-FLUX-NODE:11-13], Rename, _flux_orgin_x, , 0
+*,	[I-FLUX-NODE:17-19], Rename, _flux_orgin_y, , 0
+
+
+// CAPT-LOG
+*, [I-CAPT-LOG:11-47], Rename, _capt_log_entry, , 0
+
+
+// STRING
+* , [I-STRING:11-266], Rename, _string_data, , 0
+
+// ENCOUNTER
+* , [I-ENCOUNTER:11-12], Rename, _enc_homeword, , 0
+* , [I-ENCOUNTER:17-18], Rename, _enc_distance-x, , 0
+* , [I-ENCOUNTER:18-19], Rename, _enc_distnace-y, , 0
+* , [I-ENCOUNTER:19-20], Rename, _enc_fleet-size, , 0
+* , [I-ENCOUNTER:20-21], Rename, _enc_ships-destroyed, , 0
+* , [I-ENCOUNTER:21-22], Rename, _enc_max-ship-per-ecounter, , 0
+* , [I-ENCOUNTER:22-23], Rename, _enc_class-0-vessel, , 0
+* , [I-ENCOUNTER:23-24], Rename, _enc_class-1-vessel, , 0
+* , [I-ENCOUNTER:24-25], Rename, _enc_class-2-vessel, , 0
+* , [I-ENCOUNTER:25-26], Rename, _enc_class-3-vessel, , 0
+* , [I-ENCOUNTER:27-28], Rename, _enc_enabled, , 0
+
+// NOTICE
+* , [I-NOTICE:10-12], Rename, _notice_stardate, , 0
+
+// CREWMEMBER
+*, [I-CREWMEMBER:11-26], Rename, _cm_name, , 0
+*, [I-CREWMEMBER:26-41], Rename, _cm_stats, , 0
+*, [I-CREWMEMBER:26-27], Rename, _cm_^sci, , 0
+*, [I-CREWMEMBER:26-28], Rename, _cm_^sci, , 0
+*, [I-CREWMEMBER:27-28], Rename, ^NAV, , 0
+*, [I-CREWMEMBER:28-29], Rename, _cm_^eng, , 0
+*, [I-CREWMEMBER:29-30], Rename, _cm_^com, , 0
+*, [I-CREWMEMBER:30-31], Rename, _cm_^med, , 0
+*, [I-CREWMEMBER:30-31], Rename, _cm_heath, , 0
+*, [I-CREWMEMBER:32-34], Rename, _cm_status, , 0
+*, [I-CREWMEMBER:34-35], Rename, _cm_index, , 0
+
+// ASSIGN-CREW
+*, [I-ASSIGN-CREW:17-35], Rename, _ac_roles, , 0
+*, [I-ASSIGN-CREW:17-20], Rename, _ac_captian, , 0
+*, [I-ASSIGN-CREW:20-23], Rename, _ac_science, , 0
+*, [I-ASSIGN-CREW:23-26], Rename, _ac_navigator, , 0
+*, [I-ASSIGN-CREW:26-29], Rename, _ac_enginer, , 0
+*, [I-ASSIGN-CREW:29-32], Rename, _ac_communication, , 0
+*, [I-ASSIGN-CREW:32-35], Rename, _ac_doctor, , 0
+
+// BANK
+*, [I-BANK:11-15], Rename, _bank_pre_transaction_balance, , 0
+*, [I-BANK:15-19], Rename, _bank_balance, , 0
+*, [I-BANK:19-20], Rename, _bank_transaction, , 0
+
+// BANK-TRANS
+*, [I-BANK-TRANS:11-15], Rename, _bt_ammount, , 0
+*, [I-BANK-TRANS:15-17], Rename, _bt_stardate, , 0
+
+// PHRASECONTRL
+* , [I-PHRASECONTRL:11-12], Rename, _phrase_context, , 0
+* , [I-PHRASECONTRL:12-13], Rename, _phrase_orig_posture_type, , 0
+* , [I-PHRASECONTRL:13-14], Rename, _phrase_sent_count, , 0
+* , [I-PHRASECONTRL:14-15], Rename, _phrase_posture_always, , 0
+* , [I-PHRASECONTRL:15-16], Rename, _phrase_posture_no, , 0
+* , [I-PHRASECONTRL:16-17], Rename, _phrase_posture_yes, , 0
+
+// ORIGINATOR
+* , [I-ORIGINATOR:11-12], Rename, _originator_color, , 0
+* , [I-ORIGINATOR:12-13], Rename, _originator_talk_chance, , 0
+* , [I-ORIGINATOR:13-14], Rename, _originator_flag, , 0
+* , [I-ORIGINATOR:18-19], Rename, _originator_inital_posture, , 0
+* , [I-ORIGINATOR:19-20], Rename, _originator_friendly_threshold, , 0
+* , [I-ORIGINATOR:20-21], Rename, _originator_neutral_threshold, , 0
+* , [I-ORIGINATOR:21-22], Rename, _originator_hostile_threshold, , 0
+* , [I-ORIGINATOR:22-23], Rename, _originator_obsequious, , 0
+* , [I-ORIGINATOR:23-24], Rename, _originator_friendly, , 0
+* , [I-ORIGINATOR:24-25], Rename, _originator_hostile, , 0
+* , [I-ORIGINATOR:25-26], Rename, _originator_max_words, , 0
+* , [I-ORIGINATOR:26-29], Rename, _originator_words, , 0
+* , [I-ORIGINATOR:29-30], Rename, _originator_picture, , 0
+
+// STARSYSTEM
+*, [I-STARSYSTEM:11-13], Rename, _star_flare_time, , 0
+*, [I-STARSYSTEM:11-20], Rename, _star_flare_time, , 0
+*, [I-STARSYSTEM:17-18], Rename, _star_orbits, , 0
+*, [I-STARSYSTEM:18-19], Rename, _star_reports, , 0
+
+// SHIP
+*, [I-SHIP:17-19], Rename, _ship_armor_class, , 0
+*, [I-SHIP:17-18], Rename, _ship_armor_class-L, , 0
+*, [I-SHIP:18-19], Rename, _ship_armor_class-H, , 0
+
+*, [I-SHIP:19-21], Rename, _ship_engine_class, , 0
+*, [I-SHIP:19-20], Rename, _ship_engine_class-L, , 0
+*, [I-SHIP:20-21], Rename, _ship_engine_class-H, , 0
+
+*, [I-SHIP:21-23], Rename, _ship_sensors, , 0
+*, [I-SHIP:21-22], Rename, _ship_sensors-L, , 0
+*, [I-SHIP:22-23], Rename, _ship_sensors-H, , 0
+
+*, [I-SHIP:23-25], Rename, _ship_comm, , 0
+*, [I-SHIP:23-24], Rename, _ship_comm-L, , 0
+*, [I-SHIP:24-25], Rename, _ship_comm-H, , 0
+
+*, [I-SHIP:25-27], Rename, _ship_shield_class, , 0
+*, [I-SHIP:25-26], Rename, _ship_shield_class-L, , 0
+*, [I-SHIP:26-27], Rename, _ship_shield_class-H, , 0
+
+*, [I-SHIP:27-29], Rename, _ship_missile_class, , 0
+*, [I-SHIP:27-28], Rename, _ship_missile_class-L, , 0
+*, [I-SHIP:28-29], Rename, _ship_missile_class-H, , 0
+
+*, [I-SHIP:29-31], Rename, _ship_laser_class, , 0
+*, [I-SHIP:29-30], Rename, _ship_laser_class-L, , 0
+*, [I-SHIP:30-31], Rename, _ship_laser_class-H, , 0
+
+*, [I-SHIP:31-33], Rename, _ship_pods, , 0
+*, [I-SHIP:37-39], Rename, _ship_acceleration, , 0
+*, [I-SHIP:39-41], Rename, _ship_mass, , 0
+*, [I-SHIP:41-48], Rename, _ship_repairs, , 0
+*, [I-SHIP:48-50], Rename, _ship_shields, , 0
+*, [I-SHIP:50-52], Rename, _ship_armor, , 0
+*, [I-SHIP:52-67], Rename, %name, , 0
+*, [I-SHIP:67-69], Rename, _ship_cargo, , 0
+*, [I-SHIP:69-73], Rename, _ship_flags, , 0
+
+
+*, [I-SHIP:73-74], Rename, _ship_icon, , 0
+
+
+

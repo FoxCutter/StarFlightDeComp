@@ -1,0 +1,289 @@
+( RAW Data:OverlayHeader @EFC0-EFD4 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 96A3 	Count: 005A 	Data Size: 0057 (Paragraphs)
+    On Disk Location 96A30-96FD0
+  Overlay Address: @EFC0 	Overlay DP: @F52E
+    Load Location: @EFC0-@F560 	Load Length: 1440
+    Data: @EFC0-@F52E 	Data Length: 1390
+    Junk: @F52E-@F560 	Junk Length: 50
+  VOCABULARY Word: D0FB STP-VOC
+   Dictionary Link 1: EFDF
+   Dictionary Link 2: 0000
+   Dictionary Link 3: 0000
+   Dictionary Link 4: F4ED
+
+@EFC0 A3 96 5A 00 C0 EF 2E F5 FB D0 DF EF 00 00 00 00   ..Z.............
+@EFD0 ED F4 57 00                                       ..W.            
+)
+
+( Data:IField @EFD4-EFD9 XT:EFD6 CFA:744D DLen: 3 STAGE: Words)
+20 20 1 IFIELD _ship_engine_class-H ( SHIP )
+
+( Data:Variable @EFD9-EFDD XT:EFDB CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [STP-OV:EFDB] ( @EFDB=$203A)
+
+( @EFDD-F030 XT:EFE8 CFA:224C DLen: 72 STAGE: Dictionaries)
+: SIC'EM
+ *SHIP >C+S _ship_engine_class-H C@ DUP $0080 < [STP-OV:EFDB] ! $0080 OR _ship_engine_class-H 
+ C! ICLOSE YABS @ XABS @ *ARREST >C+S INST-X D! ICLOSE *ARREST ' >NEST ( $CC1A ) 
+ MODULE ?AUTO @ NOT IF 
+  NOT 
+ THEN 
+ ; 
+
+( Data:Variable @F030-F034 XT:F032 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [STP-OV:F032] ( @F032=9)
+
+( Data:Variable @F034-F038 XT:F036 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [STP-OV:F036] ( @F036=11)
+
+( Data:Variable @F038-F03C XT:F03A CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [STP-OV:F03A] ( @F03A=8)
+
+( Data:Variable @F03C-F040 XT:F03E CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [STP-OV:F03E] ( @F03E=$203A)
+
+( Data @F040-F046 XT:F042 CFA:1D29 DLen: 4 STAGE: Words)
+CREATE [STP-OV:F042] 4 ALLOT ( @F042 =
+@F042 56 3A 20 4F                                       V: O            
+ )
+
+( @F046-F086 XT:F048 CFA:224C DLen: 62 STAGE: Words)
+: [STP-OV:F048]
+ [STP-OV:F032] @ [STP-OV:F036] @ 2DUP < IF 
+  - 24 + 
+ ELSE 
+  - 
+ THEN 
+ DUP 1+ * [STP-OV:F03A] @ DUP 1- * + 37 + $0133 MOD ; 
+
+( @F086-F092 XT:F088 CFA:224C DLen: 10 STAGE: Memory)
+: [STP-OV:F088]
+ " VELOX" ; 
+
+( @F092-F09F XT:F094 CFA:224C DLen: 11 STAGE: Memory)
+: [STP-OV:F094]
+ " THRYNN" ; 
+
+( @F09F-F0AC XT:F0A1 CFA:224C DLen: 11 STAGE: Memory)
+: [STP-OV:F0A1]
+ " ELOWAN" ; 
+
+( @F0AC-F0BA XT:F0AE CFA:224C DLen: 12 STAGE: Memory)
+: [STP-OV:F0AE]
+ " MECHANS" ; 
+
+( @F0BA-F0C7 XT:F0BC CFA:224C DLen: 11 STAGE: Memory)
+: [STP-OV:F0BC]
+ " SPEMIN" ; 
+
+( @F0C7-F0D7 XT:F0C9 CFA:224C DLen: 14 STAGE: Memory)
+: [STP-OV:F0C9]
+ " GAZURTOID" ; 
+
+( @F0D7-F0E3 XT:F0D9 CFA:224C DLen: 10 STAGE: Memory)
+: [STP-OV:F0D9]
+ " UHLEK" ; 
+
+( @F0E3-F0F3 XT:F0E5 CFA:224C DLen: 14 STAGE: Memory)
+: [STP-OV:F0E5]
+ " MINSTRELS" ; 
+
+( @F0F3-F104 XT:F0F5 CFA:224C DLen: 15 STAGE: Memory)
+: [STP-OV:F0F5]
+ " MYSTERIONS" ; 
+
+( @F104-F10F XT:F106 CFA:224C DLen: 9 STAGE: Memory)
+: [STP-OV:F106]
+ " ARTH" ; 
+
+( @F10F-F122 XT:F111 CFA:224C DLen: 17 STAGE: Memory)
+: [STP-OV:F111]
+ " THOSS/ELERAN" ; 
+
+( @F122-F138 XT:F124 CFA:224C DLen: 20 STAGE: Memory)
+: [STP-OV:F124]
+ " HARRISON'S BASE" ; 
+
+( @F138-F145 XT:F13A CFA:224C DLen: 11 STAGE: Memory)
+: [STP-OV:F13A]
+ " SPHEXI" ; 
+
+( @F145-F152 XT:F147 CFA:224C DLen: 11 STAGE: Memory)
+: [STP-OV:F147]
+ " SPEWTA" ; 
+
+( @F152-F15E XT:F154 CFA:224C DLen: 10 STAGE: Memory)
+: [STP-OV:F154]
+ " EARTH" ; 
+
+( @F15E-F16D XT:F160 CFA:224C DLen: 13 STAGE: Memory)
+: [STP-OV:F160]
+ " MARDAN 2" ; 
+
+( @F16D-F180 XT:F16F CFA:224C DLen: 17 STAGE: Memory)
+: [STP-OV:F16F]
+ " NEW SCOTLAND" ; 
+
+( @F180-F18E XT:F182 CFA:224C DLen: 12 STAGE: Memory)
+: [STP-OV:F182]
+ " KOANN 3" ; 
+
+( @F18E-F19B XT:F190 CFA:224C DLen: 11 STAGE: Memory)
+: [STP-OV:F190]
+ " HEAVEN" ; 
+
+( @F19B-F1B3 XT:F19D CFA:224C DLen: 22 STAGE: Memory)
+: [STP-OV:F19D]
+ " UHLEK BRAIN WORLD" ; 
+
+( @F1B3-F1BE XT:F1B5 CFA:224C DLen: 9 STAGE: Memory)
+: [STP-OV:F1B5]
+ " GAAL" ; 
+
+( @F1BE-F1CC XT:F1C0 CFA:224C DLen: 12 STAGE: Memory)
+: [STP-OV:F1C0]
+ " AKTERON" ; 
+
+( @F1CC-F1DA XT:F1CE CFA:224C DLen: 12 STAGE: Memory)
+: [STP-OV:F1CE]
+ " NIRVANA" ; 
+
+( @F1DA-F1EA XT:F1DC CFA:224C DLen: 14 STAGE: Memory)
+: [STP-OV:F1DC]
+ " THE STAFF" ; 
+
+( @F1EA-F1FA XT:F1EC CFA:224C DLen: 14 STAGE: Memory)
+: [STP-OV:F1EC]
+ " THE CROSS" ; 
+
+( @F1FA-F20B XT:F1FC CFA:224C DLen: 15 STAGE: Memory)
+: [STP-OV:F1FC]
+ " PYTHAGORAS" ; 
+
+( @F20B-F221 XT:F20D CFA:224C DLen: 20 STAGE: Memory)
+: [STP-OV:F20D]
+ " THE 4 SEEDLINGS" ; 
+
+( @F221-F22F XT:F223 CFA:224C DLen: 12 STAGE: Memory)
+: [STP-OV:F223]
+ " THE AXE" ; 
+
+( @F22F-F24A XT:F231 CFA:224C DLen: 25 STAGE: Memory)
+: [STP-OV:F231]
+ " CITY OF THE ANCIENTS" ; 
+
+( @F24A-F255 XT:F24C CFA:224C DLen: 9 STAGE: Memory)
+: [STP-OV:F24C]
+ " MARS" ; 
+
+( @F255-F26A XT:F257 CFA:224C DLen: 19 STAGE: Memory)
+: [STP-OV:F257]
+ " CRYSTAL PLANET" ; 
+
+( @F26A-F275 XT:F26C CFA:224C DLen: 9 STAGE: Memory)
+: [STP-OV:F26C]
+ " ELAN" ; 
+
+( @F275-F285 XT:F277 CFA:224C DLen: 14 STAGE: Memory)
+: [STP-OV:F277]
+ " VOTIPUTOX" ; 
+
+( Data @F285-F299 XT:F287 CFA:1D29 DLen: 18 STAGE: Words)
+CREATE [STP-OV:F287] 18 ALLOT ( @F287 =
+@F287 88 F0 94 F0 A1 F0 AE F0 BC F0 C9 F0 D9 F0 E5 F0   ................
+@F297 F5 F0                                             ..              
+ )
+
+( Data @F299-F2CB XT:F29B CFA:1D29 DLen: 48 STAGE: Words)
+CREATE [STP-OV:F29B] 48 ALLOT ( @F29B =
+@F29B 06 F1 11 F1 24 F1 3A F1 47 F1 54 F1 60 F1 6F F1   ....$.:.G.T.`.o.
+@F2AB 82 F1 90 F1 9D F1 B5 F1 C0 F1 CE F1 DC F1 EC F1   ................
+@F2BB FC F1 0D F2 23 F2 31 F2 4C F2 57 F2 6C F2 77 F2   ....#.1.L.W.l.w.
+ )
+
+( Data @F2CB-F2E5 XT:F2CD CFA:1D29 DLen: 24 STAGE: Words)
+CREATE [STP-OV:F2CD] 24 ALLOT ( @F2CD =
+@F2CD 0C 0F 1D 01 17 06 0B 25 2B 2A 2E 07 04 12 1E 0E   .......%+*......
+@F2DD 1B 18 03 10 0A 05 13 02                           ........        
+ )
+
+( @F2E5-F32B XT:F2E7 CFA:224C DLen: 68 STAGE: Words)
+: [STP-OV:F2E7]
+ [STP-OV:F032] @ 2* [STP-OV:F29B] + @EXECUTE .TTY [STP-OV:F036] @ [STP-OV:F2CD] + 
+ C@ RECORD# ! 28 FILE# ! ART-NAMe 24 46 -XTRAIL___ .TTY SET-CUR____ [STP-OV:F03A] 
+ @ 2* [STP-OV:F287] + @EXECUTE .TTY ; 
+
+( @F32B-F349 XT:F32D CFA:224C DLen: 28 STAGE: Words)
+: [STP-OV:F32D]
+ ."  SECURITY CODE FOR:" [STP-OV:F2E7] TTY-SCR___ ; 
+
+( @F349-F39E XT:F34B CFA:224C DLen: 83 STAGE: Words)
+: [STP-OV:F34B]
+ " CODE: " .TTY -1 -AIN ! 10 ' OV#IN$ ( $BD5B ) MODULE NULL ROT COUNT OVER + SWAP 
+ DO 
+  SWAP 10 U* ROT 10 * + I C@ 48 - 0 D+ 
+ LOOP 
+ [STP-OV:F042] D! ; 
+
+( @F39E-F3E2 XT:F3A0 CFA:224C DLen: 66 STAGE: Words)
+: [STP-OV:F3A0]
+ TIME 2+ @ GLOBALSeed ! 0 24 RRND [STP-OV:F032] ! 0 24 RRND [STP-OV:F036] ! 0 9 RRND 
+ [STP-OV:F03A] ! CTINIT " REQUEST" .TTY [STP-OV:F32D] TTY-SCR___ [STP-OV:F34B] ; 
+
+( @F3E2-F43F XT:F3E4 CFA:224C DLen: 91 STAGE: Words)
+: [STP-OV:F3E4]
+ CTINIT " VERIFYING" .TTY [STP-OV:F32D] " CODE ENTERED: " .TTY [STP-OV:F042] 2@ D. 
+ " CONFIRM [N Y]" .TTY 'KEY DROP BEGIN 
+  XYSCAN ?TRIG IF 
+   BEEP 
+  THEN 
+  SWAP DROP ?DUP 
+ UNTIL 
+ 1 = ; 
+
+( @F43F-F458 XT:F441 CFA:224C DLen: 23 STAGE: Words)
+: [STP-OV:F441]
+ CTINIT " RE-ENTER" .TTY [STP-OV:F32D] TTY-SCR___ [STP-OV:F34B] ; 
+
+( @F458-F48D XT:F45A CFA:224C DLen: 51 STAGE: Words)
+: [STP-OV:F45A]
+ CTINIT CTERASE " ARE YOU SURE? BETTER DOUBLE CHECK!" .TTY ' USER:LFALEN ( $07D0 ) 
+ MS ; 
+
+( @F48D-F4B7 XT:F48F CFA:224C DLen: 40 STAGE: Words)
+: [STP-OV:F48F]
+ BEGIN 
+  [STP-OV:F3E4] NOT WHILE 
+  [STP-OV:F441] 
+ REPEAT 
+ [STP-OV:F048] [STP-OV:F042] 2@ $0133 U/MOD DROP = ?SECURE @ NOT AND ; 
+
+( @F4B7-F4EB XT:F4BF CFA:224C DLen: 44 STAGE: Dictionaries)
+: STP
+ [STP-OV:F3A0] [STP-OV:F48F] NOT IF 
+  ?SECURE @ NOT IF 
+   [STP-OV:F45A] [STP-OV:F48F] NOT IF 
+    STARDAT_ @ 4 + ?SECURE ! 
+   THEN 
+  THEN 
+ THEN 
+ ; 
+
+( @F4EB-F52E XT:F4F4 CFA:224C DLen: 58 STAGE: Dictionaries)
+: 2NDS
+ [STP-OV:F3A0] [STP-OV:F048] [STP-OV:F042] 2@ $0133 U/MOD DROP = IF 
+  ?SECURE OFF CTERASE [STP-OV:EFDB] @ IF 
+   *SHIP >C+S _ship_engine_class-H C@ 127 AND _ship_engine_class-H C! ICLOSE 
+  THEN 
+ THEN 
+ ; 
+
+( RAW Data:OverlayJunk @F52E-F560 DLen: 50 STAGE: Dictionaries)
+ _overlayJunk 50 ALLOT ( @F52E =
+@F52E                                           53 54                 ST
+@F530 50 2D 56 4F 43 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   P-VOC___________
+@F540 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 20 66   ______________ f
+@F550 6F 72 20 53 54 50 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D   or STP----------
+ )
+

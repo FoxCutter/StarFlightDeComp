@@ -1,0 +1,45 @@
+Color Map #0:  Type: RGB  Planet: Gas
+  55, 11, BB, DD, 99, 88, AA, FF
+
+Color Map #1:  Type: RGB  Planet: Liquid
+  55, CC, CC, BB, 99, 88, AA, FF
+
+Color Map #2:  Type: RGB  Planet: Frozen
+  DD, 66, 77, 77, DD, DD, FF, FF
+
+Color Map #3:  Type: RGB  Planet: Molton
+  AA, DD, DD, CC, CC, 66, 66, 22
+
+Color Map #4:  Type: RGB  Planet: Rock
+  AA, 22, 22, 66, 66, 33, 33, CC
+
+Color Map #5:  Type: Composite  Planet: Gas
+  22, 11, 99, DD, CC, 88, 55, FF
+
+Color Map #6:  Type: Composite  Planet: Liquid
+  22, DD, CC, 88, 88, 55, 55, FF
+
+Color Map #7:  Type: Composite  Planet: Frozen
+  22, AA, 33, 66, 77, 77, FF, FF
+
+Color Map #8:  Type: Composite  Planet: Molton
+  44, DD, DD, CC, CC, 88, 88, AA
+
+Color Map #9:  Type: Composite  Planet: Rock
+  EE, 66, DD, CC, CC, 88, 88, AA
+
+Color Map #10:  Type: EGA  Planet: Gas
+  01, 02, 0A, 0E, 06, 06, 08, 0F
+
+Color Map #11:  Type: EGA  Planet: Liquid
+  01, 0E, 06, 06, 06, 08, 08, 0F
+
+Color Map #12:  Type: EGA  Planet: Frozen
+  01, 07, 09, 05, 0B, 0B, 0F, 0F
+
+Color Map #13:  Type: EGA  Planet: Molton
+  04, 0E, 0E, 06, 06, 06, 06, 07
+
+Color Map #14:  Type: EGA  Planet: Rock
+  0C, 05, 0E, 06, 06, 06, 06, 07
+

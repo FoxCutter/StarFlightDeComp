@@ -1,0 +1,25 @@
+PSAT #0
+  Type: MAMMALIAN
+  Avg Height (dm): 20
+  Avg Weight (kg): 80
+
+PSAT #1
+  Type: INSECTOID
+  Avg Height (dm): 10
+  Avg Weight (kg): 60
+
+PSAT #2
+  Type: REPTILIAN
+  Avg Height (dm): 15
+  Avg Weight (kg): 80
+
+PSAT #3
+  Type: PLANT
+  Avg Height (dm): 25
+  Avg Weight (kg): 40
+
+PSAT #4
+  Type: SYNTHETIC
+  Avg Height (dm): 20
+  Avg Weight (kg): 120
+

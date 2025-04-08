@@ -1,0 +1,532 @@
+( RAW Data:OverlayHeader @EC00-EC14 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 90E3 	Count: 0096 	Data Size: 008B (Paragraphs)
+    On Disk Location 90E30-91790
+  Overlay Address: @EC00 	Overlay DP: @F4A6
+    Load Location: @EC00-@F560 	Load Length: 2400
+    Data: @EC00-@F4A6 	Data Length: 2214
+    Junk: @F4A6-@F560 	Junk Length: 186
+  VOCABULARY Word: C806 SETTER
+   Dictionary Link 1: F448
+   Dictionary Link 2: F477
+   Dictionary Link 3: F0EF
+   Dictionary Link 4: F39F
+
+@EC00 E3 90 96 00 00 EC A6 F4 06 C8 48 F4 77 F4 EF F0   ..........H.w...
+@EC10 9F F3 8B 00                                       ....            
+)
+
+( Data:Word @EC14-EC18 XT:EC16 CFA:2214 DLen: 2 STAGE: Words)
+32 CONSTANT _planet_class
+
+( Data:Word @EC18-EC1C XT:EC1A CFA:2214 DLen: 2 STAGE: Memory)
+67 CONSTANT _regions_class
+
+( Data:Word @EC1C-EC20 XT:EC1E CFA:2214 DLen: 2 STAGE: Memory)
+68 CONSTANT _creature_class
+
+( Data:AField @EC20-EC28 XT:EC22 CFA:73EA DLen: 6 STAGE: Words)
+32 12 1 AFIELD _p-element1 ( PLANET )
+
+( Data:AField @EC28-EC30 XT:EC2A CFA:73EA DLen: 6 STAGE: Words)
+32 13 1 AFIELD _p-element2 ( PLANET )
+
+( Data:AField @EC30-EC38 XT:EC32 CFA:73EA DLen: 6 STAGE: Words)
+32 14 1 AFIELD _p-element3 ( PLANET )
+
+( Data:AField @EC38-EC40 XT:EC3A CFA:73EA DLen: 6 STAGE: Words)
+32 9 1 AFIELD _p-mineral_densty ( PLANET )
+
+( Data:AField @EC40-EC48 XT:EC42 CFA:73EA DLen: 6 STAGE: Words)
+32 0 1 AFIELD _p-mass_type ( PLANET )
+
+( Data:AField @EC48-EC50 XT:EC4A CFA:73EA DLen: 6 STAGE: Words)
+32 2 2 AFIELD _p-mass ( PLANET )
+
+( Data:AField @EC50-EC58 XT:EC52 CFA:73EA DLen: 6 STAGE: Words)
+32 4 1 AFIELD P-LSEED ( PLANET )
+
+( Data:AField @EC58-EC60 XT:EC5A CFA:73EA DLen: 6 STAGE: Words)
+32 1 1 AFIELD _p-surface ( PLANET )
+
+( Data:AField @EC60-EC68 XT:EC62 CFA:73EA DLen: 6 STAGE: Words)
+32 15 1 AFIELD _p-temp-low ( PLANET )
+
+( Data:AField @EC68-EC70 XT:EC6A CFA:73EA DLen: 6 STAGE: Words)
+32 16 1 AFIELD _p-temp-high ( PLANET )
+
+( Data:AField @EC70-EC78 XT:EC72 CFA:73EA DLen: 6 STAGE: Words)
+32 17 2 AFIELD ATMO.ACTIVity ( PLANET )
+
+( Data:AField @EC78-EC80 XT:EC7A CFA:73EA DLen: 6 STAGE: Words)
+32 19 1 AFIELD _p-atom.density ( PLANET )
+
+( Data:AField @EC80-EC88 XT:EC82 CFA:73EA DLen: 6 STAGE: Words)
+32 20 1 AFIELD _p-shape_max ( PLANET )
+
+( Data:AField @EC88-EC90 XT:EC8A CFA:73EA DLen: 6 STAGE: Words)
+32 21 1 AFIELD _p-shape_min ( PLANET )
+
+( Data:AField @EC90-EC98 XT:EC92 CFA:73EA DLen: 6 STAGE: Words)
+67 7 8 AFIELD [A-REGIONS:7-15] ( REGIONS )
+
+( @EC98-ECAF XT:EC9A CFA:224C DLen: 21 STAGE: CodePointers)
+: _word_array
+ CREATE 0 , DOES> ( CFA @ECA2 ) 
+  OVER + + @ ; 
+
+( @ECAF-ECBB XT:ECB1 CFA:224C DLen: 10 STAGE: Words)
+: _rand_256
+ 0 $0100 RRND ; 
+
+( @ECBB-ECC7 XT:ECBD CFA:224C DLen: 10 STAGE: Words)
+: _rand_0-100
+ 1 100 RRND ; 
+
+( @ECC7-ECDD XT:ECC9 CFA:224C DLen: 20 STAGE: Words)
+: _scale
+ >R 1+ OVER - R> $0100 */ + ; 
+
+( @ECDD-ECE5 XT:ECDF CFA:224C DLen: 6 STAGE: Words)
+: _rand-slip
+ _rand_256 (SLIPPE__ ; 
+
+( @ECE5-ECF1 XT:ECE7 CFA:224C DLen: 10 STAGE: Words)
+: _rand-slip-scale
+ BEGIN 
+  _rand-slip 
+ UNTIL 
+ _scale ; 
+
+( Data:IField @ECF1-ECF6 XT:ECF3 CFA:744D DLen: 3 STAGE: Words)
+23 17 1 IFIELD _star_orbits ( STARSYSTEM )
+
+( @ECF6-ED2C XT:ECF8 CFA:224C DLen: 52 STAGE: Words)
+: _planet_num
+ (SYSTEM) 1.5@ >C+S IOPEN _planet_class 0 IFIND DROP 0 BEGIN 
+  @INST-Class _planet_class = IF 
+   1+ 
+  THEN 
+  (PLANET) 1.5@ CI D= NOT WHILE 
+  INEXT 
+ REPEAT 
+ ; 
+
+( @ED2C-ED8C XT:ED2E CFA:224C DLen: 94 STAGE: Words)
+: _orbit_num
+ (ORBIT) 1.5@ 2DUP OR 0= IF 
+  2DROP _planet_num 0 ICLOSE _star_orbits C@ 9 1 DO 
+   DUP 2 MOD IF 
+    SWAP 1+ 3 PICK OVER = IF 
+     I LEAVE 
+    THEN 
+    SWAP 
+   THEN 
+   2/ 
+  LOOP 
+  DROP >R 2DROP R> ICLOSE 
+ ELSE 
+  >C+S INST-QTy @ ICLOSE 
+ THEN 
+ ; 
+
+( @ED8C-EDA8 XT:ED8E CFA:224C DLen: 26 STAGE: Words)
+: _set_seeds
+ _orbit_num GLOBALSeed ! (SYSTEM) 1.5@ >C+S INST-X @ INST-Y @ ICLOSE !XYSEED ; 
+
+( Data:WordArray @EDA8-EDC4 XT:EDB4 CFA:ECA2 DLen: 16 STAGE: Dictionaries)
+_word_array LO-MASS
+  0
+  1
+  50
+  90
+  110
+  $03E8
+  101
+  100
+
+( Data:WordArray @EDC4-EDE0 XT:EDD0 CFA:ECA2 DLen: 16 STAGE: Dictionaries)
+_word_array HI-MASS
+  0
+  50
+  90
+  110
+  $03E8
+  $2710 ( ' [FORTHOUGHT:270E] )
+  102
+  101
+
+( @EDE0-EDF6 XT:EDE2 CFA:224C DLen: 20 STAGE: Words)
+: _gen_mass
+ _p-mass_type C@ DUP LO-MASS SWAP HI-MASS RRND _p-mass ! ; 
+
+( @EDF6-EE26 XT:EDF8 CFA:224C DLen: 46 STAGE: Words)
+: _elememnt_base
+ (SYSTEM) 1.5@ >C+S INST-X @ 125 - DUP * 0 INST-Y @ 100 - DUP * 0 D+ SQRT ICLOSE 
+ ; 
+
+( @EE26-EE44 XT:EE28 CFA:224C DLen: 28 STAGE: Words)
+: _rnd_element
+ BEGIN 
+  2DUP RRND DUP 6 = WHILE 
+  DROP 
+ REPEAT 
+ >R 2DROP R> ; 
+
+( @EE44-EE90 XT:EE46 CFA:224C DLen: 74 STAGE: Words)
+: _gen_elements
+ 1 _elememnt_base 10 / 5 + 23 MIN 2DUP _rnd_element _p-element1 C! 2DUP _rnd_element 
+ _p-element2 C! _rnd_element _p-element3 C! @INST-Subclass 23 = IF 
+  6 DUP DUP _p-element1 C! _p-element2 C! _p-element3 C! 
+ THEN 
+ ; 
+
+( @EE90-EEE6 XT:EE92 CFA:224C DLen: 84 STAGE: Words)
+: _gen_atom.density
+ _p-mass @ 70 / 5 MIN DUP 0 5 WITHIN IF 
+  _rand_0-100 50 < IF 
+   1+ 
+  THEN 
+ THEN 
+ DUP 2 6 WITHIN IF 
+  _rand_0-100 50 < IF 
+   1- 
+  THEN 
+ THEN 
+ P-LSEED C@ IF 
+  1 MAX 
+ THEN 
+ _p-atom.density C! ; 
+
+( @EEE6-EF78 XT:EEE8 CFA:224C DLen: 144 STAGE: Words)
+: _star_temp
+ 77 OVER = IF 
+  DROP 1 
+ ELSE 
+  75 OVER = IF 
+   DROP 2 
+  ELSE 
+   71 OVER = IF 
+    DROP 3 
+   ELSE 
+    70 OVER = IF 
+     DROP 4 
+    ELSE 
+     65 OVER = IF 
+      DROP 5 
+     ELSE 
+      66 OVER = IF 
+       DROP 6 
+      ELSE 
+       79 OVER = IF 
+        DROP 7 
+       ELSE 
+        DROP 
+       THEN 
+      THEN 
+     THEN 
+    THEN 
+   THEN 
+  THEN 
+ THEN 
+ ; 
+
+( @EF78-EF88 XT:EF7A CFA:224C DLen: 14 STAGE: Words)
+: _system_star_temp
+ (SYSTEM) 1.5@ >C+S @INST-Subclass _star_temp ICLOSE ; 
+
+( @EF88-EFE8 XT:EF8A CFA:224C DLen: 94 STAGE: Words)
+: _orbit_temp
+ -2 OVER = IF 
+  DROP 4 
+ ELSE 
+  -1 OVER = IF 
+   DROP 3 
+  ELSE 
+   0 OVER = IF 
+    DROP 2 
+   ELSE 
+    1 OVER = IF 
+     DROP 1 
+    ELSE 
+     DUP 0< IF 
+      5 
+     ELSE 
+      0 
+     THEN 
+     SWAP DROP 
+    THEN 
+   THEN 
+  THEN 
+ THEN 
+ ; 
+
+( @EFE8-F01A XT:EFEA CFA:224C DLen: 48 STAGE: Words)
+: _gen_temps
+ _orbit_num DUP _system_star_temp - _orbit_temp SWAP _p-atom.density C@ 0= IF 
+  4 
+ ELSE 
+  2 
+ THEN 
+ - _system_star_temp - _orbit_temp _p-temp-high C! _p-temp-low C! ; 
+
+( @F01A-F03C XT:F01C CFA:224C DLen: 32 STAGE: Words)
+: _gen_atom.activity
+ _p-atom.density C@ 4 MIN _rand_0-100 50 < IF 
+  1- 
+ THEN 
+ 0 MAX ATMO.ACTIVity C! ; 
+
+( @F03C-F06C XT:F03E CFA:224C DLen: 46 STAGE: Words)
+: _gen_species_sizes
+ _p-mass @ 100 / 6 MIN 1 MAX 6 SWAP - DUP _p-shape_min C! 8 + 13 MIN _p-shape_max 
+ C! ; 
+
+( @F06C-F084 XT:F06E CFA:224C DLen: 22 STAGE: Words)
+: _gen_mineral_densty
+ 30 PEAK ! 0 $00FF _rand-slip-scale _p-mineral_densty C! ; 
+
+( @F084-F092 XT:F086 CFA:224C DLen: 12 STAGE: Words)
+: _planet_setup
+ _gen_elements _gen_atom.density _gen_atom.activity _gen_species_sizes _gen_temps 
+ ; 
+
+( @F092-F0A2 XT:F094 CFA:224C DLen: 14 STAGE: Words)
+: _fixed_planet_setup
+ 0 P-LSEED C! _gen_mass _gen_mineral_densty _planet_setup ; 
+
+( Data @F0A2-F0B4 XT:F0AF CFA:1D29 DLen: 5 STAGE: Dictionaries)
+CREATE SUBHYDRO 5 ALLOT ( @F0AF =
+@F0AF 01 02 03 04 00                                    .....           
+ )
+
+( Data @F0B4-F0C8 XT:F0C1 CFA:1D29 DLen: 7 STAGE: Dictionaries)
+CREATE TEMPHYDRo 7 ALLOT ( @F0C1 =
+@F0C1 05 06 07 08 00 05 05                              .......         
+ )
+
+( Data @F0C8-F0DC XT:F0D5 CFA:1D29 DLen: 7 STAGE: Dictionaries)
+CREATE INFHYDRO 7 ALLOT ( @F0D5 =
+@F0D5 09 0A 0B 0C 07 0D 00                              .......         
+ )
+
+( Data @F0DC-F0ED XT:F0E8 CFA:1D29 DLen: 5 STAGE: Dictionaries)
+CREATE SUBATMO 5 ALLOT ( @F0E8 =
+@F0E8 0E 0C 07 06 00                                    .....           
+ )
+
+( Data @F0ED-F103 XT:F0FA CFA:1D29 DLen: 9 STAGE: Dictionaries)
+CREATE TEMPATMO 9 ALLOT ( @F0FA =
+@F0FA 0F 10 11 0F 12 13 14 00 0F                        .........       
+ )
+
+( Data @F103-F116 XT:F10F CFA:1D29 DLen: 7 STAGE: Dictionaries)
+CREATE INFATMO 7 ALLOT ( @F10F =
+@F10F 0E 15 16 0C 07 0D 00                              .......         
+ )
+
+( @F116-F126 XT:F118 CFA:224C DLen: 14 STAGE: Words)
+: _adv_temp
+ _p-temp-high C@ _p-temp-low C@ + 2/ ; 
+
+( @F126-F160 XT:F128 CFA:224C DLen: 56 STAGE: Words)
+: _hydro_for_temp
+ _adv_temp ?DUP 0= IF 
+  0 5 RRND SUBHYDRO 
+ ELSE 
+  5 = IF 
+   0 7 RRND INFHYDRO 
+  ELSE 
+   0 7 RRND TEMPHYDRo 
+  THEN 
+ THEN 
+ + C@ ; 
+
+( @F160-F18C XT:F162 CFA:224C DLen: 42 STAGE: Words)
+: _gen_hydro
+ _p-surface C@ 2 = NOT >R BEGIN 
+  _hydro_for_temp DUP R@ OR 0= WHILE 
+  DROP 
+ REPEAT 
+ R> DROP HYDRO ! ; 
+
+( @F18C-F1C6 XT:F18E CFA:224C DLen: 56 STAGE: Words)
+: _atmo_for_temp]
+ _adv_temp ?DUP 0= IF 
+  0 5 RRND SUBATMO 
+ ELSE 
+  5 = IF 
+   0 7 RRND INFATMO 
+  ELSE 
+   0 9 RRND TEMPATMO 
+  THEN 
+ THEN 
+ + C@ ; 
+
+( @F1C6-F1E4 XT:F1C8 CFA:224C DLen: 28 STAGE: Words)
+: _gen_atmo
+ _p-atom.density C@ IF 
+  BEGIN 
+   _atmo_for_temp] ?DUP 
+  UNTIL 
+ ELSE 
+  0 
+ THEN 
+ ATMO ! ; 
+
+( @F1E4-F232 XT:F1E6 CFA:224C DLen: 76 STAGE: Words)
+: _gen_atmo_hydro
+ @INST-Subclass DUP 18 = SWAP 34 = OR IF 
+  5 HYDRO ! 15 ATMO ! 
+ ELSE 
+  P-LSEED C@ IF 
+   5 HYDRO ! BEGIN 
+    _gen_atmo ATMO @ 
+   UNTIL 
+  ELSE 
+   _gen_hydro _gen_atmo 
+  THEN 
+ THEN 
+ ; 
+
+( @F232-F24C XT:F234 CFA:224C DLen: 24 STAGE: Words)
+: _temp_low_range
+ (PLANET) 1.5@ >C+S _p-temp-low C@ _p-temp-high C@ OVER - 1+ ICLOSE ; 
+
+( @F24C-F27E XT:F24E CFA:224C DLen: 48 STAGE: Words)
+: _current_region
+ YABS @ DUP $01E0 > IF 
+  $03C0 SWAP - 
+ THEN 
+ $01E0 _temp_low_range ROT SWAP / 1+ ROT SWAP / + ; 
+
+( @F27E-F2AE XT:F280 CFA:224C DLen: 46 STAGE: Words)
+: _rug_check
+ _current_region RECORD# ! 67 FILE# ! 0 [A-REGIONS:7-15] DUP 8 + SWAP DO 
+  I C@ 1 AND OR 
+ LOOP 
+ SET-CUR____ ; 
+
+( Data @F2AE-F2D7 XT:F2B7 CFA:1D29 DLen: 32 STAGE: Dictionaries)
+CREATE RUGS 32 ALLOT ( @F2B7 =
+@F2B7 01 00 00 E9 01 00 15 E9 01 00 04 C7 01 00 2B E9   ..............+.
+@F2C7 01 00 2C D9 01 00 00 D0 01 00 A4 CE 01 00 DC CF   ..,.............
+ )
+
+( @F2D7-F2EB XT:F2D9 CFA:224C DLen: 18 STAGE: Words)
+: _gen_rug
+ 0 8 RRND 2* 2* RUGS + 2@ ; 
+
+( @F2EB-F308 XT:F2F4 CFA:224C DLen: 20 STAGE: Dictionaries)
+: SETC
+ _rug_check IF 
+  _gen_rug 
+ ELSE 
+  0. 
+ THEN 
+ P-CARP 1.5! ; 
+
+( @F308-F318 XT:F30A CFA:224C DLen: 14 STAGE: Words)
+: _gas_phrase_color
+ 0. P-PHRASe 1.5! 0. P-COLOR 1.5! ; 
+
+( @F318-F32A XT:F31A CFA:224C DLen: 16 STAGE: Words)
+: _random_color
+ 0 5 RRND 2* 2* + 2@ ; 
+
+( Data:DoubleWordArray @F32A-F349 XT:F335 CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE CLIST1
+  $01E541. ( "WHITE" ) , 
+  $01E541. ( "WHITE" ) , 
+  $01E541. ( "WHITE" ) , 
+  $01E541. ( "WHITE" ) , 
+  $01E541. ( "WHITE" ) , 
+
+( Data:DoubleWordArray @F349-F368 XT:F354 CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE CLIST2
+  $01E564. ( "BLACK" ) , 
+  $01E564. ( "BLACK" ) , 
+  $01E564. ( "BLACK" ) , 
+  $01E564. ( "BLACK" ) , 
+  $01E564. ( "BLACK" ) , 
+
+( Data @F368-F387 XT:F373 CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE CLIST3 20 ALLOT ( @F373 =
+@F373 01 00 53 E5 01 00 18 E8 01 00 43 E8 01 00 6F E8   ..S.......C...o.
+@F383 01 00 64 E5                                       ..d.            
+ )
+
+( @F387-F39D XT:F389 CFA:224C DLen: 20 STAGE: Words)
+: _frozen_phrase_color
+ $01E6A9. ( "CRACKED PLAINS AND HILLS OF" ) P-PHRASe 1.5! CLIST1 _random_color P-COLOR 
+ 1.5! ; 
+
+( Data @F39D-F3B8 XT:F3A8 CFA:1D29 DLen: 16 STAGE: Dictionaries)
+CREATE (SAND) 16 ALLOT ( @F3A8 =
+@F3A8 01 00 24 E7 01 00 3A E7 01 00 69 E7 01 00 51 E7   ..$...:...i...Q.
+ )
+
+( @F3B8-F40C XT:F3BA CFA:224C DLen: 82 STAGE: Words)
+: _rock_phrase_color
+ ATMO @ IF 
+  CLIST3 _random_color P-COLOR 1.5! 1 100 RRND 31 < IF 
+   0 4 RRND 2* 2* (SAND) + 2@ 
+  ELSE 
+   $01E690. ( "ROCK AND DIRT" ) 
+  THEN 
+ ELSE 
+  $01E65E. ( "CRATERED ROCK AND DUST" ) 0. P-COLOR 1.5! 
+ THEN 
+ P-PHRASe 1.5! ; 
+
+( @F40C-F41A XT:F40E CFA:224C DLen: 12 STAGE: Words)
+: _liqued_pharse_color
+ CLIST2 _random_color O-COLOR 1.5! _rock_phrase_color ; 
+
+( @F41A-F432 XT:F41C CFA:224C DLen: 22 STAGE: Words)
+: _molton_phrase_color
+ $01E6D0. ( "VOLCANIC ROCK, STEAMING VENTS," ) P-PHRASe 1.5! $01E6FA. ( "BOILING POOLS AND FLOWING LAVA" ) 
+ P-COLOR 1.5! ; 
+
+( @F432-F446 XT:F434 CFA:224C DLen: 18 STAGE: Words)
+: _crystal_phrase_color
+ $01E797. ( "SMOOTH AND FEATURELESS" ) P-PHRASe 1.5! NULL P-COLOR 1.5! ; 
+
+( Data:Case @F446-F46B XT:F453 CFA:4A4F DLen: 24 STAGE: Dictionaries)
+CASE (TERRAIN)
+ 1 IS _gas_phrase_color
+ 2 IS _liqued_pharse_color
+ 3 IS _frozen_phrase_color
+ 4 IS _molton_phrase_color
+ 5 IS _rock_phrase_color
+ OTHERS _crystal_phrase_color
+
+( @F46B-F475 XT:F46D CFA:224C DLen: 8 STAGE: Words)
+: _set-planet-phrase-color
+ _p-surface C@ (TERRAIN) ; 
+
+( @F475-F4A6 XT:F482 CFA:224C DLen: 36 STAGE: Dictionaries)
+: PLAN-RULes
+ _set_seeds (PLANET) 1.5@ >C+S @INST-Subclass 17 > IF 
+  _planet_setup 
+ ELSE 
+  _fixed_planet_setup 
+ THEN 
+ _gen_atmo_hydro _set-planet-phrase-color ICLOSE ; 
+
+( RAW Data:OverlayJunk @F4A6-F560 DLen: 186 STAGE: Dictionaries)
+ _overlayJunk 186 ALLOT ( @F4A6 =
+@F4A6                   53 45 54 54 45 52 5F 5F 5F 5F         SETTER____
+@F4B0 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+@F4C0 5F 5F 5F 5F 5F 5F 91 75 60 16 04 00 BF EB 91 75   ______.u`......u
+@F4D0 C9 79 90 16 00 00 87 4F 50 2D 43 41 53 C5 4F 4A   .y.....OP-CAS.OJ
+@F4E0 03 00 48 3A 00 00 31 31 33 39 7A F4 02 00 09 13   ..H:..1139z.....
+@F4F0 D6 F4 86 28 55 2D 4F 50 A9 4C 22 35 E6 CC 5C AE   ...(U-OP.L"5..\.
+@F500 0B FA 15 0A 00 5D 17 E8 03 EF 2A 78 F4 38 AA F2   .....]....*x.8..
+@F510 0E 32 0E C8 0D FA 15 0C 00 AC 5B 83 6D 8A E5 3A   .2........[.m..:
+@F520 AC 32 0E 20 0F 50 AA FA 15 08 00 AC 5B AE 0B DE   .2. .P......[...
+@F530 F4 FA 15 DA FF 90 16 4F 50 2D 56 4F 43 5F 5F 5F   .......OP-VOC___
+@F540 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+@F550 5F 5F 5F 5F 5F 5F 5F 20 20 20 20 20 20 20 20 20   _______         
+ )
+

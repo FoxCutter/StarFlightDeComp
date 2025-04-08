@@ -1,0 +1,1190 @@
+( RAW Data:OverlayHeader @E340-E354 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 6E3C 	Count: 0122 	Data Size: 00DE (Paragraphs)
+    On Disk Location 6E3C0-6F5E0
+  Overlay Address: @E340 	Overlay DP: @F110
+    Load Location: @E340-@F560 	Load Length: 4640
+    Data: @E340-@F110 	Data Length: 3536
+    Junk: @F110-@F560 	Junk Length: 1104
+  VOCABULARY Word: C2D0 FRACT
+   Dictionary Link 1: F0FB
+   Dictionary Link 2: F0CD
+   Dictionary Link 3: 0000
+   Dictionary Link 4: EFA0
+
+@E340 3C 6E 22 01 40 E3 10 F1 D0 C2 FB F0 CD F0 00 00   <n".@...........
+@E350 A0 EF DE 00                                       ....            
+)
+
+( Data:Variable @E354-E358 XT:E356 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E356] ( @E356=$203A)
+
+( Data:Variable @E358-E35C XT:E35A CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E35A] ( @E35A=$203A)
+
+( Data @E35C-E362 XT:E35E CFA:1D29 DLen: 4 STAGE: Words)
+CREATE [FRACT-OV:E35E] 4 ALLOT ( @E35E =
+@E35E 56 3A 20 6E                                       V: n            
+ )
+
+( Data:Word @E362-E366 XT:E364 CFA:2214 DLen: 2 STAGE: Words)
+-128 CONSTANT [FRACT-OV:E364]
+
+( Data:Variable @E366-E36A XT:E368 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E368] ( @E368=$203A)
+
+( Data:Variable @E36A-E36E XT:E36C CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E36C] ( @E36C=$203A)
+
+( Data:Variable @E36E-E372 XT:E370 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E370] ( @E370=$203A)
+
+( Data:Variable @E372-E376 XT:E374 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E374] ( @E374=$203A)
+
+( Data:Variable @E376-E37A XT:E378 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E378] ( @E378=$203A)
+
+( Data:Variable @E37A-E37E XT:E37C CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E37C] ( @E37C=$203A)
+
+( Data:DoubleWord @E37E-E384 XT:E380 CFA:3B68 DLen: 4 STAGE: Words)
+2147438994. 2C= [FRACT-OV:E380]
+
+( Data:Word @E384-E388 XT:E386 CFA:2214 DLen: 2 STAGE: Words)
+117 CONSTANT [FRACT-OV:E386]
+
+( Data:Variable @E388-E38C XT:E38A CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E38A] ( @E38A=$203A)
+
+( Data:Variable @E38C-E390 XT:E38E CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E38E] ( @E38E=$203A)
+
+( Data:Variable @E390-E394 XT:E392 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E392] ( @E392=$203A)
+
+( Data:Variable @E394-E398 XT:E396 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:E396] ( @E396=$203A)
+
+( @E398-E3A4 XT:E39A CFA:224C DLen: 10 STAGE: Words)
+: [FRACT-OV:E39A]
+ [FRACT-OV:E35A] ! [FRACT-OV:E35E] 2! ; 
+
+( @E3A4-E3BE XT:E3A6 CFA:224C DLen: 24 STAGE: Words)
+: [FRACT-OV:E3A6]
+ 4 0 DO 
+  [FRACT-OV:E35A] @ DUP NEGATE SWAP RRND 
+ LOOP 
+ ; 
+
+( @E3BE-E3DE XT:E3C0 CFA:1D29 DLen: 30 STAGE: Words)
+CREATE [FRACT-OV:E3C0]
+(Address @E3C0
+   E3C0 8B 06 B0 4A          MOV        AX, WORD PTR [4AB0h]             ; SEED
+   E3C4 B9 BD 7A             MOV        CX, 7ABDh
+   E3C7 F7 E9                IMUL       CX
+   E3C9 05 0F 1B             ADD        AX, 1B0Fh
+   E3CC 89 06 B0 4A          MOV        WORD PTR [4AB0h], AX             ; SEED
+   E3D0 5A                   POP        DX
+   E3D1 5B                   POP        BX
+   E3D2 59                   POP        CX
+   E3D3 52                   PUSH       DX
+   E3D4 2B D9                SUB        BX, CX
+   E3D6 F7 E3                MUL        BX
+   E3D8 03 D1                ADD        DX, CX
+   E3DA 58                   POP        AX
+   E3DB 52                   PUSH       DX
+   E3DC 50                   PUSH       AX
+   E3DD C3                   RET        
+) CODE-END
+
+( @E3DE-E3F8 XT:E3E0 CFA:1D29 DLen: 24 STAGE: Words)
+CREATE [FRACT-OV:E3E0]
+(Address @E3E0
+   E3E0 5B                   POP        BX
+   E3E1 58                   POP        AX
+   E3E2 59                   POP        CX
+   E3E3 03 C1                ADD        AX, CX
+   E3E5 3D 7F 00             CMP        AX, 007Fh
+   E3E8 7E 03                JLE        E3EDh                            ; .FRACT-OV_E3ED
+   E3EA B8 7F 00             MOV        AX, 007Fh
+ .FRACT-OV_E3ED:
+   E3ED 3D 81 FF             CMP        AX, FF81h
+   E3F0 79 03                JNS        E3F5h                            ; .FRACT-OV_E3F5
+   E3F2 B8 81 FF             MOV        AX, FF81h
+ .FRACT-OV_E3F5:
+   E3F5 50                   PUSH       AX
+   E3F6 53                   PUSH       BX
+   E3F7 C3                   RET        
+) CODE-END
+
+( @E3F8-E467 XT:E3FA CFA:1D29 DLen: 109 STAGE: Words)
+CREATE [FRACT-OV:E3FA]
+(Address @E3FA
+   E3FA 5B                   POP        BX
+   E3FB 58                   POP        AX
+   E3FC 59                   POP        CX
+   E3FD 53                   PUSH       BX
+   E3FE 8B 16 56 E3          MOV        DX, WORD PTR [E356h]             ; [FRACT-OV:E356]
+   E402 0B D2                OR         DX, DX
+   E404 7E 50                JLE        E456h                            ; .FRACT-OV_E456
+   E406 03 0E 70 E3          ADD        CX, WORD PTR [E370h]             ; [FRACT-OV:E370]
+   E40A 03 06 74 E3          ADD        AX, WORD PTR [E374h]             ; [FRACT-OV:E374]
+   E40E 79 09                JNS        E419h                            ; .FRACT-OV_E419
+   E410 40                   INC        AX
+   E411 F7 D8                NEG        AX
+   E413 81 C1 80 04          ADD        CX, 0480h
+   E417 EB 12                JMP        E42Bh                            ; .FRACT-OV_E42B
+ .FRACT-OV_E419:
+   E419 BA C0 03             MOV        DX, 03C0h
+   E41C 3B C2                CMP        AX, DX
+   E41E 78 0B                JS         E42Bh                            ; .FRACT-OV_E42B
+   E420 2B C2                SUB        AX, DX
+   E422 F7 D8                NEG        AX
+   E424 03 C2                ADD        AX, DX
+   E426 40                   INC        AX
+   E427 81 C1 80 04          ADD        CX, 0480h
+ .FRACT-OV_E42B:
+ .FRACT-OV_E42B:
+   E42B 89 06 B0 4A          MOV        WORD PTR [4AB0h], AX             ; SEED
+   E42F 51                   PUSH       CX
+   E430 B8 01 00             MOV        AX, 1
+   E433 50                   PUSH       AX
+   E434 F7 D8                NEG        AX
+   E436 50                   PUSH       AX
+   E437 E8 86 FF             CALL       E3C0h                            ; [FRACT-OV:E3C0]
+   E43A 59                   POP        CX
+   E43B 8F 06 B0 4A          POP        WORD PTR [4AB0h]                 ; SEED
+   E43F 51                   PUSH       CX
+   E440 B8 01 00             MOV        AX, 1
+   E443 50                   PUSH       AX
+   E444 F7 D8                NEG        AX
+   E446 50                   PUSH       AX
+   E447 E8 76 FF             CALL       E3C0h                            ; [FRACT-OV:E3C0]
+   E44A 58                   POP        AX
+   E44B 59                   POP        CX
+   E44C 33 06 79 59          XOR        AX, WORD PTR [5979h]             ; GLOBALSeed
+   E450 33 C1                XOR        AX, CX
+   E452 89 06 B0 4A          MOV        WORD PTR [4AB0h], AX             ; SEED
+ .FRACT-OV_E456:
+   E456 8B 46 0E             MOV        AX, WORD PTR [BP+14]
+   E459 8B C8                MOV        CX, AX
+   E45B F7 D9                NEG        CX
+   E45D 51                   PUSH       CX
+   E45E 50                   PUSH       AX
+   E45F E8 5E FF             CALL       E3C0h                            ; [FRACT-OV:E3C0]
+   E462 58                   POP        AX
+   E463 59                   POP        CX
+   E464 50                   PUSH       AX
+   E465 51                   PUSH       CX
+   E466 C3                   RET        
+) CODE-END
+
+( @E467-E4B7 XT:E469 CFA:1D29 DLen: 78 STAGE: Words)
+CREATE [FRACT-OV:E469]
+(Address @E469
+   E469 5A                   POP        DX
+   E46A 58                   POP        AX
+   E46B 59                   POP        CX
+   E46C 0B C0                OR         AX, AX
+   E46E 79 0F                JNS        E47Fh                            ; .FRACT-OV_E47F
+   E470 40                   INC        AX
+   E471 F7 D8                NEG        AX
+   E473 8B 1E F1 4C          MOV        BX, WORD PTR [4CF1h]             ; 'ARRAY
+   E477 8B 1F                MOV        BX, WORD PTR [BX]
+   E479 D1 EB                SHR        BX, 1
+   E47B 03 CB                ADD        CX, BX
+   E47D EB 1C                JMP        E49Bh                            ; .FRACT-OV_E49B
+ .FRACT-OV_E47F:
+   E47F 8B 1E F1 4C          MOV        BX, WORD PTR [4CF1h]             ; 'ARRAY
+   E483 8B 5F 02             MOV        BX, WORD PTR [BX+2]
+   E486 3B C3                CMP        AX, BX
+   E488 78 11                JS         E49Bh                            ; .FRACT-OV_E49B
+   E48A 2B C3                SUB        AX, BX
+   E48C F7 D8                NEG        AX
+   E48E 03 C3                ADD        AX, BX
+   E490 40                   INC        AX
+   E491 8B 1E F1 4C          MOV        BX, WORD PTR [4CF1h]             ; 'ARRAY
+   E495 8B 1F                MOV        BX, WORD PTR [BX]
+   E497 D1 EB                SHR        BX, 1
+   E499 03 CB                ADD        CX, BX
+ .FRACT-OV_E49B:
+ .FRACT-OV_E49B:
+   E49B 0B C9                OR         CX, CX
+   E49D 79 08                JNS        E4A7h                            ; .FRACT-OV_E4A7
+   E49F 8B 1E F1 4C          MOV        BX, WORD PTR [4CF1h]             ; 'ARRAY
+   E4A3 03 0F                ADD        CX, WORD PTR [BX]
+   E4A5 EB 0C                JMP        E4B3h                            ; .FRACT-OV_E4B3
+ .FRACT-OV_E4A7:
+   E4A7 8B 1E F1 4C          MOV        BX, WORD PTR [4CF1h]             ; 'ARRAY
+   E4AB 8B 1F                MOV        BX, WORD PTR [BX]
+   E4AD 3B CB                CMP        CX, BX
+   E4AF 78 02                JS         E4B3h                            ; .FRACT-OV_E4B3
+   E4B1 2B CB                SUB        CX, BX
+ .FRACT-OV_E4B3:
+ .FRACT-OV_E4B3:
+   E4B3 51                   PUSH       CX
+   E4B4 50                   PUSH       AX
+   E4B5 52                   PUSH       DX
+   E4B6 C3                   RET        
+) CODE-END
+
+( @E4B7-E4ED XT:E4B9 CFA:1D29 DLen: 52 STAGE: Words)
+CREATE [FRACT-OV:E4B9]
+(Address @E4B9
+   E4B9 8F 06 8A E3          POP        WORD PTR [E38Ah]                 ; [FRACT-OV:E38A]
+   E4BD 8B 06 CA 4C          MOV        AX, WORD PTR [4CCAh]             ; SPHEREW___
+   E4C1 0B C0                OR         AX, AX
+   E4C3 7E 03                JLE        E4C8h                            ; .FRACT-OV_E4C8
+   E4C5 E8 A1 FF             CALL       E469h                            ; [FRACT-OV:E469]
+ .FRACT-OV_E4C8:
+   E4C8 8B 1E F1 4C          MOV        BX, WORD PTR [4CF1h]             ; 'ARRAY
+   E4CC 8B 47 06             MOV        AX, WORD PTR [BX+6]
+   E4CF 8B 5F 04             MOV        BX, WORD PTR [BX+4]
+   E4D2 59                   POP        CX
+   E4D3 D1 E1                SHL        CX, 1
+   E4D5 03 D9                ADD        BX, CX
+   E4D7 1E                   PUSH       DS
+   E4D8 8E D8                MOV        DS, AX
+   E4DA 8B 0F                MOV        CX, WORD PTR [BX]
+   E4DC 1F                   POP        DS
+   E4DD 5A                   POP        DX
+   E4DE 03 CA                ADD        CX, DX
+   E4E0 89 06 78 E3          MOV        WORD PTR [E378h], AX             ; [FRACT-OV:E378]
+   E4E4 89 0E 7C E3          MOV        WORD PTR [E37Ch], CX             ; [FRACT-OV:E37C]
+   E4E8 FF 36 8A E3          PUSH       WORD PTR [E38Ah]                 ; [FRACT-OV:E38A]
+   E4EC C3                   RET        
+) CODE-END
+
+( @E4ED-E50D XT:E4EF CFA:1D29 DLen: 30 STAGE: Words)
+CREATE [FRACT-OV:E4EF]
+(Address @E4EF
+   E4EF 5A                   POP        DX
+   E4F0 8B 1E 7C E3          MOV        BX, WORD PTR [E37Ch]             ; [FRACT-OV:E37C]
+   E4F4 1E                   PUSH       DS
+   E4F5 FF 36 78 E3          PUSH       WORD PTR [E378h]                 ; [FRACT-OV:E378]
+   E4F9 1F                   POP        DS
+   E4FA 8A 07                MOV        AL, BYTE PTR [BX]
+   E4FC 1F                   POP        DS
+   E4FD 8B 0E D8 4C          MOV        CX, WORD PTR [4CD8h]             ; SIGNEXT___
+   E501 0B C9                OR         CX, CX
+   E503 7E 03                JLE        E508h                            ; .FRACT-OV_E508
+   E505 98                   CBW        
+   E506 EB 02                JMP        E50Ah                            ; .FRACT-OV_E50A
+ .FRACT-OV_E508:
+   E508 32 E4                XOR        AH, AH
+ .FRACT-OV_E50A:
+   E50A 50                   PUSH       AX
+   E50B 52                   PUSH       DX
+   E50C C3                   RET        
+) CODE-END
+
+( @E50D-E535 XT:E50F CFA:1D29 DLen: 38 STAGE: Words)
+CREATE [FRACT-OV:E50F]
+(Address @E50F
+   E50F 8F 06 8E E3          POP        WORD PTR [E38Eh]                 ; [FRACT-OV:E38E]
+   E513 E8 A3 FF             CALL       E4B9h                            ; [FRACT-OV:E4B9]
+   E516 E8 D6 FF             CALL       E4EFh                            ; [FRACT-OV:E4EF]
+   E519 58                   POP        AX
+   E51A 3D 80 FF             CMP        AX, FF80h
+   E51D 75 10                JNZ        E52Fh                            ; .FRACT-OV_E52F
+   E51F 58                   POP        AX
+   E520 1E                   PUSH       DS
+   E521 FF 36 78 E3          PUSH       WORD PTR [E378h]                 ; [FRACT-OV:E378]
+   E525 8B 1E 7C E3          MOV        BX, WORD PTR [E37Ch]             ; [FRACT-OV:E37C]
+   E529 1F                   POP        DS
+   E52A 88 07                MOV        BYTE PTR [BX], AL
+   E52C 1F                   POP        DS
+   E52D EB 01                JMP        E530h                            ; .FRACT-OV_E530
+ .FRACT-OV_E52F:
+   E52F 58                   POP        AX
+ .FRACT-OV_E530:
+   E530 FF 36 8E E3          PUSH       WORD PTR [E38Eh]                 ; [FRACT-OV:E38E]
+   E534 C3                   RET        
+) CODE-END
+
+( @E535-E53F XT:E537 CFA:E537 DLen: 8 STAGE: Words)
+CODE [FRACT-OV:E537]
+(Address @E537
+   E537 E8 D5 FF             CALL       E50Fh                            ; [FRACT-OV:E50F]
+   E53A AD                   LODSW      
+   E53B 8B D8                MOV        BX, AX
+   E53D FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @E53F-E56B XT:E541 CFA:224C DLen: 42 STAGE: Words)
+: [FRACT-OV:E541]
+ XUR @ YLL @ [FRACT-OV:E537] XUR @ YUR @ [FRACT-OV:E537] XLL @ YUR @ [FRACT-OV:E537] 
+ XLL @ YLL @ [FRACT-OV:E537] ; 
+
+( @E56B-E5B2 XT:E56D CFA:1D29 DLen: 69 STAGE: Words)
+CREATE [FRACT-OV:E56D]
+(Address @E56D
+   E56D 59                   POP        CX
+   E56E 8F 06 96 E3          POP        WORD PTR [E396h]                 ; [FRACT-OV:E396]
+   E572 51                   PUSH       CX
+   E573 FF 76 08             PUSH       WORD PTR [BP+8]
+   E576 FF 36 96 E3          PUSH       WORD PTR [E396h]                 ; [FRACT-OV:E396]
+   E57A E8 3C FF             CALL       E4B9h                            ; [FRACT-OV:E4B9]
+   E57D E8 6F FF             CALL       E4EFh                            ; [FRACT-OV:E4EF]
+   E580 FF 76 04             PUSH       WORD PTR [BP+4]
+   E583 FF 36 96 E3          PUSH       WORD PTR [E396h]                 ; [FRACT-OV:E396]
+   E587 E8 2F FF             CALL       E4B9h                            ; [FRACT-OV:E4B9]
+   E58A E8 62 FF             CALL       E4EFh                            ; [FRACT-OV:E4EF]
+   E58D 58                   POP        AX
+   E58E 59                   POP        CX
+   E58F 03 C1                ADD        AX, CX
+   E591 D1 F8                SAR        AX, 1
+   E593 50                   PUSH       AX
+   E594 8B 5E 08             MOV        BX, WORD PTR [BP+8]
+   E597 03 5E 04             ADD        BX, WORD PTR [BP+4]
+   E59A D1 FB                SAR        BX, 1
+   E59C 53                   PUSH       BX
+   E59D FF 36 96 E3          PUSH       WORD PTR [E396h]                 ; [FRACT-OV:E396]
+   E5A1 E8 56 FE             CALL       E3FAh                            ; [FRACT-OV:E3FA]
+   E5A4 E8 39 FE             CALL       E3E0h                            ; [FRACT-OV:E3E0]
+   E5A7 FF 76 0C             PUSH       WORD PTR [BP+12]
+   E5AA FF 36 96 E3          PUSH       WORD PTR [E396h]                 ; [FRACT-OV:E396]
+   E5AE E8 5E FF             CALL       E50Fh                            ; [FRACT-OV:E50F]
+   E5B1 C3                   RET        
+) CODE-END
+
+( @E5B2-E5F9 XT:E5B4 CFA:1D29 DLen: 69 STAGE: Words)
+CREATE [FRACT-OV:E5B4]
+(Address @E5B4
+   E5B4 59                   POP        CX
+   E5B5 8F 06 96 E3          POP        WORD PTR [E396h]                 ; [FRACT-OV:E396]
+   E5B9 51                   PUSH       CX
+   E5BA FF 36 96 E3          PUSH       WORD PTR [E396h]                 ; [FRACT-OV:E396]
+   E5BE FF 76 06             PUSH       WORD PTR [BP+6]
+   E5C1 E8 F5 FE             CALL       E4B9h                            ; [FRACT-OV:E4B9]
+   E5C4 E8 28 FF             CALL       E4EFh                            ; [FRACT-OV:E4EF]
+   E5C7 FF 36 96 E3          PUSH       WORD PTR [E396h]                 ; [FRACT-OV:E396]
+   E5CB FF 76 02             PUSH       WORD PTR [BP+2]
+   E5CE E8 E8 FE             CALL       E4B9h                            ; [FRACT-OV:E4B9]
+   E5D1 E8 1B FF             CALL       E4EFh                            ; [FRACT-OV:E4EF]
+   E5D4 58                   POP        AX
+   E5D5 59                   POP        CX
+   E5D6 03 C1                ADD        AX, CX
+   E5D8 D1 F8                SAR        AX, 1
+   E5DA 50                   PUSH       AX
+   E5DB FF 36 96 E3          PUSH       WORD PTR [E396h]                 ; [FRACT-OV:E396]
+   E5DF 8B 5E 06             MOV        BX, WORD PTR [BP+6]
+   E5E2 03 5E 02             ADD        BX, WORD PTR [BP+2]
+   E5E5 D1 FB                SAR        BX, 1
+   E5E7 53                   PUSH       BX
+   E5E8 E8 0F FE             CALL       E3FAh                            ; [FRACT-OV:E3FA]
+   E5EB E8 F2 FD             CALL       E3E0h                            ; [FRACT-OV:E3E0]
+   E5EE FF 36 96 E3          PUSH       WORD PTR [E396h]                 ; [FRACT-OV:E396]
+   E5F2 FF 76 0A             PUSH       WORD PTR [BP+10]
+   E5F5 E8 17 FF             CALL       E50Fh                            ; [FRACT-OV:E50F]
+   E5F8 C3                   RET        
+) CODE-END
+
+( @E5F9-E62E XT:E5FB CFA:1D29 DLen: 51 STAGE: Words)
+CREATE [FRACT-OV:E5FB]
+(Address @E5FB
+   E5FB 8B 06 68 E3          MOV        AX, WORD PTR [E368h]             ; [FRACT-OV:E368]
+   E5FF 0B C0                OR         AX, AX
+   E601 7E 11                JLE        E614h                            ; .FRACT-OV_E614
+   E603 8B 46 08             MOV        AX, WORD PTR [BP+8]
+   E606 0B C0                OR         AX, AX
+   E608 75 04                JNZ        E60Eh                            ; .FRACT-OV_E60E
+   E60A 50                   PUSH       AX
+   E60B E8 A6 FF             CALL       E5B4h                            ; [FRACT-OV:E5B4]
+ .FRACT-OV_E60E:
+   E60E FF 76 04             PUSH       WORD PTR [BP+4]
+   E611 E8 A0 FF             CALL       E5B4h                            ; [FRACT-OV:E5B4]
+ .FRACT-OV_E614:
+   E614 8B 06 6C E3          MOV        AX, WORD PTR [E36Ch]             ; [FRACT-OV:E36C]
+   E618 0B C0                OR         AX, AX
+   E61A 7E 11                JLE        E62Dh                            ; .FRACT-OV_E62D
+   E61C 8B 46 06             MOV        AX, WORD PTR [BP+6]
+   E61F 0B C0                OR         AX, AX
+   E621 75 04                JNZ        E627h                            ; .FRACT-OV_E627
+   E623 50                   PUSH       AX
+   E624 E8 46 FF             CALL       E56Dh                            ; [FRACT-OV:E56D]
+ .FRACT-OV_E627:
+   E627 FF 76 02             PUSH       WORD PTR [BP+2]
+   E62A E8 40 FF             CALL       E56Dh                            ; [FRACT-OV:E56D]
+ .FRACT-OV_E62D:
+   E62D C3                   RET        
+) CODE-END
+
+( @E62E-E68F XT:E630 CFA:1D29 DLen: 95 STAGE: Words)
+CREATE [FRACT-OV:E630]
+(Address @E630
+   E630 8B 06 68 E3          MOV        AX, WORD PTR [E368h]             ; [FRACT-OV:E368]
+   E634 23 06 6C E3          AND        AX, WORD PTR [E36Ch]             ; [FRACT-OV:E36C]
+   E638 7E 54                JLE        E68Eh                            ; .FRACT-OV_E68E
+   E63A FF 76 0C             PUSH       WORD PTR [BP+12]
+   E63D FF 76 06             PUSH       WORD PTR [BP+6]
+   E640 E8 76 FE             CALL       E4B9h                            ; [FRACT-OV:E4B9]
+   E643 E8 A9 FE             CALL       E4EFh                            ; [FRACT-OV:E4EF]
+   E646 FF 76 0C             PUSH       WORD PTR [BP+12]
+   E649 FF 76 02             PUSH       WORD PTR [BP+2]
+   E64C E8 6A FE             CALL       E4B9h                            ; [FRACT-OV:E4B9]
+   E64F E8 9D FE             CALL       E4EFh                            ; [FRACT-OV:E4EF]
+   E652 FF 76 08             PUSH       WORD PTR [BP+8]
+   E655 FF 76 0A             PUSH       WORD PTR [BP+10]
+   E658 E8 5E FE             CALL       E4B9h                            ; [FRACT-OV:E4B9]
+   E65B E8 91 FE             CALL       E4EFh                            ; [FRACT-OV:E4EF]
+   E65E FF 76 04             PUSH       WORD PTR [BP+4]
+   E661 FF 76 0A             PUSH       WORD PTR [BP+10]
+   E664 E8 52 FE             CALL       E4B9h                            ; [FRACT-OV:E4B9]
+   E667 E8 85 FE             CALL       E4EFh                            ; [FRACT-OV:E4EF]
+   E66A 58                   POP        AX
+   E66B 59                   POP        CX
+   E66C 03 C1                ADD        AX, CX
+   E66E 59                   POP        CX
+   E66F 03 C1                ADD        AX, CX
+   E671 59                   POP        CX
+   E672 03 C1                ADD        AX, CX
+   E674 D1 F8                SAR        AX, 1
+   E676 D1 F8                SAR        AX, 1
+   E678 50                   PUSH       AX
+   E679 FF 76 0C             PUSH       WORD PTR [BP+12]
+   E67C FF 76 0A             PUSH       WORD PTR [BP+10]
+   E67F E8 78 FD             CALL       E3FAh                            ; [FRACT-OV:E3FA]
+   E682 E8 5B FD             CALL       E3E0h                            ; [FRACT-OV:E3E0]
+   E685 FF 76 0C             PUSH       WORD PTR [BP+12]
+   E688 FF 76 0A             PUSH       WORD PTR [BP+10]
+   E68B E8 81 FE             CALL       E50Fh                            ; [FRACT-OV:E50F]
+ .FRACT-OV_E68E:
+   E68E C3                   RET        
+) CODE-END
+
+( @E68F-E6A8 XT:E691 CFA:1D29 DLen: 23 STAGE: Words)
+CREATE [FRACT-OV:E691]
+(Address @E691
+   E691 8B 46 08             MOV        AX, WORD PTR [BP+8]
+   E694 03 46 04             ADD        AX, WORD PTR [BP+4]
+   E697 D1 F8                SAR        AX, 1
+   E699 89 46 0C             MOV        WORD PTR [BP+12], AX
+   E69C 8B 46 06             MOV        AX, WORD PTR [BP+6]
+   E69F 03 46 02             ADD        AX, WORD PTR [BP+2]
+   E6A2 D1 F8                SAR        AX, 1
+   E6A4 89 46 0A             MOV        WORD PTR [BP+10], AX
+   E6A7 C3                   RET        
+) CODE-END
+
+( @E6A8-E6C0 XT:E6AA CFA:1D29 DLen: 22 STAGE: Words)
+CREATE [FRACT-OV:E6AA]
+(Address @E6AA
+   E6AA 8B 46 0E             MOV        AX, WORD PTR [BP+14]
+   E6AD F7 26 60 E3          MUL        WORD PTR [E360h]                 ; [FRACT-OV:E35E]+65538
+   E6B1 F7 36 5E E3          DIV        WORD PTR [E35Eh]                 ; [FRACT-OV:E35E]
+   E6B5 0B C0                OR         AX, AX
+   E6B7 7F 03                JNLE       E6BCh                            ; .FRACT-OV_E6BC
+   E6B9 B8 01 00             MOV        AX, 1
+ .FRACT-OV_E6BC:
+   E6BC 89 46 0E             MOV        WORD PTR [BP+14], AX
+   E6BF C3                   RET        
+) CODE-END
+
+( @E6C0-E75C XT:E6C2 CFA:1D29 DLen: 154 STAGE: Words)
+CREATE [FRACT-OV:E6C2]
+(Address @E6C2
+   E6C2 8B EC                MOV        BP, SP
+   E6C4 8B 46 04             MOV        AX, WORD PTR [BP+4]
+   E6C7 2B 46 08             SUB        AX, WORD PTR [BP+8]
+   E6CA 48                   DEC        AX
+   E6CB 7E 05                JLE        E6D2h                            ; .FRACT-OV_E6D2
+   E6CD B8 01 00             MOV        AX, 1
+   E6D0 EB 02                JMP        E6D4h                            ; .FRACT-OV_E6D4
+ .FRACT-OV_E6D2:
+   E6D2 33 C0                XOR        AX, AX
+ .FRACT-OV_E6D4:
+   E6D4 89 06 6C E3          MOV        WORD PTR [E36Ch], AX             ; [FRACT-OV:E36C]
+   E6D8 8B 4E 02             MOV        CX, WORD PTR [BP+2]
+   E6DB 2B 4E 06             SUB        CX, WORD PTR [BP+6]
+   E6DE 49                   DEC        CX
+   E6DF 7E 05                JLE        E6E6h                            ; .FRACT-OV_E6E6
+   E6E1 B9 01 00             MOV        CX, 1
+   E6E4 EB 02                JMP        E6E8h                            ; .FRACT-OV_E6E8
+ .FRACT-OV_E6E6:
+   E6E6 33 C9                XOR        CX, CX
+ .FRACT-OV_E6E8:
+   E6E8 89 0E 68 E3          MOV        WORD PTR [E368h], CX             ; [FRACT-OV:E368]
+   E6EC 0B C1                OR         AX, CX
+   E6EE 7E 64                JLE        E754h                            ; .FRACT-OV_E754
+   E6F0 E8 9E FF             CALL       E691h                            ; [FRACT-OV:E691]
+   E6F3 E8 05 FF             CALL       E5FBh                            ; [FRACT-OV:E5FB]
+   E6F6 E8 37 FF             CALL       E630h                            ; [FRACT-OV:E630]
+   E6F9 E8 AE FF             CALL       E6AAh                            ; [FRACT-OV:E6AA]
+   E6FC 33 C0                XOR        AX, AX
+   E6FE FF 76 0E             PUSH       WORD PTR [BP+14]
+   E701 50                   PUSH       AX
+   E702 50                   PUSH       AX
+   E703 FF 76 08             PUSH       WORD PTR [BP+8]
+   E706 FF 76 06             PUSH       WORD PTR [BP+6]
+   E709 FF 76 0C             PUSH       WORD PTR [BP+12]
+   E70C FF 76 0A             PUSH       WORD PTR [BP+10]
+   E70F E8 B0 FF             CALL       E6C2h                            ; [FRACT-OV:E6C2]
+   E712 33 C0                XOR        AX, AX
+   E714 FF 76 0E             PUSH       WORD PTR [BP+14]
+   E717 50                   PUSH       AX
+   E718 50                   PUSH       AX
+   E719 FF 76 0C             PUSH       WORD PTR [BP+12]
+   E71C FF 76 06             PUSH       WORD PTR [BP+6]
+   E71F FF 76 04             PUSH       WORD PTR [BP+4]
+   E722 FF 76 0A             PUSH       WORD PTR [BP+10]
+   E725 E8 9A FF             CALL       E6C2h                            ; [FRACT-OV:E6C2]
+   E728 33 C0                XOR        AX, AX
+   E72A FF 76 0E             PUSH       WORD PTR [BP+14]
+   E72D 50                   PUSH       AX
+   E72E 50                   PUSH       AX
+   E72F FF 76 08             PUSH       WORD PTR [BP+8]
+   E732 FF 76 0A             PUSH       WORD PTR [BP+10]
+   E735 FF 76 0C             PUSH       WORD PTR [BP+12]
+   E738 FF 76 02             PUSH       WORD PTR [BP+2]
+   E73B E8 84 FF             CALL       E6C2h                            ; [FRACT-OV:E6C2]
+   E73E 33 C0                XOR        AX, AX
+   E740 FF 76 0E             PUSH       WORD PTR [BP+14]
+   E743 50                   PUSH       AX
+   E744 50                   PUSH       AX
+   E745 FF 76 0C             PUSH       WORD PTR [BP+12]
+   E748 FF 76 0A             PUSH       WORD PTR [BP+10]
+   E74B FF 76 04             PUSH       WORD PTR [BP+4]
+   E74E FF 76 02             PUSH       WORD PTR [BP+2]
+   E751 E8 6E FF             CALL       E6C2h                            ; [FRACT-OV:E6C2]
+ .FRACT-OV_E754:
+   E754 58                   POP        AX
+   E755 83 C4 0E             ADD        SP, 14
+   E758 8B EC                MOV        BP, SP
+   E75A 50                   PUSH       AX
+   E75B C3                   RET        
+) CODE-END
+
+( @E75C-E76E XT:E75E CFA:E75E DLen: 16 STAGE: Words)
+CODE [FRACT-OV:E75E]
+(Address @E75E
+   E75E 89 2E 92 E3          MOV        WORD PTR [E392h], BP             ; [FRACT-OV:E392]
+   E762 E8 5D FF             CALL       E6C2h                            ; [FRACT-OV:E6C2]
+   E765 8B 2E 92 E3          MOV        BP, WORD PTR [E392h]             ; [FRACT-OV:E392]
+   E769 AD                   LODSW      
+   E76A 8B D8                MOV        BX, AX
+   E76C FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @E76E-E78A XT:E770 CFA:E770 DLen: 26 STAGE: Words)
+CODE [FRACT-OV:E770]
+(Address @E770
+   E770 58                   POP        AX
+   E771 8B 1E F1 4C          MOV        BX, WORD PTR [4CF1h]             ; 'ARRAY
+   E775 8B 4F 04             MOV        CX, WORD PTR [BX+4]
+   E778 8B 5F 06             MOV        BX, WORD PTR [BX+6]
+   E77B 06                   PUSH       ES
+   E77C 57                   PUSH       DI
+   E77D 8E C3                MOV        ES, BX
+   E77F 33 FF                XOR        DI, DI
+   E781 F3 AA                STOSB      
+   E783 5F                   POP        DI
+   E784 07                   POP        ES
+   E785 AD                   LODSW      
+   E786 8B D8                MOV        BX, AX
+   E788 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @E78A-E7A8 XT:E78C CFA:224C DLen: 28 STAGE: Words)
+: [FRACT-OV:E78C]
+ [FRACT-OV:E35A] @ 0 0 XLL @ YLL @ XUR @ YUR @ [FRACT-OV:E75E] ; 
+
+( @E7A8-E7F5 XT:E7B9 CFA:224C DLen: 60 STAGE: Dictionaries)
+: MERCATOR-GEN
+ DUP SEED ! GLOBALSeed ! [FRACT-OV:E356] OFF [FRACT-OV:E380] [FRACT-OV:E386] [FRACT-OV:E39A] 
+ SPHEREW___ ON SIGNEXT___ ON ' MERCATO_ ( $6A99 ) SETLARR__ 0 0 48 23 SETREGI__ [FRACT-OV:E364] 
+ [FRACT-OV:E770] [FRACT-OV:E3A6] [FRACT-OV:E541] [FRACT-OV:E78C] ; 
+
+( Data:DoubleWord @E7F5-E7FB XT:E7F7 CFA:3B68 DLen: 4 STAGE: Words)
+2147438994. 2C= [FRACT-OV:E7F7]
+
+( Data:Word @E7FB-E7FF XT:E7FD CFA:2214 DLen: 2 STAGE: Words)
+20 CONSTANT [FRACT-OV:E7FD]
+
+( @E7FF-E80D XT:E801 CFA:224C DLen: 12 STAGE: Words)
+: [FRACT-OV:E801]
+ ' CONTOUR ( $6AC1 ) SETLARR__ [FRACT-OV:E364] [FRACT-OV:E770] ; 
+
+( @E80D-E86D XT:E80F CFA:224C DLen: 94 STAGE: Words)
+: [FRACT-OV:E80F]
+ YCON @ 40 / Y2 ! XCON @ 48 / X2 ! SPHEREW___ ON ' MERCATO_ ( $6A99 ) SETLARR__ 4 
+ 0 DO 
+  3 0 DO 
+   I X2 @ + Y2 @ J + ACELLAD__ A@ I 4 * J 2* CONANCH__ LC! 
+  LOOP 
+ LOOP 
+ ; 
+
+( @E86D-E89F XT:E86F CFA:224C DLen: 48 STAGE: Words)
+: [FRACT-OV:E86F]
+ 2OVER ACELLAD__ A@ >R 2DUP ACELLAD__ A@ R> + 2/ >R ROT + 2/ >R + 2/ R> R> ROT ROT 
+ ACELLAD__ A! ; 
+
+( @E89F-E8F5 XT:E8A1 CFA:224C DLen: 84 STAGE: Words)
+: [FRACT-OV:E8A1]
+ 4 0 DO 
+  2 0 DO 
+   I 4 * J 2* OVER 4 + OVER [FRACT-OV:E86F] I 4 * J 2* OVER 2 + OVER [FRACT-OV:E86F] 
+   I 1+ 4 * J 2* OVER 2 - OVER [FRACT-OV:E86F] 
+  LOOP 
+ LOOP 
+ ; 
+
+( @E8F5-E91F XT:E8F7 CFA:224C DLen: 40 STAGE: Words)
+: [FRACT-OV:E8F7]
+ 3 0 DO 
+  3 0 DO 
+   I 4 * J 2* OVER OVER 2+ [FRACT-OV:E86F] 
+  LOOP 
+ LOOP 
+ ; 
+
+( @E91F-E94D XT:E921 CFA:224C DLen: 44 STAGE: Words)
+: [FRACT-OV:E921]
+ 3 0 DO 
+  2 0 DO 
+   I 4 * J 2* 1+ OVER 4 + OVER [FRACT-OV:E86F] 
+  LOOP 
+ LOOP 
+ ; 
+
+( @E94D-E977 XT:E94F CFA:224C DLen: 40 STAGE: Words)
+: [FRACT-OV:E94F]
+ 3 0 DO 
+  4 0 DO 
+   I 2* 1+ J 2* OVER OVER 2+ [FRACT-OV:E86F] 
+  LOOP 
+ LOOP 
+ ; 
+
+( @E977-E983 XT:E979 CFA:224C DLen: 10 STAGE: Words)
+: [FRACT-OV:E979]
+ [FRACT-OV:E374] ! [FRACT-OV:E370] ! ; 
+
+( @E983-EA1F XT:E985 CFA:224C DLen: 154 STAGE: Words)
+: [FRACT-OV:E985]
+ XCON @ 48 MOD 12 / YCON @ 40 MOD 20 / OVER XCON @ 48 / 48 * SWAP 12 * + >R YCON 
+ @ 40 / 40 * OVER 20 * + R> SWAP [FRACT-OV:E979] 6 0 DO 
+  6 0 DO 
+   OVER I + OVER J + CONANCH__ LC@ I 12 * J 20 * CONTOUR LC! 
+  LOOP 
+ LOOP 
+ 2DROP ; 
+
+( @EA1F-EA35 XT:EA21 CFA:224C DLen: 20 STAGE: Words)
+: [FRACT-OV:EA21]
+ [FRACT-OV:E80F] ' CONANCH__ ( $6AAD ) SETLARR__ [FRACT-OV:E8A1] [FRACT-OV:E8F7] 
+ [FRACT-OV:E921] [FRACT-OV:E94F] [FRACT-OV:E985] ; 
+
+( @EA35-EA95 XT:EA37 CFA:224C DLen: 94 STAGE: Words)
+: [FRACT-OV:EA37]
+ 20 * SWAP 12 * SWAP OVER 1+ OVER 1+ ACELLAD__ A@ [FRACT-OV:E364] = >R OVER 11 + 
+ OVER 19 + ACELLAD__ A@ [FRACT-OV:E364] = R> AND IF 
+  OVER 12 + OVER 20 + SETREGI__ [FRACT-OV:E78C] 
+ ELSE 
+  2DROP 
+ THEN 
+ ; 
+
+( @EA95-EACB XT:EA97 CFA:224C DLen: 52 STAGE: Words)
+: [FRACT-OV:EA97]
+ SPHEREW___ OFF SIGNEXT___ ON ' CONTOUR ( $6AC1 ) SETLARR__ [FRACT-OV:E356] ON [FRACT-OV:E7F7] 
+ [FRACT-OV:E7FD] [FRACT-OV:E39A] 5 0 DO 
+  5 0 DO 
+   I J [FRACT-OV:EA37] 
+  LOOP 
+ LOOP 
+ ; 
+
+( Data:Variable @EACB-EACF XT:EACD CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:EACD] ( @EACD=$203A)
+
+( @EACF-EADA XT:EAD1 CFA:EAD1 DLen: 9 STAGE: Words)
+CODE [FRACT-OV:EAD1]
+(Address @EAD1
+   EAD1 89 26 CD EA          MOV        WORD PTR [EACDh], SP             ; [FRACT-OV:EACD]
+   EAD5 AD                   LODSW      
+   EAD6 8B D8                MOV        BX, AX
+   EAD8 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @EADA-EAE8 XT:EADC CFA:EADC DLen: 12 STAGE: Words)
+CODE [FRACT-OV:EADC]
+(Address @EADC
+   EADC 83 C4 0E             ADD        SP, 14
+   EADF 89 26 CD EA          MOV        WORD PTR [EACDh], SP             ; [FRACT-OV:EACD]
+   EAE3 AD                   LODSW      
+   EAE4 8B D8                MOV        BX, AX
+   EAE6 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @EAE8-EAF6 XT:EAEA CFA:EAEA DLen: 12 STAGE: Words)
+CODE [FRACT-OV:EAEA]
+(Address @EAEA
+   EAEA 5B                   POP        BX
+   EAEB 03 1E CD EA          ADD        BX, WORD PTR [EACDh]             ; [FRACT-OV:EACD]
+   EAEF FF 37                PUSH       WORD PTR [BX]
+   EAF1 AD                   LODSW      
+   EAF2 8B D8                MOV        BX, AX
+   EAF4 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @EAF6-EB04 XT:EAF8 CFA:EAF8 DLen: 12 STAGE: Words)
+CODE [FRACT-OV:EAF8]
+(Address @EAF8
+   EAF8 5B                   POP        BX
+   EAF9 03 1E CD EA          ADD        BX, WORD PTR [EACDh]             ; [FRACT-OV:EACD]
+   EAFD 8F 07                POP        WORD PTR [BX]
+   EAFF AD                   LODSW      
+   EB00 8B D8                MOV        BX, AX
+   EB02 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @EB04-EB0C XT:EB06 CFA:224C DLen: 6 STAGE: Words)
+: [FRACT-OV:EB06]
+ 6 [FRACT-OV:EAEA] ; 
+
+( @EB0C-EB14 XT:EB0E CFA:224C DLen: 6 STAGE: Words)
+: [FRACT-OV:EB0E]
+ 2 [FRACT-OV:EAEA] ; 
+
+( @EB14-EB1E XT:EB16 CFA:224C DLen: 8 STAGE: Words)
+: [FRACT-OV:EB16]
+ 10 [FRACT-OV:EAEA] ; 
+
+( @EB1E-EB26 XT:EB20 CFA:224C DLen: 6 STAGE: Words)
+: [FRACT-OV:EB20]
+ 4 [FRACT-OV:EAEA] ; 
+
+( @EB26-EB2E XT:EB28 CFA:224C DLen: 6 STAGE: Words)
+: [FRACT-OV:EB28]
+ 0 [FRACT-OV:EAEA] ; 
+
+( @EB2E-EB36 XT:EB30 CFA:224C DLen: 6 STAGE: Words)
+: [FRACT-OV:EB30]
+ 8 [FRACT-OV:EAEA] ; 
+
+( @EB36-EB40 XT:EB38 CFA:224C DLen: 8 STAGE: Words)
+: [FRACT-OV:EB38]
+ 12 [FRACT-OV:EAEA] ; 
+
+( @EB40-EB4A XT:EB42 CFA:224C DLen: 8 STAGE: Words)
+: [FRACT-OV:EB42]
+ 10 [FRACT-OV:EAF8] ; 
+
+( @EB4A-EB52 XT:EB4C CFA:224C DLen: 6 STAGE: Words)
+: [FRACT-OV:EB4C]
+ 8 [FRACT-OV:EAF8] ; 
+
+( @EB52-EB5C XT:EB54 CFA:224C DLen: 8 STAGE: Words)
+: [FRACT-OV:EB54]
+ 12 [FRACT-OV:EAF8] ; 
+
+( @EB5C-EB74 XT:EB5E CFA:224C DLen: 22 STAGE: Words)
+: [FRACT-OV:EB5E]
+ [FRACT-OV:EB06] [FRACT-OV:EB0E] + 2/ [FRACT-OV:EB42] [FRACT-OV:EB20] [FRACT-OV:EB28] 
+ + 2/ [FRACT-OV:EB4C] ; 
+
+( Data:Variable @EB74-EB82 XT:EB80 CFA:1D29 DLen: 2 STAGE: Dictionaries)
+VARIABLE POLYPTR ( @EB80=$4F20)
+
+( Data:Variable @EB82-EB86 XT:EB84 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:EB84] ( @EB84=$203A)
+
+( Data:Variable @EB86-EB8A XT:EB88 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:EB88] ( @EB88=$203A)
+
+( Data:Variable @EB8A-EB8E XT:EB8C CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:EB8C] ( @EB8C=$203A)
+
+( @EB8E-EBFA XT:EB90 CFA:224C DLen: 106 STAGE: Words)
+: [FRACT-OV:EB90]
+ POLYPTR @ >R [FRACT-OV:EB38] XHBUF-SEG @ I LC! [FRACT-OV:EB06] [FRACT-OV:EB8C] @ 
+ - XHBUF-SEG @ I 1+ LC! [FRACT-OV:EB88] @ [FRACT-OV:EB20] - XHBUF-SEG @ I 2+ LC! 
+ [FRACT-OV:EB0E] [FRACT-OV:EB8C] @ - XHBUF-SEG @ I 3 + LC! [FRACT-OV:EB88] @ [FRACT-OV:EB28] 
+ - XHBUF-SEG @ R> 4 + LC! 5 POLYPTR +! 1 [FRACT-OV:EB84] +! ; 
+
+( @EBFA-EC5C XT:EBFC CFA:224C DLen: 96 STAGE: Words)
+: [FRACT-OV:EBFC]
+ [FRACT-OV:EB06] [FRACT-OV:EB20] 1- MERCATO_ L+-@ COLORMA_ COLOR @ [FRACT-OV:EB54] 
+ [FRACT-OV:EB20] [FRACT-OV:EB28] DO 
+  [FRACT-OV:EB0E] [FRACT-OV:EB06] DO 
+   I J MERCATO_ L+-@ COLORMA_ COLOR @ [FRACT-OV:EB38] = NOT IF 
+    $03E7 [FRACT-OV:EB54] LEAVE 
+   THEN 
+  LOOP 
+  [FRACT-OV:EB38] $03E7 = IF 
+   LEAVE 
+  THEN 
+ LOOP 
+ [FRACT-OV:EB38] $03E7 = NOT ; 
+
+( @EC5C-ECC4 XT:EC70 CFA:224C DLen: 84 STAGE: Dictionaries)
+: POLYGON-EXTRACT
+ [FRACT-OV:EAD1] [FRACT-OV:EBFC] IF 
+  [FRACT-OV:EB90] 
+ ELSE 
+  [FRACT-OV:EB5E] 0 0 0 [FRACT-OV:EB06] [FRACT-OV:EB20] [FRACT-OV:EB16] [FRACT-OV:EB30] 
+  POLYGON-EXTRACT 0 0 0 [FRACT-OV:EB16] [FRACT-OV:EB20] [FRACT-OV:EB0E] [FRACT-OV:EB30] 
+  POLYGON-EXTRACT 0 0 0 [FRACT-OV:EB06] [FRACT-OV:EB30] [FRACT-OV:EB16] [FRACT-OV:EB28] 
+  POLYGON-EXTRACT 0 0 0 [FRACT-OV:EB16] [FRACT-OV:EB30] [FRACT-OV:EB0E] [FRACT-OV:EB28] 
+  POLYGON-EXTRACT 
+ THEN 
+ [FRACT-OV:EADC] ; 
+
+( @ECC4-ED2E XT:ECC6 CFA:224C DLen: 104 STAGE: Words)
+: [FRACT-OV:ECC6]
+ POLYPTR OFF 72 0 DO 
+  0 0 0 I 12 /MOD 6 SWAP - 2* 2* DUP [FRACT-OV:EB88] ! SWAP 4 * DUP [FRACT-OV:EB8C] 
+  ! SWAP OVER 4 + OVER 4 - [FRACT-OV:EB84] OFF POLYPTR @ 0 I FACE L! POLYGON-EXTRACT 
+  [FRACT-OV:EB84] @ 2 I FACE LC! 
+ LOOP 
+ ; 
+
+( Data:Variable @ED2E-ED32 XT:ED30 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:ED30] ( @ED30=$203A)
+
+( @ED32-ED42 XT:ED34 CFA:ED34 DLen: 14 STAGE: Words)
+CODE [FRACT-OV:ED34]
+(Address @ED34
+   ED34 89 26 30 ED          MOV        WORD PTR [ED30h], SP             ; [FRACT-OV:ED30]
+   ED38 58                   POP        AX
+   ED39 D1 E0                SHL        AX, 1
+   ED3B 2B E0                SUB        SP, AX
+   ED3D AD                   LODSW      
+   ED3E 8B D8                MOV        BX, AX
+   ED40 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @ED42-ED4E XT:ED44 CFA:ED44 DLen: 10 STAGE: Words)
+CODE [FRACT-OV:ED44]
+(Address @ED44
+   ED44 58                   POP        AX
+   ED45 D1 E0                SHL        AX, 1
+   ED47 03 E0                ADD        SP, AX
+   ED49 AD                   LODSW      
+   ED4A 8B D8                MOV        BX, AX
+   ED4C FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @ED4E-ED60 XT:ED50 CFA:ED50 DLen: 16 STAGE: Words)
+CODE [FRACT-OV:ED50]
+(Address @ED50
+   ED50 5B                   POP        BX
+   ED51 D1 E3                SHL        BX, 1
+   ED53 F7 DB                NEG        BX
+   ED55 03 1E 30 ED          ADD        BX, WORD PTR [ED30h]             ; [FRACT-OV:ED30]
+   ED59 FF 37                PUSH       WORD PTR [BX]
+   ED5B AD                   LODSW      
+   ED5C 8B D8                MOV        BX, AX
+   ED5E FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @ED60-ED73 XT:ED62 CFA:ED62 DLen: 17 STAGE: Words)
+CODE [FRACT-OV:ED62]
+(Address @ED62
+   ED62 5B                   POP        BX
+   ED63 D1 E3                SHL        BX, 1
+   ED65 F7 DB                NEG        BX
+   ED67 03 1E 30 ED          ADD        BX, WORD PTR [ED30h]             ; [FRACT-OV:ED30]
+   ED6B 58                   POP        AX
+   ED6C 89 07                MOV        WORD PTR [BX], AX
+   ED6E AD                   LODSW      
+   ED6F 8B D8                MOV        BX, AX
+   ED71 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( Data:Variable @ED73-ED7F XT:ED7D CFA:1D29 DLen: 2 STAGE: Dictionaries)
+VARIABLE FADDR ( @ED7D=$2D20)
+
+( Data:Variable @ED7F-ED83 XT:ED81 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:ED81] ( @ED81=$203A)
+
+( Data:Variable @ED83-ED87 XT:ED85 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:ED85] ( @ED85=$203A)
+
+( Data:Variable @ED87-ED8B XT:ED89 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [FRACT-OV:ED89] ( @ED89=$203A)
+
+( @ED8B-EDD7 XT:ED8D CFA:224C DLen: 74 STAGE: Words)
+: [FRACT-OV:ED8D]
+ 32 0 DO 
+  DUP I [FRACT-OV:ED50] DUP 0= IF 
+   2DROP I [FRACT-OV:ED62] 1 I 1+ [FRACT-OV:ED62] LEAVE 
+  ELSE 
+   = IF 
+    I 1+ DUP [FRACT-OV:ED50] 1+ SWAP [FRACT-OV:ED62] LEAVE DROP 
+   THEN 
+  THEN 
+  2 
+ +LOOP 
+ ; 
+
+( @EDD7-EE63 XT:EDD9 CFA:224C DLen: 138 STAGE: Words)
+: [FRACT-OV:EDD9]
+ >R >R 34 [FRACT-OV:ED34] [FRACT-OV:ED30] @ 68 - 70 0 FILL R> R> 0 DO 
+  XHBUF-SEG @ OVER LC@ [FRACT-OV:ED8D] 5 + 
+ LOOP 
+ DROP 32 0 DO 
+  I [FRACT-OV:ED50] I 1+ [FRACT-OV:ED50] DUP 33 [FRACT-OV:ED50] > IF 
+   33 [FRACT-OV:ED62] 32 [FRACT-OV:ED62] 
+  ELSE 
+   DROP 0= IF 
+    LEAVE 
+   THEN 
+  THEN 
+  2 
+ +LOOP 
+ 32 [FRACT-OV:ED50] >R 34 [FRACT-OV:ED44] R> ; 
+
+( @EE63-EE94 XT:EE65 CFA:EE65 DLen: 47 STAGE: Words)
+CODE [FRACT-OV:EE65]
+(Address @EE65
+   EE65 8C C1                MOV        CX, ES
+   EE67 8B 16 A3 5D          MOV        DX, WORD PTR [5DA3h]             ; ?EGA
+   EE6B 83 E2 01             AND        DX, 1
+   EE6E 75 06                JNZ        EE76h                            ; .FRACT-OV_EE76
+   EE70 8B 16 D8 55          MOV        DX, WORD PTR [55D8h]             ; HBUF-SE_
+   EE74 EB 04                JMP        EE7Ah                            ; .FRACT-OV_EE7A
+ .FRACT-OV_EE76:
+   EE76 8B 16 B3 52          MOV        DX, WORD PTR [52B3h]             ; XBUF-SE_
+ .FRACT-OV_EE7A:
+   EE7A 8E C2                MOV        ES, DX
+   EE7C 33 C0                XOR        AX, AX
+   EE7E 5B                   POP        BX
+   EE7F 26 8A 07             MOV        AL, BYTE PTR [ES:BX]
+   EE82 43                   INC        BX
+   EE83 26 FF 37             PUSH       WORD PTR [ES:BX]
+   EE86 83 C3 02             ADD        BX, 2
+   EE89 26 FF 37             PUSH       WORD PTR [ES:BX]
+   EE8C 50                   PUSH       AX
+   EE8D 8E C1                MOV        ES, CX
+   EE8F AD                   LODSW      
+   EE90 8B D8                MOV        BX, AX
+   EE92 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @EE94-EEC0 XT:EE96 CFA:EE96 DLen: 42 STAGE: Words)
+CODE [FRACT-OV:EE96]
+(Address @EE96
+   EE96 8C C1                MOV        CX, ES
+   EE98 8B 16 44 51          MOV        DX, WORD PTR [5144h]             ; POLYSEG
+   EE9C 8E C2                MOV        ES, DX
+   EE9E 8B 1E 7D ED          MOV        BX, WORD PTR [ED7Dh]             ; FADDR
+   EEA2 58                   POP        AX
+   EEA3 26 88 07             MOV        BYTE PTR [ES:BX], AL
+   EEA6 83 C3 03             ADD        BX, 3
+   EEA9 26 8F 07             POP        WORD PTR [ES:BX]
+   EEAC 83 EB 02             SUB        BX, 2
+   EEAF 26 8F 07             POP        WORD PTR [ES:BX]
+   EEB2 83 C3 04             ADD        BX, 4
+   EEB5 89 1E 7D ED          MOV        WORD PTR [ED7Dh], BX             ; FADDR
+   EEB9 8E C1                MOV        ES, CX
+   EEBB AD                   LODSW      
+   EEBC 8B D8                MOV        BX, AX
+   EEBE FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @EEC0-EECA XT:EEC2 CFA:EEC2 DLen: 8 STAGE: Words)
+CODE [FRACT-OV:EEC2]
+(Address @EEC2
+   EEC2 83 C4 06             ADD        SP, 6
+   EEC5 AD                   LODSW      
+   EEC6 8B D8                MOV        BX, AX
+   EEC8 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @EECA-EEE3 XT:EECC CFA:EECC DLen: 23 STAGE: Words)
+CODE [FRACT-OV:EECC]
+(Address @EECC
+   EECC 33 C0                XOR        AX, AX
+   EECE 58                   POP        AX
+   EECF 50                   PUSH       AX
+   EED0 3B 06 81 ED          CMP        AX, WORD PTR [ED81h]             ; [FRACT-OV:ED81]
+   EED4 75 05                JNZ        EEDBh                            ; .FRACT-OV_EEDB
+   EED6 B8 01 00             MOV        AX, 1
+   EED9 EB 02                JMP        EEDDh                            ; .FRACT-OV_EEDD
+ .FRACT-OV_EEDB:
+   EEDB 33 C0                XOR        AX, AX
+ .FRACT-OV_EEDD:
+   EEDD 50                   PUSH       AX
+   EEDE AD                   LODSW      
+   EEDF 8B D8                MOV        BX, AX
+   EEE1 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @EEE3-EEF8 XT:EEE5 CFA:EEE5 DLen: 19 STAGE: Words)
+CODE [FRACT-OV:EEE5]
+(Address @EEE5
+   EEE5 33 C0                XOR        AX, AX
+   EEE7 50                   PUSH       AX
+   EEE8 B8 04 00             MOV        AX, 4
+   EEEB 8A E0                MOV        AH, AL
+   EEED 50                   PUSH       AX
+   EEEE 8B 06 81 ED          MOV        AX, WORD PTR [ED81h]             ; [FRACT-OV:ED81]
+   EEF2 50                   PUSH       AX
+   EEF3 AD                   LODSW      
+   EEF4 8B D8                MOV        BX, AX
+   EEF6 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @EEF8-EF84 XT:EEFA CFA:224C DLen: 138 STAGE: Words)
+: [FRACT-OV:EEFA]
+ 0 OVER FACE OVER OVER L@ [FRACT-OV:ED85] ! 2+ LC@ >R [FRACT-OV:ED85] @ I [FRACT-OV:EDD9] 
+ [FRACT-OV:ED81] ! I 0 DO 
+  [FRACT-OV:ED85] @ [FRACT-OV:EE65] 5 [FRACT-OV:ED85] +! 
+ LOOP 
+ FADDR @ [FRACT-OV:ED85] ! [FRACT-OV:EEE5] 1 [FRACT-OV:ED89] ! [FRACT-OV:EE96] R> 
+ 0 DO 
+  [FRACT-OV:EECC] IF 
+   [FRACT-OV:EEC2] 
+  ELSE 
+   [FRACT-OV:EE96] 1 [FRACT-OV:ED89] +! 
+  THEN 
+ LOOP 
+ 0 SWAP FACE OVER OVER [FRACT-OV:ED85] @ ROT ROT L! 2+ [FRACT-OV:ED89] @ ROT ROT 
+ LC! ; 
+
+( @EF84-EF9E XT:EF86 CFA:224C DLen: 24 STAGE: Words)
+: [FRACT-OV:EF86]
+ 0 FADDR ! 72 0 DO 
+  I [FRACT-OV:EEFA] 
+ LOOP 
+ ; 
+
+( @EF9E-EFB3 XT:EFAD CFA:224C DLen: 6 STAGE: Dictionaries)
+: MAKE-GLOBE
+ [FRACT-OV:ECC6] [FRACT-OV:EF86] ; 
+
+( @EFB3-EFD7 XT:EFB5 CFA:224C DLen: 34 STAGE: Words)
+: [FRACT-OV:EFB5]
+ 0 0 ACELLAD__ ROT 0 SWAP ACELLAD__ 3 PICK OVER - ABS #BYTES SWAP - <LCMOVE ; 
+
+( @EFD7-EFF9 XT:EFD9 CFA:224C DLen: 32 STAGE: Words)
+: [FRACT-OV:EFD9]
+ 0 SWAP ACELLAD__ 0 0 ACELLAD__ 3 PICK OVER - ABS #BYTES SWAP - LCMOVE ; 
+
+( @EFF9-F021 XT:EFFB CFA:224C DLen: 38 STAGE: Words)
+: [FRACT-OV:EFFB]
+ #ROWZ 0 DO 
+  0 I ACELLAD__ 3 PICK I ACELLAD__ #COLZ 6 PICK - <LCMOVE 
+ LOOP 
+ DROP ; 
+
+( @F021-F047 XT:F023 CFA:224C DLen: 36 STAGE: Words)
+: [FRACT-OV:F023]
+ #ROWZ 0 DO 
+  DUP I ACELLAD__ 0 I ACELLAD__ #COLZ 6 PICK - LCMOVE 
+ LOOP 
+ DROP ; 
+
+( @F047-F089 XT:F049 CFA:224C DLen: 64 STAGE: Words)
+: [FRACT-OV:F049]
+ DXCON @ IF 
+  DXCON @ DUP 0< IF 
+   ABS [FRACT-OV:EFFB] 0 0 11 100 
+  ELSE 
+   [FRACT-OV:F023] 49 0 60 100 
+  THEN 
+  SETREGI__ [FRACT-OV:E364] FILLREG___ 
+ THEN 
+ ; 
+
+( @F089-F0CB XT:F08B CFA:224C DLen: 64 STAGE: Words)
+: [FRACT-OV:F08B]
+ DYCON @ IF 
+  DYCON @ DUP 0< IF 
+   ABS [FRACT-OV:EFB5] 0 0 60 19 
+  ELSE 
+   [FRACT-OV:EFD9] 0 81 60 100 
+  THEN 
+  SETREGI__ [FRACT-OV:E364] FILLREG___ 
+ THEN 
+ ; 
+
+( @F0CB-F0F9 XT:F0D7 CFA:224C DLen: 34 STAGE: Dictionaries)
+: SCRLCON
+ DXCON @ DYCON @ OR IF 
+  SPHEREW___ OFF ' CONTOUR ( $6AC1 ) SETLARR__ [FRACT-OV:F049] [FRACT-OV:F08B] [FRACT-OV:EA21] 
+  [FRACT-OV:EA97] 
+ THEN 
+ ; 
+
+( @F0F9-F110 XT:F108 CFA:224C DLen: 8 STAGE: Dictionaries)
+: NEWCONTOUR
+ [FRACT-OV:E801] [FRACT-OV:EA21] [FRACT-OV:EA97] ; 
+
+( RAW Data:OverlayJunk @F110-F560 DLen: 1104 STAGE: Dictionaries)
+ _overlayJunk 1104 ALLOT ( @F110 =
+@F110 46 52 41 43 54 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   FRACT___________
+@F120 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+@F130 20 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D    ---------------
+@F140 2D 2D 72 66 67 30 33 6A 75 6E 38 35 29 EA 5D 17   --rfg03jun85).].
+@F150 31 32 32 32 6A 6D C9 79 90 16 4C 22 16 16 FC 18   1222jm.y..L"....
+@F160 02 00 8C EA 90 16 4C 22 16 16 98 19 02 00 8C EA   ......L"........
+@F170 90 16 4C 22 6E EA 78 EA CE 54 AE 0B 3D 0F 5F 12   ..L"n.x..T..=._.
+@F180 FA 15 3E 00 16 16 E5 19 02 00 8C EA DA EA 20 0F   ..>........... .
+@F190 20 0F B4 EE FA 15 2A 00 5D 17 C8 00 8B 3B E4 EB    .....*.]....;..
+@F1A0 FA 15 0C 00 9B 3B 82 EA 5A F1 60 16 12 00 C8 EC   .....;..Z.`.....
+@F1B0 B7 6D 66 F1 5D 17 96 00 B8 EC 8B 3B 6C EC DA EA   .mf.]......;l...
+@F1C0 C9 79 90 16 4C 22 16 16 10 1A 02 00 8C EA 90 16   .y..L"..........
+@F1D0 4C 22 6E EA 78 EA CE 54 AE 0B 5D 17 0C 00 F5 12   L"n.x..T..].....
+@F1E0 5D 17 28 00 8B 3B E4 EB B3 0F FA 15 5C 00 C4 F1   ].(..;......\...
+@F1F0 CE 54 AE 0B 9B 3B 5F 12 8B 3B B3 0F 73 3B 72 0F   .T...;_..;..s;r.
+@F200 5D 17 30 00 72 0F 73 3B AE 3F 5D 17 82 00 72 0F   ].0.r.s;.?]...r.
+@F210 6A 6D DA EA 20 0F 5D 17 64 00 B4 EE FA 15 24 00   jm.. .].d.....$.
+@F220 CC EB AE 0B CE 54 AE 0B 9B 3B 5F 12 5D 17 3C 00   .....T...;_.].<.
+@F230 B3 0F 5D 17 1E 00 72 0F AD 11 8B 3B 4C EC 60 16   ..]...r....;L.`.
+@F240 08 00 C8 EC B7 6D B4 EB C9 79 90 16 4C 22 16 16   .....m...y..L"..
+@F250 D4 1A 02 00 8C EA 90 16 4C 22 D2 AD 41 0E DB 23   ........L"..A..#
+@F260 5D 17 18 00 EA 6D AC EB FA 15 0A 00 5D 17 4E 00   ]....m......].N.
+@F270 60 16 04 00 98 09 9C 67 5D 17 3B 00 72 0F 6A 6D   `......g].;.r.jm
+@F280 9C 67 5D 17 3D 00 72 0F 41 0E 5D 17 18 00 98 09   .g].=.r.A.].....
+@F290 FD 6D DB 23 5D 17 18 00 5D 17 2E 00 67 AF E7 0F   .m.#]...]...g...
+@F2A0 B3 0E F2 0E EA 6D 90 16 4C 22 E4 AD AE 0B 20 0F   .....m..L".... .
+@F2B0 5D 17 21 00 EB 11 5D 17 0A 00 89 11 B8 EC 41 0E   ].!...].......A.
+@F2C0 00 F0 76 6D 5D 17 0A 00 4C 0F 20 0F 5D 14 B4 13   ..vm]...L. .]...
+@F2D0 9F 13 9C 67 5D 17 9B 00 72 0F 41 0E 7B 3B 98 09   ...g]...r.A.{;..
+@F2E0 FD 6D F2 0E EA 6D 32 0E 00 F0 AE 0B 5D 17 0A 00   .m...m2.....]...
+@F2F0 2D 12 FA 15 0A 00 5D 17 53 00 60 16 04 00 98 09   -.....].S.`.....
+@F300 9C 67 5D 17 AF 00 72 0F 3D 0F B3 0E FD 6D 90 16   .g]...r.=....m..
+@F310 4C 22 6E EA 78 EA 50 6C F2 79 12 7A 5D 17 0B 00   L"n.x.Pl.y.z]...
+@F320 5D 17 0F 00 12 7E FA 15 66 00 12 7A 2E 0F 5D 17   ]....~..f..z..].
+@F330 0A 00 D8 4A 20 0F B8 15 84 7A D0 15 FC FF 30 75   ...J ....z....0u
+@F340 5D 17 0F 00 5F 12 FA 15 04 00 B5 7A 30 75 5D 17   ]..._......z0u].
+@F350 0F 00 5F 12 07 13 41 0E FA 15 2A 00 4C F2 DE 0D   .._...A...*.L...
+@F360 58 F2 A8 F2 9C 67 CD 0C DA EA 20 0F 83 3B B4 EE   X....g.... ..;..
+@F370 FA 15 12 00 C2 EB 48 BB AC 7E 32 0E 00 F0 AE 0B   ......H..~2.....
+@F380 8B 3B 6C EC 84 7A 60 7A 3E 13 FA 15 C0 FF 34 EC   .;l..z`z>.....4.
+@F390 C9 79 90 16 4C 22 16 16 00 1C 02 00 8C EA 90 16   .y..L"..........
+@F3A0 4C 22 6E EA 78 EA 94 F3 DA EA 20 0F 5D 17 64 00   L"n.x..... .].d.
+@F3B0 B4 EE FA 15 3C 00 28 A5 0A 4F 17 85 AB 4F 5D 17   ....<.(..O...O].
+@F3C0 0C 4F 76 6D 81 A1 39 3F 0D 43 52 45 57 20 41 52   .Ovm..9?.CREW AR
+@F3D0 52 45 53 54 45 44 47 A5 39 3F 09 47 41 4D 45 20   RESTEDG.9?.GAME 
+@F3E0 4F 56 45 52 47 A5 1F A9 32 0E A9 48 32 0E D7 8F   OVERG...2..H2...
+@F3F0 C8 EC B7 6D B4 EB C9 79 90 16 4C 22 16 16 D8 1C   ...m...y..L"....
+@F400 02 00 8C EA 90 16 4C 22 16 16 0F 1D 02 00 8C EA   ......L"........
+@F410 90 16 4C 22 6E EA 78 EA FA F3 DA EA 5D 17 C4 09   ..L"n.x.....]...
+@F420 EF 2A E7 5F AE 0B CE 84 CF 5F AE 0B 07 13 FA 15   .*._....._......
+@F430 1E 00 06 F4 DA EA 5D 17 C4 09 EF 2A C8 EC B7 6D   ......]....*...m
+@F440 48 5A B7 6D 20 0F 9E EA 6A 6D C0 54 C5 6D C9 79   HZ.m ...jm.T.m.y
+@F450 90 16 29 1D 04 30 F1 A7 ED DB ED 74 F1 29 1D 05   ..)..0.....t.)..
+@F460 3F EE 73 EE 12 F0 12 F3 A6 F0 29 1D 03 C0 EF 36   ?.s.......)....6
+@F470 EF D2 F1 29 1D 01 17 EE 29 1D 01 CE EC 29 1D 02   ...)....)....)..
+@F480 14 F4 A2 F3 4C 22 C8 0D FA 15 28 00 C8 EC C5 6D   ....L"....(....m
+@F490 CD 0C 05 10 7F 0E 72 0F F2 0E B8 15 50 0E 37 3A   ......r.....P.7:
+@F4A0 C8 EC AE 0B FA 15 04 00 4A 17 66 BF 3D 0F 5C 15   ........J.f.=.\.
+@F4B0 EC FF 90 16 00 00 87 53 41 2D 43 41 53 C5 4F 4A   .......SA-CAS.OJ
+@F4C0 06 00 22 0F 01 00 54 F4 07 00 5F F4 08 00 6C F4   .."...T..._...l.
+@F4D0 03 00 75 F4 0A 00 7A F4 15 00 7F F4 4C 22 98 2A   ..u...z.....L".*
+@F4E0 38 0C 3E 62 38 0C 46 40 19 06 3E 13 FA 15 F0 FF   8.>b8.F@..>.....
+@F4F0 90 16 00 00 87 28 58 43 4F 4D 4D A9 4C 22 DC F4   .....(XCOMM.L"..
+@F500 FD 62 02 7A 30 75 C9 79 BE F4 84 F4 DC F4 90 16   .b.z0u.y........
+@F510 58 43 4F 4D 2D 56 4F 43 5F 5F 5F 5F 5F 5F 5F 5F   XCOM-VOC________
+@F520 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+@F530 20 53 50 45 43 20 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D    SPEC ----------
+@F540 2D 2D 2D 38 2F 31 33 2F 38 35 20 41 57 4B 20 29   ---8/13/85 AWK )
+@F550 31 31 37 35 CF 8B 90 16 43 4F 4D 4D 2D 56 4F 43   1175....COMM-VOC
+ )
+

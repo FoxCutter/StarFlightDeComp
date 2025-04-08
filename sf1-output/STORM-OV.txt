@@ -1,0 +1,226 @@
+( RAW Data:OverlayHeader @F090-F0A4 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 935B 	Count: 004D 	Data Size: 0048 (Paragraphs)
+    On Disk Location 935B0-93A80
+  Overlay Address: @F090 	Overlay DP: @F506
+    Load Location: @F090-@F560 	Load Length: 1232
+    Data: @F090-@F506 	Data Length: 1142
+    Junk: @F506-@F560 	Junk Length: 90
+  VOCABULARY Word: CF87 STORM-VOC
+   Dictionary Link 1: F182
+   Dictionary Link 2: F4BC
+   Dictionary Link 3: 0000
+   Dictionary Link 4: F376
+
+@F090 5B 93 4D 00 90 F0 06 F5 87 CF 82 F1 BC F4 00 00   [.M.............
+@F0A0 76 F3 48 00                                       v.H.            
+)
+
+( @F0A4-F0B2 XT:F0A6 CFA:224C DLen: 12 STAGE: Words)
+: _probability-range
+ DUP @ 2+ RANGE 2+ ; 
+
+( @F0B2-F14A XT:F0B4 CFA:224C DLen: 150 STAGE: CodePointers)
+: _probability-array
+ CREATE 6 * DUP , HERE OVER ALLOT SWAP 0 FILL DOES> ( CFA @F0CC ) 
+  0 4 ROLL 4 ROLL 4 ROLL _probability-range DO 
+   I 2@ 3 PICK = >R 3 PICK = R> AND IF 
+    I 4 ROLL DROP ROT ROT LEAVE 
+   THEN 
+   6 
+  +LOOP 
+  2DROP ?DUP IF 
+   4 + @ 
+  ELSE 
+   ." INDEX NOT IN PROBABILITY ARRAY! " UNRAVEL QUIT 
+  THEN 
+  ; 
+
+( @F14A-F172 XT:F14C CFA:224C DLen: 38 STAGE: Words)
+: [STORM-OV:F14C]
+ BEGIN 
+  OVER OVER C@ DUP 100 = NOT >R > R> AND WHILE 
+  1+ 3+ 
+ REPEAT 
+ ; 
+
+( @F172-F180 XT:F174 CFA:224C DLen: 12 STAGE: Words)
+: [STORM-OV:F174]
+ [STORM-OV:F14C] 1+ 1.5@ ROT DROP ; 
+
+( Data:ProbabilityArray @F180-F241 XT:F18B CFA:F0CC DLen: 182 STAGE: Dictionaries)
+10 _probability-array STORMS
+   $000008
+     100 % 1.
+   $000009
+      26 % 6.
+      25 % 7.
+      49 % 8.
+   $000006
+      16 % 1.
+      15 % 2.
+      15 % 3.
+      15 % 4.
+      39 % 5.
+   $000007
+      16 % 6.
+      15 % 7.
+      15 % 11.
+      15 % 9.
+      39 % 10.
+   $000004
+      20 % 1.
+      19 % 2.
+      18 % 3.
+      43 % 5.
+   $000005
+      16 % 6.
+      15 % 7.
+      15 % 10.
+      15 % 12.
+      39 % 13.
+   $00000A
+      39 % 1.
+      61 % 2.
+   $00000B
+      33 % 6.
+      33 % 7.
+      34 % 10.
+   $000002
+     100 % $000000. ( CLASS: )
+   $000003
+     100 % $000000. ( CLASS: )
+
+( Data:IField @F241-F246 XT:F243 CFA:744D DLen: 3 STAGE: Words)
+16 27 1 IFIELD ^NAV ( CREWMEMBER )
+
+( Data:IField @F246-F24B XT:F248 CFA:744D DLen: 3 STAGE: Words)
+17 23 3 IFIELD _ac_navigator ( ASSIGN-CREW )
+
+( Data:AField @F24B-F253 XT:F24D CFA:73EA DLen: 6 STAGE: Words)
+32 17 2 AFIELD ATMO.ACTIVity ( PLANET )
+
+( Data:AField @F253-F25B XT:F255 CFA:73EA DLen: 6 STAGE: Words)
+32 1 1 AFIELD _p-surface ( PLANET )
+
+( Data:Variable @F25B-F25F XT:F25D CFA:1D29 DLen: 2 STAGE: Memory)
+VARIABLE [STORM-OV:F25D] ( @F25D=$203A)
+
+( @F25F-F273 XT:F261 CFA:224C DLen: 18 STAGE: Words)
+: [STORM-OV:F261]
+ *ASSIGN_____ >C+S _ac_navigator @>C+S ^NAV C@ CDROP ICLOSE ; 
+
+( @F273-F27F XT:F275 CFA:224C DLen: 10 STAGE: Words)
+: [STORM-OV:F275]
+ [STORM-OV:F261] $00C7 > ; 
+
+( Data:IField @F27F-F284 XT:F281 CFA:744D DLen: 3 STAGE: Words)
+17 17 3 IFIELD _ac_captian ( ASSIGN-CREW )
+
+( Data:IField @F284-F289 XT:F286 CFA:744D DLen: 3 STAGE: Words)
+16 31 1 IFIELD [I-CREWMEMBER:31-32] ( CREWMEMBER )
+
+( Data:IField @F289-F28E XT:F28B CFA:744D DLen: 3 STAGE: Words)
+16 11 15 IFIELD _cm_name ( CREWMEMBER )
+
+( Data:AField @F28E-F296 XT:F290 CFA:73EA DLen: 6 STAGE: Words)
+16 19 1 AFIELD _cm-durability ( CREWMEMBER )
+
+( @F296-F2B0 XT:F298 CFA:224C DLen: 24 STAGE: Words)
+: [STORM-OV:F298]
+ *ASSIGN_____ >C+S _ac_captian 0 6 RRND 3 * + 1.5@ ICLOSE ; 
+
+( @F2B0-F2D8 XT:F2B2 CFA:224C DLen: 38 STAGE: Words)
+: [STORM-OV:F2B2]
+ #STORM @ 6 11 WITHIN IF 
+  1 100 RRND 30 < 
+ ELSE 
+  0 
+ THEN 
+ ; 
+
+( @F2D8-F2F2 XT:F2DA CFA:224C DLen: 24 STAGE: Words)
+: [STORM-OV:F2DA]
+ 1 E/M @ NEGATE 3* 2 MAX 30 MIN RRND ; 
+
+( @F2F2-F30C XT:F2F4 CFA:224C DLen: 24 STAGE: Words)
+: [STORM-OV:F2F4]
+ 64 3 7 38 WINDOW -1 WBOTTOM <+!> >TVCT ; 
+
+( @F30C-F33A XT:F30E CFA:224C DLen: 44 STAGE: Words)
+: [STORM-OV:F30E]
+ COLOR @ WTOP @ WLEFT @ WBOTTOM @ 1- WRIGHT @ 1+ BLACK POLY-WI_________ !COLOR WLEFT 
+ @ WTOP @ 1- POS. ; 
+
+( @F33A-F374 XT:F33C CFA:224C DLen: 56 STAGE: Words)
+: [STORM-OV:F33C]
+ [STORM-OV:F2F4] [STORM-OV:F30E] WHITE !COLOR _cm_name $. ."  IS " [I-CREWMEMBER:31-32] 
+ C@ IF 
+  ." INJURED" 
+ ELSE 
+  ." KILLED" 
+ THEN 
+ ." ." ; 
+
+( @F374-F3E0 XT:F382 CFA:224C DLen: 94 STAGE: Dictionaries)
+: INJURE-PL____
+ $03E8 MS [STORM-OV:F2DA] [STORM-OV:F298] >C+S _cm-durability C@ / 1 MAX E/M @ 3* 
+ ABS %EFF @ / 1 MAX * [I-CREWMEMBER:31-32] C@ SWAP - 0 MAX 100 MIN [I-CREWMEMBER:31-32] 
+ C! [STORM-OV:F33C] ICLOSE ?HEAL ON $01F4 MS OBIT_ ' (.VI___ ( $C021 ) MODULE ' (ROL__ ( $C03F ) 
+ MODULE ; 
+
+( @F3E0-F42C XT:F3E2 CFA:224C DLen: 74 STAGE: Words)
+: [STORM-OV:F3E2]
+ STORM @ 0= [STORM-OV:F275] OR 0= IF 
+  $00C5 12 $00C1 68 LCOLOR @ POLY-WI_________ 116 $0096 POS. 7 BLACK POLY-ER________ 
+  116 $008F POS. 9 BLACK POLY-ER________ 
+ THEN 
+ ; 
+
+( @F42C-F46A XT:F42E CFA:224C DLen: 60 STAGE: Words)
+: [STORM-OV:F42E]
+ #STORM @ DUP 3 > IF 
+  6 11 WITHIN IF 
+   50 
+  ELSE 
+   75 
+  THEN 
+ ELSE 
+  DROP 100 
+ THEN 
+ %EFF <!> FORCED ON [STORM-OV:F3E2] ; 
+
+( @F46A-F4A6 XT:F46C CFA:224C DLen: 58 STAGE: Words)
+: [STORM-OV:F46C]
+ 5 SWAP - 3* 1 SWAP RRND 12 MIN 0 MAX STORM <!> 1 100 RRND _p-surface C@ 2* 1+ 0 
+ STORMS [STORM-OV:F174] DROP #STORM <!> ; 
+
+( @F4A6-F4BA XT:F4A8 CFA:224C DLen: 18 STAGE: Words)
+: [STORM-OV:F4A8]
+ 1 STORM <!> 0 0 RRND #STORM <!> ; 
+
+( @F4BA-F506 XT:F4C8 CFA:224C DLen: 62 STAGE: Dictionaries)
+: (DO.STORM_
+ #STORM @ >R (PLANET) @>C+S ATMO.ACTIVity C@ ?DUP IF 
+  [STORM-OV:F46C] 
+ ELSE 
+  [STORM-OV:F4A8] 
+ THEN 
+ ICLOSE [STORM-OV:F42E] R> #STORM @ = NOT IF 
+  ' .STOR_ ( $CDD8 ) MODULE 
+ THEN 
+ [STORM-OV:F2B2] IF 
+  INJURE-PL____ 
+ THEN 
+ ; 
+
+( RAW Data:OverlayJunk @F506-F560 DLen: 90 STAGE: Dictionaries)
+ _overlayJunk 90 ALLOT ( @F506 =
+@F506                   53 54 4F 52 4D 2D 56 4F 43 5F         STORM-VOC_
+@F510 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+@F520 5F 5F 5F 5F 5F 5F 52 41 47 45 20 46 4F 52 20 46   ______RAGE FOR F
+@F530 55 4E 43 54 49 4F 4E 5D 17 A0 0F EF 2A B3 E0 90   UNCTION]....*...
+@F540 16 49 54 45 4D 53 31 36 37 32 5F 5F 5F 5F 5F 5F   .ITEMS1672______
+@F550 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+ )
+

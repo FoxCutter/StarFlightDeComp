@@ -1,0 +1,646 @@
+( RAW Data:OverlayHeader @E930-E944 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 7660 	Count: 00C3 	Data Size: 00BE (Paragraphs)
+    On Disk Location 76600-77230
+  Overlay Address: @E930 	Overlay DP: @F50C
+    Load Location: @E930-@F560 	Load Length: 3120
+    Data: @E930-@F50C 	Data Length: 3036
+    Junk: @F50C-@F560 	Junk Length: 84
+  VOCABULARY Word: D3EF PM-VOC
+   Dictionary Link 1: F405
+   Dictionary Link 2: F45C
+   Dictionary Link 3: F4AE
+   Dictionary Link 4: F4DA
+
+@E930 60 76 C3 00 30 E9 0C F5 EF D3 05 F4 5C F4 AE F4   `v..0.......\...
+@E940 DA F4 BE 00                                       ....            
+)
+
+( Data:IField @E944-E949 XT:E946 CFA:744D DLen: 3 STAGE: Words)
+20 20 1 IFIELD _ship_engine_class-H ( SHIP )
+
+( Data:IField @E949-E94E XT:E94B CFA:744D DLen: 3 STAGE: Words)
+16 32 2 IFIELD _cm_status ( CREWMEMBER )
+
+( Data:IField @E94E-E953 XT:E950 CFA:744D DLen: 3 STAGE: Words)
+16 31 1 IFIELD [I-CREWMEMBER:31-32] ( CREWMEMBER )
+
+( @E953-E9B9 XT:E955 CFA:224C DLen: 100 STAGE: Words)
+: [PORTMENU-OV:E955]
+ XBLT @ DUP 10 + RRND YBLT @ 1+ DUP 12 - SWAP RRND DUP >R I 87 > IF 
+  I 93 > IF 
+   LT-BLUE 
+  ELSE 
+   GREY1 
+  THEN 
+ ELSE 
+  GREY2 
+ THEN 
+ !COLOR R> DROP LPLOT $1421 $7E64 RRND 0 STIME D! ; 
+
+( @E9B9-E9C7 XT:E9BB CFA:224C DLen: 12 STAGE: Words)
+: [PORTMENU-OV:E9BB]
+ BEEPON DUP 2* RRND TONE ; 
+
+( @E9C7-EA05 XT:E9C9 CFA:224C DLen: 60 STAGE: Words)
+: [PORTMENU-OV:E9C9]
+ GREY2 !COLOR XORMODE OFF $1388 ' @INST-Subclass ( $7530 ) DO 
+  I [PORTMENU-OV:E9BB] [PORTMENU-OV:E955] 1 MS $FF6A 
+ +LOOP 
+ $04E2 100 DO 
+  I [PORTMENU-OV:E9BB] [PORTMENU-OV:E955] 
+ LOOP 
+ BEEPOFF ; 
+
+( Data:Variable @EA05-EA09 XT:EA07 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [PORTMENU-OV:EA07] ( @EA07=13)
+
+( @EA09-EA69 XT:EA0B CFA:224C DLen: 94 STAGE: Words)
+: [PORTMENU-OV:EA0B]
+ STARDAT_ @ [PORTMENU-OV:EA07] @ - 20 * >R *PERSON___ >C+S IOPEN BEGIN 
+  _cm_status C@ DUP 8 AND NOT SWAP 2 AND 0= AND IF 
+   I [I-CREWMEMBER:31-32] C@ + 100 MIN [I-CREWMEMBER:31-32] C! 
+  THEN 
+  INEXT ?FIRST 
+ UNTIL 
+ ICLOSE ICLOSE R> DROP STARDAT_ @ [PORTMENU-OV:EA07] ! ; 
+
+( Data:Variable @EA69-EA6D XT:EA6B CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [PORTMENU-OV:EA6B] ( @EA6B=76)
+
+( Data:Variable @EA6D-EA71 XT:EA6F CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [PORTMENU-OV:EA6F] ( @EA6F=89)
+
+( Data:Variable @EA71-EA75 XT:EA73 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [PORTMENU-OV:EA73] ( @EA73=0)
+
+( Data:Variable @EA75-EA79 XT:EA77 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [PORTMENU-OV:EA77] ( @EA77=0)
+
+( Data:Variable @EA79-EA7D XT:EA7B CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [PORTMENU-OV:EA7B] ( @EA7B=0)
+
+( @EA7D-EA8F XT:EA7F CFA:224C DLen: 16 STAGE: Words)
+: [PORTMENU-OV:EA7F]
+ ?>OP @ DUP IF 
+  BEEP 
+ THEN 
+ NOT ; 
+
+( @EA8F-EA9F XT:EA91 CFA:224C DLen: 14 STAGE: Words)
+: [PORTMENU-OV:EA91]
+ [PORTMENU-OV:EA7F] IF 
+  ' U-PF ( $C650 ) MODULE 
+ THEN 
+ ; 
+
+( @EA9F-EAAF XT:EAA1 CFA:224C DLen: 14 STAGE: Words)
+: [PORTMENU-OV:EAA1]
+ [PORTMENU-OV:EA7F] IF 
+  ' U-AC ( $C610 ) MODULE 
+ THEN 
+ ; 
+
+( @EAAF-EABF XT:EAB1 CFA:224C DLen: 14 STAGE: Words)
+: [PORTMENU-OV:EAB1]
+ [PORTMENU-OV:EA7F] IF 
+  ' U-B ( $C5B6 ) MODULE 
+ THEN 
+ ; 
+
+( @EABF-EACF XT:EAC1 CFA:224C DLen: 14 STAGE: Words)
+: [PORTMENU-OV:EAC1]
+ [PORTMENU-OV:EA7F] IF 
+  ' U-SC ( $C73A ) MODULE 
+ THEN 
+ ; 
+
+( @EACF-EADF XT:EAD1 CFA:224C DLen: 14 STAGE: Words)
+: [PORTMENU-OV:EAD1]
+ [PORTMENU-OV:EA7F] IF 
+  ' U-TD ( $C785 ) MODULE 
+ THEN 
+ ; 
+
+( @EADF-EAE9 XT:EAE1 CFA:224C DLen: 8 STAGE: Words)
+: [PORTMENU-OV:EAE1]
+ ' U-OP ( $C7F3 ) MODULE ; 
+
+( Data:IField @EAE9-EAEE XT:EAEB CFA:744D DLen: 3 STAGE: Words)
+20 67 2 IFIELD _ship_cargo ( SHIP )
+
+( @EAEE-EBA0 XT:EAF0 CFA:224C DLen: 176 STAGE: Words)
+: [PORTMENU-OV:EAF0]
+ ' ?APP____ ( $C081 ) 'CREW-C____ ! ' HEAL ( $C05F ) 'TREATM___ ! ' NOP ( $3A48 ) 
+ '.VITAL______ ! ' ?SHIP-R_____ ( $C104 ) 'VEHICL_______ ! ' .SORD ( $BF68 ) '.VEHIC_________ 
+ ! ' MREPAIR ( $C136 ) 'REPAIR ! ' /STARDATE ( $BF56 ) '.DATE ! ' !'EXT ( $CA8C ) 
+ MODULE LSYSEG @ 112 FILE< MSYSEG @ 113 FILE< SSYSEG @ 114 FILE< 50 %VAL ! *SHIP 
+ >C+S 7 _ship_engine_class-H C@ 7 AND - E-USE ! _ship_cargo @ ICLOSE 10 U* 10*CARG_ 
+ D! ' <TDART ( $C776 ) MODULE ?TV ON ?RECALL OFF E-USE @ 7 ' OV?ARTIFACT ( $BDD8 ) 
+ MODULE IF 
+  2/ 
+ THEN 
+ -END ! [PORTMENU-OV:E9C9] ; 
+
+( @EBA0-EBFA XT:EBA2 CFA:224C DLen: 88 STAGE: Words)
+: [PORTMENU-OV:EBA2]
+ ' ?FLIGHT-OK ( $D3DC ) MODULE IF 
+  [PORTMENU-OV:EAF0] ' OVFLT ( $D394 ) MODULE ' I-TRANS ( $C5A8 ) MODULE [PORTMENU-OV:EA0B] 
+  STARDAT_ @ DUP ?FANLYZ ! 48 OVER < $0085 ROT < + 50 * 100 + 26 FILE# ! 6 RECORD# 
+  ! ELEM-VA_ ! SET-CUR____ 
+ THEN 
+ ; 
+
+( Data:Variable @EBFA-EBFE XT:EBFC CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [PORTMENU-OV:EBFC] ( @EBFC=89)
+
+( @EBFE-EC74 XT:EC0C CFA:EC0C DLen: 104 STAGE: Dictionaries)
+CODE (|REGION)
+(Address @EC0C
+   EC0C 8F 06 1C 56          POP        WORD PTR [561Ch]                 ; X1
+   EC10 59                   POP        CX
+   EC11 06                   PUSH       ES
+   EC12 8E C1                MOV        ES, CX
+   EC14 56                   PUSH       SI
+   EC15 57                   PUSH       DI
+   EC16 55                   PUSH       BP
+   EC17 1E                   PUSH       DS
+   EC18 8B 16 92 58          MOV        DX, WORD PTR [5892h]             ; WBLT
+   EC1C D1 EA                SHR        DX, 1
+   EC1E D1 EA                SHR        DX, 1
+   EC20 42                   INC        DX
+   EC21 42                   INC        DX
+   EC22 8B 2E 6E 58          MOV        BP, WORD PTR [586Eh]             ; XBLT
+   EC26 D1 ED                SHR        BP, 1
+   EC28 33 FF                XOR        DI, DI
+   EC2A 8B 06 87 58          MOV        AX, WORD PTR [5887h]             ; LBLT
+   EC2E 8B C8                MOV        CX, AX
+ .PORTMENU-OV_EC30:
+   EC30 8B C1                MOV        AX, CX
+   EC32 1F                   POP        DS
+   EC33 1E                   PUSH       DS
+   EC34 8B 1E 63 58          MOV        BX, WORD PTR [5863h]             ; YBLT
+   EC38 2B D9                SUB        BX, CX
+   EC3A 43                   INC        BX
+   EC3B D1 E3                SHL        BX, 1
+   EC3D 03 1E 3A 56          ADD        BX, WORD PTR [563Ah]             ; YTABL
+   EC41 8B 37                MOV        SI, WORD PTR [BX]
+   EC43 03 F5                ADD        SI, BP
+   EC45 8B CA                MOV        CX, DX
+   EC47 8B 1E 1C 56          MOV        BX, WORD PTR [561Ch]             ; X1
+   EC4B FF 36 48 56          PUSH       WORD PTR [5648h]                 ; BUF-SEG
+   EC4F 1F                   POP        DS
+   EC50 0B DB                OR         BX, BX
+   EC52 74 06                JZ         EC5Ah                            ; .PORTMENU-OV_EC5A
+   EC54 1E                   PUSH       DS
+   EC55 06                   PUSH       ES
+   EC56 1F                   POP        DS
+   EC57 07                   POP        ES
+   EC58 87 FE                XCHG       SI, DI
+ .PORTMENU-OV_EC5A:
+   EC5A F3 A5                MOVSW      
+   EC5C 8B C8                MOV        CX, AX
+   EC5E 0B DB                OR         BX, BX
+   EC60 74 06                JZ         EC68h                            ; .PORTMENU-OV_EC68
+   EC62 1E                   PUSH       DS
+   EC63 06                   PUSH       ES
+   EC64 1F                   POP        DS
+   EC65 07                   POP        ES
+   EC66 87 FE                XCHG       SI, DI
+ .PORTMENU-OV_EC68:
+   EC68 E2 C6                LOOP       EC30h                            ; .PORTMENU-OV_EC30
+   EC6A 1F                   POP        DS
+   EC6B 5D                   POP        BP
+   EC6C 5F                   POP        DI
+   EC6D 5E                   POP        SI
+   EC6E 07                   POP        ES
+   EC6F AD                   LODSW      
+   EC70 8B D8                MOV        BX, AX
+   EC72 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @EC74-ECB5 XT:EC7D CFA:EC7D DLen: 56 STAGE: Dictionaries)
+CODE |EGA
+(Address @EC7D
+   EC7D 59                   POP        CX
+   EC7E 1E                   PUSH       DS
+   EC7F 06                   PUSH       ES
+   EC80 57                   PUSH       DI
+   EC81 56                   PUSH       SI
+   EC82 8B 06 E6 55          MOV        AX, WORD PTR [55E6h]             ; DBUF-SE_
+   EC86 8B 16 D8 55          MOV        DX, WORD PTR [55D8h]             ; HBUF-SE_
+   EC8A 8B 1E FC EB          MOV        BX, WORD PTR [EBFCh]             ; [PORTMENU-OV:EBFC]
+   EC8E 83 C3 03             ADD        BX, 3
+   EC91 D1 E3                SHL        BX, 1
+   EC93 03 1E 3A 56          ADD        BX, WORD PTR [563Ah]             ; YTABL
+   EC97 8B 37                MOV        SI, WORD PTR [BX]
+   EC99 8B FE                MOV        DI, SI
+   EC9B F7 C1 01 00          TEST       CX, 1
+   EC9F 75 01                JNZ        ECA2h                            ; .PORTMENU-OV_ECA2
+   ECA1 92                   XCHG       DX, AX
+ .PORTMENU-OV_ECA2:
+   ECA2 8E C0                MOV        ES, AX
+   ECA4 8E DA                MOV        DS, DX
+   ECA6 B9 D0 02             MOV        CX, 02D0h
+   ECA9 E8 86 A1             CALL       8E32h                            ; COPYLIN_
+   ECAC 5E                   POP        SI
+   ECAD 5F                   POP        DI
+   ECAE 07                   POP        ES
+   ECAF 1F                   POP        DS
+   ECB0 AD                   LODSW      
+   ECB1 8B D8                MOV        BX, AX
+   ECB3 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @ECB5-ECEB XT:ECC1 CFA:224C DLen: 42 STAGE: Dictionaries)
+: |REGION
+ ?EGA @ IF 
+  SWAP DROP BUF-SEG @ $A000 = IF 
+   |EGA 
+  ELSE 
+   DROP 
+  THEN 
+ ELSE 
+  (|REGION) 
+ THEN 
+ ; 
+
+( Data:Variable @ECEB-ECEF XT:ECED CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [PORTMENU-OV:ECED] ( @ECED=7)
+
+( Data @ECEF-ED0E XT:ECF1 CFA:1D29 DLen: 29 STAGE: Words)
+CREATE [PORTMENU-OV:ECF1] 29 ALLOT ( @ECF1 =
+@ECF1 07 7A 7E 44 54 5F 69 82 92 2E 32 42 57 38 43 15   .z~DT_i...2BW8C.
+@ED01 24 38 40 76 87 5F 69 0D 15 57 63 48 50            $8@v._i..WcHP   
+ )
+
+( @ED0E-ED38 XT:ED10 CFA:224C DLen: 40 STAGE: Words)
+: [PORTMENU-OV:ED10]
+ ?DUP IF 
+  2* 80 SWAP - $00C7 POS. CTINIT DUP 1- C@ TYPE 
+ ELSE 
+  DROP 
+ THEN 
+ ; 
+
+( Data @ED38-ED3E XT:ED3A CFA:1D29 DLen: 4 STAGE: Words)
+CREATE [PORTMENU-OV:ED3A] 4 ALLOT ( @ED3A =
+@ED3A 5F 00 8A B8                                       _...            
+ )
+
+( @ED3E-ED4C XT:ED40 CFA:224C DLen: 12 STAGE: Words)
+: [PORTMENU-OV:ED40]
+ TIME 2@ [PORTMENU-OV:ED3A] 2@ D> ; 
+
+( @ED4C-ED60 XT:ED4E CFA:224C DLen: 18 STAGE: Words)
+: [PORTMENU-OV:ED4E]
+ TIME 2@ 40000. D+ [PORTMENU-OV:ED3A] D! ; 
+
+( @ED60-ED70 XT:ED62 CFA:224C DLen: 14 STAGE: Words)
+: [PORTMENU-OV:ED62]
+ " PERSONNEL" ; 
+
+( @ED70-ED86 XT:ED72 CFA:224C DLen: 20 STAGE: Words)
+: [PORTMENU-OV:ED72]
+ " CREW ASSIGNMENT" ; 
+
+( @ED86-ED9F XT:ED88 CFA:224C DLen: 23 STAGE: Words)
+: [PORTMENU-OV:ED88]
+ " SHIP CONFIGURATION" ; 
+
+( @ED9F-EDB1 XT:EDA1 CFA:224C DLen: 16 STAGE: Words)
+: [PORTMENU-OV:EDA1]
+ " TRADE DEPOT" ; 
+
+( @EDB1-EDBC XT:EDB3 CFA:224C DLen: 9 STAGE: Words)
+: [PORTMENU-OV:EDB3]
+ " BANK" ; 
+
+( @EDBC-EDCD XT:EDBE CFA:224C DLen: 15 STAGE: Words)
+: [PORTMENU-OV:EDBE]
+ " OPERATIONS" ; 
+
+( @EDCD-EDDF XT:EDCF CFA:224C DLen: 16 STAGE: Words)
+: [PORTMENU-OV:EDCF]
+ " DOCKING BAY" ; 
+
+( @EDDF-EDFB XT:EDE1 CFA:224C DLen: 26 STAGE: Words)
+: [PORTMENU-OV:EDE1]
+ $00C7 44 $00C0 114 BLACK POLY-WI_________ 0 0 ; 
+
+( Data:Case @EDFB-EE27 XT:EE07 CFA:4A4F DLen: 32 STAGE: Dictionaries)
+CASE (.DOOR)
+ 1 IS [PORTMENU-OV:ED62]
+ 2 IS [PORTMENU-OV:ED72]
+ 3 IS [PORTMENU-OV:ED88]
+ 4 IS [PORTMENU-OV:EDA1]
+ 5 IS [PORTMENU-OV:EDB3]
+ 6 IS [PORTMENU-OV:EDBE]
+ 7 IS [PORTMENU-OV:EDCF]
+ OTHERS [PORTMENU-OV:EDE1]
+
+( @EE27-EE37 XT:EE29 CFA:224C DLen: 14 STAGE: Words)
+: [PORTMENU-OV:EE29]
+ @CRS [PORTMENU-OV:ECED] @ (.DOOR) [PORTMENU-OV:ED10] !CRS ; 
+
+( @EE37-EE6D XT:EE39 CFA:224C DLen: 52 STAGE: Words)
+: [PORTMENU-OV:EE39]
+ 4 * [PORTMENU-OV:ECF1] 1+ + >R YBLT @ I C@ I 1+ C@ WITHIN XBLT @ I 2+ C@ R> 3 + 
+ C@ WITHIN AND ; 
+
+( @EE6D-EEB3 XT:EE6F CFA:224C DLen: 68 STAGE: Words)
+: [PORTMENU-OV:EE6F]
+ [PORTMENU-OV:ECED] @ 0= IF 
+  [PORTMENU-OV:ECF1] C@ 0 DO 
+   I [PORTMENU-OV:EE39] IF 
+    I 1+ [PORTMENU-OV:ECED] ! [PORTMENU-OV:EE29] LEAVE 
+   THEN 
+  LOOP 
+ ELSE 
+  [PORTMENU-OV:ECED] @ 1- [PORTMENU-OV:EE39] 0= IF 
+   [PORTMENU-OV:ECED] OFF [PORTMENU-OV:EE29] 
+  THEN 
+ THEN 
+ ; 
+
+( Data @EEB3-EF2D XT:EEB5 CFA:1D29 DLen: 120 STAGE: Words)
+CREATE [PORTMENU-OV:EEB5] 120 ALLOT ( @EEB5 =
+@EEB5 11 7D 7D 3F 60 7D 00 02 7D 77 60 71 9E 00 03 77   .}}?`}..}w`q...w
+@EEC5 6A 71 87 B9 00 03 6A 59 87 93 29 01 03 59 4C 93   jq....jY..)..YL.
+@EED5 8E DB FE 01 4C 3D 8E 7E C7 FF 01 3D 33 7E 6D F3   ....L=.~...=3~m.
+@EEE5 FF 01 33 2E 6D 54 1E 00 01 2E 2E 54 46 2E 00 00   ..3.mT.....TF...
+@EEF5 2E 36 46 24 3E 00 00 36 3C 24 1A 4B 00 00 3C 4A   .6F$>..6<$.K..<J
+@EF05 1A 0C 56 00 00 4A 56 0C 06 62 00 00 56 62 06 0C   ..V..JV..b..Vb..
+@EF15 4A 00 02 62 6F 0C 19 56 00 02 6F 77 19 2A 64 00   J..bo..V..ow.*d.
+@EF25 02 77 7D 2A 3F 6B 00 02                           .w}*?k..        
+ )
+
+( @EF2D-EF41 XT:EF2F CFA:224C DLen: 18 STAGE: Words)
+: [PORTMENU-OV:EF2F]
+ ?DUP IF 
+  */ 
+ ELSE 
+  2DROP 0 
+ THEN 
+ ; 
+
+( @EF41-EF63 XT:EF43 CFA:224C DLen: 32 STAGE: Words)
+: [PORTMENU-OV:EF43]
+ >R I C@ I 1+ C@ - I 2+ C@ R> 3 + C@ - ; 
+
+( @EF63-EF73 XT:EF65 CFA:224C DLen: 14 STAGE: Words)
+: [PORTMENU-OV:EF65]
+ DUP C@ SWAP 1+ C@ = ; 
+
+( @EF73-EF9B XT:EF75 CFA:224C DLen: 38 STAGE: Words)
+: [PORTMENU-OV:EF75]
+ >R XBLT @ I 2+ C@ R> 6 + C@ 1 AND IF 
+  MIN 
+ ELSE 
+  MAX 
+ THEN 
+ ; 
+
+( @EF9B-EFD3 XT:EF9D CFA:224C DLen: 54 STAGE: Words)
+: [PORTMENU-OV:EF9D]
+ >R XBLT @ YBLT @ I 4 + @ - I [PORTMENU-OV:EF43] SWAP [PORTMENU-OV:EF2F] R> 6 + C@ 
+ 1 AND IF 
+  MIN 
+ ELSE 
+  MAX 
+ THEN 
+ ; 
+
+( @EFD3-EFF9 XT:EFD5 CFA:224C DLen: 36 STAGE: Words)
+: [PORTMENU-OV:EFD5]
+ >R YBLT @ I C@ R> 6 + C@ 2 AND IF 
+  MIN 
+ ELSE 
+  MAX 
+ THEN 
+ ; 
+
+( @EFF9-F02F XT:EFFB CFA:224C DLen: 52 STAGE: Words)
+: [PORTMENU-OV:EFFB]
+ >R YBLT @ XBLT @ I [PORTMENU-OV:EF43] [PORTMENU-OV:EF2F] I 4 + @ + R> 6 + C@ 2 AND 
+ IF 
+  MIN 
+ ELSE 
+  MAX 
+ THEN 
+ ; 
+
+( @F02F-F049 XT:F031 CFA:224C DLen: 24 STAGE: Words)
+: [PORTMENU-OV:F031]
+ DUP 2+ [PORTMENU-OV:EF65] IF 
+  [PORTMENU-OV:EF75] 
+ ELSE 
+  [PORTMENU-OV:EF9D] 
+ THEN 
+ XBLT ! ; 
+
+( @F049-F061 XT:F04B CFA:224C DLen: 22 STAGE: Words)
+: [PORTMENU-OV:F04B]
+ DUP [PORTMENU-OV:EF65] IF 
+  [PORTMENU-OV:EFD5] 
+ ELSE 
+  [PORTMENU-OV:EFFB] 
+ THEN 
+ YBLT ! ; 
+
+( @F061-F083 XT:F063 CFA:224C DLen: 32 STAGE: Words)
+: [PORTMENU-OV:F063]
+ >R I C@ I 1+ C@ MIN I C@ R> 1+ C@ MAX 1+ WITHIN ; 
+
+( @F083-F08F XT:F085 CFA:224C DLen: 10 STAGE: Words)
+: [PORTMENU-OV:F085]
+ YBLT @ SWAP [PORTMENU-OV:F063] ; 
+
+( @F08F-F09D XT:F091 CFA:224C DLen: 12 STAGE: Words)
+: [PORTMENU-OV:F091]
+ XBLT @ SWAP 2+ [PORTMENU-OV:F063] ; 
+
+( Data:Variable @F09D-F0A1 XT:F09F CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [PORTMENU-OV:F09F] ( @F09F=0)
+
+( Data:Variable @F0A1-F0A5 XT:F0A3 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [PORTMENU-OV:F0A3] ( @F0A3=-1)
+
+( Data @F0A5-F0B3 XT:F0A7 CFA:1D29 DLen: 12 STAGE: Words)
+CREATE [PORTMENU-OV:F0A7] 12 ALLOT ( @F0A7 =
+@F0A7 00 03 03 00 02 05 00 02 02 FF 03 03               ............    
+ )
+
+( Data:BLT @F0B3-F14F XT:F0B5 CFA:1D29 DLen: 154 STAGE: Words)
+CREATE _player_icon 154 ALLOT ( BLT: 9x12, @F0B5 =
+@F0B5 1F 1C 84 08 C0 41 F8 00 3E BA 05 0A C0 06 1F 1C   .....A..>.......
+@F0C5 84 08 C0 41 F8 00 1D BA 04 0A 00 02 1F 1C 84 08   ...A............
+@F0D5 C0 41 F8 00 5C BA 01 0A 80 00 1F 1C 07 0E E0 01   .A..\...........
+@F0E5 70 00 2D 54 0D 06 C0 04 1F 1C 07 0E E0 01 20 00   p.-T.......... .
+@F0F5 1C 30 06 04 80 01 1F 1C 07 0E E0 01 20 00 18 30   .0.......... ..0
+@F105 02 04 80 01 1F 1C 87 0F C0 C1 F8 00 1D BA 04 0A   ................
+@F115 00 02 1F 1C 87 0F C0 C1 F8 00 5C BA 01 0A 80 00   ..........\.....
+@F125 1F 1C 81 03 C0 C3 70 00 5A 54 05 0C 40 86 1F 1C   ......p.ZT..@...
+@F135 81 03 C0 C3 20 00 1C 18 03 04 00 03 1F 1C 81 03   .... ...........
+@F145 C0 C3 20 00 0C 18 02 04 00 03                     .. .......      
+ )
+
+( Data @F14F-F189 XT:F151 CFA:1D29 DLen: 56 STAGE: Words)
+CREATE [PORTMENU-OV:F151] 56 ALLOT ( @F151 =
+@F151 C4 00 02 03 1E 01 01 04 14 00 00 05 E2 FF 01 04   ................
+@F161 3C 00 02 03 C4 00 FE 08 1E 01 FF 09 14 00 00 0A   <...............
+@F171 E2 FF FF 09 3C 00 FE 08 9C 03 00 06 9C 03 00 07   ....<...........
+@F181 9C FD 00 01 9C FD 00 02                           ........        
+ )
+
+( @F189-F1A7 XT:F18B CFA:224C DLen: 28 STAGE: Words)
+: [PORTMENU-OV:F18B]
+ _player_icon 12 + @ $8040 XOR _player_icon 12 + ! ; 
+
+( @F1A7-F1E7 XT:F1A9 CFA:224C DLen: 62 STAGE: Words)
+: [PORTMENU-OV:F1A9]
+ @CRS [PORTMENU-OV:F0A7] [PORTMENU-OV:F09F] @ 3 * + DUP DUP C@ !COLOR 1+ C@ WBLT 
+ ! 2+ C@ XBLT +! -2 YBLT +! 2 LBLT ! [PORTMENU-OV:F0A3] ABLT ! {BLT} !CRS ; 
+
+( @F1E7-F229 XT:F1E9 CFA:224C DLen: 64 STAGE: Words)
+: [PORTMENU-OV:F1E9]
+ @DS BLTSEG ! 9 WBLT ! 12 LBLT ! CTINIT _player_icon ABLT ! [PORTMENU-OV:EA6B] @ 
+ [PORTMENU-OV:EA6F] @ DUP [PORTMENU-OV:EBFC] ! POS. PAD ADDR>SEG 1+ 0 |REGION {BLT} 
+ [PORTMENU-OV:F09F] OFF [PORTMENU-OV:F1A9] ; 
+
+( @F229-F237 XT:F22B CFA:224C DLen: 12 STAGE: Words)
+: [PORTMENU-OV:F22B]
+ 0 $03E8 1 >SND ; 
+
+( @F237-F291 XT:F239 CFA:224C DLen: 88 STAGE: Words)
+: [PORTMENU-OV:F239]
+ [PORTMENU-OV:EA73] OFF [PORTMENU-OV:EEB5] C@ 7 * 0 DO 
+  [PORTMENU-OV:EEB5] 1+ I + >R I [PORTMENU-OV:F085] 2* I [PORTMENU-OV:F091] + DUP 
+  2 AND [PORTMENU-OV:EA77] @ AND IF 
+   I [PORTMENU-OV:F031] 
+  THEN 
+  1 AND [PORTMENU-OV:EA7B] @ AND IF 
+   I [PORTMENU-OV:F04B] 
+  THEN 
+  R> DROP 7 
+ +LOOP 
+ ; 
+
+( @F291-F29F XT:F293 CFA:224C DLen: 12 STAGE: Words)
+: [PORTMENU-OV:F293]
+ PAD ADDR>SEG 1+ 1 |REGION ; 
+
+( @F29F-F2B1 XT:F2A1 CFA:224C DLen: 16 STAGE: Words)
+: [PORTMENU-OV:F2A1]
+ PAD ADDR>SEG 1+ 0 |REGION {BLT} [PORTMENU-OV:F1A9] ; 
+
+( @F2B1-F309 XT:F2B3 CFA:224C DLen: 86 STAGE: Words)
+: [PORTMENU-OV:F2B3]
+ 14 * _player_icon + ABLT ! XBLT @ YBLT @ 2SWAP XBLT +! YBLT +! [PORTMENU-OV:F239] 
+ XBLT @ YBLT @ 2SWAP POS. DUP [PORTMENU-OV:EBFC] ! DISPLAY_____ WHITE !COLOR [PORTMENU-OV:F293] 
+ POS. [PORTMENU-OV:F2A1] DUP 0< IF 
+  [PORTMENU-OV:F22B] 
+ THEN 
+ ABS 3 4 */ MS ; 
+
+( @F309-F349 XT:F30B CFA:224C DLen: 62 STAGE: Words)
+: [PORTMENU-OV:F30B]
+ [PORTMENU-OV:ED4E] [PORTMENU-OV:F09F] ! 0 DO 
+  [PORTMENU-OV:F151] OVER + I 4 * + >R I +-@ I 1+ +-@ I 2+ +-@ R> 3 + C@ [PORTMENU-OV:F2B3] 
+ LOOP 
+ DROP [PORTMENU-OV:EE6F] ; 
+
+( @F349-F35F XT:F34B CFA:224C DLen: 20 STAGE: Words)
+: [PORTMENU-OV:F34B]
+ -1 [PORTMENU-OV:EA77] ! 0 5 1 [PORTMENU-OV:F30B] [PORTMENU-OV:EA77] OFF ; 
+
+( @F35F-F377 XT:F361 CFA:224C DLen: 22 STAGE: Words)
+: [PORTMENU-OV:F361]
+ -1 [PORTMENU-OV:EA77] ! 20 5 2 [PORTMENU-OV:F30B] [PORTMENU-OV:EA77] OFF ; 
+
+( @F377-F38F XT:F379 CFA:224C DLen: 22 STAGE: Words)
+: [PORTMENU-OV:F379]
+ -1 [PORTMENU-OV:EA7B] ! 40 2 3 [PORTMENU-OV:F30B] [PORTMENU-OV:EA7B] OFF ; 
+
+( @F38F-F3A7 XT:F391 CFA:224C DLen: 22 STAGE: Words)
+: [PORTMENU-OV:F391]
+ -1 [PORTMENU-OV:EA7B] ! 48 2 0 [PORTMENU-OV:F30B] [PORTMENU-OV:EA7B] OFF ; 
+
+( @F3A7-F403 XT:F3A9 CFA:224C DLen: 90 STAGE: Words)
+: [PORTMENU-OV:F3A9]
+ WHITE !COLOR ABLT @ _player_icon = IF 
+  0 $05DC RRND 0= [PORTMENU-OV:ED40] AND IF 
+   4 0 DO 
+    [PORTMENU-OV:F18B] DISPLAY_____ [PORTMENU-OV:F293] [PORTMENU-OV:F2A1] 50 MS [PORTMENU-OV:F18B] 
+    DISPLAY_____ [PORTMENU-OV:F293] [PORTMENU-OV:F2A1] [PORTMENU-OV:F22B] $0096 MS 
+   LOOP 
+  THEN 
+ ELSE 
+  [PORTMENU-OV:F09F] OFF NULL NULL [PORTMENU-OV:F2B3] 
+ THEN 
+ ; 
+
+( @F403-F45A XT:F410 CFA:224C DLen: 74 STAGE: Dictionaries)
+: PORT-PIC
+ >HIDDEN DARK 0 $00C7 POS. 44 ' @.HYBRID ( $BE9D ) MODULE 0 99 POS. 49 ' @.HYBRID ( $BE9D ) 
+ MODULE ?EGA @ 0= IF 
+  [PORTMENU-OV:F1E9] 
+ THEN 
+ [PORTMENU-OV:EDE1] 2DROP [PORTMENU-OV:EE29] >DISPLA_ SCR-RES____ ?EGA @ IF 
+  [PORTMENU-OV:F1E9] 
+ THEN 
+ ; 
+
+( Data:Case @F45A-F486 XT:F466 CFA:4A4F DLen: 32 STAGE: Dictionaries)
+CASE DO-ROOM
+ 1 IS [PORTMENU-OV:EA91]
+ 2 IS [PORTMENU-OV:EAA1]
+ 3 IS [PORTMENU-OV:EAC1]
+ 4 IS [PORTMENU-OV:EAD1]
+ 5 IS [PORTMENU-OV:EAB1]
+ 6 IS [PORTMENU-OV:EAE1]
+ 7 IS [PORTMENU-OV:EBA2]
+ OTHERS NOP
+
+( @F486-F4AC XT:F488 CFA:224C DLen: 36 STAGE: Words)
+: [PORTMENU-OV:F488]
+ XBLT @ [PORTMENU-OV:EA6B] ! YBLT @ [PORTMENU-OV:EA6F] ! [PORTMENU-OV:ECED] @ DO-ROOM 
+ [PORTMENU-OV:ECED] @ IF 
+  PORT-PIC [PORTMENU-OV:ED4E] 
+ THEN 
+ ; 
+
+( Data:Case @F4AC-F4C2 XT:F4B6 CFA:4A4F DLen: 12 STAGE: Dictionaries)
+CASE XWALK
+ 1 IS [PORTMENU-OV:F34B]
+ 65535 IS [PORTMENU-OV:F361]
+ OTHERS NOP
+
+( Data:Case @F4C2-F4D8 XT:F4CC CFA:4A4F DLen: 12 STAGE: Dictionaries)
+CASE YWALK
+ 1 IS [PORTMENU-OV:F379]
+ 65535 IS [PORTMENU-OV:F391]
+ OTHERS NOP
+
+( @F4D8-F50C XT:F4E4 CFA:224C DLen: 40 STAGE: Dictionaries)
+: WALKIES
+ [PORTMENU-OV:ED4E] PORT-PIC BEGIN 
+  XYSCAN 2DUP XWALK YWALK OR NOT IF 
+   [PORTMENU-OV:F3A9] 
+  THEN 
+  ?TRIG IF 
+   [PORTMENU-OV:F488] 'KEY DROP 
+  THEN 
+ AGAIN 
+ ; 
+
+( RAW Data:OverlayJunk @F50C-F560 DLen: 84 STAGE: Dictionaries)
+ _overlayJunk 84 ALLOT ( @F50C =
+@F50C                                     50 4D 2D 56               PM-V
+@F510 4F 43 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   OC______________
+@F520 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 66 6F 72 20   ____________for 
+@F530 50 4F 52 54 4D 45 4E 55 2D 2D 2D 2D 2D 2D 2D 2D   PORTMENU--------
+@F540 2D 2D 2D 2D 2D 2D 2D 2D 2D 20 29 5F 32 31 39 30   --------- )_2190
+@F550 72 20 43 48 4B 46 4C 49 47 48 54 2D 4F 56 20 2D   r CHKFLIGHT-OV -
+ )
+

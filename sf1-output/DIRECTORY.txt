@@ -1,0 +1,155 @@
+ ID  NAME         Disk     Recs      Len  InstLen   Start   End
+  0  DIRECTORY       0      163       21        0    0000   0000
+  1  INSTANCE        2     9408       16        0    3F80   643F
+  2  IROOT           0        0        0        0    0000   0000
+  3  ISYSTEM         0        0        0        0    0000   0000
+  4  INACTIVE        0        0        0        0    0000   0000
+  5  FRAGMENT        0        0        0        0    0000   0000
+  6  ELO-CPIC        1      301       16        0    0100   022C
+  7  IAPPLICATION    0        0        0        0    0000   0000
+  8  GAZ-CPIC        1      195       16        0    022D   02EF
+  9  MEC-CPIC        1      178       16        0    02F0   03A1
+ 10  BOOT/KERNEL     0     8192       16        0    0000   0000
+ 11  BOX             2       64       16        8    6440   647F
+ 12  STARPORT        0        0        0        0    0000   0000
+ 13  BANK            0        0        0        9    0000   0000
+ 14  BANK-TRANS      2        7       19        6    6480   6488
+ 15  PERSONNEL       0        0        0        0    0000   0000
+ 16  CREWMEMBER      2        6       20       24    6489   6490
+ 17  ASSIGN-CREW     0        0        0       24    0000   0000
+ 18  SHIP-CONFIG     0        0        0        0    0000   0000
+ 19  TRADE-DEPOT     0        0        0        0    0000   0000
+ 20  SHIP            0        0        0       75    0000   0000
+ 21  MYS-CPIC        1      379       16        0    03A2   051C
+ 22  TIME            0        0        0        4    0000   0000
+ 23  STARSYSTEM      0        0        0        8    0000   0000
+ 24  STAR            0        0        0        6    0000   0000
+ 25  VESSEL          2       26       73       16    6491   6509
+ 26  ELEMENT         2       23       23        6    650A   652B
+ 27  MESSAGE         0        0        0       17    0000   0000
+ 28  ARTIFACT        2       52       30        6    652C   658E
+ 29  PROJECTILE      0        0        0        8    0000   0000
+ 30  NOM-CPIC        1       71       16        0    051D   0563
+ 31  SPE-CPIC        1      118       16        0    0564   05D9
+ 32  PLANET          2       61       22        0    658F   65E3
+ 33  THR-CPIC        1      155       16        0    05DA   0674
+ 34  OPERATIONS      0        0        0        0    0000   0000
+ 35  NOTICE          0        0        0        1    0000   0000
+ 36  EVALUATION      0        0        0       25    0000   0000
+ 37  VEL-CPIC        1      292       16        0    0675   0798
+ 38  VPR-CPIC        1       78       16        0    0799   07E6
+ 39  MIN-CPIC        1      131       16        0    07E7   0869
+ 40  SPECIMEN        2       28       16       13    65E4   65FF
+ 41  RUIN            0        0        0        7    0000   0000
+ 42  TVEHICLE        0        0        0        7    0000   0000
+ 43  BIO-DATA        0       28       16       13    65E4   65FF
+ 44  TPORT-PIC       2      151       16        0    6600   6696
+ 45  FLUX-NODE       0        0        0        8    0000   0000
+ 46  NEBULA          0        0        0        6    0000   0000
+ 47  CAPT-LOG        0        0        0       36    0000   0000
+ 48  STRING          0        0        0        0    0000   0000
+ 49  BPORT-PIC       2      249       16        0    6697   678F
+ 50  PHRASECONTRL    0        0        0        6    0000   0000
+ 51  SUBJECT         0        0        0        0    0000   0000
+ 52  ORIGINATOR      0        0        0       19    0000   0000
+ 53  MESSAGE'        0        0        0        2    0000   0000
+ 54  SPLASH          1     1024       16        0    086A   0C69
+ 55  TEXT            0        0        0       40    0000   0000
+ 56  SCROLL-TEXT     0        0        0       44    0000   0000
+ 57  ANALYZE-TEXT    2       16      190        0    6790   6857
+ 58  BUTTONS         2       12       73        0    6858   6892
+ 59  BLT-HEAD        0        0        0       18    0000   0000
+ 60  MED-PIC         1      128       16        0    0C6A   0CE9
+ 61  ENCOUNTER       0        0        0       17    0000   0000
+ 62  ICON1:1         2       50       18        0    6893   68CB
+ 63  ICON1:2         2       50       18        0    68CC   6904
+ 64  ICON1:4         2       50       18        0    6905   693D
+ 65  ICON-NAME       2       27       27        0    693E   696B
+ 66  DPART-OV        2       97       16        0    696C   69CC
+ 67  REGIONS         2        6       28        2    69CD   69D7
+ 68  CREATURE        2      100      156       17    69D8   6DFF
+ 69  PHAZES          4      384       16        0    0D00   0E7F
+ 70  CHKFLIGHT-OV    2       60       16        0    6E00   6E3B
+ 71  FRACT-OV        2      290       16        0    6E3C   6F5D
+ 72  ICONP-OV        2       52       16        0    6F5E   6F91
+ 73  SITE-OV         2      118       16        0    6F92   7007
+ 74  HYPERMSG-OV     2      257       16        0    7008   7108
+ 75  GPOLY           2       89        4        0    7109   711F
+ 76  FACET           2       72        4        0    7120   7131
+ 77  VERTEX          2      134        3        0    7132   714B
+ 78  BLT-OV          2       54       16        0    714C   7181
+ 79  MISC-OV         2       90       16        0    7182   71DB
+ 80  BANK-OV         2       95       16        0    71DC   723A
+ 81  ASSCREW-OV      2      175       16        0    723B   72E9
+ 82  PERSONNEL-OV    2      262       16        0    72EA   73EF
+ 83  SHIPGRPH-OV     2      132       16        0    73F0   7473
+ 84  CONFIG-OV       2      192       16        0    7474   7533
+ 85  TDEPOT-OV       2      300       16        0    7534   765F
+ 86  EDIT-OV         0        0        0        0    0000   0000
+ 87  PORTMENU-OV     2      195       16        0    7660   7722
+ 88  VITA-OV         2      222       16        0    7723   7800
+ 89  HP-OV           2      302       16        0    7801   792E
+ 90  LP-OV           2      330       16        0    792F   7A78
+ 91  SENT-OV         2      299       16        0    7A79   7BA3
+ 92  TV-OV           2      217       16        0    7BA4   7C7C
+ 93  COMM-OV         2      452       16        0    7C7D   7E40
+ 94  COMMSPEC-OV     2      179       16        0    7E41   7EF3
+ 95  SEED-OV         2      150       16        0    7EF4   7F89
+ 96  LISTICONS       2       45       16        0    7F8A   7FB6
+ 97  MOVE-OV         2      238       16        0    7FB7   80A4
+ 98  ENGINEER        2      145       16        0    80A5   8135
+ 99  DOCTOR          2       80       16        0    8136   8185
+100  ORBIT-OV        2      415       16        0    8186   8324
+101  CAPTAIN         2      372       16        0    8325   8498
+102  SCIENCE         2      247       16        0    8499   858F
+103  NAVIGATR        2       55       16        0    8590   85C6
+104  SHIPBUTTONS     2      124       16        0    85C7   8642
+105  *MAP-OV         2      260       16        0    8643   8746
+106  HYPER-OV        2      448       16        0    8747   8906
+107  ANALYZE-OV      2      160       16        0    8907   89A6
+108  LAUNCH-OV       2       85       16        0    89A7   89FB
+109  FLUX-EFFECT     2       29       16        0    89FC   8A18
+110  OP-OV           2      275       16        0    8A19   8B2B
+111  ITEMS-OV        2      376       16        0    8B2C   8CA3
+112  LSYSICON        2       47       16        0    8CA4   8CD2
+113  MSYSICON        2       28       16        0    8CD3   8CEE
+114  SSYSICON        2       11       16        0    8CEF   8CF9
+115  BEHAV-OV        2      335       16        0    8CFA   8E48
+116  CMAP            2       15       64        0    8E49   8E87
+117  INSTALL         2       50       16        0    8E88   8EB9
+118  HEAL-OV         2       77       16        0    8EBA   8F06
+119  REPAIR-OV       2      106       16        0    8F07   8F70
+120  GAME-OV         2      370       16        0    8F71   90E2
+121  PLSET-OV        2      150       16        0    90E3   9178
+122  MAPS-OV         2      140       16        0    9179   9204
+123  VES-BLT         3      283       16        0    9240   935A
+124  STORM-OV        2       77       16        0    935B   93A7
+125  HUM-PIC         1       30       16        0    0E80   0E9D
+126  VEL-PIC         1       27       16        0    0E9E   0EB8
+127  THR-PIC         1       17       16        0    0EB9   0EC9
+128  ELO-PIC         1       38       16        0    0ECA   0EEF
+129  AND-PIC         1       40       16        0    0EF0   0F17
+130  COMPOUNDS       2       23        7        0    93A8   93B2
+131  IT-OV           2      121       16        0    93B3   942B
+132  COMBAT-OV       2      387       16        0    942C   95AE
+133  DAMAGE-OV       2      172       16        0    95AF   965A
+134  LAND-OV         2       68       16        0    965B   969E
+135  PSTATS          2        5       11        0    969F   96A2
+136  SAVE            4     7750       16        0    0F40   2D85
+137  MUSIC           1      310       16        0    2D86   2EBB
+138  EARTH           1       72       16        0    2EBC   2F03
+139  STP-OV          2       90       16        0    96A3   96FC
+140  GALAXY          1      394       16        0    2F04   308D
+141  CREDITS         1     1024       16        0    308E   348D
+142  COP-CPIC        1      183       16        0    348E   3544
+143  FONTS           1       48       16        0    3545   3574
+144  CGA             1      225       16        0    3575   3655
+145  EGA             1      225       16        0    3656   3736
+146  <unused>        0        0        0        0    0000   0000
+147  <unused>        0        0        0        0    0000   0000
+148  <unused>        0        0        0        0    0000   0000
+149  <unused>        0        0        0        0    0000   0000
+
+
+STARA Signature: 00003E7F Timestamp: 19A4 Checksum: 73F7 SaveFlag: 1 Version: 20C9
+STARB Signature: 3E8096FF Timestamp: 19A4 Checksum: 2020 SaveFlag: 1 Version: 20C9

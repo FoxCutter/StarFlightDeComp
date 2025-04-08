@@ -1,0 +1,46 @@
+Compound #0: "NONE"
+
+Compound #1: "NITROGEN"
+
+Compound #2: "OXYGEN"
+
+Compound #3: "METHANE"
+
+Compound #4: "CARBON MONOXIDE"
+
+Compound #5: "WATER"
+
+Compound #6: "AMMONIA COMPOUNDS"
+
+Compound #7: "CHLORINE COMPOUNDS"
+
+Compound #8: "METHANOL, ETHANOL"
+
+Compound #9: "SULFUR COMPOUNDS"
+
+Compound #10: "SILICON COMPOUNDS"
+
+Compound #11: "SODIUM COMPOUNDS"
+
+Compound #12: "FLUORINE COMPOUNDS"
+
+Compound #13: "METAL COMPOUNDS"
+
+Compound #14: "HYDROGEN, HELIUM"
+
+Compound #15: "NITROGEN, OXYGEN"
+
+Compound #16: "OXYGEN, CARBON DIOXIDE"
+
+Compound #17: "AMMONIA, HYDROGEN"
+
+Compound #18: "METHANE, AMMONIA, ARGON"
+
+Compound #19: "FLUORINE, CHLORINE"
+
+Compound #20: "METHANE, HYDROGEN CYANIDE"
+
+Compound #21: "OXYGEN, HYDROGEN"
+
+Compound #22: "HYDROGEN"
+

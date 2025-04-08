@@ -1,0 +1,232 @@
+( RAW Data:OverlayHeader @EFC0-EFD4 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 7182 	Count: 005A 	Data Size: 0057 (Paragraphs)
+    On Disk Location 71820-71DC0
+  Overlay Address: @EFC0 	Overlay DP: @F52E
+    Load Location: @EFC0-@F560 	Load Length: 1440
+    Data: @EFC0-@F52E 	Data Length: 1390
+    Junk: @F52E-@F560 	Junk Length: 50
+  VOCABULARY Word: BD21 MISC-___
+   Dictionary Link 1: 0000
+   Dictionary Link 2: F47A
+   Dictionary Link 3: F3D5
+   Dictionary Link 4: F208
+
+@EFC0 82 71 5A 00 C0 EF 2E F5 21 BD 00 00 7A F4 D5 F3   .qZ.....!...z...
+@EFD0 08 F2 57 00                                       ..W.            
+)
+
+( Data:IField @EFD4-EFD9 XT:EFD6 CFA:744D DLen: 3 STAGE: Words)
+20 17 2 IFIELD _ship_armor_class ( SHIP )
+
+( Data:IField @EFD9-EFDE XT:EFDB CFA:744D DLen: 3 STAGE: Words)
+20 31 2 IFIELD _ship_pods ( SHIP )
+
+( Data:IField @EFDE-EFE3 XT:EFE0 CFA:744D DLen: 3 STAGE: Words)
+20 67 2 IFIELD _ship_cargo ( SHIP )
+
+( Data @EFE3-EFF9 XT:EFE5 CFA:1D29 DLen: 20 STAGE: Words)
+CREATE [MISC-OV:EFE5] 20 ALLOT ( @EFE5 =
+@EFE5 03 03 00 22 03 03 80 80 03 03 00 5D 02 02 00 60   ...".......]...`
+@EFF5 02 02 00 90                                       ....            
+ )
+
+( @EFF9-F033 XT:F003 CFA:224C DLen: 48 STAGE: Dictionaries)
+: (TRIM_
+ @DS BLTSEG ! 4 * [MISC-OV:EFE5] + >R I C@ LBLT ! I 1+ C@ WBLT ! R> 2+ ABLT ! POS. 
+ BLT ; 
+
+( @F033-F06B XT:F035 CFA:224C DLen: 54 STAGE: Words)
+: [MISC-OV:F035]
+ PAD C@ IF 
+  -4 XBLT +! PAD DUP C@ + C@ EMIT -4 XBLT +! PAD C@ 1- PAD C! 
+ ELSE 
+  BEEP 
+ THEN 
+ ; 
+
+( @F06B-F08D XT:F06D CFA:224C DLen: 32 STAGE: Words)
+: [MISC-OV:F06D]
+ 500. TIME 2@ D+ BEGIN 
+  TIME 2@ 2OVER D> ?TERMINAL OR 
+ UNTIL 
+ 2DROP ; 
+
+( @F08D-F0B7 XT:F08F CFA:224C DLen: 40 STAGE: Words)
+: [MISC-OV:F08F]
+ @CRS XORMODE ON WHITE WHITE BROWN ?MRC !COLOR ." #" [MISC-OV:F06D] -4 XBLT +! ." #" 
+ [MISC-OV:F06D] !CRS ; 
+
+( @F0B7-F0DF XT:F0B9 CFA:224C DLen: 38 STAGE: Words)
+: [MISC-OV:F0B9]
+ -AIN @ IF 
+  DUP -AIN @ = SWAP 48 58 WITHIN OR 
+ ELSE 
+  0> 
+ THEN 
+ ; 
+
+( @F0DF-F1A3 XT:F0E9 CFA:224C DLen: 186 STAGE: Dictionaries)
+: (#IN$_
+ >R PAD I 1+ 0 FILL XORMODE ON BEGIN 
+  [MISC-OV:F08F] 'KEY DUP 90 $0080 WITHIN IF 
+   $00DF AND 
+  THEN 
+  >R I 33 91 WITHIN I BL = PAD C@ 0> AND OR I [MISC-OV:F0B9] AND PAD C@ I' < AND 
+  IF 
+   I EMIT I PAD C@ 1+ DUP PAD C! PAD + C! 
+  ELSE 
+   I 8 = IF 
+    [MISC-OV:F035] 
+   ELSE 
+    I 13 = NOT I 0> AND IF 
+     BEEP 
+    THEN 
+   THEN 
+  THEN 
+  R> 13 = PAD C@ 0> AND 
+ UNTIL 
+ R> DROP PAD ; 
+
+( @F1A3-F1DB XT:F1AD CFA:224C DLen: 46 STAGE: Dictionaries)
+: (?ART______
+ *STARSH_______ >C+S IOPEN 11 15 IFIND IF 
+  IOPEN 28 SWAP IFIND CDROP 
+ ELSE 
+  DROP 0 
+ THEN 
+ CDROP ICLOSE ; 
+
+( @F1DB-F206 XT:F1E5 CFA:224C DLen: 33 STAGE: Dictionaries)
+: (QUIT_____
+ 1 0MESS @CRS CTINIT 63 17 POS. ." [ QUIT ]" !CRS ; 
+
+( @F206-F229 XT:F210 CFA:224C DLen: 25 STAGE: Dictionaries)
+: (.0$$__
+ ." INSUFFICIENT FUNDS" BEEP ; 
+
+( @F229-F269 XT:F233 CFA:224C DLen: 54 STAGE: Dictionaries)
+: (0$$$_____
+ 1 0MESS XORMODE OFF 1 18 CMESS (.0$$__ !CRS TIME 2@ 2500. D+ BEGIN 
+  TIME 2@ 2OVER D> ?TERMINAL OR 
+ UNTIL 
+ 2DROP (QUIT_____ ; 
+
+( @F269-F277 XT:F26B CFA:224C DLen: 12 STAGE: Words)
+: [MISC-OV:F26B]
+ " SENSORS" ; 
+
+( @F277-F294 XT:F279 CFA:224C DLen: 27 STAGE: Words)
+: [MISC-OV:F279]
+ TTY-SCR___ 0 6 CTPOS. " COMMUNICATIONS" ; 
+
+( @F294-F2A1 XT:F296 CFA:224C DLen: 11 STAGE: Words)
+: [MISC-OV:F296]
+ " LASERS" ; 
+
+( @F2A1-F2B0 XT:F2A3 CFA:224C DLen: 13 STAGE: Words)
+: [MISC-OV:F2A3]
+ " MISSILES" ; 
+
+( @F2B0-F2BE XT:F2B2 CFA:224C DLen: 12 STAGE: Words)
+: [MISC-OV:F2B2]
+ " ENGINES" ; 
+
+( @F2BE-F2CC XT:F2C0 CFA:224C DLen: 12 STAGE: Words)
+: [MISC-OV:F2C0]
+ " SHIELDS" ; 
+
+( Data:Case @F2CC-F2F1 XT:F2D5 CFA:4A4F DLen: 28 STAGE: Dictionaries)
+CASE .ERR
+ 1 IS [MISC-OV:F26B]
+ 2 IS [MISC-OV:F279]
+ 3 IS [MISC-OV:F296]
+ 4 IS [MISC-OV:F2A3]
+ 5 IS [MISC-OV:F2B2]
+ 6 IS [MISC-OV:F2C0]
+ OTHERS UNRAVEL
+
+( Data:Case @F2F1-F317 XT:F2FB CFA:4A4F DLen: 28 STAGE: Dictionaries)
+CASE EINDE_
+ 1 IS 2
+ 2 IS 3
+ 3 IS 6
+ 4 IS 5
+ 5 IS 1
+ 6 IS 4
+ OTHERS UNRAVEL
+
+( @F317-F381 XT:F319 CFA:224C DLen: 104 STAGE: Words)
+: [MISC-OV:F319]
+ BLACK ERASE-A________ CTINIT .ERR 121 OVER 2* - $00B4 POS. TYPE XORMODE ON PINK 
+ !COLOR >2FONT BEEPON 9 0 DO 
+  I 2 MOD 2+ $03E8 * TONE 90 $009B POS. ." MALFUNCTION" $00FA MS 
+ LOOP 
+ BEEPOFF 7 #AUX ! ; 
+
+( @F381-F39D XT:F383 CFA:224C DLen: 26 STAGE: Words)
+: [MISC-OV:F383]
+ EINDE_ 2* _ship_armor_class + 1+ DUP C@ $0080 OR SWAP C! ; 
+
+( @F39D-F3D3 XT:F39F CFA:224C DLen: 52 STAGE: Words)
+: [MISC-OV:F39F]
+ DUP EINDE_ 2* _ship_armor_class + C@ 100 - ABS 0 100 RRND > IF 
+  DUP [MISC-OV:F383] [MISC-OV:F319] 0 
+ ELSE 
+  DROP 1 
+ THEN 
+ ; 
+
+( @F3D3-F456 XT:F3DD CFA:224C DLen: 121 STAGE: Dictionaries)
+: (?.EQ_______
+ >R *SHIP >C+S CTINIT I EINDE_ 2* _ship_armor_class + 1+ C@ ?DUP IF 
+  $0080 AND IF 
+   I .ERR .TTY ." : INOPERATIVE" 0 
+  ELSE 
+   I [MISC-OV:F39F] 
+  THEN 
+ ELSE 
+  " SHIP IS NOT EQUIPPED WITH " .TTY I .ERR TYPE 0 
+ THEN 
+ R> DROP ICLOSE ; 
+
+( @F456-F478 XT:F458 CFA:224C DLen: 32 STAGE: Words)
+: [MISC-OV:F458]
+ 0 BEGIN 
+  ?-NULL IF 
+   IOPEN ?-NULL OR ICLOSE INEXT ?FIRST 
+  ELSE 
+   1 
+  THEN 
+ UNTIL 
+ ; 
+
+( @F478-F52E XT:F482 CFA:224C DLen: 172 STAGE: Dictionaries)
+: =CARG_
+ NULL 10*END D! *SHIP >C+S _ship_pods @ +BIT 1+ $01F4 * *STARSH_______ >C+S IOPEN 
+ [MISC-OV:F458] IF 
+  0 BEGIN 
+   @INST-Class 11 = @INST-Subclass 17 = NOT AND @INST-Subclass 48 = NOT AND IF 
+    IOPEN BEGIN 
+     @INST-Subclass 6 = @INST-Class 26 = AND IF 
+      INST-QTy @ 10 U* 10*END D! 
+     THEN 
+     INST-QTy @ + NULL INST-X D! INEXT ?FIRST 
+    UNTIL 
+    ICLOSE 
+   THEN 
+   INEXT ?FIRST 
+  UNTIL 
+ ELSE 
+  0 
+ THEN 
+ ICLOSE ICLOSE - DUP _ship_cargo ! 10 U* 10*CARG_ D! ICLOSE ; 
+
+( RAW Data:OverlayJunk @F52E-F560 DLen: 50 STAGE: Dictionaries)
+ _overlayJunk 50 ALLOT ( @F52E =
+@F52E                                           4D 49                 MI
+@F530 53 43 2D 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   SC-_____________
+@F540 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 66 6F   ______________fo
+@F550 72 20 4D 49 53 43 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D   r MISC----------
+ )
+

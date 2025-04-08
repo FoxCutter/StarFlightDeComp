@@ -1,0 +1,619 @@
+Artifact #0
+  Name :                         
+  Volume: 8224
+  Value: 8224
+  Analyzed: 32
+  Analyze Text ID: 32
+
+Artifact #1
+  Name : CRYSTAL ORB
+  Volume: 2
+  Value: 48000
+  Analyzed: 0
+  Analyze Text ID: 1
+    Line #1: OUR GUESS IS THIS IS SOME DEVICE OF
+    Line #2: THE ANCIENTS. BEYOND THAT, WE CAN'T
+    Line #3: TELL.
+    Line #4: 
+    Line #5: 
+
+Artifact #2
+  Name : CRYSTAL CONE
+  Volume: 2
+  Value: 48000
+  Analyzed: 0
+  Analyze Text ID: 1
+    Line #1: OUR GUESS IS THIS IS SOME DEVICE OF
+    Line #2: THE ANCIENTS. BEYOND THAT, WE CAN'T
+    Line #3: TELL.
+    Line #4: 
+    Line #5: 
+
+Artifact #3
+  Name : BLACK EGG
+  Volume: 1
+  Value: 25000
+  Analyzed: 0
+  Analyze Text ID: 2
+    Line #1: THIS APPEARS TO BE A BOMB OF SOME
+    Line #2: SORT. THE TYPE IS UNFAMILIAR. TO
+    Line #3: ACTIVATE IT, YOU MUST DROP IT.
+    Line #4: 
+    Line #5: 
+
+Artifact #4
+  Name : WHINING ORB
+  Volume: 2
+  Value: 6000
+  Analyzed: 1
+  Analyze Text ID: 4
+    Line #1: THIS WAS FOUND IN THE UNDERGROUND
+    Line #2: COLONY. WE'RE NOT SURE WHAT IS DOES.
+    Line #3: WE THINK IT HAS SOMETHING TO DO WITH
+    Line #4: COMMUNICATION.
+    Line #5: 
+
+Artifact #5
+  Name : FLAT DEVICE
+  Volume: 3
+  Value: 30000
+  Analyzed: 255
+  Analyze Text ID: 5
+    Line #1: THIS DEVICE WILL PROJECT A SHIELD
+    Line #2: AROUND YOUR TERRAIN VEHICLE WHICH
+    Line #3: MAKES IT DIFFICULT FOR DANGEROUS
+    Line #4: LIFEFORMS TO ATTACK YOU.
+    Line #5: 
+
+Artifact #6
+  Name : ROD DEVICE
+  Volume: 3
+  Value: 36000
+  Analyzed: 0
+  Analyze Text ID: 6
+    Line #1: THIS APPEARS TO BE A DEVICE OF THE OLD
+    Line #2: EMPIRE THAT PROJECTS AN ENHANCED LASER
+    Line #3: SHIELD AROUND A SPACESHIP.
+    Line #4: 
+    Line #5: 
+
+Artifact #7
+  Name : TESSERACT
+  Volume: 5
+  Value: 60000
+  Analyzed: 0
+  Analyze Text ID: 7
+    Line #1: THIS IS A DEVICE OF THE OLD EMPIRE
+    Line #2: THAT PROJECTS A FIELD WHICH DOUBLES
+    Line #3: THE ENERGY EFFICIENCY OF A SHIP'S
+    Line #4: ENGINES.
+    Line #5: 
+
+Artifact #8
+  Name : RING DEVICE
+  Volume: 2
+  Value: 24000
+  Analyzed: 0
+  Analyze Text ID: 8
+    Line #1: THIS IS AN ANCIENT SHIP NAVIGATIONAL
+    Line #2: AID. IT WILL IDENTIFY ANY NEARBY
+    Line #3: CONTINUUM FLUX.
+    Line #4: 
+    Line #5: 
+
+Artifact #9
+  Name : HYPERCUBE
+  Volume: 4
+  Value: 30000
+  Analyzed: 0
+  Analyze Text ID: 9
+    Line #1: THIS APPEARS TO BE A 4-DIMENSIONAL
+    Line #2: PUZZLE COMPOSED OF MANY MULTI-COLORED
+    Line #3: CUBES. ITS USE PRODUCES AN OVER-
+    Line #4: WHELMING FEELING OF ATARAXIA.
+    Line #5: 
+
+Artifact #10
+  Name : SHIMMERING BALL
+  Volume: 3
+  Value: 48000
+  Analyzed: 0
+  Analyze Text ID: 10
+    Line #1: THIS ARTIFACT SEEMS TO BE A CLOAKING
+    Line #2: DEVICE. AS FAR AS WE CAN TELL IT
+    Line #3: SHOULD OPERATE AUTOMATICALLY DURING
+    Line #4: COMBAT.
+    Line #5: 
+
+Artifact #11
+  Name : RED CYLINDER
+  Volume: 3
+  Value: 60000
+  Analyzed: 0
+  Analyze Text ID: 12
+    Line #1: THIS SEEMS TO BE AN ORBITAL SCANNER OF
+    Line #2: SOME SORT. WE'RE NOT SURE WHAT IT'S
+    Line #3: TUNED TO LOCATE THOUGH.
+    Line #4: 
+    Line #5: 
+
+Artifact #12
+  Name : DODECAHEDRON
+  Volume: 4
+  Value: 12000
+  Analyzed: 0
+  Analyze Text ID: 13
+    Line #1: THIS IS SOME SORT OF TRANSMITTER. IT
+    Line #2: IS BROADCASTING CONTINUALLY ON SEVERAL
+    Line #3: BANDS. THE NET EFFECT SHOULD BE THAT
+    Line #4: IT WILL ATTRACT THE ATTENTION OF
+    Line #5: ANYONE IN THE AREA.
+
+Artifact #13
+  Name : CRYSTAL PEARL
+  Volume: 1
+  Value: 30000
+  Analyzed: 0
+  Analyze Text ID: 14
+    Line #1: THIS SEEMS TO BE A DEVICE OF THE
+    Line #2: ANCIENTS, BUT WE CAN'T FIGURE OUT WHAT
+    Line #3: IT DOES. IT CONTAINS A TREMENDOUS
+    Line #4: AMOUNT OF ENERGY.
+    Line #5: 
+
+Artifact #14
+  Name : ELLIPSOID
+  Volume: 1
+  Value: 30000
+  Analyzed: 0
+  Analyze Text ID: 3
+    Line #1: THIS IS CRAFTED OF ENDURIUM. IT
+    Line #2: DOESN'T APPEAR TO HAVE ANY FUNCTION
+    Line #3: OTHER THAN BEING DECORATIVE.
+    Line #4: 
+    Line #5: 
+
+Artifact #15
+  Name : BLACK BOX
+  Volume: 4
+  Value: 12000
+  Analyzed: 0
+  Analyze Text ID: 11
+    Line #1: WE CAN'T FIGURE OUT EXACTLY WHAT THIS
+    Line #2: IS. IT SLICES, IT DICES, IT EVEN MAKES
+    Line #3: JULIENNE FRIES!
+    Line #4: 
+    Line #5: 
+
+Artifact #16
+  Name : AMAZING ARTIFACT
+  Volume: 10
+  Value: 5000
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #17
+  Name : ARMALCOLITE RELIC
+  Volume: 7
+  Value: 2500
+  Analyzed: 255
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #18
+  Name : BLADED TOY
+  Volume: 1
+  Value: 500
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #19
+  Name : BLUE BAUBLE
+  Volume: 1
+  Value: 600
+  Analyzed: 255
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #20
+  Name : BUTTONED BOX
+  Volume: 1
+  Value: 1000
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #21
+  Name : COMPLEX MACHINE
+  Volume: 18
+  Value: 3200
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #22
+  Name : CUTE DOODAD
+  Volume: 1
+  Value: 200
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #23
+  Name : FRIGHTENING APPARATUS
+  Volume: 12
+  Value: 2600
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #24
+  Name : GLOWING DISK
+  Volume: 2
+  Value: 1000
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #25
+  Name : GOLDEN GLOBE
+  Volume: 2
+  Value: 1800
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #26
+  Name : HOT P.Y.T
+  Volume: 1
+  Value: 5000
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #27
+  Name : HUMMING GIZZY
+  Volume: 2
+  Value: 1000
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #28
+  Name : METAL BALL
+  Volume: 1
+  Value: 200
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #29
+  Name : MOBIUS DEVICE
+  Volume: 3
+  Value: 700
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #30
+  Name : NICE THING
+  Volume: 2
+  Value: 300
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #31
+  Name : OCTAGONAL LENS
+  Volume: 1
+  Value: 600
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #32
+  Name : OVAL OBJECT
+  Volume: 1
+  Value: 400
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #33
+  Name : PLASTIC THING-A-MA-JIG
+  Volume: 2
+  Value: 600
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #34
+  Name : PRETTY PICTURE
+  Volume: 1
+  Value: 400
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #35
+  Name : PYRAMID DEVICE
+  Volume: 3
+  Value: 2300
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #36
+  Name : QUIVERING LUMP
+  Volume: 1
+  Value: 250
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #37
+  Name : RUBBER WIDGET
+  Volume: 1
+  Value: 200
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #38
+  Name : SILVER GADGET
+  Volume: 1
+  Value: 1300
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #39
+  Name : SMALL OBELISK
+  Volume: 1
+  Value: 1100
+  Analyzed: 255
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #40
+  Name : SPIRAL TUBE
+  Volume: 2
+  Value: 750
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #41
+  Name : STRANGE CLOTH
+  Volume: 1
+  Value: 400
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #42
+  Name : SURPRISING UTENSIL
+  Volume: 1
+  Value: 350
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #43
+  Name : THROBBING MASS
+  Volume: 1
+  Value: 250
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #44
+  Name : TICKING SPHERE
+  Volume: 3
+  Value: 4500
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #45
+  Name : TRANSLUCENT CUBE
+  Volume: 2
+  Value: 1000
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #46
+  Name : WEE GREEN BLOBBIE
+  Volume: 1
+  Value: 300
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #47
+  Name : ADRYNNA'S GOLD
+  Volume: 1
+  Value: 5000
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #48
+  Name : PINK TUBE-A-TRON
+  Volume: 10
+  Value: 5000
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #49
+  Name : A MULLIGAN
+  Volume: 1
+  Value: 2
+  Analyzed: 0
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #50
+  Name : RED HERRING
+  Volume: 501
+  Value: 65500
+  Analyzed: 1
+  Analyze Text ID: 0
+    Line #1: ANALYSIS OF THIS ARTIFACT HAS REVEALED
+    Line #2: VERY LITTLE OF INTEREST. IT HAS SLIGHT
+    Line #3: VALUE AS AN ALIEN CURIO, BUT OTHERWISE
+    Line #4: IS TOTALLY USELESS TO US.
+    Line #5: 
+
+Artifact #51
+  Name : TERRAIN VEHICLE DEBRIS
+  Volume: 2000
+  Value: 0
+  Analyzed: 1
+  Analyze Text ID: 15
+    Line #1: THE REMAINS OF AN OLDER, INFERIOR
+    Line #2: MODEL TERRAIN VEHICLE, DOUBTLESSLY
+    Line #3: LEFT HERE BY SOME PRIOR EXPLORATION
+    Line #4: PARTY TOO FOOLISH TO RETURN TO THEIR
+    Line #5: SHIP BEFORE EXHAUSTING THEIR ENERGY.
+

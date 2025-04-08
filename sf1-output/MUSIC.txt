@@ -1,0 +1,635 @@
+( RAW Data:OverlayHeader @E200-E214 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 2D86 	Count: 0136 	Data Size: 007F (Paragraphs)
+    On Disk Location 2D860-2EBC0
+  Overlay Address: @E200 	Overlay DP: @E9EB
+    Load Location: @E200-@F560 	Load Length: 4960
+    Data: @E200-@E9EB 	Data Length: 2027
+    Junk: @E9EB-@F560 	Junk Length: 2933
+  VOCABULARY Word: B57F MUSIC
+   Dictionary Link 1: E97E
+   Dictionary Link 2: E601
+   Dictionary Link 3: E8DD
+   Dictionary Link 4: E99E
+
+@E200 86 2D 36 01 00 E2 EB E9 7F B5 7E E9 01 E6 DD E8   .-6.......~.....
+@E210 9E E9 7F 00                                       ....            
+)
+
+( Data:Word @E214-E221 XT:E21F CFA:2214 DLen: 2 STAGE: Dictionaries)
+0 CONSTANT OLDINT
+
+( Data:Word @E221-E22E XT:E22C CFA:2214 DLen: 2 STAGE: Dictionaries)
+2 CONSTANT ?MUSIC
+
+( Data:Word @E22E-E23B XT:E239 CFA:2214 DLen: 2 STAGE: Dictionaries)
+14 CONSTANT MUSINT
+
+( Data:Word @E23B-E249 XT:E247 CFA:2214 DLen: 2 STAGE: Dictionaries)
+3 CONSTANT PHRASE0
+
+( Data:Word @E249-E257 XT:E255 CFA:2214 DLen: 2 STAGE: Dictionaries)
+5 CONSTANT CURRPHR
+
+( Data:Word @E257-E265 XT:E263 CFA:2214 DLen: 2 STAGE: Dictionaries)
+7 CONSTANT CURNOTE
+
+( Data:Word @E265-E273 XT:E271 CFA:2214 DLen: 2 STAGE: Dictionaries)
+9 CONSTANT REPEATS
+
+( Data:Word @E273-E281 XT:E27F CFA:2214 DLen: 2 STAGE: Dictionaries)
+10 CONSTANT COUNTER
+
+( Data:Word @E281-E290 XT:E28E CFA:2214 DLen: 2 STAGE: Dictionaries)
+11 CONSTANT DURATION
+
+( Data:Word @E290-E2A0 XT:E29E CFA:2214 DLen: 2 STAGE: Dictionaries)
+12 CONSTANT RESTVALUE
+
+( Data:Word @E2A0-E2B0 XT:E2AE CFA:2214 DLen: 2 STAGE: Dictionaries)
+13 CONSTANT TONESTATE
+
+( Data:Word @E2B0-E2BC XT:E2BA CFA:2214 DLen: 2 STAGE: Dictionaries)
+16 CONSTANT SONGS
+
+( Data:Word @E2BC-E2C8 XT:E2C6 CFA:2214 DLen: 2 STAGE: Dictionaries)
+36 CONSTANT SCALE
+
+( Data:Variable @E2C8-E2CC XT:E2CA CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [MUSIC:E2CA] ( @E2CA=$E300 ( ' _theme_tune ))
+
+( @E2CC-E2D4 XT:E2CE CFA:224C DLen: 6 STAGE: Words)
+: _>musseg
+ MUSSEG SWAP ; 
+
+( @E2D4-E2DC XT:E2D6 CFA:224C DLen: 6 STAGE: Words)
+: _musseg!
+ _>musseg L! ; 
+
+( @E2DC-E2E4 XT:E2DE CFA:224C DLen: 6 STAGE: Words)
+: _musseg@
+ _>musseg L@ ; 
+
+( @E2E4-E2EC XT:E2E6 CFA:224C DLen: 6 STAGE: Memory)
+: _mussegC@
+ _>musseg LC@ ; 
+
+( @E2EC-E2F4 XT:E2EE CFA:224C DLen: 6 STAGE: Words)
+: _mussegC!
+ _>musseg LC! ; 
+
+( RAW Data:Gap @E2F4-E300 DLen: 12 STAGE: Memory - Gap)
+ [MUSIC:E2F4] 12 ALLOT ( @E2F4 =
+@E2F4 01 21 20 20 20 41 44 44 52 20 20 20               .!   ADDR       
+ )
+
+( RAW Data @E300-E3E4 DLen: 228 STAGE: External)
+ _theme_tune 228 ALLOT ( @E300 =
+@E300 B3 01 4C 4C 4F 54 20 52 20 20 20 20 20 33 FF 00   ..LLOT R     3..
+@E310 80 02 20 20 20 20 20 20 20 20 20 20 20 20 20 20   ..              
+@E320 20 20 20 20 F0 FD F8 7E 7C 3F BE 1F FD 0F EF 07       ...~|?......
+@E330 F7 03 FB 01 B1 EF D8 77 EC 3B F6 1D FB 0E 7D 07   .......w.;....}.
+@E340 BE 03 DF 01 3D E2 1E 71 8F 38 47 1C 23 0E 11 07   ....=..q.8G.#...
+@E350 88 03 C4 01 89 D5 C4 6A 62 35 B1 1A 58 0D AC 06   .......jb5..X...
+@E360 56 03 AB 01 8E C9 C7 64 63 32 31 19 98 0C 4C 06   V......dc21...L.
+@E370 26 03 93 01 3D BE 1E 5F 8F 2F C7 17 E3 0B F1 05   &...=.._./......
+@E380 F8 02 7C 01 90 B3 C8 59 E4 2C 72 16 39 0B 9C 05   ..|....Y.,r.9...
+@E390 CE 02 67 01 7C A9 BE 54 5F 2A 2F 15 97 0A 4B 05   ..g.|..T_*/...K.
+@E3A0 A5 02 52 01 F8 9F FC 4F FE 27 FF 13 FF 09 FF 04   ..R....O.'......
+@E3B0 7F 02 3F 01 FF 96 7F 4B BF 25 DF 12 6F 09 B7 04   ..?....K.%..o...
+@E3C0 5B 02 2D 01 84 8E 42 47 A1 23 D0 11 E8 08 74 04   [.-...BG.#....t.
+@E3D0 3A 02 1D 01 85 86 42 43 A1 21 D0 10 68 08 34 04   :.....BC.!..h.4.
+@E3E0 1A 02 0D 01                                       ....            
+ )
+
+( RAW @E3E4-E3F7 DLen: 19 STAGE: Words)
+CODE [MUSIC:E3E4]
+(Address @E3E4
+   E3E4 B0 B6                MOV        AL, FFB6h
+   E3E6 E6 43                OUT        43h, AL
+   E3E8 8A C2                MOV        AL, DL
+   E3EA E6 42                OUT        42h, AL
+   E3EC 8A C6                MOV        AL, DH
+   E3EE E6 42                OUT        42h, AL
+   E3F0 E4 61                IN         AL, 61h
+   E3F2 0C 03                OR         AL, 3
+   E3F4 E6 61                OUT        61h, AL
+   E3F6 C3                   RET        
+) CODE-END
+
+( RAW @E3F7-E3FF DLen: 8 STAGE: Words)
+CODE [MUSIC:E3F7]
+(Address @E3F7
+   E3F7 BA 61 00             MOV        DX, 0061h
+   E3FA EC                   IN         AL, DX
+   E3FB 24 FC                AND        AL, -4
+   E3FD EE                   OUT        DX, AL
+   E3FE C3                   RET        
+) CODE-END
+
+( RAW @E3FF-E4B7 DLen: 184 STAGE: External)
+CODE _theme_tune_int
+(Address @E3FF
+   E3FF 56                   PUSH       SI
+   E400 57                   PUSH       DI
+   E401 1E                   PUSH       DS
+   E402 52                   PUSH       DX
+   E403 51                   PUSH       CX
+   E404 53                   PUSH       BX
+   E405 50                   PUSH       AX
+   E406 0E                   PUSH       CS
+   E407 1F                   POP        DS
+   E408 8A 06 02 00          MOV        AL, BYTE PTR [0002h]
+   E40C 84 C0                TEST       AL, AL
+   E40E 75 03                JNZ        E413h                            ; .MUSIC_E413
+   E410 E9 98 00             JMP        E4ABh                            ; .MUSIC_E4AB
+ .MUSIC_E413:
+   E413 33 DB                XOR        BX, BX
+   E415 FE 4F 0A             DEC        BYTE PTR [BX+10]
+   E418 74 03                JZ         E41Dh                            ; .MUSIC_E41D
+   E41A E9 8E 00             JMP        E4ABh                            ; .MUSIC_E4AB
+ .MUSIC_E41A:
+ .MUSIC_E41D:
+   E41D 8A 47 0D             MOV        AL, BYTE PTR [BX+13]
+   E420 84 C0                TEST       AL, AL
+   E422 75 13                JNZ        E437h                            ; .MUSIC_E437
+   E424 8A 47 0C             MOV        AL, BYTE PTR [BX+12]
+   E427 84 C0                TEST       AL, AL
+   E429 74 0C                JZ         E437h                            ; .MUSIC_E437
+ .MUSIC_E42B:
+   E42B 88 47 0A             MOV        BYTE PTR [BX+10], AL
+   E42E E8 C6 FF             CALL       E3F7h                            ; [MUSIC:E3F7]
+   E431 C6 47 0D 01          MOV        BYTE PTR [BX+13], 1
+   E435 EB E3                JMP        E41Ah                            ; .MUSIC_E41A
+ .MUSIC_E437:
+ .MUSIC_E437:
+ .MUSIC_E437:
+   E437 8B 77 07             MOV        SI, WORD PTR [BX+7]
+   E43A FC                   CLD        
+   E43B AC                   LODSB      
+   E43C 24 7F                AND        AL, 7Fh
+   E43E 74 3B                JZ         E47Bh                            ; .MUSIC_E47B
+   E440 32 E4                XOR        AH, AH
+   E442 A8 40                TEST       AL, 64
+   E444 74 04                JZ         E44Ah                            ; .MUSIC_E44A
+   E446 24 3F                AND        AL, 63
+   E448 FE C4                INC        AH
+ .MUSIC_E44A:
+   E44A 88 47 0B             MOV        BYTE PTR [BX+11], AL
+   E44D 88 67 0C             MOV        BYTE PTR [BX+12], AH
+   E450 AC                   LODSB      
+   E451 89 77 07             MOV        WORD PTR [BX+7], SI
+   E454 3C FF                CMP        AL, -1
+   E456 75 05                JNZ        E45Dh                            ; .MUSIC_E45D
+   E458 8A 47 0B             MOV        AL, BYTE PTR [BX+11]
+   E45B EB CE                JMP        E42Bh                            ; .MUSIC_E42B
+ .MUSIC_E45D:
+   E45D 8A 67 0B             MOV        AH, BYTE PTR [BX+11]
+   E460 2A 67 0C             SUB        AH, BYTE PTR [BX+12]
+   E463 88 67 0A             MOV        BYTE PTR [BX+10], AH
+   E466 32 F6                XOR        DH, DH
+   E468 8A D0                MOV        DL, AL
+   E46A D1 E2                SHL        DX, 1
+   E46C 8B FA                MOV        DI, DX
+   E46E 8B 55 24             MOV        DX, WORD PTR [DI+36]
+   E471 E8 70 FF             CALL       E3E4h                            ; [MUSIC:E3E4]
+   E474 C6 47 0D 00          MOV        BYTE PTR [BX+13], 0
+   E478 E9 30 00             JMP        E4ABh                            ; .MUSIC_E4AB
+ .MUSIC_E47B:
+   E47B 8B 77 05             MOV        SI, WORD PTR [BX+5]
+   E47E FE 4F 09             DEC        BYTE PTR [BX+9]
+   E481 75 18                JNZ        E49Bh                            ; .MUSIC_E49B
+   E483 83 C6 03             ADD        SI, 3
+   E486 8A 04                MOV        AL, BYTE PTR [SI]
+   E488 84 C0                TEST       AL, AL
+   E48A 75 09                JNZ        E495h                            ; .MUSIC_E495
+   E48C 33 C0                XOR        AX, AX
+   E48E 89 06 02 00          MOV        WORD PTR [0002h], AX
+   E492 E9 16 00             JMP        E4ABh                            ; .MUSIC_E4AB
+ .MUSIC_E495:
+   E495 89 77 05             MOV        WORD PTR [BX+5], SI
+   E498 88 47 09             MOV        BYTE PTR [BX+9], AL
+ .MUSIC_E49B:
+   E49B 8B 44 01             MOV        AX, WORD PTR [SI+1]
+   E49E 89 47 07             MOV        WORD PTR [BX+7], AX
+   E4A1 C6 47 0A 01          MOV        BYTE PTR [BX+10], 1
+   E4A5 C6 47 0D 01          MOV        BYTE PTR [BX+13], 1
+   E4A9 EB 8C                JMP        E437h                            ; .MUSIC_E437
+ .MUSIC_E4AB:
+ .MUSIC_E4AB:
+ .MUSIC_E4AB:
+ .MUSIC_E4AB:
+   E4AB 58                   POP        AX
+   E4AC 5B                   POP        BX
+   E4AD 59                   POP        CX
+   E4AE 5A                   POP        DX
+   E4AF 1F                   POP        DS
+   E4B0 5F                   POP        DI
+   E4B1 5E                   POP        SI
+   E4B2 EA 00 00 00 00       JMP FAR    0000:0000
+) CODE-END
+
+( Data @E4B7-E4D2 XT:E4BE CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE P2 20 ALLOT ( @E4BE =
+@E4BE 09 3C 03 2C 09 1C 03 2C 09 14 03 1C 09 04 03 14   .<.,...,........
+@E4CE 30 24 00 00                                       0$..            
+ )
+
+( Data @E4D2-E4ED XT:E4D9 CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE P3 20 ALLOT ( @E4D9 =
+@E4D9 09 3C 03 2C 09 1C 03 2C 09 14 03 1C 09 04 03 53   .<.,...,.......S
+@E4E9 30 04 00 00                                       0...            
+ )
+
+( Data @E4ED-E508 XT:E4F4 CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE P4 20 ALLOT ( @E4F4 =
+@E4F4 09 54 03 4C 09 3C 03 2C 09 3C 03 4C 09 2C 03 04   .T.L.<.,.<.L.,..
+@E504 30 05 00 00                                       0...            
+ )
+
+( Data @E508-E529 XT:E50F CFA:1D29 DLen: 26 STAGE: Dictionaries)
+CREATE P5 26 ALLOT ( @E50F =
+@E50F 09 3D 03 2D 09 25 03 2D 09 15 03 25 09 05 03 15   .=.-.%.-...%....
+@E51F 09 54 03 4C 18 3C 4C 3C 00 00                     .T.L.<L<..      
+ )
+
+( Data @E529-E544 XT:E530 CFA:1D29 DLen: 20 STAGE: Dictionaries)
+CREATE P6 20 ALLOT ( @E530 =
+@E530 09 3D 03 2D 09 1D 03 2D 09 15 03 1D 09 05 03 54   .=.-...-.......T
+@E540 70 05 00 00                                       p...            
+ )
+
+( Data @E544-E565 XT:E54B CFA:1D29 DLen: 26 STAGE: Dictionaries)
+CREATE P1 26 ALLOT ( @E54B =
+@E54B 09 3C 03 2C 09 24 03 2C 09 14 03 24 09 04 03 14   .<.,.$.,...$....
+@E55B 09 53 03 4B 18 3B 0C 3B 00 00                     .S.K.;.;..      
+ )
+
+( @E565-E576 XT:E56C CFA:224C DLen: 10 STAGE: Dictionaries)
+: R,
+ MUSSEG SEG>ADDR - , ; 
+
+( Data @E576-E597 XT:E580 CFA:1D29 DLen: 23 STAGE: Dictionaries)
+CREATE 0SONG 23 ALLOT ( @E580 =
+@E580 01 4B 02 01 BE 01 01 4B 02 01 D9 01 01 F4 01 01   .K.....K........
+@E590 0F 02 01 30 02 00 00                              ...0...         
+ )
+
+( @E597-E5E1 XT:E5A3 CFA:224C DLen: 62 STAGE: Dictionaries)
+: INITMUS
+ 28 (!OLD) DUP MUSINT _musseg@ = NOT IF 
+  0 ?MUSIC _mussegC! OLDINT _musseg@ >R I _musseg! R> 2+ _musseg! MUSSEG MUSINT _musseg@ 
+  28 (!SET) 
+ ELSE 
+  2DROP 
+ THEN 
+ ; 
+
+( @E5E1-E5FF XT:E5EB CFA:224C DLen: 20 STAGE: Dictionaries)
+: HIMUS
+ @DS [MUSIC:E2CA] @ MUSSEG 0 $0320 LCMOVE INITMUS ; 
+
+( @E5FF-E67E XT:E60C CFA:224C DLen: 114 STAGE: Dictionaries)
+: CSCR>EGA
+ XBUF-SE_ @ SWAP FILE< >HIDDEN DARK -1 $00C8 0 DO 
+  80 0 DO 
+   1+ XBUF-SE_ @ OVER LC@ DUP 16/ 15 AND C>EGA ?DUP IF 
+    COLOR <!> I 2* J PLOT 
+   THEN 
+   15 AND C>EGA ?DUP IF 
+    COLOR <!> I 2* 1+ J PLOT 
+   THEN 
+  LOOP 
+ LOOP 
+ DROP SCR-RES____ >DISPLA_ ; 
+
+( @E67E-E69A XT:E680 CFA:224C DLen: 26 STAGE: Words)
+: [MUSIC:E680]
+ TIME 2@ D+ BEGIN 
+  TIME 2@ 2OVER D> 'KEY OR 
+ UNTIL 
+ 2DROP ; 
+
+( @E69A-E6B6 XT:E69C CFA:224C DLen: 26 STAGE: Words)
+: [MUSIC:E69C]
+ >HIDDEN DARK HBUF-SE_ @ $008D FILE< >DISPLA_ SCR-RES____ $02BC MS ; 
+
+( Data:Word @E6B6-E6BA XT:E6B8 CFA:2214 DLen: 2 STAGE: Memory)
+0 CONSTANT [MUSIC:E6B8]
+
+( Data:Variable @E6BA-E6BE XT:E6BC CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE _pauseoff ( @E6BC=$01F4)
+
+( Data:Variable @E6BE-E6C2 XT:E6C0 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE _bCount ( @E6C0=$203A)
+
+( Data:Variable @E6C2-E6C6 XT:E6C4 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE _bLen ( @E6C4=$203A)
+
+( Data:Variable @E6C6-E6CA XT:E6C8 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [MUSIC:E6C8] ( @E6C8=$0200)
+
+( Data:Variable @E6CA-E6CE XT:E6CC CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [MUSIC:E6CC] ( @E6CC=$203A)
+
+( Data:Variable @E6CE-E6D2 XT:E6D0 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE _yoff ( @E6D0=$203A)
+
+( Data:Variable @E6D2-E6D6 XT:E6D4 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE _xoff ( @E6D4=$203A)
+
+( Data:Variable @E6D6-E6DA XT:E6D8 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [MUSIC:E6D8] ( @E6D8=$203A)
+
+( Data:Variable @E6DA-E6DE XT:E6DC CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE _mbuffseg ( @E6DC=$203A)
+
+( Data:Variable @E6DE-E6E2 XT:E6E0 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE _mbuffoffset ( @E6E0=$203A)
+
+( @E6E2-E6EA XT:E6E4 CFA:224C DLen: 6 STAGE: Words)
+: _@mbuffseg
+ _mbuffseg @ ; 
+
+( @E6EA-E6FE XT:E6EC CFA:224C DLen: 18 STAGE: Words)
+: [MUSIC:E6EC]
+ >HIDDEN DARK HBUF-SE_ @ 54 FILE< >DISPLA_ ; 
+
+( @E6FE-E714 XT:E700 CFA:224C DLen: 20 STAGE: Words)
+: [MUSIC:E700]
+ [MUSIC:E6C8] @ * $0400 /MOD [MUSIC:E6CC] @ + ; 
+
+( @E714-E728 XT:E716 CFA:224C DLen: 18 STAGE: Words)
+: [MUSIC:E716]
+ [MUSIC:E6D8] 'KEY IF 
+  ON 
+ ELSE 
+  OFF 
+ THEN 
+ ; 
+
+( @E728-E7CB XT:E733 CFA:224C DLen: 152 STAGE: Dictionaries)
+: BRMOVE
+ DUP DUP 6 + _@mbuffseg SWAP LC@ _bLen ! 10 + _@mbuffseg SWAP LC@ _bCount ! 16 + 
+ _@mbuffseg SWAP HBUF-SE_ @ 0 _bCount @ 0 DO 
+  2OVER 2OVER ROT I _bLen @ * + ROT ROT _bCount @ _yoff @ + I - 80 * + _xoff @ + 
+  _bLen @ LCMOVE 
+ LOOP 
+ DISPLAY_____ SCR-RES____ 2DROP 2DROP _bLen @ _bCount @ * 16 + _mbuffoffset +! _pauseoff 
+ @ MS ; 
+
+( @E7CB-E811 XT:E7CD CFA:224C DLen: 68 STAGE: Words)
+: [MUSIC:E7CD]
+ TIME 2@ 45000. D+ BEGIN 
+  11 0 DO 
+   I [MUSIC:E700] BLOCK + BRMOVE [MUSIC:E716] [MUSIC:E6D8] @ IF 
+    LEAVE 
+   THEN 
+  LOOP 
+  2DUP TIME 2@ D< [MUSIC:E6D8] @ OR 
+ UNTIL 
+ 2DROP ; 
+
+( @E811-E829 XT:E813 CFA:224C DLen: 22 STAGE: Words)
+: [MUSIC:E813]
+ 11 0 DO 
+  I [MUSIC:E700] BLOCK 2DROP 
+ LOOP 
+ ; 
+
+( @E829-E885 XT:E82B CFA:224C DLen: 90 STAGE: Words)
+: _phazes_anim
+ [MUSIC:E6EC] 103 _yoff ! 11 _xoff ! $01F4 _pauseoff ! 69 FILE-STart @ 64 / [MUSIC:E6CC] 
+ ! [MUSIC:E813] 0 SONG @DS _mbuffseg ! >LORES DARK 10 [MUSIC:E700] BLOCK + BRMOVE 
+ [MUSIC:E7CD] CFIGARR___ 0 MUSSEG 2 LC! BEEPOFF >DISPLA_ ; 
+
+( @E885-E8B6 XT:E890 CFA:224C DLen: 38 STAGE: Dictionaries)
+: REDUCE
+ >R FLUSH R@ NEGATE #CACHE +! AUTO-CACHE R> 64 * NEGATE LFSEG +! LFSEG @ _mbuffseg 
+ ! ; 
+
+( @E8B6-E8DB XT:E8C3 CFA:224C DLen: 24 STAGE: Dictionaries)
+: INCREASE
+ FLUSH [#CACHE_ @ #CACHE ! AUTO-CACHE 64 * LFSEG +! ; 
+
+( Data @E8DB-E8FF XT:E8E5 CFA:1D29 DLen: 26 STAGE: Dictionaries)
+CREATE XOFFS 26 ALLOT ( @E8E5 =
+@E8E5 27 00 27 00 27 00 26 00 26 00 24 00 23 00 22 00   '.'.'.&.&.$.#.".
+@E8F5 20 00 1E 00 1A 00 12 00 0C 00                      .........      
+ )
+
+( Data @E8FF-E926 XT:E90C CFA:1D29 DLen: 26 STAGE: Dictionaries)
+CREATE PAUSEOFF 26 ALLOT ( @E90C =
+@E90C 58 02 F4 01 90 01 5E 01 2C 01 FA 00 C8 00 96 00   X.....^.,.......
+@E91C 64 00 4B 00 32 00 23 00 19 00                     d.K.2.#...      
+ )
+
+( @E926-E97C XT:E928 CFA:224C DLen: 84 STAGE: Words)
+: _galaxy_anim
+ 7 REDUCE LFSEG @ $008C FILE< 70 _yoff ! >DISPLA_ _mbuffoffset OFF 13 0 DO 
+  I XOFFS I + + @ _xoff ! I PAUSEOFF I + + @ _pauseoff ! _mbuffoffset @ BRMOVE 
+ LOOP 
+ 7 INCREASE ; 
+
+( @E97C-E99C XT:E98E CFA:224C DLen: 14 STAGE: Dictionaries)
+: CREDIT.SCREEN
+ [MUSIC:E69C] _galaxy_anim 15000. [MUSIC:E680] ; 
+
+( @E99C-E9EB XT:E9A7 CFA:224C DLen: 68 STAGE: Dictionaries)
+: INTROS
+ HIMUS ?EGA @ IF 
+  $008D CSCR>EGA 0 SONG $002EE0. ( CLASS:STARSYSTEM ) [MUSIC:E680] 54 CSCR>EGA 20000. 
+  [MUSIC:E680] CFIGARR___ 0 MUSSEG 2 LC! BEEPOFF >DISPLA_ 
+ ELSE 
+  CREDIT.SCREEN _phazes_anim DARK 
+ THEN 
+ ; 
+
+( RAW Data:OverlayJunk @E9EB-F560 DLen: 2933 STAGE: Dictionaries)
+ _overlayJunk 2933 ALLOT ( @E9EB =
+@E9EB                                  4D 55 53 49 43              MUSIC
+@E9F0 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+@EA00 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 20 20 20 20 20   ___________     
+@EA10 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EA20 20 20 20 20 20 20 20 39 2D 31 32 2D 31 32 37 20          9-12-127 
+@EA30 5C 20 45 4D 50 54 59 20 43 52 20 2E 22 20 4E 4F   \ EMPTY CR ." NO
+@EA40 54 49 43 45 21 20 45 4D 50 54 59 20 45 58 45 43   TICE! EMPTY EXEC
+@EA50 55 54 45 44 20 49 4E 20 43 4F 4D 42 4C 54 2E 43   UTED IN COMBLT.C
+@EA60 4D 50 20 22 20 20 20 20 20 20 20 20 20 20 20 20   MP "            
+@EA70 56 3D 20 23 46 52 41 4D 45 53 20 20 20 20 20 20   V= #FRAMES      
+@EA80 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EA90 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EAA0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EAB0 56 3D 20 46 52 41 4D 45 4F 46 46 20 20 20 20 20   V= FRAMEOFF     
+@EAC0 20 20 20 20 20 20 20 20 20 20 28 20 66 72 61 6D             ( fram
+@EAD0 65 20 6F 66 66 73 65 74 20 70 6F 69 6E 74 65 72   e offset pointer
+@EAE0 29 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20   )               
+@EAF0 28 20 56 3D 20 4C 46 52 41 4D 45 20 29 20 20 20   ( V= LFRAME )   
+@EB00 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EB10 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EB20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EB30 56 3D 20 42 49 54 2D 43 4F 55 4E 54 20 20 20 20   V= BIT-COUNT    
+@EB40 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EB50 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EB60 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EB70 43 52 45 41 54 45 20 46 49 4C 45 4E 41 4D 45 20   CREATE FILENAME 
+@EB80 31 35 20 41 4C 4C 4F 54 20 20 20 20 20 20 20 20   15 ALLOT        
+@EB90 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EBA0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EBB0 32 56 3D 20 44 50 56 41 20 20 20 20 20 20 20 20   2V= DPVA        
+@EBC0 20 20 20 20 20 20 20 20 20 20 28 20 61 6C 6C 6F             ( allo
+@EBD0 63 61 74 69 6F 6E 20 70 6F 69 6E 74 65 72 20 77   cation pointer w
+@EBE0 69 74 68 69 6E 20 56 45 53 42 4C 54 29 20 20 20   ithin VESBLT)   
+@EBF0 43 52 45 41 54 45 20 42 4C 54 43 4F 4C 4F 52 53   CREATE BLTCOLORS
+@EC00 20 31 36 20 41 4C 4C 4F 54 20 28 20 66 6C 61 67    16 ALLOT ( flag
+@EC10 73 20 73 68 6F 77 69 6E 67 20 63 6F 6C 6F 72 20   s showing color 
+@EC20 65 78 69 73 74 73 20 69 6E 20 62 6C 74 29 20 20   exists in blt)  
+@EC30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EC40 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EC50 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EC60 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EC70 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EC80 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EC90 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ECA0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ECB0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ECC0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ECD0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ECE0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ECF0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ED00 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ED10 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ED20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ED30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ED40 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ED50 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ED60 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ED70 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ED80 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@ED90 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EDA0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EDB0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EDC0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EDD0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EDE0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EDF0 28 20 43 4F 4D 42 4C 54 20 2D 20 3F 43 4F 4C 4F   ( COMBLT - ?COLO
+@EE00 52 53 20 48 46 52 41 4D 45 4C 45 4E 20 20 20 20   RS HFRAMELEN    
+@EE10 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EE20 20 20 20 20 20 20 20 39 2D 31 32 2D 38 35 29 20          9-12-85) 
+@EE30 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EE40 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EE50 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EE60 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EE70 3A 20 3F 43 4F 4C 4F 52 53 20 28 20 2D 2D 20 5C   : ?COLORS ( -- \
+@EE80 20 73 65 74 20 62 6C 74 20 63 6F 6C 6F 72 20 66    set blt color f
+@EE90 6C 61 67 73 20 62 61 73 65 64 20 6F 6E 20 63 6F   lags based on co
+@EEA0 6E 74 65 6E 74 73 20 6F 66 20 62 6C 74 29 20 20   ntents of blt)  
+@EEB0 20 20 42 4C 54 43 4F 4C 4F 52 53 20 31 36 20 30     BLTCOLORS 16 0
+@EEC0 20 46 49 4C 4C 20 20 20 20 20 20 20 20 20 20 20    FILL           
+@EED0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EEE0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EEF0 20 20 4C 42 4C 54 20 40 20 30 20 44 4F 20 20 20     LBLT @ 0 DO   
+@EF00 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EF10 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EF20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EF30 20 20 57 42 4C 54 20 40 20 30 20 44 4F 20 59 42     WBLT @ 0 DO YB
+@EF40 4C 54 20 40 20 4A 20 2D 20 58 42 4C 54 20 40 20   LT @ J - XBLT @ 
+@EF50 49 20 2B 20 4C 40 50 49 58 45 4C 20 20 20 20 20   I + L@PIXEL     
+@EF60 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EF70 20 20 20 20 20 20 20 20 20 20 20 20 20 20 42 4C                 BL
+@EF80 54 43 4F 4C 4F 52 53 20 2B 20 31 20 53 57 41 50   TCOLORS + 1 SWAP
+@EF90 20 43 21 20 20 20 20 20 20 20 20 20 20 20 20 20    C!             
+@EFA0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EFB0 20 20 20 20 20 20 20 20 20 20 20 4C 4F 4F 50 20              LOOP 
+@EFC0 4C 4F 4F 50 20 3B 20 20 20 20 20 20 20 20 20 20   LOOP ;          
+@EFD0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EFE0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@EFF0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F000 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F010 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F020 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F030 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F040 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F050 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F060 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F070 3A 20 48 46 52 41 4D 45 4C 45 4E 20 28 20 2D 2D   : HFRAMELEN ( --
+@F080 20 5C 20 63 6F 6D 70 75 74 65 20 74 68 65 20 6C    \ compute the l
+@F090 65 6E 67 74 68 20 6F 66 20 61 20 68 79 62 72 69   ength of a hybri
+@F0A0 64 20 62 6C 74 20 66 72 61 6D 65 29 20 20 20 20   d blt frame)    
+@F0B0 20 20 28 20 5B 66 72 61 6D 65 6C 65 6E 5D 5B 63     ( [framelen][c
+@F0C0 6F 6C 6F 72 5D 5B 69 6D 61 67 65 2F 72 75 6E 5D   olor][image/run]
+@F0D0 5B 69 6D 61 67 65 5D 20 29 20 20 20 20 20 20 20   [image] )       
+@F0E0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F0F0 20 20 4C 42 4C 54 20 40 20 57 42 4C 54 20 40 20     LBLT @ WBLT @ 
+@F100 2A 20 31 35 20 2B 20 31 36 2F 20 32 2A 20 34 20   * 15 + 16/ 2* 4 
+@F110 2B 20 4C 46 52 41 4D 45 20 21 20 3B 20 20 20 20   + LFRAME ! ;    
+@F120 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F130 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F140 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F150 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F160 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F170 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F180 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F190 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F1A0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F1B0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F1C0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F1D0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F1E0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F1F0 28 20 43 4F 4D 42 4C 54 20 2D 20 42 4C 54 46 52   ( COMBLT - BLTFR
+@F200 41 4D 45 20 20 20 20 20 20 20 20 20 20 20 20 20   AME             
+@F210 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F220 20 20 20 20 20 20 20 39 2D 31 32 2D 38 35 29 20          9-12-85) 
+@F230 3A 20 42 4C 54 46 52 41 4D 45 20 28 20 2D 2D 20   : BLTFRAME ( -- 
+@F240 5C 20 62 75 69 6C 64 20 61 20 62 6C 74 20 69 6D   \ build a blt im
+@F250 61 67 65 20 66 6F 72 20 74 68 65 20 63 75 72 72   age for the curr
+@F260 65 6E 74 20 63 6F 6C 6F 72 29 20 20 20 20 20 20   ent color)      
+@F270 20 20 28 20 72 65 6C 61 74 69 76 65 20 74 6F 20     ( relative to 
+@F280 62 6C 74 73 65 67 20 26 20 66 72 61 6D 65 6F 66   bltseg & frameof
+@F290 66 29 20 20 20 20 20 20 20 20 20 20 20 20 20 20   f)              
+@F2A0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F2B0 20 20 42 49 54 2D 43 4F 55 4E 54 20 4F 46 46 20     BIT-COUNT OFF 
+@F2C0 20 46 52 41 4D 45 4F 46 46 20 40 20 44 55 50 20    FRAMEOFF @ DUP 
+@F2D0 3E 52 20 34 20 2B 20 41 42 4C 54 20 21 20 20 42   >R 4 + ABLT !  B
+@F2E0 4C 54 53 45 47 20 40 20 3E 52 20 20 20 20 20 20   LTSEG @ >R      
+@F2F0 20 20 4C 46 52 41 4D 45 20 40 20 49 20 49 27 20     LFRAME @ I I' 
+@F300 4C 21 20 20 43 4F 4C 4F 52 20 40 20 49 20 49 27   L!  COLOR @ I I'
+@F310 20 32 2B 20 4C 43 21 20 20 30 20 52 3E 20 52 3E    2+ LC!  0 R> R>
+@F320 20 33 2B 20 4C 43 21 20 20 20 20 20 20 20 20 20    3+ LC!         
+@F330 20 20 30 20 20 20 20 20 20 20 20 20 20 20 20 20     0             
+@F340 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F350 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F360 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F370 20 20 4C 42 4C 54 20 40 20 30 20 44 4F 20 20 20     LBLT @ 0 DO   
+@F380 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F390 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F3A0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F3B0 20 20 57 42 4C 54 20 40 20 30 20 44 4F 20 59 42     WBLT @ 0 DO YB
+@F3C0 4C 54 20 40 20 4A 20 2D 20 58 42 4C 54 20 40 20   LT @ J - XBLT @ 
+@F3D0 49 20 2B 20 4C 40 50 49 58 45 4C 20 20 20 20 20   I + L@PIXEL     
+@F3E0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F3F0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 43 4F                 CO
+@F400 4C 4F 52 20 40 20 31 35 20 41 4E 44 20 3D 20 20   LOR @ 15 AND =  
+@F410 53 48 4C 2D 42 49 54 20 20 31 20 42 49 54 2D 43   SHL-BIT  1 BIT-C
+@F420 4F 55 4E 54 20 2B 21 20 20 20 20 20 20 20 20 20   OUNT +!         
+@F430 20 20 20 20 20 20 20 20 20 20 20 20 20 20 42 49                 BI
+@F440 54 2D 43 4F 55 4E 54 20 40 20 31 36 20 3D 20 20   T-COUNT @ 16 =  
+@F450 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F460 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F470 20 20 20 20 20 20 20 20 20 20 20 20 20 20 49 46                 IF
+@F480 20 42 4C 54 53 45 47 20 40 20 41 42 4C 54 20 40    BLTSEG @ ABLT @
+@F490 20 4C 21 20 20 32 20 41 42 4C 54 20 2B 21 20 30    L!  2 ABLT +! 0
+@F4A0 2E 20 42 49 54 2D 43 4F 55 4E 54 20 21 20 20 20   . BIT-COUNT !   
+@F4B0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 54 48                 TH
+@F4C0 45 4E 20 20 20 20 20 20 20 20 20 20 20 20 20 20   EN              
+@F4D0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F4E0 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F4F0 20 20 20 20 20 20 20 20 20 20 20 4C 4F 4F 50 20              LOOP 
+@F500 4C 4F 4F 50 20 20 20 20 20 20 20 20 20 20 20 20   LOOP            
+@F510 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F520 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20                   
+@F530 20 20 42 49 54 2D 43 4F 55 4E 54 20 40 20 3F 44     BIT-COUNT @ ?D
+@F540 55 50 20 49 46 20 31 36 20 53 57 41 50 20 44 4F   UP IF 16 SWAP DO
+@F550 20 32 2A 20 4C 4F 4F 50 20 42 4C 54 53 45 47 20    2* LOOP BLTSEG 
+ )
+

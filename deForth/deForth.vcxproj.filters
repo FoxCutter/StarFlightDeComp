@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="X86Disasm">
+      <UniqueIdentifier>{2d8419a2-f222-44e1-9986-aa8c73c676fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cgif">
+      <UniqueIdentifier>{29faad4b-cf83-435d-b7e4-e7bfae43bca1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="deForth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StarFlight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dictionary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X86Disasm\Disassembler.cpp">
+      <Filter>X86Disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="X86Disasm\Results.cpp">
+      <Filter>X86Disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="X86Disasm\X86OpcodeData.cpp">
+      <Filter>X86Disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="Files.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Images.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Instance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cgif\cgif.c">
+      <Filter>cgif</Filter>
+    </ClCompile>
+    <ClCompile Include="cgif\cgif_raw.c">
+      <Filter>cgif</Filter>
+    </ClCompile>
+    <ClCompile Include="String.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Rehydrate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X86Disasm\ResultStrings.cpp">
+      <Filter>X86Disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="Output.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Enum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="starflight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Dictionary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="X86Disasm\Disassembler.h">
+      <Filter>X86Disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="X86Disasm\Internal.h">
+      <Filter>X86Disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="X86Disasm\ResultData.h">
+      <Filter>X86Disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="X86Disasm\Results.h">
+      <Filter>X86Disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="X86Disasm\X86Disasm.h">
+      <Filter>X86Disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="X86Disasm\X86OpcodeData.h">
+      <Filter>X86Disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="Files.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Images.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Instance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StarflightData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cgif\cgif.h">
+      <Filter>cgif</Filter>
+    </ClInclude>
+    <ClInclude Include="cgif\cgif_raw.h">
+      <Filter>cgif</Filter>
+    </ClInclude>
+    <ClInclude Include="String.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Rehydrate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="rename1.csv" />
+    <None Include="cgif\LICENSE">
+      <Filter>cgif</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="notes.txt" />
+  </ItemGroup>
+</Project>

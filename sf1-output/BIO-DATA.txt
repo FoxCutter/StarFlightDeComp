@@ -1,0 +1,30 @@
+BIO-DATA Record Length: 16 Record Count: 28
+
+Record #0   :                 
+Record #1   : AMORPHOUS
+Record #2   : IRREGULAR
+Record #3   : SPHERICAL
+Record #4   : RADIAL
+Record #5   : BILATERAL
+Record #6   : AMOEBOID
+Record #7   : TREE-LIKE
+Record #8   : BALLOON-LIKE
+Record #9   : ANTELOPE-LIKE
+Record #10  : BIRD-LIKE
+Record #11  : DINOSAUR-LIKE
+Record #12  : HUMANOID
+Record #13  : INSECTOID
+Record #14  : PLANT-LIKE
+Record #15  : BEAR-LIKE
+Record #16  : REPTILIAN
+Record #17  : RODENT-LIKE
+Record #18  : SLUG-LIKE
+Record #19  : SNAIL-LIKE
+Record #20  : SNAKE-LIKE
+Record #21  : SPIDER-LIKE
+Record #22  : TURTLE-LIKE
+Record #23  : ROCK-LIKE
+Record #24  : FUNGOID
+Record #25  : EWOK-LIKE
+Record #26  : STARFISH-LIKE
+Record #27  : ANEMONE-LIKE

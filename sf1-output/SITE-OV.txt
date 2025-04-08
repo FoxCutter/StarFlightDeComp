@@ -1,0 +1,345 @@
+( RAW Data:OverlayHeader @EE00-EE14 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 6F92 	Count: 0076 	Data Size: 0075 (Paragraphs)
+    On Disk Location 6F920-70080
+  Overlay Address: @EE00 	Overlay DP: @F54B
+    Load Location: @EE00-@F560 	Load Length: 1888
+    Data: @EE00-@F54B 	Data Length: 1867
+    Junk: @F54B-@F560 	Junk Length: 21
+  VOCABULARY Word: C460 SITE-VOC
+   Dictionary Link 1: F0BA
+   Dictionary Link 2: F20C
+   Dictionary Link 3: F1C5
+   Dictionary Link 4: F52D
+
+@EE00 92 6F 76 00 00 EE 4B F5 60 C4 BA F0 0C F2 C5 F1   .ov...K.`.......
+@EE10 2D F5 75 00                                       -.u.            
+)
+
+( Data @EE14-EE21 XT:EE1D CFA:1D29 DLen: 4 STAGE: Dictionaries)
+CREATE WLON 4 ALLOT ( @EE1D =
+@EE1D 6B 8C 00 F5                                       k...            
+ )
+
+( Data @EE21-EE2E XT:EE2A CFA:1D29 DLen: 4 STAGE: Dictionaries)
+CREATE ELON 4 ALLOT ( @EE2A =
+@EE2A 39 F4 00 0F                                       9...            
+ )
+
+( Data @EE2E-EE3B XT:EE37 CFA:1D29 DLen: 4 STAGE: Dictionaries)
+CREATE NLAT 4 ALLOT ( @EE37 =
+@EE37 B9 9D 00 90                                       ....            
+ )
+
+( Data @EE3B-EE48 XT:EE44 CFA:1D29 DLen: 4 STAGE: Dictionaries)
+CREATE SLAT 4 ALLOT ( @EE44 =
+@EE44 F1 78 00 E0                                       .x..            
+ )
+
+( Data @EE48-EE60 XT:EE54 CFA:1D29 DLen: 12 STAGE: Dictionaries)
+CREATE LTLNBLT 12 ALLOT ( @EE54 =
+@EE54 FF FF FF FF FF FF FF FF FF FF FF FF               ............    
+ )
+
+( @EE60-EED1 XT:EE6E CFA:224C DLen: 99 STAGE: Dictionaries)
+: .LATFRAME
+ $00C5 83 126 $009C GREY1 POLY-WI_________ CTINIT BLACK !COLOR 102 $008A POS. ." LAT" 
+ 125 XBLT ! ." LONG" $00C1 95 $008E $0090 BLACK POLY-WI_________ $00C1 $0093 $008E 
+ $0098 BLACK POLY-WI_________ ; 
+
+( @EED1-EF1B XT:EED3 CFA:224C DLen: 72 STAGE: Words)
+: [SITE-OV:EED3]
+ @CRS CURSORS____ ABLT ! 4 WBLT ! 6 LBLT ! XORMODE OFF 8 0 DO 
+  CMAP I 8 * + C@ !COLOR $0094 $0095 I 6 * + POS. BLT 
+ LOOP 
+ !CRS ; 
+
+( Data:Variable @EF1B-EF1F XT:EF1D CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [SITE-OV:EF1D] ( @EF1D=$0793)
+
+( @EF1F-EF9A XT:EF28 CFA:224C DLen: 114 STAGE: Dictionaries)
+: .LON
+ XABS @ $0480 - 10 64 */ XORMODE OFF 124 $0083 POS. DUP 0< IF 
+  NEGATE 0 3 D.R WLON ABLT ! 5 WBLT ! BLT 
+ ELSE 
+  DUP 0= IF 
+   $0082 $0083 POS. . 
+  ELSE 
+   0 3 D.R ELON ABLT ! 5 WBLT ! BLT 
+  THEN 
+ THEN 
+ ; 
+
+( Data:Variable @EF9A-EF9E XT:EF9C CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [SITE-OV:EF9C] ( @EF9C=$0103)
+
+( @EF9E-F012 XT:EFA0 CFA:224C DLen: 114 STAGE: Words)
+: [SITE-OV:EFA0]
+ YABS @ $01E0 - 10 53 */ XORMODE OFF 102 $0083 POS. DUP 0< IF 
+  NEGATE 0 2 D.R SLAT ABLT ! 4 WBLT ! BLT 
+ ELSE 
+  DUP 0= IF 
+   106 $0083 POS. . 
+  ELSE 
+   0 2 D.R NLAT ABLT ! 4 WBLT ! BLT 
+  THEN 
+ THEN 
+ ; 
+
+( @F012-F042 XT:F014 CFA:224C DLen: 46 STAGE: Words)
+: [SITE-OV:F014]
+ PLHI @ -1 = IF 
+  $01E0 [SITE-OV:EF9C] ! $0480 [SITE-OV:EF1D] ! 
+ THEN 
+ [SITE-OV:EF1D] @ XABS ! [SITE-OV:EF9C] @ YABS ! ; 
+
+( @F042-F0B8 XT:F050 CFA:F050 DLen: 104 STAGE: Dictionaries)
+CODE (|REGION)
+(Address @F050
+   F050 8F 06 1C 56          POP        WORD PTR [561Ch]                 ; X1
+   F054 59                   POP        CX
+   F055 06                   PUSH       ES
+   F056 8E C1                MOV        ES, CX
+   F058 56                   PUSH       SI
+   F059 57                   PUSH       DI
+   F05A 55                   PUSH       BP
+   F05B 1E                   PUSH       DS
+   F05C 8B 16 92 58          MOV        DX, WORD PTR [5892h]             ; WBLT
+   F060 D1 EA                SHR        DX, 1
+   F062 D1 EA                SHR        DX, 1
+   F064 42                   INC        DX
+   F065 42                   INC        DX
+   F066 8B 2E 6E 58          MOV        BP, WORD PTR [586Eh]             ; XBLT
+   F06A D1 ED                SHR        BP, 1
+   F06C 33 FF                XOR        DI, DI
+   F06E 8B 06 87 58          MOV        AX, WORD PTR [5887h]             ; LBLT
+   F072 8B C8                MOV        CX, AX
+ .SITE-OV_F074:
+   F074 8B C1                MOV        AX, CX
+   F076 1F                   POP        DS
+   F077 1E                   PUSH       DS
+   F078 8B 1E 63 58          MOV        BX, WORD PTR [5863h]             ; YBLT
+   F07C 2B D9                SUB        BX, CX
+   F07E 43                   INC        BX
+   F07F D1 E3                SHL        BX, 1
+   F081 03 1E 3A 56          ADD        BX, WORD PTR [563Ah]             ; YTABL
+   F085 8B 37                MOV        SI, WORD PTR [BX]
+   F087 03 F5                ADD        SI, BP
+   F089 8B CA                MOV        CX, DX
+   F08B 8B 1E 1C 56          MOV        BX, WORD PTR [561Ch]             ; X1
+   F08F FF 36 48 56          PUSH       WORD PTR [5648h]                 ; BUF-SEG
+   F093 1F                   POP        DS
+   F094 0B DB                OR         BX, BX
+   F096 74 06                JZ         F09Eh                            ; .SITE-OV_F09E
+   F098 1E                   PUSH       DS
+   F099 06                   PUSH       ES
+   F09A 1F                   POP        DS
+   F09B 07                   POP        ES
+   F09C 87 FE                XCHG       SI, DI
+ .SITE-OV_F09E:
+   F09E F3 A5                MOVSW      
+   F0A0 8B C8                MOV        CX, AX
+   F0A2 0B DB                OR         BX, BX
+   F0A4 74 06                JZ         F0ACh                            ; .SITE-OV_F0AC
+   F0A6 1E                   PUSH       DS
+   F0A7 06                   PUSH       ES
+   F0A8 1F                   POP        DS
+   F0A9 07                   POP        ES
+   F0AA 87 FE                XCHG       SI, DI
+ .SITE-OV_F0AC:
+   F0AC E2 C6                LOOP       F074h                            ; .SITE-OV_F074
+   F0AE 1F                   POP        DS
+   F0AF 5D                   POP        BP
+   F0B0 5F                   POP        DI
+   F0B1 5E                   POP        SI
+   F0B2 07                   POP        ES
+   F0B3 AD                   LODSW      
+   F0B4 8B D8                MOV        BX, AX
+   F0B6 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @F0B8-F0F5 XT:F0C1 CFA:F0C1 DLen: 52 STAGE: Dictionaries)
+CODE |EGA
+(Address @F0C1
+   F0C1 59                   POP        CX
+   F0C2 1E                   PUSH       DS
+   F0C3 06                   PUSH       ES
+   F0C4 57                   PUSH       DI
+   F0C5 56                   PUSH       SI
+   F0C6 8B 06 E6 55          MOV        AX, WORD PTR [55E6h]             ; DBUF-SE_
+   F0CA 8B 16 D8 55          MOV        DX, WORD PTR [55D8h]             ; HBUF-SE_
+   F0CE BB C5 00             MOV        BX, 00C5h
+   F0D1 D1 E3                SHL        BX, 1
+   F0D3 03 1E 3A 56          ADD        BX, WORD PTR [563Ah]             ; YTABL
+   F0D7 8B 37                MOV        SI, WORD PTR [BX]
+   F0D9 8B FE                MOV        DI, SI
+   F0DB F7 C1 01 00          TEST       CX, 1
+   F0DF 75 01                JNZ        F0E2h                            ; .SITE-OV_F0E2
+   F0E1 92                   XCHG       DX, AX
+ .SITE-OV_F0E2:
+   F0E2 8E C0                MOV        ES, AX
+   F0E4 8E DA                MOV        DS, DX
+   F0E6 B9 28 0A             MOV        CX, 0A28h
+   F0E9 E8 46 9D             CALL       8E32h                            ; COPYLIN_
+   F0EC 5E                   POP        SI
+   F0ED 5F                   POP        DI
+   F0EE 07                   POP        ES
+   F0EF 1F                   POP        DS
+   F0F0 AD                   LODSW      
+   F0F1 8B D8                MOV        BX, AX
+   F0F3 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @F0F5-F117 XT:F101 CFA:224C DLen: 22 STAGE: Dictionaries)
+: |REGION
+ ?EGA @ IF 
+  SWAP DROP |EGA 
+ ELSE 
+  (|REGION) 
+ THEN 
+ ; 
+
+( @F117-F11F XT:F119 CFA:224C DLen: 6 STAGE: Words)
+: [SITE-OV:F119]
+ HBUF-SE_ @ ; 
+
+( @F11F-F12D XT:F121 CFA:224C DLen: 12 STAGE: Words)
+: [SITE-OV:F121]
+ HBUF-SE_ @ 20 + ; 
+
+( @F12D-F157 XT:F12F CFA:224C DLen: 40 STAGE: Words)
+: [SITE-OV:F12F]
+ 96 YABS @ 40 / 2* $0091 + POS. 48 WBLT ! 2 LBLT ! ; 
+
+( @F157-F17F XT:F159 CFA:224C DLen: 38 STAGE: Words)
+: [SITE-OV:F159]
+ XABS @ 48 / 96 + $00BF POS. 1 WBLT ! 48 LBLT ! ; 
+
+( @F17F-F1C3 XT:F181 CFA:224C DLen: 66 STAGE: Words)
+: [SITE-OV:F181]
+ [SITE-OV:F159] XBLT @ $00C1 OVER $0091 LLINE [SITE-OV:F12F] YBLT @ DUP >R 95 SWAP 
+ DUP $0090 SWAP LLINE R> 1+ 95 SWAP DUP $0090 SWAP LLINE ; 
+
+( @F1C3-F20A XT:F1CE CFA:224C DLen: 60 STAGE: Dictionaries)
+: >XHAIR
+ XORMODE OFF BLACK !COLOR @DS BLTSEG ! LTLNBLT ABLT ! ?EGA @ IF 
+  0 |EGA [SITE-OV:F181] 
+ ELSE 
+  [SITE-OV:F12F] [SITE-OV:F119] 0 |REGION BLT [SITE-OV:F159] [SITE-OV:F121] 0 |REGION 
+  BLT 
+ THEN 
+ ; 
+
+( @F20A-F237 XT:F215 CFA:224C DLen: 34 STAGE: Dictionaries)
+: <XHAIR
+ ?EGA @ IF 
+  1 |EGA 
+ ELSE 
+  [SITE-OV:F159] [SITE-OV:F121] 1 |REGION [SITE-OV:F12F] [SITE-OV:F119] 1 |REGION 
+ THEN 
+ ; 
+
+( @F237-F25F XT:F239 CFA:224C DLen: 38 STAGE: Words)
+: [SITE-OV:F239]
+ SWAP 48 $0900 */ 96 + SWAP 48 $03C0 */ $0090 + ; 
+
+( Data @F25F-F28A XT:F261 CFA:1D29 DLen: 41 STAGE: Words)
+CREATE [SITE-OV:F261] 41 ALLOT ( @F261 =
+@F261 3A 20 05 41 4C 4C 4F 54 20 20 72 66 67 32 32 73   : .ALLOT  rfg22s
+@F271 65 70 38 37 29 22 14 38 32 34 15 00 14 22 16 00   ep87)".824..."..
+@F281 14 22 17 00 14 22 18 00 14                        ."..."...       
+ )
+
+( Data:BLT @F28A-F28E XT:F28C CFA:1D29 DLen: 2 STAGE: Words)
+CREATE _site_pos 2 ALLOT ( BLT: 3x5, @F28C =
+@F28C A4 4A                                             .J              
+ )
+
+( @F28E-F30F XT:F290 CFA:224C DLen: 127 STAGE: Words)
+: [SITE-OV:F290]
+ CTINIT " THE RED CYLINDER IS FLASHING" .TTY 80 0 DO 
+  16 12 DO 
+   I 16* I + DUP $00FE < * !COLOR [SITE-OV:F261] COUNT 4 * OVER + SWAP DO 
+    I 2@ 2DUP LPLOT 1- LPLOT 4 
+   +LOOP 
+   5 MS 
+  LOOP 
+  20 MS 
+ LOOP 
+ ; 
+
+( @F30F-F387 XT:F311 CFA:224C DLen: 118 STAGE: Words)
+: [SITE-OV:F311]
+ (PLANET) @>C+S @INST-Subclass 23 = IF 
+  _site_pos ABLT ! 3 WBLT ! 5 LBLT ! XORMODE OFF $05A0 $02DA [SITE-OV:F239] SWAP 
+  1- SWAP 2+ POS. 80 0 DO 
+   16 12 DO 
+    I 16* I + DUP $00FE < * !COLOR BLT 5 MS 
+   LOOP 
+   20 MS 
+  LOOP 
+ THEN 
+ ; 
+
+( @F387-F403 XT:F389 CFA:224C DLen: 122 STAGE: Words)
+: [SITE-OV:F389]
+ (PLANET) @>C+S @INST-Subclass 23 = NOT ?CHILD AND IF 
+  IOPEN [SITE-OV:F261] 41 0 FILL BEGIN 
+   @INST-Class 27 29 WITHIN INST-X 2@ D0= NOT AND IF 
+    INST-X 2@ SWAP [SITE-OV:F239] [SITE-OV:F261] COUNT 4 * + D! 1 [SITE-OV:F261] 
+    +! 
+   THEN 
+   INEXT ?FIRST [SITE-OV:F261] C@ 10 = OR 
+  UNTIL 
+  CDROP [SITE-OV:F261] C@ IF 
+   [SITE-OV:F290] 
+  THEN 
+ THEN 
+ ICLOSE ; 
+
+( @F403-F417 XT:F405 CFA:224C DLen: 18 STAGE: Words)
+: [SITE-OV:F405]
+ ' OV?ARTIFACT ( $BDD8 ) MODULE CONTEXT____ @ 1 = AND ; 
+
+( @F417-F4C1 XT:F423 CFA:224C DLen: 158 STAGE: Dictionaries)
+: GETSITE
+ 8 #AUX ! >DISPLA_ [SITE-OV:F014] CTINIT [SITE-OV:EFA0] .LON >XHAIR BEGIN 
+  XYSCAN $1388 KEYTIME 2@ LKEYTIM_ 2@ D- DROP / 5 MAX $00C8 MIN >R I * SWAP R> * 
+  2DUP OR IF 
+   GREY1 !COLOR [SITE-OV:EFA0] .LON <XHAIR YABS @ + 0 MAX $03BF MIN YABS ! XABS @ 
+   + 0 MAX $08FF MIN XABS ! >XHAIR WHITE !COLOR [SITE-OV:EFA0] .LON 
+  ELSE 
+   2DROP 
+  THEN 
+  ?TRIG 
+ UNTIL 
+ XABS @ [SITE-OV:EF1D] ! YABS @ [SITE-OV:EF9C] ! ; 
+
+( @F4C1-F52B XT:F4CF CFA:224C DLen: 92 STAGE: Dictionaries)
+: .MERCATOR
+ 4 #AUX ! [SITE-OV:F014] >DISPLA_ .LATFRAME [SITE-OV:EED3] 96 XLLDEST ! $0090 YLLDEST 
+ ! ' .1X2CEL_ ( $9880 ) '.CELL ! ' MERCATO_ ( $6A99 ) SETLARR__ FULLARR__ SETREGI__ 
+ .REGION CONTEXT____ @ 0= IF 
+  CTINIT [SITE-OV:EFA0] .LON 
+ THEN 
+ 11 [SITE-OV:F405] IF 
+  [SITE-OV:F389] 
+ THEN 
+ 2 [SITE-OV:F405] IF 
+  [SITE-OV:F311] 
+ THEN 
+ CTINIT ; 
+
+( @F52B-F54B XT:F537 CFA:224C DLen: 20 STAGE: Dictionaries)
+: GETSITE
+ #AUX @ 4 = NOT IF 
+  .MERCATOR 
+ THEN 
+ GETSITE ; 
+
+( RAW Data:OverlayJunk @F54B-F560 DLen: 21 STAGE: Dictionaries)
+ _overlayJunk 21 ALLOT ( @F54B =
+@F54B                                  53 49 54 45 2D              SITE-
+@F550 56 4F 43 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   VOC_____________
+ )
+

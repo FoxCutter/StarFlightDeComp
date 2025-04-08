@@ -1,0 +1,135 @@
+( RAW Data:OverlayHeader @F1F0-F204 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 8590 	Count: 0037 	Data Size: 0036 (Paragraphs)
+    On Disk Location 85900-85C70
+  Overlay Address: @F1F0 	Overlay DP: @F54C
+    Load Location: @F1F0-@F560 	Load Length: 880
+    Data: @F1F0-@F54C 	Data Length: 860
+    Junk: @F54C-@F560 	Junk Length: 20
+  VOCABULARY Word: CB06 NAV-VOC
+   Dictionary Link 1: 0000
+   Dictionary Link 2: F4BA
+   Dictionary Link 3: F4EA
+   Dictionary Link 4: 0000
+
+@F1F0 90 85 37 00 F0 F1 4C F5 06 CB 00 00 BA F4 EA F4   ..7...L.........
+@F200 00 00 36 00                                       ..6.            
+)
+
+( Data:IField @F204-F209 XT:F206 CFA:744D DLen: 3 STAGE: Words)
+20 25 2 IFIELD _ship_shield_class ( SHIP )
+
+( Data:IField @F209-F20E XT:F20B CFA:744D DLen: 3 STAGE: Words)
+20 27 2 IFIELD _ship_missile_class ( SHIP )
+
+( Data:IField @F20E-F213 XT:F210 CFA:744D DLen: 3 STAGE: Words)
+20 29 2 IFIELD _ship_laser_class ( SHIP )
+
+( Data:IField @F213-F218 XT:F215 CFA:744D DLen: 3 STAGE: Words)
+20 69 4 IFIELD _ship_flags ( SHIP )
+
+( Data:AField @F218-F220 XT:F21A CFA:73EA DLen: 6 STAGE: Words)
+58 24 12 AFIELD _3btn ( BUTTONS )
+
+( Data:AField @F220-F228 XT:F222 CFA:73EA DLen: 6 STAGE: Words)
+58 36 12 AFIELD _4btn ( BUTTONS )
+
+( @F228-F232 XT:F22A CFA:224C DLen: 8 STAGE: Words)
+: [NAVIGATR:F22A]
+ ' OV?.EQUIP-OK ( $BDEF ) MODULE ; 
+
+( @F232-F244 XT:F234 CFA:224C DLen: 16 STAGE: Words)
+: [NAVIGATR:F234]
+ 58 FILE# ! 3 RECORD# ! ; 
+
+( @F244-F24E XT:F246 CFA:224C DLen: 8 STAGE: Words)
+: [NAVIGATR:F246]
+ SWAP CMOVE SET-CUR____ ; 
+
+( @F24E-F270 XT:F250 CFA:224C DLen: 32 STAGE: Words)
+: [NAVIGATR:F250]
+ 60 $03E8 15 3 2OVER 2OVER 60 $01F4 5 >SND ; 
+
+( @F270-F2A2 XT:F272 CFA:224C DLen: 48 STAGE: Words)
+: [NAVIGATR:F272]
+ 100 3 60 $01F4 15 3 2OVER 2OVER 60 $03E8 2OVER 60 $01F4 8 >SND ; 
+
+( @F2A2-F357 XT:F2B3 CFA:224C DLen: 164 STAGE: Dictionaries)
+: >DOWN-SHIELD
+ ?NEB @ IF 
+  " MAGNETIC DISTURBANCES IN NEBULA" .TTY " CAUSING ENERGY FLUCTUATIONS" .TTY 
+ THEN 
+ [NAVIGATR:F234] " RAISE SHIELD" _3btn [NAVIGATR:F246] _ship_flags C@ $00F7 AND 16 
+ OR _ship_flags C! [NAVIGATR:F250] " SHIELDS ARE DOWN" .TTY BTN-REC_ @ 3 = IF 
+  3 2 .ABTN 
+ THEN 
+ ?SUP OFF ; 
+
+( @F357-F3A9 XT:F359 CFA:224C DLen: 80 STAGE: Words)
+: [NAVIGATR:F359]
+ 6 [NAVIGATR:F22A] IF 
+  [NAVIGATR:F234] " DROP SHIELD " _3btn [NAVIGATR:F246] _ship_flags C@ 24 OR _ship_flags 
+  C! [NAVIGATR:F250] " SHIELDS ARE NOW UP" .TTY 3 2 .ABTN ?SUP ON 
+ THEN 
+ ; 
+
+( @F3A9-F3F9 XT:F3B5 CFA:224C DLen: 68 STAGE: Dictionaries)
+: >DISARM
+ [NAVIGATR:F234] " ARM WEAPON" _4btn [NAVIGATR:F246] _ship_flags C@ $00FC AND 32 
+ OR _ship_flags C! [NAVIGATR:F272] " WEAPONS ARE DISARMED" .TTY ; 
+
+( @F3F9-F4B8 XT:F3FB CFA:224C DLen: 189 STAGE: Words)
+: [NAVIGATR:F3FB]
+ _ship_laser_class 1+ C@ _ship_missile_class 1+ C@ 2DUP OR IF 
+  IF 
+   4 [NAVIGATR:F22A] 
+  ELSE 
+   0 
+  THEN 
+  DUP IF 
+   [NAVIGATR:F272] " ARMING MISSILES" .TTY 
+  THEN 
+  SWAP IF 
+   3 [NAVIGATR:F22A] 
+  ELSE 
+   0 
+  THEN 
+  DUP IF 
+   [NAVIGATR:F272] " ARMING LASERS" .TTY 
+  THEN 
+  + IF 
+   _ship_flags @ 35 OR _ship_flags ! [NAVIGATR:F234] " DISARM    " _4btn [NAVIGATR:F246] 
+  THEN 
+ ELSE 
+  2DROP " SHIP IS NOT EQUIPPED WITH WEAPONS" .TTY 
+ THEN 
+ ; 
+
+( @F4B8-F4E8 XT:F4C8 CFA:224C DLen: 32 STAGE: Dictionaries)
+: (/(DIS)ARM)
+ CTINIT *SHIP >C+S _ship_flags @ 3 AND IF 
+  >DISARM 
+ ELSE 
+  [NAVIGATR:F3FB] 
+ THEN 
+ ICLOSE .SORD ; 
+
+( @F4E8-F54C XT:F4FA CFA:224C DLen: 82 STAGE: Dictionaries)
+: (/(UD)SHIELD)
+ CTINIT *SHIP >C+S _ship_flags @ 8 AND IF 
+  >DOWN-SHIELD 
+ ELSE 
+  ?NEB @ 10*END 2@ D0= OR IF 
+   " SHIELDS CAN'T BE RAISED" .TTY BEEP 
+  ELSE 
+   [NAVIGATR:F359] 
+  THEN 
+ THEN 
+ ICLOSE .SORD ; 
+
+( RAW Data:OverlayJunk @F54C-F560 DLen: 20 STAGE: Dictionaries)
+ _overlayJunk 20 ALLOT ( @F54C =
+@F54C                                     4E 41 56 2D               NAV-
+@F550 56 4F 43 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   VOC_____________
+ )
+

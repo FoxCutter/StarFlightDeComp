@@ -1,0 +1,1087 @@
+( RAW Data:PointerTable @0000-001E DLen: 30 STAGE: Dictionaries)
+( Video Overlay Offset Table:
+    @029D = (LPLOT) 
+    @02EC = (LXPLOT) 
+    @020D = ({BLT}) 
+    @0336 = (LLINE) 
+    @041B = (LFILLPOLY) 
+    @05C1 = (LCOPYBLK) 
+    @0635 = (TILEFILL) 
+    @06AA = (SQLPLOT) 
+    @0052 = (V>DISPLAY) 
+    @08FE = (EEXTENT) 
+    @08E5 = ({.ELLIP}) 
+    @08CB = ({SCANELLIP}) 
+    @0789 = (ARC) 
+    @00F4 = (L@PIXEL) 
+    @2020
+
+@0000 9D 02 EC 02 0D 02 36 03 1B 04 C1 05 35 06 AA 06   ......6.....5...
+@0010 52 00 FE 08 E5 08 CB 08 89 07 F4 00 20 20         R...........    
+)
+
+( @001E-0042 XT:0026 CFA:1D29 DLen: 28 STAGE: Words)
+CREATE V>D
+(Address @0026
+   0026 B9 3C 00             MOV        CX, 60
+ .CGA_0029:
+   0029 8B E9                MOV        BP, CX
+   002B 8B FB                MOV        DI, BX
+   002D 8B 3D                MOV        DI, WORD PTR [DI]                ; USER:SP0
+   002F 47                   INC        DI
+   0030 47                   INC        DI
+   0031 8E D8                MOV        DS, AX
+   0033 B9 12 00             MOV        CX, 18
+   0036 F3 A5                MOVSW      
+   0038 83 C3 04             ADD        BX, 4
+   003B 8E DA                MOV        DS, DX
+   003D 8B CD                MOV        CX, BP
+   003F E2 E8                LOOP       0029h                            ; .CGA_0029
+   0041 C3                   RET        
+) CODE-END
+
+( @0042-0076 XT:0052 CFA:1D29 DLen: 36 STAGE: Dictionaries)
+CREATE (V>DISPLAY)
+(Address @0052
+   0052 57                   PUSH       DI
+   0053 55                   PUSH       BP
+   0054 56                   PUSH       SI
+   0055 8C DA                MOV        DX, DS
+   0057 BB 98 65             MOV        BX, 6598h
+   005A 8B 06 E6 55          MOV        AX, WORD PTR [55E6h]             ; DBUF-SE_
+   005E 8E C0                MOV        ES, AX
+   0060 8B 06 D8 55          MOV        AX, WORD PTR [55D8h]             ; HBUF-SE_
+   0064 33 F6                XOR        SI, SI
+   0066 E8 BD FF             CALL       0026h                            ; V>D
+   0069 81 EB EE 00          SUB        BX, 00EEh
+   006D E8 B6 FF             CALL       0026h                            ; V>D
+   0070 8E C2                MOV        ES, DX
+   0072 5E                   POP        SI
+   0073 5D                   POP        BP
+   0074 5F                   POP        DI
+   0075 CB                   RET FAR    
+) CODE-END
+
+( @0076-00E6 XT:008A CFA:1D29 DLen: 92 STAGE: Words)
+CREATE TREJECT/TACCEPT
+(Address @008A
+   008A 8C D8                MOV        AX, DS
+   008C 8E C0                MOV        ES, AX
+   008E 55                   PUSH       BP
+   008F 57                   PUSH       DI
+   0090 56                   PUSH       SI
+   0091 B3 0F                MOV        BL, 15
+   0093 32 FF                XOR        BH, BH
+   0095 8B 36 9B 56          MOV        SI, WORD PTR [569Bh]             ; VIN
+   0099 8B 3E B0 56          MOV        DI, WORD PTR [56B0h]             ; OIN
+   009D 8B 2E 52 57          MOV        BP, WORD PTR [5752h]             ; IBELOW
+   00A1 8B 0E 86 56          MOV        CX, WORD PTR [5686h]             ; #IN
+ .CGA_00A5:
+   00A5 33 D2                XOR        DX, DX
+   00A7 AD                   LODSW      
+   00A8 3B C5                CMP        AX, BP
+   00AA 79 03                JNS        00AFh                            ; .CGA_00AF
+   00AC 83 CA 04             OR         DX, 4
+ .CGA_00AF:
+   00AF 3B 06 5F 57          CMP        AX, WORD PTR [575Fh]             ; IABOVE
+   00B3 7E 03                JLE        00B8h                            ; .CGA_00B8
+   00B5 83 CA 08             OR         DX, 8
+ .CGA_00B8:
+   00B8 AD                   LODSW      
+   00B9 3B 06 38 57          CMP        AX, WORD PTR [5738h]             ; ILEFT
+   00BD 79 03                JNS        00C2h                            ; .CGA_00C2
+   00BF 83 CA 01             OR         DX, 1
+ .CGA_00C2:
+   00C2 3B 06 45 57          CMP        AX, WORD PTR [5745h]             ; IRIGHT
+   00C6 7E 03                JLE        00CBh                            ; .CGA_00CB
+   00C8 83 CA 02             OR         DX, 2
+ .CGA_00CB:
+   00CB 8B C2                MOV        AX, DX
+   00CD AA                   STOSB      
+   00CE 22 DA                AND        BL, DL
+   00D0 0A FA                OR         BH, DL
+   00D2 E2 D1                LOOP       00A5h                            ; .CGA_00A5
+   00D4 33 C0                XOR        AX, AX
+   00D6 8A C3                MOV        AL, BL
+   00D8 89 06 E8 56          MOV        WORD PTR [56E8h], AX             ; TRJCT
+   00DC 8A C7                MOV        AL, BH
+   00DE 89 06 DC 56          MOV        WORD PTR [56DCh], AX             ; TACCPT
+   00E2 5E                   POP        SI
+   00E3 5F                   POP        DI
+   00E4 5D                   POP        BP
+   00E5 C3                   RET        
+) CODE-END
+
+( @00E6-0136 XT:00F4 CFA:1D29 DLen: 66 STAGE: Dictionaries)
+CREATE (L@PIXEL)
+(Address @00F4
+   00F4 8F 06 89 6A          POP        WORD PTR [6A89h]                 ; LRTRN
+   00F8 8F 06 8B 6A          POP        WORD PTR [6A8Bh]                 ; LRTRN+2
+   00FC 58                   POP        AX
+   00FD 2B DB                SUB        BX, BX
+   00FF D1 E8                SHR        AX, 1
+   0101 D1 D3                RCL        BX, 1
+   0103 81 C3 E3 92          ADD        BX, 92E3h                        ; CGA-BIT_
+   0107 2B D2                SUB        DX, DX
+   0109 8A 17                MOV        DL, BYTE PTR [BX]
+   010B 5B                   POP        BX
+   010C D1 E3                SHL        BX, 1
+   010E 03 1E 3A 56          ADD        BX, WORD PTR [563Ah]             ; YTABL
+   0112 03 07                ADD        AX, WORD PTR [BX]
+   0114 8B D8                MOV        BX, AX
+   0116 1E                   PUSH       DS
+   0117 8B 06 48 56          MOV        AX, WORD PTR [5648h]             ; BUF-SEG
+   011B 8E D8                MOV        DS, AX
+   011D 8A 07                MOV        AL, BYTE PTR [BX]
+   011F 23 C2                AND        AX, DX
+   0121 A9 0F 00             TEST       AX, 15
+   0124 7F 05                JNLE       012Bh                            ; .CGA_012B
+   0126 B9 04 00             MOV        CX, 4
+   0129 D3 E8                SHR        AX, CL
+ .CGA_012B:
+   012B 1F                   POP        DS
+   012C 50                   PUSH       AX
+   012D FF 36 8B 6A          PUSH       WORD PTR [6A8Bh]                 ; LRTRN+2
+   0131 FF 36 89 6A          PUSH       WORD PTR [6A89h]                 ; LRTRN
+   0135 CB                   RET FAR    
+) CODE-END
+
+( @0136-015D XT:0144 CFA:1D29 DLen: 25 STAGE: Words)
+CREATE {BLTBITS}
+(Address @0144
+   0144 57                   PUSH       DI
+   0145 06                   PUSH       ES
+   0146 FF 36 AA 58          PUSH       WORD PTR [58AAh]                 ; BLTSEG
+   014A 07                   POP        ES
+   014B 8B 3E B5 58          MOV        DI, WORD PTR [58B5h]             ; BLT>
+   014F 26 8B 2D             MOV        BP, WORD PTR [ES:DI]
+   0152 47                   INC        DI
+   0153 47                   INC        DI
+   0154 89 3E B5 58          MOV        WORD PTR [58B5h], DI             ; BLT>
+   0158 B1 10                MOV        CL, 16
+   015A 07                   POP        ES
+   015B 5F                   POP        DI
+   015C C3                   RET        
+) CODE-END
+
+( @015D-0178 XT:016B CFA:1D29 DLen: 13 STAGE: Words)
+CREATE {ADVBITS}
+(Address @016B
+ .CGA_016B:
+   016B FE C9                DEC        CL
+   016D 75 03                JNZ        0172h                            ; .CGA_0172
+   016F E8 D2 FF             CALL       0144h                            ; {BLTBITS}
+ .CGA_0172:
+   0172 D1 E5                SHL        BP, 1
+   0174 48                   DEC        AX
+   0175 75 F4                JNZ        016Bh                            ; .CGA_016B
+   0177 C3                   RET        
+) CODE-END
+
+( @0178-0201 XT:0185 CFA:1D29 DLen: 124 STAGE: Words)
+CREATE {BLTCOL}
+(Address @0185
+   0185 FE C7                INC        BH
+   0187 32 F6                XOR        DH, DH
+   0189 80 FF 01             CMP        BH, 1
+   018C 75 0A                JNZ        0198h                            ; .CGA_0198
+   018E F7 06 6E 58 01 00    TEST       WORD PTR [586Eh], 1
+   0194 74 02                JZ         0198h                            ; .CGA_0198
+   0196 EB 1A                JMP        01B2h                            ; .CGA_01B2
+ .CGA_0198:
+ .CGA_0198:
+   0198 FE C9                DEC        CL
+   019A 75 03                JNZ        019Fh                            ; .CGA_019F
+   019C E8 A5 FF             CALL       0144h                            ; {BLTBITS}
+ .CGA_019F:
+   019F D1 E5                SHL        BP, 1
+   01A1 73 0E                JNB        01B1h                            ; .CGA_01B1
+   01A3 3B 06 45 57          CMP        AX, WORD PTR [5745h]             ; IRIGHT
+   01A7 77 08                JNBE       01B1h                            ; .CGA_01B1
+   01A9 3B 06 38 57          CMP        AX, WORD PTR [5738h]             ; ILEFT
+   01AD 72 02                JB         01B1h                            ; .CGA_01B1
+   01AF B6 F0                MOV        SIL, -16
+ .CGA_01B1:
+ .CGA_01B1:
+ .CGA_01B1:
+   01B1 40                   INC        AX
+ .CGA_01B2:
+   01B2 3A DF                CMP        BL, BH
+   01B4 75 0A                JNZ        01C0h                            ; .CGA_01C0
+   01B6 F7 06 BF 58 01 00    TEST       WORD PTR [58BFh], 1
+   01BC 74 02                JZ         01C0h                            ; .CGA_01C0
+   01BE EB 1B                JMP        01DBh                            ; .CGA_01DB
+ .CGA_01C0:
+ .CGA_01C0:
+   01C0 FE C9                DEC        CL
+   01C2 75 03                JNZ        01C7h                            ; .CGA_01C7
+   01C4 E8 7D FF             CALL       0144h                            ; {BLTBITS}
+ .CGA_01C7:
+   01C7 D1 E5                SHL        BP, 1
+   01C9 73 0F                JNB        01DAh                            ; .CGA_01DA
+   01CB 3B 06 45 57          CMP        AX, WORD PTR [5745h]             ; IRIGHT
+   01CF 77 09                JNBE       01DAh                            ; .CGA_01DA
+   01D1 3B 06 38 57          CMP        AX, WORD PTR [5738h]             ; ILEFT
+   01D5 72 03                JB         01DAh                            ; .CGA_01DA
+   01D7 80 CE 0F             OR         DH, 15
+ .CGA_01DA:
+ .CGA_01DA:
+ .CGA_01DA:
+   01DA 40                   INC        AX
+ .CGA_01DB:
+   01DB 0A F6                OR         DH, DH
+   01DD 74 20                JZ         01FFh                            ; .CGA_01FF
+   01DF 8A D6                MOV        DL, DH
+   01E1 22 36 F2 55          AND        DH, BYTE PTR [55F2h]             ; COLOR
+   01E5 26 8A 25             MOV        AH, BYTE PTR [ES:DI]
+   01E8 F7 06 7C 58 01 00    TEST       WORD PTR [587Ch], 1
+   01EE 74 04                JZ         01F4h                            ; .CGA_01F4
+   01F0 32 E6                XOR        AH, DH
+   01F2 EB 06                JMP        01FAh                            ; .CGA_01FA
+ .CGA_01F4:
+   01F4 F6 D2                NOT        DL
+   01F6 22 E2                AND        AH, DL
+   01F8 0A E6                OR         AH, DH
+ .CGA_01FA:
+   01FA 26 88 25             MOV        BYTE PTR [ES:DI], AH
+   01FD 32 E4                XOR        AH, AH
+ .CGA_01FF:
+   01FF 47                   INC        DI
+   0200 C3                   RET        
+) CODE-END
+
+( @0201-0291 XT:020D CFA:1D29 DLen: 132 STAGE: Dictionaries)
+CREATE ({BLT})
+(Address @020D
+   020D 57                   PUSH       DI
+   020E 56                   PUSH       SI
+   020F 55                   PUSH       BP
+   0210 06                   PUSH       ES
+   0211 FF 36 48 56          PUSH       WORD PTR [5648h]                 ; BUF-SEG
+   0215 07                   POP        ES
+   0216 8B 0E 9D 58          MOV        CX, WORD PTR [589Dh]             ; ABLT
+   021A 89 0E B5 58          MOV        WORD PTR [58B5h], CX             ; BLT>
+   021E 8B 06 92 58          MOV        AX, WORD PTR [5892h]             ; WBLT
+   0222 8B C8                MOV        CX, AX
+   0224 33 06 6E 58          XOR        AX, WORD PTR [586Eh]             ; XBLT
+   0228 89 06 BF 58          MOV        WORD PTR [58BFh], AX             ; LPX
+   022C 8B C1                MOV        AX, CX
+   022E 40                   INC        AX
+   022F D1 E8                SHR        AX, 1
+   0231 F7 06 6E 58 01 00    TEST       WORD PTR [586Eh], 1
+   0237 74 07                JZ         0240h                            ; .CGA_0240
+   0239 F7 C1 01 00          TEST       CX, 1
+   023D 75 01                JNZ        0240h                            ; .CGA_0240
+   023F 40                   INC        AX
+ .CGA_0240:
+ .CGA_0240:
+   0240 8A D8                MOV        BL, AL
+   0242 B9 01 00             MOV        CX, 1
+ .CGA_0245:
+   0245 33 C0                XOR        AX, AX
+   0247 8A C5                MOV        AL, CH
+   0249 8B 36 63 58          MOV        SI, WORD PTR [5863h]             ; YBLT
+   024D 2B F0                SUB        SI, AX
+   024F 3B 36 52 57          CMP        SI, WORD PTR [5752h]             ; IBELOW
+   0253 72 37                JB         028Ch                            ; .CGA_028C
+   0255 3B 36 5F 57          CMP        SI, WORD PTR [575Fh]             ; IABOVE
+   0259 76 09                JBE        0264h                            ; .CGA_0264
+   025B 8B 06 92 58          MOV        AX, WORD PTR [5892h]             ; WBLT
+   025F E8 09 FF             CALL       016Bh                            ; {ADVBITS}
+   0262 EB 1D                JMP        0281h                            ; .CGA_0281
+ .CGA_0264:
+   0264 D1 E6                SHL        SI, 1
+   0266 03 36 3A 56          ADD        SI, WORD PTR [563Ah]             ; YTABL
+   026A 8B 06 6E 58          MOV        AX, WORD PTR [586Eh]             ; XBLT
+   026E D1 F8                SAR        AX, 1
+   0270 03 04                ADD        AX, WORD PTR [SI]
+   0272 8B F8                MOV        DI, AX
+   0274 B7 00                MOV        DIL, 0
+   0276 8B 06 6E 58          MOV        AX, WORD PTR [586Eh]             ; XBLT
+ .CGA_027A:
+   027A E8 08 FF             CALL       0185h                            ; {BLTCOL}
+   027D 3A DF                CMP        BL, BH
+   027F 75 F9                JNZ        027Ah                            ; .CGA_027A
+ .CGA_0281:
+   0281 FE C5                INC        CH
+   0283 8A C5                MOV        AL, CH
+   0285 98                   CBW        
+   0286 39 06 87 58          CMP        WORD PTR [5887h], AX             ; LBLT
+   028A 75 B9                JNZ        0245h                            ; .CGA_0245
+ .CGA_028C:
+   028C 07                   POP        ES
+   028D 5D                   POP        BP
+   028E 5E                   POP        SI
+   028F 5F                   POP        DI
+   0290 CB                   RET FAR    
+) CODE-END
+
+( @0291-02DF XT:029D CFA:1D29 DLen: 66 STAGE: Dictionaries)
+CREATE (LPLOT)
+(Address @029D
+   029D 8F 06 89 6A          POP        WORD PTR [6A89h]                 ; LRTRN
+   02A1 8F 06 8B 6A          POP        WORD PTR [6A8Bh]                 ; LRTRN+2
+   02A5 5A                   POP        DX
+   02A6 D1 E2                SHL        DX, 1
+   02A8 58                   POP        AX
+   02A9 03 16 3A 56          ADD        DX, WORD PTR [563Ah]             ; YTABL
+   02AD 8B DA                MOV        BX, DX
+   02AF D1 E8                SHR        AX, 1
+   02B1 BA F0 00             MOV        DX, 00F0h
+   02B4 73 02                JNB        02B8h                            ; .CGA_02B8
+   02B6 B2 0F                MOV        DL, 15
+ .CGA_02B8:
+   02B8 03 07                ADD        AX, WORD PTR [BX]
+   02BA 8B D8                MOV        BX, AX
+   02BC 06                   PUSH       ES
+   02BD 8B 0E 48 56          MOV        CX, WORD PTR [5648h]             ; BUF-SEG
+   02C1 8E C1                MOV        ES, CX
+   02C3 26 8A 07             MOV        AL, BYTE PTR [ES:BX]
+   02C6 8A 0E F2 55          MOV        CL, BYTE PTR [55F2h]             ; COLOR
+   02CA 22 CA                AND        CL, DL
+   02CC F6 D2                NOT        DL
+   02CE 22 C2                AND        AL, DL
+   02D0 0A C1                OR         AL, CL
+   02D2 26 88 07             MOV        BYTE PTR [ES:BX], AL
+   02D5 07                   POP        ES
+   02D6 FF 36 8B 6A          PUSH       WORD PTR [6A8Bh]                 ; LRTRN+2
+   02DA FF 36 89 6A          PUSH       WORD PTR [6A89h]                 ; LRTRN
+   02DE CB                   RET FAR    
+) CODE-END
+
+( @02DF-032A XT:02EC CFA:1D29 DLen: 62 STAGE: Dictionaries)
+CREATE (LXPLOT)
+(Address @02EC
+   02EC 8F 06 89 6A          POP        WORD PTR [6A89h]                 ; LRTRN
+   02F0 8F 06 8B 6A          POP        WORD PTR [6A8Bh]                 ; LRTRN+2
+   02F4 5A                   POP        DX
+   02F5 D1 E2                SHL        DX, 1
+   02F7 58                   POP        AX
+   02F8 03 16 3A 56          ADD        DX, WORD PTR [563Ah]             ; YTABL
+   02FC 8B DA                MOV        BX, DX
+   02FE D1 E8                SHR        AX, 1
+   0300 BA F0 00             MOV        DX, 00F0h
+   0303 73 02                JNB        0307h                            ; .CGA_0307
+   0305 B2 0F                MOV        DL, 15
+ .CGA_0307:
+   0307 03 07                ADD        AX, WORD PTR [BX]
+   0309 8B D8                MOV        BX, AX
+   030B 06                   PUSH       ES
+   030C 8B 0E 48 56          MOV        CX, WORD PTR [5648h]             ; BUF-SEG
+   0310 8E C1                MOV        ES, CX
+   0312 26 8A 07             MOV        AL, BYTE PTR [ES:BX]
+   0315 8A 0E F2 55          MOV        CL, BYTE PTR [55F2h]             ; COLOR
+   0319 22 CA                AND        CL, DL
+   031B 33 C1                XOR        AX, CX
+   031D 26 88 07             MOV        BYTE PTR [ES:BX], AL
+   0320 07                   POP        ES
+   0321 FF 36 8B 6A          PUSH       WORD PTR [6A8Bh]                 ; LRTRN+2
+   0325 FF 36 89 6A          PUSH       WORD PTR [6A89h]                 ; LRTRN
+   0329 CB                   RET FAR    
+) CODE-END
+
+( @032A-040B XT:0336 CFA:1D29 DLen: 213 STAGE: Dictionaries)
+CREATE (LLINE)
+(Address @0336
+   0336 8F 06 89 6A          POP        WORD PTR [6A89h]                 ; LRTRN
+   033A 8F 06 8B 6A          POP        WORD PTR [6A8Bh]                 ; LRTRN+2
+   033E 8F 06 13 56          POP        WORD PTR [5613h]                 ; Y1
+   0342 8F 06 1C 56          POP        WORD PTR [561Ch]                 ; X1
+   0346 8F 06 25 56          POP        WORD PTR [5625h]                 ; Y2
+   034A 8F 06 2E 56          POP        WORD PTR [562Eh]                 ; X2
+   034E 57                   PUSH       DI
+   034F 56                   PUSH       SI
+   0350 55                   PUSH       BP
+   0351 1E                   PUSH       DS
+   0352 B3 C3                MOV        BL, -61
+   0354 8B 06 2E 56          MOV        AX, WORD PTR [562Eh]             ; X2
+   0358 2B 06 1C 56          SUB        AX, WORD PTR [561Ch]             ; X1
+   035C 7D 04                JNL        0362h                            ; .CGA_0362
+   035E B3 CB                MOV        BL, -53
+   0360 F7 D8                NEG        AX
+ .CGA_0362:
+   0362 8B C8                MOV        CX, AX
+   0364 B7 C7                MOV        DIL, -57
+   0366 8B 06 25 56          MOV        AX, WORD PTR [5625h]             ; Y2
+   036A 2B 06 13 56          SUB        AX, WORD PTR [5613h]             ; Y1
+   036E 7D 04                JNL        0374h                            ; .CGA_0374
+   0370 B7 CF                MOV        DIL, -49
+   0372 F7 D8                NEG        AX
+ .CGA_0374:
+   0374 8B D0                MOV        DX, AX
+   0376 3B D1                CMP        DX, CX
+   0378 7D 04                JNL        037Eh                            ; .CGA_037E
+   037A 87 CA                XCHG       DX, CX
+   037C 86 DF                XCHG       BH, BL
+ .CGA_037E:
+   037E 0E                   PUSH       CS
+   037F 1F                   POP        DS
+   0380 BF 36 03             MOV        DI, 0336h
+   0383 81 C7 B4 00          ADD        DI, 00B4h
+   0387 88 3D                MOV        BYTE PTR [DI], BH                ; USER:SP0
+   0389 83 C7 03             ADD        DI, 3
+   038C 89 0D                MOV        WORD PTR [DI], CX                ; USER:SP0
+   038E D1 E9                SHR        CX, 1
+   0390 83 C7 04             ADD        DI, 4
+   0393 89 0D                MOV        WORD PTR [DI], CX                ; USER:SP0
+   0395 83 C7 06             ADD        DI, 6
+   0398 89 15                MOV        WORD PTR [DI], DX                ; USER:SP0
+   039A 83 C7 03             ADD        DI, 3
+   039D 88 1D                MOV        BYTE PTR [DI], BL                ; USER:SP0
+   039F 8B F2                MOV        SI, DX
+   03A1 1F                   POP        DS
+   03A2 8A 1E 1C 56          MOV        BL, BYTE PTR [561Ch]             ; X1
+   03A6 06                   PUSH       ES
+   03A7 8B 0E 48 56          MOV        CX, WORD PTR [5648h]             ; BUF-SEG
+   03AB 8E C1                MOV        ES, CX
+   03AD 8A 2E F2 55          MOV        CH, BYTE PTR [55F2h]             ; COLOR
+   03B1 8A 0E FF 55          MOV        CL, BYTE PTR [55FFh]             ; DCOLOR
+   03B5 8A 3E 13 56          MOV        BH, BYTE PTR [5613h]             ; Y1
+   03B9 33 ED                XOR        BP, BP
+ .CGA_03BB:
+   03BB 33 D2                XOR        DX, DX
+   03BD 8A D7                MOV        DL, BH
+   03BF D1 E2                SHL        DX, 1
+   03C1 03 16 3A 56          ADD        DX, WORD PTR [563Ah]             ; YTABL
+   03C5 8B FA                MOV        DI, DX
+   03C7 33 C0                XOR        AX, AX
+   03C9 8A C3                MOV        AL, BL
+   03CB D1 E8                SHR        AX, 1
+   03CD B2 F0                MOV        DL, -16
+   03CF 73 02                JNB        03D3h                            ; .CGA_03D3
+   03D1 B2 0F                MOV        DL, 15
+ .CGA_03D3:
+   03D3 03 05                ADD        AX, WORD PTR [DI]                ; USER:SP0
+   03D5 8B F8                MOV        DI, AX
+   03D7 26 8A 05             MOV        AL, BYTE PTR [ES:DI]
+   03DA 86 CD                XCHG       CH, CL
+   03DC 8A F1                MOV        DH, CL
+   03DE 22 F2                AND        DH, DL
+   03E0 F6 D2                NOT        DL
+   03E2 22 C2                AND        AL, DL
+   03E4 0A C6                OR         AL, DH
+   03E6 26 88 05             MOV        BYTE PTR [ES:DI], AL
+   03E9 FE C3                INC        BL
+   03EB 81 C5 11 11          ADD        BP, 1111h
+   03EF 81 FD 11 11          CMP        BP, 1111h
+   03F3 7E 06                JLE        03FBh                            ; .CGA_03FB
+   03F5 81 ED 11 11          SUB        BP, 1111h
+   03F9 FE C7                INC        BH
+ .CGA_03FB:
+   03FB 4E                   DEC        SI
+   03FC 7D BD                JNL        03BBh                            ; .CGA_03BB
+   03FE 07                   POP        ES
+   03FF 5D                   POP        BP
+   0400 5E                   POP        SI
+   0401 5F                   POP        DI
+   0402 FF 36 8B 6A          PUSH       WORD PTR [6A8Bh]                 ; LRTRN+2
+   0406 FF 36 89 6A          PUSH       WORD PTR [6A89h]                 ; LRTRN
+   040A CB                   RET FAR    
+) CODE-END
+
+( @040B-0530 XT:041B CFA:1D29 DLen: 277 STAGE: Dictionaries)
+CREATE (LFILLPOLY)
+(Address @041B
+   041B 8B 1E EC 57          MOV        BX, WORD PTR [57ECh]             ; YMIN
+   041F 03 1E F7 57          ADD        BX, WORD PTR [57F7h]             ; YMAX
+   0423 43                   INC        BX
+   0424 D1 EB                SHR        BX, 1
+   0426 D1 E3                SHL        BX, 1
+   0428 03 1E D9 57          ADD        BX, WORD PTR [57D9h]             ; SCAN
+   042C 33 C0                XOR        AX, AX
+   042E 33 C9                XOR        CX, CX
+   0430 8A 07                MOV        AL, BYTE PTR [BX]
+   0432 43                   INC        BX
+   0433 8A 0F                MOV        CL, BYTE PTR [BX]
+   0435 3B C8                CMP        CX, AX
+   0437 79 01                JNS        043Ah                            ; .CGA_043A
+   0439 CB                   RET FAR    
+ .CGA_043A:
+   043A 57                   PUSH       DI
+   043B 56                   PUSH       SI
+   043C 06                   PUSH       ES
+   043D 8B 06 48 56          MOV        AX, WORD PTR [5648h]             ; BUF-SEG
+   0441 8E C0                MOV        ES, AX
+   0443 8B 06 F2 55          MOV        AX, WORD PTR [55F2h]             ; COLOR
+   0447 8A E0                MOV        AH, AL
+   0449 D0 E0                SHL        AL, 1
+   044B D0 E0                SHL        AL, 1
+   044D D0 E0                SHL        AL, 1
+   044F D0 E0                SHL        AL, 1
+   0451 8B 0E FF 55          MOV        CX, WORD PTR [55FFh]             ; DCOLOR
+   0455 8B D1                MOV        DX, CX
+   0457 80 E1 0F             AND        CL, 15
+   045A 0A C1                OR         AL, CL
+   045C 80 E4 0F             AND        AH, 15
+   045F D1 E2                SHL        DX, 1
+   0461 D1 E2                SHL        DX, 1
+   0463 D1 E2                SHL        DX, 1
+   0465 D1 E2                SHL        DX, 1
+   0467 0A E2                OR         AH, DL
+   0469 8B 16 EC 57          MOV        DX, WORD PTR [57ECh]             ; YMIN
+   046D F7 C2 01 00          TEST       DX, 1
+   0471 74 02                JZ         0475h                            ; .CGA_0475
+   0473 86 E0                XCHG       AL, AH
+ .CGA_0475:
+   0475 8B 0E F7 57          MOV        CX, WORD PTR [57F7h]             ; YMAX
+   0479 41                   INC        CX
+   047A 2B CA                SUB        CX, DX
+   047C 8B 36 D9 57          MOV        SI, WORD PTR [57D9h]             ; SCAN
+   0480 D1 E2                SHL        DX, 1
+   0482 03 F2                ADD        SI, DX
+   0484 03 16 3A 56          ADD        DX, WORD PTR [563Ah]             ; YTABL
+   0488 89 16 0A 56          MOV        WORD PTR [560Ah], DX             ; YTAB
+ .CGA_048C:
+   048C 8A 34                MOV        DH, BYTE PTR [SI]
+   048E 46                   INC        SI
+   048F 8A 14                MOV        DL, BYTE PTR [SI]
+   0491 46                   INC        SI
+   0492 8B 3E 0A 56          MOV        DI, WORD PTR [560Ah]             ; YTAB
+   0496 8B 1D                MOV        BX, WORD PTR [DI]                ; USER:SP0
+   0498 83 C7 02             ADD        DI, 2
+   049B 89 3E 0A 56          MOV        WORD PTR [560Ah], DI             ; YTAB
+   049F 8B FB                MOV        DI, BX
+   04A1 8A DE                MOV        BL, DH
+   04A3 32 FF                XOR        BH, BH
+   04A5 D1 EB                SHR        BX, 1
+   04A7 03 FB                ADD        DI, BX
+   04A9 43                   INC        BX
+   04AA 8A FA                MOV        BH, DL
+   04AC D0 EF                SHR        BH, 1
+   04AE 2A FB                SUB        BH, BL
+   04B0 53                   PUSH       BX
+   04B1 F6 C6 01             TEST       DH, 1
+   04B4 74 04                JZ         04BAh                            ; .CGA_04BA
+   04B6 B7 0F                MOV        DIL, 15
+   04B8 EB 02                JMP        04BCh                            ; .CGA_04BC
+ .CGA_04BA:
+   04BA B7 F0                MOV        DIL, -16
+ .CGA_04BC:
+   04BC F6 C2 01             TEST       DL, 1
+   04BF 74 04                JZ         04C5h                            ; .CGA_04C5
+   04C1 B3 0F                MOV        BL, 15
+   04C3 EB 02                JMP        04C7h                            ; .CGA_04C7
+ .CGA_04C5:
+   04C5 B3 F0                MOV        BL, -16
+ .CGA_04C7:
+   04C7 3A D6                CMP        DL, DH
+   04C9 75 04                JNZ        04CFh                            ; .CGA_04CF
+   04CB B3 01                MOV        BL, 1
+   04CD EB 06                JMP        04D5h                            ; .CGA_04D5
+ .CGA_04CF:
+   04CF 80 CF 0F             OR         BH, 15
+   04D2 80 CB F0             OR         BL, -16
+ .CGA_04D5:
+   04D5 8B D3                MOV        DX, BX
+   04D7 5B                   POP        BX
+   04D8 80 FA FF             CMP        DL, -1
+   04DB 75 02                JNZ        04DFh                            ; .CGA_04DF
+   04DD FE C7                INC        BH
+ .CGA_04DF:
+   04DF 80 FE FF             CMP        DH, -1
+   04E2 75 02                JNZ        04E6h                            ; .CGA_04E6
+   04E4 FE C7                INC        BH
+ .CGA_04E6:
+   04E6 53                   PUSH       BX
+   04E7 80 FE FF             CMP        DH, -1
+   04EA 74 11                JZ         04FDh                            ; .CGA_04FD
+   04EC 26 8A 1D             MOV        BL, BYTE PTR [ES:DI]
+   04EF 8A FE                MOV        BH, DH
+   04F1 F6 D7                NOT        BH
+   04F3 22 DF                AND        BL, BH
+   04F5 22 F0                AND        DH, AL
+   04F7 0A DE                OR         BL, DH
+   04F9 26 88 1D             MOV        BYTE PTR [ES:DI], BL
+   04FC 47                   INC        DI
+ .CGA_04FD:
+   04FD 5B                   POP        BX
+   04FE 0A FF                OR         BH, BH
+   0500 7E 08                JLE        050Ah                            ; .CGA_050A
+   0502 51                   PUSH       CX
+   0503 8A CF                MOV        CL, BH
+   0505 32 ED                XOR        CH, CH
+   0507 F3 AA                STOSB      
+   0509 59                   POP        CX
+ .CGA_050A:
+   050A 80 FA 01             CMP        DL, 1
+   050D 74 15                JZ         0524h                            ; .CGA_0524
+   050F 80 FA FF             CMP        DL, -1
+   0512 74 10                JZ         0524h                            ; .CGA_0524
+   0514 26 8A 1D             MOV        BL, BYTE PTR [ES:DI]
+   0517 8A FA                MOV        BH, DL
+   0519 F6 D7                NOT        BH
+   051B 22 DF                AND        BL, BH
+   051D 22 D0                AND        DL, AL
+   051F 0A DA                OR         BL, DL
+   0521 26 88 1D             MOV        BYTE PTR [ES:DI], BL
+ .CGA_0524:
+ .CGA_0524:
+   0524 86 E0                XCHG       AL, AH
+   0526 49                   DEC        CX
+   0527 74 03                JZ         052Ch                            ; .CGA_052C
+   0529 E9 60 FF             JMP        048Ch                            ; .CGA_048C
+ .CGA_052C:
+   052C 07                   POP        ES
+   052D 5E                   POP        SI
+   052E 5F                   POP        DI
+   052F CB                   RET FAR    
+) CODE-END
+
+( @0530-0561 XT:053B CFA:1D29 DLen: 38 STAGE: Words)
+CREATE PLMOVE
+(Address @053B
+   053B 8F 06 63 56          POP        WORD PTR [5663h]                 ; RETURN
+   053F 59                   POP        CX
+   0540 5F                   POP        DI
+   0541 5E                   POP        SI
+   0542 06                   PUSH       ES
+   0543 1E                   PUSH       DS
+   0544 8B 06 48 56          MOV        AX, WORD PTR [5648h]             ; BUF-SEG
+   0548 8E D8                MOV        DS, AX
+   054A 8E C0                MOV        ES, AX
+   054C 3B FE                CMP        DI, SI
+   054E 7E 07                JLE        0557h                            ; .CGA_0557
+   0550 FD                   STD        
+   0551 03 F9                ADD        DI, CX
+   0553 4F                   DEC        DI
+   0554 03 F1                ADD        SI, CX
+   0556 4E                   DEC        SI
+ .CGA_0557:
+   0557 F3 A4                MOVSB      
+   0559 FC                   CLD        
+   055A 1F                   POP        DS
+   055B 07                   POP        ES
+   055C FF 36 63 56          PUSH       WORD PTR [5663h]                 ; RETURN
+   0560 C3                   RET        
+) CODE-END
+
+( @0561-05B2 XT:0570 CFA:1D29 DLen: 66 STAGE: Words)
+CREATE {LCOPYBLK}
+(Address @0570
+   0570 8F 06 63 56          POP        WORD PTR [5663h]                 ; RETURN
+   0574 8B DC                MOV        BX, SP
+   0576 8B 4F 08             MOV        CX, WORD PTR [BX+8]
+   0579 8B D1                MOV        DX, CX
+   057B 8B 47 04             MOV        AX, WORD PTR [BX+4]
+   057E 2B C8                SUB        CX, AX
+   0580 8B 07                MOV        AX, WORD PTR [BX]
+   0582 3B D0                CMP        DX, AX
+   0584 79 05                JNS        058Bh                            ; .CGA_058B
+   0586 BF FF FF             MOV        DI, -1
+   0589 EB 07                JMP        0592h                            ; .CGA_0592
+ .CGA_058B:
+   058B 2B C1                SUB        AX, CX
+   058D 2B D1                SUB        DX, CX
+   058F BF 01 00             MOV        DI, 1
+ .CGA_0592:
+   0592 89 47 04             MOV        WORD PTR [BX+4], AX
+   0595 89 57 08             MOV        WORD PTR [BX+8], DX
+   0598 8B 57 02             MOV        DX, WORD PTR [BX+2]
+   059B 89 7F 02             MOV        WORD PTR [BX+2], DI
+   059E 8B 47 06             MOV        AX, WORD PTR [BX+6]
+   05A1 89 57 06             MOV        WORD PTR [BX+6], DX
+   05A4 2B 47 0A             SUB        AX, WORD PTR [BX+10]
+   05A7 D1 E8                SHR        AX, 1
+   05A9 5A                   POP        DX
+   05AA 50                   PUSH       AX
+   05AB 41                   INC        CX
+   05AC 51                   PUSH       CX
+   05AD FF 36 63 56          PUSH       WORD PTR [5663h]                 ; RETURN
+   05B1 C3                   RET        
+) CODE-END
+
+( @05B2-0626 XT:05C1 CFA:1D29 DLen: 101 STAGE: Dictionaries)
+CREATE (LCOPYBLK)
+(Address @05C1
+   05C1 8F 06 89 6A          POP        WORD PTR [6A89h]                 ; LRTRN
+   05C5 8F 06 8B 6A          POP        WORD PTR [6A8Bh]                 ; LRTRN+2
+   05C9 89 76 FE             MOV        WORD PTR [BP-2], SI
+   05CC 89 7E FC             MOV        WORD PTR [BP-4], DI
+   05CF E8 9E FF             CALL       0570h                            ; {LCOPYBLK}
+   05D2 8B DC                MOV        BX, SP
+   05D4 8B 57 04             MOV        DX, WORD PTR [BX+4]
+   05D7 59                   POP        CX
+ .CGA_05D8:
+   05D8 51                   PUSH       CX
+   05D9 8B DC                MOV        BX, SP
+   05DB 8B 47 0C             MOV        AX, WORD PTR [BX+12]
+   05DE D1 E8                SHR        AX, 1
+   05E0 8B 4F 0A             MOV        CX, WORD PTR [BX+10]
+   05E3 01 57 0A             ADD        WORD PTR [BX+10], DX
+   05E6 D1 E1                SHL        CX, 1
+   05E8 03 0E 3A 56          ADD        CX, WORD PTR [563Ah]             ; YTABL
+   05EC 87 D9                XCHG       CX, BX
+   05EE 03 07                ADD        AX, WORD PTR [BX]
+   05F0 87 D9                XCHG       CX, BX
+   05F2 50                   PUSH       AX
+   05F3 8B 47 08             MOV        AX, WORD PTR [BX+8]
+   05F6 D1 E8                SHR        AX, 1
+   05F8 8B 4F 06             MOV        CX, WORD PTR [BX+6]
+   05FB 01 57 06             ADD        WORD PTR [BX+6], DX
+   05FE D1 E1                SHL        CX, 1
+   0600 03 0E 3A 56          ADD        CX, WORD PTR [563Ah]             ; YTABL
+   0604 87 D9                XCHG       CX, BX
+   0606 03 07                ADD        AX, WORD PTR [BX]
+   0608 87 D9                XCHG       CX, BX
+   060A 50                   PUSH       AX
+   060B FF 77 02             PUSH       WORD PTR [BX+2]
+   060E E8 2A FF             CALL       053Bh                            ; PLMOVE
+   0611 59                   POP        CX
+   0612 E2 C4                LOOP       05D8h                            ; .CGA_05D8
+   0614 83 C4 0C             ADD        SP, 12
+   0617 8B 7E FC             MOV        DI, WORD PTR [BP-4]
+   061A 8B 76 FE             MOV        SI, WORD PTR [BP-2]
+   061D FF 36 8B 6A          PUSH       WORD PTR [6A8Bh]                 ; LRTRN+2
+   0621 FF 36 89 6A          PUSH       WORD PTR [6A89h]                 ; LRTRN
+   0625 CB                   RET FAR    
+) CODE-END
+
+( @0626-069C XT:0635 CFA:1D29 DLen: 103 STAGE: Dictionaries)
+CREATE (TILEFILL)
+(Address @0635
+   0635 8F 06 89 6A          POP        WORD PTR [6A89h]                 ; LRTRN
+   0639 8F 06 8B 6A          POP        WORD PTR [6A8Bh]                 ; LRTRN+2
+   063D 06                   PUSH       ES
+   063E 57                   PUSH       DI
+   063F 56                   PUSH       SI
+   0640 55                   PUSH       BP
+   0641 8B 06 48 56          MOV        AX, WORD PTR [5648h]             ; BUF-SEG
+   0645 8E C0                MOV        ES, AX
+   0647 8B DC                MOV        BX, SP
+   0649 8B 57 0E             MOV        DX, WORD PTR [BX+14]
+   064C D1 EA                SHR        DX, 1
+   064E 8B 47 0C             MOV        AX, WORD PTR [BX+12]
+   0651 8A F0                MOV        DH, AL
+   0653 FF 77 0A             PUSH       WORD PTR [BX+10]
+   0656 8B 77 08             MOV        SI, WORD PTR [BX+8]
+   0659 D1 EE                SHR        SI, 1
+   065B D1 EE                SHR        SI, 1
+   065D 59                   POP        CX
+   065E 33 ED                XOR        BP, BP
+ .CGA_0660:
+   0660 51                   PUSH       CX
+   0661 8A C6                MOV        AL, DH
+   0663 2A C1                SUB        AL, CL
+   0665 98                   CBW        
+   0666 40                   INC        AX
+   0667 D1 E0                SHL        AX, 1
+   0669 8B D8                MOV        BX, AX
+   066B 03 1E 3A 56          ADD        BX, WORD PTR [563Ah]             ; YTABL
+   066F 8B 3F                MOV        DI, WORD PTR [BX]
+   0671 8A CA                MOV        CL, DL
+   0673 32 ED                XOR        CH, CH
+   0675 03 F9                ADD        DI, CX
+   0677 8B CE                MOV        CX, SI
+   0679 8B 1E CD 58          MOV        BX, WORD PTR [58CDh]             ; TILE-PT_
+   067D 03 DD                ADD        BX, BP
+   067F 8B 07                MOV        AX, WORD PTR [BX]
+   0681 F3 AB                STOSW      
+   0683 83 C5 02             ADD        BP, 2
+   0686 83 E5 07             AND        BP, 7
+   0689 59                   POP        CX
+   068A E2 D4                LOOP       0660h                            ; .CGA_0660
+   068C 5D                   POP        BP
+   068D 5E                   POP        SI
+   068E 5F                   POP        DI
+   068F 07                   POP        ES
+   0690 83 C4 08             ADD        SP, 8
+   0693 FF 36 8B 6A          PUSH       WORD PTR [6A8Bh]                 ; LRTRN+2
+   0697 FF 36 89 6A          PUSH       WORD PTR [6A89h]                 ; LRTRN
+   069B CB                   RET FAR    
+) CODE-END
+
+( @069C-070B XT:06AA CFA:1D29 DLen: 97 STAGE: Dictionaries)
+CREATE (SQLPLOT)
+(Address @06AA
+   06AA 8F 06 89 6A          POP        WORD PTR [6A89h]                 ; LRTRN
+   06AE 8F 06 8B 6A          POP        WORD PTR [6A8Bh]                 ; LRTRN+2
+   06B2 5A                   POP        DX
+   06B3 D1 E2                SHL        DX, 1
+   06B5 58                   POP        AX
+   06B6 03 16 3A 56          ADD        DX, WORD PTR [563Ah]             ; YTABL
+   06BA 8B DA                MOV        BX, DX
+   06BC 57                   PUSH       DI
+   06BD D1 E8                SHR        AX, 1
+   06BF BA F0 00             MOV        DX, 00F0h
+   06C2 73 02                JNB        06C6h                            ; .CGA_06C6
+   06C4 B2 0F                MOV        DL, 15
+ .CGA_06C6:
+   06C6 8B F8                MOV        DI, AX
+   06C8 03 07                ADD        AX, WORD PTR [BX]
+   06CA 83 EB 02             SUB        BX, 2
+   06CD 03 3F                ADD        DI, WORD PTR [BX]
+   06CF 8B D8                MOV        BX, AX
+   06D1 06                   PUSH       ES
+   06D2 8B 0E 48 56          MOV        CX, WORD PTR [5648h]             ; BUF-SEG
+   06D6 8E C1                MOV        ES, CX
+   06D8 26 8A 07             MOV        AL, BYTE PTR [ES:BX]
+   06DB 8A 0E F2 55          MOV        CL, BYTE PTR [55F2h]             ; COLOR
+   06DF 22 CA                AND        CL, DL
+   06E1 F6 D2                NOT        DL
+   06E3 22 C2                AND        AL, DL
+   06E5 0A C1                OR         AL, CL
+   06E7 26 88 07             MOV        BYTE PTR [ES:BX], AL
+   06EA 8B DF                MOV        BX, DI
+   06EC F6 D2                NOT        DL
+   06EE 26 8A 07             MOV        AL, BYTE PTR [ES:BX]
+   06F1 8A 0E FF 55          MOV        CL, BYTE PTR [55FFh]             ; DCOLOR
+   06F5 22 CA                AND        CL, DL
+   06F7 F6 D2                NOT        DL
+   06F9 22 C2                AND        AL, DL
+   06FB 0A C1                OR         AL, CL
+   06FD 26 88 07             MOV        BYTE PTR [ES:BX], AL
+   0700 07                   POP        ES
+   0701 5F                   POP        DI
+   0702 FF 36 8B 6A          PUSH       WORD PTR [6A8Bh]                 ; LRTRN+2
+   0706 FF 36 89 6A          PUSH       WORD PTR [6A89h]                 ; LRTRN
+   070A CB                   RET FAR    
+) CODE-END
+
+( @070B-0773 XT:0718 CFA:1D29 DLen: 91 STAGE: Words)
+CREATE {RLPLOT}
+(Address @0718
+   0718 03 16 6E 5A          ADD        DX, WORD PTR [5A6Eh]             ; EY
+   071C 03 06 65 5A          ADD        AX, WORD PTR [5A65h]             ; EX
+   0720 57                   PUSH       DI
+   0721 50                   PUSH       AX
+   0722 52                   PUSH       DX
+   0723 8B 1E 9B 56          MOV        BX, WORD PTR [569Bh]             ; VIN
+   0727 89 17                MOV        WORD PTR [BX], DX
+   0729 83 C3 02             ADD        BX, 2
+   072C 89 07                MOV        WORD PTR [BX], AX
+   072E BB 01 00             MOV        BX, 1
+   0731 89 1E 86 56          MOV        WORD PTR [5686h], BX             ; #IN
+   0735 E8 52 F9             CALL       008Ah                            ; TREJECT/TACCEPT
+   0738 5A                   POP        DX
+   0739 58                   POP        AX
+   073A 5F                   POP        DI
+   073B 8B 0E DC 56          MOV        CX, WORD PTR [56DCh]             ; TACCPT
+   073F 0B C9                OR         CX, CX
+   0741 75 2F                JNZ        0772h                            ; .CGA_0772
+   0743 D1 E2                SHL        DX, 1
+   0745 03 16 3A 56          ADD        DX, WORD PTR [563Ah]             ; YTABL
+   0749 8B DA                MOV        BX, DX
+   074B D1 E8                SHR        AX, 1
+   074D BA F0 00             MOV        DX, 00F0h
+   0750 73 02                JNB        0754h                            ; .CGA_0754
+   0752 B2 0F                MOV        DL, 15
+ .CGA_0754:
+   0754 03 07                ADD        AX, WORD PTR [BX]
+   0756 8B D8                MOV        BX, AX
+   0758 06                   PUSH       ES
+   0759 8B 0E 48 56          MOV        CX, WORD PTR [5648h]             ; BUF-SEG
+   075D 8E C1                MOV        ES, CX
+   075F 26 8A 07             MOV        AL, BYTE PTR [ES:BX]
+   0762 8A 0E F2 55          MOV        CL, BYTE PTR [55F2h]             ; COLOR
+   0766 22 CA                AND        CL, DL
+   0768 F6 D2                NOT        DL
+   076A 22 C2                AND        AL, DL
+   076C 0A C1                OR         AL, CL
+   076E 26 88 07             MOV        BYTE PTR [ES:BX], AL
+   0771 07                   POP        ES
+ .CGA_0772:
+   0772 C3                   RET        
+) CODE-END
+
+( Data:Variable @0773-077F XT:077F CFA:1D29 DLen: 2 STAGE: External)
+VARIABLE <ARC> ( @E77D=$D46D)
+
+( @077F-07DF XT:0789 CFA:1D29 DLen: 86 STAGE: Dictionaries)
+CREATE (ARC)
+(Address @0789
+   0789 8B 06 A0 5A          MOV        AX, WORD PTR [5AA0h]             ; <ARC1>
+   078D 1E                   PUSH       DS
+   078E 0E                   PUSH       CS
+   078F 1F                   POP        DS
+   0790 89 06 7D 07          MOV        WORD PTR [077Dh], AX             ; _savedForth+8
+   0794 1F                   POP        DS
+   0795 8B 06 79 5A          MOV        AX, WORD PTR [5A79h]             ; ERAD
+   0799 8B D0                MOV        DX, AX
+   079B D1 E0                SHL        AX, 1
+   079D B9 03 00             MOV        CX, 3
+   07A0 2B C8                SUB        CX, AX
+   07A2 33 C0                XOR        AX, AX
+ .CGA_07A4:
+   07A4 3B C2                CMP        AX, DX
+   07A6 79 2D                JNS        07D5h                            ; .CGA_07D5
+   07A8 50                   PUSH       AX
+   07A9 51                   PUSH       CX
+   07AA 52                   PUSH       DX
+   07AB 2E FF 16 7D 07       CALL       WORD PTR [CS:077Dh]              ; <ARC>
+   07B0 5A                   POP        DX
+   07B1 59                   POP        CX
+   07B2 58                   POP        AX
+   07B3 0B C9                OR         CX, CX
+   07B5 79 0D                JNS        07C4h                            ; .CGA_07C4
+   07B7 83 C1 06             ADD        CX, 6
+   07BA 8B D8                MOV        BX, AX
+   07BC D1 E3                SHL        BX, 1
+   07BE D1 E3                SHL        BX, 1
+   07C0 03 CB                ADD        CX, BX
+   07C2 EB 0E                JMP        07D2h                            ; .CGA_07D2
+ .CGA_07C4:
+   07C4 83 C1 0A             ADD        CX, 10
+   07C7 8B D8                MOV        BX, AX
+   07C9 2B DA                SUB        BX, DX
+   07CB D1 E3                SHL        BX, 1
+   07CD D1 E3                SHL        BX, 1
+   07CF 03 CB                ADD        CX, BX
+   07D1 4A                   DEC        DX
+ .CGA_07D2:
+   07D2 40                   INC        AX
+   07D3 EB CF                JMP        07A4h                            ; .CGA_07A4
+ .CGA_07D5:
+   07D5 3B D0                CMP        DX, AX
+   07D7 75 05                JNZ        07DEh                            ; .CGA_07DE
+   07D9 2E FF 16 7D 07       CALL       WORD PTR [CS:077Dh]              ; <ARC>
+ .CGA_07DE:
+   07DE CB                   RET FAR    
+) CODE-END
+
+( @07DF-07F9 XT:07EA CFA:1D29 DLen: 15 STAGE: Words)
+CREATE {XASP}
+(Address @07EA
+   07EA 52                   PUSH       DX
+   07EB 8B 16 86 5A          MOV        DX, WORD PTR [5A86h]             ; XNUMER
+   07EF 8B 0E 93 5A          MOV        CX, WORD PTR [5A93h]             ; XDENOM
+   07F3 F7 EA                IMUL       DX
+   07F5 F7 F9                IDIV       CX
+   07F7 5A                   POP        DX
+   07F8 C3                   RET        
+) CODE-END
+
+( @07F9-082C XT:0804 CFA:1D29 DLen: 40 STAGE: Words)
+CREATE {.1/2}
+(Address @0804
+   0804 E8 E3 FF             CALL       07EAh                            ; {XASP}
+   0807 50                   PUSH       AX
+   0808 52                   PUSH       DX
+   0809 E8 0C FF             CALL       0718h                            ; {RLPLOT}
+   080C 5A                   POP        DX
+   080D 58                   POP        AX
+   080E 50                   PUSH       AX
+   080F 52                   PUSH       DX
+   0810 F7 D8                NEG        AX
+   0812 E8 03 FF             CALL       0718h                            ; {RLPLOT}
+   0815 5A                   POP        DX
+   0816 58                   POP        AX
+   0817 50                   PUSH       AX
+   0818 52                   PUSH       DX
+   0819 F7 D8                NEG        AX
+   081B F7 DA                NEG        DX
+   081D E8 F8 FE             CALL       0718h                            ; {RLPLOT}
+   0820 5A                   POP        DX
+   0821 58                   POP        AX
+   0822 50                   PUSH       AX
+   0823 52                   PUSH       DX
+   0824 F7 DA                NEG        DX
+   0826 E8 EF FE             CALL       0718h                            ; {RLPLOT}
+   0829 5A                   POP        DX
+   082A 58                   POP        AX
+   082B C3                   RET        
+) CODE-END
+
+( @082C-08B9 XT:0837 CFA:1D29 DLen: 130 STAGE: Words)
+CREATE {S1/2}
+(Address @0837
+   0837 E8 B0 FF             CALL       07EAh                            ; {XASP}
+   083A 8B 1E 65 5A          MOV        BX, WORD PTR [5A65h]             ; EX
+   083E 03 D8                ADD        BX, AX
+   0840 3B 1E 45 57          CMP        BX, WORD PTR [5745h]             ; IRIGHT
+   0844 7E 04                JLE        084Ah                            ; .CGA_084A
+   0846 8B 1E 45 57          MOV        BX, WORD PTR [5745h]             ; IRIGHT
+ .CGA_084A:
+   084A 3B 1E 38 57          CMP        BX, WORD PTR [5738h]             ; ILEFT
+   084E 79 05                JNS        0855h                            ; .CGA_0855
+   0850 8B 1E 38 57          MOV        BX, WORD PTR [5738h]             ; ILEFT
+   0854 4B                   DEC        BX
+ .CGA_0855:
+   0855 88 1E C7 48          MOV        BYTE PTR [48C7h], BL             ; ZZZ+1
+   0859 8B 1E 65 5A          MOV        BX, WORD PTR [5A65h]             ; EX
+   085D 2B D8                SUB        BX, AX
+   085F 3B 1E 38 57          CMP        BX, WORD PTR [5738h]             ; ILEFT
+   0863 79 04                JNS        0869h                            ; .CGA_0869
+   0865 8B 1E 38 57          MOV        BX, WORD PTR [5738h]             ; ILEFT
+ .CGA_0869:
+   0869 3B 1E 45 57          CMP        BX, WORD PTR [5745h]             ; IRIGHT
+   086D 7E 05                JLE        0874h                            ; .CGA_0874
+   086F 8A 1E C7 48          MOV        BL, BYTE PTR [48C7h]             ; ZZZ+1
+   0873 43                   INC        BX
+ .CGA_0874:
+   0874 88 1E C6 48          MOV        BYTE PTR [48C6h], BL             ; ZZZ
+   0878 8B 0E 6E 5A          MOV        CX, WORD PTR [5A6Eh]             ; EY
+   087C 03 CA                ADD        CX, DX
+   087E 3B 0E 5F 57          CMP        CX, WORD PTR [575Fh]             ; IABOVE
+   0882 7F 14                JNLE       0898h                            ; .CGA_0898
+   0884 3B 0E 52 57          CMP        CX, WORD PTR [5752h]             ; IBELOW
+   0888 78 0E                JS         0898h                            ; .CGA_0898
+   088A 8B D9                MOV        BX, CX
+   088C D1 E3                SHL        BX, 1
+   088E 03 1E D9 57          ADD        BX, WORD PTR [57D9h]             ; SCAN
+   0892 FF 36 C6 48          PUSH       WORD PTR [48C6h]                 ; ZZZ
+   0896 8F 07                POP        WORD PTR [BX]
+ .CGA_0898:
+ .CGA_0898:
+   0898 8B 0E 6E 5A          MOV        CX, WORD PTR [5A6Eh]             ; EY
+   089C 2B CA                SUB        CX, DX
+   089E 3B 0E 52 57          CMP        CX, WORD PTR [5752h]             ; IBELOW
+   08A2 78 14                JS         08B8h                            ; .CGA_08B8
+   08A4 3B 0E 5F 57          CMP        CX, WORD PTR [575Fh]             ; IABOVE
+   08A8 7F 0E                JNLE       08B8h                            ; .CGA_08B8
+   08AA 8B D9                MOV        BX, CX
+   08AC D1 E3                SHL        BX, 1
+   08AE 03 1E D9 57          ADD        BX, WORD PTR [57D9h]             ; SCAN
+   08B2 FF 36 C6 48          PUSH       WORD PTR [48C6h]                 ; ZZZ
+   08B6 8F 07                POP        WORD PTR [BX]
+ .CGA_08B8:
+ .CGA_08B8:
+   08B8 C3                   RET        
+) CODE-END
+
+( @08B9-08D6 XT:08CB CFA:1D29 DLen: 11 STAGE: Dictionaries)
+CREATE ({SCANELLIP})
+(Address @08CB
+   08CB 50                   PUSH       AX
+   08CC E8 68 FF             CALL       0837h                            ; {S1/2}
+   08CF 58                   POP        AX
+   08D0 87 D0                XCHG       AX, DX
+   08D2 E8 62 FF             CALL       0837h                            ; {S1/2}
+   08D5 C3                   RET        
+) CODE-END
+
+( @08D6-08F0 XT:08E5 CFA:1D29 DLen: 11 STAGE: Dictionaries)
+CREATE ({.ELLIP})
+(Address @08E5
+   08E5 50                   PUSH       AX
+   08E6 E8 1B FF             CALL       0804h                            ; {.1/2}
+   08E9 58                   POP        AX
+   08EA 87 D0                XCHG       AX, DX
+   08EC E8 15 FF             CALL       0804h                            ; {.1/2}
+   08EF C3                   RET        
+) CODE-END
+
+( @08F0-0934 XT:08FE CFA:1D29 DLen: 54 STAGE: Dictionaries)
+CREATE (EEXTENT)
+(Address @08FE
+   08FE 8F 06 89 6A          POP        WORD PTR [6A89h]                 ; LRTRN
+   0902 8F 06 8B 6A          POP        WORD PTR [6A8Bh]                 ; LRTRN+2
+   0906 8B 06 79 5A          MOV        AX, WORD PTR [5A79h]             ; ERAD
+   090A 8B D0                MOV        DX, AX
+   090C E8 DB FE             CALL       07EAh                            ; {XASP}
+   090F 8B 0E 65 5A          MOV        CX, WORD PTR [5A65h]             ; EX
+   0913 2B C8                SUB        CX, AX
+   0915 51                   PUSH       CX
+   0916 8B 0E 6E 5A          MOV        CX, WORD PTR [5A6Eh]             ; EY
+   091A 2B CA                SUB        CX, DX
+   091C 51                   PUSH       CX
+   091D 8B 0E 65 5A          MOV        CX, WORD PTR [5A65h]             ; EX
+   0921 03 C8                ADD        CX, AX
+   0923 51                   PUSH       CX
+   0924 8B 0E 6E 5A          MOV        CX, WORD PTR [5A6Eh]             ; EY
+   0928 03 CA                ADD        CX, DX
+   092A 51                   PUSH       CX
+   092B FF 36 8B 6A          PUSH       WORD PTR [6A8Bh]                 ; LRTRN+2
+   092F FF 36 89 6A          PUSH       WORD PTR [6A89h]                 ; LRTRN
+   0933 CB                   RET FAR    
+) CODE-END
+

@@ -1,0 +1,197 @@
+( RAW Data:OverlayHeader @EF70-EF84 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 71DC 	Count: 005F 	Data Size: 005C (Paragraphs)
+    On Disk Location 71DC0-723B0
+  Overlay Address: @EF70 	Overlay DP: @F52A
+    Load Location: @EF70-@F560 	Load Length: 1520
+    Data: @EF70-@F52A 	Data Length: 1466
+    Junk: @F52A-@F560 	Junk Length: 54
+  VOCABULARY Word: C4FA BANK-VOC
+   Dictionary Link 1: F4E4
+   Dictionary Link 2: 0000
+   Dictionary Link 3: F0C7
+   Dictionary Link 4: F014
+
+@EF70 DC 71 5F 00 70 EF 2A F5 FA C4 E4 F4 00 00 C7 F0   .q_.p.*.........
+@EF80 14 F0 5C 00                                       ..\.            
+)
+
+( @EF84-EF8E XT:EF86 CFA:224C DLen: 8 STAGE: Words)
+: [BANK-OV:EF86]
+ ' OVTRIMS ( $BDBA ) MODULE ; 
+
+( Data:Word @EF8E-EF92 XT:EF90 CFA:2214 DLen: 2 STAGE: Words)
+0 CONSTANT [BANK-OV:EF90]
+
+( Data:Word @EF92-EF96 XT:EF94 CFA:2214 DLen: 2 STAGE: Words)
+1 CONSTANT [BANK-OV:EF94]
+
+( Data:Word @EF96-EF9A XT:EF98 CFA:2214 DLen: 2 STAGE: Words)
+2 CONSTANT [BANK-OV:EF98]
+
+( Data:Word @EF9A-EF9E XT:EF9C CFA:2214 DLen: 2 STAGE: Words)
+3 CONSTANT [BANK-OV:EF9C]
+
+( Data:Word @EF9E-EFA2 XT:EFA0 CFA:2214 DLen: 2 STAGE: Words)
+4 CONSTANT [BANK-OV:EFA0]
+
+( Data:IField @EFA2-EFA7 XT:EFA4 CFA:744D DLen: 3 STAGE: Words)
+13 11 4 IFIELD _bank_pre_transaction_balance ( BANK )
+
+( Data:IField @EFA7-EFAC XT:EFA9 CFA:744D DLen: 3 STAGE: Words)
+13 15 4 IFIELD _bank_balance ( BANK )
+
+( Data:IField @EFAC-EFB1 XT:EFAE CFA:744D DLen: 3 STAGE: Words)
+13 19 1 IFIELD _bank_transaction ( BANK )
+
+( Data:AField @EFB1-EFB9 XT:EFB3 CFA:73EA DLen: 6 STAGE: Words)
+14 0 19 AFIELD [A-BANK-TRANS:0-19] ( BANK-TRANS )
+
+( Data:IField @EFB9-EFBE XT:EFBB CFA:744D DLen: 3 STAGE: Words)
+14 11 4 IFIELD _bt_ammount ( BANK-TRANS )
+
+( Data:IField @EFBE-EFC3 XT:EFC0 CFA:744D DLen: 3 STAGE: Words)
+14 15 2 IFIELD _bt_stardate ( BANK-TRANS )
+
+( @EFC3-EFCB XT:EFC5 CFA:224C DLen: 6 STAGE: Words)
+: [BANK-OV:EFC5]
+ *BANK >C+S ; 
+
+( @EFCB-EFE2 XT:EFD6 CFA:224C DLen: 12 STAGE: Dictionaries)
+: !TFLAG
+ [BANK-OV:EFC5] 1 _bank_transaction C! ICLOSE ; 
+
+( @EFE2-EFFA XT:EFF0 CFA:224C DLen: 10 STAGE: Dictionaries)
+: D@BALANCE
+ [BANK-OV:EFC5] _bank_balance 2@ ICLOSE ; 
+
+( @EFFA-F012 XT:F008 CFA:224C DLen: 10 STAGE: Dictionaries)
+: D!BALANCE
+ [BANK-OV:EFC5] _bank_balance D! ICLOSE ; 
+
+( @F012-F027 XT:F01F CFA:224C DLen: 8 STAGE: Dictionaries)
+: ?BALANCE
+ D@BALANCE D> 0= ; 
+
+( @F027-F046 XT:F038 CFA:224C DLen: 14 STAGE: Dictionaries)
+: INIT-BALANCE
+ [BANK-OV:EFC5] _bank_pre_transaction_balance 2@ _bank_balance D! ICLOSE ; 
+
+( @F046-F0C5 XT:F053 CFA:224C DLen: 114 STAGE: Dictionaries)
+: TRANSACT
+ [BANK-OV:EFC5] _bank_transaction C@ IF 
+  IOPEN 14 SWAP 1 *CREATE IFIRST 0 9 0 DO 
+   INEXT ?FIRST IF 
+    1+ LEAVE 
+   THEN 
+  LOOP 
+  0= IF 
+   IFIRST IDELETE 
+  THEN 
+  ILAST COVER SET-CUR____ STARDAT_ @ _bank_pre_transaction_balance 2@ _bank_balance 
+  2@ D- ICLOSE _bt_ammount D! _bt_stardate ! ICLOSE _bank_balance 2@ _bank_pre_transaction_balance 
+  D! 0 _bank_transaction C! 
+ ELSE 
+  DROP 
+ THEN 
+ ICLOSE ; 
+
+( @F0C5-F110 XT:F0CE CFA:224C DLen: 66 STAGE: Dictionaries)
+: INT%
+ INIT-BALANCE D@BALANCE 12 100 M*/ STARDAT_ @ PORTDAT_ @ - $012C M*/ 2DUP D0= IF 
+  2DROP 
+ ELSE 
+  D@BALANCE D+ D!BALANCE !TFLAG 5 TRANSACT STARDAT_ @ PORTDAT_ ! 
+ THEN 
+ ; 
+
+( Data @F110-F126 XT:F112 CFA:1D29 DLen: 20 STAGE: Words)
+CREATE [BANK-OV:F112] 20 ALLOT ( @F112 =
+@F112 44 44 44 44 44 44 44 44 44 44 44 44 44 44 44 44   DDDDDDDDDDDDDDDD
+@F122 44 44 44 44                                       DDDD            
+ )
+
+( @F126-F150 XT:F128 CFA:224C DLen: 40 STAGE: Words)
+: [BANK-OV:F128]
+ -4 YBLT +! XBLT @ - WBLT ! 1 LBLT ! [BANK-OV:F112] ABLT ! BLT 4 YBLT +! ; 
+
+( @F150-F194 XT:F152 CFA:224C DLen: 66 STAGE: Words)
+: [BANK-OV:F152]
+ _bt_stardate @ $012C /MOD $120C + SWAP 30 /MOD 1+ SWAP 1+ 0 <# # # #> TYPE ." -" 
+ 0 <# # # #> TYPE ." -" . ; 
+
+( @F194-F1D8 XT:F196 CFA:224C DLen: 66 STAGE: Words)
+: [BANK-OV:F196]
+ _bt_ammount 2@ 2DUP 2DUP DABS 999999. DMIN 6 D.R 0 0 D< IF 
+  11 
+ ELSE 
+  13 
+ THEN 
+ >R OR NOT NOT R> * 32 + EMIT ; 
+
+( @F1D8-F1E0 XT:F1DA CFA:224C DLen: 6 STAGE: Words)
+: [BANK-OV:F1DA]
+ [A-BANK-TRANS:0-19] $. ; 
+
+( @F1E0-F26D XT:F1E2 CFA:224C DLen: 139 STAGE: Words)
+: [BANK-OV:F1E2]
+ 50 $00BE 50 $00B2 LLINE 111 $00BE 111 $00B2 LLINE 52 $00C0 109 $00C0 LLINE 52 $00B0 
+ 109 $00B0 LLINE 50 $00C0 [BANK-OV:EF98] 50 $00B2 [BANK-OV:EF98] 109 $00C0 [BANK-OV:EF98] 
+ 109 $00B2 [BANK-OV:EF98] 4 [BANK-OV:EF86] CTINIT 70 $00BC POS. >3FONT ." BANK" ; 
+
+( @F26D-F3A9 XT:F26F CFA:224C DLen: 314 STAGE: Words)
+: [BANK-OV:F26F]
+ !COLOR XORMODE ON 3 0 DO 
+  1 I + $00C4 1 I + 3 LLINE $009C I + $00C4 $009C I + 3 LLINE $009C 1 I + 3 1 I + 
+  LLINE $009C $00C4 I + 3 $00C4 I + LLINE 
+ LOOP 
+ 5 $00C2 5 18 LLINE 18 18 6 18 LLINE 18 17 18 5 LLINE $0099 5 19 5 LLINE $009A 5 
+ $009A $00C2 LLINE $0099 $00C2 6 $00C2 LLINE 2 $00C5 [BANK-OV:EF94] $009B $00C5 [BANK-OV:EF90] 
+ 2 4 [BANK-OV:EF90] $009B 4 [BANK-OV:EF94] 18 6 [BANK-OV:EF9C] 5 19 [BANK-OV:EF9C] 
+ 17 18 [BANK-OV:EF9C] 18 6 [BANK-OV:EF9C] $0099 6 [BANK-OV:EFA0] 18 6 [BANK-OV:EF9C] 
+ $0099 $00C2 [BANK-OV:EF9C] 5 $00C2 [BANK-OV:EFA0] 12 [BANK-OV:EF86] 6 15 DK-BLUE 
+ .1LOGO ; 
+
+( @F3A9-F462 XT:F3AB CFA:224C DLen: 183 STAGE: Words)
+: [BANK-OV:F3AB]
+ CTINIT 19 $00A7 POS. ." DATE" 62 XBLT ! ." TRANSACTIONS" $0085 XBLT ! ." AMT" 19 
+ $00A1 33 $00A1 LLINE 62 $00A1 108 $00A1 LLINE $0085 $00A1 $0090 $00A1 LLINE $0090 
+ $00A3 LPLOT 38 45 POS. ." ( INTEREST RATE: 12% )" 15 29 POS. ." BALANCE" 119 [BANK-OV:F128] 
+ ; 
+
+( @F462-F470 XT:F464 CFA:224C DLen: 12 STAGE: Words)
+: [BANK-OV:F464]
+ DARK DK-BLUE [BANK-OV:F26F] [BANK-OV:F1E2] [BANK-OV:F3AB] ; 
+
+( @F470-F4AA XT:F472 CFA:224C DLen: 56 STAGE: Words)
+: [BANK-OV:F472]
+ XORMODE OFF 10 * $0095 SWAP - 7 SWAP POS. >1FONT [BANK-OV:F152] 50 XBLT ! [BANK-OV:F1DA] 
+ 124 [BANK-OV:F128] 125 XBLT ! [BANK-OV:F196] ; 
+
+( @F4AA-F4C2 XT:F4AC CFA:224C DLen: 22 STAGE: Words)
+: [BANK-OV:F4AC]
+ 121 29 POS. >1FONT _bank_pre_transaction_balance 2@ 7 D.R ; 
+
+( @F4C2-F4E2 XT:F4C4 CFA:224C DLen: 30 STAGE: Words)
+: [BANK-OV:F4C4]
+ [BANK-OV:EFC5] IOPEN 0 BEGIN 
+  DUP [BANK-OV:F472] 1+ INEXT ?FIRST 
+ UNTIL 
+ DROP ICLOSE [BANK-OV:F4AC] ICLOSE ; 
+
+( @F4E2-F52A XT:F4EF CFA:224C DLen: 59 STAGE: Dictionaries)
+: (U-BANK)
+ >HIDDEN [BANK-OV:F464] [BANK-OV:F4C4] CTINIT 40 14 POS. ." PRESS SPACEBAR TO EXIT" 
+ >DISPLA_ SCR-RES____ BEGIN 
+  XYSCAN 2DROP ?TRIG 
+ UNTIL 
+ ; 
+
+( RAW Data:OverlayJunk @F52A-F560 DLen: 54 STAGE: Dictionaries)
+ _overlayJunk 54 ALLOT ( @F52A =
+@F52A                               42 41 4E 4B 2D 56             BANK-V
+@F530 4F 43 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   OC______________
+@F540 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 66 6F 72 20 42 41   __________for BA
+@F550 4E 4B 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D   NK--------------
+ )
+

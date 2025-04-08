@@ -1,0 +1,6884 @@
+STARSYSTEM: ( @001063 )
+ Type: G Star_X: 215 Star_Y: 86
+ FlareDay: -60 ( unknown )
+
+PLANET: ( @0010C3 )
+ Type: 6
+ Star_X: 215 Star_Y: 86 Orbit#: 1
+
+PLANET: ( @0010B8 )
+ Type: 7
+ Star_X: 215 Star_Y: 86 Orbit#: 2
+
+PLANET: ( @0010AD )
+ Type: 18
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+
+ARTIFACT: ( @004BEF )
+ Type: 9 ( HYPERCUBE )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 543 Long: 484 ( 11N x 104W )
+
+MESSAGE: ( @00769B )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 543 Long: 484 ( 11N x 104W )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @00764A) "INVOICE - ...SECOND SHIPMENT OF IRIDIUM TO ARRIVE AT 56N X 16W H.Q. ON MARDAN 2 NO LATER THAN THE THIRD DAY OF..."
+
+MESSAGE: ( @00774D )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 543 Long: 484 ( 11N x 104W )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @0076B7) "LOG - ...PEOPLE ARE PANICKING. THE SOLAR FLARES ARE INTENSIFYING. THE BEST ESTIMATES GIVE US 3 DAYS AT THE OUTSIDE. LOG ENTRY 2-28-3480 SURFACE TEMP. IS AT 150 DEGREES C., ONLY BEING THIS FAR UNDERGROUND HAS KEPT US ALIVE THIS LONG..."
+
+MESSAGE: ( @00779F )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 593 Long: 429 ( 21N x 112W )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007769) "CORNERSTONE INSCRIPTION - BEN AND ANNA'S ACADEMY OF INDEPENDENT THINKING"
+
+MESSAGE: ( @00787B )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007800)
+
+MESSAGE: ( @0078D9 )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007897)
+
+MESSAGE: ( @00796A )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @0078F5)
+
+MESSAGE: ( @0079E4 )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007986)
+
+MESSAGE: ( @007A39 )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007A00)
+
+MESSAGE: ( @007AED )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007A55)
+
+MESSAGE: ( @007BA9 )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007B09)
+
+MESSAGE: ( @007C86 )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007C00)
+
+MESSAGE: ( @007D35 )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007CA2)
+
+MESSAGE: ( @007DEC )
+ Star_X: 215 Star_Y: 86 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007D51)
+
+PLANET: ( @0010A2 )
+ Type: 6
+ Star_X: 215 Star_Y: 86 Orbit#: 4
+
+ARTIFACT: ( @0043EF )
+ Type: 8 ( RING DEVICE )
+ Star_X: 215 Star_Y: 86 Orbit#: 4
+ Lat: 958 Long: 1152 ( 90N x 0  )
+
+MESSAGE: ( @007E31 )
+ Star_X: 215 Star_Y: 86 Orbit#: 4
+ Lat: 958 Long: 1152 ( 90N x 0  )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007E08) "SIGN - STARFLIGHT NAVIGATIONAL RESEARCH STATION"
+
+PLANET: ( @001097 )
+ Type: 17
+ Star_X: 215 Star_Y: 86 Orbit#: 5
+
+PLANET: ( @00108C )
+ Type: 17
+ Star_X: 215 Star_Y: 86 Orbit#: 6
+
+PLANET: ( @001081 )
+ Type: 16
+ Star_X: 215 Star_Y: 86 Orbit#: 7
+
+PLANET: ( @001076 )
+ Type: 16
+ Star_X: 215 Star_Y: 86 Orbit#: 8
+
+STARSYSTEM: ( @0010CE )
+ Type: K Star_X: 217 Star_Y: 88
+ FlareDay: -68 ( unknown )
+
+PLANET: ( @001118 )
+ Type: 5
+ Star_X: 217 Star_Y: 88 Orbit#: 1
+
+PLANET: ( @00110D )
+ Type: 19
+ Star_X: 217 Star_Y: 88 Orbit#: 2
+
+MESSAGE: ( @007E97 )
+ Star_X: 217 Star_Y: 88 Orbit#: 2
+ Lat: 778 Long: 1045 ( 56N x 16W )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007E4D) "LETTER - ...HEREBY REQUEST THAT THE RESEARCHERS AT THE MARS POLAR STATION BE DIRECTED TO LOOK INTO THIS AND ..."
+
+MESSAGE: ( @007EF8 )
+ Star_X: 217 Star_Y: 88 Orbit#: 2
+ Lat: 778 Long: 1045 ( 56N x 16W )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007EB3) "NOTICE - TO ALL PERSONNEL - EARTH BASE ONE, AT 12N X 104W IS TEMPORARILY QUARANTINED DUE TO..."
+
+MESSAGE: ( @007F5B )
+ Star_X: 217 Star_Y: 88 Orbit#: 2
+ Lat: 778 Long: 1045 ( 56N x 16W )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007F14) "REQUEST - ...MINING STATIONS 25 THROUGH 158 ON PLANET 4 REQUEST IMMEDIATE SUPPLIES. WE ARE..."
+
+PLANET: ( @001102 )
+ Type: 17
+ Star_X: 217 Star_Y: 88 Orbit#: 3
+
+PLANET: ( @0010F7 )
+ Type: 20
+ Star_X: 217 Star_Y: 88 Orbit#: 4
+
+MESSAGE: ( @007F9D )
+ Star_X: 217 Star_Y: 88 Orbit#: 4
+ Lat: 480 Long: 1150 ( 0  x 0W )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007F77) "SIGN - MARDAN 4 MINING STATION NO. 82"
+
+MESSAGE: ( @007FDF )
+ Star_X: 217 Star_Y: 88 Orbit#: 4
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @007FB9)
+
+MESSAGE: ( @008027 )
+ Star_X: 217 Star_Y: 88 Orbit#: 4
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @008000)
+
+PLANET: ( @0010EC )
+ Type: 15
+ Star_X: 217 Star_Y: 88 Orbit#: 6
+
+PLANET: ( @0010E1 )
+ Type: 13
+ Star_X: 217 Star_Y: 88 Orbit#: 8
+
+STARSYSTEM: ( @001123 )
+ Type: G Star_X: 215 Star_Y: 88
+ FlareDay: -60 ( unknown )
+
+PLANET: ( @00114C )
+ Type: 6
+ Star_X: 215 Star_Y: 88 Orbit#: 3
+
+PLANET: ( @001141 )
+ Type: 16
+ Star_X: 215 Star_Y: 88 Orbit#: 5
+
+PLANET: ( @001136 )
+ Type: 14
+ Star_X: 215 Star_Y: 88 Orbit#: 6
+
+STARSYSTEM: ( @001157 )
+ Type: F Star_X: 234 Star_Y: 20
+ FlareDay: -136 ( unknown )
+
+PLANET: ( @00118B )
+ Type: 10
+ Star_X: 234 Star_Y: 20 Orbit#: 3
+
+PLANET: ( @001180 )
+ Type: 21
+ Star_X: 234 Star_Y: 20 Orbit#: 4
+
+ARTIFACT: ( @002BEF )
+ Type: 3 ( BLACK EGG )
+ Star_X: 234 Star_Y: 20 Orbit#: 4
+ Lat: 295 Long: 1785 ( 34S x 98E )
+
+MESSAGE: ( @00806D )
+ Star_X: 234 Star_Y: 20 Orbit#: 4
+ Lat: 295 Long: 1785 ( 34S x 98E )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @008043) "SOME ARCANE AND INDECIPHERABLE PHLEGMAK WRITING."
+
+PLANET: ( @001175 )
+ Type: 17
+ Star_X: 234 Star_Y: 20 Orbit#: 5
+
+PLANET: ( @00116A )
+ Type: 13
+ Star_X: 234 Star_Y: 20 Orbit#: 8
+
+STARSYSTEM: ( @001196 )
+ Type: F Star_X: 232 Star_Y: 23
+ FlareDay: -128 ( unknown )
+
+STARSYSTEM: ( @0011A9 )
+ Type: G Star_X: 230 Star_Y: 26
+ FlareDay: -120 ( unknown )
+
+PLANET: ( @0011C7 )
+ Type: 17
+ Star_X: 230 Star_Y: 26 Orbit#: 3
+
+PLANET: ( @0011BC )
+ Type: 16
+ Star_X: 230 Star_Y: 26 Orbit#: 6
+
+STARSYSTEM: ( @0011D2 )
+ Type: K Star_X: 229 Star_Y: 22
+ FlareDay: -116 ( unknown )
+
+PLANET: ( @001206 )
+ Type: 6
+ Star_X: 229 Star_Y: 22 Orbit#: 1
+
+PLANET: ( @0011FB )
+ Type: 9
+ Star_X: 229 Star_Y: 22 Orbit#: 2
+
+PLANET: ( @0011F0 )
+ Type: 15
+ Star_X: 229 Star_Y: 22 Orbit#: 4
+
+PLANET: ( @0011E5 )
+ Type: 14
+ Star_X: 229 Star_Y: 22 Orbit#: 7
+
+STARSYSTEM: ( @001211 )
+ Type: B Star_X: 227 Star_Y: 24
+ FlareDay: -108 ( unknown )
+
+PLANET: ( @00123A )
+ Type: 2
+ Star_X: 227 Star_Y: 24 Orbit#: 3
+
+PLANET: ( @00122F )
+ Type: 17
+ Star_X: 227 Star_Y: 24 Orbit#: 6
+
+PLANET: ( @001224 )
+ Type: 17
+ Star_X: 227 Star_Y: 24 Orbit#: 7
+
+STARSYSTEM: ( @001245 )
+ Type: A Star_X: 238 Star_Y: 189
+ FlareDay: -152 ( unknown )
+
+PLANET: ( @00126E )
+ Type: 1
+ Star_X: 238 Star_Y: 189 Orbit#: 1
+
+PLANET: ( @001263 )
+ Type: 7
+ Star_X: 238 Star_Y: 189 Orbit#: 4
+
+PLANET: ( @001258 )
+ Type: 22
+ Star_X: 238 Star_Y: 189 Orbit#: 6
+
+ARTIFACT: ( @00748C )
+ Type: 3 ( BLACK EGG )
+ Star_X: 238 Star_Y: 189 Orbit#: 6
+ Lat: 757 Long: 1257 ( 52N x 16E )
+
+STARSYSTEM: ( @001279 )
+ Type: O Star_X: 192 Star_Y: 152
+ FlareDay: 32 ( 3-2-4620 )
+
+PLANET: ( @00128C )
+ Type: 23
+ Star_X: 192 Star_Y: 152 Orbit#: 5
+
+MESSAGE: ( @00909D )
+ Star_X: 192 Star_Y: 152 Orbit#: 5
+ Lat: 730 Long: 1440 ( 47N x 45E )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @009000) "LOG ENTRY, 8-8-3382, COMMANDER MCCONNELL, ENTRY 1 - I HAVE SUCCESSFULLY TELEPORTED TO THE CRYSTAL PLANET! I AM DIZZY AND HAVE EXPERIENCED A PROFOUND SENSE OF DISORIENTAION BUT OTHER THAN THAT I SEEM TO BE FINE. THE CONTROL NEXUS IS VISIBLE FROM HERE."
+
+MESSAGE': ( @009139 )
+ Value: ( @0090B9)
+
+MESSAGE': ( @00919B )
+ Value: ( @009146)
+
+MESSAGE': ( @009215 )
+ Value: ( @0091A8)
+
+MESSAGE': ( @009299 )
+ Value: ( @009222)
+
+MESSAGE': ( @009332 )
+ Value: ( @0092A6)
+
+MESSAGE': ( @0093B8 )
+ Value: ( @00933F)
+
+MESSAGE': ( @009494 )
+ Value: ( @009400)
+
+MESSAGE': ( @00953A )
+ Value: ( @0094A1)
+
+STARSYSTEM: ( @001297 )
+ Type: G Star_X: 180 Star_Y: 124
+ FlareDay: 80 ( 21-3-4620 )
+
+PLANET: ( @0012E1 )
+ Type: 5
+ Star_X: 180 Star_Y: 124 Orbit#: 2
+
+PLANET: ( @0012D6 )
+ Type: 24
+ Star_X: 180 Star_Y: 124 Orbit#: 3
+
+ARTIFACT: ( @00749D )
+ Type: 6 ( ROD DEVICE )
+ Star_X: 180 Star_Y: 124 Orbit#: 3
+ Lat: 795 Long: 1299 ( 59N x 22E )
+
+MESSAGE: ( @0080C7 )
+ Star_X: 180 Star_Y: 124 Orbit#: 3
+ Lat: 795 Long: 1299 ( 59N x 22E )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @008089) "COORDINATE LISTING - ... AT 59N X 22E, BASE 2 AT 54N X 13E DOMICILE AT..."
+
+MESSAGE: ( @008173 )
+ Star_X: 180 Star_Y: 124 Orbit#: 3
+ Lat: 766 Long: 1235 ( 53N x 12E )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @0080E3) "REPORT - ... HAVE FINALLY LOCATED HARRISON'S BASE OF OPERATIONS ON NEW SCOTLAND, AND ONCE AGAIN HE'S A STEP AHEAD OF US. WE BELIEVE HE MAY HAVE RELOCATED AT 44S X 137W ON THE FIRST PLANET OF SYSTEM 81,98. WE WILL PROCEED TO..."
+
+MESSAGE: ( @0081D2 )
+ Star_X: 180 Star_Y: 124 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @00818F)
+
+MESSAGE: ( @008244 )
+ Star_X: 180 Star_Y: 124 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @0081EE)
+
+MESSAGE: ( @0082BF )
+ Star_X: 180 Star_Y: 124 Orbit#: 3
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @008260)
+
+PLANET: ( @0012CB )
+ Type: 12
+ Star_X: 180 Star_Y: 124 Orbit#: 4
+
+PLANET: ( @0012C0 )
+ Type: 16
+ Star_X: 180 Star_Y: 124 Orbit#: 6
+
+PLANET: ( @0012B5 )
+ Type: 13
+ Star_X: 180 Star_Y: 124 Orbit#: 7
+
+PLANET: ( @0012AA )
+ Type: 14
+ Star_X: 180 Star_Y: 124 Orbit#: 8
+
+STARSYSTEM: ( @0012EC )
+ Type: K Star_X: 180 Star_Y: 120
+ FlareDay: 80 ( 21-3-4620 )
+
+PLANET: ( @001315 )
+ Type: 25
+ Star_X: 180 Star_Y: 120 Orbit#: 4
+
+MESSAGE: ( @008373 )
+ Star_X: 180 Star_Y: 120 Orbit#: 4
+ Lat: 663 Long: 1333 ( 34N x 28E )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @0082DB) "INSTITUTE RESEARCH REPORT TO ELOWAN HOMEWORLD BASE 60S X 45E  - WE HAVE ASCERTAINED THAT THE DEAD ZONE IS COREWARD OF THE X-COORDINATE 200. WE HAVE ALSO DETERMINED THAT THE CAUSE OF THE FLARES IS SOMEWHERE COREWARD AND UPSPIN OF OUR PRESENT LOCATION..."
+
+PLANET: ( @00130A )
+ Type: 15
+ Star_X: 180 Star_Y: 120 Orbit#: 5
+
+PLANET: ( @0012FF )
+ Type: 13
+ Star_X: 180 Star_Y: 120 Orbit#: 7
+
+STARSYSTEM: ( @001320 )
+ Type: F Star_X: 180 Star_Y: 122
+ FlareDay: 80 ( 21-3-4620 )
+
+PLANET: ( @00133E )
+ Type: 14
+ Star_X: 180 Star_Y: 122 Orbit#: 3
+
+PLANET: ( @001333 )
+ Type: 17
+ Star_X: 180 Star_Y: 122 Orbit#: 5
+
+STARSYSTEM: ( @001349 )
+ Type: K Star_X: 129 Star_Y: 33
+ FlareDay: 284 ( 15-10-4620 )
+
+PLANET: ( @001388 )
+ Type: 5
+ Star_X: 129 Star_Y: 33 Orbit#: 1
+
+PLANET: ( @00137D )
+ Type: 26
+ Star_X: 129 Star_Y: 33 Orbit#: 2
+
+MESSAGE: ( @00849C )
+ Star_X: 129 Star_Y: 33 Orbit#: 2
+ Lat: 157 Long: 1442 ( 60S x 45E )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @008400) "NOTES - ...INFORMATION HAS SUCCESSFULLY PINPOINTED THE TESSERACT ENERGY ENHANCER AND THE RED CYLINDER ANCIENT-RUIN LOCATER DEVICE AT 15N X 44W ON PLANET 5 OF SYSTEM 18,50 , AND AT 59N X 64W ON PLANET 3 OF SYSTEM 112,200 RESPECTIVELY..."
+
+PLANET: ( @001372 )
+ Type: 17
+ Star_X: 129 Star_Y: 33 Orbit#: 3
+
+PLANET: ( @001367 )
+ Type: 16
+ Star_X: 129 Star_Y: 33 Orbit#: 4
+
+ENCOUNTER: ( @0073B8 )
+ Type: 7 ( Thryn ) Star_X: 129 Star_Y: 33 Orbit#: 4
+ Enabled: TRUE Homeword: TRUE Fleet Size: -1 Max: 8
+ Vessels: 0 0 0 10
+
+PLANET: ( @00135C )
+ Type: 16
+ Star_X: 129 Star_Y: 33 Orbit#: 5
+
+ENCOUNTER: ( @006A68 )
+ Type: 7 ( Thryn ) Star_X: 129 Star_Y: 33
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+ENCOUNTER: ( @006A84 )
+ Type: 7 ( Thryn ) Star_X: 129 Star_Y: 33
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+ENCOUNTER: ( @006AA0 )
+ Type: 7 ( Thryn ) Star_X: 129 Star_Y: 33
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+ENCOUNTER: ( @006AD8 )
+ Type: 7 ( Thryn ) Star_X: 129 Star_Y: 33
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+ENCOUNTER: ( @006AF4 )
+ Type: 7 ( Thryn ) Star_X: 129 Star_Y: 33
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+STARSYSTEM: ( @001393 )
+ Type: B Star_X: 18 Star_Y: 50
+ FlareDay: 728 ( 9-5-4622 )
+
+PLANET: ( @0013D2 )
+ Type: 2
+ Star_X: 18 Star_Y: 50 Orbit#: 1
+
+PLANET: ( @0013C7 )
+ Type: 3
+ Star_X: 18 Star_Y: 50 Orbit#: 3
+
+PLANET: ( @0013BC )
+ Type: 8
+ Star_X: 18 Star_Y: 50 Orbit#: 4
+
+PLANET: ( @0013B1 )
+ Type: 5
+ Star_X: 18 Star_Y: 50 Orbit#: 6
+
+PLANET: ( @0013A6 )
+ Type: 27
+ Star_X: 18 Star_Y: 50 Orbit#: 8
+
+ARTIFACT: ( @0074AE )
+ Type: 7 ( TESSERACT )
+ Star_X: 18 Star_Y: 50 Orbit#: 8
+ Lat: 561 Long: 869 ( 15N x 44W )
+
+ENCOUNTER: ( @00708C )
+ Type: 9 ( Uhlek ) Star_X: 18 Star_Y: 50
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @0013DD )
+ Type: M Star_X: 81 Star_Y: 98
+ FlareDay: 476 ( 27-6-4621 )
+
+PLANET: ( @001400 )
+ Type: 28
+ Star_X: 81 Star_Y: 98 Orbit#: 1
+
+ARTIFACT: ( @0074BF )
+ Type: 14 ( ELLIPSOID )
+ Star_X: 81 Star_Y: 98 Orbit#: 1
+ Lat: 245 Long: 274 ( 44S x 137W )
+
+MESSAGE: ( @00851F )
+ Star_X: 81 Star_Y: 98 Orbit#: 1
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @0084B8)
+
+PLANET: ( @0013F0 )
+ Type: 14
+ Star_X: 81 Star_Y: 98 Orbit#: 7
+
+STARSYSTEM: ( @00140B )
+ Type: F Star_X: 112 Star_Y: 200
+ FlareDay: 352 ( 23-2-4621 )
+
+PLANET: ( @00143F )
+ Type: 10
+ Star_X: 112 Star_Y: 200 Orbit#: 3
+
+PLANET: ( @001434 )
+ Type: 17
+ Star_X: 112 Star_Y: 200 Orbit#: 4
+
+PLANET: ( @001429 )
+ Type: 29
+ Star_X: 112 Star_Y: 200 Orbit#: 5
+
+ARTIFACT: ( @0074D0 )
+ Type: 11 ( RED CYLINDER )
+ Star_X: 112 Star_Y: 200 Orbit#: 5
+ Lat: 797 Long: 740 ( 59N x 64W )
+
+PLANET: ( @00141E )
+ Type: 13
+ Star_X: 112 Star_Y: 200 Orbit#: 7
+
+ENCOUNTER: ( @0071F8 )
+ Type: 9 ( Uhlek ) Star_X: 112 Star_Y: 200
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @007214 )
+ Type: 9 ( Uhlek ) Star_X: 112 Star_Y: 200
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @00144A )
+ Type: O Star_X: 121 Star_Y: 56
+ FlareDay: 316 ( 17-1-4621 )
+
+STARSYSTEM: ( @00145D )
+ Type: G Star_X: 102 Star_Y: 80
+ FlareDay: 392 ( 3-4-4621 )
+
+PLANET: ( @001486 )
+ Type: 17
+ Star_X: 102 Star_Y: 80 Orbit#: 3
+
+PLANET: ( @00147B )
+ Type: 17
+ Star_X: 102 Star_Y: 80 Orbit#: 4
+
+PLANET: ( @001470 )
+ Type: 14
+ Star_X: 102 Star_Y: 80 Orbit#: 6
+
+STARSYSTEM: ( @001491 )
+ Type: M Star_X: 98 Star_Y: 82
+ FlareDay: 408 ( 19-4-4621 )
+
+PLANET: ( @0014D0 )
+ Type: 7
+ Star_X: 98 Star_Y: 82 Orbit#: 2
+
+PLANET: ( @0014C5 )
+ Type: 13
+ Star_X: 98 Star_Y: 82 Orbit#: 3
+
+PLANET: ( @0014BA )
+ Type: 15
+ Star_X: 98 Star_Y: 82 Orbit#: 4
+
+PLANET: ( @0014AF )
+ Type: 16
+ Star_X: 98 Star_Y: 82 Orbit#: 6
+
+PLANET: ( @0014A4 )
+ Type: 14
+ Star_X: 98 Star_Y: 82 Orbit#: 7
+
+ENCOUNTER: ( @006E30 )
+ Type: 2 ( Gazurt ) Star_X: 98 Star_Y: 82
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+STARSYSTEM: ( @0014DB )
+ Type: A Star_X: 98 Star_Y: 80
+ FlareDay: 408 ( 19-4-4621 )
+
+PLANET: ( @00150F )
+ Type: 2
+ Star_X: 98 Star_Y: 80 Orbit#: 1
+
+PLANET: ( @001504 )
+ Type: 6
+ Star_X: 98 Star_Y: 80 Orbit#: 3
+
+PLANET: ( @0014F9 )
+ Type: 8
+ Star_X: 98 Star_Y: 80 Orbit#: 5
+
+PLANET: ( @0014EE )
+ Type: 15
+ Star_X: 98 Star_Y: 80 Orbit#: 7
+
+ENCOUNTER: ( @006E4C )
+ Type: 2 ( Gazurt ) Star_X: 98 Star_Y: 80
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006E68 )
+ Type: 2 ( Gazurt ) Star_X: 98 Star_Y: 80
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+STARSYSTEM: ( @00151A )
+ Type: F Star_X: 98 Star_Y: 78
+ FlareDay: 408 ( 19-4-4621 )
+
+PLANET: ( @001543 )
+ Type: 5
+ Star_X: 98 Star_Y: 78 Orbit#: 2
+
+PLANET: ( @001538 )
+ Type: 16
+ Star_X: 98 Star_Y: 78 Orbit#: 7
+
+PLANET: ( @00152D )
+ Type: 13
+ Star_X: 98 Star_Y: 78 Orbit#: 8
+
+STARSYSTEM: ( @00154E )
+ Type: A Star_X: 95 Star_Y: 80
+ FlareDay: 420 ( 1-5-4621 )
+
+PLANET: ( @00156C )
+ Type: 17
+ Star_X: 95 Star_Y: 80 Orbit#: 4
+
+PLANET: ( @001561 )
+ Type: 17
+ Star_X: 95 Star_Y: 80 Orbit#: 5
+
+STARSYSTEM: ( @001577 )
+ Type: F Star_X: 86 Star_Y: 55
+ FlareDay: 456 ( 7-6-4621 )
+
+PLANET: ( @0015D7 )
+ Type: 1
+ Star_X: 86 Star_Y: 55 Orbit#: 1
+
+PLANET: ( @0015CC )
+ Type: 7
+ Star_X: 86 Star_Y: 55 Orbit#: 2
+
+PLANET: ( @0015C1 )
+ Type: 5
+ Star_X: 86 Star_Y: 55 Orbit#: 3
+
+PLANET: ( @0015B6 )
+ Type: 12
+ Star_X: 86 Star_Y: 55 Orbit#: 4
+
+ENCOUNTER: ( @0073D4 )
+ Type: 2 ( Gazurt ) Star_X: 86 Star_Y: 55 Orbit#: 4
+ Enabled: TRUE Homeword: TRUE Fleet Size: -1 Max: 8
+ Vessels: 0 0 0 15
+
+PLANET: ( @0015AB )
+ Type: 17
+ Star_X: 86 Star_Y: 55 Orbit#: 5
+
+PLANET: ( @0015A0 )
+ Type: 13
+ Star_X: 86 Star_Y: 55 Orbit#: 6
+
+PLANET: ( @001595 )
+ Type: 13
+ Star_X: 86 Star_Y: 55 Orbit#: 7
+
+PLANET: ( @00158A )
+ Type: 13
+ Star_X: 86 Star_Y: 55 Orbit#: 8
+
+ENCOUNTER: ( @006CE0 )
+ Type: 2 ( Gazurt ) Star_X: 86 Star_Y: 55
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006CFC )
+ Type: 2 ( Gazurt ) Star_X: 86 Star_Y: 55
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006D18 )
+ Type: 2 ( Gazurt ) Star_X: 86 Star_Y: 55
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006D34 )
+ Type: 2 ( Gazurt ) Star_X: 86 Star_Y: 55
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006D50 )
+ Type: 2 ( Gazurt ) Star_X: 86 Star_Y: 55
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006DC0 )
+ Type: 2 ( Gazurt ) Star_X: 86 Star_Y: 55
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006DDC )
+ Type: 2 ( Gazurt ) Star_X: 86 Star_Y: 55
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006DF8 )
+ Type: 2 ( Gazurt ) Star_X: 86 Star_Y: 55
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+STARSYSTEM: ( @0015E2 )
+ Type: M Star_X: 68 Star_Y: 66
+ FlareDay: 528 ( 19-8-4621 )
+
+PLANET: ( @001616 )
+ Type: 30
+ Star_X: 68 Star_Y: 66 Orbit#: 1
+
+ENCOUNTER: ( @007438 )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66 Orbit#: 1
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 15
+
+ARTIFACT: ( @0074E1 )
+ Type: 10 ( SHIMMERING BALL )
+ Star_X: 68 Star_Y: 66 Orbit#: 1
+ Lat: 543 Long: 1357 ( 11N x 32E )
+
+MESSAGE: ( @00857B )
+ Star_X: 68 Star_Y: 66 Orbit#: 1
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @00853B)
+
+MESSAGE: ( @0085E5 )
+ Star_X: 68 Star_Y: 66 Orbit#: 1
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @008597)
+
+PLANET: ( @00160B )
+ Type: 7
+ Star_X: 68 Star_Y: 66 Orbit#: 2
+
+PLANET: ( @001600 )
+ Type: 8
+ Star_X: 68 Star_Y: 66 Orbit#: 3
+
+PLANET: ( @0015F5 )
+ Type: 14
+ Star_X: 68 Star_Y: 66 Orbit#: 6
+
+ENCOUNTER: ( @006E14 )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006F64 )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006F80 )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006F9C )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006FB8 )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006FD4 )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @007000 )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @00701C )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @007038 )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @007054 )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @007070 )
+ Type: 2 ( Gazurt ) Star_X: 68 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+STARSYSTEM: ( @001621 )
+ Type: G Star_X: 125 Star_Y: 100
+ FlareDay: 300 ( 1-1-4621 )
+
+PLANET: ( @001660 )
+ Type: 5
+ Star_X: 125 Star_Y: 100 Orbit#: 1
+
+MESSAGE: ( @008703 )
+ Lat: 574 Long: 2192 ( 17N x 162E )
+ Stardate: 3 ( 4-1-4620 )
+ Value: ( @00867F) "REPORT - TO COLONY CONTROL AT 16S X 20W , PLANET 4, SYSTEM 118,146 - DUE TO THE INCREASED DEMAND FOR HYPER-TRITICALE AND A RECENT INFESTATION OF SMALL FURRY CREATURES WHICH HAVE DEPLETED OUR STOCK WE..."
+
+MESSAGE: ( @008663 )
+ Lat: 563 Long: 1918 ( 15N x 119E )
+ Stardate: 2 ( 3-1-4620 )
+ Value: ( @008601) "MICROFILM - ...REASON TO BELIEVE THERE IS A BLACK EGG DEVICE IN SOME PHLEGMAK RUINS AT 52N X 16E ON THE THIRD PLANET OF SYSTEM 238,189..."
+
+PLANET: ( @001655 )
+ Type: 58
+ Star_X: 125 Star_Y: 100 Orbit#: 3
+
+ARTIFACT: ( @01EDE2 )
+ Type: 19 ( BLUE BAUBLE )
+ InBox: ARTIFACTS
+
+ARTIFACT: ( @020DED )
+ Type: 39 ( SMALL OBELISK )
+ InBox: ARTIFACTS
+
+ARTIFACT: ( @020DFE )
+ Type: 17 ( ARMALCOLITE RELIC )
+ InBox: ARTIFACTS
+
+ARTIFACT: ( @009C24 )
+ Type: 5 ( FLAT DEVICE )
+ InBox: ARTIFACTS
+
+ARTIFACT: ( @009C00 )
+ Type: 4 ( WHINING ORB )
+ InBox: ARTIFACTS
+
+PLANET: ( @00164A )
+ Type: 31
+ Star_X: 125 Star_Y: 100 Orbit#: 5
+
+RUIN: ( @01EDD0 )
+ Type: 3
+ InBox: LIFEFORMS
+
+PLANET: ( @00163F )
+ Type: 16
+ Star_X: 125 Star_Y: 100 Orbit#: 6
+
+PLANET: ( @001634 )
+ Type: 15
+ Star_X: 125 Star_Y: 100 Orbit#: 7
+
+STARSYSTEM: ( @00166B )
+ Type: K Star_X: 123 Star_Y: 101
+ FlareDay: 308 ( 9-1-4621 )
+
+PLANET: ( @0016C0 )
+ Type: 6
+ Star_X: 123 Star_Y: 101 Orbit#: 1
+
+PLANET: ( @0016B5 )
+ Type: 32
+ Star_X: 123 Star_Y: 101 Orbit#: 2
+
+RUIN: ( @01EDBE )
+ Type: 3
+ InBox: LIFEFORMS
+
+PLANET: ( @0016AA )
+ Type: 17
+ Star_X: 123 Star_Y: 101 Orbit#: 3
+
+PLANET: ( @00169F )
+ Type: 17
+ Star_X: 123 Star_Y: 101 Orbit#: 4
+
+PLANET: ( @001694 )
+ Type: 15
+ Star_X: 123 Star_Y: 101 Orbit#: 6
+
+PLANET: ( @001689 )
+ Type: 14
+ Star_X: 123 Star_Y: 101 Orbit#: 7
+
+PLANET: ( @00167E )
+ Type: 14
+ Star_X: 123 Star_Y: 101 Orbit#: 8
+
+STARSYSTEM: ( @0016CB )
+ Type: F Star_X: 118 Star_Y: 146
+ FlareDay: 328 ( 29-1-4621 )
+
+PLANET: ( @0016FF )
+ Type: 6
+ Star_X: 118 Star_Y: 146 Orbit#: 2
+
+PLANET: ( @0016F4 )
+ Type: 17
+ Star_X: 118 Star_Y: 146 Orbit#: 3
+
+PLANET: ( @0016E9 )
+ Type: 17
+ Star_X: 118 Star_Y: 146 Orbit#: 4
+
+PLANET: ( @0016DE )
+ Type: 33
+ Star_X: 118 Star_Y: 146 Orbit#: 5
+
+ARTIFACT: ( @0074F2 )
+ Type: 12 ( DODECAHEDRON )
+ Star_X: 118 Star_Y: 146 Orbit#: 5
+ Lat: 396 Long: 1024 ( 15S x 20W )
+
+MESSAGE: ( @0087B0 )
+ Star_X: 118 Star_Y: 146 Orbit#: 5
+ Lat: 396 Long: 1024 ( 15S x 20W )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @00871F) "INTELLIGENCE COMMUNICATION - ...SHIP WAS ATTACKED BY THE GAZURTOID. ALL CREW WERE KILLED AND THE NEW CLOAKING DEVICE WAS STOLEN. A PROBE WAS ABLE TO TRACK THEIR SHIP'S TACHYON TRAIL TO THE SYSTEM 68,66. OTHER THAN THAT WE DON'T..."
+
+ENCOUNTER: ( @006550 )
+ Type: 8 ( Velox ) Star_X: 118 Star_Y: 146
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0066BC )
+ Type: 8 ( Velox ) Star_X: 118 Star_Y: 146
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0066D8 )
+ Type: 8 ( Velox ) Star_X: 118 Star_Y: 146
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+STARSYSTEM: ( @00170A )
+ Type: F Star_X: 145 Star_Y: 107
+ FlareDay: 220 ( 11-8-4620 )
+
+PLANET: ( @001749 )
+ Type: 1
+ Star_X: 145 Star_Y: 107 Orbit#: 1
+
+PLANET: ( @00173E )
+ Type: 6
+ Star_X: 145 Star_Y: 107 Orbit#: 2
+
+PLANET: ( @001733 )
+ Type: 5
+ Star_X: 145 Star_Y: 107 Orbit#: 3
+
+PLANET: ( @001728 )
+ Type: 34
+ Star_X: 145 Star_Y: 107 Orbit#: 4
+
+ENCOUNTER: ( @00741C )
+ Type: 3 ( Mechan 9 ) Star_X: 145 Star_Y: 107 Orbit#: 4
+ Enabled: FALSE Homeword: FALSE Fleet Size: -1 Max: 8
+ Vessels: 0 0 4 0
+
+PLANET: ( @00171D )
+ Type: 16
+ Star_X: 145 Star_Y: 107 Orbit#: 6
+
+RUIN: ( @0096D3 )
+ Type: 4
+ Star_X: 145 Star_Y: 107 Orbit#: 6
+ Lat: 675 Long: 1730 ( 36N x 90E )
+
+ENCOUNTER: ( @006C1C )
+ Type: 3 ( Mechan 9 ) Star_X: 12 Star_Y: 15
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 4 0
+
+ENCOUNTER: ( @006C38 )
+ Type: 3 ( Mechan 9 ) Star_X: 13 Star_Y: 15
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 4 0
+
+ENCOUNTER: ( @006C54 )
+ Type: 3 ( Mechan 9 ) Star_X: 13 Star_Y: 15
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 4 0
+
+ENCOUNTER: ( @006C70 )
+ Type: 3 ( Mechan 9 ) Star_X: 13 Star_Y: 15
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 4 0
+
+ENCOUNTER: ( @006C8C )
+ Type: 3 ( Mechan 9 ) Star_X: 13 Star_Y: 15
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 4 0
+
+ENCOUNTER: ( @006CA8 )
+ Type: 3 ( Mechan 9 ) Star_X: 12 Star_Y: 14
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 4 0
+
+ENCOUNTER: ( @006CC4 )
+ Type: 3 ( Mechan 9 ) Star_X: 14 Star_Y: 18
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 4 0
+
+STARSYSTEM: ( @001754 )
+ Type: G Star_X: 143 Star_Y: 115
+ FlareDay: 228 ( 19-8-4620 )
+
+PLANET: ( @001772 )
+ Type: 35
+ Star_X: 143 Star_Y: 115 Orbit#: 5
+
+ENCOUNTER: ( @00732C )
+ Type: 10 ( Velox Probe ) Star_X: 143 Star_Y: 115 Orbit#: 5
+ Enabled: TRUE Homeword: TRUE Fleet Size: 1 Max: 1
+ Vessels: 18 0 0 0
+
+ARTIFACT: ( @007503 )
+ Type: 3 ( BLACK EGG )
+ Star_X: 143 Star_Y: 115 Orbit#: 5
+ Lat: 629 Long: 1182 ( 28N x 4E )
+
+MESSAGE: ( @008873 )
+ Star_X: 143 Star_Y: 115 Orbit#: 5
+ Lat: 629 Long: 1182 ( 28N x 4E )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @008800) "RECONNAISSANCE REPORT - TO OFFENSIVE HEADQUARTERS AT 56N X 16W ON MARDAN 2 - FIGHTING BETWEEN THE VELOX AND GAZURTOID IS STILL HEATED. WE HAVE BEEN KEEPING A LOW PROFILE AND..."
+
+PLANET: ( @001767 )
+ Type: 15
+ Star_X: 143 Star_Y: 115 Orbit#: 7
+
+STARSYSTEM: ( @00177D )
+ Type: M Star_X: 175 Star_Y: 94
+ FlareDay: 100 ( 11-4-4620 )
+
+PLANET: ( @0017A6 )
+ Type: 36
+ Star_X: 175 Star_Y: 94 Orbit#: 3
+
+ENCOUNTER: ( @007454 )
+ Type: 19 ( Last Hope ) Star_X: 175 Star_Y: 94 Orbit#: 3
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 23 0 0
+
+MESSAGE: ( @008924 )
+ Star_X: 175 Star_Y: 94 Orbit#: 3
+ Lat: 598 Long: 527 ( 22N x 97W )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @00888F) "CAPTAIN'S LOG ENTRY - OCTOBER 31, 3480 - WE HAVE MANAGED TO SET UP A CAMP OF SORTS HERE, AND HAVE ENOUGH SUPPLIES TO KEEP US ALIVE FOR SEVERAL MONTHS. WE WERE ON OUR WAY TO ESTABLISH THE NOAH 9 COLONY WORLD OF 'HEAVEN' WHEN THE SHIP BLEW."
+
+MESSAGE': ( @0089CE )
+ Value: ( @008940)
+
+MESSAGE': ( @008A4B )
+ Value: ( @0089DB)
+
+PLANET: ( @00179B )
+ Type: 14
+ Star_X: 175 Star_Y: 94 Orbit#: 6
+
+PLANET: ( @001790 )
+ Type: 13
+ Star_X: 175 Star_Y: 94 Orbit#: 8
+
+STARSYSTEM: ( @0017B1 )
+ Type: G Star_X: 148 Star_Y: 63
+ FlareDay: 208 ( 29-7-4620 )
+
+PLANET: ( @0017E5 )
+ Type: 5
+ Star_X: 148 Star_Y: 63 Orbit#: 3
+
+PLANET: ( @0017DA )
+ Type: 37
+ Star_X: 148 Star_Y: 63 Orbit#: 4
+
+PLANET: ( @0017CF )
+ Type: 16
+ Star_X: 148 Star_Y: 63 Orbit#: 6
+
+PLANET: ( @0017C4 )
+ Type: 16
+ Star_X: 148 Star_Y: 63 Orbit#: 7
+
+ENCOUNTER: ( @006BB8 )
+ Type: 1 ( Elowan ) Star_X: 148 Star_Y: 63
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 5 6 7
+
+STARSYSTEM: ( @001800 )
+ Type: B Star_X: 82 Star_Y: 148
+ FlareDay: 472 ( 23-6-4621 )
+
+PLANET: ( @001813 )
+ Type: 11
+ Star_X: 82 Star_Y: 148 Orbit#: 6
+
+ENCOUNTER: ( @007400 )
+ Type: 6 ( Spemin ) Star_X: 82 Star_Y: 148 Orbit#: 6
+ Enabled: TRUE Homeword: TRUE Fleet Size: -1 Max: 8
+ Vessels: 0 0 0 3
+
+ENCOUNTER: ( @00681C )
+ Type: 6 ( Spemin ) Star_X: 82 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @006838 )
+ Type: 6 ( Spemin ) Star_X: 82 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @006854 )
+ Type: 6 ( Spemin ) Star_X: 82 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @0068C4 )
+ Type: 6 ( Spemin ) Star_X: 82 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @0068E0 )
+ Type: 6 ( Spemin ) Star_X: 82 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+STARSYSTEM: ( @00181E )
+ Type: M Star_X: 56 Star_Y: 144
+ FlareDay: 576 ( 7-10-4621 )
+
+PLANET: ( @001847 )
+ Type: 38
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+
+ARTIFACT: ( @007514 )
+ Type: 13 ( CRYSTAL PEARL )
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 633 Long: 1063 ( 28N x 13W )
+
+RUIN: ( @0053EE )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 635 Long: 1065 ( 29N x 13W )
+
+RUIN: ( @009547 )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 631 Long: 1064 ( 28N x 13W )
+
+RUIN: ( @009559 )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 636 Long: 1062 ( 29N x 14W )
+
+RUIN: ( @00956B )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 637 Long: 1067 ( 29N x 13W )
+
+RUIN: ( @00957D )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 630 Long: 1066 ( 28N x 13W )
+
+RUIN: ( @00958F )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 642 Long: 1068 ( 30N x 13W )
+
+RUIN: ( @0095A1 )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 641 Long: 1070 ( 30N x 12W )
+
+RUIN: ( @0095B3 )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 641 Long: 1071 ( 30N x 12W )
+
+RUIN: ( @0095C5 )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 640 Long: 1066 ( 30N x 13W )
+
+RUIN: ( @0095D7 )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 639 Long: 1064 ( 30N x 13W )
+
+RUIN: ( @0095E9 )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 637 Long: 1066 ( 29N x 13W )
+
+RUIN: ( @0095FB )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 637 Long: 1065 ( 29N x 13W )
+
+RUIN: ( @00960D )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 634 Long: 1069 ( 29N x 12W )
+
+RUIN: ( @00961F )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 632 Long: 1068 ( 28N x 13W )
+
+RUIN: ( @009631 )
+ Type: 4
+ Star_X: 56 Star_Y: 144 Orbit#: 3
+ Lat: 635 Long: 1066 ( 29N x 13W )
+
+PLANET: ( @00183C )
+ Type: 13
+ Star_X: 56 Star_Y: 144 Orbit#: 4
+
+PLANET: ( @001831 )
+ Type: 16
+ Star_X: 56 Star_Y: 144 Orbit#: 5
+
+ENCOUNTER: ( @0068FC )
+ Type: 6 ( Spemin ) Star_X: 56 Star_Y: 144
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @006918 )
+ Type: 6 ( Spemin ) Star_X: 56 Star_Y: 144
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+STARSYSTEM: ( @001852 )
+ Type: F Star_X: 20 Star_Y: 198
+ FlareDay: 720 ( 1-5-4622 )
+
+PLANET: ( @001891 )
+ Type: 5
+ Star_X: 20 Star_Y: 198 Orbit#: 3
+
+ARTIFACT: ( @007525 )
+ Type: 2 ( CRYSTAL CONE )
+ Star_X: 20 Star_Y: 198 Orbit#: 3
+ Lat: 322 Long: 799 ( 29S x 55W )
+
+PLANET: ( @001886 )
+ Type: 17
+ Star_X: 20 Star_Y: 198 Orbit#: 5
+
+PLANET: ( @00187B )
+ Type: 17
+ Star_X: 20 Star_Y: 198 Orbit#: 6
+
+PLANET: ( @001870 )
+ Type: 14
+ Star_X: 20 Star_Y: 198 Orbit#: 7
+
+PLANET: ( @001865 )
+ Type: 14
+ Star_X: 20 Star_Y: 198 Orbit#: 8
+
+STARSYSTEM: ( @00189C )
+ Type: M Star_X: 132 Star_Y: 165
+ FlareDay: 272 ( 3-10-4620 )
+
+PLANET: ( @0018BA )
+ Type: 39
+ Star_X: 132 Star_Y: 165 Orbit#: 1
+
+ENCOUNTER: ( @007310 )
+ Type: 10 ( Velox Probe ) Star_X: 132 Star_Y: 165 Orbit#: 1
+ Enabled: TRUE Homeword: TRUE Fleet Size: 8 Max: 6
+ Vessels: 18 0 0 0
+
+ARTIFACT: ( @007536 )
+ Type: 1 ( CRYSTAL ORB )
+ Star_X: 132 Star_Y: 165 Orbit#: 1
+ Lat: 725 Long: 1246 ( 46N x 14E )
+
+RUIN: ( @009643 )
+ Type: 4
+ Star_X: 132 Star_Y: 165 Orbit#: 1
+ Lat: 729 Long: 1246 ( 46N x 14E )
+
+RUIN: ( @009655 )
+ Type: 4
+ Star_X: 132 Star_Y: 165 Orbit#: 1
+ Lat: 727 Long: 1248 ( 46N x 15E )
+
+RUIN: ( @009667 )
+ Type: 4
+ Star_X: 132 Star_Y: 165 Orbit#: 1
+ Lat: 723 Long: 1248 ( 45N x 15E )
+
+RUIN: ( @009679 )
+ Type: 4
+ Star_X: 132 Star_Y: 165 Orbit#: 1
+ Lat: 721 Long: 1246 ( 45N x 14E )
+
+RUIN: ( @00968B )
+ Type: 4
+ Star_X: 132 Star_Y: 165 Orbit#: 1
+ Lat: 723 Long: 1244 ( 45N x 14E )
+
+RUIN: ( @00969D )
+ Type: 4
+ Star_X: 132 Star_Y: 165 Orbit#: 1
+ Lat: 727 Long: 1244 ( 46N x 14E )
+
+PLANET: ( @0018AF )
+ Type: 10
+ Star_X: 132 Star_Y: 165 Orbit#: 3
+
+ENCOUNTER: ( @006518 )
+ Type: 8 ( Velox ) Star_X: 132 Star_Y: 165
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @006534 )
+ Type: 8 ( Velox ) Star_X: 132 Star_Y: 165
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @006668 )
+ Type: 8 ( Velox ) Star_X: 132 Star_Y: 165
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @006684 )
+ Type: 8 ( Velox ) Star_X: 132 Star_Y: 165
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0066A0 )
+ Type: 8 ( Velox ) Star_X: 132 Star_Y: 165
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+STARSYSTEM: ( @0018C5 )
+ Type: M Star_X: 150 Star_Y: 148
+ FlareDay: 200 ( 21-7-4620 )
+
+PLANET: ( @00191A )
+ Type: 10
+ Star_X: 150 Star_Y: 148 Orbit#: 1
+
+PLANET: ( @00190F )
+ Type: 7
+ Star_X: 150 Star_Y: 148 Orbit#: 3
+
+ENCOUNTER: ( @00739C )
+ Type: 8 ( Velox ) Star_X: 150 Star_Y: 148 Orbit#: 3
+ Enabled: TRUE Homeword: TRUE Fleet Size: -1 Max: 8
+ Vessels: 0 0 0 13
+
+PLANET: ( @001904 )
+ Type: 17
+ Star_X: 150 Star_Y: 148 Orbit#: 4
+
+PLANET: ( @0018F9 )
+ Type: 16
+ Star_X: 150 Star_Y: 148 Orbit#: 5
+
+PLANET: ( @0018EE )
+ Type: 16
+ Star_X: 150 Star_Y: 148 Orbit#: 6
+
+PLANET: ( @0018E3 )
+ Type: 14
+ Star_X: 150 Star_Y: 148 Orbit#: 7
+
+PLANET: ( @0018D8 )
+ Type: 13
+ Star_X: 150 Star_Y: 148 Orbit#: 8
+
+ENCOUNTER: ( @0064C4 )
+ Type: 8 ( Velox ) Star_X: 150 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0064E0 )
+ Type: 8 ( Velox ) Star_X: 150 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0064FC )
+ Type: 8 ( Velox ) Star_X: 150 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0065F8 )
+ Type: 8 ( Velox ) Star_X: 150 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @006614 )
+ Type: 8 ( Velox ) Star_X: 150 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @006630 )
+ Type: 8 ( Velox ) Star_X: 150 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @00664C )
+ Type: 8 ( Velox ) Star_X: 150 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+STARSYSTEM: ( @001925 )
+ Type: K Star_X: 55 Star_Y: 32
+ FlareDay: 580 ( 11-10-4621 )
+
+PLANET: ( @001959 )
+ Type: 6
+ Star_X: 55 Star_Y: 32 Orbit#: 1
+
+PLANET: ( @00194E )
+ Type: 40
+ Star_X: 55 Star_Y: 32 Orbit#: 4
+
+PLANET: ( @001943 )
+ Type: 15
+ Star_X: 55 Star_Y: 32 Orbit#: 6
+
+PLANET: ( @001938 )
+ Type: 13
+ Star_X: 55 Star_Y: 32 Orbit#: 7
+
+STARSYSTEM: ( @001964 )
+ Type: B Star_X: 164 Star_Y: 84
+ FlareDay: 144 ( 25-5-4620 )
+
+PLANET: ( @00198D )
+ Type: 17
+ Star_X: 164 Star_Y: 84 Orbit#: 4
+
+PLANET: ( @001982 )
+ Type: 17
+ Star_X: 164 Star_Y: 84 Orbit#: 5
+
+PLANET: ( @001977 )
+ Type: 17
+ Star_X: 164 Star_Y: 84 Orbit#: 6
+
+STARSYSTEM: ( @001998 )
+ Type: B Star_X: 164 Star_Y: 85
+ FlareDay: 144 ( 25-5-4620 )
+
+PLANET: ( @0019F8 )
+ Type: 2
+ Star_X: 164 Star_Y: 85 Orbit#: 1
+
+PLANET: ( @0019ED )
+ Type: 3
+ Star_X: 164 Star_Y: 85 Orbit#: 2
+
+PLANET: ( @0019E2 )
+ Type: 4
+ Star_X: 164 Star_Y: 85 Orbit#: 3
+
+PLANET: ( @0019D7 )
+ Type: 7
+ Star_X: 164 Star_Y: 85 Orbit#: 4
+
+PLANET: ( @0019CC )
+ Type: 17
+ Star_X: 164 Star_Y: 85 Orbit#: 5
+
+PLANET: ( @0019C1 )
+ Type: 8
+ Star_X: 164 Star_Y: 85 Orbit#: 6
+
+PLANET: ( @0019B6 )
+ Type: 41
+ Star_X: 164 Star_Y: 85 Orbit#: 7
+
+PLANET: ( @0019AB )
+ Type: 42
+ Star_X: 164 Star_Y: 85 Orbit#: 8
+
+MESSAGE: ( @008A82 )
+ Star_X: 164 Star_Y: 85 Orbit#: 8
+ Lat: 0 Long: 0 ( Random )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @008A58)
+
+STARSYSTEM: ( @001A03 )
+ Type: B Star_X: 165 Star_Y: 85
+ FlareDay: 140 ( 21-5-4620 )
+
+PLANET: ( @001A16 )
+ Type: 14
+ Star_X: 165 Star_Y: 85 Orbit#: 8
+
+STARSYSTEM: ( @001A21 )
+ Type: O Star_X: 165 Star_Y: 84
+ FlareDay: 140 ( 21-5-4620 )
+
+PLANET: ( @001A6B )
+ Type: 1
+ Star_X: 165 Star_Y: 84 Orbit#: 1
+
+PLANET: ( @001A60 )
+ Type: 1
+ Star_X: 165 Star_Y: 84 Orbit#: 2
+
+PLANET: ( @001A55 )
+ Type: 4
+ Star_X: 165 Star_Y: 84 Orbit#: 3
+
+PLANET: ( @001A4A )
+ Type: 8
+ Star_X: 165 Star_Y: 84 Orbit#: 6
+
+PLANET: ( @001A3F )
+ Type: 6
+ Star_X: 165 Star_Y: 84 Orbit#: 7
+
+PLANET: ( @001A34 )
+ Type: 43
+ Star_X: 165 Star_Y: 84 Orbit#: 8
+
+MESSAGE: ( @008B27 )
+ Star_X: 165 Star_Y: 84 Orbit#: 8
+ Lat: 85 Long: 1574 ( 74S x 65E )
+ Stardate: 8224 ( 5-5-4647 )
+ Value: ( @008A9E) "REPORT - PROJECT TELEPORT, 1-2-3380 - ...IN SHORT WE HAVE DEVISED A SCHEME TO TELEPORT AN OPERATIVE FROM A SPECIALLY BUILT STARBASE (WHICH WILL BE KNOWN AS CRYSTAL BASE 1) TO THE SURFACE OF THE CRYSTAL PLANET."
+
+MESSAGE': ( @008BCE )
+ Value: ( @008B43)
+
+MESSAGE': ( @008C8F )
+ Value: ( @008C00)
+
+MESSAGE': ( @008D1A )
+ Value: ( @008C9C)
+
+MESSAGE': ( @008DB2 )
+ Value: ( @008D27)
+
+MESSAGE': ( @008E5A )
+ Value: ( @008DBF)
+
+MESSAGE': ( @008EF9 )
+ Value: ( @008E67)
+
+MESSAGE': ( @008F5D )
+ Value: ( @008F06)
+
+MESSAGE': ( @008FD3 )
+ Value: ( @008F6A)
+
+STARSYSTEM: ( @001A76 )
+ Type: F Star_X: 161 Star_Y: 135
+ FlareDay: 156 ( 7-6-4620 )
+
+PLANET: ( @001A94 )
+ Type: 2
+ Star_X: 161 Star_Y: 135 Orbit#: 1
+
+PLANET: ( @001A89 )
+ Type: 6
+ Star_X: 161 Star_Y: 135 Orbit#: 2
+
+STARSYSTEM: ( @001A9F )
+ Type: M Star_X: 249 Star_Y: 0
+ FlareDay: -196 ( unknown )
+
+PLANET: ( @001AB2 )
+ Type: 44
+ Star_X: 249 Star_Y: 0 Orbit#: 2
+
+STARSYSTEM: ( @001ABD )
+ Type: F Star_X: 149 Star_Y: 133
+ FlareDay: 204 ( 25-7-4620 )
+
+PLANET: ( @001B07 )
+ Type: 45
+ Star_X: 149 Star_Y: 133 Orbit#: 1
+
+PLANET: ( @001AFC )
+ Type: 7
+ Star_X: 149 Star_Y: 133 Orbit#: 2
+
+PLANET: ( @001AF1 )
+ Type: 17
+ Star_X: 149 Star_Y: 133 Orbit#: 3
+
+PLANET: ( @001AE6 )
+ Type: 46
+ Star_X: 149 Star_Y: 133 Orbit#: 4
+
+PLANET: ( @001ADB )
+ Type: 47
+ Star_X: 149 Star_Y: 133 Orbit#: 5
+
+PLANET: ( @001AD0 )
+ Type: 15
+ Star_X: 149 Star_Y: 133 Orbit#: 6
+
+STARSYSTEM: ( @001B12 )
+ Type: M Star_X: 154 Star_Y: 62
+ FlareDay: 184 ( 5-7-4620 )
+
+PLANET: ( @001B3B )
+ Type: 5
+ Star_X: 154 Star_Y: 62 Orbit#: 2
+
+PLANET: ( @001B30 )
+ Type: 16
+ Star_X: 154 Star_Y: 62 Orbit#: 4
+
+RUIN: ( @0096AF )
+ Type: 4
+ Star_X: 154 Star_Y: 62 Orbit#: 4
+ Lat: 257 Long: 1058 ( 42S x 14W )
+
+RUIN: ( @0096C1 )
+ Type: 4
+ Star_X: 154 Star_Y: 62 Orbit#: 4
+ Lat: 263 Long: 1062 ( 40S x 14W )
+
+PLANET: ( @001B25 )
+ Type: 14
+ Star_X: 154 Star_Y: 62 Orbit#: 6
+
+ENCOUNTER: ( @006B9C )
+ Type: 1 ( Elowan ) Star_X: 154 Star_Y: 62
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 5 6 7
+
+STARSYSTEM: ( @001B46 )
+ Type: F Star_X: 126 Star_Y: 28
+ FlareDay: 296 ( 27-10-4620 )
+
+STARSYSTEM: ( @001B59 )
+ Type: G Star_X: 113 Star_Y: 28
+ FlareDay: 348 ( 19-2-4621 )
+
+PLANET: ( @001B82 )
+ Type: 17
+ Star_X: 113 Star_Y: 28 Orbit#: 4
+
+PLANET: ( @001B77 )
+ Type: 13
+ Star_X: 113 Star_Y: 28 Orbit#: 5
+
+PLANET: ( @001B6C )
+ Type: 14
+ Star_X: 113 Star_Y: 28 Orbit#: 8
+
+ENCOUNTER: ( @006B80 )
+ Type: 7 ( Thryn ) Star_X: 113 Star_Y: 28
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+STARSYSTEM: ( @001B8D )
+ Type: M Star_X: 121 Star_Y: 4
+ FlareDay: 316 ( 17-1-4621 )
+
+PLANET: ( @001BCC )
+ Type: 5
+ Star_X: 121 Star_Y: 4 Orbit#: 1
+
+PLANET: ( @001BC1 )
+ Type: 5
+ Star_X: 121 Star_Y: 4 Orbit#: 2
+
+PLANET: ( @001BB6 )
+ Type: 15
+ Star_X: 121 Star_Y: 4 Orbit#: 4
+
+PLANET: ( @001BAB )
+ Type: 16
+ Star_X: 121 Star_Y: 4 Orbit#: 5
+
+PLANET: ( @001BA0 )
+ Type: 13
+ Star_X: 121 Star_Y: 4 Orbit#: 7
+
+STARSYSTEM: ( @001BD7 )
+ Type: M Star_X: 125 Star_Y: 39
+ FlareDay: 300 ( 1-1-4621 )
+
+PLANET: ( @001C00 )
+ Type: 7
+ Star_X: 125 Star_Y: 39 Orbit#: 1
+
+PLANET: ( @001BF5 )
+ Type: 16
+ Star_X: 125 Star_Y: 39 Orbit#: 7
+
+PLANET: ( @001BEA )
+ Type: 16
+ Star_X: 125 Star_Y: 39 Orbit#: 8
+
+ENCOUNTER: ( @006B10 )
+ Type: 7 ( Thryn ) Star_X: 125 Star_Y: 39
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+STARSYSTEM: ( @001C0B )
+ Type: F Star_X: 126 Star_Y: 72
+ FlareDay: 296 ( 27-10-4620 )
+
+PLANET: ( @001C29 )
+ Type: 17
+ Star_X: 126 Star_Y: 72 Orbit#: 5
+
+PLANET: ( @001C1E )
+ Type: 13
+ Star_X: 126 Star_Y: 72 Orbit#: 6
+
+STARSYSTEM: ( @001C34 )
+ Type: B Star_X: 128 Star_Y: 25
+ FlareDay: 288 ( 19-10-4620 )
+
+PLANET: ( @001C68 )
+ Type: 2
+ Star_X: 128 Star_Y: 25 Orbit#: 2
+
+PLANET: ( @001C5D )
+ Type: 3
+ Star_X: 128 Star_Y: 25 Orbit#: 3
+
+PLANET: ( @001C52 )
+ Type: 16
+ Star_X: 128 Star_Y: 25 Orbit#: 4
+
+PLANET: ( @001C47 )
+ Type: 14
+ Star_X: 128 Star_Y: 25 Orbit#: 7
+
+STARSYSTEM: ( @001C73 )
+ Type: G Star_X: 135 Star_Y: 35
+ FlareDay: 260 ( 21-9-4620 )
+
+STARSYSTEM: ( @001C86 )
+ Type: M Star_X: 144 Star_Y: 44
+ FlareDay: 224 ( 15-8-4620 )
+
+PLANET: ( @001CD0 )
+ Type: 49
+ Star_X: 144 Star_Y: 44 Orbit#: 1
+
+PLANET: ( @001CC5 )
+ Type: 17
+ Star_X: 144 Star_Y: 44 Orbit#: 3
+
+PLANET: ( @001CBA )
+ Type: 14
+ Star_X: 144 Star_Y: 44 Orbit#: 4
+
+PLANET: ( @001CAF )
+ Type: 16
+ Star_X: 144 Star_Y: 44 Orbit#: 5
+
+PLANET: ( @001CA4 )
+ Type: 16
+ Star_X: 144 Star_Y: 44 Orbit#: 6
+
+PLANET: ( @001C99 )
+ Type: 13
+ Star_X: 144 Star_Y: 44 Orbit#: 7
+
+ENCOUNTER: ( @006ABC )
+ Type: 7 ( Thryn ) Star_X: 144 Star_Y: 44
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+ENCOUNTER: ( @006B2C )
+ Type: 7 ( Thryn ) Star_X: 144 Star_Y: 44
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+ENCOUNTER: ( @006B48 )
+ Type: 7 ( Thryn ) Star_X: 144 Star_Y: 44
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+STARSYSTEM: ( @001CDB )
+ Type: F Star_X: 144 Star_Y: 22
+ FlareDay: 224 ( 15-8-4620 )
+
+PLANET: ( @001CF9 )
+ Type: 11
+ Star_X: 144 Star_Y: 22 Orbit#: 5
+
+PLANET: ( @001CEE )
+ Type: 15
+ Star_X: 144 Star_Y: 22 Orbit#: 6
+
+ENCOUNTER: ( @006B64 )
+ Type: 7 ( Thryn ) Star_X: 144 Star_Y: 22
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 8 9 10
+
+STARSYSTEM: ( @001D04 )
+ Type: K Star_X: 151 Star_Y: 68
+ FlareDay: 196 ( 17-7-4620 )
+
+PLANET: ( @001D2D )
+ Type: 7
+ Star_X: 151 Star_Y: 68 Orbit#: 2
+
+PLANET: ( @001D22 )
+ Type: 16
+ Star_X: 151 Star_Y: 68 Orbit#: 5
+
+PLANET: ( @001D17 )
+ Type: 14
+ Star_X: 151 Star_Y: 68 Orbit#: 8
+
+STARSYSTEM: ( @001D38 )
+ Type: F Star_X: 162 Star_Y: 43
+ FlareDay: 152 ( 3-6-4620 )
+
+PLANET: ( @001D4B )
+ Type: 17
+ Star_X: 162 Star_Y: 43 Orbit#: 4
+
+STARSYSTEM: ( @001D56 )
+ Type: A Star_X: 163 Star_Y: 46
+ FlareDay: 148 ( 29-5-4620 )
+
+PLANET: ( @001D8A )
+ Type: 1
+ Star_X: 163 Star_Y: 46 Orbit#: 1
+
+PLANET: ( @001D7F )
+ Type: 6
+ Star_X: 163 Star_Y: 46 Orbit#: 3
+
+PLANET: ( @001D74 )
+ Type: 53
+ Star_X: 163 Star_Y: 46 Orbit#: 6
+
+PLANET: ( @001D69 )
+ Type: 15
+ Star_X: 163 Star_Y: 46 Orbit#: 7
+
+ENCOUNTER: ( @006C00 )
+ Type: 1 ( Elowan ) Star_X: 163 Star_Y: 46
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 5 6 7
+
+STARSYSTEM: ( @001D95 )
+ Type: G Star_X: 169 Star_Y: 2
+ FlareDay: 124 ( 5-5-4620 )
+
+PLANET: ( @001DB3 )
+ Type: 7
+ Star_X: 169 Star_Y: 2 Orbit#: 3
+
+PLANET: ( @001DA8 )
+ Type: 16
+ Star_X: 169 Star_Y: 2 Orbit#: 5
+
+STARSYSTEM: ( @001DBE )
+ Type: F Star_X: 172 Star_Y: 55
+ FlareDay: 112 ( 23-4-4620 )
+
+STARSYSTEM: ( @001DD1 )
+ Type: F Star_X: 180 Star_Y: 8
+ FlareDay: 80 ( 21-3-4620 )
+
+PLANET: ( @001E31 )
+ Type: 2
+ Star_X: 180 Star_Y: 8 Orbit#: 1
+
+PLANET: ( @001E26 )
+ Type: 6
+ Star_X: 180 Star_Y: 8 Orbit#: 2
+
+PLANET: ( @001E1B )
+ Type: 11
+ Star_X: 180 Star_Y: 8 Orbit#: 3
+
+PLANET: ( @001E10 )
+ Type: 12
+ Star_X: 180 Star_Y: 8 Orbit#: 4
+
+PLANET: ( @001E05 )
+ Type: 17
+ Star_X: 180 Star_Y: 8 Orbit#: 5
+
+PLANET: ( @001DFA )
+ Type: 17
+ Star_X: 180 Star_Y: 8 Orbit#: 6
+
+PLANET: ( @001DEF )
+ Type: 16
+ Star_X: 180 Star_Y: 8 Orbit#: 7
+
+PLANET: ( @001DE4 )
+ Type: 13
+ Star_X: 180 Star_Y: 8 Orbit#: 8
+
+STARSYSTEM: ( @001E3C )
+ Type: M Star_X: 180 Star_Y: 28
+ FlareDay: 80 ( 21-3-4620 )
+
+PLANET: ( @001E5A )
+ Type: 17
+ Star_X: 180 Star_Y: 28 Orbit#: 3
+
+PLANET: ( @001E4F )
+ Type: 13
+ Star_X: 180 Star_Y: 28 Orbit#: 6
+
+STARSYSTEM: ( @001E65 )
+ Type: B Star_X: 181 Star_Y: 26
+ FlareDay: 76 ( 17-3-4620 )
+
+PLANET: ( @001E78 )
+ Type: 8
+ Star_X: 181 Star_Y: 26 Orbit#: 7
+
+STARSYSTEM: ( @001E83 )
+ Type: M Star_X: 188 Star_Y: 74
+ FlareDay: 48 ( 19-2-4620 )
+
+PLANET: ( @001EAC )
+ Type: 5
+ Star_X: 188 Star_Y: 74 Orbit#: 1
+
+PLANET: ( @001EA1 )
+ Type: 9
+ Star_X: 188 Star_Y: 74 Orbit#: 2
+
+PLANET: ( @001E96 )
+ Type: 13
+ Star_X: 188 Star_Y: 74 Orbit#: 8
+
+STARSYSTEM: ( @001EB7 )
+ Type: F Star_X: 192 Star_Y: 44
+ FlareDay: 32 ( 3-2-4620 )
+
+PLANET: ( @001EF6 )
+ Type: 17
+ Star_X: 192 Star_Y: 44 Orbit#: 3
+
+PLANET: ( @001EEB )
+ Type: 17
+ Star_X: 192 Star_Y: 44 Orbit#: 4
+
+PLANET: ( @001EE0 )
+ Type: 17
+ Star_X: 192 Star_Y: 44 Orbit#: 5
+
+PLANET: ( @001ED5 )
+ Type: 17
+ Star_X: 192 Star_Y: 44 Orbit#: 6
+
+PLANET: ( @001ECA )
+ Type: 15
+ Star_X: 192 Star_Y: 44 Orbit#: 8
+
+STARSYSTEM: ( @001F01 )
+ Type: M Star_X: 194 Star_Y: 39
+ FlareDay: 24 ( 25-1-4620 )
+
+PLANET: ( @001F2A )
+ Type: 13
+ Star_X: 194 Star_Y: 39 Orbit#: 3
+
+PLANET: ( @001F1F )
+ Type: 16
+ Star_X: 194 Star_Y: 39 Orbit#: 4
+
+PLANET: ( @001F14 )
+ Type: 15
+ Star_X: 194 Star_Y: 39 Orbit#: 6
+
+STARSYSTEM: ( @001F35 )
+ Type: K Star_X: 196 Star_Y: 45
+ FlareDay: 16 ( 17-1-4620 )
+
+PLANET: ( @001F69 )
+ Type: 8
+ Star_X: 196 Star_Y: 45 Orbit#: 3
+
+PLANET: ( @001F5E )
+ Type: 16
+ Star_X: 196 Star_Y: 45 Orbit#: 4
+
+PLANET: ( @001F53 )
+ Type: 16
+ Star_X: 196 Star_Y: 45 Orbit#: 7
+
+PLANET: ( @001F48 )
+ Type: 14
+ Star_X: 196 Star_Y: 45 Orbit#: 8
+
+STARSYSTEM: ( @001F74 )
+ Type: F Star_X: 196 Star_Y: 49
+ FlareDay: 16 ( 17-1-4620 )
+
+PLANET: ( @001F92 )
+ Type: 17
+ Star_X: 196 Star_Y: 49 Orbit#: 5
+
+PLANET: ( @001F87 )
+ Type: 14
+ Star_X: 196 Star_Y: 49 Orbit#: 6
+
+STARSYSTEM: ( @001F9D )
+ Type: K Star_X: 177 Star_Y: 11
+ FlareDay: 92 ( 3-4-4620 )
+
+PLANET: ( @001FBB )
+ Type: 51
+ Star_X: 177 Star_Y: 11 Orbit#: 3
+
+PLANET: ( @001FB0 )
+ Type: 16
+ Star_X: 177 Star_Y: 11 Orbit#: 6
+
+STARSYSTEM: ( @001FC6 )
+ Type: F Star_X: 206 Star_Y: 18
+ FlareDay: -24 ( unknown )
+
+STARSYSTEM: ( @001FD9 )
+ Type: K Star_X: 220 Star_Y: 5
+ FlareDay: -80 ( unknown )
+
+PLANET: ( @002021 )
+ Type: 6
+ Star_X: 220 Star_Y: 5 Orbit#: 2
+
+PLANET: ( @002016 )
+ Type: 17
+ Star_X: 220 Star_Y: 5 Orbit#: 3
+
+PLANET: ( @00200B )
+ Type: 17
+ Star_X: 220 Star_Y: 5 Orbit#: 4
+
+PLANET: ( @002000 )
+ Type: 14
+ Star_X: 220 Star_Y: 5 Orbit#: 6
+
+PLANET: ( @001FEC )
+ Type: 16
+ Star_X: 220 Star_Y: 5 Orbit#: 7
+
+STARSYSTEM: ( @00202C )
+ Type: F Star_X: 225 Star_Y: 7
+ FlareDay: -100 ( unknown )
+
+PLANET: ( @00203F )
+ Type: 15
+ Star_X: 225 Star_Y: 7 Orbit#: 7
+
+STARSYSTEM: ( @00204A )
+ Type: A Star_X: 219 Star_Y: 21
+ FlareDay: -76 ( unknown )
+
+PLANET: ( @002068 )
+ Type: 2
+ Star_X: 219 Star_Y: 21 Orbit#: 2
+
+PLANET: ( @00205D )
+ Type: 6
+ Star_X: 219 Star_Y: 21 Orbit#: 3
+
+STARSYSTEM: ( @002073 )
+ Type: M Star_X: 211 Star_Y: 27
+ FlareDay: -44 ( unknown )
+
+PLANET: ( @002086 )
+ Type: 10
+ Star_X: 211 Star_Y: 27 Orbit#: 2
+
+STARSYSTEM: ( @002091 )
+ Type: G Star_X: 209 Star_Y: 29
+ FlareDay: -36 ( unknown )
+
+PLANET: ( @0020DB )
+ Type: 5
+ Star_X: 209 Star_Y: 29 Orbit#: 1
+
+PLANET: ( @0020D0 )
+ Type: 5
+ Star_X: 209 Star_Y: 29 Orbit#: 2
+
+PLANET: ( @0020C5 )
+ Type: 17
+ Star_X: 209 Star_Y: 29 Orbit#: 3
+
+PLANET: ( @0020BA )
+ Type: 16
+ Star_X: 209 Star_Y: 29 Orbit#: 5
+
+PLANET: ( @0020AF )
+ Type: 14
+ Star_X: 209 Star_Y: 29 Orbit#: 6
+
+PLANET: ( @0020A4 )
+ Type: 16
+ Star_X: 209 Star_Y: 29 Orbit#: 7
+
+STARSYSTEM: ( @0020E6 )
+ Type: F Star_X: 243 Star_Y: 28
+ FlareDay: -172 ( unknown )
+
+STARSYSTEM: ( @0020F9 )
+ Type: G Star_X: 233 Star_Y: 36
+ FlareDay: -132 ( unknown )
+
+PLANET: ( @002122 )
+ Type: 5
+ Star_X: 233 Star_Y: 36 Orbit#: 1
+
+PLANET: ( @002117 )
+ Type: 17
+ Star_X: 233 Star_Y: 36 Orbit#: 5
+
+PLANET: ( @00210C )
+ Type: 13
+ Star_X: 233 Star_Y: 36 Orbit#: 8
+
+STARSYSTEM: ( @00212D )
+ Type: G Star_X: 196 Star_Y: 71
+ FlareDay: 16 ( 17-1-4620 )
+
+PLANET: ( @002156 )
+ Type: 7
+ Star_X: 196 Star_Y: 71 Orbit#: 1
+
+PLANET: ( @00214B )
+ Type: 6
+ Star_X: 196 Star_Y: 71 Orbit#: 2
+
+PLANET: ( @002140 )
+ Type: 15
+ Star_X: 196 Star_Y: 71 Orbit#: 8
+
+STARSYSTEM: ( @002161 )
+ Type: F Star_X: 230 Star_Y: 67
+ FlareDay: -120 ( unknown )
+
+PLANET: ( @002174 )
+ Type: 8
+ Star_X: 230 Star_Y: 67 Orbit#: 3
+
+STARSYSTEM: ( @00217F )
+ Type: O Star_X: 229 Star_Y: 64
+ FlareDay: -116 ( unknown )
+
+STARSYSTEM: ( @002192 )
+ Type: G Star_X: 209 Star_Y: 80
+ FlareDay: -36 ( unknown )
+
+PLANET: ( @0021E7 )
+ Type: 6
+ Star_X: 209 Star_Y: 80 Orbit#: 1
+
+PLANET: ( @0021DC )
+ Type: 17
+ Star_X: 209 Star_Y: 80 Orbit#: 2
+
+PLANET: ( @0021D1 )
+ Type: 17
+ Star_X: 209 Star_Y: 80 Orbit#: 3
+
+PLANET: ( @0021C6 )
+ Type: 11
+ Star_X: 209 Star_Y: 80 Orbit#: 4
+
+PLANET: ( @0021BB )
+ Type: 17
+ Star_X: 209 Star_Y: 80 Orbit#: 5
+
+PLANET: ( @0021B0 )
+ Type: 13
+ Star_X: 209 Star_Y: 80 Orbit#: 6
+
+PLANET: ( @0021A5 )
+ Type: 13
+ Star_X: 209 Star_Y: 80 Orbit#: 7
+
+STARSYSTEM: ( @0021F2 )
+ Type: M Star_X: 247 Star_Y: 81
+ FlareDay: -188 ( unknown )
+
+PLANET: ( @002210 )
+ Type: 6
+ Star_X: 247 Star_Y: 81 Orbit#: 2
+
+PLANET: ( @002205 )
+ Type: 14
+ Star_X: 247 Star_Y: 81 Orbit#: 7
+
+STARSYSTEM: ( @00221B )
+ Type: M Star_X: 211 Star_Y: 93
+ FlareDay: -44 ( unknown )
+
+PLANET: ( @002239 )
+ Type: 5
+ Star_X: 211 Star_Y: 93 Orbit#: 1
+
+PLANET: ( @00222E )
+ Type: 5
+ Star_X: 211 Star_Y: 93 Orbit#: 2
+
+STARSYSTEM: ( @002244 )
+ Type: F Star_X: 236 Star_Y: 119
+ FlareDay: -144 ( unknown )
+
+PLANET: ( @002278 )
+ Type: 1
+ Star_X: 236 Star_Y: 119 Orbit#: 1
+
+PLANET: ( @00226D )
+ Type: 6
+ Star_X: 236 Star_Y: 119 Orbit#: 3
+
+PLANET: ( @002262 )
+ Type: 17
+ Star_X: 236 Star_Y: 119 Orbit#: 4
+
+PLANET: ( @002257 )
+ Type: 17
+ Star_X: 236 Star_Y: 119 Orbit#: 6
+
+STARSYSTEM: ( @002283 )
+ Type: F Star_X: 204 Star_Y: 144
+ FlareDay: -16 ( unknown )
+
+PLANET: ( @002296 )
+ Type: 8
+ Star_X: 204 Star_Y: 144 Orbit#: 5
+
+STARSYSTEM: ( @0022A1 )
+ Type: M Star_X: 206 Star_Y: 145
+ FlareDay: -24 ( unknown )
+
+PLANET: ( @0022CA )
+ Type: 14
+ Star_X: 206 Star_Y: 145 Orbit#: 3
+
+PLANET: ( @0022BF )
+ Type: 16
+ Star_X: 206 Star_Y: 145 Orbit#: 4
+
+PLANET: ( @0022B4 )
+ Type: 15
+ Star_X: 206 Star_Y: 145 Orbit#: 8
+
+STARSYSTEM: ( @0022D5 )
+ Type: G Star_X: 210 Star_Y: 141
+ FlareDay: -40 ( unknown )
+
+PLANET: ( @002309 )
+ Type: 6
+ Star_X: 210 Star_Y: 141 Orbit#: 1
+
+PLANET: ( @0022FE )
+ Type: 5
+ Star_X: 210 Star_Y: 141 Orbit#: 2
+
+PLANET: ( @0022F3 )
+ Type: 7
+ Star_X: 210 Star_Y: 141 Orbit#: 3
+
+PLANET: ( @0022E8 )
+ Type: 16
+ Star_X: 210 Star_Y: 141 Orbit#: 6
+
+STARSYSTEM: ( @002314 )
+ Type: A Star_X: 212 Star_Y: 146
+ FlareDay: -48 ( unknown )
+
+PLANET: ( @002353 )
+ Type: 3
+ Star_X: 212 Star_Y: 146 Orbit#: 2
+
+PLANET: ( @002348 )
+ Type: 6
+ Star_X: 212 Star_Y: 146 Orbit#: 3
+
+PLANET: ( @00233D )
+ Type: 17
+ Star_X: 212 Star_Y: 146 Orbit#: 6
+
+PLANET: ( @002332 )
+ Type: 14
+ Star_X: 212 Star_Y: 146 Orbit#: 7
+
+PLANET: ( @002327 )
+ Type: 14
+ Star_X: 212 Star_Y: 146 Orbit#: 8
+
+STARSYSTEM: ( @00235E )
+ Type: G Star_X: 216 Star_Y: 143
+ FlareDay: -64 ( unknown )
+
+PLANET: ( @00237C )
+ Type: 17
+ Star_X: 216 Star_Y: 143 Orbit#: 3
+
+PLANET: ( @002371 )
+ Type: 15
+ Star_X: 216 Star_Y: 143 Orbit#: 6
+
+STARSYSTEM: ( @002387 )
+ Type: K Star_X: 241 Star_Y: 157
+ FlareDay: -164 ( unknown )
+
+STARSYSTEM: ( @00239A )
+ Type: B Star_X: 208 Star_Y: 159
+ FlareDay: -32 ( unknown )
+
+PLANET: ( @0023C3 )
+ Type: 8
+ Star_X: 208 Star_Y: 159 Orbit#: 4
+
+PLANET: ( @0023B8 )
+ Type: 17
+ Star_X: 208 Star_Y: 159 Orbit#: 6
+
+PLANET: ( @0023AD )
+ Type: 17
+ Star_X: 208 Star_Y: 159 Orbit#: 8
+
+STARSYSTEM: ( @0023CE )
+ Type: G Star_X: 226 Star_Y: 167
+ FlareDay: -104 ( unknown )
+
+PLANET: ( @002400 )
+ Type: 5
+ Star_X: 226 Star_Y: 167 Orbit#: 2
+
+PLANET: ( @0023EC )
+ Type: 7
+ Star_X: 226 Star_Y: 167 Orbit#: 3
+
+PLANET: ( @0023E1 )
+ Type: 14
+ Star_X: 226 Star_Y: 167 Orbit#: 7
+
+STARSYSTEM: ( @00240B )
+ Type: M Star_X: 219 Star_Y: 177
+ FlareDay: -76 ( unknown )
+
+PLANET: ( @002455 )
+ Type: 9
+ Star_X: 219 Star_Y: 177 Orbit#: 2
+
+PLANET: ( @00244A )
+ Type: 16
+ Star_X: 219 Star_Y: 177 Orbit#: 4
+
+PLANET: ( @00243F )
+ Type: 16
+ Star_X: 219 Star_Y: 177 Orbit#: 5
+
+PLANET: ( @002434 )
+ Type: 16
+ Star_X: 219 Star_Y: 177 Orbit#: 6
+
+PLANET: ( @002429 )
+ Type: 16
+ Star_X: 219 Star_Y: 177 Orbit#: 7
+
+PLANET: ( @00241E )
+ Type: 13
+ Star_X: 219 Star_Y: 177 Orbit#: 8
+
+STARSYSTEM: ( @002460 )
+ Type: F Star_X: 160 Star_Y: 44
+ FlareDay: 160 ( 11-6-4620 )
+
+PLANET: ( @00247E )
+ Type: 17
+ Star_X: 160 Star_Y: 44 Orbit#: 3
+
+PLANET: ( @002473 )
+ Type: 17
+ Star_X: 160 Star_Y: 44 Orbit#: 5
+
+STARSYSTEM: ( @002489 )
+ Type: A Star_X: 221 Star_Y: 109
+ FlareDay: -84 ( unknown )
+
+PLANET: ( @0024BD )
+ Type: 3
+ Star_X: 221 Star_Y: 109 Orbit#: 2
+
+PLANET: ( @0024B2 )
+ Type: 7
+ Star_X: 221 Star_Y: 109 Orbit#: 6
+
+PLANET: ( @0024A7 )
+ Type: 17
+ Star_X: 221 Star_Y: 109 Orbit#: 7
+
+PLANET: ( @00249C )
+ Type: 15
+ Star_X: 221 Star_Y: 109 Orbit#: 8
+
+STARSYSTEM: ( @0024C8 )
+ Type: F Star_X: 226 Star_Y: 208
+ FlareDay: -104 ( unknown )
+
+PLANET: ( @0024FC )
+ Type: 6
+ Star_X: 226 Star_Y: 208 Orbit#: 2
+
+PLANET: ( @0024F1 )
+ Type: 17
+ Star_X: 226 Star_Y: 208 Orbit#: 3
+
+PLANET: ( @0024E6 )
+ Type: 16
+ Star_X: 226 Star_Y: 208 Orbit#: 6
+
+PLANET: ( @0024DB )
+ Type: 13
+ Star_X: 226 Star_Y: 208 Orbit#: 7
+
+STARSYSTEM: ( @002507 )
+ Type: F Star_X: 207 Star_Y: 217
+ FlareDay: -28 ( unknown )
+
+STARSYSTEM: ( @00251A )
+ Type: M Star_X: 179 Star_Y: 211
+ FlareDay: 84 ( 25-3-4620 )
+
+PLANET: ( @00254E )
+ Type: 10
+ Star_X: 179 Star_Y: 211 Orbit#: 1
+
+PLANET: ( @002543 )
+ Type: 17
+ Star_X: 179 Star_Y: 211 Orbit#: 3
+
+PLANET: ( @002538 )
+ Type: 16
+ Star_X: 179 Star_Y: 211 Orbit#: 4
+
+PLANET: ( @00252D )
+ Type: 16
+ Star_X: 179 Star_Y: 211 Orbit#: 7
+
+STARSYSTEM: ( @002559 )
+ Type: F Star_X: 176 Star_Y: 202
+ FlareDay: 96 ( 7-4-4620 )
+
+PLANET: ( @00256C )
+ Type: 8
+ Star_X: 176 Star_Y: 202 Orbit#: 2
+
+STARSYSTEM: ( @002577 )
+ Type: G Star_X: 174 Star_Y: 200
+ FlareDay: 104 ( 15-4-4620 )
+
+PLANET: ( @0025D7 )
+ Type: 5
+ Star_X: 174 Star_Y: 200 Orbit#: 1
+
+PLANET: ( @0025CC )
+ Type: 5
+ Star_X: 174 Star_Y: 200 Orbit#: 2
+
+PLANET: ( @0025C1 )
+ Type: 8
+ Star_X: 174 Star_Y: 200 Orbit#: 3
+
+PLANET: ( @0025B6 )
+ Type: 12
+ Star_X: 174 Star_Y: 200 Orbit#: 4
+
+PLANET: ( @0025AB )
+ Type: 17
+ Star_X: 174 Star_Y: 200 Orbit#: 5
+
+PLANET: ( @0025A0 )
+ Type: 16
+ Star_X: 174 Star_Y: 200 Orbit#: 6
+
+PLANET: ( @002595 )
+ Type: 13
+ Star_X: 174 Star_Y: 200 Orbit#: 7
+
+PLANET: ( @00258A )
+ Type: 16
+ Star_X: 174 Star_Y: 200 Orbit#: 8
+
+STARSYSTEM: ( @0025E2 )
+ Type: M Star_X: 184 Star_Y: 200
+ FlareDay: 64 ( 5-3-4620 )
+
+PLANET: ( @002621 )
+ Type: 6
+ Star_X: 184 Star_Y: 200 Orbit#: 1
+
+PLANET: ( @002616 )
+ Type: 14
+ Star_X: 184 Star_Y: 200 Orbit#: 3
+
+PLANET: ( @00260B )
+ Type: 16
+ Star_X: 184 Star_Y: 200 Orbit#: 4
+
+PLANET: ( @002600 )
+ Type: 16
+ Star_X: 184 Star_Y: 200 Orbit#: 5
+
+PLANET: ( @0025F5 )
+ Type: 13
+ Star_X: 184 Star_Y: 200 Orbit#: 7
+
+STARSYSTEM: ( @00262C )
+ Type: F Star_X: 179 Star_Y: 195
+ FlareDay: 84 ( 25-3-4620 )
+
+PLANET: ( @002660 )
+ Type: 5
+ Star_X: 179 Star_Y: 195 Orbit#: 2
+
+PLANET: ( @002655 )
+ Type: 17
+ Star_X: 179 Star_Y: 195 Orbit#: 4
+
+PLANET: ( @00264A )
+ Type: 57
+ Star_X: 179 Star_Y: 195 Orbit#: 6
+
+PLANET: ( @00263F )
+ Type: 14
+ Star_X: 179 Star_Y: 195 Orbit#: 8
+
+STARSYSTEM: ( @00266B )
+ Type: F Star_X: 187 Star_Y: 193
+ FlareDay: 52 ( 23-2-4620 )
+
+PLANET: ( @00267E )
+ Type: 7
+ Star_X: 187 Star_Y: 193 Orbit#: 2
+
+STARSYSTEM: ( @002689 )
+ Type: A Star_X: 186 Star_Y: 193
+ FlareDay: 56 ( 27-2-4620 )
+
+STARSYSTEM: ( @00269C )
+ Type: B Star_X: 163 Star_Y: 184
+ FlareDay: 148 ( 29-5-4620 )
+
+STARSYSTEM: ( @0026AF )
+ Type: G Star_X: 199 Star_Y: 181
+ FlareDay: 4 ( 5-1-4620 )
+
+PLANET: ( @0026E3 )
+ Type: 5
+ Star_X: 199 Star_Y: 181 Orbit#: 3
+
+PLANET: ( @0026D8 )
+ Type: 11
+ Star_X: 199 Star_Y: 181 Orbit#: 4
+
+PLANET: ( @0026CD )
+ Type: 17
+ Star_X: 199 Star_Y: 181 Orbit#: 5
+
+PLANET: ( @0026C2 )
+ Type: 15
+ Star_X: 199 Star_Y: 181 Orbit#: 7
+
+STARSYSTEM: ( @0026EE )
+ Type: F Star_X: 179 Star_Y: 173
+ FlareDay: 84 ( 25-3-4620 )
+
+PLANET: ( @002717 )
+ Type: 1
+ Star_X: 179 Star_Y: 173 Orbit#: 1
+
+PLANET: ( @00270C )
+ Type: 8
+ Star_X: 179 Star_Y: 173 Orbit#: 2
+
+PLANET: ( @002701 )
+ Type: 6
+ Star_X: 179 Star_Y: 173 Orbit#: 4
+
+STARSYSTEM: ( @002722 )
+ Type: K Star_X: 172 Star_Y: 171
+ FlareDay: 112 ( 23-4-4620 )
+
+PLANET: ( @002740 )
+ Type: 7
+ Star_X: 172 Star_Y: 171 Orbit#: 2
+
+PLANET: ( @002735 )
+ Type: 13
+ Star_X: 172 Star_Y: 171 Orbit#: 6
+
+STARSYSTEM: ( @00274B )
+ Type: G Star_X: 179 Star_Y: 169
+ FlareDay: 84 ( 25-3-4620 )
+
+PLANET: ( @0027A0 )
+ Type: 6
+ Star_X: 179 Star_Y: 169 Orbit#: 1
+
+PLANET: ( @002795 )
+ Type: 6
+ Star_X: 179 Star_Y: 169 Orbit#: 2
+
+PLANET: ( @00278A )
+ Type: 10
+ Star_X: 179 Star_Y: 169 Orbit#: 3
+
+PLANET: ( @00277F )
+ Type: 8
+ Star_X: 179 Star_Y: 169 Orbit#: 4
+
+PLANET: ( @002774 )
+ Type: 17
+ Star_X: 179 Star_Y: 169 Orbit#: 5
+
+PLANET: ( @002769 )
+ Type: 16
+ Star_X: 179 Star_Y: 169 Orbit#: 6
+
+PLANET: ( @00275E )
+ Type: 13
+ Star_X: 179 Star_Y: 169 Orbit#: 8
+
+STARSYSTEM: ( @0027AB )
+ Type: M Star_X: 182 Star_Y: 170
+ FlareDay: 72 ( 13-3-4620 )
+
+PLANET: ( @0027DF )
+ Type: 5
+ Star_X: 182 Star_Y: 170 Orbit#: 2
+
+PLANET: ( @0027D4 )
+ Type: 5
+ Star_X: 182 Star_Y: 170 Orbit#: 3
+
+PLANET: ( @0027C9 )
+ Type: 13
+ Star_X: 182 Star_Y: 170 Orbit#: 5
+
+PLANET: ( @0027BE )
+ Type: 13
+ Star_X: 182 Star_Y: 170 Orbit#: 6
+
+STARSYSTEM: ( @0027EA )
+ Type: G Star_X: 145 Star_Y: 206
+ FlareDay: 220 ( 11-8-4620 )
+
+PLANET: ( @00280B )
+ Type: 17
+ Star_X: 145 Star_Y: 206 Orbit#: 4
+
+PLANET: ( @002800 )
+ Type: 15
+ Star_X: 145 Star_Y: 206 Orbit#: 8
+
+STARSYSTEM: ( @002816 )
+ Type: K Star_X: 129 Star_Y: 214
+ FlareDay: 284 ( 15-10-4620 )
+
+PLANET: ( @002829 )
+ Type: 16
+ Star_X: 129 Star_Y: 214 Orbit#: 6
+
+STARSYSTEM: ( @002834 )
+ Type: F Star_X: 127 Star_Y: 213
+ FlareDay: 292 ( 23-10-4620 )
+
+PLANET: ( @002873 )
+ Type: 6
+ Star_X: 127 Star_Y: 213 Orbit#: 2
+
+PLANET: ( @002868 )
+ Type: 17
+ Star_X: 127 Star_Y: 213 Orbit#: 3
+
+PLANET: ( @00285D )
+ Type: 17
+ Star_X: 127 Star_Y: 213 Orbit#: 4
+
+PLANET: ( @002852 )
+ Type: 17
+ Star_X: 127 Star_Y: 213 Orbit#: 5
+
+PLANET: ( @002847 )
+ Type: 14
+ Star_X: 127 Star_Y: 213 Orbit#: 6
+
+ENCOUNTER: ( @007230 )
+ Type: 9 ( Uhlek ) Star_X: 127 Star_Y: 213
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @00287E )
+ Type: F Star_X: 125 Star_Y: 189
+ FlareDay: 300 ( 1-1-4621 )
+
+PLANET: ( @0028A7 )
+ Type: 7
+ Star_X: 125 Star_Y: 189 Orbit#: 2
+
+PLANET: ( @00289C )
+ Type: 9
+ Star_X: 125 Star_Y: 189 Orbit#: 4
+
+PLANET: ( @002891 )
+ Type: 16
+ Star_X: 125 Star_Y: 189 Orbit#: 8
+
+STARSYSTEM: ( @0028B2 )
+ Type: M Star_X: 128 Star_Y: 187
+ FlareDay: 288 ( 19-10-4620 )
+
+PLANET: ( @0028D0 )
+ Type: 11
+ Star_X: 128 Star_Y: 187 Orbit#: 1
+
+PLANET: ( @0028C5 )
+ Type: 13
+ Star_X: 128 Star_Y: 187 Orbit#: 8
+
+STARSYSTEM: ( @0028DB )
+ Type: M Star_X: 128 Star_Y: 183
+ FlareDay: 288 ( 19-10-4620 )
+
+PLANET: ( @002904 )
+ Type: 17
+ Star_X: 128 Star_Y: 183 Orbit#: 2
+
+PLANET: ( @0028F9 )
+ Type: 6
+ Star_X: 128 Star_Y: 183 Orbit#: 4
+
+PLANET: ( @0028EE )
+ Type: 14
+ Star_X: 128 Star_Y: 183 Orbit#: 6
+
+STARSYSTEM: ( @00290F )
+ Type: F Star_X: 146 Star_Y: 177
+ FlareDay: 216 ( 7-8-4620 )
+
+STARSYSTEM: ( @002922 )
+ Type: G Star_X: 143 Star_Y: 175
+ FlareDay: 228 ( 19-8-4620 )
+
+PLANET: ( @00294B )
+ Type: 7
+ Star_X: 143 Star_Y: 175 Orbit#: 4
+
+PLANET: ( @002940 )
+ Type: 15
+ Star_X: 143 Star_Y: 175 Orbit#: 5
+
+PLANET: ( @002935 )
+ Type: 14
+ Star_X: 143 Star_Y: 175 Orbit#: 8
+
+STARSYSTEM: ( @002956 )
+ Type: G Star_X: 149 Star_Y: 173
+ FlareDay: 204 ( 25-7-4620 )
+
+PLANET: ( @002974 )
+ Type: 6
+ Star_X: 149 Star_Y: 173 Orbit#: 2
+
+PLANET: ( @002969 )
+ Type: 6
+ Star_X: 149 Star_Y: 173 Orbit#: 4
+
+STARSYSTEM: ( @00297F )
+ Type: G Star_X: 151 Star_Y: 173
+ FlareDay: 196 ( 17-7-4620 )
+
+PLANET: ( @0029C9 )
+ Type: 5
+ Star_X: 151 Star_Y: 173 Orbit#: 1
+
+PLANET: ( @0029BE )
+ Type: 5
+ Star_X: 151 Star_Y: 173 Orbit#: 2
+
+PLANET: ( @0029B3 )
+ Type: 10
+ Star_X: 151 Star_Y: 173 Orbit#: 4
+
+PLANET: ( @0029A8 )
+ Type: 17
+ Star_X: 151 Star_Y: 173 Orbit#: 5
+
+ENCOUNTER: ( @007380 )
+ Type: 10 ( Velox Probe ) Star_X: 151 Star_Y: 173 Orbit#: 5
+ Enabled: TRUE Homeword: TRUE Fleet Size: 1 Max: 1
+ Vessels: 18 0 0 0
+
+PLANET: ( @00299D )
+ Type: 13
+ Star_X: 151 Star_Y: 173 Orbit#: 6
+
+PLANET: ( @002992 )
+ Type: 13
+ Star_X: 151 Star_Y: 173 Orbit#: 7
+
+ENCOUNTER: ( @0065A4 )
+ Type: 8 ( Velox ) Star_X: 151 Star_Y: 173
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @00679C )
+ Type: 8 ( Velox ) Star_X: 151 Star_Y: 173
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+STARSYSTEM: ( @0029D4 )
+ Type: M Star_X: 145 Star_Y: 168
+ FlareDay: 220 ( 11-8-4620 )
+
+PLANET: ( @0029E7 )
+ Type: 15
+ Star_X: 145 Star_Y: 168 Orbit#: 3
+
+STARSYSTEM: ( @0029F2 )
+ Type: K Star_X: 136 Star_Y: 167
+ FlareDay: 256 ( 17-9-4620 )
+
+PLANET: ( @002A26 )
+ Type: 17
+ Star_X: 136 Star_Y: 167 Orbit#: 3
+
+PLANET: ( @002A1B )
+ Type: 17
+ Star_X: 136 Star_Y: 167 Orbit#: 4
+
+PLANET: ( @002A10 )
+ Type: 16
+ Star_X: 136 Star_Y: 167 Orbit#: 6
+
+PLANET: ( @002A05 )
+ Type: 14
+ Star_X: 136 Star_Y: 167 Orbit#: 8
+
+STARSYSTEM: ( @002A31 )
+ Type: A Star_X: 119 Star_Y: 162
+ FlareDay: 324 ( 25-1-4621 )
+
+PLANET: ( @002A4F )
+ Type: 8
+ Star_X: 119 Star_Y: 162 Orbit#: 5
+
+PLANET: ( @002A44 )
+ Type: 17
+ Star_X: 119 Star_Y: 162 Orbit#: 7
+
+STARSYSTEM: ( @002A5A )
+ Type: G Star_X: 121 Star_Y: 158
+ FlareDay: 316 ( 17-1-4621 )
+
+PLANET: ( @002A99 )
+ Type: 6
+ Star_X: 121 Star_Y: 158 Orbit#: 1
+
+PLANET: ( @002A8E )
+ Type: 5
+ Star_X: 121 Star_Y: 158 Orbit#: 2
+
+PLANET: ( @002A83 )
+ Type: 5
+ Star_X: 121 Star_Y: 158 Orbit#: 3
+
+PLANET: ( @002A78 )
+ Type: 15
+ Star_X: 121 Star_Y: 158 Orbit#: 5
+
+PLANET: ( @002A6D )
+ Type: 15
+ Star_X: 121 Star_Y: 158 Orbit#: 6
+
+STARSYSTEM: ( @002AA4 )
+ Type: B Star_X: 136 Star_Y: 158
+ FlareDay: 256 ( 17-9-4620 )
+
+PLANET: ( @002AB7 )
+ Type: 7
+ Star_X: 136 Star_Y: 158 Orbit#: 5
+
+STARSYSTEM: ( @002AC2 )
+ Type: G Star_X: 137 Star_Y: 156
+ FlareDay: 252 ( 13-9-4620 )
+
+PLANET: ( @002B01 )
+ Type: 7
+ Star_X: 137 Star_Y: 156 Orbit#: 2
+
+PLANET: ( @002AF6 )
+ Type: 5
+ Star_X: 137 Star_Y: 156 Orbit#: 3
+
+PLANET: ( @002AEB )
+ Type: 12
+ Star_X: 137 Star_Y: 156 Orbit#: 4
+
+PLANET: ( @002AE0 )
+ Type: 16
+ Star_X: 137 Star_Y: 156 Orbit#: 6
+
+PLANET: ( @002AD5 )
+ Type: 16
+ Star_X: 137 Star_Y: 156 Orbit#: 8
+
+ENCOUNTER: ( @006748 )
+ Type: 8 ( Velox ) Star_X: 137 Star_Y: 156
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @006764 )
+ Type: 8 ( Velox ) Star_X: 137 Star_Y: 156
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @006780 )
+ Type: 8 ( Velox ) Star_X: 137 Star_Y: 156
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+STARSYSTEM: ( @002B0C )
+ Type: K Star_X: 137 Star_Y: 153
+ FlareDay: 252 ( 13-9-4620 )
+
+PLANET: ( @002B35 )
+ Type: 13
+ Star_X: 137 Star_Y: 153 Orbit#: 4
+
+PLANET: ( @002B2A )
+ Type: 16
+ Star_X: 137 Star_Y: 153 Orbit#: 6
+
+PLANET: ( @002B1F )
+ Type: 13
+ Star_X: 137 Star_Y: 153 Orbit#: 7
+
+STARSYSTEM: ( @002B40 )
+ Type: F Star_X: 166 Star_Y: 159
+ FlareDay: 136 ( 17-5-4620 )
+
+PLANET: ( @002B5E )
+ Type: 7
+ Star_X: 166 Star_Y: 159 Orbit#: 2
+
+PLANET: ( @002B53 )
+ Type: 11
+ Star_X: 166 Star_Y: 159 Orbit#: 5
+
+STARSYSTEM: ( @002B69 )
+ Type: M Star_X: 166 Star_Y: 158
+ FlareDay: 136 ( 17-5-4620 )
+
+STARSYSTEM: ( @002B7C )
+ Type: K Star_X: 162 Star_Y: 156
+ FlareDay: 152 ( 3-6-4620 )
+
+PLANET: ( @002BB0 )
+ Type: 6
+ Star_X: 162 Star_Y: 156 Orbit#: 1
+
+PLANET: ( @002BA5 )
+ Type: 7
+ Star_X: 162 Star_Y: 156 Orbit#: 2
+
+PLANET: ( @002B9A )
+ Type: 17
+ Star_X: 162 Star_Y: 156 Orbit#: 4
+
+PLANET: ( @002B8F )
+ Type: 14
+ Star_X: 162 Star_Y: 156 Orbit#: 6
+
+STARSYSTEM: ( @002BBB )
+ Type: G Star_X: 168 Star_Y: 148
+ FlareDay: 128 ( 9-5-4620 )
+
+PLANET: ( @002BE4 )
+ Type: 5
+ Star_X: 168 Star_Y: 148 Orbit#: 2
+
+PLANET: ( @002BD9 )
+ Type: 8
+ Star_X: 168 Star_Y: 148 Orbit#: 4
+
+PLANET: ( @002BCE )
+ Type: 15
+ Star_X: 168 Star_Y: 148 Orbit#: 5
+
+STARSYSTEM: ( @002C00 )
+ Type: F Star_X: 188 Star_Y: 148
+ FlareDay: 48 ( 19-2-4620 )
+
+PLANET: ( @002C13 )
+ Type: 13
+ Star_X: 188 Star_Y: 148 Orbit#: 7
+
+STARSYSTEM: ( @002C1E )
+ Type: K Star_X: 131 Star_Y: 146
+ FlareDay: 276 ( 7-10-4620 )
+
+PLANET: ( @002C5D )
+ Type: 6
+ Star_X: 131 Star_Y: 146 Orbit#: 2
+
+PLANET: ( @002C52 )
+ Type: 17
+ Star_X: 131 Star_Y: 146 Orbit#: 3
+
+PLANET: ( @002C47 )
+ Type: 15
+ Star_X: 131 Star_Y: 146 Orbit#: 6
+
+PLANET: ( @002C3C )
+ Type: 16
+ Star_X: 131 Star_Y: 146 Orbit#: 7
+
+PLANET: ( @002C31 )
+ Type: 14
+ Star_X: 131 Star_Y: 146 Orbit#: 8
+
+ENCOUNTER: ( @0065C0 )
+ Type: 8 ( Velox ) Star_X: 131 Star_Y: 146
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0065DC )
+ Type: 8 ( Velox ) Star_X: 131 Star_Y: 146
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0067B8 )
+ Type: 8 ( Velox ) Star_X: 131 Star_Y: 146
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0067D4 )
+ Type: 8 ( Velox ) Star_X: 131 Star_Y: 146
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+STARSYSTEM: ( @002C68 )
+ Type: K Star_X: 150 Star_Y: 138
+ FlareDay: 200 ( 21-7-4620 )
+
+PLANET: ( @002C86 )
+ Type: 8
+ Star_X: 150 Star_Y: 138 Orbit#: 3
+
+PLANET: ( @002C7B )
+ Type: 16
+ Star_X: 150 Star_Y: 138 Orbit#: 5
+
+STARSYSTEM: ( @002C91 )
+ Type: G Star_X: 160 Star_Y: 48
+ FlareDay: 160 ( 11-6-4620 )
+
+PLANET: ( @002CDB )
+ Type: 5
+ Star_X: 160 Star_Y: 48 Orbit#: 1
+
+PLANET: ( @002CD0 )
+ Type: 10
+ Star_X: 160 Star_Y: 48 Orbit#: 3
+
+PLANET: ( @002CC5 )
+ Type: 12
+ Star_X: 160 Star_Y: 48 Orbit#: 4
+
+PLANET: ( @002CBA )
+ Type: 14
+ Star_X: 160 Star_Y: 48 Orbit#: 6
+
+PLANET: ( @002CAF )
+ Type: 13
+ Star_X: 160 Star_Y: 48 Orbit#: 7
+
+PLANET: ( @002CA4 )
+ Type: 13
+ Star_X: 160 Star_Y: 48 Orbit#: 8
+
+ENCOUNTER: ( @006BD4 )
+ Type: 1 ( Elowan ) Star_X: 160 Star_Y: 48
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 5 6 7
+
+STARSYSTEM: ( @002CE6 )
+ Type: M Star_X: 144 Star_Y: 131
+ FlareDay: 224 ( 15-8-4620 )
+
+STARSYSTEM: ( @002CF9 )
+ Type: F Star_X: 114 Star_Y: 138
+ FlareDay: 344 ( 15-2-4621 )
+
+PLANET: ( @002D2D )
+ Type: 2
+ Star_X: 114 Star_Y: 138 Orbit#: 1
+
+PLANET: ( @002D22 )
+ Type: 5
+ Star_X: 114 Star_Y: 138 Orbit#: 3
+
+PLANET: ( @002D17 )
+ Type: 17
+ Star_X: 114 Star_Y: 138 Orbit#: 4
+
+PLANET: ( @002D0C )
+ Type: 15
+ Star_X: 114 Star_Y: 138 Orbit#: 7
+
+ENCOUNTER: ( @006A4C )
+ Type: 6 ( Spemin ) Star_X: 114 Star_Y: 138
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+STARSYSTEM: ( @002D38 )
+ Type: M Star_X: 128 Star_Y: 124
+ FlareDay: 288 ( 19-10-4620 )
+
+PLANET: ( @002D61 )
+ Type: 5
+ Star_X: 128 Star_Y: 124 Orbit#: 1
+
+ENCOUNTER: ( @007348 )
+ Type: 10 ( Velox Probe ) Star_X: 128 Star_Y: 124 Orbit#: 1
+ Enabled: TRUE Homeword: TRUE Fleet Size: 1 Max: 1
+ Vessels: 18 0 0 0
+
+PLANET: ( @002D56 )
+ Type: 11
+ Star_X: 128 Star_Y: 124 Orbit#: 2
+
+PLANET: ( @002D4B )
+ Type: 5
+ Star_X: 128 Star_Y: 124 Orbit#: 3
+
+ENCOUNTER: ( @00656C )
+ Type: 8 ( Velox ) Star_X: 128 Star_Y: 124
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @006588 )
+ Type: 8 ( Velox ) Star_X: 128 Star_Y: 124
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0066F4 )
+ Type: 8 ( Velox ) Star_X: 128 Star_Y: 124
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @006710 )
+ Type: 8 ( Velox ) Star_X: 128 Star_Y: 124
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @00672C )
+ Type: 8 ( Velox ) Star_X: 128 Star_Y: 124
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+STARSYSTEM: ( @002D6C )
+ Type: G Star_X: 129 Star_Y: 123
+ FlareDay: 284 ( 15-10-4620 )
+
+PLANET: ( @002D8A )
+ Type: 7
+ Star_X: 129 Star_Y: 123 Orbit#: 2
+
+PLANET: ( @002D7F )
+ Type: 17
+ Star_X: 129 Star_Y: 123 Orbit#: 5
+
+STARSYSTEM: ( @002D95 )
+ Type: F Star_X: 166 Star_Y: 121
+ FlareDay: 136 ( 17-5-4620 )
+
+PLANET: ( @002DA8 )
+ Type: 8
+ Star_X: 166 Star_Y: 121 Orbit#: 5
+
+STARSYSTEM: ( @002DB3 )
+ Type: G Star_X: 163 Star_Y: 119
+ FlareDay: 148 ( 29-5-4620 )
+
+PLANET: ( @002E08 )
+ Type: 5
+ Star_X: 163 Star_Y: 119 Orbit#: 2
+
+PLANET: ( @002DFD )
+ Type: 17
+ Star_X: 163 Star_Y: 119 Orbit#: 3
+
+PLANET: ( @002DF2 )
+ Type: 48
+ Star_X: 163 Star_Y: 119 Orbit#: 4
+
+ENCOUNTER: ( @007364 )
+ Type: 10 ( Velox Probe ) Star_X: 163 Star_Y: 119 Orbit#: 4
+ Enabled: TRUE Homeword: TRUE Fleet Size: 1 Max: 1
+ Vessels: 18 0 0 0
+
+PLANET: ( @002DE7 )
+ Type: 17
+ Star_X: 163 Star_Y: 119 Orbit#: 5
+
+PLANET: ( @002DDC )
+ Type: 13
+ Star_X: 163 Star_Y: 119 Orbit#: 6
+
+PLANET: ( @002DD1 )
+ Type: 16
+ Star_X: 163 Star_Y: 119 Orbit#: 7
+
+PLANET: ( @002DC6 )
+ Type: 13
+ Star_X: 163 Star_Y: 119 Orbit#: 8
+
+ENCOUNTER: ( @006800 )
+ Type: 8 ( Velox ) Star_X: 163 Star_Y: 119
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 11 12 13
+
+STARSYSTEM: ( @002E13 )
+ Type: G Star_X: 173 Star_Y: 118
+ FlareDay: 108 ( 19-4-4620 )
+
+PLANET: ( @002E31 )
+ Type: 17
+ Star_X: 173 Star_Y: 118 Orbit#: 2
+
+PLANET: ( @002E26 )
+ Type: 17
+ Star_X: 173 Star_Y: 118 Orbit#: 3
+
+STARSYSTEM: ( @002E3C )
+ Type: A Star_X: 151 Star_Y: 119
+ FlareDay: 196 ( 17-7-4620 )
+
+PLANET: ( @002E7B )
+ Type: 2
+ Star_X: 151 Star_Y: 119 Orbit#: 1
+
+PLANET: ( @002E70 )
+ Type: 2
+ Star_X: 151 Star_Y: 119 Orbit#: 2
+
+PLANET: ( @002E65 )
+ Type: 7
+ Star_X: 151 Star_Y: 119 Orbit#: 3
+
+PLANET: ( @002E5A )
+ Type: 17
+ Star_X: 151 Star_Y: 119 Orbit#: 5
+
+PLANET: ( @002E4F )
+ Type: 17
+ Star_X: 151 Star_Y: 119 Orbit#: 7
+
+STARSYSTEM: ( @002E86 )
+ Type: F Star_X: 131 Star_Y: 116
+ FlareDay: 276 ( 7-10-4620 )
+
+PLANET: ( @002EA4 )
+ Type: 5
+ Star_X: 131 Star_Y: 116 Orbit#: 4
+
+PLANET: ( @002E99 )
+ Type: 15
+ Star_X: 131 Star_Y: 116 Orbit#: 6
+
+STARSYSTEM: ( @002EAF )
+ Type: A Star_X: 175 Star_Y: 112
+ FlareDay: 100 ( 11-4-4620 )
+
+PLANET: ( @002EC2 )
+ Type: 17
+ Star_X: 175 Star_Y: 112 Orbit#: 3
+
+STARSYSTEM: ( @002ECD )
+ Type: F Star_X: 184 Star_Y: 112
+ FlareDay: 64 ( 5-3-4620 )
+
+STARSYSTEM: ( @002EE0 )
+ Type: O Star_X: 123 Star_Y: 107
+ FlareDay: 308 ( 9-1-4621 )
+
+PLANET: ( @002F1F )
+ Type: 3
+ Star_X: 123 Star_Y: 107 Orbit#: 2
+
+PLANET: ( @002F14 )
+ Type: 4
+ Star_X: 123 Star_Y: 107 Orbit#: 4
+
+PLANET: ( @002F09 )
+ Type: 8
+ Star_X: 123 Star_Y: 107 Orbit#: 5
+
+PLANET: ( @002EFE )
+ Type: 6
+ Star_X: 123 Star_Y: 107 Orbit#: 7
+
+PLANET: ( @002EF3 )
+ Type: 10
+ Star_X: 123 Star_Y: 107 Orbit#: 8
+
+STARSYSTEM: ( @002F2A )
+ Type: M Star_X: 157 Star_Y: 98
+ FlareDay: 172 ( 23-6-4620 )
+
+PLANET: ( @002F5E )
+ Type: 5
+ Star_X: 157 Star_Y: 98 Orbit#: 1
+
+PLANET: ( @002F53 )
+ Type: 17
+ Star_X: 157 Star_Y: 98 Orbit#: 3
+
+PLANET: ( @002F48 )
+ Type: 15
+ Star_X: 157 Star_Y: 98 Orbit#: 4
+
+PLANET: ( @002F3D )
+ Type: 16
+ Star_X: 157 Star_Y: 98 Orbit#: 6
+
+STARSYSTEM: ( @002F69 )
+ Type: K Star_X: 158 Star_Y: 95
+ FlareDay: 168 ( 19-6-4620 )
+
+PLANET: ( @002FBE )
+ Type: 5
+ Star_X: 158 Star_Y: 95 Orbit#: 1
+
+PLANET: ( @002FB3 )
+ Type: 5
+ Star_X: 158 Star_Y: 95 Orbit#: 2
+
+PLANET: ( @002FA8 )
+ Type: 12
+ Star_X: 158 Star_Y: 95 Orbit#: 3
+
+PLANET: ( @002F9D )
+ Type: 17
+ Star_X: 158 Star_Y: 95 Orbit#: 4
+
+PLANET: ( @002F92 )
+ Type: 16
+ Star_X: 158 Star_Y: 95 Orbit#: 5
+
+PLANET: ( @002F87 )
+ Type: 14
+ Star_X: 158 Star_Y: 95 Orbit#: 6
+
+PLANET: ( @002F7C )
+ Type: 14
+ Star_X: 158 Star_Y: 95 Orbit#: 8
+
+STARSYSTEM: ( @002FC9 )
+ Type: B Star_X: 156 Star_Y: 94
+ FlareDay: 176 ( 27-6-4620 )
+
+PLANET: ( @002FE7 )
+ Type: 1
+ Star_X: 156 Star_Y: 94 Orbit#: 2
+
+PLANET: ( @002FDC )
+ Type: 7
+ Star_X: 156 Star_Y: 94 Orbit#: 7
+
+STARSYSTEM: ( @003000 )
+ Type: K Star_X: 157 Star_Y: 91
+ FlareDay: 172 ( 23-6-4620 )
+
+PLANET: ( @003013 )
+ Type: 16
+ Star_X: 157 Star_Y: 91 Orbit#: 5
+
+STARSYSTEM: ( @00301E )
+ Type: F Star_X: 143 Star_Y: 82
+ FlareDay: 228 ( 19-8-4620 )
+
+PLANET: ( @003052 )
+ Type: 7
+ Star_X: 143 Star_Y: 82 Orbit#: 2
+
+PLANET: ( @003047 )
+ Type: 7
+ Star_X: 143 Star_Y: 82 Orbit#: 3
+
+PLANET: ( @00303C )
+ Type: 9
+ Star_X: 143 Star_Y: 82 Orbit#: 4
+
+PLANET: ( @003031 )
+ Type: 7
+ Star_X: 143 Star_Y: 82 Orbit#: 5
+
+STARSYSTEM: ( @00305D )
+ Type: F Star_X: 145 Star_Y: 81
+ FlareDay: 220 ( 11-8-4620 )
+
+PLANET: ( @00309C )
+ Type: 1
+ Star_X: 145 Star_Y: 81 Orbit#: 1
+
+PLANET: ( @003091 )
+ Type: 6
+ Star_X: 145 Star_Y: 81 Orbit#: 2
+
+PLANET: ( @003086 )
+ Type: 17
+ Star_X: 145 Star_Y: 81 Orbit#: 4
+
+PLANET: ( @00307B )
+ Type: 17
+ Star_X: 145 Star_Y: 81 Orbit#: 7
+
+PLANET: ( @003070 )
+ Type: 15
+ Star_X: 145 Star_Y: 81 Orbit#: 8
+
+STARSYSTEM: ( @0030A7 )
+ Type: B Star_X: 144 Star_Y: 80
+ FlareDay: 224 ( 15-8-4620 )
+
+PLANET: ( @0030C5 )
+ Type: 3
+ Star_X: 144 Star_Y: 80 Orbit#: 2
+
+PLANET: ( @0030BA )
+ Type: 17
+ Star_X: 144 Star_Y: 80 Orbit#: 7
+
+STARSYSTEM: ( @0030D0 )
+ Type: G Star_X: 114 Star_Y: 92
+ FlareDay: 344 ( 15-2-4621 )
+
+STARSYSTEM: ( @0030E3 )
+ Type: M Star_X: 117 Star_Y: 114
+ FlareDay: 332 ( 3-2-4621 )
+
+PLANET: ( @00310C )
+ Type: 6
+ Star_X: 117 Star_Y: 114 Orbit#: 2
+
+PLANET: ( @003101 )
+ Type: 17
+ Star_X: 117 Star_Y: 114 Orbit#: 3
+
+PLANET: ( @0030F6 )
+ Type: 14
+ Star_X: 117 Star_Y: 114 Orbit#: 6
+
+ENCOUNTER: ( @006A30 )
+ Type: 6 ( Spemin ) Star_X: 117 Star_Y: 114
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+STARSYSTEM: ( @003117 )
+ Type: A Star_X: 118 Star_Y: 176
+ FlareDay: 328 ( 29-1-4621 )
+
+PLANET: ( @003177 )
+ Type: 3
+ Star_X: 118 Star_Y: 176 Orbit#: 1
+
+PLANET: ( @00316C )
+ Type: 2
+ Star_X: 118 Star_Y: 176 Orbit#: 2
+
+PLANET: ( @003161 )
+ Type: 6
+ Star_X: 118 Star_Y: 176 Orbit#: 3
+
+PLANET: ( @003156 )
+ Type: 17
+ Star_X: 118 Star_Y: 176 Orbit#: 4
+
+PLANET: ( @00314B )
+ Type: 12
+ Star_X: 118 Star_Y: 176 Orbit#: 5
+
+PLANET: ( @003140 )
+ Type: 11
+ Star_X: 118 Star_Y: 176 Orbit#: 6
+
+PLANET: ( @003135 )
+ Type: 17
+ Star_X: 118 Star_Y: 176 Orbit#: 7
+
+PLANET: ( @00312A )
+ Type: 14
+ Star_X: 118 Star_Y: 176 Orbit#: 8
+
+ENCOUNTER: ( @007284 )
+ Type: 9 ( Uhlek ) Star_X: 118 Star_Y: 176
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @003182 )
+ Type: F Star_X: 93 Star_Y: 207
+ FlareDay: 428 ( 9-5-4621 )
+
+PLANET: ( @0031B6 )
+ Type: 6
+ Star_X: 93 Star_Y: 207 Orbit#: 2
+
+PLANET: ( @0031AB )
+ Type: 17
+ Star_X: 93 Star_Y: 207 Orbit#: 4
+
+PLANET: ( @0031A0 )
+ Type: 17
+ Star_X: 93 Star_Y: 207 Orbit#: 5
+
+PLANET: ( @003195 )
+ Type: 13
+ Star_X: 93 Star_Y: 207 Orbit#: 7
+
+STARSYSTEM: ( @0031C1 )
+ Type: G Star_X: 87 Star_Y: 204
+ FlareDay: 452 ( 3-6-4621 )
+
+PLANET: ( @0031DF )
+ Type: 12
+ Star_X: 87 Star_Y: 204 Orbit#: 3
+
+PLANET: ( @0031D4 )
+ Type: 12
+ Star_X: 87 Star_Y: 204 Orbit#: 4
+
+STARSYSTEM: ( @0031EA )
+ Type: K Star_X: 70 Star_Y: 208
+ FlareDay: 520 ( 11-8-4621 )
+
+PLANET: ( @003234 )
+ Type: 5
+ Star_X: 70 Star_Y: 208 Orbit#: 1
+
+PLANET: ( @003229 )
+ Type: 17
+ Star_X: 70 Star_Y: 208 Orbit#: 2
+
+PLANET: ( @00321E )
+ Type: 17
+ Star_X: 70 Star_Y: 208 Orbit#: 3
+
+PLANET: ( @003213 )
+ Type: 17
+ Star_X: 70 Star_Y: 208 Orbit#: 5
+
+PLANET: ( @003208 )
+ Type: 14
+ Star_X: 70 Star_Y: 208 Orbit#: 6
+
+PLANET: ( @0031FD )
+ Type: 14
+ Star_X: 70 Star_Y: 208 Orbit#: 7
+
+ENCOUNTER: ( @00724C )
+ Type: 9 ( Uhlek ) Star_X: 70 Star_Y: 208
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @007268 )
+ Type: 9 ( Uhlek ) Star_X: 70 Star_Y: 208
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @00323F )
+ Type: M Star_X: 68 Star_Y: 211
+ FlareDay: 528 ( 19-8-4621 )
+
+PLANET: ( @003273 )
+ Type: 6
+ Star_X: 68 Star_Y: 211 Orbit#: 1
+
+PLANET: ( @003268 )
+ Type: 6
+ Star_X: 68 Star_Y: 211 Orbit#: 2
+
+PLANET: ( @00325D )
+ Type: 15
+ Star_X: 68 Star_Y: 211 Orbit#: 4
+
+PLANET: ( @003252 )
+ Type: 16
+ Star_X: 68 Star_Y: 211 Orbit#: 6
+
+STARSYSTEM: ( @00327E )
+ Type: F Star_X: 67 Star_Y: 208
+ FlareDay: 532 ( 23-8-4621 )
+
+PLANET: ( @00329C )
+ Type: 6
+ Star_X: 67 Star_Y: 208 Orbit#: 4
+
+PLANET: ( @003291 )
+ Type: 17
+ Star_X: 67 Star_Y: 208 Orbit#: 6
+
+STARSYSTEM: ( @0032A7 )
+ Type: G Star_X: 64 Star_Y: 209
+ FlareDay: 544 ( 5-9-4621 )
+
+STARSYSTEM: ( @0032BA )
+ Type: M Star_X: 65 Star_Y: 202
+ FlareDay: 540 ( 1-9-4621 )
+
+PLANET: ( @0032F9 )
+ Type: 15
+ Star_X: 65 Star_Y: 202 Orbit#: 3
+
+PLANET: ( @0032EE )
+ Type: 16
+ Star_X: 65 Star_Y: 202 Orbit#: 4
+
+PLANET: ( @0032E3 )
+ Type: 16
+ Star_X: 65 Star_Y: 202 Orbit#: 5
+
+PLANET: ( @0032D8 )
+ Type: 16
+ Star_X: 65 Star_Y: 202 Orbit#: 7
+
+PLANET: ( @0032CD )
+ Type: 14
+ Star_X: 65 Star_Y: 202 Orbit#: 8
+
+STARSYSTEM: ( @003304 )
+ Type: F Star_X: 56 Star_Y: 202
+ FlareDay: 576 ( 7-10-4621 )
+
+PLANET: ( @003338 )
+ Type: 1
+ Star_X: 56 Star_Y: 202 Orbit#: 1
+
+PLANET: ( @00332D )
+ Type: 5
+ Star_X: 56 Star_Y: 202 Orbit#: 2
+
+PLANET: ( @003322 )
+ Type: 15
+ Star_X: 56 Star_Y: 202 Orbit#: 7
+
+PLANET: ( @003317 )
+ Type: 13
+ Star_X: 56 Star_Y: 202 Orbit#: 8
+
+STARSYSTEM: ( @003343 )
+ Type: K Star_X: 17 Star_Y: 213
+ FlareDay: 732 ( 13-5-4622 )
+
+PLANET: ( @00338D )
+ Type: 9
+ Star_X: 17 Star_Y: 213 Orbit#: 2
+
+PLANET: ( @003382 )
+ Type: 60
+ Star_X: 17 Star_Y: 213 Orbit#: 3
+
+PLANET: ( @003377 )
+ Type: 12
+ Star_X: 17 Star_Y: 213 Orbit#: 4
+
+PLANET: ( @00336C )
+ Type: 16
+ Star_X: 17 Star_Y: 213 Orbit#: 6
+
+PLANET: ( @003361 )
+ Type: 13
+ Star_X: 17 Star_Y: 213 Orbit#: 7
+
+PLANET: ( @003356 )
+ Type: 13
+ Star_X: 17 Star_Y: 213 Orbit#: 8
+
+ENCOUNTER: ( @007134 )
+ Type: 9 ( Uhlek ) Star_X: 17 Star_Y: 213
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @007150 )
+ Type: 9 ( Uhlek ) Star_X: 17 Star_Y: 213
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @003398 )
+ Type: M Star_X: 15 Star_Y: 214
+ FlareDay: 740 ( 21-5-4622 )
+
+PLANET: ( @0033AB )
+ Type: 13
+ Star_X: 15 Star_Y: 214 Orbit#: 5
+
+STARSYSTEM: ( @0033B6 )
+ Type: F Star_X: 2 Star_Y: 206
+ FlareDay: 792 ( 13-7-4622 )
+
+PLANET: ( @0033C9 )
+ Type: 17
+ Star_X: 2 Star_Y: 206 Orbit#: 3
+
+STARSYSTEM: ( @0033D4 )
+ Type: M Star_X: 13 Star_Y: 197
+ FlareDay: 748 ( 29-5-4622 )
+
+PLANET: ( @00340B )
+ Type: 10
+ Star_X: 13 Star_Y: 197 Orbit#: 2
+
+PLANET: ( @003400 )
+ Type: 16
+ Star_X: 13 Star_Y: 197 Orbit#: 4
+
+PLANET: ( @0033F2 )
+ Type: 14
+ Star_X: 13 Star_Y: 197 Orbit#: 5
+
+PLANET: ( @0033E7 )
+ Type: 16
+ Star_X: 13 Star_Y: 197 Orbit#: 7
+
+STARSYSTEM: ( @003416 )
+ Type: O Star_X: 103 Star_Y: 185
+ FlareDay: 388 ( 29-3-4621 )
+
+PLANET: ( @00343F )
+ Type: 2
+ Star_X: 103 Star_Y: 185 Orbit#: 1
+
+PLANET: ( @003434 )
+ Type: 17
+ Star_X: 103 Star_Y: 185 Orbit#: 6
+
+PLANET: ( @003429 )
+ Type: 11
+ Star_X: 103 Star_Y: 185 Orbit#: 7
+
+STARSYSTEM: ( @00344A )
+ Type: K Star_X: 67 Star_Y: 184
+ FlareDay: 532 ( 23-8-4621 )
+
+PLANET: ( @003473 )
+ Type: 8
+ Star_X: 67 Star_Y: 184 Orbit#: 3
+
+PLANET: ( @003468 )
+ Type: 17
+ Star_X: 67 Star_Y: 184 Orbit#: 4
+
+PLANET: ( @00345D )
+ Type: 14
+ Star_X: 67 Star_Y: 184 Orbit#: 5
+
+STARSYSTEM: ( @00347E )
+ Type: G Star_X: 104 Star_Y: 169
+ FlareDay: 384 ( 25-3-4621 )
+
+STARSYSTEM: ( @003491 )
+ Type: F Star_X: 105 Star_Y: 165
+ FlareDay: 380 ( 21-3-4621 )
+
+PLANET: ( @0034DB )
+ Type: 2
+ Star_X: 105 Star_Y: 165 Orbit#: 1
+
+PLANET: ( @0034D0 )
+ Type: 7
+ Star_X: 105 Star_Y: 165 Orbit#: 2
+
+PLANET: ( @0034C5 )
+ Type: 17
+ Star_X: 105 Star_Y: 165 Orbit#: 4
+
+PLANET: ( @0034BA )
+ Type: 56
+ Star_X: 105 Star_Y: 165 Orbit#: 5
+
+PLANET: ( @0034AF )
+ Type: 17
+ Star_X: 105 Star_Y: 165 Orbit#: 6
+
+PLANET: ( @0034A4 )
+ Type: 13
+ Star_X: 105 Star_Y: 165 Orbit#: 7
+
+ENCOUNTER: ( @006934 )
+ Type: 6 ( Spemin ) Star_X: 105 Star_Y: 165
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @006950 )
+ Type: 6 ( Spemin ) Star_X: 105 Star_Y: 165
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @00696C )
+ Type: 6 ( Spemin ) Star_X: 105 Star_Y: 165
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+STARSYSTEM: ( @0034E6 )
+ Type: M Star_X: 85 Star_Y: 168
+ FlareDay: 460 ( 11-6-4621 )
+
+PLANET: ( @00350F )
+ Type: 6
+ Star_X: 85 Star_Y: 168 Orbit#: 2
+
+PLANET: ( @003504 )
+ Type: 16
+ Star_X: 85 Star_Y: 168 Orbit#: 4
+
+PLANET: ( @0034F9 )
+ Type: 16
+ Star_X: 85 Star_Y: 168 Orbit#: 6
+
+STARSYSTEM: ( @00351A )
+ Type: F Star_X: 83 Star_Y: 169
+ FlareDay: 468 ( 19-6-4621 )
+
+PLANET: ( @003538 )
+ Type: 15
+ Star_X: 83 Star_Y: 169 Orbit#: 6
+
+PLANET: ( @00352D )
+ Type: 13
+ Star_X: 83 Star_Y: 169 Orbit#: 7
+
+STARSYSTEM: ( @003543 )
+ Type: G Star_X: 69 Star_Y: 163
+ FlareDay: 524 ( 15-8-4621 )
+
+PLANET: ( @003561 )
+ Type: 7
+ Star_X: 69 Star_Y: 163 Orbit#: 3
+
+PLANET: ( @003556 )
+ Type: 14
+ Star_X: 69 Star_Y: 163 Orbit#: 5
+
+STARSYSTEM: ( @00356C )
+ Type: F Star_X: 35 Star_Y: 173
+ FlareDay: 660 ( 1-3-4622 )
+
+PLANET: ( @00357F )
+ Type: 11
+ Star_X: 35 Star_Y: 173 Orbit#: 5
+
+STARSYSTEM: ( @00358A )
+ Type: M Star_X: 32 Star_Y: 172
+ FlareDay: 672 ( 13-3-4622 )
+
+PLANET: ( @0035D4 )
+ Type: 10
+ Star_X: 32 Star_Y: 172 Orbit#: 1
+
+PLANET: ( @0035C9 )
+ Type: 10
+ Star_X: 32 Star_Y: 172 Orbit#: 2
+
+PLANET: ( @0035BE )
+ Type: 17
+ Star_X: 32 Star_Y: 172 Orbit#: 3
+
+PLANET: ( @0035B3 )
+ Type: 16
+ Star_X: 32 Star_Y: 172 Orbit#: 4
+
+PLANET: ( @0035A8 )
+ Type: 16
+ Star_X: 32 Star_Y: 172 Orbit#: 5
+
+PLANET: ( @00359D )
+ Type: 15
+ Star_X: 32 Star_Y: 172 Orbit#: 6
+
+ENCOUNTER: ( @00716C )
+ Type: 9 ( Uhlek ) Star_X: 32 Star_Y: 172
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @0035DF )
+ Type: M Star_X: 27 Star_Y: 172
+ FlareDay: 692 ( 3-4-4622 )
+
+PLANET: ( @0035F2 )
+ Type: 6
+ Star_X: 27 Star_Y: 172 Orbit#: 1
+
+STARSYSTEM: ( @0035FD )
+ Type: F Star_X: 26 Star_Y: 173
+ FlareDay: 696 ( 7-4-4622 )
+
+PLANET: ( @003631 )
+ Type: 7
+ Star_X: 26 Star_Y: 173 Orbit#: 2
+
+PLANET: ( @003626 )
+ Type: 8
+ Star_X: 26 Star_Y: 173 Orbit#: 4
+
+PLANET: ( @00361B )
+ Type: 8
+ Star_X: 26 Star_Y: 173 Orbit#: 5
+
+PLANET: ( @003610 )
+ Type: 15
+ Star_X: 26 Star_Y: 173 Orbit#: 7
+
+STARSYSTEM: ( @00363C )
+ Type: K Star_X: 101 Star_Y: 156
+ FlareDay: 396 ( 7-4-4621 )
+
+STARSYSTEM: ( @00364F )
+ Type: G Star_X: 91 Star_Y: 139
+ FlareDay: 436 ( 17-5-4621 )
+
+PLANET: ( @00366D )
+ Type: 16
+ Star_X: 91 Star_Y: 139 Orbit#: 5
+
+PLANET: ( @003662 )
+ Type: 14
+ Star_X: 91 Star_Y: 139 Orbit#: 7
+
+STARSYSTEM: ( @003678 )
+ Type: F Star_X: 16 Star_Y: 163
+ FlareDay: 736 ( 17-5-4622 )
+
+PLANET: ( @0036AC )
+ Type: 5
+ Star_X: 16 Star_Y: 163 Orbit#: 3
+
+PLANET: ( @0036A1 )
+ Type: 5
+ Star_X: 16 Star_Y: 163 Orbit#: 4
+
+PLANET: ( @003696 )
+ Type: 9
+ Star_X: 16 Star_Y: 163 Orbit#: 5
+
+PLANET: ( @00368B )
+ Type: 17
+ Star_X: 16 Star_Y: 163 Orbit#: 6
+
+STARSYSTEM: ( @0036B7 )
+ Type: G Star_X: 21 Star_Y: 155
+ FlareDay: 716 ( 27-4-4622 )
+
+PLANET: ( @0036E0 )
+ Type: 6
+ Star_X: 21 Star_Y: 155 Orbit#: 2
+
+PLANET: ( @0036D5 )
+ Type: 17
+ Star_X: 21 Star_Y: 155 Orbit#: 3
+
+PLANET: ( @0036CA )
+ Type: 14
+ Star_X: 21 Star_Y: 155 Orbit#: 8
+
+STARSYSTEM: ( @0036EB )
+ Type: G Star_X: 23 Star_Y: 152
+ FlareDay: 708 ( 19-4-4622 )
+
+PLANET: ( @003709 )
+ Type: 10
+ Star_X: 23 Star_Y: 152 Orbit#: 4
+
+PLANET: ( @0036FE )
+ Type: 14
+ Star_X: 23 Star_Y: 152 Orbit#: 7
+
+STARSYSTEM: ( @003714 )
+ Type: G Star_X: 31 Star_Y: 152
+ FlareDay: 676 ( 17-3-4622 )
+
+ENCOUNTER: ( @0072D8 )
+ Type: 9 ( Uhlek ) Star_X: 31 Star_Y: 152
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @003727 )
+ Type: A Star_X: 17 Star_Y: 150
+ FlareDay: 732 ( 13-5-4622 )
+
+PLANET: ( @003766 )
+ Type: 17
+ Star_X: 17 Star_Y: 150 Orbit#: 3
+
+PLANET: ( @00375B )
+ Type: 17
+ Star_X: 17 Star_Y: 150 Orbit#: 4
+
+PLANET: ( @003750 )
+ Type: 17
+ Star_X: 17 Star_Y: 150 Orbit#: 5
+
+PLANET: ( @003745 )
+ Type: 17
+ Star_X: 17 Star_Y: 150 Orbit#: 6
+
+PLANET: ( @00373A )
+ Type: 17
+ Star_X: 17 Star_Y: 150 Orbit#: 7
+
+STARSYSTEM: ( @003771 )
+ Type: F Star_X: 43 Star_Y: 151
+ FlareDay: 628 ( 29-1-4622 )
+
+PLANET: ( @00379A )
+ Type: 7
+ Star_X: 43 Star_Y: 151 Orbit#: 2
+
+PLANET: ( @00378F )
+ Type: 15
+ Star_X: 43 Star_Y: 151 Orbit#: 6
+
+PLANET: ( @003784 )
+ Type: 15
+ Star_X: 43 Star_Y: 151 Orbit#: 8
+
+STARSYSTEM: ( @0037A5 )
+ Type: K Star_X: 45 Star_Y: 151
+ FlareDay: 620 ( 21-1-4622 )
+
+PLANET: ( @0037EF )
+ Type: 5
+ Star_X: 45 Star_Y: 151 Orbit#: 1
+
+PLANET: ( @0037E4 )
+ Type: 55
+ Star_X: 45 Star_Y: 151 Orbit#: 2
+
+PLANET: ( @0037D9 )
+ Type: 17
+ Star_X: 45 Star_Y: 151 Orbit#: 4
+
+PLANET: ( @0037CE )
+ Type: 15
+ Star_X: 45 Star_Y: 151 Orbit#: 5
+
+PLANET: ( @0037C3 )
+ Type: 16
+ Star_X: 45 Star_Y: 151 Orbit#: 6
+
+PLANET: ( @0037B8 )
+ Type: 13
+ Star_X: 45 Star_Y: 151 Orbit#: 8
+
+ENCOUNTER: ( @006870 )
+ Type: 6 ( Spemin ) Star_X: 45 Star_Y: 151
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @006988 )
+ Type: 6 ( Spemin ) Star_X: 45 Star_Y: 151
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @0069A4 )
+ Type: 6 ( Spemin ) Star_X: 45 Star_Y: 151
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+STARSYSTEM: ( @003800 )
+ Type: G Star_X: 44 Star_Y: 150
+ FlareDay: 624 ( 25-1-4622 )
+
+PLANET: ( @003813 )
+ Type: 6
+ Star_X: 44 Star_Y: 150 Orbit#: 2
+
+STARSYSTEM: ( @00381E )
+ Type: B Star_X: 44 Star_Y: 149
+ FlareDay: 624 ( 25-1-4622 )
+
+STARSYSTEM: ( @003831 )
+ Type: F Star_X: 46 Star_Y: 148
+ FlareDay: 616 ( 17-1-4622 )
+
+PLANET: ( @003865 )
+ Type: 17
+ Star_X: 46 Star_Y: 148 Orbit#: 3
+
+PLANET: ( @00385A )
+ Type: 17
+ Star_X: 46 Star_Y: 148 Orbit#: 4
+
+PLANET: ( @00384F )
+ Type: 17
+ Star_X: 46 Star_Y: 148 Orbit#: 6
+
+PLANET: ( @003844 )
+ Type: 14
+ Star_X: 46 Star_Y: 148 Orbit#: 8
+
+STARSYSTEM: ( @003870 )
+ Type: B Star_X: 76 Star_Y: 133
+ FlareDay: 496 ( 17-7-4621 )
+
+PLANET: ( @00388E )
+ Type: 3
+ Star_X: 76 Star_Y: 133 Orbit#: 3
+
+PLANET: ( @003883 )
+ Type: 11
+ Star_X: 76 Star_Y: 133 Orbit#: 7
+
+STARSYSTEM: ( @003899 )
+ Type: B Star_X: 76 Star_Y: 131
+ FlareDay: 496 ( 17-7-4621 )
+
+PLANET: ( @0038C2 )
+ Type: 1
+ Star_X: 76 Star_Y: 131 Orbit#: 2
+
+PLANET: ( @0038B7 )
+ Type: 1
+ Star_X: 76 Star_Y: 131 Orbit#: 3
+
+PLANET: ( @0038AC )
+ Type: 8
+ Star_X: 76 Star_Y: 131 Orbit#: 5
+
+STARSYSTEM: ( @0038CD )
+ Type: F Star_X: 104 Star_Y: 125
+ FlareDay: 384 ( 25-3-4621 )
+
+STARSYSTEM: ( @0038E0 )
+ Type: F Star_X: 94 Star_Y: 118
+ FlareDay: 424 ( 5-5-4621 )
+
+PLANET: ( @00391F )
+ Type: 6
+ Star_X: 94 Star_Y: 118 Orbit#: 3
+
+PLANET: ( @003914 )
+ Type: 6
+ Star_X: 94 Star_Y: 118 Orbit#: 4
+
+PLANET: ( @003909 )
+ Type: 8
+ Star_X: 94 Star_Y: 118 Orbit#: 5
+
+PLANET: ( @0038FE )
+ Type: 16
+ Star_X: 94 Star_Y: 118 Orbit#: 7
+
+PLANET: ( @0038F3 )
+ Type: 14
+ Star_X: 94 Star_Y: 118 Orbit#: 8
+
+ENCOUNTER: ( @0069C0 )
+ Type: 6 ( Spemin ) Star_X: 94 Star_Y: 118
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+STARSYSTEM: ( @00392A )
+ Type: A Star_X: 91 Star_Y: 117
+ FlareDay: 436 ( 17-5-4621 )
+
+PLANET: ( @003953 )
+ Type: 6
+ Star_X: 91 Star_Y: 117 Orbit#: 3
+
+PLANET: ( @003948 )
+ Type: 17
+ Star_X: 91 Star_Y: 117 Orbit#: 4
+
+PLANET: ( @00393D )
+ Type: 12
+ Star_X: 91 Star_Y: 117 Orbit#: 5
+
+STARSYSTEM: ( @00395E )
+ Type: M Star_X: 88 Star_Y: 120
+ FlareDay: 448 ( 29-5-4621 )
+
+PLANET: ( @00397C )
+ Type: 5
+ Star_X: 88 Star_Y: 120 Orbit#: 2
+
+PLANET: ( @003971 )
+ Type: 17
+ Star_X: 88 Star_Y: 120 Orbit#: 4
+
+STARSYSTEM: ( @003987 )
+ Type: M Star_X: 78 Star_Y: 123
+ FlareDay: 488 ( 9-7-4621 )
+
+PLANET: ( @0039B0 )
+ Type: 50
+ Star_X: 78 Star_Y: 123 Orbit#: 3
+
+PLANET: ( @0039A5 )
+ Type: 15
+ Star_X: 78 Star_Y: 123 Orbit#: 5
+
+PLANET: ( @00399A )
+ Type: 13
+ Star_X: 78 Star_Y: 123 Orbit#: 6
+
+STARSYSTEM: ( @0039BB )
+ Type: G Star_X: 56 Star_Y: 127
+ FlareDay: 576 ( 7-10-4621 )
+
+STARSYSTEM: ( @0039CE )
+ Type: F Star_X: 58 Star_Y: 124
+ FlareDay: 568 ( 29-9-4621 )
+
+PLANET: ( @003A18 )
+ Type: 6
+ Star_X: 58 Star_Y: 124 Orbit#: 2
+
+PLANET: ( @003A0D )
+ Type: 6
+ Star_X: 58 Star_Y: 124 Orbit#: 3
+
+PLANET: ( @003A02 )
+ Type: 8
+ Star_X: 58 Star_Y: 124 Orbit#: 4
+
+PLANET: ( @0039F7 )
+ Type: 12
+ Star_X: 58 Star_Y: 124 Orbit#: 5
+
+PLANET: ( @0039EC )
+ Type: 17
+ Star_X: 58 Star_Y: 124 Orbit#: 6
+
+PLANET: ( @0039E1 )
+ Type: 14
+ Star_X: 58 Star_Y: 124 Orbit#: 7
+
+ENCOUNTER: ( @00688C )
+ Type: 6 ( Spemin ) Star_X: 58 Star_Y: 124
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @0068A8 )
+ Type: 6 ( Spemin ) Star_X: 58 Star_Y: 124
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @0069DC )
+ Type: 6 ( Spemin ) Star_X: 58 Star_Y: 124
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+STARSYSTEM: ( @003A23 )
+ Type: O Star_X: 56 Star_Y: 124
+ FlareDay: 576 ( 7-10-4621 )
+
+PLANET: ( @003A57 )
+ Type: 1
+ Star_X: 56 Star_Y: 124 Orbit#: 2
+
+PLANET: ( @003A4C )
+ Type: 4
+ Star_X: 56 Star_Y: 124 Orbit#: 4
+
+PLANET: ( @003A41 )
+ Type: 17
+ Star_X: 56 Star_Y: 124 Orbit#: 7
+
+PLANET: ( @003A36 )
+ Type: 17
+ Star_X: 56 Star_Y: 124 Orbit#: 8
+
+STARSYSTEM: ( @003A62 )
+ Type: A Star_X: 57 Star_Y: 121
+ FlareDay: 572 ( 3-10-4621 )
+
+PLANET: ( @003A75 )
+ Type: 10
+ Star_X: 57 Star_Y: 121 Orbit#: 6
+
+STARSYSTEM: ( @003A80 )
+ Type: G Star_X: 42 Star_Y: 126
+ FlareDay: 632 ( 3-2-4622 )
+
+PLANET: ( @003A9E )
+ Type: 5
+ Star_X: 42 Star_Y: 126 Orbit#: 2
+
+PLANET: ( @003A93 )
+ Type: 16
+ Star_X: 42 Star_Y: 126 Orbit#: 5
+
+STARSYSTEM: ( @003AA9 )
+ Type: F Star_X: 22 Star_Y: 121
+ FlareDay: 712 ( 23-4-4622 )
+
+ENCOUNTER: ( @0072BC )
+ Type: 9 ( Uhlek ) Star_X: 22 Star_Y: 121
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @003ABC )
+ Type: B Star_X: 7 Star_Y: 118
+ FlareDay: 772 ( 23-6-4622 )
+
+PLANET: ( @003B11 )
+ Type: 2
+ Star_X: 7 Star_Y: 118 Orbit#: 2
+
+PLANET: ( @003B06 )
+ Type: 3
+ Star_X: 7 Star_Y: 118 Orbit#: 3
+
+PLANET: ( @003AFB )
+ Type: 8
+ Star_X: 7 Star_Y: 118 Orbit#: 4
+
+PLANET: ( @003AF0 )
+ Type: 17
+ Star_X: 7 Star_Y: 118 Orbit#: 5
+
+PLANET: ( @003AE5 )
+ Type: 17
+ Star_X: 7 Star_Y: 118 Orbit#: 6
+
+PLANET: ( @003ADA )
+ Type: 59
+ Star_X: 7 Star_Y: 118 Orbit#: 7
+
+PLANET: ( @003ACF )
+ Type: 17
+ Star_X: 7 Star_Y: 118 Orbit#: 8
+
+ENCOUNTER: ( @007188 )
+ Type: 9 ( Uhlek ) Star_X: 7 Star_Y: 118
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @0071A4 )
+ Type: 9 ( Uhlek ) Star_X: 7 Star_Y: 118
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @0071C0 )
+ Type: 9 ( Uhlek ) Star_X: 7 Star_Y: 118
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @003B1C )
+ Type: G Star_X: 7 Star_Y: 114
+ FlareDay: 772 ( 23-6-4622 )
+
+PLANET: ( @003B45 )
+ Type: 6
+ Star_X: 7 Star_Y: 114 Orbit#: 2
+
+PLANET: ( @003B3A )
+ Type: 6
+ Star_X: 7 Star_Y: 114 Orbit#: 3
+
+PLANET: ( @003B2F )
+ Type: 5
+ Star_X: 7 Star_Y: 114 Orbit#: 4
+
+STARSYSTEM: ( @003B50 )
+ Type: F Star_X: 13 Star_Y: 115
+ FlareDay: 748 ( 29-5-4622 )
+
+PLANET: ( @003B6E )
+ Type: 17
+ Star_X: 13 Star_Y: 115 Orbit#: 5
+
+PLANET: ( @003B63 )
+ Type: 17
+ Star_X: 13 Star_Y: 115 Orbit#: 6
+
+STARSYSTEM: ( @003B79 )
+ Type: F Star_X: 16 Star_Y: 112
+ FlareDay: 736 ( 17-5-4622 )
+
+PLANET: ( @003B97 )
+ Type: 8
+ Star_X: 16 Star_Y: 112 Orbit#: 4
+
+PLANET: ( @003B8C )
+ Type: 17
+ Star_X: 16 Star_Y: 112 Orbit#: 6
+
+STARSYSTEM: ( @003BA2 )
+ Type: F Star_X: 17 Star_Y: 108
+ FlareDay: 732 ( 13-5-4622 )
+
+PLANET: ( @003BD6 )
+ Type: 6
+ Star_X: 17 Star_Y: 108 Orbit#: 3
+
+PLANET: ( @003BCB )
+ Type: 6
+ Star_X: 17 Star_Y: 108 Orbit#: 4
+
+PLANET: ( @003BC0 )
+ Type: 13
+ Star_X: 17 Star_Y: 108 Orbit#: 7
+
+PLANET: ( @003BB5 )
+ Type: 13
+ Star_X: 17 Star_Y: 108 Orbit#: 8
+
+STARSYSTEM: ( @003BE1 )
+ Type: B Star_X: 11 Star_Y: 112
+ FlareDay: 756 ( 7-6-4622 )
+
+PLANET: ( @003C21 )
+ Type: 2
+ Star_X: 11 Star_Y: 112 Orbit#: 1
+
+PLANET: ( @003C16 )
+ Type: 2
+ Star_X: 11 Star_Y: 112 Orbit#: 2
+
+PLANET: ( @003C0B )
+ Type: 7
+ Star_X: 11 Star_Y: 112 Orbit#: 4
+
+PLANET: ( @003C00 )
+ Type: 8
+ Star_X: 11 Star_Y: 112 Orbit#: 5
+
+PLANET: ( @003BF4 )
+ Type: 12
+ Star_X: 11 Star_Y: 112 Orbit#: 6
+
+STARSYSTEM: ( @003C2C )
+ Type: O Star_X: 12 Star_Y: 112
+ FlareDay: 752 ( 3-6-4622 )
+
+PLANET: ( @003C55 )
+ Type: 3
+ Star_X: 12 Star_Y: 112 Orbit#: 2
+
+PLANET: ( @003C4A )
+ Type: 5
+ Star_X: 12 Star_Y: 112 Orbit#: 7
+
+PLANET: ( @003C3F )
+ Type: 11
+ Star_X: 12 Star_Y: 112 Orbit#: 8
+
+STARSYSTEM: ( @003C60 )
+ Type: K Star_X: 12 Star_Y: 109
+ FlareDay: 752 ( 3-6-4622 )
+
+STARSYSTEM: ( @003C73 )
+ Type: K Star_X: 95 Star_Y: 103
+ FlareDay: 420 ( 1-5-4621 )
+
+PLANET: ( @003C86 )
+ Type: 17
+ Star_X: 95 Star_Y: 103 Orbit#: 3
+
+STARSYSTEM: ( @003C91 )
+ Type: F Star_X: 68 Star_Y: 104
+ FlareDay: 528 ( 19-8-4621 )
+
+STARSYSTEM: ( @003CA4 )
+ Type: F Star_X: 70 Star_Y: 102
+ FlareDay: 520 ( 11-8-4621 )
+
+PLANET: ( @003CD8 )
+ Type: 7
+ Star_X: 70 Star_Y: 102 Orbit#: 2
+
+PLANET: ( @003CCD )
+ Type: 9
+ Star_X: 70 Star_Y: 102 Orbit#: 4
+
+PLANET: ( @003CC2 )
+ Type: 9
+ Star_X: 70 Star_Y: 102 Orbit#: 5
+
+PLANET: ( @003CB7 )
+ Type: 17
+ Star_X: 70 Star_Y: 102 Orbit#: 6
+
+STARSYSTEM: ( @003CE3 )
+ Type: F Star_X: 63 Star_Y: 102
+ FlareDay: 548 ( 9-9-4621 )
+
+PLANET: ( @003D22 )
+ Type: 8
+ Star_X: 63 Star_Y: 102 Orbit#: 4
+
+PLANET: ( @003D17 )
+ Type: 12
+ Star_X: 63 Star_Y: 102 Orbit#: 5
+
+PLANET: ( @003D0C )
+ Type: 17
+ Star_X: 63 Star_Y: 102 Orbit#: 6
+
+PLANET: ( @003D01 )
+ Type: 16
+ Star_X: 63 Star_Y: 102 Orbit#: 7
+
+PLANET: ( @003CF6 )
+ Type: 15
+ Star_X: 63 Star_Y: 102 Orbit#: 8
+
+ENCOUNTER: ( @0069F8 )
+ Type: 6 ( Spemin ) Star_X: 63 Star_Y: 102
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @006A14 )
+ Type: 6 ( Spemin ) Star_X: 63 Star_Y: 102
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 1 2 3
+
+STARSYSTEM: ( @003D2D )
+ Type: F Star_X: 65 Star_Y: 99
+ FlareDay: 540 ( 1-9-4621 )
+
+PLANET: ( @003D4B )
+ Type: 1
+ Star_X: 65 Star_Y: 99 Orbit#: 1
+
+PLANET: ( @003D40 )
+ Type: 13
+ Star_X: 65 Star_Y: 99 Orbit#: 6
+
+STARSYSTEM: ( @003D56 )
+ Type: G Star_X: 66 Star_Y: 102
+ FlareDay: 536 ( 27-8-4621 )
+
+PLANET: ( @003D8A )
+ Type: 6
+ Star_X: 66 Star_Y: 102 Orbit#: 2
+
+PLANET: ( @003D7F )
+ Type: 10
+ Star_X: 66 Star_Y: 102 Orbit#: 4
+
+PLANET: ( @003D74 )
+ Type: 16
+ Star_X: 66 Star_Y: 102 Orbit#: 5
+
+PLANET: ( @003D69 )
+ Type: 16
+ Star_X: 66 Star_Y: 102 Orbit#: 8
+
+STARSYSTEM: ( @003D95 )
+ Type: K Star_X: 41 Star_Y: 103
+ FlareDay: 636 ( 7-2-4622 )
+
+PLANET: ( @003DA8 )
+ Type: 16
+ Star_X: 41 Star_Y: 103 Orbit#: 5
+
+STARSYSTEM: ( @003DB3 )
+ Type: O Star_X: 23 Star_Y: 98
+ FlareDay: 708 ( 19-4-4622 )
+
+PLANET: ( @003DDC )
+ Type: 3
+ Star_X: 23 Star_Y: 98 Orbit#: 3
+
+PLANET: ( @003DD1 )
+ Type: 17
+ Star_X: 23 Star_Y: 98 Orbit#: 7
+
+PLANET: ( @003DC6 )
+ Type: 17
+ Star_X: 23 Star_Y: 98 Orbit#: 8
+
+STARSYSTEM: ( @003DE7 )
+ Type: M Star_X: 24 Star_Y: 95
+ FlareDay: 704 ( 15-4-4622 )
+
+PLANET: ( @003E47 )
+ Type: 10
+ Star_X: 24 Star_Y: 95 Orbit#: 1
+
+PLANET: ( @003E3C )
+ Type: 11
+ Star_X: 24 Star_Y: 95 Orbit#: 2
+
+PLANET: ( @003E31 )
+ Type: 13
+ Star_X: 24 Star_Y: 95 Orbit#: 3
+
+PLANET: ( @003E26 )
+ Type: 16
+ Star_X: 24 Star_Y: 95 Orbit#: 4
+
+PLANET: ( @003E1B )
+ Type: 13
+ Star_X: 24 Star_Y: 95 Orbit#: 5
+
+PLANET: ( @003E10 )
+ Type: 16
+ Star_X: 24 Star_Y: 95 Orbit#: 6
+
+PLANET: ( @003E05 )
+ Type: 16
+ Star_X: 24 Star_Y: 95 Orbit#: 7
+
+PLANET: ( @003DFA )
+ Type: 14
+ Star_X: 24 Star_Y: 95 Orbit#: 8
+
+ENCOUNTER: ( @0070A8 )
+ Type: 9 ( Uhlek ) Star_X: 24 Star_Y: 95
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @003E52 )
+ Type: M Star_X: 10 Star_Y: 88
+ FlareDay: 760 ( 11-6-4622 )
+
+PLANET: ( @003E70 )
+ Type: 7
+ Star_X: 10 Star_Y: 88 Orbit#: 1
+
+PLANET: ( @003E65 )
+ Type: 7
+ Star_X: 10 Star_Y: 88 Orbit#: 3
+
+STARSYSTEM: ( @003E7B )
+ Type: M Star_X: 97 Star_Y: 92
+ FlareDay: 412 ( 23-4-4621 )
+
+STARSYSTEM: ( @003E8E )
+ Type: F Star_X: 91 Star_Y: 86
+ FlareDay: 436 ( 17-5-4621 )
+
+PLANET: ( @003ECD )
+ Type: 2
+ Star_X: 91 Star_Y: 86 Orbit#: 1
+
+PLANET: ( @003EC2 )
+ Type: 5
+ Star_X: 91 Star_Y: 86 Orbit#: 2
+
+PLANET: ( @003EB7 )
+ Type: 6
+ Star_X: 91 Star_Y: 86 Orbit#: 3
+
+PLANET: ( @003EAC )
+ Type: 6
+ Star_X: 91 Star_Y: 86 Orbit#: 4
+
+PLANET: ( @003EA1 )
+ Type: 13
+ Star_X: 91 Star_Y: 86 Orbit#: 7
+
+STARSYSTEM: ( @003ED8 )
+ Type: K Star_X: 88 Star_Y: 86
+ FlareDay: 448 ( 29-5-4621 )
+
+PLANET: ( @003F01 )
+ Type: 17
+ Star_X: 88 Star_Y: 86 Orbit#: 3
+
+PLANET: ( @003EF6 )
+ Type: 16
+ Star_X: 88 Star_Y: 86 Orbit#: 5
+
+PLANET: ( @003EEB )
+ Type: 14
+ Star_X: 88 Star_Y: 86 Orbit#: 7
+
+STARSYSTEM: ( @003F0C )
+ Type: F Star_X: 86 Star_Y: 80
+ FlareDay: 456 ( 7-6-4621 )
+
+PLANET: ( @003F1F )
+ Type: 10
+ Star_X: 86 Star_Y: 80 Orbit#: 5
+
+STARSYSTEM: ( @003F2A )
+ Type: G Star_X: 88 Star_Y: 78
+ FlareDay: 448 ( 29-5-4621 )
+
+PLANET: ( @003F5E )
+ Type: 6
+ Star_X: 88 Star_Y: 78 Orbit#: 2
+
+PLANET: ( @003F53 )
+ Type: 17
+ Star_X: 88 Star_Y: 78 Orbit#: 3
+
+PLANET: ( @003F48 )
+ Type: 17
+ Star_X: 88 Star_Y: 78 Orbit#: 4
+
+PLANET: ( @003F3D )
+ Type: 17
+ Star_X: 88 Star_Y: 78 Orbit#: 5
+
+ENCOUNTER: ( @006E84 )
+ Type: 2 ( Gazurt ) Star_X: 88 Star_Y: 78
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+STARSYSTEM: ( @003F69 )
+ Type: G Star_X: 87 Star_Y: 77
+ FlareDay: 452 ( 3-6-4621 )
+
+PLANET: ( @003F87 )
+ Type: 17
+ Star_X: 87 Star_Y: 77 Orbit#: 5
+
+PLANET: ( @003F7C )
+ Type: 16
+ Star_X: 87 Star_Y: 77 Orbit#: 6
+
+STARSYSTEM: ( @003F92 )
+ Type: F Star_X: 34 Star_Y: 83
+ FlareDay: 664 ( 5-3-4622 )
+
+PLANET: ( @003FBB )
+ Type: 5
+ Star_X: 34 Star_Y: 83 Orbit#: 3
+
+PLANET: ( @003FB0 )
+ Type: 14
+ Star_X: 34 Star_Y: 83 Orbit#: 6
+
+PLANET: ( @003FA5 )
+ Type: 13
+ Star_X: 34 Star_Y: 83 Orbit#: 8
+
+STARSYSTEM: ( @003FC6 )
+ Type: A Star_X: 29 Star_Y: 78
+ FlareDay: 684 ( 25-3-4622 )
+
+STARSYSTEM: ( @003FD9 )
+ Type: A Star_X: 26 Star_Y: 82
+ FlareDay: 696 ( 7-4-4622 )
+
+PLANET: ( @00402C )
+ Type: 3
+ Star_X: 26 Star_Y: 82 Orbit#: 1
+
+PLANET: ( @004021 )
+ Type: 4
+ Star_X: 26 Star_Y: 82 Orbit#: 2
+
+PLANET: ( @004016 )
+ Type: 8
+ Star_X: 26 Star_Y: 82 Orbit#: 3
+
+PLANET: ( @00400B )
+ Type: 8
+ Star_X: 26 Star_Y: 82 Orbit#: 5
+
+PLANET: ( @004000 )
+ Type: 11
+ Star_X: 26 Star_Y: 82 Orbit#: 6
+
+PLANET: ( @003FEC )
+ Type: 17
+ Star_X: 26 Star_Y: 82 Orbit#: 7
+
+ENCOUNTER: ( @0071DC )
+ Type: 9 ( Uhlek ) Star_X: 26 Star_Y: 82
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @004037 )
+ Type: M Star_X: 104 Star_Y: 71
+ FlareDay: 384 ( 25-3-4621 )
+
+PLANET: ( @00406B )
+ Type: 6
+ Star_X: 104 Star_Y: 71 Orbit#: 1
+
+PLANET: ( @004060 )
+ Type: 13
+ Star_X: 104 Star_Y: 71 Orbit#: 3
+
+PLANET: ( @004055 )
+ Type: 15
+ Star_X: 104 Star_Y: 71 Orbit#: 4
+
+PLANET: ( @00404A )
+ Type: 16
+ Star_X: 104 Star_Y: 71 Orbit#: 7
+
+ENCOUNTER: ( @006EA0 )
+ Type: 2 ( Gazurt ) Star_X: 104 Star_Y: 71
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006EBC )
+ Type: 2 ( Gazurt ) Star_X: 104 Star_Y: 71
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+STARSYSTEM: ( @004076 )
+ Type: K Star_X: 90 Star_Y: 69
+ FlareDay: 440 ( 21-5-4621 )
+
+PLANET: ( @004094 )
+ Type: 7
+ Star_X: 90 Star_Y: 69 Orbit#: 2
+
+PLANET: ( @004089 )
+ Type: 13
+ Star_X: 90 Star_Y: 69 Orbit#: 6
+
+STARSYSTEM: ( @00409F )
+ Type: F Star_X: 83 Star_Y: 67
+ FlareDay: 468 ( 19-6-4621 )
+
+PLANET: ( @0040DE )
+ Type: 17
+ Star_X: 83 Star_Y: 67 Orbit#: 2
+
+PLANET: ( @0040D3 )
+ Type: 17
+ Star_X: 83 Star_Y: 67 Orbit#: 3
+
+PLANET: ( @0040C8 )
+ Type: 5
+ Star_X: 83 Star_Y: 67 Orbit#: 4
+
+PLANET: ( @0040BD )
+ Type: 17
+ Star_X: 83 Star_Y: 67 Orbit#: 6
+
+PLANET: ( @0040B2 )
+ Type: 14
+ Star_X: 83 Star_Y: 67 Orbit#: 7
+
+ENCOUNTER: ( @006ED8 )
+ Type: 2 ( Gazurt ) Star_X: 83 Star_Y: 67
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+STARSYSTEM: ( @0040E9 )
+ Type: M Star_X: 77 Star_Y: 54
+ FlareDay: 492 ( 13-7-4621 )
+
+PLANET: ( @0040FC )
+ Type: 15
+ Star_X: 77 Star_Y: 54 Orbit#: 3
+
+STARSYSTEM: ( @004107 )
+ Type: F Star_X: 86 Star_Y: 42
+ FlareDay: 456 ( 7-6-4621 )
+
+PLANET: ( @00411A )
+ Type: 14
+ Star_X: 86 Star_Y: 42 Orbit#: 7
+
+STARSYSTEM: ( @004125 )
+ Type: F Star_X: 87 Star_Y: 40
+ FlareDay: 452 ( 3-6-4621 )
+
+PLANET: ( @004159 )
+ Type: 5
+ Star_X: 87 Star_Y: 40 Orbit#: 2
+
+PLANET: ( @00414E )
+ Type: 11
+ Star_X: 87 Star_Y: 40 Orbit#: 4
+
+PLANET: ( @004143 )
+ Type: 17
+ Star_X: 87 Star_Y: 40 Orbit#: 5
+
+PLANET: ( @004138 )
+ Type: 13
+ Star_X: 87 Star_Y: 40 Orbit#: 7
+
+STARSYSTEM: ( @004164 )
+ Type: F Star_X: 88 Star_Y: 38
+ FlareDay: 448 ( 29-5-4621 )
+
+PLANET: ( @00418D )
+ Type: 5
+ Star_X: 88 Star_Y: 38 Orbit#: 2
+
+PLANET: ( @004182 )
+ Type: 17
+ Star_X: 88 Star_Y: 38 Orbit#: 5
+
+PLANET: ( @004177 )
+ Type: 14
+ Star_X: 88 Star_Y: 38 Orbit#: 8
+
+STARSYSTEM: ( @004198 )
+ Type: G Star_X: 94 Star_Y: 42
+ FlareDay: 424 ( 5-5-4621 )
+
+PLANET: ( @0041D7 )
+ Type: 6
+ Star_X: 94 Star_Y: 42 Orbit#: 2
+
+PLANET: ( @0041CC )
+ Type: 8
+ Star_X: 94 Star_Y: 42 Orbit#: 3
+
+PLANET: ( @0041C1 )
+ Type: 52
+ Star_X: 94 Star_Y: 42 Orbit#: 5
+
+PLANET: ( @0041B6 )
+ Type: 16
+ Star_X: 94 Star_Y: 42 Orbit#: 6
+
+PLANET: ( @0041AB )
+ Type: 14
+ Star_X: 94 Star_Y: 42 Orbit#: 7
+
+ENCOUNTER: ( @006D6C )
+ Type: 2 ( Gazurt ) Star_X: 94 Star_Y: 42
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006D88 )
+ Type: 2 ( Gazurt ) Star_X: 94 Star_Y: 42
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006EF4 )
+ Type: 2 ( Gazurt ) Star_X: 94 Star_Y: 42
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+STARSYSTEM: ( @0041E2 )
+ Type: K Star_X: 82 Star_Y: 38
+ FlareDay: 472 ( 23-6-4621 )
+
+PLANET: ( @0041F5 )
+ Type: 13
+ Star_X: 82 Star_Y: 38 Orbit#: 6
+
+STARSYSTEM: ( @004200 )
+ Type: B Star_X: 94 Star_Y: 16
+ FlareDay: 424 ( 5-5-4621 )
+
+STARSYSTEM: ( @004213 )
+ Type: M Star_X: 97 Star_Y: 13
+ FlareDay: 412 ( 23-4-4621 )
+
+PLANET: ( @004247 )
+ Type: 7
+ Star_X: 97 Star_Y: 13 Orbit#: 2
+
+PLANET: ( @00423C )
+ Type: 17
+ Star_X: 97 Star_Y: 13 Orbit#: 3
+
+PLANET: ( @004231 )
+ Type: 16
+ Star_X: 97 Star_Y: 13 Orbit#: 5
+
+PLANET: ( @004226 )
+ Type: 15
+ Star_X: 97 Star_Y: 13 Orbit#: 7
+
+STARSYSTEM: ( @004252 )
+ Type: F Star_X: 94 Star_Y: 7
+ FlareDay: 424 ( 5-5-4621 )
+
+PLANET: ( @004270 )
+ Type: 8
+ Star_X: 94 Star_Y: 7 Orbit#: 2
+
+PLANET: ( @004265 )
+ Type: 15
+ Star_X: 94 Star_Y: 7 Orbit#: 6
+
+STARSYSTEM: ( @00427B )
+ Type: F Star_X: 90 Star_Y: 8
+ FlareDay: 440 ( 21-5-4621 )
+
+PLANET: ( @0042AF )
+ Type: 9
+ Star_X: 90 Star_Y: 8 Orbit#: 4
+
+PLANET: ( @0042A4 )
+ Type: 10
+ Star_X: 90 Star_Y: 8 Orbit#: 5
+
+PLANET: ( @004299 )
+ Type: 16
+ Star_X: 90 Star_Y: 8 Orbit#: 6
+
+PLANET: ( @00428E )
+ Type: 16
+ Star_X: 90 Star_Y: 8 Orbit#: 7
+
+STARSYSTEM: ( @0042BA )
+ Type: A Star_X: 73 Star_Y: 7
+ FlareDay: 508 ( 29-7-4621 )
+
+PLANET: ( @0042D8 )
+ Type: 17
+ Star_X: 73 Star_Y: 7 Orbit#: 4
+
+PLANET: ( @0042CD )
+ Type: 17
+ Star_X: 73 Star_Y: 7 Orbit#: 6
+
+STARSYSTEM: ( @0042E3 )
+ Type: M Star_X: 66 Star_Y: 31
+ FlareDay: 536 ( 27-8-4621 )
+
+PLANET: ( @00430C )
+ Type: 6
+ Star_X: 66 Star_Y: 31 Orbit#: 2
+
+PLANET: ( @004301 )
+ Type: 14
+ Star_X: 66 Star_Y: 31 Orbit#: 3
+
+PLANET: ( @0042F6 )
+ Type: 14
+ Star_X: 66 Star_Y: 31 Orbit#: 5
+
+STARSYSTEM: ( @004317 )
+ Type: M Star_X: 35 Star_Y: 66
+ FlareDay: 660 ( 1-3-4622 )
+
+STARSYSTEM: ( @00432A )
+ Type: M Star_X: 35 Star_Y: 65
+ FlareDay: 660 ( 1-3-4622 )
+
+PLANET: ( @004348 )
+ Type: 15
+ Star_X: 35 Star_Y: 65 Orbit#: 6
+
+PLANET: ( @00433D )
+ Type: 15
+ Star_X: 35 Star_Y: 65 Orbit#: 7
+
+STARSYSTEM: ( @004353 )
+ Type: K Star_X: 36 Star_Y: 65
+ FlareDay: 656 ( 27-2-4622 )
+
+PLANET: ( @00437C )
+ Type: 6
+ Star_X: 36 Star_Y: 65 Orbit#: 1
+
+PLANET: ( @004371 )
+ Type: 17
+ Star_X: 36 Star_Y: 65 Orbit#: 2
+
+PLANET: ( @004366 )
+ Type: 14
+ Star_X: 36 Star_Y: 65 Orbit#: 5
+
+STARSYSTEM: ( @004387 )
+ Type: F Star_X: 32 Star_Y: 63
+ FlareDay: 672 ( 13-3-4622 )
+
+PLANET: ( @0043A5 )
+ Type: 1
+ Star_X: 32 Star_Y: 63 Orbit#: 1
+
+PLANET: ( @00439A )
+ Type: 17
+ Star_X: 32 Star_Y: 63 Orbit#: 6
+
+STARSYSTEM: ( @0043B0 )
+ Type: F Star_X: 5 Star_Y: 66
+ FlareDay: 780 ( 1-7-4622 )
+
+PLANET: ( @0043E4 )
+ Type: 6
+ Star_X: 5 Star_Y: 66 Orbit#: 2
+
+PLANET: ( @0043D9 )
+ Type: 8
+ Star_X: 5 Star_Y: 66 Orbit#: 3
+
+PLANET: ( @0043CE )
+ Type: 12
+ Star_X: 5 Star_Y: 66 Orbit#: 5
+
+PLANET: ( @0043C3 )
+ Type: 16
+ Star_X: 5 Star_Y: 66 Orbit#: 6
+
+STARSYSTEM: ( @004400 )
+ Type: B Star_X: 52 Star_Y: 65
+ FlareDay: 592 ( 23-10-4621 )
+
+STARSYSTEM: ( @004413 )
+ Type: F Star_X: 54 Star_Y: 62
+ FlareDay: 584 ( 15-10-4621 )
+
+STARSYSTEM: ( @004426 )
+ Type: A Star_X: 52 Star_Y: 59
+ FlareDay: 592 ( 23-10-4621 )
+
+PLANET: ( @004470 )
+ Type: 1
+ Star_X: 52 Star_Y: 59 Orbit#: 2
+
+PLANET: ( @004465 )
+ Type: 6
+ Star_X: 52 Star_Y: 59 Orbit#: 3
+
+PLANET: ( @00445A )
+ Type: 17
+ Star_X: 52 Star_Y: 59 Orbit#: 4
+
+PLANET: ( @00444F )
+ Type: 5
+ Star_X: 52 Star_Y: 59 Orbit#: 5
+
+PLANET: ( @004444 )
+ Type: 12
+ Star_X: 52 Star_Y: 59 Orbit#: 6
+
+PLANET: ( @004439 )
+ Type: 17
+ Star_X: 52 Star_Y: 59 Orbit#: 7
+
+ENCOUNTER: ( @006F10 )
+ Type: 2 ( Gazurt ) Star_X: 52 Star_Y: 59
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006F2C )
+ Type: 2 ( Gazurt ) Star_X: 52 Star_Y: 59
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+STARSYSTEM: ( @00447B )
+ Type: M Star_X: 52 Star_Y: 56
+ FlareDay: 592 ( 23-10-4621 )
+
+PLANET: ( @0044AF )
+ Type: 54
+ Star_X: 52 Star_Y: 56 Orbit#: 1
+
+PLANET: ( @0044A4 )
+ Type: 9
+ Star_X: 52 Star_Y: 56 Orbit#: 2
+
+PLANET: ( @004499 )
+ Type: 17
+ Star_X: 52 Star_Y: 56 Orbit#: 3
+
+PLANET: ( @00448E )
+ Type: 16
+ Star_X: 52 Star_Y: 56 Orbit#: 4
+
+ENCOUNTER: ( @006DA4 )
+ Type: 2 ( Gazurt ) Star_X: 52 Star_Y: 56
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @006F48 )
+ Type: 2 ( Gazurt ) Star_X: 52 Star_Y: 56
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 14 15
+
+STARSYSTEM: ( @0044BA )
+ Type: M Star_X: 2 Star_Y: 34
+ FlareDay: 792 ( 13-7-4622 )
+
+PLANET: ( @0044EE )
+ Type: 7
+ Star_X: 2 Star_Y: 34 Orbit#: 2
+
+PLANET: ( @0044E3 )
+ Type: 16
+ Star_X: 2 Star_Y: 34 Orbit#: 3
+
+PLANET: ( @0044D8 )
+ Type: 16
+ Star_X: 2 Star_Y: 34 Orbit#: 6
+
+PLANET: ( @0044CD )
+ Type: 13
+ Star_X: 2 Star_Y: 34 Orbit#: 7
+
+STARSYSTEM: ( @0044F9 )
+ Type: G Star_X: 4 Star_Y: 34
+ FlareDay: 784 ( 5-7-4622 )
+
+PLANET: ( @004522 )
+ Type: 10
+ Star_X: 4 Star_Y: 34 Orbit#: 3
+
+PLANET: ( @004517 )
+ Type: 17
+ Star_X: 4 Star_Y: 34 Orbit#: 5
+
+PLANET: ( @00450C )
+ Type: 15
+ Star_X: 4 Star_Y: 34 Orbit#: 7
+
+STARSYSTEM: ( @00452D )
+ Type: M Star_X: 10 Star_Y: 21
+ FlareDay: 760 ( 11-6-4622 )
+
+PLANET: ( @00454B )
+ Type: 5
+ Star_X: 10 Star_Y: 21 Orbit#: 2
+
+PLANET: ( @004540 )
+ Type: 14
+ Star_X: 10 Star_Y: 21 Orbit#: 7
+
+STARSYSTEM: ( @004556 )
+ Type: G Star_X: 31 Star_Y: 27
+ FlareDay: 676 ( 17-3-4622 )
+
+PLANET: ( @004569 )
+ Type: 6
+ Star_X: 31 Star_Y: 27 Orbit#: 2
+
+STARSYSTEM: ( @004574 )
+ Type: M Star_X: 38 Star_Y: 26
+ FlareDay: 648 ( 19-2-4622 )
+
+PLANET: ( @0045BE )
+ Type: 5
+ Star_X: 38 Star_Y: 26 Orbit#: 1
+
+PLANET: ( @0045B3 )
+ Type: 5
+ Star_X: 38 Star_Y: 26 Orbit#: 2
+
+PLANET: ( @0045A8 )
+ Type: 13
+ Star_X: 38 Star_Y: 26 Orbit#: 3
+
+PLANET: ( @00459D )
+ Type: 13
+ Star_X: 38 Star_Y: 26 Orbit#: 4
+
+PLANET: ( @004592 )
+ Type: 13
+ Star_X: 38 Star_Y: 26 Orbit#: 7
+
+PLANET: ( @004587 )
+ Type: 13
+ Star_X: 38 Star_Y: 26 Orbit#: 8
+
+ENCOUNTER: ( @0070C4 )
+ Type: 9 ( Uhlek ) Star_X: 38 Star_Y: 26
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @0045C9 )
+ Type: B Star_X: 42 Star_Y: 27
+ FlareDay: 632 ( 3-2-4622 )
+
+PLANET: ( @0045E7 )
+ Type: 3
+ Star_X: 42 Star_Y: 27 Orbit#: 2
+
+PLANET: ( @0045DC )
+ Type: 10
+ Star_X: 42 Star_Y: 27 Orbit#: 7
+
+STARSYSTEM: ( @0045F2 )
+ Type: F Star_X: 48 Star_Y: 30
+ FlareDay: 608 ( 9-1-4622 )
+
+PLANET: ( @004626 )
+ Type: 17
+ Star_X: 48 Star_Y: 30 Orbit#: 2
+
+PLANET: ( @00461B )
+ Type: 17
+ Star_X: 48 Star_Y: 30 Orbit#: 3
+
+PLANET: ( @004610 )
+ Type: 17
+ Star_X: 48 Star_Y: 30 Orbit#: 4
+
+PLANET: ( @004605 )
+ Type: 17
+ Star_X: 48 Star_Y: 30 Orbit#: 6
+
+STARSYSTEM: ( @004631 )
+ Type: G Star_X: 42 Star_Y: 20
+ FlareDay: 632 ( 3-2-4622 )
+
+PLANET: ( @004644 )
+ Type: 17
+ Star_X: 42 Star_Y: 20 Orbit#: 3
+
+STARSYSTEM: ( @00464F )
+ Type: G Star_X: 56 Star_Y: 10
+ FlareDay: 576 ( 7-10-4621 )
+
+PLANET: ( @004683 )
+ Type: 1
+ Star_X: 56 Star_Y: 10 Orbit#: 1
+
+PLANET: ( @004678 )
+ Type: 16
+ Star_X: 56 Star_Y: 10 Orbit#: 6
+
+PLANET: ( @00466D )
+ Type: 13
+ Star_X: 56 Star_Y: 10 Orbit#: 7
+
+PLANET: ( @004662 )
+ Type: 13
+ Star_X: 56 Star_Y: 10 Orbit#: 8
+
+ENCOUNTER: ( @0072A0 )
+ Type: 9 ( Uhlek ) Star_X: 56 Star_Y: 10
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @00468E )
+ Type: F Star_X: 57 Star_Y: 12
+ FlareDay: 572 ( 3-10-4621 )
+
+PLANET: ( @0046AC )
+ Type: 7
+ Star_X: 57 Star_Y: 12 Orbit#: 2
+
+PLANET: ( @0046A1 )
+ Type: 14
+ Star_X: 57 Star_Y: 12 Orbit#: 7
+
+STARSYSTEM: ( @0046B7 )
+ Type: K Star_X: 33 Star_Y: 6
+ FlareDay: 668 ( 9-3-4622 )
+
+PLANET: ( @0046E0 )
+ Type: 9
+ Star_X: 33 Star_Y: 6 Orbit#: 2
+
+PLANET: ( @0046D5 )
+ Type: 12
+ Star_X: 33 Star_Y: 6 Orbit#: 3
+
+PLANET: ( @0046CA )
+ Type: 13
+ Star_X: 33 Star_Y: 6 Orbit#: 4
+
+STARSYSTEM: ( @0046EB )
+ Type: M Star_X: 31 Star_Y: 5
+ FlareDay: 676 ( 17-3-4622 )
+
+PLANET: ( @0046FE )
+ Type: 7
+ Star_X: 31 Star_Y: 5 Orbit#: 2
+
+STARSYSTEM: ( @004709 )
+ Type: M Star_X: 14 Star_Y: 5
+ FlareDay: 744 ( 25-5-4622 )
+
+PLANET: ( @004769 )
+ Type: 5
+ Star_X: 14 Star_Y: 5 Orbit#: 1
+
+PLANET: ( @00475E )
+ Type: 11
+ Star_X: 14 Star_Y: 5 Orbit#: 2
+
+PLANET: ( @004753 )
+ Type: 17
+ Star_X: 14 Star_Y: 5 Orbit#: 3
+
+PLANET: ( @004748 )
+ Type: 16
+ Star_X: 14 Star_Y: 5 Orbit#: 4
+
+PLANET: ( @00473D )
+ Type: 16
+ Star_X: 14 Star_Y: 5 Orbit#: 5
+
+PLANET: ( @004732 )
+ Type: 16
+ Star_X: 14 Star_Y: 5 Orbit#: 6
+
+PLANET: ( @004727 )
+ Type: 16
+ Star_X: 14 Star_Y: 5 Orbit#: 7
+
+PLANET: ( @00471C )
+ Type: 13
+ Star_X: 14 Star_Y: 5 Orbit#: 8
+
+ENCOUNTER: ( @0070E0 )
+ Type: 9 ( Uhlek ) Star_X: 14 Star_Y: 5
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @0070FC )
+ Type: 9 ( Uhlek ) Star_X: 14 Star_Y: 5
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @0072F4 )
+ Type: 9 ( Uhlek ) Star_X: 14 Star_Y: 5
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+STARSYSTEM: ( @004774 )
+ Type: B Star_X: 50 Star_Y: 193
+ FlareDay: 600 ( 1-1-4622 )
+
+PLANET: ( @0047A8 )
+ Type: 8
+ Star_X: 50 Star_Y: 193 Orbit#: 5
+
+PLANET: ( @00479D )
+ Type: 8
+ Star_X: 50 Star_Y: 193 Orbit#: 6
+
+PLANET: ( @004792 )
+ Type: 10
+ Star_X: 50 Star_Y: 193 Orbit#: 7
+
+PLANET: ( @004787 )
+ Type: 17
+ Star_X: 50 Star_Y: 193 Orbit#: 8
+
+ENCOUNTER: ( @007118 )
+ Type: 9 ( Uhlek ) Star_X: 50 Star_Y: 193
+ Enabled: TRUE Homeword: FALSE Fleet Size: 6 Max: 3
+ Vessels: 0 0 16 17
+
+FULX-NODE: ( @0047B3 )
+ Origin_X: 98 Origin_Y: 79
+ Dest_X: 69 Dest_Y: 66
+
+FULX-NODE: ( @0047C6 )
+ Origin_X: 69 Origin_Y: 66
+ Dest_X: 98 Dest_Y: 79
+
+FULX-NODE: ( @0047D9 )
+ Origin_X: 101 Origin_Y: 77
+ Dest_X: 61 Dest_Y: 131
+
+FULX-NODE: ( @0047EC )
+ Origin_X: 61 Origin_Y: 131
+ Dest_X: 101 Dest_Y: 77
+
+FULX-NODE: ( @004800 )
+ Origin_X: 142 Origin_Y: 51
+ Dest_X: 101 Dest_Y: 83
+
+FULX-NODE: ( @004813 )
+ Origin_X: 101 Origin_Y: 83
+ Dest_X: 142 Dest_Y: 51
+
+FULX-NODE: ( @004826 )
+ Origin_X: 97 Origin_Y: 76
+ Dest_X: 93 Dest_Y: 62
+
+FULX-NODE: ( @004839 )
+ Origin_X: 93 Origin_Y: 62
+ Dest_X: 97 Dest_Y: 76
+
+FULX-NODE: ( @00484C )
+ Origin_X: 150 Origin_Y: 96
+ Dest_X: 95 Dest_Y: 82
+
+FULX-NODE: ( @00485F )
+ Origin_X: 95 Origin_Y: 82
+ Dest_X: 150 Dest_Y: 96
+
+FULX-NODE: ( @004872 )
+ Origin_X: 118 Origin_Y: 107
+ Dest_X: 104 Dest_Y: 82
+
+FULX-NODE: ( @004885 )
+ Origin_X: 104 Origin_Y: 82
+ Dest_X: 118 Dest_Y: 107
+
+FULX-NODE: ( @004898 )
+ Origin_X: 217 Origin_Y: 80
+ Dest_X: 176 Dest_Y: 123
+
+FULX-NODE: ( @0048AB )
+ Origin_X: 176 Origin_Y: 123
+ Dest_X: 217 Dest_Y: 80
+
+FULX-NODE: ( @0048BE )
+ Origin_X: 189 Origin_Y: 190
+ Dest_X: 178 Dest_Y: 127
+
+FULX-NODE: ( @0048D1 )
+ Origin_X: 178 Origin_Y: 127
+ Dest_X: 189 Dest_Y: 190
+
+FULX-NODE: ( @0048E4 )
+ Origin_X: 135 Origin_Y: 84
+ Dest_X: 9 Dest_Y: 16
+
+FULX-NODE: ( @0048F7 )
+ Origin_X: 9 Origin_Y: 16
+ Dest_X: 135 Dest_Y: 84
+
+FULX-NODE: ( @00490A )
+ Origin_X: 25 Origin_Y: 48
+ Dest_X: 22 Dest_Y: 22
+
+FULX-NODE: ( @00491D )
+ Origin_X: 22 Origin_Y: 22
+ Dest_X: 25 Dest_Y: 48
+
+FULX-NODE: ( @004930 )
+ Origin_X: 173 Origin_Y: 61
+ Dest_X: 130 Dest_Y: 108
+
+FULX-NODE: ( @004943 )
+ Origin_X: 130 Origin_Y: 108
+ Dest_X: 173 Dest_Y: 61
+
+FULX-NODE: ( @004956 )
+ Origin_X: 179 Origin_Y: 52
+ Dest_X: 128 Dest_Y: 24
+
+FULX-NODE: ( @004969 )
+ Origin_X: 128 Origin_Y: 24
+ Dest_X: 179 Dest_Y: 52
+
+FULX-NODE: ( @00497C )
+ Origin_X: 232 Origin_Y: 40
+ Dest_X: 180 Dest_Y: 52
+
+FULX-NODE: ( @00498F )
+ Origin_X: 180 Origin_Y: 52
+ Dest_X: 232 Dest_Y: 40
+
+FULX-NODE: ( @0049A2 )
+ Origin_X: 194 Origin_Y: 134
+ Dest_X: 190 Dest_Y: 28
+
+FULX-NODE: ( @0049B5 )
+ Origin_X: 190 Origin_Y: 28
+ Dest_X: 194 Dest_Y: 134
+
+FULX-NODE: ( @0049C8 )
+ Origin_X: 106 Origin_Y: 139
+ Dest_X: 65 Dest_Y: 181
+
+FULX-NODE: ( @0049DB )
+ Origin_X: 65 Origin_Y: 181
+ Dest_X: 106 Dest_Y: 139
+
+FULX-NODE: ( @0049EE )
+ Origin_X: 64 Origin_Y: 186
+ Dest_X: 31 Dest_Y: 184
+
+FULX-NODE: ( @004A01 )
+ Origin_X: 31 Origin_Y: 184
+ Dest_X: 64 Dest_Y: 186
+
+FULX-NODE: ( @004A14 )
+ Origin_X: 35 Origin_Y: 186
+ Dest_X: 23 Dest_Y: 199
+
+FULX-NODE: ( @004A27 )
+ Origin_X: 23 Origin_Y: 199
+ Dest_X: 35 Dest_Y: 186
+
+FULX-NODE: ( @004A3A )
+ Origin_X: 71 Origin_Y: 151
+ Dest_X: 54 Dest_Y: 143
+
+FULX-NODE: ( @004A4D )
+ Origin_X: 54 Origin_Y: 143
+ Dest_X: 71 Dest_Y: 151
+
+FULX-NODE: ( @004A60 )
+ Origin_X: 58 Origin_Y: 140
+ Dest_X: 53 Dest_Y: 143
+
+FULX-NODE: ( @004A73 )
+ Origin_X: 53 Origin_Y: 143
+ Dest_X: 58 Dest_Y: 140
+
+FULX-NODE: ( @004A86 )
+ Origin_X: 60 Origin_Y: 146
+ Dest_X: 56 Dest_Y: 142
+
+FULX-NODE: ( @004A99 )
+ Origin_X: 56 Origin_Y: 142
+ Dest_X: 60 Dest_Y: 146
+
+FULX-NODE: ( @004AAC )
+ Origin_X: 59 Origin_Y: 144
+ Dest_X: 55 Dest_Y: 146
+
+FULX-NODE: ( @004ABF )
+ Origin_X: 55 Origin_Y: 146
+ Dest_X: 59 Dest_Y: 144
+
+FULX-NODE: ( @004AD2 )
+ Origin_X: 55 Origin_Y: 145
+ Dest_X: 51 Dest_Y: 132
+
+FULX-NODE: ( @004AE5 )
+ Origin_X: 51 Origin_Y: 132
+ Dest_X: 55 Dest_Y: 145
+
+FULX-NODE: ( @004AF8 )
+ Origin_X: 54 Origin_Y: 146
+ Dest_X: 15 Dest_Y: 135
+
+FULX-NODE: ( @004B0B )
+ Origin_X: 15 Origin_Y: 135
+ Dest_X: 54 Dest_Y: 146
+
+FULX-NODE: ( @004B1E )
+ Origin_X: 71 Origin_Y: 84
+ Dest_X: 7 Dest_Y: 94
+
+FULX-NODE: ( @004B31 )
+ Origin_X: 7 Origin_Y: 94
+ Dest_X: 71 Dest_Y: 84
+
+FULX-NODE: ( @004B44 )
+ Origin_X: 170 Origin_Y: 93
+ Dest_X: 148 Dest_Y: 166
+
+FULX-NODE: ( @004B57 )
+ Origin_X: 148 Origin_Y: 166
+ Dest_X: 170 Dest_Y: 93
+
+FULX-NODE: ( @004B6A )
+ Origin_X: 234 Origin_Y: 167
+ Dest_X: 109 Dest_Y: 204
+
+FULX-NODE: ( @004B7D )
+ Origin_X: 109 Origin_Y: 204
+ Dest_X: 234 Dest_Y: 167
+
+FULX-NODE: ( @004B90 )
+ Origin_X: 173 Origin_Y: 88
+ Dest_X: 126 Dest_Y: 87
+
+FULX-NODE: ( @004BA3 )
+ Origin_X: 126 Origin_Y: 87
+ Dest_X: 173 Dest_Y: 88
+
+FULX-NODE: ( @004BB6 )
+ Origin_X: 237 Origin_Y: 153
+ Dest_X: 180 Dest_Y: 86
+
+FULX-NODE: ( @004BC9 )
+ Origin_X: 180 Origin_Y: 86
+ Dest_X: 237 Dest_Y: 153
+
+FULX-NODE: ( @004BDC )
+ Origin_X: 235 Origin_Y: 49
+ Dest_X: 229 Dest_Y: 148
+
+FULX-NODE: ( @004C00 )
+ Origin_X: 229 Origin_Y: 148
+ Dest_X: 235 Dest_Y: 49
+
+FULX-NODE: ( @004C13 )
+ Origin_X: 248 Origin_Y: 1
+ Dest_X: 55 Dest_Y: 99
+
+FULX-NODE: ( @004C26 )
+ Origin_X: 55 Origin_Y: 99
+ Dest_X: 248 Dest_Y: 1
+
+FULX-NODE: ( @004C39 )
+ Origin_X: 146 Origin_Y: 112
+ Dest_X: 128 Dest_Y: 105
+
+FULX-NODE: ( @004C4C )
+ Origin_X: 128 Origin_Y: 105
+ Dest_X: 146 Dest_Y: 112
+
+FULX-NODE: ( @004C5F )
+ Origin_X: 128 Origin_Y: 143
+ Dest_X: 123 Dest_Y: 127
+
+FULX-NODE: ( @004C72 )
+ Origin_X: 123 Origin_Y: 127
+ Dest_X: 128 Dest_Y: 143
+
+NEBULA: ( @004C85 )
+ Star_X: 84 Star_Y: 165 Size: 5
+
+NEBULA: ( @004C96 )
+ Star_X: 79 Star_Y: 159 Size: 4
+
+NEBULA: ( @004CA7 )
+ Star_X: 89 Star_Y: 164 Size: 3
+
+NEBULA: ( @004CB8 )
+ Star_X: 144 Star_Y: 56 Size: 5
+
+NEBULA: ( @004CC9 )
+ Star_X: 142 Star_Y: 59 Size: 4
+
+NEBULA: ( @004CDA )
+ Star_X: 148 Star_Y: 80 Size: 7
+
+NEBULA: ( @004CEB )
+ Star_X: 146 Star_Y: 88 Size: 3
+
+NEBULA: ( @004CFC )
+ Star_X: 141 Star_Y: 76 Size: 3
+
+NEBULA: ( @004D0D )
+ Star_X: 155 Star_Y: 65 Size: 3
+
+NEBULA: ( @004D1E )
+ Star_X: 122 Star_Y: 60 Size: 10
+
+NEBULA: ( @004D2F )
+ Star_X: 128 Star_Y: 66 Size: 6
+
+NEBULA: ( @004D40 )
+ Star_X: 110 Star_Y: 64 Size: 5
+
+NEBULA: ( @004D51 )
+ Star_X: 111 Star_Y: 43 Size: 4
+
+NEBULA: ( @004D62 )
+ Star_X: 126 Star_Y: 36 Size: 2
+
+NEBULA: ( @004D73 )
+ Star_X: 124 Star_Y: 78 Size: 2
+
+NEBULA: ( @004D84 )
+ Star_X: 153 Star_Y: 98 Size: 2
+
+NEBULA: ( @004D95 )
+ Star_X: 156 Star_Y: 100 Size: 2
+
+NEBULA: ( @004DA6 )
+ Star_X: 82 Star_Y: 56 Size: 3
+
+NEBULA: ( @004DB7 )
+ Star_X: 79 Star_Y: 53 Size: 2
+
+NEBULA: ( @004DC8 )
+ Star_X: 76 Star_Y: 54 Size: 3
+
+NEBULA: ( @004DD9 )
+ Star_X: 71 Star_Y: 46 Size: 2
+
+NEBULA: ( @004DEA )
+ Star_X: 69 Star_Y: 47 Size: 2
+
+NEBULA: ( @004DFB )
+ Star_X: 64 Star_Y: 72 Size: 6
+
+NEBULA: ( @004E0C )
+ Star_X: 52 Star_Y: 74 Size: 9
+
+NEBULA: ( @004E1D )
+ Star_X: 76 Star_Y: 22 Size: 10
+
+NEBULA: ( @004E2E )
+ Star_X: 76 Star_Y: 34 Size: 5
+
+NEBULA: ( @004E3F )
+ Star_X: 61 Star_Y: 17 Size: 5
+
+NEBULA: ( @004E50 )
+ Star_X: 88 Star_Y: 12 Size: 3
+
+NEBULA: ( @004E61 )
+ Star_X: 39 Star_Y: 32 Size: 3
+
+NEBULA: ( @004E72 )
+ Star_X: 99 Star_Y: 55 Size: 1
+
+NEBULA: ( @004E83 )
+ Star_X: 98 Star_Y: 53 Size: 1
+
+NEBULA: ( @004E94 )
+ Star_X: 16 Star_Y: 11 Size: 7
+
+NEBULA: ( @004EA5 )
+ Star_X: 23 Star_Y: 9 Size: 6
+
+NEBULA: ( @004EB6 )
+ Star_X: 28 Star_Y: 14 Size: 4
+
+NEBULA: ( @004EC7 )
+ Star_X: 12 Star_Y: 6 Size: 4
+
+NEBULA: ( @004ED8 )
+ Star_X: 37 Star_Y: 10 Size: 1
+
+NEBULA: ( @004EE9 )
+ Star_X: 37 Star_Y: 8 Size: 1
+
+NEBULA: ( @004EFA )
+ Star_X: 180 Star_Y: 107 Size: 5
+
+NEBULA: ( @004F0B )
+ Star_X: 184 Star_Y: 102 Size: 3
+
+NEBULA: ( @004F1C )
+ Star_X: 179 Star_Y: 101 Size: 2
+
+NEBULA: ( @004F2D )
+ Star_X: 193 Star_Y: 113 Size: 2
+
+NEBULA: ( @004F3E )
+ Star_X: 192 Star_Y: 110 Size: 1
+
+NEBULA: ( @004F4F )
+ Star_X: 195 Star_Y: 127 Size: 3
+
+NEBULA: ( @004F60 )
+ Star_X: 196 Star_Y: 132 Size: 2
+
+NEBULA: ( @004F71 )
+ Star_X: 197 Star_Y: 141 Size: 2
+
+NEBULA: ( @004F82 )
+ Star_X: 189 Star_Y: 131 Size: 1
+
+NEBULA: ( @004F93 )
+ Star_X: 211 Star_Y: 149 Size: 2
+
+NEBULA: ( @004FA4 )
+ Star_X: 212 Star_Y: 151 Size: 2
+
+NEBULA: ( @004FB5 )
+ Star_X: 3 Star_Y: 32 Size: 8
+
+NEBULA: ( @004FC6 )
+ Star_X: 3 Star_Y: 23 Size: 4
+
+NEBULA: ( @004FD7 )
+ Star_X: 30 Star_Y: 182 Size: 9
+
+NEBULA: ( @004FE8 )
+ Star_X: 22 Star_Y: 187 Size: 5
+
+NEBULA: ( @005000 )
+ Star_X: 21 Star_Y: 170 Size: 3
+
+NEBULA: ( @005011 )
+ Star_X: 48 Star_Y: 131 Size: 3
+
+NEBULA: ( @005022 )
+ Star_X: 44 Star_Y: 133 Size: 2
+
+NEBULA: ( @005033 )
+ Star_X: 156 Star_Y: 141 Size: 2
+
+NEBULA: ( @005044 )
+ Star_X: 141 Star_Y: 168 Size: 3
+
+NEBULA: ( @005055 )
+ Star_X: 143 Star_Y: 165 Size: 1
+
+NEBULA: ( @005066 )
+ Star_X: 141 Star_Y: 170 Size: 1
+
+NEBULA: ( @005077 )
+ Star_X: 174 Star_Y: 225 Size: 9
+
+NEBULA: ( @005088 )
+ Star_X: 178 Star_Y: 217 Size: 6
+
+NEBULA: ( @005099 )
+ Star_X: 181 Star_Y: 231 Size: 4
+
+NEBULA: ( @0050AA )
+ Star_X: 184 Star_Y: 218 Size: 2
+
+NEBULA: ( @0050BB )
+ Star_X: 161 Star_Y: 215 Size: 2
+
+NEBULA: ( @0050CC )
+ Star_X: 82 Star_Y: 236 Size: 3
+
+NEBULA: ( @0050DD )
+ Star_X: 68 Star_Y: 217 Size: 2
+
+NEBULA: ( @0050EE )
+ Star_X: 198 Star_Y: 17 Size: 5
+
+NEBULA: ( @0050FF )
+ Star_X: 195 Star_Y: 14 Size: 4
+
+NEBULA: ( @005110 )
+ Star_X: 191 Star_Y: 14 Size: 4
+
+NEBULA: ( @005121 )
+ Star_X: 180 Star_Y: 12 Size: 2
+
+ENCOUNTER: ( @005132 )
+ Type: 8 ( Velox ) Star_X: 112 Star_Y: 134
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @00514E )
+ Type: 8 ( Velox ) Star_X: 118 Star_Y: 128
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @00516A )
+ Type: 8 ( Velox ) Star_X: 131 Star_Y: 119
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @005186 )
+ Type: 8 ( Velox ) Star_X: 145 Star_Y: 118
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @0051A2 )
+ Type: 8 ( Velox ) Star_X: 158 Star_Y: 126
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @0051BE )
+ Type: 8 ( Velox ) Star_X: 151 Star_Y: 136
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @0051DA )
+ Type: 8 ( Velox ) Star_X: 167 Star_Y: 146
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @0051F6 )
+ Type: 8 ( Velox ) Star_X: 159 Star_Y: 150
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @005212 )
+ Type: 8 ( Velox ) Star_X: 167 Star_Y: 160
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @00522E )
+ Type: 8 ( Velox ) Star_X: 154 Star_Y: 170
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @00524A )
+ Type: 8 ( Velox ) Star_X: 146 Star_Y: 174
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @005266 )
+ Type: 8 ( Velox ) Star_X: 123 Star_Y: 168
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @005282 )
+ Type: 8 ( Velox ) Star_X: 210 Star_Y: 130
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @00529E )
+ Type: 8 ( Velox ) Star_X: 97 Star_Y: 164
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @0052BA )
+ Type: 8 ( Velox ) Star_X: 45 Star_Y: 176
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @0052D6 )
+ Type: 8 ( Velox ) Star_X: 193 Star_Y: 183
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @0052F2 )
+ Type: 8 ( Velox ) Star_X: 245 Star_Y: 43
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 12 0
+
+ENCOUNTER: ( @00530E )
+ Type: 8 ( Velox ) Star_X: 130 Star_Y: 133
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 12 13
+
+ENCOUNTER: ( @00532A )
+ Type: 8 ( Velox ) Star_X: 150 Star_Y: 125
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 12 13
+
+ENCOUNTER: ( @005346 )
+ Type: 8 ( Velox ) Star_X: 126 Star_Y: 157
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 12 13
+
+ENCOUNTER: ( @005362 )
+ Type: 8 ( Velox ) Star_X: 113 Star_Y: 151
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 12 13
+
+ENCOUNTER: ( @00537E )
+ Type: 8 ( Velox ) Star_X: 78 Star_Y: 113
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 12 13
+
+ENCOUNTER: ( @00539A )
+ Type: 8 ( Velox ) Star_X: 194 Star_Y: 67
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 12 13
+
+ENCOUNTER: ( @0053B6 )
+ Type: 8 ( Velox ) Star_X: 140 Star_Y: 139
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 13
+
+ENCOUNTER: ( @0053D2 )
+ Type: 8 ( Velox ) Star_X: 148 Star_Y: 151
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 13
+
+ENCOUNTER: ( @005400 )
+ Type: 8 ( Velox ) Star_X: 138 Star_Y: 163
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 13
+
+ENCOUNTER: ( @00541C )
+ Type: 8 ( Velox ) Star_X: 144 Star_Y: 192
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 13
+
+ENCOUNTER: ( @005438 )
+ Type: 8 ( Velox ) Star_X: 121 Star_Y: 139
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @005454 )
+ Type: 8 ( Velox ) Star_X: 145 Star_Y: 129
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @005470 )
+ Type: 8 ( Velox ) Star_X: 152 Star_Y: 159
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @00548C )
+ Type: 8 ( Velox ) Star_X: 157 Star_Y: 143
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0054A8 )
+ Type: 8 ( Velox ) Star_X: 136 Star_Y: 151
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0054C4 )
+ Type: 8 ( Velox ) Star_X: 135 Star_Y: 176
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0054E0 )
+ Type: 8 ( Velox ) Star_X: 165 Star_Y: 137
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @0054FC )
+ Type: 8 ( Velox ) Star_X: 122 Star_Y: 147
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @005518 )
+ Type: 8 ( Velox ) Star_X: 135 Star_Y: 127
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @005534 )
+ Type: 8 ( Velox ) Star_X: 159 Star_Y: 165
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 11 12 13
+
+ENCOUNTER: ( @005550 )
+ Type: 6 ( Spemin ) Star_X: 115 Star_Y: 145
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @00556C )
+ Type: 6 ( Spemin ) Star_X: 112 Star_Y: 113
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @005588 )
+ Type: 6 ( Spemin ) Star_X: 102 Star_Y: 103
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @0055A4 )
+ Type: 6 ( Spemin ) Star_X: 79 Star_Y: 101
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @0055C0 )
+ Type: 6 ( Spemin ) Star_X: 67 Star_Y: 112
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @0055DC )
+ Type: 6 ( Spemin ) Star_X: 44 Star_Y: 141
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @0055F8 )
+ Type: 6 ( Spemin ) Star_X: 116 Star_Y: 162
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @005614 )
+ Type: 6 ( Spemin ) Star_X: 82 Star_Y: 172
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @005630 )
+ Type: 6 ( Spemin ) Star_X: 52 Star_Y: 159
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @00564C )
+ Type: 6 ( Spemin ) Star_X: 164 Star_Y: 106
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @005668 )
+ Type: 6 ( Spemin ) Star_X: 246 Star_Y: 4
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @005684 )
+ Type: 6 ( Spemin ) Star_X: 236 Star_Y: 82
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @0056A0 )
+ Type: 6 ( Spemin ) Star_X: 92 Star_Y: 112
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 2 0
+
+ENCOUNTER: ( @0056BC )
+ Type: 6 ( Spemin ) Star_X: 108 Star_Y: 132
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 2 3
+
+ENCOUNTER: ( @0056D8 )
+ Type: 6 ( Spemin ) Star_X: 100 Star_Y: 172
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 2 3
+
+ENCOUNTER: ( @0056F4 )
+ Type: 6 ( Spemin ) Star_X: 51 Star_Y: 122
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 2 3
+
+ENCOUNTER: ( @005710 )
+ Type: 6 ( Spemin ) Star_X: 84 Star_Y: 134
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 2 3
+
+ENCOUNTER: ( @00572C )
+ Type: 6 ( Spemin ) Star_X: 117 Star_Y: 78
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 2 3
+
+ENCOUNTER: ( @005748 )
+ Type: 6 ( Spemin ) Star_X: 168 Star_Y: 213
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 2 3
+
+ENCOUNTER: ( @005764 )
+ Type: 6 ( Spemin ) Star_X: 81 Star_Y: 152
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 3
+
+ENCOUNTER: ( @005780 )
+ Type: 6 ( Spemin ) Star_X: 67 Star_Y: 142
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 3
+
+ENCOUNTER: ( @00579C )
+ Type: 6 ( Spemin ) Star_X: 56 Star_Y: 148
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 3
+
+ENCOUNTER: ( @0057B8 )
+ Type: 6 ( Spemin ) Star_X: 86 Star_Y: 113
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @0057D4 )
+ Type: 6 ( Spemin ) Star_X: 98 Star_Y: 121
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @005800 )
+ Type: 6 ( Spemin ) Star_X: 67 Star_Y: 130
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @00581C )
+ Type: 6 ( Spemin ) Star_X: 95 Star_Y: 142
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @005838 )
+ Type: 6 ( Spemin ) Star_X: 79 Star_Y: 143
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @005854 )
+ Type: 6 ( Spemin ) Star_X: 88 Star_Y: 155
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @005870 )
+ Type: 6 ( Spemin ) Star_X: 66 Star_Y: 169
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 1 2 3
+
+ENCOUNTER: ( @00588C )
+ Type: 7 ( Thryn ) Star_X: 134 Star_Y: 53
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 9 0
+
+ENCOUNTER: ( @0058A8 )
+ Type: 7 ( Thryn ) Star_X: 144 Star_Y: 49
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 9 0
+
+ENCOUNTER: ( @0058C4 )
+ Type: 7 ( Thryn ) Star_X: 149 Star_Y: 37
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 9 0
+
+ENCOUNTER: ( @0058E0 )
+ Type: 7 ( Thryn ) Star_X: 119 Star_Y: 25
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 9 0
+
+ENCOUNTER: ( @0058FC )
+ Type: 7 ( Thryn ) Star_X: 128 Star_Y: 17
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 9 0
+
+ENCOUNTER: ( @005918 )
+ Type: 7 ( Thryn ) Star_X: 202 Star_Y: 10
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 9 0
+
+ENCOUNTER: ( @005934 )
+ Type: 7 ( Thryn ) Star_X: 68 Star_Y: 17
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 9 0
+
+ENCOUNTER: ( @005950 )
+ Type: 7 ( Thryn ) Star_X: 116 Star_Y: 39
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 9 10
+
+ENCOUNTER: ( @00596C )
+ Type: 7 ( Thryn ) Star_X: 140 Star_Y: 24
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 9 10
+
+ENCOUNTER: ( @005988 )
+ Type: 7 ( Thryn ) Star_X: 130 Star_Y: 31
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 10
+
+ENCOUNTER: ( @0059A4 )
+ Type: 7 ( Thryn ) Star_X: 128 Star_Y: 43
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 8 9 10
+
+ENCOUNTER: ( @0059C0 )
+ Type: 7 ( Thryn ) Star_X: 138 Star_Y: 31
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 8 9 10
+
+ENCOUNTER: ( @0059DC )
+ Type: 7 ( Thryn ) Star_X: 134 Star_Y: 37
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 8 9 10
+
+ENCOUNTER: ( @0059F8 )
+ Type: 7 ( Thryn ) Star_X: 123 Star_Y: 32
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 8 9 10
+
+ENCOUNTER: ( @005A14 )
+ Type: 1 ( Elowan ) Star_X: 178 Star_Y: 88
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 6 0
+
+ENCOUNTER: ( @005A30 )
+ Type: 1 ( Elowan ) Star_X: 150 Star_Y: 65
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 7
+
+ENCOUNTER: ( @005A4C )
+ Type: 1 ( Elowan ) Star_X: 154 Star_Y: 43
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 5 6 7
+
+ENCOUNTER: ( @005A68 )
+ Type: 1 ( Elowan ) Star_X: 164 Star_Y: 50
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 5 6 7
+
+ENCOUNTER: ( @005A84 )
+ Type: 1 ( Elowan ) Star_X: 153 Star_Y: 57
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 5 6 7
+
+ENCOUNTER: ( @005AA0 )
+ Type: 1 ( Elowan ) Star_X: 141 Star_Y: 57
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 5 6 7
+
+ENCOUNTER: ( @005ABC )
+ Type: 1 ( Elowan ) Star_X: 164 Star_Y: 63
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 5 6 7
+
+ENCOUNTER: ( @005AD8 )
+ Type: 1 ( Elowan ) Star_X: 154 Star_Y: 72
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 5 6 7
+
+ENCOUNTER: ( @005AF4 )
+ Type: 3 ( Mechan 9 ) Star_X: 149 Star_Y: 103
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 4 0
+
+ENCOUNTER: ( @005B10 )
+ Type: 3 ( Mechan 9 ) Star_X: 149 Star_Y: 111
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 4 0
+
+ENCOUNTER: ( @005B2C )
+ Type: 3 ( Mechan 9 ) Star_X: 135 Star_Y: 100
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 4 0
+
+ENCOUNTER: ( @005B48 )
+ Type: 3 ( Mechan 9 ) Star_X: 141 Star_Y: 111
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 4 0
+
+ENCOUNTER: ( @005B64 )
+ Type: 2 ( Gazurt ) Star_X: 115 Star_Y: 45
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 0
+
+ENCOUNTER: ( @005B80 )
+ Type: 2 ( Gazurt ) Star_X: 110 Star_Y: 72
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 0
+
+ENCOUNTER: ( @005B9C )
+ Type: 2 ( Gazurt ) Star_X: 98 Star_Y: 81
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 0
+
+ENCOUNTER: ( @005BB8 )
+ Type: 2 ( Gazurt ) Star_X: 93 Star_Y: 97
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 0
+
+ENCOUNTER: ( @005BD4 )
+ Type: 2 ( Gazurt ) Star_X: 61 Star_Y: 88
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 0
+
+ENCOUNTER: ( @005C00 )
+ Type: 2 ( Gazurt ) Star_X: 91 Star_Y: 31
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 0
+
+ENCOUNTER: ( @005C1C )
+ Type: 2 ( Gazurt ) Star_X: 48 Star_Y: 56
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 0
+
+ENCOUNTER: ( @005C38 )
+ Type: 2 ( Gazurt ) Star_X: 57 Star_Y: 36
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 0
+
+ENCOUNTER: ( @005C54 )
+ Type: 2 ( Gazurt ) Star_X: 186 Star_Y: 25
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 0
+
+ENCOUNTER: ( @005C70 )
+ Type: 2 ( Gazurt ) Star_X: 229 Star_Y: 138
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 14 0
+
+ENCOUNTER: ( @005C8C )
+ Type: 2 ( Gazurt ) Star_X: 101 Star_Y: 55
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @005CA8 )
+ Type: 2 ( Gazurt ) Star_X: 76 Star_Y: 39
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @005CC4 )
+ Type: 2 ( Gazurt ) Star_X: 87 Star_Y: 73
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @005CE0 )
+ Type: 2 ( Gazurt ) Star_X: 75 Star_Y: 87
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @005CFC )
+ Type: 2 ( Gazurt ) Star_X: 64 Star_Y: 72
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @005D18 )
+ Type: 2 ( Gazurt ) Star_X: 72 Star_Y: 62
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 14 15
+
+ENCOUNTER: ( @005D34 )
+ Type: 2 ( Gazurt ) Star_X: 89 Star_Y: 55
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 15
+
+ENCOUNTER: ( @005D50 )
+ Type: 2 ( Gazurt ) Star_X: 82 Star_Y: 52
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 15
+
+ENCOUNTER: ( @005D6C )
+ Type: 2 ( Gazurt ) Star_X: 57 Star_Y: 116
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 15
+
+ENCOUNTER: ( @005D88 )
+ Type: 9 ( Uhlek ) Star_X: 59 Star_Y: 17
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005DA4 )
+ Type: 9 ( Uhlek ) Star_X: 47 Star_Y: 4
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005DC0 )
+ Type: 9 ( Uhlek ) Star_X: 45 Star_Y: 33
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005DDC )
+ Type: 9 ( Uhlek ) Star_X: 44 Star_Y: 46
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005DF8 )
+ Type: 9 ( Uhlek ) Star_X: 43 Star_Y: 92
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005E14 )
+ Type: 9 ( Uhlek ) Star_X: 35 Star_Y: 120
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005E30 )
+ Type: 9 ( Uhlek ) Star_X: 30 Star_Y: 137
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005E4C )
+ Type: 9 ( Uhlek ) Star_X: 37 Star_Y: 154
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005E68 )
+ Type: 9 ( Uhlek ) Star_X: 75 Star_Y: 187
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005E84 )
+ Type: 9 ( Uhlek ) Star_X: 86 Star_Y: 198
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005EA0 )
+ Type: 9 ( Uhlek ) Star_X: 95 Star_Y: 180
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005EBC )
+ Type: 9 ( Uhlek ) Star_X: 127 Star_Y: 176
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005ED8 )
+ Type: 9 ( Uhlek ) Star_X: 85 Star_Y: 218
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005EF4 )
+ Type: 9 ( Uhlek ) Star_X: 212 Star_Y: 201
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005F10 )
+ Type: 9 ( Uhlek ) Star_X: 231 Star_Y: 172
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005F2C )
+ Type: 9 ( Uhlek ) Star_X: 156 Star_Y: 2
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 0 0 16 0
+
+ENCOUNTER: ( @005F48 )
+ Type: 9 ( Uhlek ) Star_X: 36 Star_Y: 21
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @005F64 )
+ Type: 9 ( Uhlek ) Star_X: 14 Star_Y: 25
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @005F80 )
+ Type: 9 ( Uhlek ) Star_X: 20 Star_Y: 43
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @005F9C )
+ Type: 9 ( Uhlek ) Star_X: 31 Star_Y: 56
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @005FB8 )
+ Type: 9 ( Uhlek ) Star_X: 15 Star_Y: 66
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @005FD4 )
+ Type: 9 ( Uhlek ) Star_X: 28 Star_Y: 86
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @006000 )
+ Type: 9 ( Uhlek ) Star_X: 31 Star_Y: 104
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @00601C )
+ Type: 9 ( Uhlek ) Star_X: 13 Star_Y: 136
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @006038 )
+ Type: 9 ( Uhlek ) Star_X: 23 Star_Y: 162
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @006054 )
+ Type: 9 ( Uhlek ) Star_X: 5 Star_Y: 179
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @006070 )
+ Type: 9 ( Uhlek ) Star_X: 40 Star_Y: 188
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @00608C )
+ Type: 9 ( Uhlek ) Star_X: 26 Star_Y: 214
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @0060A8 )
+ Type: 9 ( Uhlek ) Star_X: 45 Star_Y: 206
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @0060C4 )
+ Type: 9 ( Uhlek ) Star_X: 67 Star_Y: 206
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @0060E0 )
+ Type: 9 ( Uhlek ) Star_X: 107 Star_Y: 182
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @0060FC )
+ Type: 9 ( Uhlek ) Star_X: 122 Star_Y: 188
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @006118 )
+ Type: 9 ( Uhlek ) Star_X: 136 Star_Y: 212
+ Enabled: TRUE Homeword: FALSE Fleet Size: 3 Max: 3
+ Vessels: 0 0 16 17
+
+ENCOUNTER: ( @006134 )
+ Type: 9 ( Uhlek ) Star_X: 23 Star_Y: 5
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @006150 )
+ Type: 9 ( Uhlek ) Star_X: 5 Star_Y: 5
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @00616C )
+ Type: 9 ( Uhlek ) Star_X: 9 Star_Y: 15
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @006188 )
+ Type: 9 ( Uhlek ) Star_X: 6 Star_Y: 53
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @0061A4 )
+ Type: 9 ( Uhlek ) Star_X: 7 Star_Y: 96
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @0061C0 )
+ Type: 9 ( Uhlek ) Star_X: 8 Star_Y: 110
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @0061DC )
+ Type: 9 ( Uhlek ) Star_X: 6 Star_Y: 125
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @0061F8 )
+ Type: 9 ( Uhlek ) Star_X: 29 Star_Y: 174
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @006214 )
+ Type: 9 ( Uhlek ) Star_X: 17 Star_Y: 194
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @006230 )
+ Type: 9 ( Uhlek ) Star_X: 10 Star_Y: 207
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @00624C )
+ Type: 9 ( Uhlek ) Star_X: 106 Star_Y: 212
+ Enabled: TRUE Homeword: FALSE Fleet Size: 8 Max: 8
+ Vessels: 0 0 0 17
+
+ENCOUNTER: ( @006268 )
+ Type: 5 ( Nomad ) Star_X: 179 Star_Y: 69
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 19 0 0 0
+
+ENCOUNTER: ( @006284 )
+ Type: 5 ( Nomad ) Star_X: 155 Star_Y: 100
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 19 0 0 0
+
+ENCOUNTER: ( @0062A0 )
+ Type: 5 ( Nomad ) Star_X: 217 Star_Y: 107
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 19 0 0 0
+
+ENCOUNTER: ( @0062BC )
+ Type: 5 ( Nomad ) Star_X: 178 Star_Y: 151
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 19 0 0 0
+
+ENCOUNTER: ( @0062D8 )
+ Type: 5 ( Nomad ) Star_X: 92 Star_Y: 133
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 19 0 0 0
+
+ENCOUNTER: ( @0062F4 )
+ Type: 5 ( Nomad ) Star_X: 94 Star_Y: 47
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 19 0 0 0
+
+ENCOUNTER: ( @006310 )
+ Type: 5 ( Nomad ) Star_X: 35 Star_Y: 145
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 19 0 0 0
+
+ENCOUNTER: ( @00632C )
+ Type: 4 ( Mysteron ) Star_X: 217 Star_Y: 86
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 20 0 0 0
+
+ENCOUNTER: ( @006348 )
+ Type: 4 ( Mysteron ) Star_X: 191 Star_Y: 152
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 20 0 0 0
+
+ENCOUNTER: ( @006364 )
+ Type: 4 ( Mysteron ) Star_X: 127 Star_Y: 53
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 20 0 0 0
+
+ENCOUNTER: ( @006380 )
+ Type: 4 ( Mysteron ) Star_X: 20 Star_Y: 200
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 20 0 0 0
+
+ENCOUNTER: ( @00639C )
+ Type: 18 ( USS Enterprise ) Star_X: 180 Star_Y: 123
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 21 0 0 0
+
+ENCOUNTER: ( @0063B8 )
+ Type: 11 ( Minstrel ) Star_X: 96 Star_Y: 87
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 22 0 0 0
+
+ENCOUNTER: ( @0063D4 )
+ Type: 11 ( Minstrel ) Star_X: 227 Star_Y: 32
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 22 0 0 0
+
+ENCOUNTER: ( @006400 )
+ Type: 11 ( Minstrel ) Star_X: 164 Star_Y: 80
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 22 0 0 0
+
+ENCOUNTER: ( @00641C )
+ Type: 11 ( Minstrel ) Star_X: 130 Star_Y: 162
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 22 0 0 0
+
+ENCOUNTER: ( @006438 )
+ Type: 11 ( Minstrel ) Star_X: 63 Star_Y: 183
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 22 0 0 0
+
+ENCOUNTER: ( @006454 )
+ Type: 11 ( Minstrel ) Star_X: 70 Star_Y: 52
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 22 0 0 0
+
+ENCOUNTER: ( @006470 )
+ Type: 11 ( Minstrel ) Star_X: 231 Star_Y: 156
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 22 0 0 0
+
+ENCOUNTER: ( @00648C )
+ Type: 11 ( Minstrel ) Star_X: 7 Star_Y: 40
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 22 0 0 0
+
+ENCOUNTER: ( @0064A8 )
+ Type: 11 ( Minstrel ) Star_X: 43 Star_Y: 82
+ Enabled: TRUE Homeword: FALSE Fleet Size: 1 Max: 1
+ Vessels: 22 0 0 0
+
+ENCOUNTER: ( @007470 )
+ Type: 21 ( Police ) Star_X: 255 Star_Y: 255
+ Enabled: TRUE Homeword: FALSE Fleet Size: -1 Max: 10
+ Vessels: 25 0 0 0
+

@@ -1,0 +1,200 @@
+( RAW Data:OverlayHeader @F060-F074 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 8136 	Count: 0050 	Data Size: 004D (Paragraphs)
+    On Disk Location 81360-81860
+  Overlay Address: @F060 	Overlay DP: @F52A
+    Load Location: @F060-@F560 	Load Length: 1280
+    Data: @F060-@F52A 	Data Length: 1226
+    Junk: @F52A-@F560 	Junk Length: 54
+  VOCABULARY Word: D238 DOC-VOC
+   Dictionary Link 1: F4E3
+   Dictionary Link 2: F4C8
+   Dictionary Link 3: F35C
+   Dictionary Link 4: 0000
+
+@F060 36 81 50 00 60 F0 2A F5 38 D2 E3 F4 C8 F4 5C F3   6.P.`.*.8.....\.
+@F070 00 00 4D 00                                       ..M.            
+)
+
+( Data:AField @F074-F07C XT:F076 CFA:73EA DLen: 6 STAGE: Words)
+16 19 1 AFIELD _cm-durability ( CREWMEMBER )
+
+( Data:IField @F07C-F081 XT:F07E CFA:744D DLen: 3 STAGE: Words)
+16 11 15 IFIELD _cm_name ( CREWMEMBER )
+
+( Data:IField @F081-F086 XT:F083 CFA:744D DLen: 3 STAGE: Words)
+16 31 1 IFIELD [I-CREWMEMBER:31-32] ( CREWMEMBER )
+
+( Data:IField @F086-F08B XT:F088 CFA:744D DLen: 3 STAGE: Words)
+16 32 2 IFIELD _cm_status ( CREWMEMBER )
+
+( Data:IField @F08B-F090 XT:F08D CFA:744D DLen: 3 STAGE: Words)
+17 17 3 IFIELD _ac_captian ( ASSIGN-CREW )
+
+( @F090-F0A4 XT:F092 CFA:224C DLen: 18 STAGE: Words)
+: [DOCTOR:F092]
+ 64 XBLT ! ." [N Y]" ; 
+
+( @F0A4-F0E4 XT:F0A6 CFA:224C DLen: 62 STAGE: Words)
+: [DOCTOR:F0A6]
+ >R *ASSIGN_____ >C+S 0 6 0 DO 
+  _ac_captian I 3 * + @>C+S _cm_status @ J AND IF 
+   1+ >R CI R> LEAVE 
+  THEN 
+  ICLOSE 
+ LOOP 
+ ICLOSE R> DROP ; 
+
+( @F0E4-F18F XT:F0E6 CFA:224C DLen: 169 STAGE: Words)
+: [DOCTOR:F0E6]
+ >R I 0= IF 
+  ." DEAD" 
+ ELSE 
+  I 1 21 WITHIN IF 
+   ." CRITICALLY" 
+  ELSE 
+   I 21 51 WITHIN IF 
+    ." HEAVILY" 
+   ELSE 
+    I 51 81 WITHIN IF 
+     ." MODERATELY" 
+    ELSE 
+     I 81 100 WITHIN IF 
+      ." SLIGHTLY" 
+     ELSE 
+      ." NOT" 
+     THEN 
+    THEN 
+   THEN 
+  THEN 
+  ."  WOUNDED" 
+ THEN 
+ R> DROP ; 
+
+( @F18F-F1AD XT:F191 CFA:224C DLen: 28 STAGE: Words)
+: [DOCTOR:F191]
+ IF 
+  ." TREAT" 
+ ELSE 
+  ." EXAMINE" 
+ THEN 
+ ; 
+
+( @F1AD-F1F8 XT:F1AF CFA:224C DLen: 73 STAGE: Words)
+: [DOCTOR:F1AF]
+ >C+S CTINIT ." SHOULD I STOP TREATING " _cm_name $. ICLOSE CTCR ." TO " [DOCTOR:F191] 
+ ."  SOMEONE ELSE?" CTCR [DOCTOR:F092] Y/N CTERASE ; 
+
+( @F1F8-F227 XT:F1FA CFA:224C DLen: 45 STAGE: Words)
+: [DOCTOR:F1FA]
+ _cm_name $. ."  DOESN'T NEED MEDICAL" CTCR ." TREATMENT." ; 
+
+( @F227-F242 XT:F229 CFA:224C DLen: 25 STAGE: Words)
+: [DOCTOR:F229]
+ _cm_name $. ."  IS BEYOND HELP." ; 
+
+( @F242-F26D XT:F244 CFA:224C DLen: 41 STAGE: Words)
+: [DOCTOR:F244]
+ ." I AM STARTING TREATMENT ON" CTCR _cm_name $. ." ." ; 
+
+( @F26D-F2AD XT:F26F CFA:224C DLen: 62 STAGE: Words)
+: [DOCTOR:F26F]
+ >C+S [I-CREWMEMBER:31-32] C@ 1 100 WITHIN IF 
+  [DOCTOR:F244] _cm_status @ 4 OR _cm_status ! 
+ ELSE 
+  [I-CREWMEMBER:31-32] C@ 100 = IF 
+   [DOCTOR:F1FA] 
+  ELSE 
+   [DOCTOR:F229] 
+  THEN 
+ THEN 
+ ICLOSE ; 
+
+( @F2AD-F2D7 XT:F2AF CFA:224C DLen: 40 STAGE: Words)
+: [DOCTOR:F2AF]
+ ." I AM CEASING TREATMENT ON" CTCR _cm_name $. ." ." ; 
+
+( @F2D7-F2EF XT:F2D9 CFA:224C DLen: 22 STAGE: Words)
+: [DOCTOR:F2D9]
+ >C+S [DOCTOR:F2AF] _cm_status @ -5 AND _cm_status ! ICLOSE ; 
+
+( @F2EF-F31C XT:F2F1 CFA:224C DLen: 43 STAGE: Words)
+: [DOCTOR:F2F1]
+ ." I AM CONTINUING TREATMENT ON" CTCR _cm_name $. ." ." ; 
+
+( @F31C-F332 XT:F31E CFA:224C DLen: 20 STAGE: Words)
+: [DOCTOR:F31E]
+ >C+S [DOCTOR:F2F1] _cm_status @ 4 OR _cm_status ! ICLOSE ; 
+
+( @F332-F346 XT:F334 CFA:224C DLen: 18 STAGE: Words)
+: [DOCTOR:F334]
+ BEGIN 
+  INEXT _cm_status C@ 8 AND 
+ UNTIL 
+ 1 ; 
+
+( @F346-F35A XT:F348 CFA:224C DLen: 18 STAGE: Words)
+: [DOCTOR:F348]
+ BEGIN 
+  IPREV _cm_status C@ 8 AND 
+ UNTIL 
+ 1 ; 
+
+( Data:Case @F35A-F371 XT:F365 CFA:4A4F DLen: 12 STAGE: Dictionaries)
+CASE NPCREW
+ 1 IS [DOCTOR:F334]
+ 65535 IS [DOCTOR:F348]
+ OTHERS 0
+
+( @F371-F41F XT:F373 CFA:224C DLen: 172 STAGE: Words)
+: [DOCTOR:F373]
+ CTINIT CTERASE ." WHO SHOULD I " [DOCTOR:F191] ." ?" *PERSON___ >C+S IOPEN BEGIN 
+  _cm_status C@ 8 AND NOT WHILE 
+  INEXT 
+ REPEAT 
+ 1 21 CMESS ." CHOOSE CREWMEMBER ^\" !CRS 2 18 CMESS ." AND PRESS SPACEBAR" !CRS 
+ 11 2 CTPOS. _cm_name $. BEGIN 
+  XYSCAN DROP NPCREW IF 
+   11 2 CTPOS. 15 BLACK POLY-ER________ _cm_name $. 
+  THEN 
+  ?TRIG 
+ UNTIL 
+ CI CDROP ICLOSE ; 
+
+( @F41F-F4C6 XT:F421 CFA:224C DLen: 165 STAGE: Words)
+: [DOCTOR:F421]
+ CTINIT CTERASE >C+S _cm_name $. ."  IS " [I-CREWMEMBER:31-32] C@ DUP [DOCTOR:F0E6] 
+ IF 
+  ." ," CTCR ." AND HAS A VITALITY OF " [I-CREWMEMBER:31-32] C@ 0 .R ."  AND A" CTCR 
+  ." DURABILITY OF " _cm-durability C@ 0 .R 
+ THEN 
+ ." ." CTCR _cm_status @ 4 AND IF 
+  _cm_name $. ."  IS CURRENTLY BEING" CTCR ." TREATED." 
+ THEN 
+ ICLOSE ; 
+
+( @F4C6-F4E1 XT:F4D5 CFA:224C DLen: 12 STAGE: Dictionaries)
+: (/EXAMINE)
+ CTERASE >1FONT 0 [DOCTOR:F373] [DOCTOR:F421] ; 
+
+( @F4E1-F52A XT:F4EE CFA:224C DLen: 60 STAGE: Dictionaries)
+: (/TREAT)
+ CTERASE 4 [DOCTOR:F0A6] IF 
+  2DUP 1 ROT ROT [DOCTOR:F1AF] IF 
+   [DOCTOR:F2D9] $09C4 MS 1 [DOCTOR:F373] CTERASE [DOCTOR:F26F] 
+  ELSE 
+   [DOCTOR:F31E] 
+  THEN 
+ ELSE 
+  1 [DOCTOR:F373] CTERASE [DOCTOR:F26F] 
+ THEN 
+ ; 
+
+( RAW Data:OverlayJunk @F52A-F560 DLen: 54 STAGE: Dictionaries)
+ _overlayJunk 54 ALLOT ( @F52A =
+@F52A                               44 4F 43 2D 56 4F             DOC-VO
+@F530 43 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   C_______________
+@F540 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 20 66 6F 72 20 44   __________ for D
+@F550 4F 43 54 4F 52 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D   OCTOR-----------
+ )
+

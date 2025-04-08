@@ -1,0 +1,35 @@
+Crewmember #0
+  Species: HUMAN
+  Durability: 6
+  Learning Rate: 9
+  Inital Stats:  50  30  30  30  30
+  Max Stats:    250 200 200 200 200
+
+Crewmember #1
+  Species: VELOX
+  Durability: 8
+  Learning Rate: 6
+  Inital Stats:  30  50  50   0   0
+  Max Stats:    200 250 250 100 100
+
+Crewmember #2
+  Species: THRYNN
+  Durability: 6
+  Learning Rate: 7
+  Inital Stats:  30  30  30  50   0
+  Max Stats:    200 200 200 250 100
+
+Crewmember #3
+  Species: ELOWAN
+  Durability: 2
+  Learning Rate: 10
+  Inital Stats:  10  30  10  50  50
+  Max Stats:    150 200 150 250 250
+
+Crewmember #4
+  Species: ANDROID
+  Durability: 10
+  Learning Rate: 0
+  Inital Stats:  50 150 100   0  20
+  Max Stats:     50 150 100   0  20
+

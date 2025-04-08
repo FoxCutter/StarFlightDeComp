@@ -1,0 +1,9 @@
+BANK-TRANS Record Length: 19 Record Count: 7
+
+Record #0   : FINE
+Record #1   : SHIP CONFIGURATION
+Record #2   : TRADE DEPOT
+Record #3   : BONUS
+Record #4   : PERSONNEL
+Record #5   : INTEREST
+Record #6   : GAME PURCHASE

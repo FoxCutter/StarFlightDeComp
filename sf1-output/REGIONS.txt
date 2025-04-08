@@ -1,0 +1,24 @@
+Region #0
+  Name: "SUBFREEZING"
+  LSeed Adjustment: -100
+
+Region #1
+  Name: "ARCTIC"
+  LSeed Adjustment: 20
+
+Region #2
+  Name: "TEMPERATE"
+  LSeed Adjustment: 50
+
+Region #3
+  Name: "TROPICAL"
+  LSeed Adjustment: 70
+
+Region #4
+  Name: "SEARING"
+  LSeed Adjustment: 10
+
+Region #5
+  Name: "FURNACE"
+  LSeed Adjustment: -100
+

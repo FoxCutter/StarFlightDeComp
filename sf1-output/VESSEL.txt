@@ -1,0 +1,475 @@
+Ship: #1
+  Species: Spemin
+  Class: 1   Speed: 1   Mass: 800   Max Temp: 1500
+  Shields: 0   Armor: 200
+  Missile: 0   Laser: 0   Plasma: 0   Fire Rate: 7   Power: 0
+  Endurium Debris: 30
+  Element 1: LEAD               Debris: 110
+  Element 2: IRON               Debris: 70
+  Element 3: COBALT             Debris: 20
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000400
+   Sensors 0:  Type: Life    Shape: Circle  Y: 13   X: 11   Radius: 2  
+   Sensors 1:  Type: Life    Shape: Circle  Y: 11   X: 36   Radius: 2  
+   Sensors 2:  Type: Life    Shape: Circle  Y: 35   X: 4    Radius: 2  
+   Sensors 3:  Type: Power   Shape: Circle  Y: 28   X: 30   Radius: 4  
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #2
+  Species: Spemin
+  Class: 2   Speed: 3   Mass: 400   Max Temp: 1500
+  Shields: 0   Armor: 500
+  Missile: 0   Laser: 2   Plasma: 0   Fire Rate: 7   Power: 5
+  Endurium Debris: 10
+  Element 1: LEAD               Debris: 60
+  Element 2: IRON               Debris: 40
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000800
+   Sensors 0:  Type: Life    Shape: Circle  Y: 27   X: 14   Radius: 4  
+   Sensors 1:  Type: Power   Shape: Circle  Y: 27   X: 28   Radius: 4  
+   Sensors 2:  None
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #3
+  Species: Spemin
+  Class: 3   Speed: 5   Mass: 700   Max Temp: 1500
+  Shields: 0   Armor: 1000
+  Missile: 1   Laser: 2   Plasma: 0   Fire Rate: 7   Power: 10
+  Endurium Debris: 50
+  Element 1: LEAD               Debris: 100
+  Element 2: IRON               Debris: 70
+  Element 3: COBALT             Debris: 20
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000530
+   Sensors 0:  Type: Life    Shape: Circle  Y: 5    X: 21   Radius: 2  
+   Sensors 1:  Type: Life    Shape: Circle  Y: 8    X: 10   Radius: 2  
+   Sensors 2:  Type: Life    Shape: Circle  Y: 35   X: 8    Radius: 2  
+   Sensors 3:  Type: Life    Shape: Circle  Y: 47   X: 18   Radius: 2  
+   Sensors 4:  Type: Life    Shape: Circle  Y: 45   X: 29   Radius: 2  
+   Sensors 5:  Type: Life    Shape: Circle  Y: 18   X: 36   Radius: 2  
+   Sensors 6:  Type: Power   Shape: Circle  Y: 26   X: 20   Radius: 4  
+
+Ship: #4
+  Species: Mechan 9
+  Class: 2   Speed: 6   Mass: 200   Max Temp: 1750
+  Shields: 400   Armor: 100
+  Missile: 2   Laser: 0   Plasma: 0   Fire Rate: 7   Power: 200
+  Endurium Debris: 30
+  Element 1: IRON               Debris: 100
+  Element 2: MAGNESIUM          Debris: 40
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 00085A
+   Sensors 0:  Type: Power   Shape: Circle  Y: 26   X: 33   Radius: 3  
+   Sensors 1:  Type: Power   Shape: Rectangle  Top: 40   Left: 23   Bottom: 40   Right: 33 
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 13   Left: 23   Bottom: 13   Right: 33 
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #5
+  Species: Elowan
+  Class: 1   Speed: 9   Mass: 350   Max Temp: 2200
+  Shields: 600   Armor: 50
+  Missile: 0   Laser: 0   Plasma: 0   Fire Rate: 5   Power: 0
+  Endurium Debris: 30
+  Element 1: NICKEL             Debris: 50
+  Element 2: MOLYBDENUM         Debris: 30
+  Element 3: PLUTONIUM          Debris: 20
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 0008DC
+   Sensors 0:  Type: Life    Shape: Rectangle  Top: 20   Left: 14   Bottom: 19   Right: 17 
+   Sensors 1:  Type: Life    Shape: Rectangle  Top: 27   Left: 10   Bottom: 26   Right: 17 
+   Sensors 2:  Type: Life    Shape: Rectangle  Top: 34   Left: 5    Bottom: 33   Right: 17 
+   Sensors 3:  Type: Power   Shape: Rectangle  Top: 11   Left: 23   Bottom: 10   Right: 35 
+   Sensors 4:  Type: Power   Shape: Rectangle  Top: 44   Left: 16   Bottom: 43   Right: 28 
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #6
+  Species: Elowan
+  Class: 2   Speed: 18   Mass: 50   Max Temp: 2200
+  Shields: 800   Armor: 50
+  Missile: 2   Laser: 0   Plasma: 0   Fire Rate: 5   Power: 5
+  Endurium Debris: 10
+  Element 1: NICKEL             Debris: 20
+  Element 2: MOLYBDENUM         Debris: 10
+  Element 3: PLUTONIUM          Debris: 10
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000932
+   Sensors 0:  Type: Life    Shape: Rectangle  Top: 32   Left: 6    Bottom: 30   Right: 17 
+   Sensors 1:  Type: Power   Shape: Rectangle  Top: 20   Left: 23   Bottom: 19   Right: 33 
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 41   Left: 17   Bottom: 40   Right: 29 
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #7
+  Species: Elowan
+  Class: 3   Speed: 14   Mass: 150   Max Temp: 2700
+  Shields: 1000   Armor: 50
+  Missile: 3   Laser: 0   Plasma: 0   Fire Rate: 5   Power: 15
+  Endurium Debris: 60
+  Element 1: NICKEL             Debris: 40
+  Element 2: MOLYBDENUM         Debris: 40
+  Element 3: PLUTONIUM          Debris: 20
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000976
+   Sensors 0:  Type: Life    Shape: Rectangle  Top: 18   Left: 13   Bottom: 17   Right: 23 
+   Sensors 1:  Type: Life    Shape: Rectangle  Top: 33   Left: 4    Bottom: 31   Right: 17 
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 9    Left: 22   Bottom: 8    Right: 34 
+   Sensors 3:  Type: Power   Shape: Rectangle  Top: 42   Left: 15   Bottom: 41   Right: 27 
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #8
+  Species: Thryn
+  Class: 1   Speed: 3   Mass: 600   Max Temp: 1750
+  Shields: 200   Armor: 300
+  Missile: 0   Laser: 2   Plasma: 0   Fire Rate: 5   Power: 8
+  Endurium Debris: 40
+  Element 1: COPPER             Debris: 80
+  Element 2: ZINC               Debris: 40
+  Element 3: MAGNESIUM          Debris: 20
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 0009DE
+   Sensors 0:  Type: Life    Shape: Rectangle  Top: 36   Left: 8    Bottom: 22   Right: 9  
+   Sensors 1:  Type: Power   Shape: Rectangle  Top: 16   Left: 22   Bottom: 15   Right: 36 
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 43   Left: 22   Bottom: 42   Right: 36 
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #9
+  Species: Thryn
+  Class: 2   Speed: 6   Mass: 200   Max Temp: 1750
+  Shields: 400   Armor: 400
+  Missile: 0   Laser: 5   Plasma: 0   Fire Rate: 5   Power: 15
+  Endurium Debris: 20
+  Element 1: COPPER             Debris: 40
+  Element 2: ZINC               Debris: 20
+  Element 3: MAGNESIUM          Debris: 10
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000A26
+   Sensors 0:  Type: Life    Shape: Circle  Y: 27   X: 12   Radius: 4  
+   Sensors 1:  Type: Power   Shape: Rectangle  Top: 10   Left: 16   Bottom: 9    Right: 31 
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 45   Left: 16   Bottom: 44   Right: 31 
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #10
+  Species: Thryn
+  Class: 3   Speed: 6   Mass: 400   Max Temp: 2200
+  Shields: 600   Armor: 500
+  Missile: 3   Laser: 5   Plasma: 0   Fire Rate: 5   Power: 22
+  Endurium Debris: 70
+  Element 1: COPPER             Debris: 60
+  Element 2: ZINC               Debris: 30
+  Element 3: MAGNESIUM          Debris: 20
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000A82
+   Sensors 0:  Type: Life    Shape: Circle  Y: 27   X: 14   Radius: 6  
+   Sensors 1:  Type: Power   Shape: Rectangle  Top: 4    Left: 18   Bottom: 3    Right: 33 
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 10   Left: 13   Bottom: 9    Right: 28 
+   Sensors 3:  Type: Power   Shape: Rectangle  Top: 45   Left: 13   Bottom: 44   Right: 28 
+   Sensors 4:  Type: Power   Shape: Rectangle  Top: 52   Left: 18   Bottom: 51   Right: 33 
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #11
+  Species: Velox
+  Class: 1   Speed: 7   Mass: 700   Max Temp: 1750
+  Shields: 400   Armor: 200
+  Missile: 0   Laser: 1   Plasma: 0   Fire Rate: 5   Power: 10
+  Endurium Debris: 40
+  Element 1: COBALT             Debris: 120
+  Element 2: MOLYBDENUM         Debris: 40
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000C00
+   Sensors 0:  Type: Life    Shape: Circle  Y: 27   X: 2    Radius: 2  
+   Sensors 1:  Type: Life    Shape: Circle  Y: 27   X: 15   Radius: 3  
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 5    Left: 31   Bottom: 2    Right: 39 
+   Sensors 3:  Type: Power   Shape: Rectangle  Top: 52   Left: 31   Bottom: 49   Right: 39 
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #12
+  Species: Velox
+  Class: 2   Speed: 13   Mass: 300   Max Temp: 2200
+  Shields: 600   Armor: 100
+  Missile: 2   Laser: 0   Plasma: 0   Fire Rate: 5   Power: 20
+  Endurium Debris: 30
+  Element 1: COBALT             Debris: 70
+  Element 2: MOLYBDENUM         Debris: 20
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000AF8
+   Sensors 0:  Type: Life    Shape: Circle  Y: 26   X: 6    Radius: 2  
+   Sensors 1:  Type: Life    Shape: Circle  Y: 26   X: 19   Radius: 2  
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 13   Left: 25   Bottom: 10   Right: 33 
+   Sensors 3:  Type: Power   Shape: Rectangle  Top: 42   Left: 25   Bottom: 39   Right: 33 
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #13
+  Species: Velox
+  Class: 3   Speed: 11   Mass: 500   Max Temp: 2200
+  Shields: 800   Armor: 500
+  Missile: 4   Laser: 3   Plasma: 0   Fire Rate: 5   Power: 25
+  Endurium Debris: 80
+  Element 1: COBALT             Debris: 100
+  Element 2: MOLYBDENUM         Debris: 20
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000C7A
+   Sensors 0:  Type: Life    Shape: Circle  Y: 27   X: 2    Radius: 2  
+   Sensors 1:  Type: Life    Shape: Circle  Y: 27   X: 19   Radius: 3  
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 13   Left: 19   Bottom: 11   Right: 28 
+   Sensors 3:  Type: Power   Shape: Rectangle  Top: 6    Left: 31   Bottom: 3    Right: 39 
+   Sensors 4:  Type: Power   Shape: Rectangle  Top: 43   Left: 19   Bottom: 41   Right: 28 
+   Sensors 5:  Type: Power   Shape: Rectangle  Top: 51   Left: 31   Bottom: 48   Right: 39 
+   Sensors 6:  None
+
+Ship: #14
+  Species: Gazurt
+  Class: 2   Speed: 8   Mass: 30000   Max Temp: 2700
+  Shields: 200   Armor: 500
+  Missile: 0   Laser: 4   Plasma: 0   Fire Rate: 4   Power: 80
+  Endurium Debris: 100
+  Element 1: MOLYBDENUM         Debris: 120
+  Element 2: TIN                Debris: 50
+  Element 3: MAGNESIUM          Debris: 20
+  Directional: 1   Laser Hit: 1   Missile Hit: 0
+  Ship Base: 000CF4
+   Sensors 0:  Type: Life    Shape: Circle  Y: 16   X: 21   Radius: 2  
+   Sensors 1:  Type: Life    Shape: Circle  Y: 26   X: 13   Radius: 3  
+   Sensors 2:  Type: Life    Shape: Rectangle  Top: 35   Left: 16   Bottom: 34   Right: 17 
+   Sensors 3:  Type: Life    Shape: Circle  Y: 39   X: 21   Radius: 3  
+   Sensors 4:  Type: Life    Shape: Rectangle  Top: 29   Left: 26   Bottom: 28   Right: 27 
+   Sensors 5:  Type: Life    Shape: Rectangle  Top: 21   Left: 24   Bottom: 19   Right: 25 
+   Sensors 6:  Type: Power   Shape: Circle  Y: 27   X: 21   Radius: 4  
+
+Ship: #15
+  Species: Gazurt
+  Class: 3   Speed: 6   Mass: 45000   Max Temp: 3200
+  Shields: 200   Armor: 800
+  Missile: 0   Laser: 5   Plasma: 0   Fire Rate: 4   Power: 120
+  Endurium Debris: 150
+  Element 1: MOLYBDENUM         Debris: 130
+  Element 2: TIN                Debris: 70
+  Element 3: MAGNESIUM          Debris: 40
+  Directional: 1   Laser Hit: 1   Missile Hit: 0
+  Ship Base: 000664
+   Sensors 0:  Type: Life    Shape: Rectangle  Top: 22   Left: 15   Bottom: 20   Right: 16 
+   Sensors 1:  Type: Life    Shape: Circle  Y: 31   X: 13   Radius: 3  
+   Sensors 2:  Type: Life    Shape: Circle  Y: 41   X: 18   Radius: 3  
+   Sensors 3:  Type: Life    Shape: Circle  Y: 34   X: 29   Radius: 3  
+   Sensors 4:  Type: Life    Shape: Circle  Y: 17   X: 29   Radius: 2  
+   Sensors 5:  Type: Life    Shape: Circle  Y: 14   X: 23   Radius: 3  
+   Sensors 6:  Type: Power   Shape: Circle  Y: 27   X: 22   Radius: 5  
+
+Ship: #16
+  Species: Uhlek
+  Class: 2   Speed: 20   Mass: 1000   Max Temp: 3200
+  Shields: 1000   Armor: 1000
+  Missile: 5   Laser: 0   Plasma: 0   Fire Rate: 3   Power: 255
+  Endurium Debris: 150
+  Element 1: ALUMINUM           Debris: 140
+  Element 2: TITANIUM           Debris: 110
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000D82
+   Sensors 0:  Type: Life    Shape: Circle  Y: 23   X: 18   Radius: 4  
+   Sensors 1:  Type: Life    Shape: Circle  Y: 31   X: 18   Radius: 4  
+   Sensors 2:  Type: Power   Shape: Circle  Y: 27   X: 28   Radius: 4  
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #17
+  Species: Uhlek
+  Class: 3   Speed: 12   Mass: 5000   Max Temp: 3200
+  Shields: 1400   Armor: 1000
+  Missile: 5   Laser: 0   Plasma: 1   Fire Rate: 3   Power: 255
+  Endurium Debris: 250
+  Element 1: ALUMINUM           Debris: 190
+  Element 2: TITANIUM           Debris: 140
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000E14
+   Sensors 0:  Type: Life    Shape: Circle  Y: 16   X: 28   Radius: 4  
+   Sensors 1:  Type: Life    Shape: Circle  Y: 27   X: 26   Radius: 4  
+   Sensors 2:  Type: Life    Shape: Circle  Y: 38   X: 28   Radius: 4  
+   Sensors 3:  Type: Power   Shape: Circle  Y: 27   X: 35   Radius: 4  
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #18
+  Species: Velox Probe
+  Class: 0   Speed: 15   Mass: 100   Max Temp: 3200
+  Shields: 1000   Armor: 1000
+  Missile: 3   Laser: 3   Plasma: 0   Fire Rate: 3   Power: 255
+  Endurium Debris: 100
+  Element 1: COBALT             Debris: 30
+  Element 2: MOLYBDENUM         Debris: 10
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000B52
+   Sensors 0:  Type: Power   Shape: Circle  Y: 26   X: 17   Radius: 3  
+   Sensors 1:  Type: Power   Shape: Circle  Y: 26   X: 23   Radius: 3  
+   Sensors 2:  None
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #19
+  Species: Nomad
+  Class: 0   Speed: 2   Mass: 20   Max Temp: 1500
+  Shields: 0   Armor: 5
+  Missile: 0   Laser: 0   Plasma: 0   Fire Rate: 0   Power: 255
+  Endurium Debris: 10
+  Element 1: IRON               Debris: 10
+  Element 2: MAGNESIUM          Debris: 10
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000ECA
+   Sensors 0:  Type: Power   Shape: Circle  Y: 30   X: 15   Radius: 4  
+   Sensors 1:  Type: Power   Shape: Rectangle  Top: 34   Left: 36   Bottom: 26   Right: 37 
+   Sensors 2:  None
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #20
+  Species: Mysteron
+  Class: 0   Speed: 25   Mass: 62000   Max Temp: 60000
+  Shields: 15000   Armor: 15000
+  Missile: 0   Laser: 0   Plasma: 0   Fire Rate: 0   Power: 0
+  Endurium Debris: 0
+  Element 1: RODNIUM            Debris: 250
+  Element 2: RODNIUM            Debris: 250
+  Element 3: RODNIUM            Debris: 250
+  Directional: 1   Laser Hit: 0   Missile Hit: 0
+  Ship Base: 000000
+   Sensors 0:  Type: Life    Shape: Circle  Y: 27   X: 20   Radius: 14 
+   Sensors 1:  Type: Power   Shape: Circle  Y: 27   X: 20   Radius: 14 
+   Sensors 2:  None
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #21
+  Species: USS Enterprise
+  Class: 0   Speed: 17   Mass: 19000   Max Temp: 3200
+  Shields: 1000   Armor: 1000
+  Missile: 5   Laser: 5   Plasma: 0   Fire Rate: 3   Power: 255
+  Endurium Debris: 0
+  Element 1: PROMETHIUM         Debris: 40
+  Element 2: TUNGSTEN           Debris: 40
+  Element 3: TITANIUM           Debris: 30
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 000B92
+   Sensors 0:  Type: Life    Shape: Circle  Y: 29   X: 9    Radius: 6  
+   Sensors 1:  Type: Life    Shape: Rectangle  Top: 31   Left: 20   Bottom: 27   Right: 29 
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 18   Left: 24   Bottom: 16   Right: 38 
+   Sensors 3:  Type: Power   Shape: Rectangle  Top: 42   Left: 24   Bottom: 40   Right: 38 
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #22
+  Species: Minstrel
+  Class: 0   Speed: 1   Mass: 2   Max Temp: 3200
+  Shields: 0   Armor: 5
+  Missile: 0   Laser: 0   Plasma: 0   Fire Rate: 0   Power: 0
+  Endurium Debris: 0
+  Element 1:                    Debris: 0
+  Element 2:                    Debris: 0
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 001000
+   Sensors 0:  Type: Life    Shape: Circle  Y: 29   X: 20   Radius: 5  
+   Sensors 1:  None
+   Sensors 2:  None
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #23
+  Species: Last Hope
+  Class: 1   Speed: 0   Mass: 2000   Max Temp: 3200
+  Shields: 0   Armor: 100
+  Missile: 0   Laser: 0   Plasma: 0   Fire Rate: 0   Power: 0
+  Endurium Debris: 0
+  Element 1:                    Debris: 0
+  Element 2:                    Debris: 0
+  Element 3:                    Debris: 0
+  Directional: 1   Laser Hit: 1   Missile Hit: 1
+  Ship Base: 00072C
+   Sensors 0:  None
+   Sensors 1:  None
+   Sensors 2:  None
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #24
+  Species: Debris?
+  Class: 0   Speed: 0   Mass: 0   Max Temp: 0
+  Shields: 0   Armor: 0
+  Missile: 0   Laser: 0   Plasma: 0   Fire Rate: 0   Power: 0
+  Endurium Debris: 0
+  Element 1:                    Debris: 0
+  Element 2:                    Debris: 0
+  Element 3:                    Debris: 0
+  Directional: 0   Laser Hit: 0   Missile Hit: 0
+  Ship Base: 0002A4
+   Sensors 0:  None
+   Sensors 1:  None
+   Sensors 2:  None
+   Sensors 3:  None
+   Sensors 4:  None
+   Sensors 5:  None
+   Sensors 6:  None
+
+Ship: #25
+  Species: Police
+  Class: 0   Speed: 50   Mass: 300   Max Temp: 0
+  Shields: 15000   Armor: 15000
+  Missile: 3   Laser: 0   Plasma: 0   Fire Rate: 1   Power: 255
+  Endurium Debris: 250
+  Element 1: GOLD               Debris: 200
+  Element 2: SILVER             Debris: 200
+  Element 3: PLATINUM           Debris: 200
+  Directional: 1   Laser Hit: 0   Missile Hit: 0
+  Ship Base: 0010BA
+   Sensors 0:  Type: Life    Shape: Rectangle  Top: 38   Left: 21   Bottom: 38   Right: 21 
+   Sensors 1:  Type: Power   Shape: Rectangle  Top: 39   Left: 21   Bottom: 37   Right: 22 
+   Sensors 2:  Type: Power   Shape: Rectangle  Top: 39   Left: 21   Bottom: 37   Right: 22 
+   Sensors 3:  Type: Power   Shape: Rectangle  Top: 39   Left: 21   Bottom: 37   Right: 22 
+   Sensors 4:  Type: Power   Shape: Rectangle  Top: 39   Left: 21   Bottom: 37   Right: 22 
+   Sensors 5:  Type: Power   Shape: Rectangle  Top: 39   Left: 21   Bottom: 37   Right: 22 
+   Sensors 6:  Type: Power   Shape: Rectangle  Top: 39   Left: 21   Bottom: 37   Right: 22 
+

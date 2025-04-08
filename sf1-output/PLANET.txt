@@ -1,0 +1,480 @@
+PLANET  1 @65906:
+  Surface Type: Molton
+  Mass Type: 1
+  Planet Mass: 2
+  Mineral Density: 118
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET  2 @6591C:
+  Surface Type: Molton
+  Mass Type: 2
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET  3 @65932:
+  Surface Type: Molton
+  Mass Type: 3
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET  4 @65948:
+  Surface Type: Molton
+  Mass Type: 4
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET  5 @6595E:
+  Surface Type: Rock
+  Mass Type: 1
+  Planet Mass: 49
+  Mineral Density: 80
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET  6 @65974:
+  Surface Type: Rock
+  Mass Type: 2
+  Planet Mass: 70
+  Mineral Density: 38
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET  7 @6598A:
+  Surface Type: Rock
+  Mass Type: 3
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET  8 @659A0:
+  Surface Type: Rock
+  Mass Type: 4
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET  9 @659B6:
+  Surface Type: Liquid
+  Mass Type: 1
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET 10 @659CC:
+  Surface Type: Liquid
+  Mass Type: 2
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET 11 @659E2:
+  Surface Type: Liquid
+  Mass Type: 3
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET 12 @659F8:
+  Surface Type: Liquid
+  Mass Type: 4
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET 13 @65A0E:
+  Surface Type: Frozen
+  Mass Type: 1
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET 14 @65A24:
+  Surface Type: Frozen
+  Mass Type: 2
+  Planet Mass: 60
+  Mineral Density: 61
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET 15 @65A3A:
+  Surface Type: Frozen
+  Mass Type: 3
+  Planet Mass: 96
+  Mineral Density: 60
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET 16 @65A50:
+  Surface Type: Frozen
+  Mass Type: 4
+  Planet Mass: 493
+  Mineral Density: 71
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET 17 @65A66:
+  Surface Type: Gas
+  Mass Type: 5
+  Planet Mass: 0
+  Mineral Density: 0
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $0000
+  Seed4: $00  Seed5 : $00
+
+PLANET 18 @65A7C:
+  Surface Type: Liquid
+  Mass Type: 7
+  Planet Mass: 100
+  Mineral Density: 13
+  LSeed (Planet): $00  Region Seed: $00C7  Golbal Seed: $03B8
+  Seed4: $00  Seed5 : $FF
+
+PLANET 19 @65A92:
+  Surface Type: Liquid
+  Mass Type: 4
+  Planet Mass: 415
+  Mineral Density: 51
+  LSeed (Planet): $00  Region Seed: $012B  Golbal Seed: $017E
+  Seed4: $3C  Seed5 : $80
+
+PLANET 20 @65AA8:
+  Surface Type: Frozen
+  Mass Type: 2
+  Planet Mass: 70
+  Mineral Density: 204
+  LSeed (Planet): $00  Region Seed: $018F  Golbal Seed: $0290
+  Seed4: $64  Seed5 : $33
+
+PLANET 21 @65ABE:
+  Surface Type: Rock
+  Mass Type: 2
+  Planet Mass: 65
+  Mineral Density: 77
+  LSeed (Planet): $00  Region Seed: $01F3  Golbal Seed: $000D
+  Seed4: $96  Seed5 : $59
+
+PLANET 22 @65AD4:
+  Surface Type: Rock
+  Mass Type: 3
+  Planet Mass: 90
+  Mineral Density: 77
+  LSeed (Planet): $00  Region Seed: $0257  Golbal Seed: $018F
+  Seed4: $AF  Seed5 : $99
+
+PLANET 23 @65AEA:
+  Surface Type: Crystal
+  Mass Type: 6
+  Planet Mass: 101
+  Mineral Density: 75
+  LSeed (Planet): $00  Region Seed: $0000  Golbal Seed: $006E
+  Seed4: $00  Seed5 : $00
+
+PLANET 24 @65B00:
+  Surface Type: Liquid
+  Mass Type: 3
+  Planet Mass: 95
+  Mineral Density: 102
+  LSeed (Planet): $FF  Region Seed: $02BB  Golbal Seed: $01D2
+  Seed4: $78  Seed5 : $B3
+
+PLANET 25 @65B16:
+  Surface Type: Frozen
+  Mass Type: 4
+  Planet Mass: 250
+  Mineral Density: 128
+  LSeed (Planet): $4D  Region Seed: $031F  Golbal Seed: $00B6
+  Seed4: $C8  Seed5 : $33
+
+PLANET 26 @65B2C:
+  Surface Type: Liquid
+  Mass Type: 2
+  Planet Mass: 60
+  Mineral Density: 64
+  LSeed (Planet): $CC  Region Seed: $0383  Golbal Seed: $0007
+  Seed4: $33  Seed5 : $99
+
+PLANET 27 @65B42:
+  Surface Type: Frozen
+  Mass Type: 2
+  Planet Mass: 80
+  Mineral Density: 77
+  LSeed (Planet): $33  Region Seed: $03E7  Golbal Seed: $0003
+  Seed4: $FA  Seed5 : $80
+
+PLANET 28 @65B58:
+  Surface Type: Liquid
+  Mass Type: 3
+  Planet Mass: 109
+  Mineral Density: 153
+  LSeed (Planet): $B3  Region Seed: $006D  Golbal Seed: $00EA
+  Seed4: $80  Seed5 : $99
+
+PLANET 29 @65B6E:
+  Surface Type: Liquid
+  Mass Type: 4
+  Planet Mass: 140
+  Mineral Density: 115
+  LSeed (Planet): $E6  Region Seed: $0077  Golbal Seed: $000C
+  Seed4: $96  Seed5 : $4D
+
+PLANET 30 @65B84:
+  Surface Type: Liquid
+  Mass Type: 2
+  Planet Mass: 76
+  Mineral Density: 204
+  LSeed (Planet): $FF  Region Seed: $0077  Golbal Seed: $00D2
+  Seed4: $50  Seed5 : $B3
+
+PLANET 31 @65B9A:
+  Surface Type: Frozen
+  Mass Type: 4
+  Planet Mass: 180
+  Mineral Density: 40
+  LSeed (Planet): $14  Region Seed: $008B  Golbal Seed: $0168
+  Seed4: $1E  Seed5 : $66
+
+PLANET 32 @65BB0:
+  Surface Type: Liquid
+  Mass Type: 2
+  Planet Mass: 250
+  Mineral Density: 51
+  LSeed (Planet): $59  Region Seed: $00C5  Golbal Seed: $003E
+  Seed4: $32  Seed5 : $99
+
+PLANET 33 @65BC6:
+  Surface Type: Rock
+  Mass Type: 3
+  Planet Mass: 105
+  Mineral Density: 51
+  LSeed (Planet): $40  Region Seed: $009F  Golbal Seed: $024E
+  Seed4: $46  Seed5 : $26
+
+PLANET 34 @65BDC:
+  Surface Type: Liquid
+  Mass Type: 3
+  Planet Mass: 100
+  Mineral Density: 166
+  LSeed (Planet): $99  Region Seed: $00A9  Golbal Seed: $03B9
+  Seed4: $64  Seed5 : $00
+
+PLANET 35 @65C00:
+  Surface Type: Liquid
+  Mass Type: 2
+  Planet Mass: 55
+  Mineral Density: 55
+  LSeed (Planet): $E6  Region Seed: $00B3  Golbal Seed: $21E3
+  Seed4: $4B  Seed5 : $80
+
+PLANET 36 @65C16:
+  Surface Type: Frozen
+  Mass Type: 4
+  Planet Mass: 180
+  Mineral Density: 38
+  LSeed (Planet): $26  Region Seed: $00BD  Golbal Seed: $00CE
+  Seed4: $00  Seed5 : $00
+
+PLANET 37 @65C2C:
+  Surface Type: Liquid
+  Mass Type: 2
+  Planet Mass: 72
+  Mineral Density: 85
+  LSeed (Planet): $FF  Region Seed: $00D1  Golbal Seed: $033C
+  Seed4: $78  Seed5 : $20
+
+PLANET 38 @65C42:
+  Surface Type: Frozen
+  Mass Type: 3
+  Planet Mass: 94
+  Mineral Density: 45
+  LSeed (Planet): $59  Region Seed: $00CD  Golbal Seed: $009B
+  Seed4: $C8  Seed5 : $00
+
+PLANET 39 @65C58:
+  Surface Type: Liquid
+  Mass Type: 4
+  Planet Mass: 125
+  Mineral Density: 185
+  LSeed (Planet): $FF  Region Seed: $00E5  Golbal Seed: $0042
+  Seed4: $96  Seed5 : $28
+
+PLANET 40 @65C6E:
+  Surface Type: Frozen
+  Mass Type: 4
+  Planet Mass: 400
+  Mineral Density: 200
+  LSeed (Planet): $46  Region Seed: $00EF  Golbal Seed: $0180
+  Seed4: $96  Seed5 : $3C
+
+PLANET 41 @65C84:
+  Surface Type: Rock
+  Mass Type: 4
+  Planet Mass: 280
+  Mineral Density: 70
+  LSeed (Planet): $55  Region Seed: $00F9  Golbal Seed: $0071
+  Seed4: $50  Seed5 : $23
+
+PLANET 42 @65C9A:
+  Surface Type: Frozen
+  Mass Type: 2
+  Planet Mass: 88
+  Mineral Density: 153
+  LSeed (Planet): $91  Region Seed: $0103  Golbal Seed: $0009
+  Seed4: $AF  Seed5 : $2D
+
+PLANET 43 @65CB0:
+  Surface Type: Liquid
+  Mass Type: 4
+  Planet Mass: 115
+  Mineral Density: 20
+  LSeed (Planet): $FF  Region Seed: $2775  Golbal Seed: $00B2
+  Seed4: $96  Seed5 : $00
+
+PLANET 44 @65CC6:
+  Surface Type: Rock
+  Mass Type: 1
+  Planet Mass: 3
+  Mineral Density: 255
+  LSeed (Planet): $00  Region Seed: $0117  Golbal Seed: $0419
+  Seed4: $FF  Seed5 : $00
+
+PLANET 45 @65CDC:
+  Surface Type: Molton
+  Mass Type: 1
+  Planet Mass: 20
+  Mineral Density: 255
+  LSeed (Planet): $00  Region Seed: $0121  Golbal Seed: $007D
+  Seed4: $32  Seed5 : $00
+
+PLANET 46 @65CF2:
+  Surface Type: Liquid
+  Mass Type: 2
+  Planet Mass: 50
+  Mineral Density: 115
+  LSeed (Planet): $A0  Region Seed: $0135  Golbal Seed: $005C
+  Seed4: $96  Seed5 : $00
+
+PLANET 47 @65D08:
+  Surface Type: Liquid
+  Mass Type: 2
+  Planet Mass: 89
+  Mineral Density: 70
+  LSeed (Planet): $DC  Region Seed: $013F  Golbal Seed: $0167
+  Seed4: $4B  Seed5 : $00
+
+PLANET 48 @65D1E:
+  Surface Type: Liquid
+  Mass Type: 4
+  Planet Mass: 210
+  Mineral Density: 10
+  LSeed (Planet): $FF  Region Seed: $0149  Golbal Seed: $006B
+  Seed4: $64  Seed5 : $AF
+
+PLANET 49 @65D34:
+  Surface Type: Liquid
+  Mass Type: 3
+  Planet Mass: 99
+  Mineral Density: 130
+  LSeed (Planet): $FF  Region Seed: $0153  Golbal Seed: $01C5
+  Seed4: $82  Seed5 : $00
+
+PLANET 50 @65D4A:
+  Surface Type: Frozen
+  Mass Type: 2
+  Planet Mass: 77
+  Mineral Density: 25
+  LSeed (Planet): $96  Region Seed: $015D  Golbal Seed: $006D
+  Seed4: $96  Seed5 : $00
+
+PLANET 51 @65D60:
+  Surface Type: Liquid
+  Mass Type: 3
+  Planet Mass: 95
+  Mineral Density: 50
+  LSeed (Planet): $7D  Region Seed: $0167  Golbal Seed: $0076
+  Seed4: $FF  Seed5 : $00
+
+PLANET 52 @65D76:
+  Surface Type: Frozen
+  Mass Type: 4
+  Planet Mass: 370
+  Mineral Density: 153
+  LSeed (Planet): $87  Region Seed: $0171  Golbal Seed: $01C3
+  Seed4: $C8  Seed5 : $00
+
+PLANET 53 @65D8C:
+  Surface Type: Liquid
+  Mass Type: 4
+  Planet Mass: 178
+  Mineral Density: 77
+  LSeed (Planet): $4D  Region Seed: $017B  Golbal Seed: $0033
+  Seed4: $C8  Seed5 : $00
+
+PLANET 54 @65DA2:
+  Surface Type: Liquid
+  Mass Type: 3
+  Planet Mass: 100
+  Mineral Density: 128
+  LSeed (Planet): $BE  Region Seed: $0185  Golbal Seed: $0075
+  Seed4: $96  Seed5 : $00
+
+PLANET 55 @65DB8:
+  Surface Type: Rock
+  Mass Type: 2
+  Planet Mass: 65
+  Mineral Density: 13
+  LSeed (Planet): $99  Region Seed: $0199  Golbal Seed: $0073
+  Seed4: $B4  Seed5 : $00
+
+PLANET 56 @65DCE:
+  Surface Type: Liquid
+  Mass Type: 4
+  Planet Mass: 200
+  Mineral Density: 75
+  LSeed (Planet): $CC  Region Seed: $01A3  Golbal Seed: $0BB8
+  Seed4: $00  Seed5 : $00
+
+PLANET 57 @65DE4:
+  Surface Type: Frozen
+  Mass Type: 4
+  Planet Mass: 140
+  Mineral Density: 120
+  LSeed (Planet): $82  Region Seed: $01AD  Golbal Seed: $00C5
+  Seed4: $FF  Seed5 : $00
+
+PLANET 58 @65DFA:
+  Surface Type: Rock
+  Mass Type: 3
+  Planet Mass: 108
+  Mineral Density: 100
+  LSeed (Planet): $FF  Region Seed: $01B7  Golbal Seed: $0057
+  Seed4: $00  Seed5 : $FF
+
+PLANET 59 @65E10:
+  Surface Type: Liquid
+  Mass Type: 2
+  Planet Mass: 85
+  Mineral Density: 255
+  LSeed (Planet): $FF  Region Seed: $01C1  Golbal Seed: $0173
+  Seed4: $C8  Seed5 : $00
+
+PLANET 60 @65E26:
+  Surface Type: Liquid
+  Mass Type: 4
+  Planet Mass: 790
+  Mineral Density: 180
+  LSeed (Planet): $FF  Region Seed: $01CB  Golbal Seed: $00DE
+  Seed4: $32  Seed5 : $00
+

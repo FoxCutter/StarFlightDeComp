@@ -1,0 +1,1210 @@
+( RAW Data:OverlayHeader @E0C0-E0D4 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 792F 	Count: 014A 	Data Size: 0147 (Paragraphs)
+    On Disk Location 792F0-7A790
+  Overlay Address: @E0C0 	Overlay DP: @F528
+    Load Location: @E0C0-@F560 	Load Length: 5280
+    Data: @E0C0-@F528 	Data Length: 5224
+    Junk: @F528-@F560 	Junk Length: 56
+  VOCABULARY Word: CD14 LOPARMS
+   Dictionary Link 1: 0000
+   Dictionary Link 2: F08E
+   Dictionary Link 3: F4F2
+   Dictionary Link 4: 0000
+
+@E0C0 2F 79 4A 01 C0 E0 28 F5 14 CD 00 00 8E F0 F2 F4   /yJ...(.........
+@E0D0 00 00 47 01                                       ..G.            
+)
+
+( Data:Word @E0D4-E0D8 XT:E0D6 CFA:2214 DLen: 2 STAGE: Memory)
+32 CONSTANT [LP-OV:E0D6]
+
+( Data:Word @E0D8-E0DC XT:E0DA CFA:2214 DLen: 2 STAGE: Words)
+68 CONSTANT [LP-OV:E0DA]
+
+( @E0DC-E0E4 XT:E0DE CFA:224C DLen: 6 STAGE: Memory)
+: [LP-OV:E0DE]
+ 2DUP IFIND ; 
+
+( @E0E4-E0F2 XT:E0E6 CFA:224C DLen: 12 STAGE: Words)
+: [LP-OV:E0E6]
+ 2DUP OR IF 
+  2DUP 
+ THEN 
+ ; 
+
+( @E0F2-E0FE XT:E0F4 CFA:224C DLen: 10 STAGE: Words)
+: [LP-OV:E0F4]
+ RECORD# @ FILE# @ ; 
+
+( @E0FE-E10A XT:E100 CFA:224C DLen: 10 STAGE: Words)
+: [LP-OV:E100]
+ FILE# ! RECORD# ! ; 
+
+( @E10A-E11F XT:E10C CFA:224C DLen: 19 STAGE: CodePointers)
+: _iaddr_array
+ CREATE 0 _?[D873] DOES> ( CFA @E114 ) 
+  SWAP 3* + ; 
+
+( @E11F-E192 XT:E121 CFA:224C DLen: 113 STAGE: Words)
+: [LP-OV:E121]
+ [LP-OV:E0F4] >R >R DUP C@ 3* 3+ 3 DO 
+  DUP I + 1.5@ 5 PICK 5 PICK D= IF 
+   DROP 2DROP 0. I LEAVE 
+  THEN 
+  3 
+ +LOOP 
+ >R [LP-OV:E0E6] OR IF 
+  >C+S PHRASE PHR-CNT C@ TYPE ICLOSE ."  not in " R> NFA ID. UNRAVEL QUIT 
+ THEN 
+ R> 3 / R> R> [LP-OV:E100] ; 
+
+( Data:IAaddrArray @E192-E1BA XT:E19C CFA:E114 DLen: 30 STAGE: Dictionaries)
+9 _iaddr_array >SIZE
+  $01E576. ( "TINY" ) , 
+  $01E587. ( "SMALL" ) , 
+  $01E599. ( "BIG" ) , 
+  $01E5A9. ( "LARGE" ) , 
+  $01E5BB. ( "VERY LARGE" ) , 
+  $01E5D2. ( "HUGE" ) , 
+  $01E5E3. ( "MASSIVE" ) , 
+  $01E5F7. ( "HUMONGOUS" ) , 
+  $01E60D. ( "GARGANTUAN" ) , 
+
+( Data:IAaddrArray @E1BA-E1E6 XT:E1C5 CFA:E114 DLen: 33 STAGE: Dictionaries)
+10 _iaddr_array >MOVER
+  $01E11D. ( "OOZING" ) , 
+  $01E130. ( "CREEPING" ) , 
+  $01E145. ( "SLITHERING" ) , 
+  $01E15C. ( "CRAWLING" ) , 
+  $01E171. ( "ROLLING" ) , 
+  $01E185. ( "MOVING" ) , 
+  $01E198. ( "WALKING" ) , 
+  $01E1AC. ( "HOPPING" ) , 
+  $01E1C0. ( "JUMPING" ) , 
+  $01E1D4. ( "LEAPING" ) , 
+
+( Data:IAaddrArray @E1E6-E245 XT:E1F1 CFA:E114 DLen: 84 STAGE: Dictionaries)
+27 _iaddr_array ?COLOR
+  $01E327. ( "RED" ) , 
+  $01E44D. ( "MARROON" ) , 
+  $01E461. ( "RUST-COLORED" ) , 
+  $01E47A. ( "PINK" ) , 
+  $01E337. ( "REDDISH ORANGE" ) , 
+  $01E48B. ( "BROWN" ) , 
+  $01E49D. ( "BEIGE" ) , 
+  $01E4AF. ( "COPPER-COLORED" ) , 
+  $01E352. ( "ORANGE" ) , 
+  $01E365. ( "YELLOWISH ORANGE" ) , 
+  $01E382. ( "YELLOW" ) , 
+  $01E395. ( "LEMON YELLOW" ) , 
+  $01E3AE. ( "YELLOWISH GREEN" ) , 
+  $01E4CA. ( "BROWNISH GREEN" ) , 
+  $01E3CA. ( "GREEN" ) , 
+  $01E4E5. ( "LIME GREEN" ) , 
+  $01E3DC. ( "BLUE-GREEN" ) , 
+  $01E4FC. ( "TURQUOISE" ) , 
+  $01E400. ( "BLUE" ) , 
+  $01E512. ( "LAVENDAR" ) , 
+  $01E427. ( "VIOLET" ) , 
+  $01E43A. ( "PURPLE" ) , 
+  $01E541. ( "WHITE" ) , 
+  $01E527. ( "MULTI-COLORED" ) , 
+  $01E553. ( "GREY" ) , 
+  $01E564. ( "BLACK" ) , 
+  $01E411. ( "VERY BLUE" ) , 
+
+( Data:IAaddrArray @E245-E279 XT:E24F CFA:E114 DLen: 42 STAGE: Dictionaries)
+13 _iaddr_array >PROP
+  $01E021. ( "FLATTENED" ) , 
+  $01E037. ( "FLAT" ) , 
+  $01E048. ( "WIDE" ) , 
+  $01E059. ( "THICK" ) , 
+  $01E06B. ( "SQUAT" ) , 
+  $01E07D. ( "ELONGATED" ) , 
+  $01E093. ( "NARROW" ) , 
+  $01E0A6. ( "SLENDER" ) , 
+  $01E0BA. ( "GRACEFUL" ) , 
+  $01E0CF. ( "THIN" ) , 
+  $01E0E0. ( "SPINDLY" ) , 
+  $01E0F4. ( "WILLOWY" ) , 
+  $01E108. ( "DELICATE" ) , 
+
+( @E279-E283 XT:E27B CFA:224C DLen: 8 STAGE: Words)
+: [LP-OV:E27B]
+ 0 2 RRND ; 
+
+( @E283-E28F XT:E285 CFA:224C DLen: 10 STAGE: Words)
+: [LP-OV:E285]
+ 1 100 RRND ; 
+
+( @E28F-E29B XT:E291 CFA:224C DLen: 10 STAGE: Words)
+: [LP-OV:E291]
+ 0 $0100 RRND ; 
+
+( @E29B-E2B1 XT:E29D CFA:224C DLen: 20 STAGE: Words)
+: [LP-OV:E29D]
+ >R 1+ OVER - R> $0100 */ + ; 
+
+( @E2B1-E2B9 XT:E2B3 CFA:224C DLen: 6 STAGE: Words)
+: [LP-OV:E2B3]
+ [LP-OV:E291] (SLIPPE__ ; 
+
+( @E2B9-E2C5 XT:E2BB CFA:224C DLen: 10 STAGE: Words)
+: [LP-OV:E2BB]
+ BEGIN 
+  [LP-OV:E2B3] 
+ UNTIL 
+ [LP-OV:E29D] ; 
+
+( @E2C5-E2DC XT:E2C7 CFA:224C DLen: 21 STAGE: CodePointers)
+: _word_array
+ CREATE 0 , DOES> ( CFA @E2CF ) 
+  OVER + + @ ; 
+
+( Data:AField @E2DC-E2E4 XT:E2DE CFA:73EA DLen: 6 STAGE: Words)
+32 19 1 AFIELD _p-atom.density ( PLANET )
+
+( Data:AField @E2E4-E2EC XT:E2E6 CFA:73EA DLen: 6 STAGE: Words)
+32 20 3 AFIELD _p-shape_max ( PLANET )
+
+( Data:AField @E2EC-E2F4 XT:E2EE CFA:73EA DLen: 6 STAGE: Words)
+32 21 2 AFIELD _p-shape_min ( PLANET )
+
+( Data:AField @E2F4-E2FC XT:E2F6 CFA:73EA DLen: 6 STAGE: Words)
+68 4 3 AFIELD SHAPE ( CREATURE )
+
+( Data:AField @E2FC-E304 XT:E2FE CFA:73EA DLen: 6 STAGE: Words)
+68 7 3 AFIELD [A-CREATURE:7-10] ( CREATURE )
+
+( Data:AField @E304-E30C XT:E306 CFA:73EA DLen: 6 STAGE: Words)
+68 11 1 AFIELD [A-CREATURE:11-12] ( CREATURE )
+
+( Data:AField @E30C-E314 XT:E30E CFA:73EA DLen: 6 STAGE: Words)
+68 12 1 AFIELD [A-CREATURE:12-13] ( CREATURE )
+
+( Data:AField @E314-E31C XT:E316 CFA:73EA DLen: 6 STAGE: Words)
+68 13 3 AFIELD [A-CREATURE:13-16] ( CREATURE )
+
+( Data:AField @E31C-E324 XT:E31E CFA:73EA DLen: 6 STAGE: Words)
+68 16 3 AFIELD [A-CREATURE:16-19] ( CREATURE )
+
+( Data:AField @E324-E32C XT:E326 CFA:73EA DLen: 6 STAGE: Words)
+68 19 3 AFIELD [A-CREATURE:19-22] ( CREATURE )
+
+( Data:AField @E32C-E334 XT:E32E CFA:73EA DLen: 6 STAGE: Words)
+68 22 3 AFIELD [A-CREATURE:22-25] ( CREATURE )
+
+( Data:AField @E334-E33C XT:E336 CFA:73EA DLen: 6 STAGE: Words)
+68 25 1 AFIELD [A-CREATURE:25-26] ( CREATURE )
+
+( Data:AField @E33C-E344 XT:E33E CFA:73EA DLen: 6 STAGE: Words)
+68 26 3 AFIELD [A-CREATURE:26-29] ( CREATURE )
+
+( Data:AField @E344-E34C XT:E346 CFA:73EA DLen: 6 STAGE: Words)
+68 29 1 AFIELD [A-CREATURE:29-30] ( CREATURE )
+
+( Data:AField @E34C-E354 XT:E34E CFA:73EA DLen: 6 STAGE: Words)
+68 30 3 AFIELD [A-CREATURE:30-33] ( CREATURE )
+
+( Data:AField @E354-E35C XT:E356 CFA:73EA DLen: 6 STAGE: Words)
+68 33 1 AFIELD [A-CREATURE:33-34] ( CREATURE )
+
+( Data:AField @E35C-E364 XT:E35E CFA:73EA DLen: 6 STAGE: Words)
+68 34 3 AFIELD [A-CREATURE:34-37] ( CREATURE )
+
+( Data:AField @E364-E36C XT:E366 CFA:73EA DLen: 6 STAGE: Words)
+68 37 1 AFIELD [A-CREATURE:37-38] ( CREATURE )
+
+( Data:AField @E36C-E374 XT:E36E CFA:73EA DLen: 6 STAGE: Words)
+68 38 3 AFIELD [A-CREATURE:38-41] ( CREATURE )
+
+( Data:AField @E374-E37C XT:E376 CFA:73EA DLen: 6 STAGE: Words)
+68 41 3 AFIELD [A-CREATURE:41-44] ( CREATURE )
+
+( Data:AField @E37C-E384 XT:E37E CFA:73EA DLen: 6 STAGE: Words)
+68 48 1 AFIELD [A-CREATURE:48-49] ( CREATURE )
+
+( Data:AField @E384-E38C XT:E386 CFA:73EA DLen: 6 STAGE: Words)
+68 49 1 AFIELD [A-CREATURE:49-50] ( CREATURE )
+
+( Data:AField @E38C-E394 XT:E38E CFA:73EA DLen: 6 STAGE: Words)
+68 51 1 AFIELD STUN.EFFECt ( CREATURE )
+
+( Data:AField @E394-E39C XT:E396 CFA:73EA DLen: 6 STAGE: Words)
+68 52 1 AFIELD [A-CREATURE:52-53] ( CREATURE )
+
+( Data:AField @E39C-E3A4 XT:E39E CFA:73EA DLen: 6 STAGE: Words)
+68 54 1 AFIELD [A-CREATURE:54-55] ( CREATURE )
+
+( Data:AField @E3A4-E3AC XT:E3A6 CFA:73EA DLen: 6 STAGE: Words)
+68 55 1 AFIELD [A-CREATURE:55-56] ( CREATURE )
+
+( Data:AField @E3AC-E3B4 XT:E3AE CFA:73EA DLen: 6 STAGE: Words)
+68 56 2 AFIELD [A-CREATURE:56-58] ( CREATURE )
+
+( Data:AField @E3B4-E3BC XT:E3B6 CFA:73EA DLen: 6 STAGE: Words)
+68 58 2 AFIELD [A-CREATURE:58-60] ( CREATURE )
+
+( Data:AField @E3BC-E3C4 XT:E3BE CFA:73EA DLen: 6 STAGE: Words)
+68 60 2 AFIELD [A-CREATURE:60-62] ( CREATURE )
+
+( Data:AField @E3C4-E3CC XT:E3C6 CFA:73EA DLen: 6 STAGE: Words)
+68 63 3 AFIELD [A-CREATURE:63-66] ( CREATURE )
+
+( Data:AField @E3CC-E3D4 XT:E3CE CFA:73EA DLen: 6 STAGE: Words)
+68 66 3 AFIELD [A-CREATURE:66-69] ( CREATURE )
+
+( Data:AField @E3D4-E3DC XT:E3D6 CFA:73EA DLen: 6 STAGE: Words)
+68 69 3 AFIELD [A-CREATURE:69-72] ( CREATURE )
+
+( Data:AField @E3DC-E3E4 XT:E3DE CFA:73EA DLen: 6 STAGE: Words)
+68 72 3 AFIELD [A-CREATURE:72-75] ( CREATURE )
+
+( Data:AField @E3E4-E3EC XT:E3E6 CFA:73EA DLen: 6 STAGE: Words)
+68 75 3 AFIELD [A-CREATURE:75-78] ( CREATURE )
+
+( Data:AField @E3EC-E3F4 XT:E3EE CFA:73EA DLen: 6 STAGE: Words)
+68 78 3 AFIELD [A-CREATURE:78-81] ( CREATURE )
+
+( Data:AField @E3F4-E3FC XT:E3F6 CFA:73EA DLen: 6 STAGE: Words)
+68 81 3 AFIELD [A-CREATURE:81-84] ( CREATURE )
+
+( Data:AField @E3FC-E404 XT:E3FE CFA:73EA DLen: 6 STAGE: Words)
+68 84 3 AFIELD [A-CREATURE:84-87] ( CREATURE )
+
+( Data:AField @E404-E40C XT:E406 CFA:73EA DLen: 6 STAGE: Words)
+68 87 3 AFIELD [A-CREATURE:87-90] ( CREATURE )
+
+( Data:AField @E40C-E414 XT:E40E CFA:73EA DLen: 6 STAGE: Words)
+68 90 3 AFIELD [A-CREATURE:90-93] ( CREATURE )
+
+( Data:AField @E414-E41C XT:E416 CFA:73EA DLen: 6 STAGE: Words)
+68 93 3 AFIELD [A-CREATURE:93-96] ( CREATURE )
+
+( Data:AField @E41C-E424 XT:E41E CFA:73EA DLen: 6 STAGE: Words)
+68 96 3 AFIELD [A-CREATURE:96-99] ( CREATURE )
+
+( Data:AField @E424-E42C XT:E426 CFA:73EA DLen: 6 STAGE: Words)
+68 99 3 AFIELD [A-CREATURE:99-102] ( CREATURE )
+
+( Data:AField @E42C-E434 XT:E42E CFA:73EA DLen: 6 STAGE: Words)
+68 102 3 AFIELD [A-CREATURE:102-105] ( CREATURE )
+
+( Data:AField @E434-E43C XT:E436 CFA:73EA DLen: 6 STAGE: Words)
+68 105 3 AFIELD [A-CREATURE:105-108] ( CREATURE )
+
+( Data:AField @E43C-E444 XT:E43E CFA:73EA DLen: 6 STAGE: Words)
+68 108 3 AFIELD [A-CREATURE:108-111] ( CREATURE )
+
+( Data:AField @E444-E44C XT:E446 CFA:73EA DLen: 6 STAGE: Words)
+68 111 3 AFIELD [A-CREATURE:111-114] ( CREATURE )
+
+( Data:AField @E44C-E454 XT:E44E CFA:73EA DLen: 6 STAGE: Words)
+68 114 3 AFIELD [A-CREATURE:114-117] ( CREATURE )
+
+( Data:AField @E454-E45C XT:E456 CFA:73EA DLen: 6 STAGE: Words)
+68 117 3 AFIELD [A-CREATURE:117-120] ( CREATURE )
+
+( Data:AField @E45C-E464 XT:E45E CFA:73EA DLen: 6 STAGE: Words)
+68 120 3 AFIELD [A-CREATURE:120-123] ( CREATURE )
+
+( Data:AField @E464-E46C XT:E466 CFA:73EA DLen: 6 STAGE: Words)
+68 123 3 AFIELD [A-CREATURE:123-126] ( CREATURE )
+
+( Data:AField @E46C-E474 XT:E46E CFA:73EA DLen: 6 STAGE: Words)
+68 126 3 AFIELD [A-CREATURE:126-129] ( CREATURE )
+
+( Data:AField @E474-E47C XT:E476 CFA:73EA DLen: 6 STAGE: Words)
+68 129 3 AFIELD [A-CREATURE:129-132] ( CREATURE )
+
+( Data:AField @E47C-E484 XT:E47E CFA:73EA DLen: 6 STAGE: Words)
+68 132 3 AFIELD [A-CREATURE:132-135] ( CREATURE )
+
+( Data:AField @E484-E48C XT:E486 CFA:73EA DLen: 6 STAGE: Words)
+68 135 3 AFIELD [A-CREATURE:135-138] ( CREATURE )
+
+( Data:AField @E48C-E494 XT:E48E CFA:73EA DLen: 6 STAGE: Words)
+68 138 3 AFIELD [A-CREATURE:138-141] ( CREATURE )
+
+( Data:AField @E494-E49C XT:E496 CFA:73EA DLen: 6 STAGE: Words)
+68 141 3 AFIELD [A-CREATURE:141-144] ( CREATURE )
+
+( Data:AField @E49C-E4A4 XT:E49E CFA:73EA DLen: 6 STAGE: Words)
+68 144 2 AFIELD [A-CREATURE:144-146] ( CREATURE )
+
+( Data:AField @E4A4-E4AC XT:E4A6 CFA:73EA DLen: 6 STAGE: Words)
+68 146 3 AFIELD RESEMBLes ( CREATURE )
+
+( Data:AField @E4AC-E4B4 XT:E4AE CFA:73EA DLen: 6 STAGE: Words)
+68 149 3 AFIELD [A-CREATURE:149-152] ( CREATURE )
+
+( @E4B4-E4C8 XT:E4B6 CFA:224C DLen: 18 STAGE: Words)
+: [LP-OV:E4B6]
+ [LP-OV:E0DA] DUP FILE# ! RECORD# @ @RECORD DROP ; 
+
+( @E4C8-E4D6 XT:E4CA CFA:224C DLen: 12 STAGE: Words)
+: _probability-range
+ DUP @ 2+ RANGE 2+ ; 
+
+( @E4D6-E56E XT:E4D8 CFA:224C DLen: 150 STAGE: CodePointers)
+: _probability-array
+ CREATE 6 * DUP , HERE OVER ALLOT SWAP 0 FILL DOES> ( CFA @E4F0 ) 
+  0 4 ROLL 4 ROLL 4 ROLL _probability-range DO 
+   I 2@ 3 PICK = >R 3 PICK = R> AND IF 
+    I 4 ROLL DROP ROT ROT LEAVE 
+   THEN 
+   6 
+  +LOOP 
+  2DROP ?DUP IF 
+   4 + @ 
+  ELSE 
+   ." INDEX NOT IN PROBABILITY ARRAY! " UNRAVEL QUIT 
+  THEN 
+  ; 
+
+( @E56E-E596 XT:E570 CFA:224C DLen: 38 STAGE: Words)
+: [LP-OV:E570]
+ BEGIN 
+  OVER OVER C@ DUP 100 = NOT >R > R> AND WHILE 
+  1+ 3+ 
+ REPEAT 
+ ; 
+
+( @E596-E5A4 XT:E598 CFA:224C DLen: 12 STAGE: Words)
+: [LP-OV:E598]
+ [LP-OV:E570] 1+ 1.5@ ROT DROP ; 
+
+( @E5A4-E5FC XT:E5A6 CFA:224C DLen: 86 STAGE: Words)
+: [LP-OV:E5A6]
+ 0 4 ROLL 4 ROLL 4 ROLL _probability-range DO 
+  I 2@ 3 PICK = >R 3 PICK = R> AND IF 
+   I 4 ROLL DROP ROT ROT LEAVE 
+  THEN 
+  6 
+ +LOOP 
+ 2DROP ?DUP IF 
+  4 + @ 
+ ELSE 
+  -1 
+ THEN 
+ ; 
+
+( @E5FC-E618 XT:E5FE CFA:224C DLen: 26 STAGE: Words)
+: [LP-OV:E5FE]
+ [LP-OV:E5A6] DUP -1 = IF 
+  2DROP 0 0 
+ ELSE 
+  [LP-OV:E598] 
+ THEN 
+ ; 
+
+( Data:ProbabilityArray @E618-EB58 XT:E626 CFA:1D29 DLen: 1330 STAGE: Dictionaries)
+26 CREATE ADDITIONS
+   $01CD17 ( "LEG" )
+      10 % $01D52D. ( "STALK-LIKE" )
+      10 % $01DA0B. ( "LONG" )
+       9 % $01D998. ( "MULTI-JOINTED" )
+       9 % $01D9B2. ( "JOINTED" )
+      10 % $01D9C6. ( "MUSCULAR" )
+       9 % $01D9DB. ( "POWERFUL LOOKING" )
+      10 % $01D9F8. ( "STUBBY" )
+      33 % $01DA1C. ( "SHORT" )
+   $01CD62 ( "TENTACLE" )
+       9 % $01D92C. ( "GELATINOUS" )
+       9 % $01D501. ( "WHIP-LIKE" )
+       9 % $01DA2E. ( "SINEWY" )
+       8 % $01D95A. ( "GNARLED" )
+       9 % $01D96E. ( "SPINEY" )
+       9 % $01D981. ( "MEMBRANOUS" )
+       8 % $01D55A. ( "BRANCHED" )
+       9 % $01D9C6. ( "MUSCULAR" )
+      30 % $01D9F8. ( "STUBBY" )
+   $01CBBA ( "WING" )
+       5 % $01D865. ( "BAT" )
+       4 % $01D875. ( "BUTTERFLY" )
+       4 % $01D88B. ( "VESTIGIAL" )
+       4 % $01D4C0. ( "FIN-LIKE" )
+       4 % $01D8A1. ( "FLOPPY" )
+       4 % $01D418. ( "FAN-SHAPED" )
+       4 % $01D8B4. ( "WEBBED" )
+       4 % $01D8DD. ( "SWEEPING" )
+       3 % $01D8F2. ( "CURVED" )
+       3 % $01D4D5. ( "LEAF-LIKE" )
+       3 % $01D905. ( "FEATHERY" )
+       3 % $01D91A. ( "RIGID" )
+       3 % $01D42F. ( "IRREGULARLY-SHAPED" )
+       3 % $01D981. ( "MEMBRANOUS" )
+       3 % $01D9B2. ( "JOINTED" )
+       3 % $01D9C6. ( "MUSCULAR" )
+       4 % $01D8C7. ( "INTRICATE" )
+       4 % $01D9DB. ( "POWERFUL LOOKING" )
+      35 % $01D9F8. ( "STUBBY" )
+   $01CBCB ( "FLOAT SAC" )
+       7 % $01D3C6. ( "SPHERE-SHAPED" )
+       7 % $01D828. ( "GLOBULAR" )
+       7 % $01D3E0. ( "DOME-SHAPED" )
+       6 % $01D400. ( "TEAR-SHAPED" )
+       6 % $01D851. ( "BULBOUS" )
+       7 % $01D91A. ( "RIGID" )
+       7 % $01D42F. ( "IRREGULARLY-SHAPED" )
+       6 % $01D96E. ( "SPINEY" )
+       6 % $01D981. ( "MEMBRANOUS" )
+       7 % $01D905. ( "FEATHERY" )
+       7 % $01D83D. ( "BULGING" )
+      27 % $01D4D5. ( "LEAF-LIKE" )
+   $01CD8B ( "ARM" )
+      10 % $01D95A. ( "GNARLED" )
+      10 % $01D96E. ( "SPINEY" )
+       9 % $01D998. ( "MULTI-JOINTED" )
+       9 % $01D9B2. ( "JOINTED" )
+      10 % $01D55A. ( "BRANCHED" )
+       9 % $01D9C6. ( "MUSCULAR" )
+      10 % $01D9DB. ( "POWERFUL LOOKING" )
+      33 % $01D9F8. ( "STUBBY" )
+   $01DEE9 ( "BRANCHES" )
+       7 % $01D7E9. ( "FLEXIBLE" )
+       7 % $01D396. ( "SPEAR-SHAPED" )
+       7 % $01D800. ( "PRONGED" )
+       6 % $01D814. ( "POINTED" )
+       6 % $01D8DD. ( "SWEEPING" )
+       7 % $01D8F2. ( "CURVED" )
+       7 % $01D91A. ( "RIGID" )
+       6 % $01D42F. ( "IRREGULARLY-SHAPED" )
+       6 % $01D95A. ( "GNARLED" )
+       7 % $01D9F8. ( "STUBBY" )
+       7 % $01D3AF. ( "ROD-SHAPED" )
+      27 % $01D96E. ( "SPINEY" )
+   $01CBA9 ( "HORN" )
+       6 % $01D759. ( "SPIRAL-SHAPED" )
+       4 % $01D773. ( "SPIKED" )
+       4 % $01D786. ( "BLUNT" )
+       5 % $01D798. ( "CONICAL" )
+       4 % $01D7AC. ( "HOOKED" )
+       4 % $01D7BF. ( "RAZOR SHARP" )
+       5 % $01D7D7. ( "SHARP" )
+       4 % $01D800. ( "PRONGED" )
+       4 % $01D814. ( "POINTED" )
+       5 % $01D8C7. ( "INTRICATE" )
+       4 % $01D37C. ( "NEEDLE-SHAPED" )
+       4 % $01D8DD. ( "SWEEPING" )
+       5 % $01D8F2. ( "CURVED" )
+       5 % $01D42F. ( "IRREGULARLY-SHAPED" )
+       4 % $01D95A. ( "GNARLED" )
+      33 % $01D9F8. ( "STUBBY" )
+   $01CB87 ( "BEAK" )
+       9 % $01D786. ( "BLUNT" )
+       7 % $01D798. ( "CONICAL" )
+       8 % $01D7AC. ( "HOOKED" )
+       7 % $01D7BF. ( "RAZOR SHARP" )
+       8 % $01D7D7. ( "SHARP" )
+       7 % $01D814. ( "POINTED" )
+       8 % $01D8F2. ( "CURVED" )
+       7 % $01D95A. ( "GNARLED" )
+       8 % $01D9DB. ( "POWERFUL LOOKING" )
+      31 % $01D9F8. ( "STUBBY" )
+   $01DE52 ( "CLAWS" )
+      10 % $01D7AC. ( "HOOKED" )
+      10 % $01D7BF. ( "RAZOR SHARP" )
+       9 % $01D7D7. ( "SHARP" )
+       9 % $01D814. ( "POINTED" )
+      10 % $01D8B4. ( "WEBBED" )
+       9 % $01D9B2. ( "JOINTED" )
+      10 % $01D9C6. ( "MUSCULAR" )
+      33 % $01D9DB. ( "POWERFUL LOOKING" )
+   $01DE18 ( "TEETH" )
+      10 % $01D72F. ( "SABER" )
+      10 % $01D4EB. ( "FANG-LIKE" )
+       9 % $01D4A9. ( "BLADE-LIKE" )
+       9 % $01D37C. ( "NEEDLE-SHAPED" )
+      10 % $01D7BF. ( "RAZOR SHARP" )
+       9 % $01D7D7. ( "SHARP" )
+      10 % $01D814. ( "POINTED" )
+      33 % $01D492. ( "THORN-LIKE" )
+   $01DF48 ( "TAIL" )
+       8 % $01D773. ( "SPIKED" )
+       7 % $01D814. ( "POINTED" )
+       6 % $01D418. ( "FAN-SHAPED" )
+       6 % $01D8DD. ( "SWEEPING" )
+       6 % $01D8F2. ( "CURVED" )
+       7 % $01D905. ( "FEATHERY" )
+       7 % $01D501. ( "WHIP-LIKE" )
+       6 % $01D943. ( "PREHENSILE" )
+       6 % $01D96E. ( "SPINEY" )
+       6 % $01D9C6. ( "MUSCULAR" )
+      35 % $01D9DB. ( "POWERFUL LOOKING" )
+   $01DEFE ( "FEET" )
+       6 % $01D6F3. ( "SPLAYED" )
+       6 % $01D707. ( "CUPPED" )
+       5 % $01D332. ( "DISH-SHAPED" )
+       5 % $01D34A. ( "DISK-SHAPED" )
+       6 % $01D362. ( "SAUCER-SHAPED" )
+       5 % $01D814. ( "POINTED" )
+       5 % $01D8A1. ( "FLOPPY" )
+       6 % $01D418. ( "FAN-SHAPED" )
+       5 % $01D8B4. ( "WEBBED" )
+       6 % $01D4D5. ( "LEAF-LIKE" )
+       6 % $01D905. ( "FEATHERY" )
+       5 % $01D943. ( "PREHENSILE" )
+       6 % $01D95A. ( "GNARLED" )
+      28 % $01D9F8. ( "STUBBY" )
+   $01CB98 ( "TUSK" )
+       9 % $01D6DC. ( "PROTRUDING" )
+       7 % $01D4EB. ( "FANG-LIKE" )
+       8 % $01D7AC. ( "HOOKED" )
+       7 % $01D800. ( "PRONGED" )
+       8 % $01D814. ( "POINTED" )
+       7 % $01D8DD. ( "SWEEPING" )
+       8 % $01D8F2. ( "CURVED" )
+       7 % $01D95A. ( "GNARLED" )
+       8 % $01D759. ( "SPIRAL-SHAPED" )
+      31 % $01D814. ( "POINTED" )
+   $01DF21 ( "SNOUT" )
+       9 % $01D6DC. ( "PROTRUDING" )
+       9 % $01D786. ( "BLUNT" )
+       9 % $01D798. ( "CONICAL" )
+       8 % $01D814. ( "POINTED" )
+       9 % $01D851. ( "BULBOUS" )
+       9 % $01D943. ( "PREHENSILE" )
+       8 % $01D981. ( "MEMBRANOUS" )
+       9 % $01D9C6. ( "MUSCULAR" )
+      30 % $01D9F8. ( "STUBBY" )
+   $01CCB0 ( "FEELER" )
+      10 % $01D6DC. ( "PROTRUDING" )
+      10 % $01D786. ( "BLUNT" )
+       9 % $01D798. ( "CONICAL" )
+       9 % $01D814. ( "POINTED" )
+      10 % $01D851. ( "BULBOUS" )
+       9 % $01D943. ( "PREHENSILE" )
+      10 % $01D981. ( "MEMBRANOUS" )
+      33 % $01D9F8. ( "STUBBY" )
+   $01DF59 ( "SHELL" )
+       5 % $01D67A. ( "SCALLOPED" )
+       4 % $01D690. ( "CUBOID" )
+       4 % $01D6A3. ( "ROUND" )
+       4 % $01D6B5. ( "OCTAGONAL" )
+       4 % $01D6CB. ( "OVAL" )
+       4 % $01D31A. ( "BOWL-SHAPED" )
+       4 % $01D332. ( "DISH-SHAPED" )
+       4 % $01D34A. ( "DISK-SHAPED" )
+       3 % $01D362. ( "SAUCER-SHAPED" )
+       3 % $01D95A. ( "GNARLED" )
+       3 % $01D759. ( "SPIRAL-SHAPED" )
+       3 % $01D798. ( "CONICAL" )
+       3 % $01D3E0. ( "DOME-SHAPED" )
+       3 % $01D8C7. ( "INTRICATE" )
+       3 % $01D42F. ( "IRREGULARLY-SHAPED" )
+       3 % $01D773. ( "SPIKED" )
+       4 % $01D400. ( "TEAR-SHAPED" )
+       4 % $01D96E. ( "SPINEY" )
+      35 % $01D9B2. ( "JOINTED" )
+   $01CBE1 ( "PROTRUSION" )
+       7 % $01D828. ( "GLOBULAR" )
+       6 % $01D83D. ( "BULGING" )
+       5 % $01D851. ( "BULBOUS" )
+       5 % $01D4C0. ( "FIN-LIKE" )
+       6 % $01D4D5. ( "LEAF-LIKE" )
+       6 % $01D905. ( "FEATHERY" )
+       5 % $01D92C. ( "GELATINOUS" )
+       5 % $01D96E. ( "SPINEY" )
+       6 % $01D981. ( "MEMBRANOUS" )
+       6 % $01D52D. ( "STALK-LIKE" )
+       5 % $01D95A. ( "GNARLED" )
+       5 % $01D55A. ( "BRANCHED" )
+      33 % $01D9F8. ( "STUBBY" )
+   $01CC10 ( "PROJECTION" )
+       7 % $01D828. ( "GLOBULAR" )
+       6 % $01D83D. ( "BULGING" )
+       5 % $01D851. ( "BULBOUS" )
+       5 % $01D4C0. ( "FIN-LIKE" )
+       6 % $01D4D5. ( "LEAF-LIKE" )
+       6 % $01D905. ( "FEATHERY" )
+       5 % $01D92C. ( "GELATINOUS" )
+       5 % $01D96E. ( "SPINEY" )
+       6 % $01D981. ( "MEMBRANOUS" )
+       6 % $01D52D. ( "STALK-LIKE" )
+       5 % $01D95A. ( "GNARLED" )
+       5 % $01D55A. ( "BRANCHED" )
+      33 % $01D9F8. ( "STUBBY" )
+   $01DF6B ( "CREST" )
+      10 % $01D65E. ( "FINELY SCULPTED" )
+      10 % $01D71A. ( "ARMOURED" )
+       9 % $01D773. ( "SPIKED" )
+       9 % $01D4C0. ( "FIN-LIKE" )
+      10 % $01D4D5. ( "LEAF-LIKE" )
+       9 % $01D96E. ( "SPINEY" )
+      10 % $01D981. ( "MEMBRANOUS" )
+      33 % $01D905. ( "FEATHERY" )
+   $01CC00 ( "EAR" )
+       9 % $01D465. ( "HOLE-LIKE" )
+       9 % $01D31A. ( "BOWL-SHAPED" )
+       9 % $01D707. ( "CUPPED" )
+       8 % $01D814. ( "POINTED" )
+       9 % $01D8A1. ( "FLOPPY" )
+       9 % $01D418. ( "FAN-SHAPED" )
+       8 % $01D905. ( "FEATHERY" )
+       9 % $01D981. ( "MEMBRANOUS" )
+      30 % $01D6DC. ( "PROTRUDING" )
+   $01CD07 ( "EYE" )
+      12 % $01D632. ( "DEEP SET" )
+      10 % $01D647. ( "PUPIL-LESS" )
+      10 % $01D465. ( "HOLE-LIKE" )
+      11 % $01D6CB. ( "OVAL" )
+      11 % $01D6DC. ( "PROTRUDING" )
+      10 % $01D362. ( "SAUCER-SHAPED" )
+      36 % $01D83D. ( "BULGING" )
+   $01DE77 ( "FLOWERS" )
+       6 % $01D301. ( "HEART-SHAPED" )
+       4 % $01D5C7. ( "HEXAGONAL" )
+       4 % $01D6B5. ( "OCTAGONAL" )
+       5 % $01D31A. ( "BOWL-SHAPED" )
+       4 % $01D707. ( "CUPPED" )
+       4 % $01D34A. ( "DISK-SHAPED" )
+       5 % $01D741. ( "RETRACTIBLE" )
+       4 % $01D362. ( "SAUCER-SHAPED" )
+       4 % $01D3C6. ( "SPHERE-SHAPED" )
+       5 % $01D400. ( "TEAR-SHAPED" )
+       4 % $01D418. ( "FAN-SHAPED" )
+       4 % $01D65E. ( "FINELY SCULPTED" )
+       5 % $01D981. ( "MEMBRANOUS" )
+       5 % $01D332. ( "DISH-SHAPED" )
+       4 % $01D905. ( "FEATHERY" )
+      33 % $01D759. ( "SPIRAL-SHAPED" )
+   $01DE8B ( "FRUITS" )
+       6 % $01D690. ( "CUBOID" )
+       6 % $01D6A3. ( "ROUND" )
+       5 % $01D6CB. ( "OVAL" )
+       5 % $01D34A. ( "DISK-SHAPED" )
+       6 % $01D362. ( "SAUCER-SHAPED" )
+       5 % $01D3C6. ( "SPHERE-SHAPED" )
+       5 % $01D828. ( "GLOBULAR" )
+       6 % $01D400. ( "TEAR-SHAPED" )
+       5 % $01D851. ( "BULBOUS" )
+       6 % $01D8F2. ( "CURVED" )
+       6 % $01D3AF. ( "ROD-SHAPED" )
+       5 % $01D92C. ( "GELATINOUS" )
+       6 % $01D95A. ( "GNARLED" )
+      28 % $01D96E. ( "SPINEY" )
+   $01DEC4 ( "LEAVES" )
+       3 % $01D2E6. ( "DIAMOND-SHAPED" )
+       3 % $01D5B4. ( "SQUARE" )
+       2 % $01D5C7. ( "HEXAGONAL" )
+       2 % $01D606. ( "CIRCULAR" )
+       3 % $01D61B. ( "TRIANGULAR" )
+       2 % $01D67A. ( "SCALLOPED" )
+       2 % $01D6A3. ( "ROUND" )
+       3 % $01D6B5. ( "OCTAGONAL" )
+       2 % $01D6CB. ( "OVAL" )
+       2 % $01D31A. ( "BOWL-SHAPED" )
+       3 % $01D707. ( "CUPPED" )
+       2 % $01D332. ( "DISH-SHAPED" )
+       2 % $01D759. ( "SPIRAL-SHAPED" )
+       3 % $01D7BF. ( "RAZOR SHARP" )
+       2 % $01D396. ( "SPEAR-SHAPED" )
+       2 % $01D3AF. ( "ROD-SHAPED" )
+       3 % $01D814. ( "POINTED" )
+       2 % $01D828. ( "GLOBULAR" )
+       2 % $01D8A1. ( "FLOPPY" )
+       3 % $01D8C7. ( "INTRICATE" )
+       2 % $01D8F2. ( "CURVED" )
+       2 % $01D42F. ( "IRREGULARLY-SHAPED" )
+       3 % $01D96E. ( "SPINEY" )
+       2 % $01D981. ( "MEMBRANOUS" )
+       3 % $01D905. ( "FEATHERY" )
+       3 % $01D301. ( "HEART-SHAPED" )
+       2 % $01D362. ( "SAUCER-SHAPED" )
+       3 % $01D34A. ( "DISK-SHAPED" )
+       3 % $01D37C. ( "NEEDLE-SHAPED" )
+       2 % $01D400. ( "TEAR-SHAPED" )
+       3 % $01D418. ( "FAN-SHAPED" )
+      24 % $01D91A. ( "RIGID" )
+   $01DFC2 ( "HEAD" )
+      10 % $01D61B. ( "TRIANGULAR" )
+      10 % $01D6CB. ( "OVAL" )
+       9 % $01D741. ( "RETRACTIBLE" )
+       9 % $01D798. ( "CONICAL" )
+      10 % $01D828. ( "GLOBULAR" )
+       9 % $01D3E0. ( "DOME-SHAPED" )
+      10 % $01D851. ( "BULBOUS" )
+      33 % $01D95A. ( "GNARLED" )
+   $01CD27 ( "MOUTH" )
+      16 % $01D5DD. ( "CAVERNOUS" )
+      15 % $01D5F3. ( "GAPING" )
+      15 % $01D44E. ( "SLASH-LIKE" )
+      15 % $01D606. ( "CIRCULAR" )
+      39 % $01D61B. ( "TRIANGULAR" )
+
+( Data:ProbabilityArray @EB58-EB95 XT:EB63 CFA:E4F0 DLen: 50 STAGE: Dictionaries)
+2 _probability-array LIGHTS
+   $000001
+      26 % $01CACD. ( "DARK" )
+      25 % $01CB19. ( "BRIGHT" )
+      49 % $01CAF2. ( "LIGHT" )
+   $000002
+      14 % $01CB04. ( "BLINDING" )
+      12 % $01CB19. ( "BRIGHT" )
+      13 % $01CB2C. ( "GLOWING" )
+      12 % $01CB40. ( "LUMINESCENT" )
+      13 % $01CB58. ( "TRANSLUCENT" )
+      36 % $01CB70. ( "SHIMMERING" )
+
+( @EB95-EBB1 XT:EB97 CFA:224C DLen: 26 STAGE: Words)
+: [LP-OV:EB97]
+ [LP-OV:E0F4] >R >R 2DUP >C+S @INST-Subclass 7 = ICLOSE R> R> [LP-OV:E100] ; 
+
+( @EBB1-EBE5 XT:EBB3 CFA:224C DLen: 50 STAGE: Words)
+: [LP-OV:EBB3]
+ RECORD# @ >R (PLANET) 1.5@ >C+S _p-shape_min C@ _p-shape_max C@ 1+ RRND ICLOSE DUP 
+ >PROP 1.5@ R> RECORD# ! [LP-OV:E4B6] [A-CREATURE:60-62] 1.5! [A-CREATURE:58-60] 
+ ! ; 
+
+( @EBE5-EC3D XT:EBE7 CFA:224C DLen: 86 STAGE: Words)
+: [LP-OV:EBE7]
+ 2 OVER = IF 
+  DROP 1 10 
+ ELSE 
+  4 OVER = IF 
+   DROP 1 60 
+  ELSE 
+   6 OVER = IF 
+    DROP 1 60 
+   ELSE 
+    50 100 ROT DROP 
+   THEN 
+  THEN 
+ THEN 
+ ; 
+
+( @EC3D-EC55 XT:EC3F CFA:224C DLen: 22 STAGE: Words)
+: [LP-OV:EC3F]
+ [A-CREATURE:12-13] C@ [LP-OV:EBE7] $0080 PEAK ! [LP-OV:E2BB] [A-CREATURE:55-56] 
+ C! ; 
+
+( @EC55-EC7F XT:EC57 CFA:224C DLen: 40 STAGE: Words)
+: [LP-OV:EC57]
+ 0 PEAK ! 0 85 [LP-OV:E2BB] [A-CREATURE:11-12] C@ 18 * [A-CREATURE:55-56] C@ 2/ + 
+ + 3 / ; 
+
+( @EC7F-EC89 XT:EC81 CFA:224C DLen: 8 STAGE: Words)
+: [LP-OV:EC81]
+ [LP-OV:EC57] [A-CREATURE:52-53] C! ; 
+
+( @EC89-EC93 XT:EC8B CFA:224C DLen: 8 STAGE: Words)
+: [LP-OV:EC8B]
+ [LP-OV:EC57] STUN.EFFECt C! ; 
+
+( @EC93-ECF7 XT:EC95 CFA:224C DLen: 98 STAGE: Words)
+: [LP-OV:EC95]
+ [A-CREATURE:38-41] 1.5@ [LP-OV:E0E6] OR IF 
+  2DUP $01E238. ( "SESSILE" ) D= 0= IF 
+   0 >MOVER [LP-OV:E121] 
+  ELSE 
+   2DROP 0 
+  THEN 
+ ELSE 
+  0 
+ THEN 
+ [A-CREATURE:48-49] C! [A-CREATURE:41-44] 1.5@ [LP-OV:E0E6] OR IF 
+  $01E1FB. ( "FLOATING" ) D= IF 
+   5 
+  ELSE 
+   10 
+  THEN 
+ ELSE 
+  0 
+ THEN 
+ [A-CREATURE:49-50] C! ; 
+
+( @ECF7-ED35 XT:ECF9 CFA:224C DLen: 60 STAGE: Words)
+: [LP-OV:ECF9]
+ IFLD@ >R >R 0 DUP I I' D= R> R> $01DF48. ( "TAIL" ) D= OR NOT IF 
+  1 14 RRND >PROP 1.5@ ROT IFLD! 
+ ELSE 
+  DROP 
+ THEN 
+ ; 
+
+( @ED35-ED61 XT:ED37 CFA:224C DLen: 42 STAGE: Words)
+: [LP-OV:ED37]
+ ' [A-CREATURE:75-78] ( $E3E6 ) ' [A-CREATURE:26-29] ( $E33E ) [LP-OV:ECF9] ' [A-CREATURE:93-96] ( $E416 ) 
+ ' [A-CREATURE:22-25] ( $E32E ) [LP-OV:ECF9] ' [A-CREATURE:111-114] ( $E446 ) ' [A-CREATURE:30-33] ( $E34E ) 
+ [LP-OV:ECF9] ' [A-CREATURE:129-132] ( $E476 ) ' [A-CREATURE:34-37] ( $E35E ) [LP-OV:ECF9] 
+ ; 
+
+( @ED61-EDAD XT:ED63 CFA:224C DLen: 74 STAGE: Words)
+: [LP-OV:ED63]
+ [LP-OV:EB97] >R 2DROP R> IF 
+  [LP-OV:E27B] IF 
+   [LP-OV:E285] 1 0 LIGHTS [LP-OV:E598] ROT IFLD! DROP 
+  ELSE 
+   [LP-OV:E27B] IF 
+    DROP [LP-OV:E285] 2 0 LIGHTS [LP-OV:E598] ROT IFLD! 
+   ELSE 
+    2DROP 
+   THEN 
+  THEN 
+ ELSE 
+  2DROP 
+ THEN 
+ ; 
+
+( @EDAD-EDED XT:EDAF CFA:224C DLen: 62 STAGE: Words)
+: [LP-OV:EDAF]
+ RECORD# @ >R [A-CREATURE:13-16] C@ [A-CREATURE:16-19] C@ 1+ RRND ?COLOR 1.5@ 2DUP 
+ [A-CREATURE:135-138] 1.5! 0. [A-CREATURE:138-141] 1.5! 0. [A-CREATURE:141-144] 1.5! 
+ ' [A-CREATURE:141-144] ( $E496 ) ' [A-CREATURE:138-141] ( $E48E ) R> RECORD# ! [LP-OV:E4B6] 
+ 2SWAP [LP-OV:ED63] ; 
+
+( @EDED-EE1B XT:EDEF CFA:224C DLen: 44 STAGE: Words)
+: [LP-OV:EDEF]
+ [A-CREATURE:37-38] C@ ?DUP 0= IF 
+  12 
+ ELSE 
+  3 - 0< IF 
+   13 
+  ELSE 
+   14 
+  THEN 
+ THEN 
+ ; 
+
+( @EE1B-EE33 XT:EE1D CFA:224C DLen: 22 STAGE: Words)
+: [LP-OV:EE1D]
+ [A-CREATURE:37-38] C@ IF 
+  16 
+ ELSE 
+  15 
+ THEN 
+ ; 
+
+( Data:ProbabilityArray @EE33-EE75 XT:EE41 CFA:E4F0 DLen: 52 STAGE: Dictionaries)
+3 _probability-array PLANT.ICO__
+   $01E238 ( "SESSILE" )
+      14 % $000000. ( CLASS: )
+      12 % 1.
+      13 % 2.
+      12 % 3.
+      13 % 4.
+      36 % 5.
+   $01E15C ( "CRAWLING" )
+      39 % 4.
+      61 % 5.
+   $000000
+
+( @EE75-EEAF XT:EE77 CFA:224C DLen: 56 STAGE: Words)
+: [LP-OV:EE77]
+ [LP-OV:E27B] [A-CREATURE:38-41] 1.5@ $01E15C. ( "CRAWLING" ) D= IF 
+  IF 
+   4 
+  ELSE 
+   5 
+  THEN 
+ ELSE 
+  9 [A-CREATURE:11-12] C@ - 3 / 2 MIN 2* + 
+ THEN 
+ ; 
+
+( @EEAF-EF2F XT:EEB1 CFA:224C DLen: 126 STAGE: Words)
+: [LP-OV:EEB1]
+ [A-CREATURE:37-38] C@ ?DUP 0= IF 
+  [A-CREATURE:60-62] 1.5@ $01E07D. ( "ELONGATED" ) D= IF 
+   6 
+  ELSE 
+   7 
+  THEN 
+ ELSE 
+  1 OVER = IF 
+   DROP 8 
+  ELSE 
+   2 OVER = IF 
+    DROP 9 
+   ELSE 
+    3 OVER = IF 
+     DROP 10 
+    ELSE 
+     4 OVER = IF 
+      DROP 10 
+     ELSE 
+      11 SWAP DROP 
+     THEN 
+    THEN 
+   THEN 
+  THEN 
+ THEN 
+ ; 
+
+( @EF2F-EF97 XT:EF31 CFA:224C DLen: 102 STAGE: Words)
+: [LP-OV:EF31]
+ SHAPE 1.5@ 2DUP $01DDC9. ( "RADIAL" ) D= >R 2DUP $01DDB3. ( "SPHERICAL" ) D= R> 
+ OR IF 
+  2DROP [LP-OV:EDEF] 
+ ELSE 
+  2DUP $01DD87. ( "AMORPHOUS" ) D= >R $01DD9D. ( "IRREGULAR" ) D= R> OR IF 
+   [LP-OV:EE1D] 
+  ELSE 
+   [A-CREATURE:12-13] C@ 4 MOD IF 
+    [LP-OV:EE77] 
+   ELSE 
+    [LP-OV:EEB1] 
+   THEN 
+  THEN 
+ THEN 
+ [A-CREATURE:144-146] ! ; 
+
+( @EF97-EFD9 XT:EF99 CFA:224C DLen: 64 STAGE: Words)
+: [LP-OV:EF99]
+ IFLD@ OR IF 
+  [A-CREATURE:13-16] C@ [A-CREATURE:16-19] C@ 1+ RRND ?COLOR 1.5@ 2DUP 5 ROLL IFLD! 
+  [LP-OV:ED63] 
+ ELSE 
+  0 DUP ROT IFLD! 0 DUP ROT IFLD! 0 DUP ROT IFLD! 
+ THEN 
+ ; 
+
+( @EFD9-F025 XT:EFDB CFA:224C DLen: 74 STAGE: Words)
+: [LP-OV:EFDB]
+ ' [A-CREATURE:105-108] ( $E436 ) ' [A-CREATURE:102-105] ( $E42E ) ' [A-CREATURE:99-102] ( $E426 ) 
+ ' [A-CREATURE:30-33] ( $E34E ) [LP-OV:EF99] ' [A-CREATURE:123-126] ( $E466 ) ' [A-CREATURE:120-123] ( $E45E ) 
+ ' [A-CREATURE:117-120] ( $E456 ) ' [A-CREATURE:34-37] ( $E35E ) [LP-OV:EF99] ' [A-CREATURE:69-72] ( $E3D6 ) 
+ ' [A-CREATURE:66-69] ( $E3CE ) ' [A-CREATURE:63-66] ( $E3C6 ) ' [A-CREATURE:26-29] ( $E33E ) 
+ [LP-OV:EF99] ' [A-CREATURE:87-90] ( $E406 ) ' [A-CREATURE:84-87] ( $E3FE ) ' [A-CREATURE:81-84] ( $E3F6 ) 
+ ' [A-CREATURE:22-25] ( $E32E ) [LP-OV:EF99] ; 
+
+( Data:WordArray @F025-F047 XT:F031 CFA:E2CF DLen: 22 STAGE: Dictionaries)
+_word_array TALLEST
+  0
+  10
+  35
+  80
+  $00B4
+  $012C
+  $0258
+  $0409
+  $0556 ( ' BLK )
+  $06C5
+  $0855
+
+( Data:WordArray @F047-F06A XT:F054 CFA:E2CF DLen: 22 STAGE: Dictionaries)
+_word_array SHORTEST
+  0
+  1
+  11
+  36
+  81
+  $00B5
+  $012D ( ' _useroffset )
+  $0259
+  $040A
+  $0557
+  $06C6
+
+( Data:WordArray @F06A-F08C XT:F076 CFA:E2CF DLen: 22 STAGE: Dictionaries)
+_word_array STALKER
+  0
+  20
+  70
+  $00DC
+  $02BC
+  $0708
+  $0E74
+  $16EA
+  $221D
+  $3091
+  $42AA
+
+( Data:WordArray @F08C-F0AE XT:F098 CFA:E2CF DLen: 22 STAGE: Dictionaries)
+_word_array LOSTALK
+  0
+  1
+  21
+  71
+  $00DD
+  $02BD
+  $0709
+  $0E75
+  $16EB
+  $221E
+  $3092
+
+( @F0AE-F0F8 XT:F0B0 CFA:224C DLen: 72 STAGE: Words)
+: [LP-OV:F0B0]
+ [A-CREATURE:11-12] C@ [A-CREATURE:12-13] C@ 4 MOD OVER OVER IF 
+  LOSTALK 
+ ELSE 
+  SHORTEST 
+ THEN 
+ >R IF 
+  STALKER 
+ ELSE 
+  TALLEST 
+ THEN 
+ R> SWAP 1+ RRND DUP [A-CREATURE:56-58] ! [A-CREATURE:58-60] @ / 1 MAX [A-CREATURE:58-60] 
+ ! ; 
+
+( @F0F8-F11C XT:F0FA CFA:224C DLen: 34 STAGE: Words)
+: [LP-OV:F0FA]
+ IFLD@ OR IF 
+  1 [A-CREATURE:11-12] C@ 1+ RRND >SIZE 1.5@ 
+ ELSE 
+  0. 
+ THEN 
+ ROT IFLD! ; 
+
+( @F11C-F148 XT:F11E CFA:224C DLen: 42 STAGE: Words)
+: [LP-OV:F11E]
+ ' [A-CREATURE:132-135] ( $E47E ) ' [A-CREATURE:34-37] ( $E35E ) [LP-OV:F0FA] ' [A-CREATURE:114-117] ( $E44E ) 
+ ' [A-CREATURE:30-33] ( $E34E ) [LP-OV:F0FA] ' [A-CREATURE:78-81] ( $E3EE ) ' [A-CREATURE:26-29] ( $E33E ) 
+ [LP-OV:F0FA] ' [A-CREATURE:96-99] ( $E41E ) ' [A-CREATURE:22-25] ( $E32E ) [LP-OV:F0FA] 
+ ; 
+
+( @F148-F160 XT:F14A CFA:224C DLen: 22 STAGE: Words)
+: [LP-OV:F14A]
+ [A-CREATURE:12-13] C@ [LP-OV:EBE7] $0080 PEAK ! [LP-OV:E2BB] [A-CREATURE:54-55] 
+ C! ; 
+
+( @F160-F178 XT:F162 CFA:224C DLen: 22 STAGE: Words)
+: [LP-OV:F162]
+ [A-CREATURE:11-12] C@ 1 MAX 9 MIN >SIZE 1.5@ [A-CREATURE:149-152] 1.5! ; 
+
+( @F178-F1B4 XT:F17A CFA:224C DLen: 58 STAGE: Words)
+: [LP-OV:F17A]
+ [LP-OV:E285] [A-CREATURE:26-29] 1.5@ ADDITIONS [LP-OV:E5FE] [A-CREATURE:72-75] 1.5! 
+ [LP-OV:E285] [A-CREATURE:22-25] 1.5@ ADDITIONS [LP-OV:E5FE] [A-CREATURE:90-93] 1.5! 
+ [LP-OV:E285] [A-CREATURE:34-37] 1.5@ ADDITIONS [LP-OV:E5FE] [A-CREATURE:126-129] 
+ 1.5! [LP-OV:E285] [A-CREATURE:30-33] 1.5@ ADDITIONS [LP-OV:E5FE] [A-CREATURE:108-111] 
+ 1.5! ; 
+
+( @F1B4-F254 XT:F1B6 CFA:224C DLen: 158 STAGE: Words)
+: [LP-OV:F1B6]
+ [A-CREATURE:34-37] 1.5@ $01DEC4. ( "LEAVES" ) D= IF 
+  [A-CREATURE:11-12] C@ 5 < IF 
+   $01C61F. ( "PLANT-LIKE" ) 
+  ELSE 
+   $01C57B. ( "TREE-LIKE" ) 
+  THEN 
+ ELSE 
+  [A-CREATURE:30-33] 1.5@ $01CBCB. ( "FLOAT SAC" ) D= >R [A-CREATURE:33-34] C@ 1 
+  = R> AND IF 
+   $01C591. ( "BALLOON-LIKE" ) 
+  ELSE 
+   [A-CREATURE:34-37] 1.5@ $01CD62. ( "TENTACLE" ) D= >R [A-CREATURE:37-38] C@ 5 
+   > R> AND IF 
+    $01C748. ( "ANEMONE-LIKE" ) 
+   ELSE 
+    20 [LP-OV:E285] < IF 
+     $01C704. ( "FUNGOID" ) 
+    ELSE 
+     $01C61F. ( "PLANT-LIKE" ) 
+    THEN 
+   THEN 
+  THEN 
+ THEN 
+ ; 
+
+( @F254-F382 XT:F256 CFA:224C DLen: 300 STAGE: Words)
+: [LP-OV:F256]
+ SHAPE 1.5@ $01DD9D. ( "IRREGULAR" ) D= [A-CREATURE:7-10] 1.5@ >R >R I' I $01CF93. ( "HARD" ) 
+ D= I' I $01D220. ( "ROUGH" ) D= I' I $01D0AA. ( "COARSE" ) D= I' I $01D0F3. ( "CRUSTY" ) 
+ D= R> R> $01D166. ( "CRACKED" ) D= OR OR OR OR AND IF 
+  $01C6EE. ( "ROCK-LIKE" ) 
+ ELSE 
+  SHAPE 1.5@ $01E07D. ( "ELONGATED" ) D= [A-CREATURE:37-38] C@ 0= AND IF 
+   $01C718. ( "STARFISH-LIKE" ) 
+  ELSE 
+   SHAPE 1.5@ $01DD1F. ( "EXOSKELETON" ) D= [A-CREATURE:37-38] C@ DUP 3 > SWAP 7 
+   < AND AND IF 
+    $01C609. ( "INSECTOID" ) 
+   ELSE 
+    [A-CREATURE:60-62] 1.5@ $01E093. ( "NARROW" ) D= [A-CREATURE:34-37] 1.5@ $01CD17. ( "LEG" ) 
+    D= >R [A-CREATURE:37-38] C@ 4 > R> AND AND IF 
+     $01C6BE. ( "SPIDER-LIKE" ) 
+    ELSE 
+     [A-CREATURE:34-37] 1.5@ $01CD17. ( "LEG" ) D= >R [A-CREATURE:26-29] 1.5@ $01CD8B. ( "ARM" ) 
+     D= R> AND SHAPE 1.5@ $01DDDC. ( "BILATERAL" ) D= AND IF 
+      $01C5F4. ( "HUMANOID" ) 
+     ELSE 
+      0 
+     THEN 
+    THEN 
+   THEN 
+  THEN 
+ THEN 
+ ; 
+
+( @F382-F4CA XT:F384 CFA:224C DLen: 326 STAGE: Words)
+: [LP-OV:F384]
+ [A-CREATURE:7-10] 1.5@ $01DDF2. ( "SCALES" ) D= IF 
+  [A-CREATURE:11-12] C@ 3 > IF 
+   $01C5DA. ( "DINOSAUR-LIKE" ) 
+  ELSE 
+   [A-CREATURE:26-29] 1.5@ $01DF59. ( "SHELL" ) D= IF 
+    $01C6D6. ( "TURTLE-LIKE" ) 
+   ELSE 
+    $01C64C. ( "REPTILIAN" ) 
+   THEN 
+  THEN 
+ ELSE 
+  [A-CREATURE:7-10] 1.5@ $01D905. ( "FEATHERY" ) D= [A-CREATURE:30-33] 1.5@ $01CBBA. ( "WING" ) 
+  D= AND IF 
+   $01C5C4. ( "BIRD-LIKE" ) 
+  ELSE 
+   [A-CREATURE:19-22] 1.5@ $01CEB6. ( "MUCOUSY" ) D= IF 
+    [A-CREATURE:26-29] 1.5@ $01DF59. ( "SHELL" ) D= IF 
+     $01C690. ( "SNAIL-LIKE" ) 
+    ELSE 
+     $01C67A. ( "SLUG-LIKE" ) 
+    THEN 
+   ELSE 
+    [A-CREATURE:7-10] 1.5@ $01E000. ( "FUR" ) D= IF 
+     [A-CREATURE:11-12] 3 < IF 
+      $01C662. ( "RODENT-LIKE" ) 
+     ELSE 
+      [A-CREATURE:34-37] 1.5@ $01CD17. ( "LEG" ) D= >R [A-CREATURE:37-38] C@ DUP 
+      3 = SWAP 4 = OR R> AND IF 
+       [A-CREATURE:60-62] 1.5@ 2DUP 2DUP $01E059. ( "THICK" ) D= 2SWAP $01E06B. ( "SQUAT" ) 
+       D= OR IF 
+        DROP $01C636. ( "BEAR-LIKE" ) 
+       ELSE 
+        0 >PROP [LP-OV:E121] 8 > IF 
+         $01C5AA. ( "ANTELOPE-LIKE" ) 
+        ELSE 
+         0. 
+        THEN 
+       THEN 
+      ELSE 
+       0. 
+      THEN 
+     THEN 
+    ELSE 
+     0. 
+    THEN 
+   THEN 
+  THEN 
+ THEN 
+ ; 
+
+( @F4CA-F4F0 XT:F4CC CFA:224C DLen: 36 STAGE: Words)
+: [LP-OV:F4CC]
+ [A-CREATURE:12-13] C@ 4 MOD IF 
+  [LP-OV:F1B6] 
+ ELSE 
+  [LP-OV:F256] ?DUP 0= IF 
+   [LP-OV:F384] 
+  THEN 
+ THEN 
+ RESEMBLes 1.5! ; 
+
+( @F4F0-F528 XT:F4FE CFA:224C DLen: 42 STAGE: Dictionaries)
+: SPEC.PARM_
+ [LP-OV:E4B6] RECORD# @ SEED <!> [LP-OV:F162] [LP-OV:EBB3] [LP-OV:EC3F] [LP-OV:EC81] 
+ [LP-OV:EC8B] [LP-OV:EC95] [LP-OV:EF31] [LP-OV:F0B0] [LP-OV:F14A] [LP-OV:F17A] [LP-OV:F4CC] 
+ [LP-OV:ED37] [LP-OV:EDAF] [LP-OV:EFDB] [LP-OV:F11E] ; 
+
+( RAW Data:OverlayJunk @F528-F560 DLen: 56 STAGE: Dictionaries)
+ _overlayJunk 56 ALLOT ( @F528 =
+@F528                         4C 4F 50 41 52 4D 53 5F           LOPARMS_
+@F530 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+@F540 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 2D   _______________-
+@F550 2D 2D 2D 2D 2D 2D 2D 2D 32 32 31 38 2D 2D 2D 2D   --------2218----
+ )
+

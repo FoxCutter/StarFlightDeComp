@@ -1,0 +1,259 @@
+( RAW Data:OverlayHeader @F200-F214 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 714C 	Count: 0036 	Data Size: 0035 (Paragraphs)
+    On Disk Location 714C0-71820
+  Overlay Address: @F200 	Overlay DP: @F548
+    Load Location: @F200-@F560 	Load Length: 864
+    Data: @F200-@F548 	Data Length: 840
+    Junk: @F548-@F560 	Junk Length: 24
+  VOCABULARY Word: BE5F BLT-VOC
+   Dictionary Link 1: F528
+   Dictionary Link 2: 0000
+   Dictionary Link 3: F45C
+   Dictionary Link 4: F4FC
+
+@F200 4C 71 36 00 00 F2 48 F5 5F BE 28 F5 00 00 5C F4   Lq6...H._.(...\.
+@F210 FC F4 35 00                                       ..5.            
+)
+
+( @F214-F2ED XT:F220 CFA:F220 DLen: 205 STAGE: Dictionaries)
+CODE .RUNBIT
+(Address @F220
+   F220 FA                   CLI        
+   F221 FF 36 6E 58          PUSH       WORD PTR [586Eh]                 ; XBLT
+   F225 8F 06 1C 56          POP        WORD PTR [561Ch]                 ; X1
+   F229 FF 36 63 58          PUSH       WORD PTR [5863h]                 ; YBLT
+   F22D 8F 06 13 56          POP        WORD PTR [5613h]                 ; Y1
+   F231 5B                   POP        BX
+   F232 07                   POP        ES
+   F233 26 8B 0F             MOV        CX, WORD PTR [ES:BX]
+   F236 06                   PUSH       ES
+   F237 8F 06 AA 58          POP        WORD PTR [58AAh]                 ; BLTSEG
+   F23B 56                   PUSH       SI
+   F23C 57                   PUSH       DI
+   F23D 83 C3 02             ADD        BX, 2
+   F240 89 1E 2E 56          MOV        WORD PTR [562Eh], BX             ; X2
+   F244 8B 06 6E 58          MOV        AX, WORD PTR [586Eh]             ; XBLT
+   F248 03 06 92 58          ADD        AX, WORD PTR [5892h]             ; WBLT
+   F24C 89 06 25 56          MOV        WORD PTR [5625h], AX             ; Y2
+ .BLT-OV_F250:
+   F250 51                   PUSH       CX
+   F251 33 C9                XOR        CX, CX
+   F253 FF 36 AA 58          PUSH       WORD PTR [58AAh]                 ; BLTSEG
+   F257 07                   POP        ES
+   F258 26 8A 0F             MOV        CL, BYTE PTR [ES:BX]
+   F25B 43                   INC        BX
+   F25C 0B C9                OR         CX, CX
+   F25E 74 7C                JZ         F2DCh                            ; .BLT-OV_F2DC
+   F260 8B C3                MOV        AX, BX
+   F262 48                   DEC        AX
+   F263 2B 06 2E 56          SUB        AX, WORD PTR [562Eh]             ; X2
+   F267 25 01 00             AND        AX, 1
+   F26A 75 52                JNZ        F2BEh                            ; .BLT-OV_F2BE
+   F26C FF 36 48 56          PUSH       WORD PTR [5648h]                 ; BUF-SEG
+   F270 07                   POP        ES
+ .BLT-OV_F271:
+   F271 8B 16 13 56          MOV        DX, WORD PTR [5613h]             ; Y1
+   F275 D1 E2                SHL        DX, 1
+   F277 8B 06 1C 56          MOV        AX, WORD PTR [561Ch]             ; X1
+   F27B 03 16 3A 56          ADD        DX, WORD PTR [563Ah]             ; YTABL
+   F27F 8B FA                MOV        DI, DX
+   F281 D1 E8                SHR        AX, 1
+   F283 BA F0 00             MOV        DX, 00F0h
+   F286 73 02                JNB        F28Ah                            ; .BLT-OV_F28A
+   F288 B2 0F                MOV        DL, 15
+ .BLT-OV_F28A:
+   F28A 03 05                ADD        AX, WORD PTR [DI]                ; USER:SP0
+   F28C 8B F8                MOV        DI, AX
+   F28E 26 8A 05             MOV        AL, BYTE PTR [ES:DI]
+   F291 8A 36 F2 55          MOV        DH, BYTE PTR [55F2h]             ; COLOR
+   F295 22 F2                AND        DH, DL
+   F297 F6 D2                NOT        DL
+   F299 22 C2                AND        AL, DL
+   F29B 0A C6                OR         AL, DH
+   F29D 26 88 05             MOV        BYTE PTR [ES:DI], AL
+   F2A0 FF 06 1C 56          INC        WORD PTR [561Ch]                 ; X1
+   F2A4 8B 06 1C 56          MOV        AX, WORD PTR [561Ch]             ; X1
+   F2A8 3B 06 25 56          CMP        AX, WORD PTR [5625h]             ; Y2
+   F2AC 75 0C                JNZ        F2BAh                            ; .BLT-OV_F2BA
+   F2AE FF 36 6E 58          PUSH       WORD PTR [586Eh]                 ; XBLT
+   F2B2 8F 06 1C 56          POP        WORD PTR [561Ch]                 ; X1
+   F2B6 FF 0E 13 56          DEC        WORD PTR [5613h]                 ; Y1
+ .BLT-OV_F2BA:
+   F2BA E2 B5                LOOP       F271h                            ; .BLT-OV_F271
+   F2BC EB 1E                JMP        F2DCh                            ; .BLT-OV_F2DC
+ .BLT-OV_F2BE:
+   F2BE 01 0E 1C 56          ADD        WORD PTR [561Ch], CX             ; X1
+   F2C2 8B 06 1C 56          MOV        AX, WORD PTR [561Ch]             ; X1
+ .BLT-OV_F2C6:
+   F2C6 3B 06 25 56          CMP        AX, WORD PTR [5625h]             ; Y2
+   F2CA 78 0C                JS         F2D8h                            ; .BLT-OV_F2D8
+   F2CC 2B 06 92 58          SUB        AX, WORD PTR [5892h]             ; WBLT
+   F2D0 FF 0E 13 56          DEC        WORD PTR [5613h]                 ; Y1
+   F2D4 EB F0                JMP        F2C6h                            ; .BLT-OV_F2C6
+   F2D6 EB 04                JMP        F2DCh                            ; .BLT-OV_F2DC
+ .BLT-OV_F2D8:
+   F2D8 89 06 1C 56          MOV        WORD PTR [561Ch], AX             ; X1
+ .BLT-OV_F2DC:
+ .BLT-OV_F2DC:
+ .BLT-OV_F2DC:
+   F2DC 59                   POP        CX
+   F2DD 49                   DEC        CX
+   F2DE 74 03                JZ         F2E3h                            ; .BLT-OV_F2E3
+   F2E0 E9 6D FF             JMP        F250h                            ; .BLT-OV_F250
+ .BLT-OV_F2E3:
+   F2E3 5F                   POP        DI
+   F2E4 5E                   POP        SI
+   F2E5 1E                   PUSH       DS
+   F2E6 07                   POP        ES
+   F2E7 FB                   STI        
+   F2E8 AD                   LODSW      
+   F2E9 8B D8                MOV        BX, AX
+   F2EB FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @F2ED-F351 XT:F2F8 CFA:224C DLen: 89 STAGE: Dictionaries)
+: .PARMS
+ CR ." x2= " X2 @ 4 .R ." x1= " X1 @ 4 .R ." st " XSTART @ 4 .R ." en " XEND @ 4 
+ .R ." y " YLINE @ 4 .R KEY 13 = IF 
+  QUIT 
+ THEN 
+ ; 
+
+( Data:Variable @F351-F35E XT:F35C CFA:1D29 DLen: 2 STAGE: Dictionaries)
+VARIABLE BRIGHT ( @F35C=$522E)
+
+( Data:Variable @F35E-F36A XT:F368 CFA:1D29 DLen: 2 STAGE: Dictionaries)
+VARIABLE 2TEMP ( @F368=$2E20)
+
+( @F36A-F45A XT:F379 CFA:F379 DLen: 225 STAGE: Dictionaries)
+CODE .EGARUNBIT
+(Address @F379
+   F379 BA CE 03             MOV        DX, 03CEh
+   F37C 8A 26 F2 55          MOV        AH, BYTE PTR [55F2h]             ; COLOR
+   F380 B0 00                MOV        AL, 0
+   F382 EE                   OUT        DX, AL
+   F383 42                   INC        DX
+   F384 86 C4                XCHG       AH, AL
+   F386 EE                   OUT        DX, AL
+   F387 8B 1E 6E 58          MOV        BX, WORD PTR [586Eh]             ; XBLT
+   F38B 89 1E 1C 56          MOV        WORD PTR [561Ch], BX             ; X1
+   F38F 8B 06 92 58          MOV        AX, WORD PTR [5892h]             ; WBLT
+   F393 48                   DEC        AX
+   F394 03 D8                ADD        BX, AX
+   F396 89 1E 5C F3          MOV        WORD PTR [F35Ch], BX             ; BRIGHT
+   F39A 8B 1E 63 58          MOV        BX, WORD PTR [5863h]             ; YBLT
+   F39E 89 1E 13 56          MOV        WORD PTR [5613h], BX             ; Y1
+   F3A2 8C C2                MOV        DX, ES
+   F3A4 5B                   POP        BX
+   F3A5 07                   POP        ES
+   F3A6 52                   PUSH       DX
+   F3A7 26 8B 0F             MOV        CX, WORD PTR [ES:BX]
+   F3AA 89 0E 68 F3          MOV        WORD PTR [F368h], CX             ; 2TEMP
+   F3AE 2B C9                SUB        CX, CX
+ .BLT-OV_F3B0:
+   F3B0 53                   PUSH       BX
+   F3B1 51                   PUSH       CX
+   F3B2 03 D9                ADD        BX, CX
+   F3B4 43                   INC        BX
+   F3B5 43                   INC        BX
+   F3B6 2B C0                SUB        AX, AX
+   F3B8 26 8A 07             MOV        AL, BYTE PTR [ES:BX]
+   F3BB 25 FF 00             AND        AX, 00FFh
+   F3BE 75 03                JNZ        F3C3h                            ; .BLT-OV_F3C3
+   F3C0 E9 85 00             JMP        F448h                            ; .BLT-OV_F448
+ .BLT-OV_F3C3:
+   F3C3 8B 0E 1C 56          MOV        CX, WORD PTR [561Ch]             ; X1
+   F3C7 03 C8                ADD        CX, AX
+   F3C9 49                   DEC        CX
+   F3CA 89 0E 2E 56          MOV        WORD PTR [562Eh], CX             ; X2
+ .BLT-OV_F3CE:
+   F3CE 3B 0E 5C F3          CMP        CX, WORD PTR [F35Ch]             ; BRIGHT
+   F3D2 76 47                JBE        F41Bh                            ; .BLT-OV_F41B
+   F3D4 8B DC                MOV        BX, SP
+   F3D6 8B 07                MOV        AX, WORD PTR [BX]
+   F3D8 25 01 00             AND        AX, 1
+   F3DB 75 1B                JNZ        F3F8h                            ; .BLT-OV_F3F8
+   F3DD 8B 06 1C 56          MOV        AX, WORD PTR [561Ch]             ; X1
+   F3E1 89 06 B7 57          MOV        WORD PTR [57B7h], AX             ; XSTART
+   F3E5 8B 06 5C F3          MOV        AX, WORD PTR [F35Ch]             ; BRIGHT
+   F3E9 89 06 C2 57          MOV        WORD PTR [57C2h], AX             ; XEND
+   F3ED 8B 06 13 56          MOV        AX, WORD PTR [5613h]             ; Y1
+   F3F1 89 06 CE 57          MOV        WORD PTR [57CEh], AX             ; YLINE
+   F3F5 E8 2D 9D             CALL       9125h                            ; (FVLINE_
+ .BLT-OV_F3F8:
+   F3F8 8B 06 2E 56          MOV        AX, WORD PTR [562Eh]             ; X2
+   F3FC 8B 0E 92 58          MOV        CX, WORD PTR [5892h]             ; WBLT
+   F400 2B C1                SUB        AX, CX
+   F402 89 06 2E 56          MOV        WORD PTR [562Eh], AX             ; X2
+   F406 8B 06 6E 58          MOV        AX, WORD PTR [586Eh]             ; XBLT
+   F40A 89 06 1C 56          MOV        WORD PTR [561Ch], AX             ; X1
+   F40E FF 0E 13 56          DEC        WORD PTR [5613h]                 ; Y1
+   F412 8B 0E 2E 56          MOV        CX, WORD PTR [562Eh]             ; X2
+   F416 E9 B5 FF             JMP        F3CEh                            ; .BLT-OV_F3CE
+   F419 EB 2D                JMP        F448h                            ; .BLT-OV_F448
+ .BLT-OV_F41B:
+   F41B 8B DC                MOV        BX, SP
+   F41D 8B 07                MOV        AX, WORD PTR [BX]
+   F41F 25 01 00             AND        AX, 1
+   F422 75 1B                JNZ        F43Fh                            ; .BLT-OV_F43F
+   F424 8B 06 1C 56          MOV        AX, WORD PTR [561Ch]             ; X1
+   F428 89 06 B7 57          MOV        WORD PTR [57B7h], AX             ; XSTART
+   F42C 8B 06 2E 56          MOV        AX, WORD PTR [562Eh]             ; X2
+   F430 89 06 C2 57          MOV        WORD PTR [57C2h], AX             ; XEND
+   F434 8B 06 13 56          MOV        AX, WORD PTR [5613h]             ; Y1
+   F438 89 06 CE 57          MOV        WORD PTR [57CEh], AX             ; YLINE
+   F43C E8 E6 9C             CALL       9125h                            ; (FVLINE_
+ .BLT-OV_F43F:
+   F43F 8B 06 2E 56          MOV        AX, WORD PTR [562Eh]             ; X2
+   F443 40                   INC        AX
+   F444 89 06 1C 56          MOV        WORD PTR [561Ch], AX             ; X1
+ .BLT-OV_F448:
+ .BLT-OV_F448:
+   F448 59                   POP        CX
+   F449 5B                   POP        BX
+   F44A 41                   INC        CX
+   F44B 3B 0E 68 F3          CMP        CX, WORD PTR [F368h]             ; 2TEMP
+   F44F 74 03                JZ         F454h                            ; .BLT-OV_F454
+   F451 E9 5C FF             JMP        F3B0h                            ; .BLT-OV_F3B0
+ .BLT-OV_F454:
+   F454 07                   POP        ES
+   F455 AD                   LODSW      
+   F456 8B D8                MOV        BX, AX
+   F458 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @F45A-F4FA XT:F466 CFA:224C DLen: 148 STAGE: Dictionaries)
+: .HYBRID
+ DUP BLTSEG ! >R 5 ABLT ! I 2 LC@ LBLT ! I 3 LC@ WBLT ! R> 4 LC@ 0 DO 
+  ABLT @ >R BLTSEG @ >R 4 ABLT +! I I' 2+ LC@ ?>EGA COLOR ! R> R> 3 + LC@ IF 
+   BLTSEG @ ABLT @ ?EGA @ IF 
+    .EGARUNBIT 
+   ELSE 
+    .RUNBIT 
+   THEN 
+  ELSE 
+   {BLT} 
+  THEN 
+  BLTSEG @ ABLT @ 4 - L@ 4 - ABLT +! 
+ LOOP 
+ ; 
+
+( @F4FA-F50D XT:F505 CFA:224C DLen: 8 STAGE: Dictionaries)
+: PADSEG
+ PAD ADDR>SEG 1+ ; 
+
+( @F50D-F526 XT:F51A CFA:224C DLen: 12 STAGE: Dictionaries)
+: @.HYBRID
+ PADSEG SWAP FILE< PADSEG .HYBRID ; 
+
+( @F526-F548 XT:F530 CFA:224C DLen: 24 STAGE: Dictionaries)
+: SETUP
+ >LORES >MONO >A DARK 0 $00C7 POS. NODRIVES MOUNTA MOUNTB ; 
+
+( RAW Data:OverlayJunk @F548-F560 DLen: 24 STAGE: Dictionaries)
+ _overlayJunk 24 ALLOT ( @F548 =
+@F548                         42 4C 54 2D 56 4F 43 5F           BLT-VOC_
+@F550 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+ )
+

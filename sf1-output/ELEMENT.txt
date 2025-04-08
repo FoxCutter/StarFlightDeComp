@@ -1,0 +1,132 @@
+Element #1
+  Name: ALUMINUM
+  Value: 44
+  MW: 10
+  Volume: 46112
+
+Element #2
+  Name: ANTIMONY
+  Value: 56
+  MW: 13
+  Volume: 16416
+
+Element #3
+  Name: CHROMIUM
+  Value: 52
+  MW: 12
+  Volume: 33056
+
+Element #4
+  Name: COBALT
+  Value: 16
+  MW: 3
+  Volume: 18208
+
+Element #5
+  Name: COPPER
+  Value: 24
+  MW: 5
+  Volume: 6176
+
+Element #6
+  Name: ENDURIUM (FUEL)
+  Value: 200
+  MW: 22
+  Volume: 58912
+
+Element #7
+  Name: GOLD
+  Value: 76
+  MW: 18
+  Volume: 2080
+
+Element #8
+  Name: IRON
+  Value: 12
+  MW: 2
+  Volume: 53024
+
+Element #9
+  Name: LEAD
+  Value: 8
+  MW: 1
+  Volume: 56608
+
+Element #10
+  Name: MAGNESIUM
+  Value: 40
+  MW: 9
+  Volume: 21280
+
+Element #11
+  Name: MERCURY
+  Value: 64
+  MW: 15
+  Volume: 30240
+
+Element #12
+  Name: MOLYBDENUM
+  Value: 32
+  MW: 7
+  Volume: 5408
+
+Element #13
+  Name: NICKEL
+  Value: 20
+  MW: 4
+  Volume: 48416
+
+Element #14
+  Name: PLATINUM
+  Value: 80
+  MW: 19
+  Volume: 1056
+
+Element #15
+  Name: PLUTONIUM
+  Value: 84
+  MW: 20
+  Volume: 45344
+
+Element #16
+  Name: PROMETHIUM
+  Value: 60
+  MW: 14
+  Volume: 44320
+
+Element #17
+  Name: RODNIUM
+  Value: 88
+  MW: 21
+  Volume: 64288
+
+Element #18
+  Name: SILVER
+  Value: 72
+  MW: 17
+  Volume: 46368
+
+Element #19
+  Name: TIN
+  Value: 36
+  MW: 8
+  Volume: 61216
+
+Element #20
+  Name: TITANIUM
+  Value: 48
+  MW: 11
+  Volume: 59424
+
+Element #21
+  Name: TUNGSTEN
+  Value: 68
+  MW: 16
+  Volume: 11552
+
+Element #22
+  Name: ZINC
+  Value: 28
+  MW: 6
+  Volume: 39968
+

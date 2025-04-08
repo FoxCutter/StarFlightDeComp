@@ -1,0 +1,1218 @@
+( RAW Data:OverlayHeader @DB70-DB84 DLen: 20 STAGE: Dictionaries)
+( Overlay Header:
+  Disk Start: 8186 	Count: 019F 	Data Size: 0193 (Paragraphs)
+    On Disk Location 81860-83250
+  Overlay Address: @DB70 	Overlay DP: @F497
+    Load Location: @DB70-@F560 	Load Length: 6640
+    Data: @DB70-@F497 	Data Length: 6439
+    Junk: @F497-@F560 	Junk Length: 201
+  VOCABULARY Word: C350 ORBIT
+   Dictionary Link 1: F488
+   Dictionary Link 2: F421
+   Dictionary Link 3: 0000
+   Dictionary Link 4: F37E
+
+@DB70 86 81 9F 01 70 DB 97 F4 50 C3 88 F4 21 F4 00 00   ....p...P...!...
+@DB80 7E F3 93 01                                       ~...            
+)
+
+( Data:Word @DB84-DB88 XT:DB86 CFA:2214 DLen: 2 STAGE: Words)
+127 CONSTANT [ORBIT-OV:DB86]
+
+( Data:Word @DB88-DB8C XT:DB8A CFA:2214 DLen: 2 STAGE: Words)
+50 CONSTANT [ORBIT-OV:DB8A]
+
+( Data:Word @DB8C-DB90 XT:DB8E CFA:2214 DLen: 2 STAGE: Words)
+66 CONSTANT [ORBIT-OV:DB8E]
+
+( Data @DB90-DB9E XT:DB92 CFA:1D29 DLen: 12 STAGE: Words)
+CREATE [ORBIT-OV:DB92] 12 ALLOT ( @DB92 =
+@DB92 08 19 29 38 47 54 5F 6A 72 78 7D 7F               ..)8GT_jrx}.    
+ )
+
+( Data:Variable @DB9E-DBA2 XT:DBA0 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBA0] ( @DBA0=9)
+
+( Data:Variable @DBA2-DBA6 XT:DBA4 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBA4] ( @DBA4=25)
+
+( Data:Variable @DBA6-DBAA XT:DBA8 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBA8] ( @DBA8=7)
+
+( Data:Variable @DBAA-DBAE XT:DBAC CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBAC] ( @DBAC=$0167)
+
+( Data:Variable @DBAE-DBB2 XT:DBB0 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBB0] ( @DBB0=24)
+
+( Data:Variable @DBB2-DBB6 XT:DBB4 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBB4] ( @DBB4=-7)
+
+( Data:Variable @DBB6-DBBA XT:DBB8 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBB8] ( @DBB8=5)
+
+( Data:Variable @DBBA-DBBE XT:DBBC CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBBC] ( @DBBC=-8)
+
+( Data:Variable @DBBE-DBC2 XT:DBC0 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBC0] ( @DBC0=0)
+
+( Data:Variable @DBC2-DBC6 XT:DBC4 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBC4] ( @DBC4=33)
+
+( Data:Variable @DBC6-DBCA XT:DBC8 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBC8] ( @DBC8=0)
+
+( Data:Variable @DBCA-DBCE XT:DBCC CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBCC] ( @DBCC=50)
+
+( Data:Variable @DBCE-DBD2 XT:DBD0 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBD0] ( @DBD0=1)
+
+( Data:Variable @DBD2-DBD6 XT:DBD4 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBD4] ( @DBD4=0)
+
+( Data:Variable @DBD6-DBDA XT:DBD8 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBD8] ( @DBD8=1)
+
+( Data:Variable @DBDA-DBDE XT:DBDC CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBDC] ( @DBDC=0)
+
+( Data:Variable @DBDE-DBE2 XT:DBE0 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBE0] ( @DBE0=0)
+
+( Data:Variable @DBE2-DBE6 XT:DBE4 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBE4] ( @DBE4=49)
+
+( Data:Variable @DBE6-DBEA XT:DBE8 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBE8] ( @DBE8=1)
+
+( Data:Variable @DBEA-DBEE XT:DBEC CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBEC] ( @DBEC=127)
+
+( Data:Variable @DBEE-DBF2 XT:DBF0 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBF0] ( @DBF0=25)
+
+( Data:Variable @DBF2-DBF6 XT:DBF4 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBF4] ( @DBF4=125)
+
+( Data:Variable @DBF6-DBFA XT:DBF8 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBF8] ( @DBF8=$18CE)
+
+( Data:Variable @DBFA-DBFE XT:DBFC CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DBFC] ( @DBFC=95)
+
+( Data:Variable @DBFE-DC02 XT:DC00 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC00] ( @DC00=84)
+
+( Data:Variable @DC02-DC06 XT:DC04 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC04] ( @DC04=0)
+
+( Data:Variable @DC06-DC0A XT:DC08 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC08] ( @DC08=127)
+
+( Data:Variable @DC0A-DC0E XT:DC0C CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC0C] ( @DC0C=$18CE)
+
+( Data:Variable @DC0E-DC12 XT:DC10 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC10] ( @DC10=33)
+
+( Data:Variable @DC12-DC16 XT:DC14 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC14] ( @DC14=58)
+
+( Data:Variable @DC16-DC1A XT:DC18 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC18] ( @DC18=5)
+
+( Data:Variable @DC1A-DC1E XT:DC1C CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC1C] ( @DC1C=1)
+
+( Data:Variable @DC1E-DC22 XT:DC20 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC20] ( @DC20=$F6E0)
+
+( Data:Variable @DC22-DC26 XT:DC24 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC24] ( @DC24=2)
+
+( Data:Variable @DC26-DC2A XT:DC28 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC28] ( @DC28=0)
+
+( Data:Variable @DC2A-DC2E XT:DC2C CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC2C] ( @DC2C=$203A)
+
+( Data:Variable @DC2E-DC32 XT:DC30 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC30] ( @DC30=$203A)
+
+( Data:Variable @DC32-DC36 XT:DC34 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:DC34] ( @DC34=44)
+
+( Data @DC36-DC58 XT:DC38 CFA:1D29 DLen: 32 STAGE: Words)
+CREATE [ORBIT-OV:DC38] 32 ALLOT ( @DC38 =
+@DC38 30 00 1D 00 2F 00 1F 00 2E 00 1F 00 2F 00 1D 00   0.../......./...
+@DC48 00 00 38 00 06 00 3B 00 31 37 3C 83 E9 2C DC CE   ..8...;.17<..,..
+ )
+
+( Data @DC58-DC62 XT:DC5A CFA:1D29 DLen: 8 STAGE: Words)
+CREATE [ORBIT-OV:DC5A] 8 ALLOT ( @DC5A =
+@DC5A 00 00 00 00 00 00 00 4E                           .......N        
+ )
+
+( Data @DC62-DC84 XT:DC64 CFA:1D29 DLen: 32 STAGE: Words)
+CREATE [ORBIT-OV:DC64] 32 ALLOT ( @DC64 =
+@DC64 00 00 20 00 00 00 10 00 03 00 0E 00 02 00 24 00   .. ...........$.
+@DC74 02 00 24 00 00 00 12 00 12 00 00 00 CD 46 52 41   ..$..........FRA
+ )
+
+( Data @DC84-DC8E XT:DC86 CFA:1D29 DLen: 8 STAGE: Words)
+CREATE [ORBIT-OV:DC86] 8 ALLOT ( @DC86 =
+@DC86 00 00 00 00 00 00 00 00                           ........        
+ )
+
+( Data @DC8E-DCC0 XT:DC90 CFA:1D29 DLen: 48 STAGE: Words)
+CREATE [ORBIT-OV:DC90] 48 ALLOT ( @DC90 =
+@DC90 CA 06 02 DE 7F 00 D9 00 2A FE 00 06 53 02 6B FC   ........*...S.k.
+@DCA0 C0 03 8C 0F F5 DD 7F 00 2F FF B2 EF 00 01 2D 46   ......../.....-F
+@DCB0 52 41 4D C5 A0 3C DA EA 57 DC C6 40 46 52 41 4D   RAM..<..W..@FRAM
+ )
+
+( Data @DCC0-DCDA XT:DCC2 CFA:1D29 DLen: 24 STAGE: Words)
+CREATE [ORBIT-OV:DCC2] 24 ALLOT ( @DCC2 =
+@DCC2 7D 00 00 00 E7 00 00 00 EE 00 54 00 A3 00 00 00   }.........T.....
+@DCD2 F0 00 A1 00 AE 00 CE 18                           ........        
+ )
+
+( Data:AField @DCDA-DCE2 XT:DCDC CFA:73EA DLen: 6 STAGE: Words)
+32 2 2 AFIELD _p-mass ( PLANET )
+
+( Data @DCE2-DD1E XT:DCE4 CFA:1D29 DLen: 58 STAGE: Memory)
+CREATE [ORBIT-OV:DCE4] 58 ALLOT ( @DCE4 =
+@DCE4 8B C1 C3 29 1D 8B C2 03 C1 40 D1 F8 03 C1 40 D1   ...).....@....@.
+@DCF4 F8 C3 29 1D 8B C2 03 C1 40 D1 F8 C3 29 1D 8B C2   ..).....@...)...
+@DD04 03 C1 40 D1 F8 03 C2 40 D1 F8 C3 29 1D 8B C2 C3   ..@....@...)....
+@DD14 E4 DC E9 DC F8 DC 02 DD 11 DD                     ..........      
+ )
+
+( @DD1E-DD2A XT:DD20 CFA:1D29 DLen: 10 STAGE: Words)
+CREATE [ORBIT-OV:DD20]
+(Address @DD20
+   DD20 D1 E3                SHL        BX, 1
+   DD22 81 C3 14 DD          ADD        BX, DD14h
+   DD26 8B 07                MOV        AX, WORD PTR [BX]
+   DD28 FF E0                JMP        AX
+) CODE-END
+
+( @DD2A-DDA2 XT:DD2C CFA:DD2C DLen: 118 STAGE: Words)
+CODE [ORBIT-OV:DD2C]
+(Address @DD2C
+   DD2C 8F 06 24 DC          POP        WORD PTR [DC24h]                 ; [ORBIT-OV:DC24]
+   DD30 8F 06 28 DC          POP        WORD PTR [DC28h]                 ; [ORBIT-OV:DC28]
+   DD34 8B 1E 20 DC          MOV        BX, WORD PTR [DC20h]             ; [ORBIT-OV:DC20]
+   DD38 83 C3 0E             ADD        BX, 14
+   DD3B 8B 0F                MOV        CX, WORD PTR [BX]
+   DD3D 83 EB 04             SUB        BX, 4
+   DD40 8B 17                MOV        DX, WORD PTR [BX]
+   DD42 8B 1E 28 DC          MOV        BX, WORD PTR [DC28h]             ; [ORBIT-OV:DC28]
+   DD46 E8 D7 FF             CALL       DD20h                            ; [ORBIT-OV:DD20]
+   DD49 50                   PUSH       AX
+   DD4A 8B 1E 20 DC          MOV        BX, WORD PTR [DC20h]             ; [ORBIT-OV:DC20]
+   DD4E 83 C3 02             ADD        BX, 2
+   DD51 8B 0F                MOV        CX, WORD PTR [BX]
+   DD53 83 C3 04             ADD        BX, 4
+   DD56 8B 17                MOV        DX, WORD PTR [BX]
+   DD58 8B 1E 28 DC          MOV        BX, WORD PTR [DC28h]             ; [ORBIT-OV:DC28]
+   DD5C E8 C1 FF             CALL       DD20h                            ; [ORBIT-OV:DD20]
+   DD5F 8B D0                MOV        DX, AX
+   DD61 59                   POP        CX
+   DD62 8B 1E 24 DC          MOV        BX, WORD PTR [DC24h]             ; [ORBIT-OV:DC24]
+   DD66 E8 B7 FF             CALL       DD20h                            ; [ORBIT-OV:DD20]
+   DD69 50                   PUSH       AX
+   DD6A 8B 1E 20 DC          MOV        BX, WORD PTR [DC20h]             ; [ORBIT-OV:DC20]
+   DD6E 8B 17                MOV        DX, WORD PTR [BX]
+   DD70 83 C3 0C             ADD        BX, 12
+   DD73 8B 0F                MOV        CX, WORD PTR [BX]
+   DD75 8B 1E 24 DC          MOV        BX, WORD PTR [DC24h]             ; [ORBIT-OV:DC24]
+   DD79 E8 A4 FF             CALL       DD20h                            ; [ORBIT-OV:DD20]
+   DD7C 50                   PUSH       AX
+   DD7D 8B 1E 20 DC          MOV        BX, WORD PTR [DC20h]             ; [ORBIT-OV:DC20]
+   DD81 83 C3 04             ADD        BX, 4
+   DD84 8B 17                MOV        DX, WORD PTR [BX]
+   DD86 83 C3 04             ADD        BX, 4
+   DD89 8B 0F                MOV        CX, WORD PTR [BX]
+   DD8B 8B 1E 24 DC          MOV        BX, WORD PTR [DC24h]             ; [ORBIT-OV:DC24]
+   DD8F E8 8E FF             CALL       DD20h                            ; [ORBIT-OV:DD20]
+   DD92 8B D0                MOV        DX, AX
+   DD94 59                   POP        CX
+   DD95 8B 1E 28 DC          MOV        BX, WORD PTR [DC28h]             ; [ORBIT-OV:DC28]
+   DD99 E8 84 FF             CALL       DD20h                            ; [ORBIT-OV:DD20]
+   DD9C 50                   PUSH       AX
+   DD9D AD                   LODSW      
+   DD9E 8B D8                MOV        BX, AX
+   DDA0 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @DDA2-DDC4 XT:DDA4 CFA:224C DLen: 32 STAGE: Memory)
+: [ORBIT-OV:DDA4]
+ OVER + SWAP DO 
+  #COLZ 0 DO 
+   I J ACELLAD__ A@ 
+  LOOP 
+ LOOP 
+ ; 
+
+( @DDC4-DDEC XT:DDC6 CFA:224C DLen: 38 STAGE: Words)
+: [ORBIT-OV:DDC6]
+ OVER + 1- DO 
+  0 #COLZ 1- DO 
+   I J ACELLAD__ A! -1 
+  +LOOP 
+  -1 
+ +LOOP 
+ ; 
+
+( @DDEC-DE3A XT:DDEE CFA:224C DLen: 76 STAGE: Words)
+: [ORBIT-OV:DDEE]
+ SPHEREW___ OFF ' GVERTEX ( $6B31 ) SETLARR__ 6 0 DO 
+  6 0 DO 
+   I 32 * 78 - 0 J 32 * 78 - J 6 * I + 1 [ORBIT-OV:DDC6] 
+  LOOP 
+ LOOP 
+ ; 
+
+( @DE3A-DE8A XT:DE3C CFA:224C DLen: 78 STAGE: Words)
+: [ORBIT-OV:DE3C]
+ SPHEREW___ OFF ' GVERTEX ( $6B31 ) SETLARR__ 9 0 DO 
+  9 0 DO 
+   I 4 * 14 - 0 J 4 * 14 - J 9 * I + 36 + 1 [ORBIT-OV:DDC6] 
+  LOOP 
+ LOOP 
+ ; 
+
+( @DE8A-DEAE XT:DE8C CFA:224C DLen: 34 STAGE: Words)
+: [ORBIT-OV:DE8C]
+ XHBUF-SEG @ DUP 75 FILE< 0 ' GPOLY ( $6B43 ) 6 + @ 0 $0164 LCMOVE ; 
+
+( @DEAE-DED2 XT:DEB0 CFA:224C DLen: 34 STAGE: Words)
+: [ORBIT-OV:DEB0]
+ XHBUF-SEG @ DUP 76 FILE< 0 ' FACET ( $6AFA ) 6 + @ 0 $0120 LCMOVE ; 
+
+( @DED2-DEF6 XT:DED4 CFA:224C DLen: 34 STAGE: Words)
+: [ORBIT-OV:DED4]
+ XHBUF-SEG @ DUP 77 FILE< 0 ' VERTEX ( $6AE8 ) 6 + @ 0 $0192 LCMOVE ; 
+
+( @DEF6-DF0B XT:DF02 CFA:DF02 DLen: 9 STAGE: Dictionaries)
+CODE SETQUAD
+(Address @DF02
+   DF02 89 26 20 DC          MOV        WORD PTR [DC20h], SP             ; [ORBIT-OV:DC20]
+   DF06 AD                   LODSW      
+   DF07 8B D8                MOV        BX, AX
+   DF09 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @DF0B-DF21 XT:DF13 CFA:DF13 DLen: 14 STAGE: Dictionaries)
+CODE C*/
+(Address @DF13
+   DF13 5A                   POP        DX
+   DF14 59                   POP        CX
+   DF15 58                   POP        AX
+   DF16 F6 E9                IMUL       CL
+   DF18 F6 FA                IDIV       DL
+   DF1A 98                   CBW        
+   DF1B 50                   PUSH       AX
+   DF1C AD                   LODSW      
+   DF1D 8B D8                MOV        BX, AX
+   DF1F FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @DF21-DF4F XT:DF23 CFA:224C DLen: 44 STAGE: Words)
+: [ORBIT-OV:DF23]
+ [ORBIT-OV:DBC8] @ [ORBIT-OV:DBD4] @ - [ORBIT-OV:DBE0] ! [ORBIT-OV:DBCC] @ [ORBIT-OV:DBD8] 
+ @ - [ORBIT-OV:DBE4] ! [ORBIT-OV:DBD0] @ [ORBIT-OV:DBDC] @ - [ORBIT-OV:DBE8] ! ; 
+
+( @DF4F-DF73 XT:DF51 CFA:224C DLen: 34 STAGE: Words)
+: [ORBIT-OV:DF51]
+ [ORBIT-OV:DBE8] @ [ORBIT-OV:DB86] * DUP M* [ORBIT-OV:DBE0] @ [ORBIT-OV:DB86] * DUP 
+ M* D+ SQRT [ORBIT-OV:DBEC] ! ; 
+
+( @DF73-DF93 XT:DF75 CFA:224C DLen: 30 STAGE: Words)
+: [ORBIT-OV:DF75]
+ [ORBIT-OV:DBEC] @ DUP M* [ORBIT-OV:DBE4] @ [ORBIT-OV:DB86] * DUP M* D+ SQRT [ORBIT-OV:DBF8] 
+ ! ; 
+
+( @DF93-DFAB XT:DF95 CFA:224C DLen: 22 STAGE: Words)
+: [ORBIT-OV:DF95]
+ [ORBIT-OV:DBE0] @ [ORBIT-OV:DB86] DUP * [ORBIT-OV:DBEC] @ */ [ORBIT-OV:DBF0] ! ; 
+
+( @DFAB-DFC3 XT:DFAD CFA:224C DLen: 22 STAGE: Words)
+: [ORBIT-OV:DFAD]
+ [ORBIT-OV:DBE8] @ [ORBIT-OV:DB86] DUP * [ORBIT-OV:DBEC] @ */ [ORBIT-OV:DBF4] ! ; 
+
+( @DFC3-DFDB XT:DFC5 CFA:224C DLen: 22 STAGE: Words)
+: [ORBIT-OV:DFC5]
+ [ORBIT-OV:DBE4] @ [ORBIT-OV:DB86] DUP * [ORBIT-OV:DBF8] @ */ [ORBIT-OV:DBFC] ! ; 
+
+( @DFDB-DFEF XT:DFDD CFA:224C DLen: 18 STAGE: Words)
+: [ORBIT-OV:DFDD]
+ [ORBIT-OV:DBEC] @ [ORBIT-OV:DB86] [ORBIT-OV:DBF8] @ */ [ORBIT-OV:DC00] ! ; 
+
+( @DFEF-E019 XT:DFF1 CFA:224C DLen: 40 STAGE: Words)
+: [ORBIT-OV:DFF1]
+ [ORBIT-OV:DBF4] @ [ORBIT-OV:DC08] @ [ORBIT-OV:DB86] C*/ [ORBIT-OV:DBF0] @ [ORBIT-OV:DBFC] 
+ @ [ORBIT-OV:DB86] C*/ [ORBIT-OV:DC04] @ [ORBIT-OV:DB86] C*/ + [ORBIT-OV:DCC2] C! 
+ ; 
+
+( @E019-E031 XT:E01B CFA:224C DLen: 22 STAGE: Words)
+: [ORBIT-OV:E01B]
+ [ORBIT-OV:DC00] @ [ORBIT-OV:DC04] @ [ORBIT-OV:DB86] C*/ NEGATE [ORBIT-OV:DCC2] 2+ 
+ C! ; 
+
+( @E031-E061 XT:E033 CFA:224C DLen: 46 STAGE: Words)
+: [ORBIT-OV:E033]
+ [ORBIT-OV:DBF0] @ [ORBIT-OV:DC08] @ [ORBIT-OV:DB86] C*/ NEGATE [ORBIT-OV:DBF4] @ 
+ [ORBIT-OV:DBFC] @ [ORBIT-OV:DB86] C*/ [ORBIT-OV:DC04] @ [ORBIT-OV:DB86] C*/ + [ORBIT-OV:DCC2] 
+ 4 + C! ; 
+
+( @E061-E08F XT:E063 CFA:224C DLen: 44 STAGE: Words)
+: [ORBIT-OV:E063]
+ [ORBIT-OV:DBF4] @ [ORBIT-OV:DC04] @ [ORBIT-OV:DB86] C*/ [ORBIT-OV:DBF0] @ [ORBIT-OV:DBFC] 
+ @ [ORBIT-OV:DB86] C*/ [ORBIT-OV:DC08] @ [ORBIT-OV:DB86] C*/ - [ORBIT-OV:DCC2] 8 
+ + C! ; 
+
+( @E08F-E0A9 XT:E091 CFA:224C DLen: 24 STAGE: Words)
+: [ORBIT-OV:E091]
+ [ORBIT-OV:DC00] @ [ORBIT-OV:DC08] @ [ORBIT-OV:DB86] C*/ [ORBIT-OV:DCC2] 10 + C! 
+ ; 
+
+( @E0A9-E0DB XT:E0AB CFA:224C DLen: 48 STAGE: Words)
+: [ORBIT-OV:E0AB]
+ [ORBIT-OV:DBF0] @ [ORBIT-OV:DC04] @ [ORBIT-OV:DB86] C*/ NEGATE [ORBIT-OV:DBF4] @ 
+ [ORBIT-OV:DBFC] @ [ORBIT-OV:DB86] C*/ [ORBIT-OV:DC08] @ [ORBIT-OV:DB86] C*/ - [ORBIT-OV:DCC2] 
+ 12 + C! ; 
+
+( @E0DB-E0F7 XT:E0DD CFA:224C DLen: 26 STAGE: Words)
+: [ORBIT-OV:E0DD]
+ [ORBIT-OV:DBF0] @ [ORBIT-OV:DC00] @ [ORBIT-OV:DB86] C*/ NEGATE [ORBIT-OV:DCC2] 16 
+ + C! ; 
+
+( @E0F7-E10B XT:E0F9 CFA:224C DLen: 18 STAGE: Words)
+: [ORBIT-OV:E0F9]
+ [ORBIT-OV:DBFC] @ NEGATE [ORBIT-OV:DCC2] 18 + C! ; 
+
+( @E10B-E127 XT:E10D CFA:224C DLen: 26 STAGE: Words)
+: [ORBIT-OV:E10D]
+ [ORBIT-OV:DBF4] @ [ORBIT-OV:DC00] @ [ORBIT-OV:DB86] C*/ NEGATE [ORBIT-OV:DCC2] 20 
+ + C! ; 
+
+( @E127-E139 XT:E129 CFA:224C DLen: 16 STAGE: Words)
+: [ORBIT-OV:E129]
+ [ORBIT-OV:DBF8] @ [ORBIT-OV:DCC2] 22 + ! ; 
+
+( @E139-E169 XT:E13B CFA:224C DLen: 46 STAGE: Words)
+: [ORBIT-OV:E13B]
+ [ORBIT-OV:DCC2] 24 0 FILL [ORBIT-OV:DF23] [ORBIT-OV:DF51] [ORBIT-OV:DF75] [ORBIT-OV:DF95] 
+ [ORBIT-OV:DFAD] [ORBIT-OV:DFC5] [ORBIT-OV:DFDD] [ORBIT-OV:DFF1] [ORBIT-OV:E01B] 
+ [ORBIT-OV:E033] [ORBIT-OV:E063] [ORBIT-OV:E091] [ORBIT-OV:E0AB] [ORBIT-OV:E0DD] 
+ [ORBIT-OV:E0F9] [ORBIT-OV:E10D] [ORBIT-OV:E129] ; 
+
+( @E169-E1B4 XT:E16B CFA:E16B DLen: 73 STAGE: Words)
+CODE [ORBIT-OV:E16B]
+(Address @E16B
+   E16B 56                   PUSH       SI
+   E16C 57                   PUSH       DI
+   E16D 06                   PUSH       ES
+   E16E 8B 0E D3 5D          MOV        CX, WORD PTR [5DD3h]             ; 3DSEG
+   E172 8E C1                MOV        ES, CX
+   E174 8B 36 9B 56          MOV        SI, WORD PTR [569Bh]             ; VIN
+   E178 8B 3E DE 5D          MOV        DI, WORD PTR [5DDEh]             ; VIN'
+   E17C 8B 0E 86 56          MOV        CX, WORD PTR [5686h]             ; #IN
+   E180 8A 16 D4 DB          MOV        DL, BYTE PTR [DBD4h]             ; [ORBIT-OV:DBD4]
+   E184 8A 36 D8 DB          MOV        DH, BYTE PTR [DBD8h]             ; [ORBIT-OV:DBD8]
+   E188 8A 1E DC DB          MOV        BL, BYTE PTR [DBDCh]             ; [ORBIT-OV:DBDC]
+ .ORBIT-OV_E18C:
+   E18C 26 8A 04             MOV        AL, BYTE PTR [ES:SI]
+   E18F 2A C2                SUB        AL, DL
+   E191 26 88 05             MOV        BYTE PTR [ES:DI], AL
+   E194 46                   INC        SI
+   E195 47                   INC        DI
+   E196 26 8A 04             MOV        AL, BYTE PTR [ES:SI]
+   E199 2A C6                SUB        AL, DH
+   E19B 26 88 05             MOV        BYTE PTR [ES:DI], AL
+   E19E 46                   INC        SI
+   E19F 47                   INC        DI
+   E1A0 26 8A 04             MOV        AL, BYTE PTR [ES:SI]
+   E1A3 2A C3                SUB        AL, BL
+   E1A5 26 88 05             MOV        BYTE PTR [ES:DI], AL
+   E1A8 46                   INC        SI
+   E1A9 47                   INC        DI
+   E1AA E2 E0                LOOP       E18Ch                            ; .ORBIT-OV_E18C
+   E1AC 07                   POP        ES
+   E1AD 5F                   POP        DI
+   E1AE 5E                   POP        SI
+   E1AF AD                   LODSW      
+   E1B0 8B D8                MOV        BX, AX
+   E1B2 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @E1B4-E226 XT:E1B6 CFA:E1B6 DLen: 112 STAGE: Words)
+CODE [ORBIT-OV:E1B6]
+(Address @E1B6
+   E1B6 57                   PUSH       DI
+   E1B7 55                   PUSH       BP
+   E1B8 56                   PUSH       SI
+   E1B9 BE C2 DC             MOV        SI, DCC2h                        ; [ORBIT-OV:DCC2]
+   E1BC B9 03 00             MOV        CX, 3
+ .ORBIT-OV_E1BF:
+   E1BF 8A 34                MOV        DH, BYTE PTR [SI]
+   E1C1 83 C6 02             ADD        SI, 2
+   E1C4 8A 14                MOV        DL, BYTE PTR [SI]
+   E1C6 83 C6 02             ADD        SI, 2
+   E1C9 8A 3C                MOV        BH, BYTE PTR [SI]
+   E1CB 83 C6 02             ADD        SI, 2
+   E1CE 8B 04                MOV        AX, WORD PTR [SI]
+   E1D0 89 06 0C DC          MOV        WORD PTR [DC0Ch], AX             ; [ORBIT-OV:DC0C]
+   E1D4 83 C6 02             ADD        SI, 2
+   E1D7 56                   PUSH       SI
+   E1D8 51                   PUSH       CX
+   E1D9 83 E9 03             SUB        CX, 3
+   E1DC F7 D9                NEG        CX
+   E1DE D1 E1                SHL        CX, 1
+   E1E0 03 0E A6 56          ADD        CX, WORD PTR [56A6h]             ; VOUT
+   E1E4 8B F9                MOV        DI, CX
+   E1E6 8B 36 DE 5D          MOV        SI, WORD PTR [5DDEh]             ; VIN'
+   E1EA 06                   PUSH       ES
+   E1EB 8B 0E D3 5D          MOV        CX, WORD PTR [5DD3h]             ; 3DSEG
+   E1EF 8E C1                MOV        ES, CX
+   E1F1 8B 0E 86 56          MOV        CX, WORD PTR [5686h]             ; #IN
+ .ORBIT-OV_E1F5:
+   E1F5 8B 2E 0C DC          MOV        BP, WORD PTR [DC0Ch]             ; [ORBIT-OV:DC0C]
+   E1F9 26 8A 04             MOV        AL, BYTE PTR [ES:SI]
+   E1FC 46                   INC        SI
+   E1FD F6 EE                IMUL       DH
+   E1FF 03 E8                ADD        BP, AX
+   E201 26 8A 04             MOV        AL, BYTE PTR [ES:SI]
+   E204 46                   INC        SI
+   E205 F6 EA                IMUL       DL
+   E207 03 E8                ADD        BP, AX
+   E209 26 8A 04             MOV        AL, BYTE PTR [ES:SI]
+   E20C 46                   INC        SI
+   E20D F6 EF                IMUL       BH
+   E20F 03 E8                ADD        BP, AX
+   E211 26 89 2D             MOV        WORD PTR [ES:DI], BP
+   E214 83 C7 06             ADD        DI, 6
+   E217 E2 DC                LOOP       E1F5h                            ; .ORBIT-OV_E1F5
+   E219 07                   POP        ES
+   E21A 59                   POP        CX
+   E21B 5E                   POP        SI
+   E21C E2 A1                LOOP       E1BFh                            ; .ORBIT-OV_E1BF
+   E21E 5E                   POP        SI
+   E21F 5D                   POP        BP
+   E220 5F                   POP        DI
+   E221 AD                   LODSW      
+   E222 8B D8                MOV        BX, AX
+   E224 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @E226-E278 XT:E228 CFA:E228 DLen: 80 STAGE: Words)
+CODE [ORBIT-OV:E228]
+(Address @E228
+   E228 57                   PUSH       DI
+   E229 55                   PUSH       BP
+   E22A 56                   PUSH       SI
+   E22B 06                   PUSH       ES
+   E22C 8B 3E A6 56          MOV        DI, WORD PTR [56A6h]             ; VOUT
+   E230 83 C7 04             ADD        DI, 4
+   E233 8B 36 EC 5D          MOV        SI, WORD PTR [5DECh]             ; YSCREEN
+   E237 8B 0E D3 5D          MOV        CX, WORD PTR [5DD3h]             ; 3DSEG
+   E23B 8E C1                MOV        ES, CX
+   E23D 8B 2E 14 DC          MOV        BP, WORD PTR [DC14h]             ; [ORBIT-OV:DC14]
+   E241 8B 0E 86 56          MOV        CX, WORD PTR [5686h]             ; #IN
+ .ORBIT-OV_E245:
+   E245 26 8B 1D             MOV        BX, WORD PTR [ES:DI]
+   E248 83 EF 02             SUB        DI, 2
+   E24B 26 8B 05             MOV        AX, WORD PTR [ES:DI]
+   E24E F7 ED                IMUL       BP
+   E250 F7 FB                IDIV       BX
+   E252 03 C6                ADD        AX, SI
+   E254 26 89 05             MOV        WORD PTR [ES:DI], AX
+   E257 83 EF 02             SUB        DI, 2
+   E25A 26 8B 05             MOV        AX, WORD PTR [ES:DI]
+   E25D F7 2E 10 DC          IMUL       WORD PTR [DC10h]                 ; [ORBIT-OV:DC10]
+   E261 F7 FB                IDIV       BX
+   E263 03 06 FA 5D          ADD        AX, WORD PTR [5DFAh]             ; XSCREEN
+   E267 26 89 05             MOV        WORD PTR [ES:DI], AX
+   E26A 83 C7 0A             ADD        DI, 10
+   E26D E2 D6                LOOP       E245h                            ; .ORBIT-OV_E245
+   E26F 07                   POP        ES
+   E270 5E                   POP        SI
+   E271 5D                   POP        BP
+   E272 5F                   POP        DI
+   E273 AD                   LODSW      
+   E274 8B D8                MOV        BX, AX
+   E276 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @E278-E2E4 XT:E27A CFA:224C DLen: 106 STAGE: Words)
+: [ORBIT-OV:E27A]
+ DUP 12 < IF 
+  1 SWAP 
+ ELSE 
+  DUP 24 < IF 
+   1 SWAP 23 - NEGATE 
+  ELSE 
+   DUP 36 < IF 
+    -1 SWAP 24 - 
+   ELSE 
+    -1 SWAP 47 - NEGATE 
+   THEN 
+  THEN 
+ THEN 
+ [ORBIT-OV:DB92] + C@ SWAP -1 = IF 
+  NEGATE 
+ THEN 
+ ; 
+
+( @E2E4-E356 XT:E2E6 CFA:224C DLen: 112 STAGE: Words)
+: [ORBIT-OV:E2E6]
+ DUP 12 < IF 
+  1 SWAP 11 - NEGATE 
+ ELSE 
+  DUP 24 < IF 
+   -1 SWAP 12 - 
+  ELSE 
+   DUP 36 < IF 
+    -1 SWAP 35 - NEGATE 
+   ELSE 
+    1 SWAP 36 - 
+   THEN 
+  THEN 
+ THEN 
+ [ORBIT-OV:DB92] + C@ SWAP -1 = IF 
+  NEGATE 
+ THEN 
+ ; 
+
+( @E356-E386 XT:E358 CFA:224C DLen: 46 STAGE: Words)
+: [ORBIT-OV:E358]
+ DUP 11 - ABS OVER 11 > IF 
+  1- 
+ THEN 
+ [ORBIT-OV:DB92] + C@ SWAP 11 > IF 
+  NEGATE 
+ THEN 
+ ; 
+
+( @E386-E3A6 XT:E388 CFA:224C DLen: 30 STAGE: Words)
+: [ORBIT-OV:E388]
+ DUP 11 > IF 
+  23 SWAP - ABS 
+ THEN 
+ [ORBIT-OV:DB92] + C@ ; 
+
+( @E3A6-E3BE XT:E3A8 CFA:224C DLen: 22 STAGE: Words)
+: [ORBIT-OV:E3A8]
+ DUP [ORBIT-OV:DC10] ! $00B0 100 */ [ORBIT-OV:DC14] ! ; 
+
+( @E3BE-E40E XT:E3C0 CFA:224C DLen: 78 STAGE: Words)
+: [ORBIT-OV:E3C0]
+ [ORBIT-OV:DC18] @ DUP [ORBIT-OV:E358] [ORBIT-OV:DBFC] ! [ORBIT-OV:E388] [ORBIT-OV:DC00] 
+ ! [ORBIT-OV:DC1C] @ DUP [ORBIT-OV:E27A] [ORBIT-OV:DBF0] ! [ORBIT-OV:E2E6] [ORBIT-OV:DBF4] 
+ ! [ORBIT-OV:DB8A] [ORBIT-OV:DB86] * [ORBIT-OV:DBF8] ! [ORBIT-OV:DCC2] 24 0 FILL 
+ [ORBIT-OV:DFF1] [ORBIT-OV:E01B] [ORBIT-OV:E033] [ORBIT-OV:E063] [ORBIT-OV:E091] 
+ [ORBIT-OV:E0AB] [ORBIT-OV:E0DD] [ORBIT-OV:E0F9] [ORBIT-OV:E10D] [ORBIT-OV:E129] 
+ ; 
+
+( @E40E-E460 XT:E410 CFA:224C DLen: 80 STAGE: Words)
+: [ORBIT-OV:E410]
+ $0086 #IN ! ' XFORMVE__ ( $6BA6 ) 6 + @ 3DSEG ! 0 VOUT ! ' VERTEX ( $6AE8 ) 6 + 
+ @ 3DSEG @ - 16* VIN' ! 60 YSCREEN ! 36 XSCREEN ! [ORBIT-OV:E1B6] 62 #IN ! [ORBIT-OV:E228] 
+ ; 
+
+( @E460-E48A XT:E462 CFA:224C DLen: 40 STAGE: Words)
+: [ORBIT-OV:E462]
+ DUP >R 0 SWAP FACET LC@ 4 SWAP XFORMVE__ L@ R> 62 + 4 SWAP XFORMVE__ L@ > ; 
+
+( @E48A-E4A8 XT:E48C CFA:E48C DLen: 28 STAGE: Words)
+CODE [ORBIT-OV:E48C]
+(Address @E48C
+   E48C B9 04 00             MOV        CX, 4
+   E48F BB 38 DC             MOV        BX, DC38h                        ; [ORBIT-OV:DC38]
+   E492 83 C3 0E             ADD        BX, 14
+ .ORBIT-OV_E495:
+   E495 58                   POP        AX
+   E496 5A                   POP        DX
+   E497 89 17                MOV        WORD PTR [BX], DX
+   E499 83 EB 02             SUB        BX, 2
+   E49C 89 07                MOV        WORD PTR [BX], AX
+   E49E 83 EB 02             SUB        BX, 2
+   E4A1 E2 F2                LOOP       E495h                            ; .ORBIT-OV_E495
+   E4A3 AD                   LODSW      
+   E4A4 8B D8                MOV        BX, AX
+   E4A6 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @E4A8-E4B2 XT:E4AA CFA:E4AA DLen: 8 STAGE: Words)
+CODE [ORBIT-OV:E4AA]
+(Address @E4AA
+   E4AA 83 C4 10             ADD        SP, 16
+   E4AD AD                   LODSW      
+   E4AE 8B D8                MOV        BX, AX
+   E4B0 FF 27                JMP        WORD PTR [BX]
+) CODE-END
+
+( @E4B2-E54E XT:E4B4 CFA:224C DLen: 154 STAGE: Words)
+: [ORBIT-OV:E4B4]
+ POLYSEG >R >R I' I LC@ !COLOR I' I 1+ LC@ I' I 2+ LC@ [ORBIT-OV:DD2C] I' I 3 + LC@ 
+ I' I 2+ LC@ [ORBIT-OV:DD2C] I' I 3 + LC@ I' I 4 + LC@ [ORBIT-OV:DD2C] I' I 1+ LC@ 
+ R> R> SWAP 4 + LC@ [ORBIT-OV:DD2C] [ORBIT-OV:E48C] [ORBIT-OV:DC38] VIN ! [ORBIT-OV:DC64] 
+ VOUT ! [ORBIT-OV:DC5A] OIN ! [ORBIT-OV:DC86] OOUT ! 0 ?OPEN ! 4 #IN ! CLIPPER #IN 
+ @ 2 > IF 
+  SCANPOL_ LFILLPO__ 
+ THEN 
+ ; 
+
+( @E54E-E562 XT:E550 CFA:224C DLen: 18 STAGE: Words)
+: [ORBIT-OV:E550]
+ 0 OVER XFORMVE__ L@ 2 ROT XFORMVE__ L@ ; 
+
+( @E562-E59A XT:E564 CFA:224C DLen: 54 STAGE: Words)
+: [ORBIT-OV:E564]
+ 0 SWAP FACET >R >R I I' LC@ [ORBIT-OV:E550] I I' 1+ LC@ [ORBIT-OV:E550] I I' 2+ 
+ LC@ [ORBIT-OV:E550] R> R> 3 + LC@ [ORBIT-OV:E550] SETQUAD ; 
+
+( @E59A-E5F8 XT:E59C CFA:224C DLen: 92 STAGE: Words)
+: [ORBIT-OV:E59C]
+ ?NEB @ IF 
+  DK-GREE_ 
+ ELSE 
+  BLACK 
+ THEN 
+ !COLOR [ORBIT-OV:DC10] @ 6 11 */ DUP 4 + [ORBIT-OV:DC10] @ 50 / + 1+ SWAP 2DUP DO 
+  36 60 I .CIRCLE 
+ LOOP 
+ DO 
+  36 61 I .CIRCLE 
+ LOOP 
+ ; 
+
+( Data:Variable @E5F8-E5FC XT:E5FA CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:E5FA] ( @E5FA=0)
+
+( @E5FC-E652 XT:E5FE CFA:224C DLen: 84 STAGE: Words)
+: [ORBIT-OV:E5FE]
+ [ORBIT-OV:E3C0] [ORBIT-OV:E410] [ORBIT-OV:E5FA] OFF 72 0 DO 
+  I [ORBIT-OV:E462] IF 
+   I [ORBIT-OV:E564] 0 I FACE L@ 2 I FACE LC@ 0 DO 
+    DUP [ORBIT-OV:E4B4] 5 + 
+   LOOP 
+   DROP [ORBIT-OV:E4AA] 
+  THEN 
+  ?TERMINAL IF 
+   [ORBIT-OV:E5FA] ON LEAVE 
+  THEN 
+ LOOP 
+ [ORBIT-OV:E59C] ; 
+
+( @E652-E66E XT:E654 CFA:224C DLen: 26 STAGE: Words)
+: [ORBIT-OV:E654]
+ 40 / 23 SWAP - SWAP 48 / SWAP ; 
+
+( @E66E-E68C XT:E670 CFA:224C DLen: 28 STAGE: Words)
+: [ORBIT-OV:E670]
+ 0 DO 
+  0 71 RRND 0 119 RRND LPLOT 
+ LOOP 
+ ; 
+
+( @E68C-E6DA XT:E68E CFA:224C DLen: 76 STAGE: Words)
+: [ORBIT-OV:E68E]
+ DK-GREE_ !COLOR ?NEB @ NOT IF 
+  DARK GLOBALSeed @ SEED ! 1 4 RRND [ORBIT-OV:E670] WHITE !COLOR 2 5 RRND [ORBIT-OV:E670] 
+  RED !COLOR 2 5 RRND [ORBIT-OV:E670] GREY1 !COLOR 4 9 RRND [ORBIT-OV:E670] 
+ ELSE 
+  BFILL 
+ THEN 
+ ; 
+
+( @E6DA-E6F6 XT:E6DC CFA:224C DLen: 26 STAGE: Words)
+: [ORBIT-OV:E6DC]
+ >MAINVI__ VCLIPSE_ [ORBIT-OV:E68E] [ORBIT-OV:E5FE] [ORBIT-OV:E5FA] @ 0= IF 
+  V>DISPL__ 
+ THEN 
+ >DISPLA_ DCLIPSE_ ; 
+
+( @E6F6-E719 XT:E703 CFA:224C DLen: 22 STAGE: Dictionaries)
+: SHOWSITE
+ XABS @ YABS @ [ORBIT-OV:E654] [ORBIT-OV:DC18] ! [ORBIT-OV:DC1C] ! [ORBIT-OV:E6DC] 
+ ; 
+
+( @E719-E767 XT:E727 CFA:224C DLen: 64 STAGE: Dictionaries)
+: >VIEWSITE
+ $012C [ORBIT-OV:DC10] @ - 5 / 1 MAX [ORBIT-OV:DC34] ! BEGIN 
+  SHOWSITE [ORBIT-OV:DC10] @ DUP $012C = NOT WHILE 
+  [ORBIT-OV:DC34] @ + $012C MIN [ORBIT-OV:E3A8] 
+ REPEAT 
+ DROP ; 
+
+( @E767-E7A5 XT:E769 CFA:224C DLen: 60 STAGE: Words)
+: [ORBIT-OV:E769]
+ XLL @ YLL @ ACELLAD__ A@ XUR @ YLL @ ACELLAD__ A@ XUR @ YUR @ ACELLAD__ A@ XLL @ 
+ YLL @ ACELLAD__ A@ + + + 2/ 2/ ; 
+
+( @E7A5-E80B XT:E7A7 CFA:224C DLen: 100 STAGE: Words)
+: [ORBIT-OV:E7A7]
+ SIGNEXT___ ON SPHEREW___ OFF ' CONTOUR ( $6AC1 ) SETLARR__ 9 0 DO 
+  9 0 DO 
+   I 8 * 1+ XVIS @ XCON @ - + J 6 * 1+ YVIS @ YCON @ - + OVER 8 + OVER 6 + SETREGI__ 
+   [ORBIT-OV:E769] I J 9X9COAR__ LC! 
+  LOOP 
+ LOOP 
+ ; 
+
+( @E80B-E863 XT:E80D CFA:224C DLen: 86 STAGE: Words)
+: [ORBIT-OV:E80D]
+ XABS @ 3 - XCON @ - X1 ! YABS @ 3 + YCON @ - Y1 ! 9 0 DO 
+  9 0 DO 
+   I X1 @ + Y1 @ J - CONTOUR LC@ I J 9X9FINE LC! 
+  LOOP 
+ LOOP 
+ ; 
+
+( @E863-E89F XT:E865 CFA:224C DLen: 58 STAGE: Words)
+: [ORBIT-OV:E865]
+ 4 0 DO 
+  I OVER GPOLY LC@ 3 0 DO 
+   I OVER GVERTEX LC@ J 3 * I + [ORBIT-OV:DC64] + C! 
+  LOOP 
+  DROP 
+ LOOP 
+ DROP ; 
+
+( @E89F-E8E3 XT:E8A1 CFA:224C DLen: 66 STAGE: Words)
+: [ORBIT-OV:E8A1]
+ 4 0 DO 
+  I OVER GPOLY LC@ 2 0 DO 
+   I 2* OVER XFORMVE__ L@ J 4 * [ORBIT-OV:DC38] + I 1- NEGATE 2* + ! 
+  LOOP 
+  DROP 
+ LOOP 
+ DROP ; 
+
+( @E8E3-E945 XT:E8E5 CFA:224C DLen: 96 STAGE: Words)
+: [ORBIT-OV:E8E5]
+ 117 #IN ! ' XFORMVE__ ( $6BA6 ) 6 + @ 3DSEG ! 0 VOUT ! ' G1VERT ( $6B6A ) 6 + @ 
+ 3DSEG @ - 16* VIN' ! ' GVERTEX ( $6B31 ) 6 + @ 3DSEG @ - 16* VIN ! 60 YSCREEN ! 
+ 36 XSCREEN ! [ORBIT-OV:E16B] [ORBIT-OV:E1B6] [ORBIT-OV:E228] ; 
+
+( @E945-E977 XT:E947 CFA:224C DLen: 48 STAGE: Words)
+: [ORBIT-OV:E947]
+ >R 0 4 0 DO 
+  I J GPOLY LC@ 4 SWAP XFORMVE__ L@ [ORBIT-OV:DB86] - 0> IF 
+   1+ 
+  THEN 
+ LOOP 
+ R> DROP ; 
+
+( @E977-E99D XT:E979 CFA:224C DLen: 36 STAGE: Words)
+: [ORBIT-OV:E979]
+ 4 #IN ! [ORBIT-OV:DC64] VIN ! [ORBIT-OV:DC38] VIN' ! [ORBIT-OV:DC90] VOUT ! @DS 
+ 3DSEG ! [ORBIT-OV:E16B] [ORBIT-OV:E1B6] ; 
+
+( @E99D-E9B1 XT:E99F CFA:224C DLen: 18 STAGE: Words)
+: [ORBIT-OV:E99F]
+ $3E80 $3E80 [ORBIT-OV:DB86] $C180 SETCLIP______ ; 
+
+( @E9B1-E9EB XT:E9B3 CFA:224C DLen: 56 STAGE: Words)
+: [ORBIT-OV:E9B3]
+ 4 0 DO 
+  I 6 * [ORBIT-OV:DC90] + DUP @ SWAP 4 + @ I 2* 2* [ORBIT-OV:DC38] + >R I ! R> 2+ 
+  ! 
+ LOOP 
+ ; 
+
+( @E9EB-EA29 XT:E9ED CFA:224C DLen: 60 STAGE: Words)
+: [ORBIT-OV:E9ED]
+ 4 0 DO 
+  I 6 * [ORBIT-OV:DC90] + DUP 2 + @ SWAP 4 + @ I 2* 2* [ORBIT-OV:DC38] + >R I ! R> 
+  2+ ! 
+ LOOP 
+ ; 
+
+( @EA29-EA57 XT:EA2B CFA:224C DLen: 44 STAGE: Words)
+: [ORBIT-OV:EA2B]
+ #IN @ 0 DO 
+  VIN @ I 2* 2* + 2 + @ [ORBIT-OV:DC90] I 6 * + ! 
+ LOOP 
+ ; 
+
+( @EA57-EA87 XT:EA59 CFA:224C DLen: 46 STAGE: Words)
+: [ORBIT-OV:EA59]
+ #IN @ 0 DO 
+  VIN @ I 2* 2* + 2 + @ [ORBIT-OV:DC90] I 6 * + 2+ ! 
+ LOOP 
+ ; 
+
+( @EA87-EAB5 XT:EA89 CFA:224C DLen: 44 STAGE: Words)
+: [ORBIT-OV:EA89]
+ #IN @ 0 DO 
+  VIN @ I 2* 2* + @ [ORBIT-OV:DC90] I 6 * + 4 + ! 
+ LOOP 
+ ; 
+
+( @EAB5-EAEF XT:EAB7 CFA:224C DLen: 56 STAGE: Words)
+: [ORBIT-OV:EAB7]
+ #IN @ 0 DO 
+  I 6 * [ORBIT-OV:DC90] + DUP @ SWAP 2+ @ I 2* 2* [ORBIT-OV:DC38] + >R I ! R> 2+ 
+  ! 
+ LOOP 
+ ; 
+
+( @EAEF-EB43 XT:EAF1 CFA:224C DLen: 82 STAGE: Words)
+: [ORBIT-OV:EAF1]
+ [ORBIT-OV:E865] [ORBIT-OV:E979] [ORBIT-OV:E99F] [ORBIT-OV:E9B3] 4 #IN ! [ORBIT-OV:DC38] 
+ VIN ! [ORBIT-OV:DC64] VOUT ! [ORBIT-OV:DC5A] OIN ! [ORBIT-OV:DC86] OOUT ! CLIPPER 
+ [ORBIT-OV:EA2B] [ORBIT-OV:E9ED] 4 #IN ! [ORBIT-OV:DC38] VIN ! [ORBIT-OV:DC64] VOUT 
+ ! CLIPPER [ORBIT-OV:EA59] [ORBIT-OV:EA89] VCLIPSE_ [ORBIT-OV:DC90] VOUT ! [ORBIT-OV:E228] 
+ [ORBIT-OV:EAB7] ; 
+
+( @EB43-EB5F XT:EB45 CFA:224C DLen: 26 STAGE: Words)
+: [ORBIT-OV:EB45]
+ 0 SWAP GRIDCOL__ OVER OVER LC@ COLOR ! 1+ LC@ DCOLOR ! ; 
+
+( @EB5F-EBCF XT:EB61 CFA:224C DLen: 110 STAGE: Words)
+: [ORBIT-OV:EB61]
+ BLACK !COLOR VIN @ >R I 2+ @ I @ I #IN @ 1- 4 * + DUP 2+ @ SWAP @ LLINE #IN @ 1- 
+ 0 DO 
+  I 4 * J + DUP 2+ @ SWAP @ I 1+ 4 * J + DUP 2+ @ SWAP @ LLINE 
+ LOOP 
+ R> DROP ; 
+
+( @EBCF-EC59 XT:EBD1 CFA:224C DLen: 136 STAGE: Words)
+: [ORBIT-OV:EBD1]
+ [ORBIT-OV:E13B] [ORBIT-OV:E8E5] 89 0 DO 
+  I [ORBIT-OV:E947] ?DUP IF 
+   4 = IF 
+    I [ORBIT-OV:E8A1] 4 #IN ! 
+   ELSE 
+    I [ORBIT-OV:EAF1] 
+   THEN 
+   #IN @ 2 > IF 
+    [ORBIT-OV:DC38] VIN ! [ORBIT-OV:DC64] VOUT ! [ORBIT-OV:DC5A] OIN ! [ORBIT-OV:DC86] 
+    OOUT ! ?OPEN OFF CLIPPER 
+   THEN 
+   #IN @ 2 > IF 
+    I [ORBIT-OV:EB45] SCANPOL_ LFILLPO__ I 24 > [ORBIT-OV:DBC0] @ AND IF 
+     [ORBIT-OV:EB61] 
+    THEN 
+   THEN 
+  THEN 
+ LOOP 
+ ; 
+
+( @EC59-EC7B XT:EC65 CFA:224C DLen: 22 STAGE: Dictionaries)
+: SEEGRID
+ >MAINVI__ VCLIPSE_ [ORBIT-OV:DBA0] @ !COLOR BFILL [ORBIT-OV:EBD1] V>DISPL__ DCLIPSE_ 
+ >DISPLA_ ; 
+
+( @EC7B-EC95 XT:EC7D CFA:224C DLen: 24 STAGE: Words)
+: [ORBIT-OV:EC7D]
+ 117 0 DO 
+  0 1 I GVERTEX LC! 
+ LOOP 
+ ; 
+
+( @EC95-ECD3 XT:EC97 CFA:224C DLen: 60 STAGE: Words)
+: [ORBIT-OV:EC97]
+ XABS @ YABS @ !XYSEED 7 0 DO 
+  7 0 DO 
+   0 2 RRND 1 J 9 * 46 + I + GVERTEX LC! 
+  LOOP 
+ LOOP 
+ ; 
+
+( @ECD3-ED15 XT:ECD5 CFA:224C DLen: 64 STAGE: Words)
+: [ORBIT-OV:ECD5]
+ 0 COLORMA_ 89 25 DO 
+  0 I GRIDCOL__ LC@ COLOR @ = IF 
+   4 0 DO 
+    0 1 I J GPOLY LC@ GVERTEX LC! 
+   LOOP 
+  THEN 
+ LOOP 
+ ; 
+
+( @ED15-EDAF XT:ED17 CFA:224C DLen: 152 STAGE: Words)
+: [ORBIT-OV:ED17]
+ 5 0 DO 
+  5 0 DO 
+   1 J 6 * I + GVERTEX L+-@ COLORMA_ COLOR @ DUP $0100 * + 0 J 5 * I + GRIDCOL__ 
+   L! 
+  LOOP 
+ LOOP 
+ 8 0 DO 
+  8 0 DO 
+   1 J 9 * I + 36 + GVERTEX L+-@ COLORMA_ COLOR @ DUP $0100 * + 0 J 8 * I + 25 + 
+   GRIDCOL__ L! 
+  LOOP 
+ LOOP 
+ [ORBIT-OV:EC7D] ; 
+
+( @EDAF-EDCD XT:EDB1 CFA:224C DLen: 28 STAGE: Words)
+: [ORBIT-OV:EDB1]
+ 117 36 DO 
+  DUP 1 I GVERTEX LC! 
+ LOOP 
+ DROP ; 
+
+( @EDCD-EDF9 XT:EDCF CFA:224C DLen: 42 STAGE: Words)
+: [ORBIT-OV:EDCF]
+ 0 9 0 DO 
+  9 0 DO 
+   I J 9X9COAR__ L+-@ + 
+  LOOP 
+ LOOP 
+ 81 / [ORBIT-OV:EDB1] ; 
+
+( @EDF9-EE63 XT:EDFB CFA:224C DLen: 104 STAGE: Words)
+: [ORBIT-OV:EDFB]
+ XABS @ YABS @ [ORBIT-OV:E654] 23 SWAP - 2+ Y1 ! 2 - X1 ! SPHEREW___ ON SIGNEXT___ 
+ ON ' MERCATO_ ( $6A99 ) SETLARR__ 6 0 DO 
+  6 0 DO 
+   I X1 @ + Y1 @ J - ACELLAD__ A@ 1 J 6 * I + GVERTEX LC! 
+  LOOP 
+ LOOP 
+ ; 
+
+( @EE63-EE99 XT:EE65 CFA:224C DLen: 52 STAGE: Words)
+: [ORBIT-OV:EE65]
+ 9 0 DO 
+  9 0 DO 
+   I J 9X9COAR__ LC@ 1 J 9 * I + 36 + GVERTEX LC! 
+  LOOP 
+ LOOP 
+ ; 
+
+( @EE99-EECF XT:EE9B CFA:224C DLen: 52 STAGE: Words)
+: [ORBIT-OV:EE9B]
+ 9 0 DO 
+  9 0 DO 
+   I J 9X9FINE LC@ 1 J 9 * I + 36 + GVERTEX LC! 
+  LOOP 
+ LOOP 
+ ; 
+
+( @EECF-EF31 XT:EED1 CFA:224C DLen: 96 STAGE: Words)
+: [ORBIT-OV:EED1]
+ [ORBIT-OV:EDFB] [ORBIT-OV:EDCF] [ORBIT-OV:ED17] [ORBIT-OV:DC04] OFF [ORBIT-OV:DB86] 
+ [ORBIT-OV:DC08] ! [ORBIT-OV:DBC0] OFF [ORBIT-OV:DBC8] OFF 50 [ORBIT-OV:DBCC] ! [ORBIT-OV:DBD0] 
+ ON [ORBIT-OV:DBD4] OFF [ORBIT-OV:DBD8] OFF [ORBIT-OV:DBDC] OFF 30 [ORBIT-OV:E3A8] 
+ SEEGRID 35 [ORBIT-OV:E3A8] SEEGRID [ORBIT-OV:EDFB] [ORBIT-OV:EE65] [ORBIT-OV:ED17] 
+ $008C 40 DO 
+  I [ORBIT-OV:E3A8] SEEGRID 30 
+ +LOOP 
+ ; 
+
+( @EF31-EF6D XT:EF33 CFA:224C DLen: 58 STAGE: Words)
+: [ORBIT-OV:EF33]
+ XABS @ DUP 12 MOD - 24 - XCON ! YABS @ DUP 20 MOD - 40 - YCON ! DXCON OFF DYCON 
+ OFF ; 
+
+( @EF6D-EF95 XT:EF6F CFA:224C DLen: 38 STAGE: Words)
+: [ORBIT-OV:EF6F]
+ XABS @ 18 - XVIS ! YABS @ 30 - YVIS ! DXVIS OFF DYVIS OFF ; 
+
+( @EF95-EFD9 XT:EF97 CFA:224C DLen: 66 STAGE: Words)
+: [ORBIT-OV:EF97]
+ 20 - 6 0 DO 
+  6 0 DO 
+   1 OVER J 9 * I + + GVERTEX LC@ 1 J 6 * I + GVERTEX LC! 
+  LOOP 
+ LOOP 
+ DROP ; 
+
+( @EFD9-EFF9 XT:EFDB CFA:224C DLen: 30 STAGE: Words)
+: [ORBIT-OV:EFDB]
+ [ORBIT-OV:DBA4] @ DUP * [ORBIT-OV:DBB0] @ DUP * - ABS 0 SQRT [ORBIT-OV:DBA8] ! ; 
+
+( @EFF9-F021 XT:EFFB CFA:224C DLen: 38 STAGE: Words)
+: [ORBIT-OV:EFFB]
+ [ORBIT-OV:DBAC] @ 47 $0167 */ 48 MOD [ORBIT-OV:E27A] [ORBIT-OV:DBA8] @ 127 */ [ORBIT-OV:DBC8] 
+ ! ; 
+
+( @F021-F041 XT:F023 CFA:224C DLen: 30 STAGE: Words)
+: [ORBIT-OV:F023]
+ [ORBIT-OV:DBB8] @ [ORBIT-OV:DBB0] +! [ORBIT-OV:DBB0] @ 24 MIN -23 MAX [ORBIT-OV:DBB0] 
+ ! ; 
+
+( @F041-F069 XT:F043 CFA:224C DLen: 38 STAGE: Words)
+: [ORBIT-OV:F043]
+ [ORBIT-OV:DBAC] @ 47 $0167 */ 48 MOD [ORBIT-OV:E2E6] [ORBIT-OV:DBA8] @ 127 */ [ORBIT-OV:DBD0] 
+ ! ; 
+
+( @F069-F085 XT:F06B CFA:224C DLen: 26 STAGE: Words)
+: [ORBIT-OV:F06B]
+ [ORBIT-OV:DBB0] @ [ORBIT-OV:DBA4] @ + 2 MAX 49 MIN [ORBIT-OV:DBCC] ! ; 
+
+( @F085-F095 XT:F087 CFA:224C DLen: 14 STAGE: Words)
+: [ORBIT-OV:F087]
+ [ORBIT-OV:DC10] @ [ORBIT-OV:DBBC] @ + [ORBIT-OV:E3A8] ; 
+
+( @F095-F0A1 XT:F097 CFA:224C DLen: 10 STAGE: Words)
+: [ORBIT-OV:F097]
+ [ORBIT-OV:DBB4] @ [ORBIT-OV:DBAC] +! ; 
+
+( @F0A1-F0AD XT:F0A3 CFA:224C DLen: 10 STAGE: Words)
+: [ORBIT-OV:F0A3]
+ [ORBIT-OV:EFDB] [ORBIT-OV:EFFB] [ORBIT-OV:F06B] [ORBIT-OV:F043] ; 
+
+( @F0AD-F0B9 XT:F0AF CFA:224C DLen: 10 STAGE: Words)
+: [ORBIT-OV:F0AF]
+ (PLANET) @>C+S @INST-Subclass ICLOSE ; 
+
+( @F0B9-F0C5 XT:F0BB CFA:224C DLen: 10 STAGE: Words)
+: [ORBIT-OV:F0BB]
+ [ORBIT-OV:F0AF] 23 = ; 
+
+( @F0C5-F0D1 XT:F0C7 CFA:224C DLen: 10 STAGE: Words)
+: [ORBIT-OV:F0C7]
+ [ORBIT-OV:F0AF] 18 = ; 
+
+( @F0D1-F19B XT:F0D3 CFA:224C DLen: 200 STAGE: Words)
+: [ORBIT-OV:F0D3]
+ $0167 [ORBIT-OV:DBAC] ! 25 DUP [ORBIT-OV:DBA4] ! 1- [ORBIT-OV:DBB0] ! 7 [ORBIT-OV:DBB4] 
+ ! 1 [ORBIT-OV:DBD8] ! -5 [ORBIT-OV:DBB8] ! 8 [ORBIT-OV:DBBC] ! 25 [ORBIT-OV:E3A8] 
+ SEEGRID 1 [ORBIT-OV:DBD0] +! 35 [ORBIT-OV:E3A8] SEEGRID [ORBIT-OV:DBC0] ON CTINIT 
+ " TOPOGRAPHY NET LOCKED ON" .TTY [ORBIT-OV:F0BB] NOT IF 
+  [ORBIT-OV:EC97] [ORBIT-OV:ECD5] 
+ THEN 
+ BEGIN 
+  [ORBIT-OV:F0A3] SEEGRID [ORBIT-OV:F087] [ORBIT-OV:F023] [ORBIT-OV:F097] [ORBIT-OV:DBCC] 
+  @ DUP 10 < IF 
+   -2 [ORBIT-OV:DBB8] ! 
+  THEN 
+  2 = 
+ UNTIL 
+ ?FUEL-D__ @ NOT IF 
+  CTINIT " SAFE LANDING, CAPTAIN." .TTY 
+ THEN 
+ ; 
+
+( @F19B-F1AB XT:F19D CFA:224C DLen: 14 STAGE: Words)
+: [ORBIT-OV:F19D]
+ [ORBIT-OV:EE65] [ORBIT-OV:DB8E] [ORBIT-OV:EF97] [ORBIT-OV:EE9B] [ORBIT-OV:ED17] 
+ [ORBIT-OV:F0D3] ; 
+
+( @F1AB-F244 XT:F1B7 CFA:224C DLen: 141 STAGE: Dictionaries)
+: DESCEND
+ CTINIT " COMPUTING DESCENT PROFILE..." .TTY [ORBIT-OV:EF33] [ORBIT-OV:EF6F] ' NEWCONTOUR ( $C317 ) 
+ MODULE [ORBIT-OV:E7A7] [ORBIT-OV:E80D] CTINIT " AUTOPILOT ENGAGED. DESCENDING..." 
+ .TTY >VIEWSITE [ORBIT-OV:EED1] ?FUEL-D__ @ IF 
+  CTERASE CTINIT " OUT OF FUEL! CRASH IMMINENT!" .TTY 
+ THEN 
+ [ORBIT-OV:F19D] ; 
+
+( @F244-F2B2 XT:F246 CFA:224C DLen: 108 STAGE: Words)
+: [ORBIT-OV:F246]
+ 5 [ORBIT-OV:DBB8] ! [ORBIT-OV:DBBC] @ NEGATE [ORBIT-OV:DBBC] ! [ORBIT-OV:DBB4] @ 
+ NEGATE [ORBIT-OV:DBB4] ! BEGIN 
+  [ORBIT-OV:F0A3] SEEGRID [ORBIT-OV:F087] [ORBIT-OV:F023] [ORBIT-OV:DBAC] @ $0167 
+  = NOT IF 
+   [ORBIT-OV:F097] 
+  THEN 
+  [ORBIT-OV:DBCC] @ 49 = [ORBIT-OV:DBAC] @ $0167 = AND 
+ UNTIL 
+ [ORBIT-OV:DBC0] OFF [ORBIT-OV:DBC8] OFF 50 [ORBIT-OV:DBCC] ! 1 [ORBIT-OV:DBD0] ! 
+ [ORBIT-OV:EC7D] [ORBIT-OV:F087] SEEGRID ; 
+
+( @F2B2-F2FA XT:F2B4 CFA:224C DLen: 70 STAGE: Words)
+: [ORBIT-OV:F2B4]
+ [ORBIT-OV:EDFB] [ORBIT-OV:EE65] [ORBIT-OV:ED17] 40 $008C DO 
+  I [ORBIT-OV:E3A8] SEEGRID -30 
+ +LOOP 
+ [ORBIT-OV:EDFB] [ORBIT-OV:EDCF] [ORBIT-OV:ED17] 35 [ORBIT-OV:E3A8] SEEGRID [ORBIT-OV:EDFB] 
+ 1 14 GVERTEX LC@ [ORBIT-OV:EDB1] [ORBIT-OV:ED17] 30 [ORBIT-OV:E3A8] SEEGRID ; 
+
+( @F2FA-F30E XT:F2FC CFA:224C DLen: 18 STAGE: Words)
+: [ORBIT-OV:F2FC]
+ [ORBIT-OV:DC1C] @ 1+ 48 MOD [ORBIT-OV:DC1C] ! ; 
+
+( Data:Variable @F30E-F312 XT:F310 CFA:1D29 DLen: 2 STAGE: Words)
+VARIABLE [ORBIT-OV:F310] ( @F310=5)
+
+( @F312-F37C XT:F314 CFA:224C DLen: 104 STAGE: Words)
+: [ORBIT-OV:F314]
+ XABS @ YABS @ [ORBIT-OV:E654] [ORBIT-OV:DC18] ! [ORBIT-OV:DC1C] ! $012C DUP [ORBIT-OV:E3A8] 
+ [ORBIT-OV:DBC4] @ - 6 / [ORBIT-OV:DC34] ! BEGIN 
+  [ORBIT-OV:DC10] @ [ORBIT-OV:DC34] @ - [ORBIT-OV:DBC4] @ MAX [ORBIT-OV:E3A8] [ORBIT-OV:DC18] 
+  @ [ORBIT-OV:F310] @ < IF 
+   1 
+  ELSE 
+   -1 
+  THEN 
+  [ORBIT-OV:DC18] +! [ORBIT-OV:E6DC] [ORBIT-OV:F2FC] [ORBIT-OV:DC10] @ [ORBIT-OV:DBC4] 
+  @ = 
+ UNTIL 
+ ; 
+
+( @F37C-F38F XT:F387 CFA:224C DLen: 8 STAGE: Dictionaries)
+: ASCEND
+ [ORBIT-OV:F246] [ORBIT-OV:F2B4] [ORBIT-OV:F314] ; 
+
+( @F38F-F39D XT:F391 CFA:224C DLen: 12 STAGE: Words)
+: [ORBIT-OV:F391]
+ [ORBIT-OV:DEB0] [ORBIT-OV:DED4] [ORBIT-OV:DE8C] [ORBIT-OV:DDEE] [ORBIT-OV:DE3C] 
+ ; 
+
+( @F39D-F3C9 XT:F39F CFA:224C DLen: 42 STAGE: Words)
+: [ORBIT-OV:F39F]
+ GLOBALSeed @ SEED ! 5 19 RRND DUP [ORBIT-OV:F310] ! [ORBIT-OV:DC18] ! [ORBIT-OV:DC1C] 
+ OFF [ORBIT-OV:DC04] OFF [ORBIT-OV:DB86] [ORBIT-OV:DC08] ! ; 
+
+( @F3C9-F3F1 XT:F3CB CFA:224C DLen: 38 STAGE: Words)
+: [ORBIT-OV:F3CB]
+ (PLANET) 1.5@ >C+S _p-mass @ 3 / ICLOSE 20 MAX 120 MIN DUP [ORBIT-OV:DBC4] ! [ORBIT-OV:E3A8] 
+ ; 
+
+( Data:Case @F3F1-F411 XT:F3FD CFA:4A4F DLen: 20 STAGE: Dictionaries)
+CASE SKYCASE
+ 0 IS BLACK
+ 7 IS YELLOW
+ 12 IS YELLOW
+ 19 IS YELLOW
+ OTHERS LT-BLUE
+
+( @F411-F41F XT:F413 CFA:224C DLen: 12 STAGE: Words)
+: [ORBIT-OV:F413]
+ ATMO @ SKYCASE [ORBIT-OV:DBA0] ! ; 
+
+( @F41F-F486 XT:F42E CFA:224C DLen: 88 STAGE: Dictionaries)
+: INIT-ORBIT
+ GLOBALSeed ! #CLRMAP ! SET-COL_____ [ORBIT-OV:F3CB] [ORBIT-OV:F413] [ORBIT-OV:F0BB] 
+ IF 
+  ' MERCATO_ ( $6A99 ) SETLARR__ FULLARR__ SETREGI__ 97 FILLREG___ 
+ ELSE 
+  [ORBIT-OV:F0C7] IF 
+   ' MERCATO_ ( $6A99 ) 6 + @ $008A FILE< 
+  ELSE 
+   GLOBALSeed @ ' MERCATOR-GEN ( $C302 ) MODULE 
+  THEN 
+ THEN 
+ ' MAKE-GLOBE ( $C32C ) MODULE [ORBIT-OV:F391] [ORBIT-OV:F39F] ; 
+
+( @F486-F497 XT:F491 CFA:224C DLen: 6 STAGE: Dictionaries)
+: ROTATE
+ [ORBIT-OV:F2FC] [ORBIT-OV:E6DC] ; 
+
+( RAW Data:OverlayJunk @F497-F560 DLen: 201 STAGE: Dictionaries)
+ _overlayJunk 201 ALLOT ( @F497 =
+@F497                      4F 52 42 49 54 5F 5F 5F 5F          ORBIT____
+@F4A0 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+@F4B0 5F 5F 5F 5F 5F 5F 5F 29 41 2D 43 41 53 C5 4F 4A   _______)A-CAS.OJ
+@F4C0 06 00 22 0F 01 00 54 F4 07 00 5F F4 08 00 6C F4   .."...T..._...l.
+@F4D0 03 00 75 F4 0A 00 7A 32 34 30 33 F4 4C 22 98 2A   ..u...z2403.L".*
+@F4E0 38 0C 3E 62 38 0C 46 40 19 06 3E 13 FA 15 F0 FF   8.>b8.F@..>.....
+@F4F0 90 16 00 00 87 28 58 43 4F 4D 4D A9 4C 22 DC F4   .....(XCOMM.L"..
+@F500 FD 62 02 7A 30 75 C9 79 BE F4 84 F4 DC F4 90 16   .b.z0u.y........
+@F510 58 43 4F 4D 2D 56 4F 43 5F 5F 5F 5F 5F 5F 5F 5F   XCOM-VOC________
+@F520 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F 5F   ________________
+@F530 20 53 50 45 43 20 2D 2D 2D 2D 2D 2D 2D 2D 2D 2D    SPEC ----------
+@F540 2D 2D 2D 38 2F 31 33 2F 38 35 20 41 57 4B 20 29   ---8/13/85 AWK )
+@F550 31 31 37 35 CF 8B 90 16 43 4F 4D 4D 2D 56 4F 43   1175....COMM-VOC
+ )
+

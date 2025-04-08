@@ -1,0 +1,108 @@
+Button Text #0
+  Button Count: 6
+  Button #1: CAPTAIN
+  Button #2: SCIENCE OFF.
+  Button #3: NAVIGATOR
+  Button #4: ENGINEER
+  Button #5: COMM. OFF.
+  Button #6: DOCTOR
+
+Button Text #1
+  Button Count: 6
+  Button #1: LAND
+  Button #2: DISEMBARK
+  Button #3: CARGO
+  Button #4: LOG PLANET
+  Button #5: SHIP'S LOG
+  Button #6: BRIDGE
+
+Button Text #2
+  Button Count: 4
+  Button #1: SENSORS
+  Button #2: ANALYSIS
+  Button #3: STATUS
+  Button #4: BRIDGE
+  Button #5: 
+  Button #6: 
+
+Button Text #3
+  Button Count: 6
+  Button #1: MANEUVER
+  Button #2: STARMAP
+  Button #3: RAISE SHIELD
+  Button #4: ARM WEAPON
+  Button #5: COMBAT
+  Button #6: BRIDGE
+
+Button Text #4
+  Button Count: 3
+  Button #1: DAMAGE
+  Button #2: REPAIR
+  Button #3: BRIDGE
+  Button #4: 
+  Button #5: 
+  Button #6: 
+
+Button Text #5
+  Button Count: 3
+  Button #1: HAIL
+  Button #2: DISTRESS
+  Button #3: BRIDGE
+  Button #4: 
+  Button #5: 
+  Button #6: 
+
+Button Text #6
+  Button Count: 3
+  Button #1: EXAMINE
+  Button #2: TREAT
+  Button #3: BRIDGE
+  Button #4: 
+  Button #5: 
+  Button #6: 
+
+Button Text #7
+  Button Count: 3
+  Button #1: SELECT SITE
+  Button #2: DESCEND
+  Button #3: ABORT
+  Button #4: 
+  Button #5: 
+  Button #6: 
+
+Button Text #8
+  Button Count: 3
+  Button #1: FRIENDLY
+  Button #2: HOSTILE
+  Button #3: OBSEQUIOUS
+  Button #4: 
+  Button #5: 
+  Button #6: 
+
+Button Text #9
+  Button Count: 4
+  Button #1: STATEMENT
+  Button #2: QUESTION
+  Button #3: POSTURE
+  Button #4: TERMINATE
+  Button #5: 
+  Button #6: 
+
+Button Text #10
+  Button Count: 3
+  Button #1: YES
+  Button #2: NO
+  Button #3: TERMINATE
+  Button #4: 
+  Button #5: 
+  Button #6: 
+
+Button Text #11
+  Button Count: 5
+  Button #1: THEMSELVES
+  Button #2: OTHER RACES
+  Button #3: OLD EMPIRE
+  Button #4: THE ANCIENTS
+  Button #5: GENERAL INFO
+  Button #6: 
+

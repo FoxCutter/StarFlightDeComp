@@ -1,0 +1,58 @@
+Frame Count: 11
+Background image: SPLASH
+
+Frame 0 @D000
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+
+Frame 1 @D200
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+
+Frame 2 @D400
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+
+Frame 3 @D600
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+
+Frame 4 @D800
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+
+Frame 5 @DA00
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+
+Frame 6 @DC00
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+
+Frame 7 @DE00
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+
+Frame 8 @E000
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+
+Frame 9 @E200
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+
+Frame 10 @E400
+  Width 24 Height 33 
+  YPos 63 XPos 22
+  Pause 500 ms
+

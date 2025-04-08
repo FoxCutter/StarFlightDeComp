@@ -1,0 +1,68 @@
+Frame Count: 13
+Background image: CREDITS
+
+Frame 0 @2F040
+  Width 4 Height 1
+  YPos 128 XPos 78
+  Pause 600 ms
+
+Frame 1 @2F052
+  Width 4 Height 1
+  YPos 128 XPos 78
+  Pause 500 ms
+
+Frame 2 @2F064
+  Width 4 Height 1
+  YPos 128 XPos 78
+  Pause 400 ms
+
+Frame 3 @2F076
+  Width 8 Height 2
+  YPos 127 XPos 76
+  Pause 350 ms
+
+Frame 4 @2F08E
+  Width 8 Height 2
+  YPos 127 XPos 76
+  Pause 258 ms
+
+Frame 5 @2F0A6
+  Width 12 Height 3
+  YPos 126 XPos 72
+  Pause 250 ms
+
+Frame 6 @2F0C8
+  Width 16 Height 4
+  YPos 125 XPos 70
+  Pause 200 ms
+
+Frame 7 @2F0F8
+  Width 24 Height 7
+  YPos 122 XPos 68
+  Pause 150 ms
+
+Frame 8 @2F15C
+  Width 32 Height 9
+  YPos 120 XPos 64
+  Pause 100 ms
+
+Frame 9 @2F1FC
+  Width 48 Height 16
+  YPos 113 XPos 60
+  Pause 75 ms
+
+Frame 10 @2F38C
+  Width 68 Height 22
+  YPos 107 XPos 52
+  Pause 50 ms
+
+Frame 11 @2F688
+  Width 104 Height 32
+  YPos 97 XPos 36
+  Pause 35 ms
+
+Frame 12 @2FD18
+  Width 136 Height 44
+  YPos 85 XPos 24
+  Pause 25 ms
+
