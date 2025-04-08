@@ -72,13 +72,13 @@ The animated images are stored as a series of frames, each frame itself is a 16-
 
 #### PHAZES
 
-![](.\sf1-output\img\PHAZES.gif)
+![](\sf1-output\img\PHAZES.gif)
 
 These are Render over the SPLASH image and create the image of the spinning planet. Each image is placed at 11x103 on the splash image, and has a pause of about 500 ms. Each frame is aligned at 512 bytes.
 
 #### GALAXY
 
-![](.\sf1-output\img\GALAXY.gif)
+![](\sf1-output\img\GALAXY.gif)
 
 These are rendered over the CREDITS image, and creates the animation of the zooming in galaxy. The y Position of each image is 70, the x position is based on the MUSIC:XOFFS table, and the pause between frames is from the MUSIC:PAUSEOFF table. 
 
