@@ -252,8 +252,16 @@ namespace X86Disasm
 			return Register::ES + (Register)(Reg);
 
 		else if ((Param.Type & (ParamType)0xF0) == ParamType::AL)
-			return Register::AL + (Register)(Reg);
+		{
+			if (Results.Rex.Rex == 0 && Reg >= 4)
+			{
+				// Unless we have a rex prefix, we need to Covert 4-7 from the 
+				// Low 8-bit registers, to the High 8-bit registers
+				return Register::AH + (Register)(Reg - 4);
+			}
 
+			return Register::AL + (Register)(Reg);
+		}
 		else if ((Param.Type & (ParamType)0xF0) == ParamType::oAX)
 		{
 			if (Results.OpSize == 16)
@@ -745,7 +753,7 @@ namespace X86Disasm
 
 		if (Prefix)
 		{
-			PrefixString(Results);
+			ResultString = PrefixString(Results);
 
 			if (!ResultString.empty())
 			{
